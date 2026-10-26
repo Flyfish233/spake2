@@ -77,12 +77,19 @@ g++ -std=c++17 -O2 -DOPENSSL_NO_ASM \
   -o /tmp/spake2-legacy-oracle
 python3 tools/legacy_regenerate_oracle.py --oracle /tmp/spake2-legacy-oracle
 python3 tools/legacy_generate_tests.py
-./gradlew jvmTest --tests '*Legacy*'
+./gradlew :legacy:jvmTest --tests '*Legacy*'
 ```
 
 The generated Kotlin fixtures allow the same independent expected values to
 run from `commonTest`, including Kotlin/Native and JavaScript, without a JSON
 library, a filesystem resource API, or a C reference dependency at runtime.
+
+Three further oracle boundary cases are recorded in
+`test-vectors/legacy/zero-entropy-oracle.json`. Inputs representing zero, L, and
+2L all reduce to a zero ephemeral scalar. The pinned legacy implementation
+accepts that value; the compatibility module preserves it. This is explicitly
+covered by `LegacyZeroEntropyTest`. A correct CSPRNG is still required by the
+entropy-source contract; output bytes alone cannot certify its entropy quality.
 
 ## Lifecycle and implementation limits
 

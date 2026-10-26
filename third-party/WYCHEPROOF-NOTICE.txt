@@ -1,0 +1,20 @@
+Project Wycheproof test-vector attribution
+
+Upstream: https://github.com/C2SP/wycheproof
+Revision: d17cc89fa5c8f4f4d378b5385ebf75da5d0926c9
+File: testvectors_v1/ecdh_secp256r1_ecpoint_test.json
+Original data source recorded in that file: google-wycheproof version 0.9rc5
+License: Apache License, Version 2.0 (unmodified upstream LICENSE copied to
+WYCHEPROOF-LICENSE.txt).
+
+This project extracts 87 test cases from the pinned 355-case dataset. All 24
+invalid cases and the one acceptable compressed-point case are included;
+62 valid cases are selected across the upstream edge-case categories. The
+private scalar's unsigned integer value is zero-padded to 32 bytes in the Kotlin
+fixture. JSON retains the original strings, test IDs, comments and flags.
+Expected shared-secret x-coordinates are copied without modification.
+
+The original data remains under Apache-2.0. It is not re-licensed as original
+AGPL code. The selection script and test harness are original AGPL-3.0-only
+code. The imported JSON source does not contain an individual copyright notice;
+this notice preserves project attribution without inventing a copyright year.

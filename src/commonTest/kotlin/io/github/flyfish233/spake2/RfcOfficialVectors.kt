@@ -1,6 +1,8 @@
-// Original fixture harness: AGPL-3.0-only; RFC data retains IETF Trust terms.
+// Original fixture harness: AGPL-3.0-only; official data retains its IRTF-stream terms.
 // RFC 9382 official test-vector data: Copyright (c) 2023 IETF Trust and
-// the persons identified as the document authors. See THIRD_PARTY.md.
+// the persons identified as the document authors. All rights reserved.
+// IRTF-stream terms: third-party/ietf/RFC9382-IRTF-NOTICE.
+// No section-4 BSD or original-AGPL grant is asserted for official data.
 
 package io.github.flyfish233.spake2
 

@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 VECTORS = ROOT / 'test-vectors' / 'legacy'
-OUT = ROOT / 'src/commonTest/kotlin/io/github/flyfish233/spake2/legacy'
+OUT = ROOT / 'legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy'
 HEADER = '''// Original test runner: AGPL-3.0-only, Copyright (c) 2026 Flyfish233 and contributors.
 // Embedded oracle data: copied from GPLv3-licensed Flyfish233/spake2-java
 // commit 809ad7aa731f475c07763b1ad2c165ae192dfb5f. See third-party/spake2-java/LICENSE.

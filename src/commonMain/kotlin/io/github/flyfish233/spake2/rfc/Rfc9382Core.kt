@@ -14,7 +14,8 @@ internal class TranscriptSecrets(
     val kcA: ByteArray, val kcB: ByteArray, val cA: ByteArray, val cB: ByteArray,
 ) {
     fun destroy() {
-        for (bytes in arrayOf(tt, hashTt, ke, ka, kcA, kcB, cA, cB)) bytes.fill(0)
+        tt.fill(0); hashTt.fill(0); ke.fill(0); ka.fill(0)
+        kcA.fill(0); kcB.fill(0); cA.fill(0); cB.fill(0)
     }
 }
 

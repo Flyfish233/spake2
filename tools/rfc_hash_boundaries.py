@@ -29,5 +29,5 @@ lines += [
     '            assertContentEquals(hex(sha512), Sha512.digest(input), "SHA512 length=$size")',
     "            assertContentEquals(original, input)", "        }", "    }", "}", "",
 ]
-(root / "src/commonTest/kotlin/io/github/flyfish233/spake2/HashBoundaryTest.kt").write_text("\n".join(lines))
+(root / "primitives/src/commonTest/kotlin/io/github/flyfish233/spake2/HashBoundaryTest.kt").write_text("\n".join(lines))
 print(f"Generated {len(lengths)} independent SHA256 and SHA512 boundary vectors.")

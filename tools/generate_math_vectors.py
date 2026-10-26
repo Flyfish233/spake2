@@ -18,7 +18,7 @@ from cryptography.hazmat.primitives.asymmetric import ec
 from cryptography.hazmat.backends.openssl.backend import backend as openssl_backend
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'src/commonTest/kotlin/io/github/flyfish233/spake2/internal/math'
+OUT = ROOT / 'primitives/src/commonTest/kotlin/io/github/flyfish233/spake2/internal/math'
 OUT.mkdir(parents=True, exist_ok=True)
 P = 2**256 - 2**224 + 2**192 + 2**96 - 1
 N = int('ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632551', 16)

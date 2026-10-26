@@ -145,8 +145,9 @@ public class Rfc9382Session(
     }
 
     private fun erase() {
-        for (bytes in arrayOf(passwordScalar, a, b, associated, ephemeral, message,
-            expectedConfirmation, pendingKey)) bytes.fill(0)
+        passwordScalar.fill(0); a.fill(0); b.fill(0); associated.fill(0)
+        ephemeral.fill(0); message.fill(0)
+        expectedConfirmation.fill(0); pendingKey.fill(0)
     }
 
     private inline fun guarded(operation: () -> ByteArray): ByteArray {

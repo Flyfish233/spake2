@@ -31,3 +31,9 @@ The bootstrap compiler checks supplement, and do not replace, the pinned Kotlin 
 `gradle --no-daemon --info wrapper --gradle-version 8.14.3 --distribution-type bin jvmTest` completed successfully with Kotlin 2.2.21: **68 test methods, zero failures/errors/skips**, across 28 suites. Aggregate test time 49.568 seconds; full first dependency/bootstrap build 4m52s. Machine-readable suite totals: `docs/test-results/m1-jvm-summary.json`. This was an integration worktree run before final module separation and the last concurrency regressions; subsequent runs supersede it.
 
 Covered all four official RFC P-256 vectors, twelve independently generated RFC Edwards vectors, eight pure torsion encodings and seven mixed-order encodings, all512 historical Legacy exchanges, seven deterministic exchanges, four historical peer cases, 24fresh exchanges and108fresh peer inputs. Fixture loops are counted separately from test-method counts.
+
+### M5 module-separated JVM execution
+
+`gradle --no-daemon jvmTest` after separating root RFC, `:primitives` and `:legacy`: **77 methods passed, no failures/errors/skips**, 15 tasks executed, 2m56s including compilation. Current suites:22 RFC/integration,24 primitives (including JVM BigInteger/Wycheproof),31 Legacy. The log contains77 PASSED entries. Old XML files from pre-move suites remained in the root result directory; they were excluded explicitly rather than double-counted. A subsequent clean build will serve as final verification.
+
+`docs/test-results/m5-jvm-modules.json` and `docs/test-logs/jvm-modules.txt` record the checkpoint.

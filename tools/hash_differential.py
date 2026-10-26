@@ -68,10 +68,17 @@ fun main(){
         source = directory / "HashDifferential.kt"
         source.write_text("\n".join(lines))
         jar = directory / "hashes.jar"
-        sources = sorted((root / "src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto").glob("*.kt"))
+        source_root = root / "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto"
+        if not source_root.exists():
+            source_root = root / "src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto"
+        sources = sorted(source_root.glob("*.kt"))
+        opt_in = root / "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/InternalSpake2Api.kt"
+        if opt_in.exists():
+            sources.append(opt_in)
+        assert sources, "No production Kotlin hash sources found"
         compiler = [args.java, "-cp", str(lib / "*"), "org.jetbrains.kotlin.cli.jvm.K2JVMCompiler"]
         subprocess.run(compiler + ["-version"], check=True)
-        subprocess.run(compiler + ["-no-stdlib", "-no-reflect", "-classpath", str(stdlib),
+        subprocess.run(compiler + ["-no-stdlib", "-no-reflect", "-opt-in=io.github.flyfish233.spake2.InternalSpake2Api", "-classpath", str(stdlib),
                                     "-d", str(jar)] + [str(x) for x in sources] + [str(source)], check=True)
         subprocess.run([args.java, "-cp", str(jar) + ":" + str(stdlib),
                         "io.github.flyfish233.spake2.internal.crypto.HashDifferentialKt"], check=True)

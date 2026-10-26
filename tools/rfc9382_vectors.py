@@ -113,9 +113,11 @@ def parse_rfc(text):
 def kotlin(records, name, include_class=False):
     copyright = (
         "// RFC 9382 official test-vector data: Copyright (c) 2023 IETF Trust and\n"
-        "// the persons identified as the document authors. See THIRD_PARTY.md.\n"
+        "// the persons identified as the document authors. All rights reserved.\n"
+        "// IRTF-stream terms: third-party/ietf/RFC9382-IRTF-NOTICE.\n"
+        "// No section-4 BSD or original-AGPL grant is asserted for official data.\n"
     ) if name == "RfcOfficialVectors" else "// Generated independently with python-ecdsa 0.19.1; see tools/rfc9382_vectors.py.\n"
-    header = "// Original fixture harness: AGPL-3.0-only; RFC data retains IETF Trust terms.\n" if name == "RfcOfficialVectors" else "// SPDX-License-Identifier: AGPL-3.0-only\n"
+    header = "// Original fixture harness: AGPL-3.0-only; official data retains its IRTF-stream terms.\n" if name == "RfcOfficialVectors" else "// SPDX-License-Identifier: AGPL-3.0-only\n"
     lines = [header + copyright,
              "package io.github.flyfish233.spake2\n"]
     if include_class:
