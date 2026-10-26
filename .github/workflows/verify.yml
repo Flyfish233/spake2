@@ -66,9 +66,9 @@ jobs:
         shell: bash
         run: |
           if [ "$(uname -m)" = "arm64" ]; then
-            ./gradlew --no-daemon iosSimulatorArm64Test
+            ./gradlew --no-daemon compileKotlinIosArm64 iosSimulatorArm64Test
           else
-            ./gradlew --no-daemon iosX64Test
+            ./gradlew --no-daemon compileKotlinIosArm64 iosX64Test
           fi
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()

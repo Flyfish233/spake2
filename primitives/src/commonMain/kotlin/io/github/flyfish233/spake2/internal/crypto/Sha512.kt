@@ -75,7 +75,7 @@ public object Sha512 {
                 }
                 for (i in 0 until 16) {
                     var value = 0L
-                    for (j in 0 until 8) value = (value shl 8) or (block[i * 8 + j].toLong() and 255L)
+                    for (j in 0 until 8) value = (value shl 8) or (block[i * 8 + j].toInt() and 255).toLong()
                     words[i] = value
                 }
                 for (i in 16 until 80) {

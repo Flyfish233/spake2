@@ -1,0 +1,33 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :kmpPartiallyResolvedDependenciesChecker
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :downloadKotlinNativeDistribution
+> Task :primitives:kmpPartiallyResolvedDependenciesChecker
+> Task :primitives:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :primitives:downloadKotlinNativeDistribution
+> Task :primitives:compileKotlinLinuxX64
+> Task :compileKotlinLinuxX64
+> Task :linuxX64ProcessResources NO-SOURCE
+> Task :linuxX64MainKlibrary
+> Task :legacy:kmpPartiallyResolvedDependenciesChecker
+> Task :legacy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :legacy:downloadKotlinNativeDistribution
+> Task :legacy:compileKotlinLinuxX64
+> Task :compileTestKotlinLinuxX64
+> Task :linkDebugTestLinuxX64
+> Task :linuxX64Test
+> Task :legacy:linuxX64ProcessResources NO-SOURCE
+> Task :legacy:linuxX64MainKlibrary
+> Task :legacy:compileTestKotlinLinuxX64
+> Task :legacy:linkDebugTestLinuxX64
+> Task :legacy:linuxX64Test
+> Task :primitives:linuxX64ProcessResources NO-SOURCE
+> Task :primitives:linuxX64MainKlibrary
+> Task :primitives:compileTestKotlinLinuxX64
+> Task :primitives:linkDebugTestLinuxX64
+> Task :primitives:linuxX64Test
+w: Detected multiple Kotlin daemon sessions at 
+
+BUILD SUCCESSFUL in 12m 36s
+18 actionable tasks: 18 executed

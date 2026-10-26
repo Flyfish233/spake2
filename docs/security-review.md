@@ -41,6 +41,8 @@ claims are deliberately distinguished.
 | SR-06 | Low / documentation | Initial provenance/security text omitted completed Legacy material and made the unqualified claim that there was no fast password hash. Legacy necessarily performs the pinned SHA-512 password operation. | **Corrected, text inspected.** `SECURITY.md` now scopes the no-default-hash statement to RFC and explicitly describes Legacy SHA-512. The provenance table has been expanded; a separate RFC stream-label issue is SR-08. |
 | SR-07 | Low / cleanup hardening | RFC `erase()` and `TranscriptSecrets.destroy()` allocated an `arrayOf` before wiping their buffers. Allocation failure during cleanup could prevent those stores and terminal-state publication. | **Fixed, source reviewed.** Both cleanup functions now use direct `fill(0)` calls with no temporary reference-array allocation. This removes the identified allocation site; no general allocation-failure or physical-erasure guarantee is asserted. |
 | SR-08 | Medium / provenance | The initial combined IETF notice attributed the section-4 BSD code-component license to RFC 9382. That RFC is in the IRTF stream, for which TLP section 8.g excludes section 4. | **Corrected against primary terms.** RFC 9382's original notice, the applicable alternate-stream rules, and the complete TLP reference are retained. RFC fixture/generator headers and `THIRD_PARTY.md` reflect those terms. The separate BSD notice is explicitly scoped to RFC 5869. |
+| SR-09 | Medium / conformance | The initial RFC rejection sampler excluded zero, choosing from `[1,q)` instead of the section-3.3 interval `[0,q)`. Documentation alone did not resolve that mismatch. | **Source corrected and separately reviewed.** Canonical zero is consumed once, while degenerate public/shared points still fail before key release. Four independent M/N message expectations, zero-password cases, cleanup and terminal reuse form the regression; final execution evidence is recorded in the validation ledger. |
+| SR-10 | Medium / runtime side channel | Kotlin/JS 2.2.21 boxed `Long` multiplication has value-dependent helper branches, reached by secret field limbs. Signed-byte widening before masking in SHA-512 can also take the helper's sign branch based on message data. | **Focused common-code hardening under verification.** Montgomery inner sums use wrapping 32-bit words with an exact carry bound; SHA-512 masks bytes before widening. The separate mathematical and JS runtime reviews distinguish source proof, emitted-code inspection and actual tests from a strict constant-time claim. |
 
 ### SR-01/SR-04: concurrency reasoning
 
@@ -90,11 +92,14 @@ P-256 vectors check every requested intermediate. Edwards expected values come
 from independent test-only arithmetic references documented in
 [reference-vectors.md](reference-vectors.md).
 
-The application-facing API samples **nonzero** ephemeral scalars. This is an
-explicit restriction of the RFC text's `[0, p)` range to `[1, p)`, and must not
-be described as exactly the same sample space. Rejection sampling retains
-uniformity within that nonzero range when the supplied bytes are uniform. A
-bounded rejection count makes broken sources fail; it cannot certify entropy
+Following SR-09, the application-facing API samples the full `[0,p)` interval.
+A canonical zero candidate is consumed once rather than resampled. With w=1,
+the public message is the published role-specific M or N, and the subsequent
+identity shared point is rejected. With w=0 and zero ephemeral, the public point
+itself is rejected. These are explicit degenerate-exchange failures, not a change
+to the sampling interval. An attacker who can force or predict a zero draw can
+test password guesses against the published mask; failing later cannot undo
+that disclosure. Byte count and bounded range rejection cannot certify entropy
 quality. Password scalar zero remains a supported canonical core input.
 
 ### SHA-256 and SHA-512

@@ -132,7 +132,9 @@ public class Rfc9382Session(
                 // Mask only public unused bits before rejection sampling.
                 if (suite == Rfc9382Suite.EDWARDS25519_SHA256)
                     candidate[0] = (candidate[0].toInt() and 31).toByte()
-                if (Rfc9382Core.isCanonicalScalar(candidate, order) && !Rfc9382Core.isZero(candidate))
+                // RFC 9382 section 3.3 samples the full [0, q) interval, including zero.
+                // Degenerate public/shared points terminate the exchange at the protocol boundary.
+                if (Rfc9382Core.isCanonicalScalar(candidate, order))
                     return candidate
                 candidate.fill(0)
             } finally { supplied.fill(0) }

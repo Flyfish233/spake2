@@ -1,0 +1,44 @@
+{
+  "reference": "RFC 9382 sections 3.3 and 6; w=1, x=0 implies pA=M / pB=N",
+  "source": "https://www.rfc-editor.org/rfc/rfc9382.html",
+  "generator_sha256": "68638e8738570f11f7af0b134cbdad483769a66a65fe517187a589533c68f8f9",
+  "implementation": "Python standard-library integers; no Kotlin implementation imported",
+  "cases": [
+    {
+      "suite": "P256_SHA256",
+      "role": "ALICE",
+      "w": "0000000000000000000000000000000000000000000000000000000000000001",
+      "ephemeral": "0000000000000000000000000000000000000000000000000000000000000000",
+      "published_parameter": "02886e2f97ace46e55ba9dd7242579f2993b64e16ef3dcab95afd497333d8fa12f",
+      "message": "04886e2f97ace46e55ba9dd7242579f2993b64e16ef3dcab95afd497333d8fa12f5ff355163e43ce224e0b0e65ff02ac8e5c7be09419c785e0ca547d55a12e2d20",
+      "shared_point": "identity; rejected by the public session before any key is released"
+    },
+    {
+      "suite": "P256_SHA256",
+      "role": "BOB",
+      "w": "0000000000000000000000000000000000000000000000000000000000000001",
+      "ephemeral": "0000000000000000000000000000000000000000000000000000000000000000",
+      "published_parameter": "03d8bbd6c639c62937b04d997f38c3770719c629d7014d49a24b4f98baa1292b49",
+      "message": "04d8bbd6c639c62937b04d997f38c3770719c629d7014d49a24b4f98baa1292b4907d60aa6bfade45008a636337f5168c64d9bd36034808cd564490b1e656edbe7",
+      "shared_point": "identity; rejected by the public session before any key is released"
+    },
+    {
+      "suite": "EDWARDS25519_SHA256",
+      "role": "ALICE",
+      "w": "0000000000000000000000000000000000000000000000000000000000000001",
+      "ephemeral": "0000000000000000000000000000000000000000000000000000000000000000",
+      "published_parameter": "d048032c6ea0b6d697ddc2e86bda85a33adac920f1bf18e1b0c6d166a5cecdaf",
+      "message": "d048032c6ea0b6d697ddc2e86bda85a33adac920f1bf18e1b0c6d166a5cecdaf",
+      "shared_point": "identity; rejected by the public session before any key is released"
+    },
+    {
+      "suite": "EDWARDS25519_SHA256",
+      "role": "BOB",
+      "w": "0000000000000000000000000000000000000000000000000000000000000001",
+      "ephemeral": "0000000000000000000000000000000000000000000000000000000000000000",
+      "published_parameter": "d3bfb518f44f3430f29d0c92af503865a1ed3281dc69b35dd868ba85f886c4ab",
+      "message": "d3bfb518f44f3430f29d0c92af503865a1ed3281dc69b35dd868ba85f886c4ab",
+      "shared_point": "identity; rejected by the public session before any key is released"
+    }
+  ]
+}

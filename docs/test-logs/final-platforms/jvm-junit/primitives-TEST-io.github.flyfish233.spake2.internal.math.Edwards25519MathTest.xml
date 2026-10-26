@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.internal.math.Edwards25519MathTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:39:09.173Z" hostname="c9d49951d07d" time="0.093">
+  <properties/>
+  <testcase name="strictAndHistoricalPointDecodersAreSeparated[jvm]" classname="io.github.flyfish233.spake2.internal.math.Edwards25519MathTest" time="0.005"/>
+  <testcase name="scalarReductionBoundaries[jvm]" classname="io.github.flyfish233.spake2.internal.math.Edwards25519MathTest" time="0.001"/>
+  <testcase name="rfc8032BasePointAndPublicKey[jvm]" classname="io.github.flyfish233.spake2.internal.math.Edwards25519MathTest" time="0.014"/>
+  <testcase name="fullWidthHighBitIsPreserved[jvm]" classname="io.github.flyfish233.spake2.internal.math.Edwards25519MathTest" time="0.01"/>
+  <testcase name="torsionAndPrimeOrderChecks[jvm]" classname="io.github.flyfish233.spake2.internal.math.Edwards25519MathTest" time="0.062"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

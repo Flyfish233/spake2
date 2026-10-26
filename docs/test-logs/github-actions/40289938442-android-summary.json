@@ -1,0 +1,767 @@
+{
+  "run_id": 40289938442,
+  "commit": "9ce242f80f61ab3bd9b822394ba101de5dbf3588",
+  "artifact_id": 12636591223,
+  "artifact_sha256": "050d7e114624156e129506b4ccc8d0de0d1db1aa2a12bae76d26e1de3bb5698f",
+  "suites": [
+    {
+      "path": "build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+      "name": "io.github.flyfish233.spake2.ProtocolIsolationTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.248",
+      "cases": [
+        {
+          "name": "legacyKeyCannotSatisfyRfcConfirmationAndNoFallbackOccurs",
+          "classname": "io.github.flyfish233.spake2.ProtocolIsolationTest",
+          "time": "0.248",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+      "name": "io.github.flyfish233.spake2.RfcFailureTest",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "2.685",
+      "cases": [
+        {
+          "name": "wrongPasswordIdentityAIdentityBAndAadAllPreventKeyRelease",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.548",
+          "outcome": "passed"
+        },
+        {
+          "name": "sameRoleFailsConfirmation",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.139",
+          "outcome": "passed"
+        },
+        {
+          "name": "boundedMalformedInputFuzzIsTerminal",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.712",
+          "outcome": "passed"
+        },
+        {
+          "name": "hostilePointEncodingsAreRejectedAndOwnedSecretsErased",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.239",
+          "outcome": "passed"
+        },
+        {
+          "name": "malformedConfirmationLengthAndContentAreTerminal",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.651",
+          "outcome": "passed"
+        },
+        {
+          "name": "rejectionSamplingRejectsZeroAndOrderAndConsumesFreshEntropy",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.021",
+          "outcome": "passed"
+        },
+        {
+          "name": "cannotReleaseAKeyBeforeConfirmationOrBeforePeerMessage",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.019",
+          "outcome": "passed"
+        },
+        {
+          "name": "invalidScalarAndInputBoundsAreRejectedBeforeUse",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.004",
+          "outcome": "passed"
+        },
+        {
+          "name": "callerArraysAreDefensivelyCopiedAndMessagesHaveIndependentStorage",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.124",
+          "outcome": "passed"
+        },
+        {
+          "name": "sourceFailureWrongLengthAndRepeatedZeroCandidatesTerminateAndWipe",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.002",
+          "outcome": "passed"
+        },
+        {
+          "name": "repeatedOperationsAndDestroyAreTerminal",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.107",
+          "outcome": "passed"
+        },
+        {
+          "name": "successfulKeyCanOnlyBeReleasedOnce",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.091",
+          "outcome": "passed"
+        },
+        {
+          "name": "entropyCallbackReentrancyPoisonsTheOwningOperation",
+          "classname": "io.github.flyfish233.spake2.RfcFailureTest",
+          "time": "0.022",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+      "name": "io.github.flyfish233.spake2.RfcVectorsTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "1.043",
+      "cases": [
+        {
+          "name": "edwardsMixedOrderUsesCofactorAndBindsExactPeerEncoding",
+          "classname": "io.github.flyfish233.spake2.RfcVectorsTest",
+          "time": "0.066",
+          "outcome": "passed"
+        },
+        {
+          "name": "publicP256ApiMatchesOfficialVectorsThroughConfirmation",
+          "classname": "io.github.flyfish233.spake2.RfcVectorsTest",
+          "time": "0.214",
+          "outcome": "passed"
+        },
+        {
+          "name": "edwardsRfcMaskConstantsArePrimeOrder",
+          "classname": "io.github.flyfish233.spake2.RfcVectorsTest",
+          "time": "0.006",
+          "outcome": "passed"
+        },
+        {
+          "name": "edwardsRejectsEveryPureTorsionElement",
+          "classname": "io.github.flyfish233.spake2.RfcVectorsTest",
+          "time": "0.019",
+          "outcome": "passed"
+        },
+        {
+          "name": "publicEdwardsApiMatchesIndependentVectorsThroughConfirmation",
+          "classname": "io.github.flyfish233.spake2.RfcVectorsTest",
+          "time": "0.267",
+          "outcome": "passed"
+        },
+        {
+          "name": "edwardsEveryIndependentIntermediateField",
+          "classname": "io.github.flyfish233.spake2.RfcVectorsTest",
+          "time": "0.264",
+          "outcome": "passed"
+        },
+        {
+          "name": "p256EveryOfficialIntermediateField",
+          "classname": "io.github.flyfish233.spake2.RfcVectorsTest",
+          "time": "0.206",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.695",
+      "cases": [
+        {
+          "name": "replaySevenIndependentExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest",
+          "time": "0.608",
+          "outcome": "passed"
+        },
+        {
+          "name": "replayHistoricalPeerInputCases",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest",
+          "time": "0.087",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "2.204",
+      "cases": [
+        {
+          "name": "replayTwentyFourFreshExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest",
+          "time": "1.089",
+          "outcome": "passed"
+        },
+        {
+          "name": "replay108MalformedAndBoundaryPeerEncodings",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest",
+          "time": "1.115",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.097",
+      "cases": [
+        {
+          "name": "callerMutationCannotAliasIdentityOrGeneratedMessage",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "time": "0.017",
+          "outcome": "passed"
+        },
+        {
+          "name": "destroyIsIdempotentAndTerminal",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "time": "0.007",
+          "outcome": "passed"
+        },
+        {
+          "name": "entropyExceptionsAndIncorrectLengthsEraseState",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "time": "0.002",
+          "outcome": "passed"
+        },
+        {
+          "name": "wrongPasswordsAndRolesDoNotCreateAuthentication",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "time": "0.046",
+          "outcome": "passed"
+        },
+        {
+          "name": "repeatGenerationFailsAndErasesSession",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "time": "0.005",
+          "outcome": "passed"
+        },
+        {
+          "name": "lengthsFailBeforeUnboundedAllocation",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "time": "0.0",
+          "outcome": "passed"
+        },
+        {
+          "name": "returnedEntropyIsWipedAndPasswordInputRemainsOwnedByCaller",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "time": "0.008",
+          "outcome": "passed"
+        },
+        {
+          "name": "reentrantEntropyCallPoisonsOuterSessionEvenIfCallbackCatchesError",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "time": "0.008",
+          "outcome": "passed"
+        },
+        {
+          "name": "processBeforeGenerateFailsPermanently",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "time": "0.001",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.721",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test",
+          "time": "0.721",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.642",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test",
+          "time": "0.642",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.624",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test",
+          "time": "0.624",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.615",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test",
+          "time": "0.615",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.663",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test",
+          "time": "0.663",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.605",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test",
+          "time": "0.605",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.605",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test",
+          "time": "0.605",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.609",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test",
+          "time": "0.609",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.603",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test",
+          "time": "0.603",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.609",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test",
+          "time": "0.609",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.601",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test",
+          "time": "0.601",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.608",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test",
+          "time": "0.608",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.606",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test",
+          "time": "0.606",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.603",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test",
+          "time": "0.603",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.724",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test",
+          "time": "0.724",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.64",
+      "cases": [
+        {
+          "name": "replay32IndependentOracleExchanges",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test",
+          "time": "0.64",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+      "name": "io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.03",
+      "cases": [
+        {
+          "name": "historicalZeroEphemeralScalarIsPreservedExplicitly",
+          "classname": "io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest",
+          "time": "0.03",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+      "name": "io.github.flyfish233.spake2.HashBoundaryTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.046",
+      "cases": [
+        {
+          "name": "independentPaddingBoundaryVectors",
+          "classname": "io.github.flyfish233.spake2.HashBoundaryTest",
+          "time": "0.046",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.HashTest.xml",
+      "name": "io.github.flyfish233.spake2.HashTest",
+      "tests": "5",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.182",
+      "cases": [
+        {
+          "name": "hkdfRfc5869",
+          "classname": "io.github.flyfish233.spake2.HashTest",
+          "time": "0.012",
+          "outcome": "passed"
+        },
+        {
+          "name": "sha512StandardVectors",
+          "classname": "io.github.flyfish233.spake2.HashTest",
+          "time": "0.06",
+          "outcome": "passed"
+        },
+        {
+          "name": "sha256StandardVectors",
+          "classname": "io.github.flyfish233.spake2.HashTest",
+          "time": "0.054",
+          "outcome": "passed"
+        },
+        {
+          "name": "hkdfBoundsAndInputOwnership",
+          "classname": "io.github.flyfish233.spake2.HashTest",
+          "time": "0.053",
+          "outcome": "passed"
+        },
+        {
+          "name": "hmacRfc4231",
+          "classname": "io.github.flyfish233.spake2.HashTest",
+          "time": "0.001",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+      "name": "io.github.flyfish233.spake2.ScaffoldTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.001",
+      "cases": [
+        {
+          "name": "entropyContractIsAnApplicationBoundary",
+          "classname": "io.github.flyfish233.spake2.ScaffoldTest",
+          "time": "0.001",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+      "name": "io.github.flyfish233.spake2.internal.math.Edwards25519MathTest",
+      "tests": "5",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.179",
+      "cases": [
+        {
+          "name": "strictAndHistoricalPointDecodersAreSeparated",
+          "classname": "io.github.flyfish233.spake2.internal.math.Edwards25519MathTest",
+          "time": "0.039",
+          "outcome": "passed"
+        },
+        {
+          "name": "scalarReductionBoundaries",
+          "classname": "io.github.flyfish233.spake2.internal.math.Edwards25519MathTest",
+          "time": "0.006",
+          "outcome": "passed"
+        },
+        {
+          "name": "rfc8032BasePointAndPublicKey",
+          "classname": "io.github.flyfish233.spake2.internal.math.Edwards25519MathTest",
+          "time": "0.047",
+          "outcome": "passed"
+        },
+        {
+          "name": "fullWidthHighBitIsPreserved",
+          "classname": "io.github.flyfish233.spake2.internal.math.Edwards25519MathTest",
+          "time": "0.022",
+          "outcome": "passed"
+        },
+        {
+          "name": "torsionAndPrimeOrderChecks",
+          "classname": "io.github.flyfish233.spake2.internal.math.Edwards25519MathTest",
+          "time": "0.064",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+      "name": "io.github.flyfish233.spake2.internal.math.ModMathTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.066",
+      "cases": [
+        {
+          "name": "resultsDoNotAliasInputsOrConstants",
+          "classname": "io.github.flyfish233.spake2.internal.math.ModMathTest",
+          "time": "0.003",
+          "outcome": "passed"
+        },
+        {
+          "name": "canonicalDecodingAndSelection",
+          "classname": "io.github.flyfish233.spake2.internal.math.ModMathTest",
+          "time": "0.001",
+          "outcome": "passed"
+        },
+        {
+          "name": "independentPythonIntegerVectors",
+          "classname": "io.github.flyfish233.spake2.internal.math.ModMathTest",
+          "time": "0.062",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+      "name": "io.github.flyfish233.spake2.internal.math.P256MathTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.695",
+      "cases": [
+        {
+          "name": "independentPythonAndOpenSslScalarVectors",
+          "classname": "io.github.flyfish233.spake2.internal.math.P256MathTest",
+          "time": "0.652",
+          "outcome": "passed"
+        },
+        {
+          "name": "malformedAndNonCanonicalPointEncodings",
+          "classname": "io.github.flyfish233.spake2.internal.math.P256MathTest",
+          "time": "0.018",
+          "outcome": "passed"
+        },
+        {
+          "name": "exceptionalAdditionAndInputOwnership",
+          "classname": "io.github.flyfish233.spake2.internal.math.P256MathTest",
+          "time": "0.024",
+          "outcome": "passed"
+        }
+      ]
+    }
+  ],
+  "aars": [
+    {
+      "path": "build/outputs/aar/spake2-debug.aar",
+      "size": 19070,
+      "sha256": "fad3051a3a3a32ba78b21a1ea0eb7e50e1fee3bdbaf71f7bdd791af4caddfd44",
+      "native_entries": []
+    },
+    {
+      "path": "legacy/build/outputs/aar/legacy-debug.aar",
+      "size": 12669,
+      "sha256": "6e3527d589b9cfc00e32f3899fdb15fba1b958f2499a6984d0f2bbcf38327f92",
+      "native_entries": []
+    },
+    {
+      "path": "primitives/build/outputs/aar/primitives-debug.aar",
+      "size": 39138,
+      "sha256": "ead64a6f33f3363b66dc2915cd95dd805f42792ffab38d2bbf0afc699695ad8e",
+      "native_entries": []
+    }
+  ],
+  "totals": {
+    "tests": 69,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

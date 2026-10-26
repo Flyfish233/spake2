@@ -14,6 +14,9 @@ public fun interface EntropySource {
 /** Explicit protocol role; both endpoints must agree on the ordering of identities. */
 public enum class Role { ALICE, BOB }
 
-/** A terminal protocol, input, state or entropy error. Secret values are never included. */
+/**
+ * A terminal protocol, input, state or entropy error. Library-generated messages
+ * omit secret bytes. Caller-provided causes are preserved without sanitization.
+ */
 public class Spake2Exception(message: String, cause: Throwable? = null) :
     IllegalStateException(message, cause)

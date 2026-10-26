@@ -22,10 +22,17 @@ residues. The internal generic constructor assumes a prime modulus; it does not
 certify an arbitrary caller-supplied modulus as prime.
 
 For multiplication, a limb product is at most `(65535 * 65535)`. Including the
-existing limb and carry gives a bound of `2^32 - 1` for each schoolbook inner
-accumulator. The code uses Kotlin `Long`, so that bound is below the signed
-64-bit limit. Montgomery reduction retains an explicit extra limb and propagates
-carry through a loop whose bounds depend on the public limb index.
+existing limb and carry gives an exact upper bound of `2^32 - 1` for each
+schoolbook/REDC inner accumulator. The initial implementation used `Long` for
+this sum. A later runtime-helper review found avoidable value-dependent branches
+in Kotlin/JS boxed `Long.multiply`; the current source uses wrapping `Int`
+arithmetic on every target. The correction relies on the pinned target backends
+providing modulo-2^32 `Int` arithmetic; it is not a promise about every future
+Kotlin backend. Under that representation, the low 32 bits retain the entire unsigned sum,
+`and 65535` extracts the low limb, and `ushr 16` extracts the exact unsigned
+carry even when the signed representation is negative. Montgomery reduction
+retains an explicit extra limb and propagates carry through a loop whose bounds
+depend on the public limb index.
 
 Writing `R = 2^256`, canonical operands give `t < m^2 < mR`. The ordinary REDC
 bound gives a result below `2m`, so one final masked subtraction suffices. The
@@ -37,6 +44,32 @@ the independent integer tests, rather than a machine-checked proof.
 The code uses four Newton steps from an inverse modulo two to obtain the
 16-bit Montgomery coefficient. Field inverses use exponentiation by `m - 2`
 for these known prime moduli. Zero inversion is rejected.
+
+### Follow-up review of wrapping-Int multiplication
+
+The separate reviewer inspected the actual `LongArray` to `IntArray` change,
+including both multiplication loops, the 16-bit reduction factor, the extra
+limb and final subtraction. Let `B = 65536`. Each inner sum is bounded by
+`(B-1)^2 + (B-1) + (B-1) = B^2-1`; reducing intermediate `Int` operations
+modulo `2^32` therefore loses no information needed by the limb/carry split.
+Each factor is explicitly masked back into `[0,B)`. The first carry-propagation
+sum is at most `2B-2`, and following propagation sums are at most B.
+
+The schoolbook assignment at index `i+16` still writes a previously untouched
+slot, so replacing the array element type does not discard an older carry.
+For canonical input values, the unchanged REDC bound is below `2m`, with the
+extra word at most one. Final limb subtraction values lie in `[-B,B-1]` and
+the existing signed borrow extraction remains valid. No arithmetic defect was
+identified in this source diff. Public-modulus Newton initialization remains in
+`Long`; it does not process secret operands.
+
+This is a source review of the correction, not an execution result. The
+additional direct raw-Montgomery BigInteger and portable maximal-carry tests,
+their execution results, and the emitted JavaScript inspection are recorded
+separately in [math-int-carry-review.md](math-int-carry-review.md), the validation
+ledger and runtime-helper review. The earlier six-method standalone result
+below belongs to its recorded pre-correction snapshot and is not retroactively
+claimed as verification of this change.
 
 ## Curve operations and encodings
 

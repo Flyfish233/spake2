@@ -93,11 +93,11 @@ class RfcFailureTest {
         }
     }
 
-    @Test fun sourceFailureWrongLengthAndRepeatedZeroCandidatesTerminateAndWipe() {
+    @Test fun sourceFailureWrongLengthAndOutOfRangeCandidatesTerminateAndWipe() {
         for (suite in Rfc9382Suite.entries) {
             val wrong = ByteArray(31) { 99 }
             val sources = listOf(EntropySource { throw IllegalStateException("injected") },
-                EntropySource { wrong }, EntropySource { ByteArray(32) }, EntropySource { ByteArray(32) { -1 } })
+                EntropySource { wrong }, EntropySource { suite.scalarOrder() }, EntropySource { ByteArray(32) { -1 } })
             for (source in sources) {
                 val a = session(suite, Role.ALICE, entropy = source)
                 assertFailsWith<Spake2Exception> { a.generateMessage() }
@@ -107,15 +107,55 @@ class RfcFailureTest {
         }
     }
 
-    @Test fun rejectionSamplingRejectsZeroAndOrderAndConsumesFreshEntropy() {
+    @Test fun rejectionSamplingRejectsOrderAndLargerValuesAndConsumesFreshEntropy() {
         for (suite in Rfc9382Suite.entries) {
-            val buffers = listOf(ByteArray(32), suite.scalarOrder(), scalar(8))
+            val buffers = listOf(suite.scalarOrder(), ByteArray(32) { -1 }, scalar(8))
             var index = 0
             val a = session(suite, Role.ALICE, entropy = EntropySource { buffers[index++] })
             a.generateMessage()
             assertEquals(3, index)
             assertTrue(buffers.all { bytes -> bytes.all { it == 0.toByte() } })
             a.destroy(); assertTrue(a.ownedSecretsAreErased())
+        }
+    }
+
+    @Test fun zeroEphemeralMatchesPublishedMasksAndCannotReleaseAKey() {
+        // Independent expectations: tools/rfc9382_zero_ephemeral.py expands the
+        // published RFC 9382 section 6 parameters with Python integer arithmetic.
+        // RFC parameter data retains its notice in third-party/ietf/RFC9382-IRTF-NOTICE.
+        val masks = listOf(
+            "04886e2f97ace46e55ba9dd7242579f2993b64e16ef3dcab95afd497333d8fa12f5ff355163e43ce224e0b0e65ff02ac8e5c7be09419c785e0ca547d55a12e2d20",
+            "04d8bbd6c639c62937b04d997f38c3770719c629d7014d49a24b4f98baa1292b4907d60aa6bfade45008a636337f5168c64d9bd36034808cd564490b1e656edbe7",
+            "d048032c6ea0b6d697ddc2e86bda85a33adac920f1bf18e1b0c6d166a5cecdaf",
+            "d3bfb518f44f3430f29d0c92af503865a1ed3281dc69b35dd868ba85f886c4ab",
+        )
+        for (suite in Rfc9382Suite.entries) for (role in Role.entries) {
+            val transferred = ByteArray(32)
+            var draws = 0
+            val a = session(suite, role, password = scalar(1), entropy = EntropySource {
+                draws++
+                if (draws == 1) transferred else scalar(8)
+            })
+            val message = a.generateMessage()
+            assertEquals(1, draws, "A canonical zero draw must not be resampled")
+            assertContentEquals(hex(masks[suite.ordinal * 2 + role.ordinal]), message)
+            assertTrue(transferred.all { it == 0.toByte() })
+            // M and N are distinct. Echoing our own mask leaves a nonidentity
+            // unmasked point, but multiplication by our zero scalar gives I.
+            assertFailsWith<Spake2Exception> { a.processPeerMessage(message) }
+            failedAndErased(a)
+            assertFailsWith<Spake2Exception> { a.confirm(ByteArray(32)) }
+            assertFailsWith<Spake2Exception> { a.generateMessage() }
+            failedAndErased(a)
+
+            var zeroPasswordDraws = 0
+            val zeroPassword = session(suite, role, password = ByteArray(32), entropy = EntropySource {
+                zeroPasswordDraws++
+                if (zeroPasswordDraws == 1) ByteArray(32) else scalar(8)
+            })
+            assertFailsWith<Spake2Exception> { zeroPassword.generateMessage() }
+            assertEquals(1, zeroPasswordDraws)
+            failedAndErased(zeroPassword)
         }
     }
 

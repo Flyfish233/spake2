@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.RfcFailureTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:38:56.670Z" hostname="c9d49951d07d" time="3.874">
+  <properties/>
+  <testcase name="wrongPasswordIdentityAIdentityBAndAadAllPreventKeyRelease[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="1.048"/>
+  <testcase name="sameRoleFailsConfirmation[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.196"/>
+  <testcase name="boundedMalformedInputFuzzIsTerminal[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.912"/>
+  <testcase name="hostilePointEncodingsAreRejectedAndOwnedSecretsErased[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.353"/>
+  <testcase name="malformedConfirmationLengthAndContentAreTerminal[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.819"/>
+  <testcase name="cannotReleaseAKeyBeforeConfirmationOrBeforePeerMessage[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.022"/>
+  <testcase name="rejectionSamplingRejectsOrderAndLargerValuesAndConsumesFreshEntropy[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.023"/>
+  <testcase name="invalidScalarAndInputBoundsAreRejectedBeforeUse[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.007"/>
+  <testcase name="callerArraysAreDefensivelyCopiedAndMessagesHaveIndependentStorage[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.099"/>
+  <testcase name="zeroEphemeralMatchesPublishedMasksAndCannotReleaseAKey[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.137"/>
+  <testcase name="repeatedOperationsAndDestroyAreTerminal[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.133"/>
+  <testcase name="successfulKeyCanOnlyBeReleasedOnce[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.098"/>
+  <testcase name="sourceFailureWrongLengthAndOutOfRangeCandidatesTerminateAndWipe[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.003"/>
+  <testcase name="entropyCallbackReentrancyPoisonsTheOwningOperation[jvm]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

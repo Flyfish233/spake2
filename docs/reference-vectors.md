@@ -76,6 +76,26 @@ python3 tools/rfc9382_torsion.py
 The common test suite checks rejection of every pure torsion point and checks
 mixed-order handling against these fixed external expectations.
 
+### Zero ephemeral scalar boundary
+
+RFC section 3.3 samples ephemeral scalars from `[0,q)`, including zero.
+`tools/rfc9382_zero_ephemeral.py` independently derives the four public-message
+expectations for both suites and both roles at w=1 and a zero ephemeral scalar.
+These messages are exactly M and N. The script expands the RFC's compressed
+P-256 parameters with Python integer arithmetic; Edwards parameters already use
+the specified wire format. P-256 expansions were also checked with python-ecdsa
+0.19.1. The expected bytes are stored in `test-vectors/rfc9382-zero-ephemeral.json`.
+
+```sh
+python3 tools/rfc9382_zero_ephemeral.py
+```
+
+The regression verifies that zero is consumed in one draw rather than resampled,
+then that a degenerate shared point terminates the session and erases owned
+buffers before any key can be returned. The w=0, zero-ephemeral case fails earlier
+because the public message is the identity. This is a boundary and failure-policy
+test, not an assertion that a predictable entropy source is secure.
+
 ## Hash, HMAC, and HKDF
 
 `HashTest.kt` uses SHA-256/SHA-512 known-answer examples from FIPS 180-4 / RFC

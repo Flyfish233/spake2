@@ -35,8 +35,9 @@ distinct from scalar encoding: compressed points use the curve's little-endian
 format, while the transcript's scalar remains big endian.
 
 Edwards shared-point computation clears the cofactor after subtracting the
-password mask. The implementation accepts canonical mixed-order points when
-their prime-order component is nonzero. Independent pure-torsion and
+password mask. The implementation allows canonical mixed-order points subject
+to a nonidentity unmasked shared value; a nonzero prime-order component of the
+received point alone is insufficient. Independent pure-torsion and
 mixed-order fixtures distinguish this behavior from simply requiring every
 peer point to have prime order.
 
@@ -52,7 +53,7 @@ visible when describing support:
 
 | Area | Current policy | Consequence |
 | --- | --- | --- |
-| Ephemeral scalar zero | Sample uniformly from **`[1, q)`**, rather than the RFC text's `[0, q)` range, where q is the large prime subgroup order. | Zero is rejected and resampled. This is a deliberate sample-space restriction, not a claim of an identical distribution. |
+| Ephemeral scalar zero | Sample uniformly from **`[0, q)`**, where q is the large prime subgroup order, as specified by RFC section 3.3. | A canonical zero draw is consumed once. Its shared value is the identity, so this API terminates without releasing a key; it does not silently resample zero. |
 | Password scalar zero | Accept canonical w in `[0, q)`, including zero. | Zero is tested as mathematical core input. Application password preprocessing is responsible for its security properties. |
 | Degenerate points | Reject identity public/shared values and pure low-order Edwards peer points. | This API rejects some mathematically valid full-group elements; it does not silently reinterpret or normalize them. |
 | Point encoding | P-256 wire messages must be uncompressed 65-byte SEC1 values; Edwards messages must be canonical 32-byte encodings, including the zero-x sign rule. | Compressed P-256, hybrid encodings, out-of-range coordinates, and non-canonical Edwards representations are rejected. |
@@ -62,6 +63,14 @@ visible when describing support:
 | Entropy retries | At most 128 candidate draws per ephemeral scalar. | A broken source eventually fails; successful draws remain uniform over the accepted range if source bytes are uniform. |
 | Wide scalar reduction | Accept 40 through 1,024 big-endian input bytes. | Mathematical reduction only. This is neither a password hash nor a memory-hard function. |
 | Object lifecycle | Generate once, process once, verify confirmation once. Any ordinary operation failure consumes the session. | Callers start a fresh object after failure; keys cannot be obtained from an unconfirmed session. |
+
+The initial implementation excluded zero from sampling. Review finding SR-09
+corrected that distribution mismatch. The independent zero-ephemeral regression
+uses w=1, for which Alice's message is the published M and Bob's is the published
+N; w=0 with a zero ephemeral fails at public-message generation. A predictable
+entropy source remains insecure: forcing a zero draw can publish w*M or w*N,
+which permits testing password guesses even though no session key is released.
+The library cannot infer randomness quality from the resulting byte values.
 
 The constructor accepts an application-derived scalar, not a raw password.
 The application protocol must specify password normalization, MHF selection,

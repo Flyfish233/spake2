@@ -19,7 +19,7 @@ import io.github.flyfish233.spake2.InternalSpake2Api
 public class ModMath(modulusBe: ByteArray) {
     private val modulus: IntArray
     private val inverseExponent: ByteArray
-    private val n0Prime: Long
+    private val n0Prime: Int
     private val rSquared: IntArray
     private val montgomeryOne: IntArray
 
@@ -35,7 +35,7 @@ public class ModMath(modulusBe: ByteArray) {
         // Newton iteration for -modulus[0]^-1 modulo 2^16. Values are public.
         var inverse = 1L
         repeat(4) { inverse = (inverse * (2L - modulus[0] * inverse)) and MASK }
-        n0Prime = (-inverse) and MASK
+        n0Prime = ((-inverse) and MASK).toInt()
         var r = IntArray(LIMBS).also { it[0] = 1 }
         repeat(256) { val next = add(r, r); r.fill(0); r = next }
         montgomeryOne = r.copyOf()
@@ -148,42 +148,50 @@ public class ModMath(modulusBe: ByteArray) {
     fun negate(a: IntArray): IntArray = subtract(zero, a)
     fun square(a: IntArray): IntArray = multiply(a, a)
 
-    /** Montgomery product, with an explicit extra limb for carry propagation. */
+    /**
+     * Montgomery product, with an explicit extra limb for carry propagation.
+     *
+     * Every stored limb and inner carry is in 0..65535. Thus each inner sum
+     * is at most 65535^2 + 65535 + 65535 = 2^32 - 1. Int overflow preserves
+     * its low 32 bits; `and 65535` and `ushr 16` recover the exact limb/carry.
+     * Keep this secret-dependent path in Int arithmetic: Kotlin/JS Long
+     * multiplication contains value-dependent branches in its runtime.
+     */
     fun multiply(a: IntArray, b: IntArray): IntArray {
-        val product = LongArray(2 * LIMBS + 1)
+        val product = IntArray(2 * LIMBS + 1)
         for (i in 0 until LIMBS) {
-            var carry = 0L
+            var carry = 0
             for (j in 0 until LIMBS) {
-                val value = product[i + j] + a[i].toLong() * b[j] + carry
-                product[i + j] = value and MASK
+                val value = product[i + j] + a[i] * b[j] + carry
+                product[i + j] = value and 65535
                 carry = value ushr 16
             }
             product[i + LIMBS] = carry
         }
         for (i in 0 until LIMBS) {
-            val factor = (product[i] * n0Prime) and MASK
-            var carry = 0L
+            val factor = (product[i] * n0Prime) and 65535
+            var carry = 0
             for (j in 0 until LIMBS) {
                 val value = product[i + j] + factor * modulus[j] + carry
-                product[i + j] = value and MASK
+                product[i + j] = value and 65535
                 carry = value ushr 16
             }
             for (j in i + LIMBS..2 * LIMBS) {
                 val value = product[j] + carry
-                product[j] = value and MASK
+                product[j] = value and 65535
                 carry = value ushr 16
             }
         }
         val out = IntArray(LIMBS)
         var borrow = 0
         for (i in 0 until LIMBS) {
-            val value = product[i + LIMBS].toInt() - modulus[i] - borrow
+            val value = product[i + LIMBS] - modulus[i] - borrow
             out[i] = value and 65535
             borrow = (value shr 31) and 1
         }
-        borrow = ((product[2 * LIMBS].toInt() - borrow) shr 31) and 1
+        borrow = ((product[2 * LIMBS] - borrow) shr 31) and 1
         val mask = borrow - 1
-        for (i in 0 until LIMBS) out[i] = (out[i] and mask) or (product[i + LIMBS].toInt() and mask.inv())
+        for (i in 0 until LIMBS) out[i] = (out[i] and mask) or (product[i + LIMBS] and mask.inv())
         product.fill(0)
         return out
     }

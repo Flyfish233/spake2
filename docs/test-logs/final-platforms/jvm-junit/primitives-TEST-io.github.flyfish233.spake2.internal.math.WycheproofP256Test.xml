@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.internal.math.WycheproofP256Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:39:10.681Z" hostname="c9d49951d07d" time="0.952">
+  <properties/>
+  <testcase name="allInvalidRawPointsAndUncompressedEncodingPolicy[jvm]" classname="io.github.flyfish233.spake2.internal.math.WycheproofP256Test" time="0.001"/>
+  <testcase name="independentValidRawPointEdgeCases[jvm]" classname="io.github.flyfish233.spake2.internal.math.WycheproofP256Test" time="0.95"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
