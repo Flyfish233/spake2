@@ -71,6 +71,12 @@ POM dependencies as well as GMM, so a working Gradle-metadata path cannot hide a
 broken Maven/POM path. The original POM and expected gate rejection are retained
 in [round2/evidence/maven-gate](round2/evidence/maven-gate/).
 
+The same gate rejected Kotlin's automatically added `kotlin-dom-api-compat`
+dependency. This library uses no DOM API, so the producer explicitly sets the
+supported `kotlin.js.stdlib.dom.api.included=false` property. The baseline
+consumer does the same. The checker keeps its original stdlib-only dependency
+allow-list instead of silently admitting an unused runtime dependency.
+
 ## Separate build, published dependencies only
 
 `integration/consumer` and `integration/kadb-consumer` are independent Gradle

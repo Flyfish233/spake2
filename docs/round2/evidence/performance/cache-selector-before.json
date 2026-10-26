@@ -1,0 +1,17 @@
+{
+  "executedAtUtc": "2026-10-26T18:49:06.303169+00:00",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/tests",
+    "-p",
+    "test_performance_cache.py"
+  ],
+  "exitCode": 1,
+  "toolSha256": "cf61e23e1c90c8617e4c54aa0f2efce1640134717fac5dec098ebe3245eb89e3",
+  "testSha256": "2d554acde5c8cd879e5226dbce10c9b4a83f4bdf54e8db07cc25d96104b7982b",
+  "baselineCommit": "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d"
+}

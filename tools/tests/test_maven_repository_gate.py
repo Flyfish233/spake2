@@ -62,12 +62,15 @@ class MavenRepositoryGateTest(unittest.TestCase):
                      for name in ("API.md", "conformance.md", "LEGACY_COMPATIBILITY.md")})
         docs.update(notices)
         docs_jar = packed(docs)
+        license_pair = {name: (ROOT / name).read_bytes() for name in ("LICENSE", "THIRD_PARTY.md")}
         sources = {}
         distribution = {name: (ROOT / name).read_bytes() for name in gate.SOURCE_DISTRIBUTION_FILES}
         for module, prefix in (("spake2", ""), ("spake2-primitives", "primitives/"), ("spake2-legacy", "legacy/")):
             files = sorted((ROOT / prefix / "src/commonMain").rglob("*.kt"))
-            sources[module] = packed({"commonMain/" + str(path.relative_to(ROOT / prefix / "src/commonMain/kotlin")):
-                                      path.read_bytes() for path in files})
+            source_files = {"commonMain/" + str(path.relative_to(ROOT / prefix / "src/commonMain/kotlin")):
+                            path.read_bytes() for path in files}
+            source_files.update({"META-INF/spake2/" + name: raw for name, raw in license_pair.items()})
+            sources[module] = packed(source_files)
             distribution.update({str(path.relative_to(ROOT)): path.read_bytes() for path in files})
         for name in ("src/commonTest/Example.kt", "primitives/src/commonTest/Example.kt",
                      "legacy/src/commonTest/Example.kt", "test-vectors/example.txt", "tools/example.py",
@@ -82,13 +85,15 @@ class MavenRepositoryGateTest(unittest.TestCase):
                 directory.mkdir(parents=True)
                 prefix = f"{artifact}-{VERSION}"
                 extension = "aar" if target == "android" else "jar" if target in (None, "jvm") else "klib"
+                runtime_notices = {f"META-INF/spake2/{module}/" + name: raw for name, raw in license_pair.items()}
                 if target == "android":
-                    binary = packed({"classes.jar": packed({"Example.class": b"test-only fixture"}),
+                    binary = packed({"classes.jar": packed({"Example.class": b"test-only fixture", **runtime_notices}),
                                      "AndroidManifest.xml": b"test-only fixture"})
                 elif extension == "klib":
                     binary = packed({"default/manifest": b"unique_name=fixture\n", "default/linkdata/module": b"fixture"})
                 else:
-                    binary = packed({"META-INF/MANIFEST.MF": b"Manifest-Version: 1.0\n"})
+                    binary = packed({"META-INF/MANIFEST.MF": b"Manifest-Version: 1.0\n",
+                                     **(runtime_notices if target == "jvm" else {})})
                 binaries = {f"{prefix}.{extension}": binary, f"{prefix}-sources.jar": sources[module],
                             f"{prefix}-javadoc.jar": docs_jar}
                 if target is None:
@@ -159,6 +164,54 @@ class MavenRepositoryGateTest(unittest.TestCase):
     def verify(self, **kwargs):
         return gate.check_repository(self.repository, VERSION, REVISION, **kwargs)
 
+    def replace_archive_and_hashes(self, artifact, suffix, files):
+        """Keep GMM digests valid so corruption reaches the notice inspection."""
+        name = f"{artifact}-{VERSION}{suffix}"
+        raw = packed(files)
+        self.path(artifact).with_name(name).write_bytes(raw)
+        metadata = self.metadata(artifact)
+        for variant in metadata["variants"]:
+            for item in variant.get("files", []):
+                if item["url"] == name:
+                    item["size"] = len(raw)
+                    for algorithm in ("sha256", "sha512"):
+                        item[algorithm] = hashlib.new(algorithm, raw).hexdigest()
+        self.write_metadata(metadata, artifact)
+
+    def exercise_notice_corruption(self, artifact, suffix, prefix, fault, nested=False):
+        path = self.path(artifact).with_name(f"{artifact}-{VERSION}{suffix}")
+        original_archive, original_metadata = path.read_bytes(), self.path(artifact).read_bytes()
+        try:
+            with zipfile.ZipFile(io.BytesIO(original_archive)) as archive:
+                outer = {name: archive.read(name) for name in archive.namelist()}
+            if nested:
+                with zipfile.ZipFile(io.BytesIO(outer["classes.jar"])) as archive:
+                    entries = {name: archive.read(name) for name in archive.namelist()}
+            else:
+                entries = outer
+            if fault == "missing_pair":
+                entries.pop(prefix + "LICENSE")
+                entries.pop(prefix + "THIRD_PARTY.md")
+            elif fault == "truncated_license":
+                entries[prefix + "LICENSE"] = b"GNU AFFERO GENERAL PUBLIC LICENSE\nVersion 3, 19 November 2007\n"
+            elif fault == "truncated_provenance":
+                # Keep the old marker check satisfied while removing the actual provenance.
+                entries[prefix + "THIRD_PARTY.md"] = b"AGPL-3.0-only\n"
+            elif fault == "wrong_module_path":
+                for name in ("LICENSE", "THIRD_PARTY.md"):
+                    entries["META-INF/spake2/another-module/" + name] = entries.pop(prefix + name)
+            else:
+                raise ValueError(f"Unknown test fault: {fault}")
+            if nested:
+                outer["classes.jar"] = packed(entries)
+            self.replace_archive_and_hashes(artifact, suffix, outer)
+            with self.assertRaisesRegex(gate.VerificationError,
+                                        "Missing license companion|Incorrect AGPL license text|Incorrect THIRD_PARTY notice text"):
+                self.verify()
+        finally:
+            path.write_bytes(original_archive)
+            self.path(artifact).write_bytes(original_metadata)
+
     def test_complete_33_publications_and_actual_android_schema_are_accepted(self):
         report = self.verify()
         self.assertEqual(33, report["publicationCount"])
@@ -166,8 +219,39 @@ class MavenRepositoryGateTest(unittest.TestCase):
         android = next(item for item in report["publications"] if item["artifact"] == "spake2-android")
         binary = android["archives"][f"spake2-android-{VERSION}.aar"]
         self.assertEqual([], binary["embeddedLicenseFiles"])
-        self.assertEqual([], binary["aarClassesJarLicenseFiles"])
+        self.assertEqual(["META-INF/spake2/spake2/LICENSE", "META-INF/spake2/spake2/THIRD_PARTY.md"],
+                         binary["aarClassesJarLicenseFiles"])
         self.assertTrue(binary["licenseCompanion"].endswith("-javadoc.jar"))
+        for publication in report["publications"]:
+            sources = publication["archives"][f"{publication['artifact']}-{VERSION}-sources.jar"]
+            self.assertTrue(sources["embeddedLicense"])
+            if publication["target"] in {"js", "wasmjs", "linuxx64", "iossimulatorarm64"}:
+                binary = publication["archives"][f"{publication['artifact']}-{VERSION}.klib"]
+                self.assertEqual([], binary["embeddedLicenseFiles"])
+                self.assertTrue(binary["licenseCompanion"].endswith("-javadoc.jar"))
+
+    def test_sources_missing_embedded_notice_pair_is_rejected(self):
+        for artifact in ("spake2", "spake2-primitives-iossimulatorarm64", "spake2-legacy-wasmjs"):
+            with self.subTest(artifact=artifact):
+                self.exercise_notice_corruption(artifact, "-sources.jar", "META-INF/spake2/", "missing_pair")
+
+    def test_sources_truncated_embedded_notices_are_rejected(self):
+        for fault in ("truncated_license", "truncated_provenance"):
+            with self.subTest(fault=fault):
+                self.exercise_notice_corruption("spake2-js", "-sources.jar", "META-INF/spake2/", fault)
+
+    def test_jvm_runtime_requires_full_module_specific_notices(self):
+        for module in MODULES:
+            for fault in ("missing_pair", "truncated_license", "truncated_provenance", "wrong_module_path"):
+                with self.subTest(module=module, fault=fault):
+                    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+
+    def test_android_classes_jar_requires_full_module_specific_notices(self):
+        for module in MODULES:
+            for fault in ("missing_pair", "truncated_license", "truncated_provenance", "wrong_module_path"):
+                with self.subTest(module=module, fault=fault):
+                    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+                                                    nested=True)
 
     def test_missing_module_and_missing_target_are_rejected(self):
         for artifact in ("spake2-primitives", "spake2-iossimulatorarm64"):

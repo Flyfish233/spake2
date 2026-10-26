@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "executedAtUtc": "2026-10-26T18:46:21.805988+00:00",
+  "repository": "/workspace/scratch/a46e59dd0882/round2-maven-local-fixed",
+  "version": "0.1.0-dev.round2-local",
+  "revision": "WORKTREE",
+  "error": "Unsafe or incorrect production dependency in /workspace/scratch/a46e59dd0882/round2-maven-local-fixed/io/github/flyfish233/spake2-js/0.1.0-dev.round2-local/spake2-js-0.1.0-dev.round2-local.pom: org.jetbrains.kotlin:kotlin-dom-api-compat"
+}

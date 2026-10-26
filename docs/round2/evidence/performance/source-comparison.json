@@ -1,0 +1,171 @@
+{
+  "productionSourceCount": 13,
+  "allProductionAndProbeSourcesMatchBothCommitsAndHistoricalProbe": true,
+  "sourceComparison": {
+    "legacy/src/commonMain/kotlin/io/github/flyfish233/spake2/legacy/LegacySpake25519.kt": {
+      "compiledSnapshotSha256": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138",
+      "currentSha256": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138",
+      "historicalFinalProbeSha256": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138"
+      }
+    },
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/EntropySource.kt": {
+      "compiledSnapshotSha256": "dfc55282188a4c8a97752d01b153dfdf15f1f919df3c0359d74a5a09b19826bc",
+      "currentSha256": "dfc55282188a4c8a97752d01b153dfdf15f1f919df3c0359d74a5a09b19826bc",
+      "historicalFinalProbeSha256": "dfc55282188a4c8a97752d01b153dfdf15f1f919df3c0359d74a5a09b19826bc",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "dfc55282188a4c8a97752d01b153dfdf15f1f919df3c0359d74a5a09b19826bc",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "dfc55282188a4c8a97752d01b153dfdf15f1f919df3c0359d74a5a09b19826bc"
+      }
+    },
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/InternalSpake2Api.kt": {
+      "compiledSnapshotSha256": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6",
+      "currentSha256": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6",
+      "historicalFinalProbeSha256": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6"
+      }
+    },
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HkdfSha256.kt": {
+      "compiledSnapshotSha256": "5dc45de93eff52e5d60ad9687ce84bee2be698539b7be1ec5a38bb8ae767591a",
+      "currentSha256": "5dc45de93eff52e5d60ad9687ce84bee2be698539b7be1ec5a38bb8ae767591a",
+      "historicalFinalProbeSha256": "5dc45de93eff52e5d60ad9687ce84bee2be698539b7be1ec5a38bb8ae767591a",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "5dc45de93eff52e5d60ad9687ce84bee2be698539b7be1ec5a38bb8ae767591a",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "5dc45de93eff52e5d60ad9687ce84bee2be698539b7be1ec5a38bb8ae767591a"
+      }
+    },
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HmacSha256.kt": {
+      "compiledSnapshotSha256": "c46ccc1ba589c0eb5d1539e7d9e6e7c5915ff17361993e93ffeab387d01f5330",
+      "currentSha256": "c46ccc1ba589c0eb5d1539e7d9e6e7c5915ff17361993e93ffeab387d01f5330",
+      "historicalFinalProbeSha256": "c46ccc1ba589c0eb5d1539e7d9e6e7c5915ff17361993e93ffeab387d01f5330",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "c46ccc1ba589c0eb5d1539e7d9e6e7c5915ff17361993e93ffeab387d01f5330",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "c46ccc1ba589c0eb5d1539e7d9e6e7c5915ff17361993e93ffeab387d01f5330"
+      }
+    },
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha256.kt": {
+      "compiledSnapshotSha256": "bc60dd4bd927ad0bb06aa97215ee57c7ed013732d642200f4cbd1c5c6d65a0a6",
+      "currentSha256": "bc60dd4bd927ad0bb06aa97215ee57c7ed013732d642200f4cbd1c5c6d65a0a6",
+      "historicalFinalProbeSha256": "bc60dd4bd927ad0bb06aa97215ee57c7ed013732d642200f4cbd1c5c6d65a0a6",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "bc60dd4bd927ad0bb06aa97215ee57c7ed013732d642200f4cbd1c5c6d65a0a6",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "bc60dd4bd927ad0bb06aa97215ee57c7ed013732d642200f4cbd1c5c6d65a0a6"
+      }
+    },
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt": {
+      "compiledSnapshotSha256": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451",
+      "currentSha256": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451",
+      "historicalFinalProbeSha256": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451"
+      }
+    },
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt": {
+      "compiledSnapshotSha256": "006a71ead2a4c1038635435547a22ea231aace49920de1a43b18622c942c0eb8",
+      "currentSha256": "006a71ead2a4c1038635435547a22ea231aace49920de1a43b18622c942c0eb8",
+      "historicalFinalProbeSha256": "006a71ead2a4c1038635435547a22ea231aace49920de1a43b18622c942c0eb8",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "006a71ead2a4c1038635435547a22ea231aace49920de1a43b18622c942c0eb8",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "006a71ead2a4c1038635435547a22ea231aace49920de1a43b18622c942c0eb8"
+      }
+    },
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt": {
+      "compiledSnapshotSha256": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd",
+      "currentSha256": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd",
+      "historicalFinalProbeSha256": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd"
+      }
+    },
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt": {
+      "compiledSnapshotSha256": "225be142a455d3db4c888f3c0f0d409febc484b7bad49bee1f1d7549f52100a1",
+      "currentSha256": "225be142a455d3db4c888f3c0f0d409febc484b7bad49bee1f1d7549f52100a1",
+      "historicalFinalProbeSha256": "225be142a455d3db4c888f3c0f0d409febc484b7bad49bee1f1d7549f52100a1",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "225be142a455d3db4c888f3c0f0d409febc484b7bad49bee1f1d7549f52100a1",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "225be142a455d3db4c888f3c0f0d409febc484b7bad49bee1f1d7549f52100a1"
+      }
+    },
+    "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Core.kt": {
+      "compiledSnapshotSha256": "aa6d003c8e735952773dbae34f6f02233233bc481670f6be9e0839cbbb526f86",
+      "currentSha256": "aa6d003c8e735952773dbae34f6f02233233bc481670f6be9e0839cbbb526f86",
+      "historicalFinalProbeSha256": "aa6d003c8e735952773dbae34f6f02233233bc481670f6be9e0839cbbb526f86",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "aa6d003c8e735952773dbae34f6f02233233bc481670f6be9e0839cbbb526f86",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "aa6d003c8e735952773dbae34f6f02233233bc481670f6be9e0839cbbb526f86"
+      }
+    },
+    "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Session.kt": {
+      "compiledSnapshotSha256": "27c7a57098185b5a1fa3e36eefd268204e5dd714c833ea7eb8ef844f4090142d",
+      "currentSha256": "27c7a57098185b5a1fa3e36eefd268204e5dd714c833ea7eb8ef844f4090142d",
+      "historicalFinalProbeSha256": "27c7a57098185b5a1fa3e36eefd268204e5dd714c833ea7eb8ef844f4090142d",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "27c7a57098185b5a1fa3e36eefd268204e5dd714c833ea7eb8ef844f4090142d",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "27c7a57098185b5a1fa3e36eefd268204e5dd714c833ea7eb8ef844f4090142d"
+      }
+    },
+    "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Suite.kt": {
+      "compiledSnapshotSha256": "466f7edef6ed187216826047391f3c1df2f10888e448b96ad834b8ecfde8d01d",
+      "currentSha256": "466f7edef6ed187216826047391f3c1df2f10888e448b96ad834b8ecfde8d01d",
+      "historicalFinalProbeSha256": "466f7edef6ed187216826047391f3c1df2f10888e448b96ad834b8ecfde8d01d",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "466f7edef6ed187216826047391f3c1df2f10888e448b96ad834b8ecfde8d01d",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "466f7edef6ed187216826047391f3c1df2f10888e448b96ad834b8ecfde8d01d"
+      }
+    },
+    "tools/JvmPerformanceProbe.kt": {
+      "compiledSnapshotSha256": "f5932e33578c9e581ef4c8413f750bf6f99d4294f0797587346e485d0d9b6677",
+      "currentSha256": "f5932e33578c9e581ef4c8413f750bf6f99d4294f0797587346e485d0d9b6677",
+      "historicalFinalProbeSha256": "f5932e33578c9e581ef4c8413f750bf6f99d4294f0797587346e485d0d9b6677",
+      "gitBlobSha256": {
+        "b837aba27bebc1050965fa124c2efa54b4e4544a": "f5932e33578c9e581ef4c8413f750bf6f99d4294f0797587346e485d0d9b6677",
+        "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d": "f5932e33578c9e581ef4c8413f750bf6f99d4294f0797587346e485d0d9b6677"
+      }
+    }
+  },
+  "compilerClasspath": [
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-compiler-embeddable:2.2.21",
+      "path": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.2.21/b13aed5cf8412f9ee9d1e4db21bdcfebcc24f606/kotlin-compiler-embeddable-2.2.21.jar",
+      "sha256": "9588fa696ac5507af764fd5660df6894185e12704ec1bc3f5cb772af4987f295"
+    },
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-stdlib:2.2.21",
+      "path": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/fa374a986e128314c3db00a20aae55f72a258511/kotlin-stdlib-2.2.21.jar",
+      "sha256": "6558a3d233da56a20934b32159f9db5f86ed5816ef098f78a2c223dc6abb79dd"
+    },
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-script-runtime:2.2.21",
+      "path": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.2.21/e9b021c4e335e4ed7a7e3b32285249ae6bb3a6c8/kotlin-script-runtime-2.2.21.jar",
+      "sha256": "2b1519b427b514d1536c1b425674b03fe914af637924028e9959c6625442df51"
+    },
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-daemon-embeddable:2.2.21",
+      "path": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.2.21/78fde5db1c92786448170b351d8f8868acabd2ce/kotlin-daemon-embeddable-2.2.21.jar",
+      "sha256": "91c0673c22e44b054ae0314d323860ebe1f3aff3f0ebc74fff82c4733dde09be"
+    },
+    {
+      "coordinate": "org.jetbrains.kotlin:kotlin-reflect:1.6.10",
+      "path": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar",
+      "sha256": "3277ac102ae17aad10a55abec75ff5696c8d109790396434b496e75087854203"
+    },
+    {
+      "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.0",
+      "path": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar",
+      "sha256": "9860906a1937490bf5f3b06d2f0e10ef451e65b95b269f22daf68a3d1f5065c5"
+    },
+    {
+      "coordinate": "org.jetbrains:annotations:23.0.0",
+      "path": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar",
+      "sha256": "7b0f19724082cbfcbc66e5abea2b9bc92cf08a1ea11e191933ed43801eb3cd05"
+    }
+  ],
+  "harnessToolSha256": "00b2503e0e137e1fb20d8557609e28aca51bd3990a99ec7f1082f747232f078a",
+  "scope": "The 13 production commonMain blobs and unchanged probe match both fixed commits and the previous final performance snapshot. The Python harness has the separately recorded cache-selection fix."
+}

@@ -55,6 +55,7 @@ SOURCE_DISTRIBUTION_FILES = {
 POM_NS = {"p": "http://maven.apache.org/POM/4.0.0"}
 HASH_NAMES = ("sha512", "sha256", "sha1", "md5")
 AGPL_LICENSE_SHA256 = "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+CHECKOUT_THIRD_PARTY = Path(__file__).resolve().parents[1] / "THIRD_PARTY.md"
 
 
 class VerificationError(ValueError):
@@ -330,6 +331,10 @@ def check_license(entries, prefix, context):
     require(digest(text) == AGPL_LICENSE_SHA256,
             f"Incorrect AGPL license text: {context}")
     require(b"AGPL-3.0-only" in entries[notice_file], f"Missing provenance/AGPL declaration: {context}")
+    # The CLI is run from the candidate source checkout, so compare the entire
+    # provenance document with that candidate, not merely its AGPL marker.
+    require(entries[notice_file] == read_file(CHECKOUT_THIRD_PARTY),
+            f"Incorrect THIRD_PARTY notice text: {context}")
 
 
 def inspect_archives(directory, module, target, version, metadata):
@@ -343,13 +348,14 @@ def inspect_archives(directory, module, target, version, metadata):
         if classifier == "sources":
             names = {PurePosixPath(name).name for name in entries}
             require(SOURCE_NAMES[module] <= names, f"Incomplete module sources: {path}")
+            check_license(entries, "META-INF/spake2/", path.name)
         else:
             check_license(entries, "", path.name)
             require({"API.md", "conformance.md", "LEGACY_COMPATIBILITY.md", "README.md", "SECURITY.md"} <= set(entries),
                     f"Incomplete API documentation: {path}")
             require(NOTICES <= set(entries) and all(entries[name] for name in NOTICES),
                     f"Incomplete third-party notices: {path}")
-        if "META-INF/spake2/LICENSE" in entries or "META-INF/spake2/THIRD_PARTY.md" in entries:
+        if classifier != "sources" and ("META-INF/spake2/LICENSE" in entries or "META-INF/spake2/THIRD_PARTY.md" in entries):
             check_license(entries, "META-INF/spake2/", path.name)
         reports[path.name] = {"sha256": digest(raw), "size": len(raw), "entries": len(entries),
                               "sidecarsChecked": check_sidecars(path, raw),
@@ -361,11 +367,18 @@ def inspect_archives(directory, module, target, version, metadata):
     entries = archive_entries(read_file(binary), binary.name)
     if "META-INF/spake2/LICENSE" in entries or "META-INF/spake2/THIRD_PARTY.md" in entries:
         check_license(entries, "META-INF/spake2/", binary.name)
+    runtime_notice_prefix = f"META-INF/spake2/{module}/"
+    required_embedded_location = None
+    if target == "jvm":
+        check_license(entries, runtime_notice_prefix, binary.name)
+        required_embedded_location = runtime_notice_prefix
     embedded = {name for name in entries if name.endswith(("/LICENSE", "/THIRD_PARTY.md")) or name in {"LICENSE", "THIRD_PARTY.md"}}
     nested_embedded = []
     if target == "android":
         require("classes.jar" in entries and "AndroidManifest.xml" in entries, f"Incomplete Android AAR: {binary}")
         nested = archive_entries(entries["classes.jar"], f"{binary.name}!classes.jar")
+        check_license(nested, runtime_notice_prefix, f"{binary.name}!classes.jar")
+        required_embedded_location = "classes.jar!" + runtime_notice_prefix
         if "META-INF/spake2/LICENSE" in nested or "META-INF/spake2/THIRD_PARTY.md" in nested:
             check_license(nested, "META-INF/spake2/", f"{binary.name}!classes.jar")
         nested_embedded = sorted(name for name in nested if name.endswith(("/LICENSE", "/THIRD_PARTY.md")))
@@ -373,8 +386,10 @@ def inspect_archives(directory, module, target, version, metadata):
         require(any(name.endswith("/manifest") or name == "manifest" for name in entries), f"Missing KLIB manifest: {binary}")
     reports[binary.name] = {"sha256": metadata["files"][binary.name]["sha256"], "entries": len(entries),
                             "embeddedLicenseFiles": sorted(embedded), "aarClassesJarLicenseFiles": nested_embedded,
+                            "requiredEmbeddedLicenseLocation": required_embedded_location,
                             "licenseCompanion": f"{prefix}-javadoc.jar",
-                            "note": "Embedded files are inspected, not assumed from Gradle Jar task hooks."}
+                            "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. "
+                                    "Other binary targets report actual embedding and require complete license companions."}
     if target is None:
         source = directory / f"{prefix}-source-distribution.zip"
         raw = read_file(source)
@@ -422,7 +437,8 @@ def check_repository(repository, version, revision, without_android=False):
             "revisionIsFullGitCommit": re.fullmatch(r"[0-9a-f]{40}", revision) is not None,
             "androidIncluded": not without_android, "publicationCount": len(publications),
             "publications": publications,
-            "scope": "Actual local POM/GMM dependency graph, artifact digests, archives, sources and license companions. "
+            "scope": "Actual local POM/GMM dependency graph, artifact digests, archives, sources, full embedded source/JVM/Android "
+                     "license notices and required license companions. THIRD_PARTY.md is compared with the candidate source checkout. "
                      "This does not execute consumers or certify cryptography. Maven Local checksum sidecars are checked when present; "
                      "GMM SHA-256 is mandatory for every referenced file."}
 

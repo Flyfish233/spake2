@@ -30,19 +30,21 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
 
     def jar(group, artifact, version):
-        matches = list((cache / group / artifact / version).glob("*/*.jar"))
+        # KMP caches may also contain -all (common metadata) or -sources JARs.
+        # Neither can supply the JVM classes required by the compiler/runtime.
+        matches = sorted(path for path in (cache / group / artifact / version)
+                         .glob(f"*/{artifact}-{version}.jar") if path.is_file())
         if not matches:
             raise SystemExit(f"Missing cached {artifact}:{version}; run the project's jvmTest with Gradle first")
+        if len(matches) != 1:
+            raise SystemExit(f"Ambiguous cached {artifact}:{version}: {len(matches)} canonical JVM JARs; refusing arbitrary selection")
         return matches[0]
 
     compiler_jars = [jar("org.jetbrains.kotlin", artifact, "2.2.21") for artifact in
                      ["kotlin-compiler-embeddable", "kotlin-stdlib", "kotlin-script-runtime", "kotlin-daemon-embeddable"]]
     compiler_jars += [jar("org.jetbrains.kotlin", "kotlin-reflect", "1.6.10"),
-                      jar("org.jetbrains.kotlinx", "kotlinx-coroutines-core-jvm", "1.8.0")]
-    annotations = list((cache / "org.jetbrains" / "annotations").glob("*/*/*.jar"))
-    if not annotations:
-        raise SystemExit("Missing cached JetBrains annotations; run Gradle jvmTest first")
-    compiler_jars.append(sorted(annotations)[-1])
+                      jar("org.jetbrains.kotlinx", "kotlinx-coroutines-core-jvm", "1.8.0"),
+                      jar("org.jetbrains", "annotations", "23.0.0")]
     stdlib = jar("org.jetbrains.kotlin", "kotlin-stdlib", "2.2.21")
     source_roots = [root / relative for relative in
                     ["primitives/src/commonMain", "src/commonMain", "legacy/src/commonMain"]]

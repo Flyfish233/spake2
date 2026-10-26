@@ -99,6 +99,11 @@ allprojects {
         }
     }
     if (enableAndroid) {
+        // AGP's legacy source-set bridge flattens a TaskProvider into paths.
+        // Retain the generation dependency explicitly for every Java-resource variant.
+        tasks.matching { it.name.startsWith("process") && it.name.endsWith("JavaRes") }.configureEach {
+            dependsOn(publicationNotices)
+        }
         extensions.configure<com.android.build.gradle.LibraryExtension> {
             sourceSets.getByName("main").resources.srcDir(publicationNotices)
             namespace = "io.github.flyfish233.spake2" +

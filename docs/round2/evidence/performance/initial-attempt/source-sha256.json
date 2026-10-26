@@ -1,0 +1,16 @@
+{
+  "legacy/src/commonMain/kotlin/io/github/flyfish233/spake2/legacy/LegacySpake25519.kt": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/EntropySource.kt": "dfc55282188a4c8a97752d01b153dfdf15f1f919df3c0359d74a5a09b19826bc",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/InternalSpake2Api.kt": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HkdfSha256.kt": "5dc45de93eff52e5d60ad9687ce84bee2be698539b7be1ec5a38bb8ae767591a",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HmacSha256.kt": "c46ccc1ba589c0eb5d1539e7d9e6e7c5915ff17361993e93ffeab387d01f5330",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha256.kt": "bc60dd4bd927ad0bb06aa97215ee57c7ed013732d642200f4cbd1c5c6d65a0a6",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt": "006a71ead2a4c1038635435547a22ea231aace49920de1a43b18622c942c0eb8",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt": "225be142a455d3db4c888f3c0f0d409febc484b7bad49bee1f1d7549f52100a1",
+  "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Core.kt": "aa6d003c8e735952773dbae34f6f02233233bc481670f6be9e0839cbbb526f86",
+  "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Session.kt": "27c7a57098185b5a1fa3e36eefd268204e5dd714c833ea7eb8ef844f4090142d",
+  "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Suite.kt": "466f7edef6ed187216826047391f3c1df2f10888e448b96ad834b8ecfde8d01d",
+  "tools/JvmPerformanceProbe.kt": "f5932e33578c9e581ef4c8413f750bf6f99d4294f0797587346e485d0d9b6677"
+}
