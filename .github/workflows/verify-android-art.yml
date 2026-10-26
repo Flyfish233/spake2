@@ -1,0 +1,91 @@
+name: Verify Android ART and Maven consumer
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: spake2-art-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  android-art:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        api-level: [23, 35]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+      - name: Prove result gates reject failures with and without Python optimization
+        run: |
+          python3 tools/tests/test_android_result_gate.py
+          python3 -O tools/tests/test_android_result_gate.py
+      - name: Select isolated local Maven coordinates
+        shell: bash
+        run: |
+          spake2_revision="$(git rev-parse HEAD)"
+          {
+            printf 'SPAKE2_SOURCE_REVISION=%s\n' "$spake2_revision"
+            printf 'SPAKE2_CONSUMER_VERSION=0.1.0-dev.%s\n' "${spake2_revision:0:12}"
+            printf 'SPAKE2_MAVEN_REPO=%s/spake2-art-maven\n' "$RUNNER_TEMP"
+          } >> "$GITHUB_ENV"
+      - name: Build common tests and stage Android consumer Maven artifacts
+        run: >-
+          ./gradlew --no-daemon --console=plain
+          -PenableAndroid=true
+          -Pspake2Version="$SPAKE2_CONSUMER_VERSION"
+          -Pspake2Revision="$SPAKE2_SOURCE_REVISION"
+          -Dmaven.repo.local="$SPAKE2_MAVEN_REPO"
+          testDebugUnitTest assembleDebugAndroidTest
+          publishKotlinMultiplatformPublicationToMavenLocal
+          publishAndroidReleasePublicationToMavenLocal publishJvmPublicationToMavenLocal
+      - name: Build independent Android consumers from local Maven artifacts
+        run: >-
+          ./gradlew --no-daemon --console=plain -p integration/consumer
+          -PenableAndroid=true -Pspake2Version="$SPAKE2_CONSUMER_VERSION"
+          -Pspake2Repository="$SPAKE2_MAVEN_REPO"
+          testDebugUnitTest assembleDebugAndroidTest
+      - name: Enable hardware-accelerated emulator access
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          test -r /dev/kvm
+          test -w /dev/kvm
+      - name: Execute complete common suite and standalone consumers on ART
+        uses: reactivecircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2.38.0, peeled commit
+        with:
+          api-level: ${{ matrix.api-level }}
+          target: google_apis
+          arch: x86_64
+          cores: 2
+          ram-size: 2048M
+          heap-size: 512M
+          disable-linux-hw-accel: false
+          emulator-boot-timeout: 900
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
+          script: bash tools/run_android_art.sh ${{ matrix.api-level }} "$SPAKE2_CONSUMER_VERSION" "$SPAKE2_MAVEN_REPO"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: android-art-api-${{ matrix.api-level }}
+          path: |
+            build/art-evidence/**
+            **/build/outputs/androidTest-results/**
+            **/build/reports/androidTests/**
+            **/build/test-results/testDebugUnitTest/**
+            **/build/outputs/logs/**
+          retention-days: 14

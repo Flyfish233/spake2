@@ -27,6 +27,12 @@ implemented. The project has no Kadb-specific interfaces, identities or defaults
 | `:legacy` | Explicit historical protocol and separate session state | `:primitives`, Kotlin standard library |
 | `:primitives` | Shared SHA-256/SHA-512, HMAC/HKDF, modular arithmetic, P-256, Edwards25519, entropy interface | Kotlin standard library |
 
+The Maven umbrella coordinates are `io.github.flyfish233:spake2`,
+`io.github.flyfish233:spake2-legacy` and `io.github.flyfish233:spake2-primitives`.
+Use a fixed, verified candidate version. [PUBLISHING.md](docs/PUBLISHING.md)
+documents isolated Maven publication, metadata/notice checks and the standalone
+baseline and Kadb-toolchain consumers. No remote package release is configured.
+
 Every cryptographic calculation lives in `commonMain`. No JCA/JCE, JNI, OpenSSL,
 BoringSSL, libsodium, CryptoKit or precompiled cryptographic library performs a
 core cryptographic operation. Shared implementation symbols require `InternalSpake2Api`
@@ -142,12 +148,17 @@ has a pinned distribution SHA-256. Android uses AGP 8.11.1 and compile SDK 35.
 
 Android requires an SDK configured by `ANDROID_HOME` or gitignored `local.properties`.
 Native/Node toolchains are downloaded by the Kotlin Gradle plugin as needed.
-The project does not configure a package publication or release task.
+`publishToMavenLocal` stages local Maven candidates. No remote publication
+repository or release task is configured.
 
 Actual commands, results, environment failures and platform limitations are in
 [validation.md](docs/validation.md); target configuration alone is never called a
 passing test. The [verification workflow](.github/workflows/verify.yml) is configured
-to run Linux, Android host tests and an iOS simulator job and preserve test reports.
+to run Linux, Android host tests and Darwin regressions and preserve test reports.
+Separate workflows verify [ART execution](.github/workflows/verify-android-art.yml)
+and [published-artifact consumers](.github/workflows/verify-publications.yml).
+Their actual execution status is recorded in the
+[round-2 Chinese delivery report](docs/round2/DELIVERY.zh-CN.md).
 
 ## Independent evidence and limitations
 
