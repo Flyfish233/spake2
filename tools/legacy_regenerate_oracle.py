@@ -22,7 +22,20 @@ BORINGSSL = '9e04aed2d1652441d2c84e85ed21acc05e053260'
 def run(oracle, rows):
     process = subprocess.run([str(oracle)], input='\n'.join('|'.join(row) for row in rows) + '\n', text=True, capture_output=True, check=True)
     result = [line.split('|') for line in process.stdout.splitlines()]
-    assert len(result) == len(rows)
+    if len(result) != len(rows):
+        raise ValueError(f'Oracle returned {len(result)} records for {len(rows)} requests')
+    for index, fields in enumerate(result):
+        # The comparator must never silently accept a truncated prefix through
+        # zip(). The C harness emits exactly six canonical lower-case fields.
+        if len(fields) != 6:
+            raise ValueError(f'Oracle record {index} must contain exactly 6 fields')
+        if fields[4] not in ('0', '1'):
+            raise ValueError(f'Oracle record {index} has an invalid status')
+        lengths = [64, 64, 64, 128, 1, 128 if fields[4] == '1' else 0]
+        for field in (0, 1, 2, 3, 5):
+            value = fields[field]
+            if len(value) != lengths[field] or any(char not in '0123456789abcdef' for char in value):
+                raise ValueError(f'Oracle record {index} field {field} has invalid length or encoding')
     return result
 
 
@@ -49,12 +62,14 @@ def main():
             requests.append(row(name, vector[name+'NameHex'], vector[other+'NameHex'], vector['passwordHex'], vector[name+'PrivateInput64Hex'], vector[name+'DisablePasswordScalarHack'], vector[other+'MessageHex']))
             expected.append([vector[name+'MessageHex'], None, None, None, str(int(vector[name+'Success'])), vector[name+'KeyHex']])
     for i, (observed, wanted) in enumerate(zip(run(oracle, requests), expected)):
-        for field, (actual, goal) in enumerate(zip(observed, wanted)):
-            assert goal is None or actual == goal, (i, field, actual, goal)
+        for field, goal in enumerate(wanted):
+            if goal is not None and observed[field] != goal:
+                raise ValueError(f'Oracle mismatch in historical record {i}, field {field}')
     normal = legacy['exchanges'][0]['alice']
     requests = [row('alice', normal['myNameHex'], normal['theirNameHex'], normal['passwordHex'], normal['generate']['privateInput64Hex'], False, c['process']['theirMessageHex']) for c in legacy['processCases']]
     for case, result in zip(legacy['processCases'], run(oracle, requests)):
-        assert result[4:] == [str(int(case['process']['success'])), case['process']['keyHex']], case['id']
+        if result[4:] != [str(int(case['process']['success'])), case['process']['keyHex']]:
+            raise ValueError(f'Oracle mismatch in historical peer case {case["id"]}')
 
     fresh_requests = []
     for index in range(24):
@@ -73,7 +88,8 @@ def main():
     for i in range(0, len(fresh_requests), 2):
         a, b = fresh_requests[i:i+2]
         ar, br = fresh_results[i:i+2]
-        assert ar[4] == br[4] == '1' and ar[5] == br[5]
+        if ar[4] != '1' or br[4] != '1' or ar[5] != br[5]:
+            raise ValueError(f'Oracle mismatch in fresh exchange {i // 2}')
         fresh_exchanges.append('|'.join([f'fresh-{i//2}', a[3], b[3], a[1], b[1], a[4], b[4], a[5], b[5], ar[0], br[0], ar[5], br[5]]))
 
     # Non-canonical y, x=0 sign variants, and seeded arbitrary encodings.
