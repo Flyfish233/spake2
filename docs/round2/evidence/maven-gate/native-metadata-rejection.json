@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "executedAtUtc": "2026-10-26T18:57:17.571587+00:00",
+  "repository": "/workspace/scratch/a46e59dd0882/round2-maven-local-final",
+  "version": "0.1.0-dev.round2-local-final",
+  "revision": "WORKTREE",
+  "error": "Wrong artifact location/name: spake2-macosarm64-0.1.0-dev.round2-local-final.module:macosArm64MetadataElements-published"
+}

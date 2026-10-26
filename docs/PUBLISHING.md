@@ -77,6 +77,13 @@ supported `kotlin.js.stdlib.dom.api.included=false` property. The baseline
 consumer does the same. The checker keeps its original stdlib-only dependency
 allow-list instead of silently admitting an unused runtime dependency.
 
+Apple target publications may also expose Kotlin's host-specific
+`kotlin-metadata` variant as a `-metadata.jar`, in addition to their primary
+KLIB. The checker follows the pinned KGP 2.2.21 schema for that exact variant,
+including original Gradle display names and Maven URLs. Such metadata cannot
+replace the main KLIB. Real generated metadata fixtures and negative cases
+cover this distinction; arbitrary extra JARs are not accepted.
+
 ## Separate build, published dependencies only
 
 `integration/consumer` and `integration/kadb-consumer` are independent Gradle

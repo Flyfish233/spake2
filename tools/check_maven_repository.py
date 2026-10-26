@@ -226,7 +226,7 @@ def check_metadata(path, repository, module, target, version, targets):
         read_file(expected)
     variants = value.get("variants")
     require(isinstance(variants, list) and variants, f"Missing variants: {path}")
-    names, links, artifacts, dependencies, library_variants = set(), set(), {}, [], 0
+    names, links, artifacts, dependencies, primary_library_variants = set(), set(), {}, [], 0
     for variant in variants:
         require(isinstance(variant, dict), f"Malformed variant: {path}")
         name = variant.get("name")
@@ -270,8 +270,16 @@ def check_metadata(path, repository, module, target, version, targets):
         require(isinstance(files, list) and files, f"Variant has no published files: {context}")
         category = attributes.get("org.gradle.category")
         require(category in {"library", "documentation"}, f"Unexpected variant category: {context}")
+        native_metadata = target in NATIVE_TARGETS and attributes.get("org.gradle.usage") == "kotlin-metadata"
+        if native_metadata:
+            # KGP 2.2.21 KotlinNativeHostSpecificMetadataArtifact inherits Native
+            # API attributes, changes usage, and publishes classifier "metadata".
+            require(category == "library" and attributes.get("artifactType") == "org.jetbrains.kotlin.klib" and
+                    attributes.get("org.gradle.jvm.environment") == "non-jvm",
+                    f"Incorrect Native metadata variant attributes: {context}")
         if category == "library":
-            library_variants += 1
+            if not native_metadata:
+                primary_library_variants += 1
             if module != "spake2-primitives":
                 require(any(item["group"] == GROUP for item in current_dependencies),
                         f"Missing primitives Gradle dependency: {context}")
@@ -279,6 +287,13 @@ def check_metadata(path, repository, module, target, version, targets):
             require(attributes.get("org.gradle.docstype") == "sources", f"Unexpected documentation variant: {context}")
         extension = "aar" if target == "android" else "jar" if target in (None, "jvm") else "klib"
         expected_file = f"{coordinate}-{version}." + extension if category == "library" else f"{coordinate}-{version}-sources.jar"
+        native_metadata_names = set()
+        if native_metadata:
+            expected_file = f"{coordinate}-{version}-metadata.jar"
+            # GMM can retain the original Jar task name after artifactId is
+            # customized: primitives-... versus spake2-primitives-... .
+            original_module_name = module.removeprefix("spake2-")
+            native_metadata_names = {expected_file, f"{original_module_name}-{target}-{version}-metadata.jar"}
         require(len(files) == 1, f"Unexpected number of variant files: {context}")
         for artifact in files:
             require(isinstance(artifact, dict), f"Malformed file descriptor: {context}")
@@ -288,7 +303,7 @@ def check_metadata(path, repository, module, target, version, targets):
             # spake2-release.aar) while its URL uses Maven coordinates.
             require(location.parent == path.parent and location.name == expected_file and isinstance(name, str) and name and
                     PurePosixPath(name).name == name and "\\" not in name and
-                    PurePosixPath(name).suffix == location.suffix,
+                    PurePosixPath(name).suffix == location.suffix and (not native_metadata or name in native_metadata_names),
                     f"Wrong artifact location/name: {context}")
             raw = read_file(location)
             require(type(artifact.get("size")) is int and artifact["size"] == len(raw),
@@ -297,9 +312,11 @@ def check_metadata(path, repository, module, target, version, targets):
             for algorithm in HASH_NAMES:
                 if algorithm in artifact:
                     require(artifact[algorithm] == digest(raw, algorithm), f"Incorrect artifact {algorithm}: {location}")
+            if native_metadata:
+                archive_entries(raw, location.name)
             artifacts[location.name] = {"size": len(raw), "sha256": digest(raw),
                                         "sidecarsChecked": check_sidecars(location, raw)}
-    require(library_variants > 0, f"Missing local library variant: {path}")
+    require(primary_library_variants > 0, f"Missing primary library variant: {path}")
     if target is None:
         require(links == set(targets), f"Missing target links in {path}: {sorted(set(targets) - links)}")
     return {"sha256": digest(read_file(path)), "variants": sorted(names),

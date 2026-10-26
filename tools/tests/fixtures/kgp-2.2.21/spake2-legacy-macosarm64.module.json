@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../spake2-legacy/0.1.0-dev.round2-local-final/spake2-legacy-0.1.0-dev.round2-local-final.module",
+    "group": "io.github.flyfish233",
+    "module": "spake2-legacy",
+    "version": "0.1.0-dev.round2-local-final",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.flyfish233",
+          "module": "spake2-primitives",
+          "version": {
+            "requires": "0.1.0-dev.round2-local-final"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "legacy-macosArm64Main-0.1.0-dev.round2-local-final.klib",
+          "url": "spake2-legacy-macosarm64-0.1.0-dev.round2-local-final.klib",
+          "size": 22763,
+          "sha512": "c0ddcee8ac7fb4745fc43292bd54af183e93f410e68625035e1cb4d70dfa1afd5b38c1a68bf26c7f0e4e00e45f3242addaeb390bdd878e77f49236716c03ee13",
+          "sha256": "d01df20b8f0acedda98c403bb4f3db2672dcfe3805e71bd3c4e6682fe23fb8d6",
+          "sha1": "4c4140f1b7e1c84b44ec01f58746706374eb5bc7",
+          "md5": "2ca6a669c6d33845f389fc425e1adf77"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "legacy-macosarm64-0.1.0-dev.round2-local-final-sources.jar",
+          "url": "spake2-legacy-macosarm64-0.1.0-dev.round2-local-final-sources.jar",
+          "size": 61357,
+          "sha512": "5b6d4d5d7c82b64e2e3e2c8291d18fc7fae828afde7fb8518edc1e29824101350c1554ae25ad5d8bc39c141f0db10c4fea15d6b4c6b0ce341916996c80372209",
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "sha1": "127f31baf1a3b7fd059a38284a6444562a00079b",
+          "md5": "2f5e48523544856bfc5cd79c99a9d9cf"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.flyfish233",
+          "module": "spake2-primitives",
+          "version": {
+            "requires": "0.1.0-dev.round2-local-final"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "legacy-macosarm64-0.1.0-dev.round2-local-final-metadata.jar",
+          "url": "spake2-legacy-macosarm64-0.1.0-dev.round2-local-final-metadata.jar",
+          "size": 261,
+          "sha512": "1487e5a20c9e4d74f298e07c42e96a61be11b7a768c3fbc199ee138cd68e1fc2267d1cfe3f11f288acc05df755315344d052cc5f6f751f126ab4fe1caa5125ea",
+          "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+          "sha1": "2ad14aed781c4a73ed4dbb421966d408a0a06686",
+          "md5": "f43436d6bec321290f6af228ad602604"
+        }
+      ]
+    }
+  ]
+}

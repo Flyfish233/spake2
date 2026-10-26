@@ -1,0 +1,24 @@
+E
+======================================================================
+ERROR: test_actual_native_metadata_task_names_survive_publication_renaming (__main__.MavenRepositoryGateTest.test_actual_native_metadata_task_names_survive_publication_renaming)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 283, in test_actual_native_metadata_task_names_survive_publication_renaming
+    report = self.verify()
+             ^^^^^^^^^^^^^
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 165, in verify
+    return gate.check_repository(self.repository, VERSION, REVISION, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/check_maven_repository.py", line 440, in check_repository
+    metadata = check_metadata(directory / f"{prefix}.module", repository, module, target, version, targets)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/check_maven_repository.py", line 299, in check_metadata
+    require(location.parent == path.parent and location.name == expected_file and isinstance(name, str) and name and
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/check_maven_repository.py", line 67, in require
+    raise VerificationError(message)
+check_maven_repository.VerificationError: Wrong artifact location/name: spake2-primitives-macosarm64-0.1.0-dev.gate-test.module:macosArm64MetadataElements-published
+
+----------------------------------------------------------------------
+Ran 1 test in 1.142s
+
+FAILED (errors=1)

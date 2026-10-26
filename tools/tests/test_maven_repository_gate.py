@@ -164,6 +164,23 @@ class MavenRepositoryGateTest(unittest.TestCase):
     def verify(self, **kwargs):
         return gate.check_repository(self.repository, VERSION, REVISION, **kwargs)
 
+    def install_actual_native_metadata_schema(self, module="spake2"):
+        """Replay captured KGP 2.2.21 GMM with test-local bytes and coordinates."""
+        artifact = f"{module}-macosarm64"
+        fixture = ROOT / "tools/tests/fixtures/kgp-2.2.21" / f"{artifact}.module.json"
+        data = json.loads(fixture.read_text())
+        data = json.loads(json.dumps(data).replace(data["component"]["version"], VERSION))
+        metadata_jar = self.path(artifact).with_name(f"{artifact}-{VERSION}-metadata.jar")
+        metadata_jar.write_bytes(packed({"META-INF/MANIFEST.MF": b"Manifest-Version: 1.0\r\n\r\n"}))
+        for variant in data["variants"]:
+            for item in variant.get("files", []):
+                raw = self.path(artifact).with_name(item["url"]).read_bytes()
+                item["size"] = len(raw)
+                for algorithm in ("sha256", "sha512", "sha1", "md5"):
+                    item[algorithm] = hashlib.new(algorithm, raw).hexdigest()
+        self.write_metadata(data, artifact)
+        return data
+
     def replace_archive_and_hashes(self, artifact, suffix, files):
         """Keep GMM digests valid so corruption reaches the notice inspection."""
         name = f"{artifact}-{VERSION}{suffix}"
@@ -252,6 +269,67 @@ class MavenRepositoryGateTest(unittest.TestCase):
                 with self.subTest(module=module, fault=fault):
                     self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
                                                     nested=True)
+
+    def test_actual_native_metadata_variant_roundtrip_is_accepted(self):
+        self.install_actual_native_metadata_schema()
+        report = self.verify()
+        publication = next(p for p in report["publications"] if p["artifact"] == "spake2-macosarm64")
+        self.assertIn(f"spake2-macosarm64-{VERSION}.klib", publication["metadata"]["files"])
+        self.assertIn(f"spake2-macosarm64-{VERSION}-metadata.jar", publication["metadata"]["files"])
+
+    def test_actual_native_metadata_task_names_survive_publication_renaming(self):
+        for module in ("spake2-primitives", "spake2-legacy"):
+            self.install_actual_native_metadata_schema(module)
+        report = self.verify()
+        for module in ("spake2-primitives", "spake2-legacy"):
+            publication = next(p for p in report["publications"] if p["artifact"] == f"{module}-macosarm64")
+            self.assertIn(f"{module}-macosarm64-{VERSION}-metadata.jar", publication["metadata"]["files"])
+
+    def test_native_metadata_cannot_replace_the_primary_klib(self):
+        data = self.install_actual_native_metadata_schema()
+        data["variants"] = [v for v in data["variants"] if v["attributes"]["org.gradle.usage"] != "kotlin-api"]
+        self.write_metadata(data, "spake2-macosarm64")
+        with self.assertRaisesRegex(gate.VerificationError, "Missing primary library variant|Primary binary is not referenced"):
+            self.verify()
+
+    def test_native_metadata_filename_and_attributes_remain_strict(self):
+        for field, value in (("name", "renamed.jar"), ("url", "renamed.jar"),
+                             ("org.gradle.usage", "kotlin-runtime"), ("org.gradle.category", "documentation"),
+                             ("org.jetbrains.kotlin.platform.type", "common"),
+                             ("org.jetbrains.kotlin.native.target", "linux_x64"),
+                             ("artifactType", "jar"), ("org.gradle.jvm.environment", "standard-jvm")):
+            with self.subTest(field=field):
+                data = self.install_actual_native_metadata_schema()
+                variant = next(v for v in data["variants"] if v["attributes"]["org.gradle.usage"] == "kotlin-metadata")
+                if field in {"name", "url"}:
+                    variant["files"][0][field] = value
+                else:
+                    variant["attributes"][field] = value
+                self.write_metadata(data, "spake2-macosarm64")
+                with self.assertRaises(gate.VerificationError):
+                    self.verify()
+
+    def test_native_metadata_bytes_and_existence_are_checked(self):
+        self.install_actual_native_metadata_schema()
+        path = self.path("spake2-macosarm64").with_name(f"spake2-macosarm64-{VERSION}-metadata.jar")
+        original = path.read_bytes()
+        path.unlink()
+        with self.assertRaisesRegex(gate.VerificationError, "Missing published file"):
+            self.verify()
+        path.write_bytes(bytes([original[0] ^ 1]) + original[1:])
+        with self.assertRaisesRegex(gate.VerificationError, "Incorrect artifact"):
+            self.verify()
+
+    def test_native_metadata_exception_does_not_allow_js_metadata_jars(self):
+        data = self.metadata("spake2-js")
+        extra = json.loads(json.dumps(data["variants"][0]))
+        extra["name"] = "jsMetadataElements-published"
+        extra["attributes"]["org.gradle.usage"] = "kotlin-metadata"
+        extra["files"][0]["name"] = extra["files"][0]["url"] = f"spake2-js-{VERSION}-metadata.jar"
+        data["variants"].append(extra)
+        self.write_metadata(data, "spake2-js")
+        with self.assertRaisesRegex(gate.VerificationError, "Wrong artifact location/name"):
+            self.verify()
 
     def test_missing_module_and_missing_target_are_rejected(self):
         for artifact in ("spake2-primitives", "spake2-iossimulatorarm64"):
