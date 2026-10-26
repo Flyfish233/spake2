@@ -1,0 +1,12 @@
+RFC 9382: SPAKE2, W. Ladd, September 2023
+Copyright (c) 2023 IETF Trust and the persons identified as the document authors. All rights reserved.
+https://www.rfc-editor.org/rfc/rfc9382
+
+RFC 5869: HKDF, H. Krawczyk and P. Eronen, May 2010
+Copyright (c) 2010 IETF Trust and the persons identified as the document authors. All rights reserved.
+https://www.rfc-editor.org/rfc/rfc5869
+
+The documents are subject to BCP 78 and the IETF Trust Legal Provisions in effect at their respective publication dates.
+https://trustee.ietf.org/license-info
+
+The IETF Trust clarified on September 21, 2021 that the older name Simplified BSD was an error: its text has always been the Revised BSD license. See LICENSE-BSD for the preserved code-component terms. Official test-vector data retains these source notices; generated test harness code is separately AGPL-3.0-only.

@@ -9,7 +9,7 @@ optimization and caches limit both timing assurances and guaranteed erasure.
 
 Applications must supply a cryptographically secure random source and define
 password normalization, memory-hard preprocessing and canonical password-scalar
-derivation. There is no default fast password hash.
+derivation. The RFC API provides no default password hash. The explicitly selected Legacy API retains SHA-512(password bytes), because it is required by the historical wire protocol.
 
 RFC session keys must remain unavailable until peer confirmation succeeds. Legacy
 BoringSSL compatibility has different semantics and requires explicit selection.

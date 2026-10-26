@@ -1,0 +1,17 @@
+{
+  "executedAtUtc": "2026-10-26T07:38:15.401066+00:00",
+  "boringsslCommit": "9e04aed2d1652441d2c84e85ed21acc05e053260",
+  "harnessSha256": "380a2b0cd469b8b0d7b960f573e53e4f12e3ea579b0e49457208ffefa9844687",
+  "oracleExecutableSha256": "b440d3810902561f4f1389cbe9d17d0619fffb10afe4889cc9a79d278760a34c",
+  "historicalFuzzExchangesReexecuted": 512,
+  "historicalDeterministicExchangesReexecuted": 7,
+  "historicalPeerCasesReexecuted": 4,
+  "freshExchanges": 24,
+  "freshPeerCases": 108,
+  "freshPeerAccepted": 52,
+  "result": "all historical output bytes matched",
+  "inputSha256": {
+    "boringssl-spake2-fuzz-vectors.jsonl": "310d4e3b9d701a8478eaab4459ca2a56ba1f22158afa8fa8fae34d56e087f183",
+    "boringssl-spake2-vectors.json": "94ed5b9c564794eac6d2494966ff3ae479d872171f6a70286f504cbe4bfe8d94"
+  }
+}
