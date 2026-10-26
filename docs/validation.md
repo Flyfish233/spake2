@@ -13,4 +13,15 @@ All entries distinguish execution from configuration, compilation and intended w
 
 ## Execution results
 
-Pending first build. Configuration of a target is not evidence of a passing test.
+Configuration of a target is not evidence of a passing test.
+
+### M1 independent bootstrap checks
+
+- Kotlin/JVM 2.0.21 compiler bundled with Gradle 8.14.3; JDK 17.0.21+9.
+- `python3 tools/hash_differential.py --gradle-home <gradle-8.14.3> --java <jdk>/bin/java`: **671/671** comparisons against Python hashlib/hmac. Tests cover SHA-256/SHA-512 padding boundaries, HMAC block boundaries and HKDF output lengths through 8160 bytes.
+- `tools/jvm_math_probe.kt`: **4000/4000** field cases against test-only JVM BigInteger, plus **60/60** P-256 products against independently generated Python/OpenSSL fixtures. Production code contains no BigInteger/JCA implementation.
+- `python3 tools/generate_math_vectors.py`: Python 3.12.14, cryptography 50.0.2, OpenSSL 4.0.3; generated 80 portable field fixtures and 60 portable curve fixtures.
+- Gradle 8.14.3 distribution and generated wrapper JAR SHA-256 match official published checksums.
+- Initial Gradle attempt failed at dependency resolution before compilation. An environment-local proxy/system trust-store runner resolved this; the retry reached Kotlin 2.2.21 compilation and JVM test execution. Final results are recorded below when complete.
+
+The bootstrap compiler checks supplement, and do not replace, the pinned Kotlin 2.2.21 multiplatform tests.
