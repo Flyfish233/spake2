@@ -1,0 +1,193 @@
+{
+  "reviewedUtc": "2026-10-26T08:42:17.665555+00:00",
+  "sourceManifestSha256": "f23aa680b7028768a15363f8f550e3e2d33e3b9ba8111ed834e0c7affe03c4f6",
+  "compiler": "Kotlin 2.2.21 JS IR development executable",
+  "node": {
+    "version": "v22.0.0",
+    "imulType": "function",
+    "imulNative": true,
+    "sha256": "0570891fc6e07540b25f18b753445fc16d4428b8a894cca5cf9805c2feee230f"
+  },
+  "yarnVersion": "1.22.17",
+  "yarnLockSha256": "5bbf68d7803603d21abddde3a033b43de7af77619e431d790b1c0ce626c76940",
+  "artifacts": {
+    "build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-stdlib.js": {
+      "bytes": 654079,
+      "sha256": "bcfb6d4e927490abea9fd45949d5136619312d8ae86837b874c2eea3159cc763"
+    },
+    "build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-test.js": {
+      "bytes": 23731,
+      "sha256": "6fcd25c3acbcd7085290e925634e9a685c3cc009db9cc17252e5216504ff17a4"
+    },
+    "build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin_org_jetbrains_kotlin_kotlin_dom_api_compat.js": {
+      "bytes": 566,
+      "sha256": "e53a8fae4defa7920dba65ee415362cae60b0b934cd0ffb88b5bd39a316188f1"
+    },
+    "build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-legacy.js": {
+      "bytes": 30627,
+      "sha256": "efb1ce363034b6890d8bdb6e5344803ffc4cea0d1ece8f7c6e87752ab9677bb7"
+    },
+    "build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-primitives.js": {
+      "bytes": 91684,
+      "sha256": "a3f297ce813722813cbf758816c4337ca3f142b2cd16a256e63f7a2c84fc07e4"
+    },
+    "build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-test.js": {
+      "bytes": 121550,
+      "sha256": "cca25ee6f37d95082e04255937273ac20a4fb5018a3d52cd607675dbcdef5055"
+    },
+    "build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2.js": {
+      "bytes": 38545,
+      "sha256": "94eafe6b12144a8a3279e1aa3574a7e6865fcdb32f3e8d26719f56ef634510d4"
+    }
+  },
+  "regions": {
+    "ModMath.multiply": {
+      "artifact": "build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-primitives.js",
+      "lineStart": 1628,
+      "lineEnd": 1702,
+      "sha256": "aa1e1c74d7f86ea7c8bd1922968a619b321b679f802973985797e890f4e8a321"
+    },
+    "Sha512.digest": {
+      "artifact": "build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-primitives.js",
+      "lineStart": 768,
+      "lineEnd": 890,
+      "sha256": "556abc6d1dff2a44ea9d0e136a2d6d6bb74501ebea4083371cf78eee12e5e3e7"
+    },
+    "Long.fromInt": {
+      "artifact": "build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-stdlib.js",
+      "lineStart": 2851,
+      "lineEnd": 2854,
+      "sha256": "b8f1e8faf40d49d82d0cefccd5e5d360476743b4ca9c734300b91f89338feb13"
+    },
+    "Math.imulFallback": {
+      "artifact": "build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-stdlib.js",
+      "lineStart": 11,
+      "lineEnd": 15,
+      "sha256": "c8815bc2fe6478dad91d0ad5a138cdfdf600be1cb35150e123da65500818d8e2"
+    },
+    "Long.add": {
+      "artifact": "build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-stdlib.js",
+      "lineStart": 2570,
+      "lineEnd": 2596,
+      "sha256": "389b4714029b1fe4ae633df2c2dbd6e5e8919647b5751dfa93067f60044c7bb1"
+    }
+  },
+  "checks": {
+    "integerMultiplyUsesMathImul": true,
+    "integerMultiplyUsesInt32Array": true,
+    "integerMultiplyAvoidsBoxedLong": true,
+    "integerCarryUsesUnsignedShift16": true,
+    "sha512MasksByteBeforeLongConversion": true,
+    "fromIntHasNoLookupCache": true,
+    "boxedLongAdditionHasNoOperandBranchInEmittedBody": true
+  },
+  "scope": "Inspection of actual generated development-test JavaScript; does not prove constant-time engine or machine-code execution.",
+  "verifiedSourceRevision": {
+    "remoteCommit": "b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "remoteTree": "9144c7480ec823844a590bcb304d0d8f5b553128",
+    "remoteUrl": "https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "equivalentLocalCommit": "bf45e30f01b68669a56e719826991fe3fee6bdc6"
+  },
+  "allModuleArtifactChecks": [
+    {
+      "module": ".",
+      "primitivesArtifact": "build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-primitives.js",
+      "primitivesSha256": "a3f297ce813722813cbf758816c4337ca3f142b2cd16a256e63f7a2c84fc07e4",
+      "stdlibArtifact": "build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-stdlib.js",
+      "stdlibSha256": "bcfb6d4e927490abea9fd45949d5136619312d8ae86837b874c2eea3159cc763",
+      "multiplyBodySha256": "aa1e1c74d7f86ea7c8bd1922968a619b321b679f802973985797e890f4e8a321",
+      "sha512DigestBodySha256": "556abc6d1dff2a44ea9d0e136a2d6d6bb74501ebea4083371cf78eee12e5e3e7",
+      "fromIntBodySha256": "b8f1e8faf40d49d82d0cefccd5e5d360476743b4ca9c734300b91f89338feb13",
+      "integerMultiplyChecksPassed": true,
+      "unsignedByteLoadCheckPassed": true,
+      "fromIntNoCacheCheckPassed": true
+    },
+    {
+      "module": "legacy",
+      "primitivesArtifact": "legacy/build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-primitives.js",
+      "primitivesSha256": "0b1f28ce7350d6d4d84926d12571c10336737306867c43e311464a51901bd5ff",
+      "stdlibArtifact": "legacy/build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-stdlib.js",
+      "stdlibSha256": "769d22504fd033d6f903bd40f218f15a43c565ea8c43296248cb8666ca56fcc2",
+      "multiplyBodySha256": "dcbb2687a7f436497880a89078fbf557eee5da866d5b462bcca0340cd8f7db70",
+      "sha512DigestBodySha256": "c837fc23facb1c31d7d843a7d66e0447a3d83be464ea47a88de1abff0b64f0b3",
+      "fromIntBodySha256": "b8f1e8faf40d49d82d0cefccd5e5d360476743b4ca9c734300b91f89338feb13",
+      "integerMultiplyChecksPassed": true,
+      "unsignedByteLoadCheckPassed": true,
+      "fromIntNoCacheCheckPassed": true
+    },
+    {
+      "module": "primitives",
+      "primitivesArtifact": "primitives/build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-primitives.js",
+      "primitivesSha256": "49d035d22c96740a4427111d6ade739562144e8a56bb7c7de369046058cf06a8",
+      "stdlibArtifact": "primitives/build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-stdlib.js",
+      "stdlibSha256": "a91aed8dc505a8c4d3b925d58475950e013d0f7ead877cff1640f9c8b3de6a3a",
+      "multiplyBodySha256": "aa1e1c74d7f86ea7c8bd1922968a619b321b679f802973985797e890f4e8a321",
+      "sha512DigestBodySha256": "556abc6d1dff2a44ea9d0e136a2d6d6bb74501ebea4083371cf78eee12e5e3e7",
+      "fromIntBodySha256": "b8f1e8faf40d49d82d0cefccd5e5d360476743b4ca9c734300b91f89338feb13",
+      "integerMultiplyChecksPassed": true,
+      "unsignedByteLoadCheckPassed": true,
+      "fromIntNoCacheCheckPassed": true
+    }
+  ],
+  "moduleVariantNotes": "The Legacy linked function bodies differ from the RFC/primitives copies only in generated local fill/rotate aliases. All three emitted variants independently passed the integer-multiply, unsigned-byte-loading, and no-cache checks.",
+  "jsExecutionSummary": "../test-results/final-platform-js.json",
+  "jsExecutedTests": 71,
+  "jsExecutionFailures": 0,
+  "generatedLockFiles": {
+    "kotlin-js-store/yarn.lock": "5bbf68d7803603d21abddde3a033b43de7af77619e431d790b1c0ce626c76940"
+  },
+  "additionalInternalReviews": [
+    {
+      "role": "P-256/ModMath engineer, separate emitted-code inspection",
+      "reportedUtc": "2026-10-26T08:48:54.171979+00:00",
+      "artifactSha256": "a3f297ce813722813cbf758816c4337ca3f142b2cd16a256e63f7a2c84fc07e4",
+      "finding": "Exactly three Math.imul calls, Int32Array(33), wrapping Int sums, unsigned carry extraction, only public-loop branches, no Long helper in secret multiplication. Feature-dependent fallback is fixed arithmetic and exact for 16-bit limb products. No new issue found.",
+      "limitation": "Internal project review of emitted structure, not an external security audit or timing certification."
+    },
+    {
+      "role": "Hash/reference-vector engineer, separate emitted-code inspection",
+      "reportedUtc": "2026-10-26T08:49:51.207356+00:00",
+      "artifactSha256": "a3f297ce813722813cbf758816c4337ca3f142b2cd16a256e63f7a2c84fc07e4",
+      "finding": "Confirmed unsigned mask before uncached boxed fromInt in all three module artifacts. Inspected Long constructor/getters, chunk addition, bitwise helpers, logical shifts and output byte conversion; no additional secret-value-controlled branch or lookup found in these paths. Arithmetic shiftRight has a sign branch but is not used for secret SHA512 words. Lazy initialization and singleton guards initialize public constants and depend on initialization state. All recorded primary and module-variant artifact hashes matched.",
+      "limitation": "Internal project review of the exact development-test JavaScript; not an external audit or strict constant-time guarantee."
+    }
+  ],
+  "runtimePackageCopiesVerified": [
+    {
+      "compiled": "build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-primitives.js",
+      "runtimePackage": "build/js/packages/spake2-test/kotlin/spake2-primitives.js",
+      "sha256": "a3f297ce813722813cbf758816c4337ca3f142b2cd16a256e63f7a2c84fc07e4",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-stdlib.js",
+      "runtimePackage": "build/js/packages/spake2-test/kotlin/kotlin-kotlin-stdlib.js",
+      "sha256": "bcfb6d4e927490abea9fd45949d5136619312d8ae86837b874c2eea3159cc763",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "legacy/build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-primitives.js",
+      "runtimePackage": "build/js/packages/spake2-legacy-test/kotlin/spake2-primitives.js",
+      "sha256": "0b1f28ce7350d6d4d84926d12571c10336737306867c43e311464a51901bd5ff",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "legacy/build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-stdlib.js",
+      "runtimePackage": "build/js/packages/spake2-legacy-test/kotlin/kotlin-kotlin-stdlib.js",
+      "sha256": "769d22504fd033d6f903bd40f218f15a43c565ea8c43296248cb8666ca56fcc2",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "primitives/build/compileSync/js/test/testDevelopmentExecutable/kotlin/spake2-primitives.js",
+      "runtimePackage": "build/js/packages/spake2-primitives-test/kotlin/spake2-primitives.js",
+      "sha256": "49d035d22c96740a4427111d6ade739562144e8a56bb7c7de369046058cf06a8",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "primitives/build/compileSync/js/test/testDevelopmentExecutable/kotlin/kotlin-kotlin-stdlib.js",
+      "runtimePackage": "build/js/packages/spake2-primitives-test/kotlin/kotlin-kotlin-stdlib.js",
+      "sha256": "a91aed8dc505a8c4d3b925d58475950e013d0f7ead877cff1640f9c8b3de6a3a",
+      "byteIdentical": true
+    }
+  ]
+}

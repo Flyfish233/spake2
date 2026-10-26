@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.RfcFailureTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:53:37.597Z" hostname="c9d49951d07d" time="41.341">
+  <properties/>
+  <testcase name="wrongPasswordIdentityAIdentityBAndAadAllPreventKeyRelease[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="14.305"/>
+  <testcase name="cannotReleaseAKeyBeforeConfirmationOrBeforePeerMessage[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.762"/>
+  <testcase name="malformedConfirmationLengthAndContentAreTerminal[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="6.562"/>
+  <testcase name="sameRoleFailsConfirmation[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.866"/>
+  <testcase name="repeatedOperationsAndDestroyAreTerminal[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="3.27"/>
+  <testcase name="successfulKeyCanOnlyBeReleasedOnce[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="3.783"/>
+  <testcase name="sourceFailureWrongLengthAndOutOfRangeCandidatesTerminateAndWipe[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.001"/>
+  <testcase name="rejectionSamplingRejectsOrderAndLargerValuesAndConsumesFreshEntropy[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.261"/>
+  <testcase name="zeroEphemeralMatchesPublishedMasksAndCannotReleaseAKey[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="3.673"/>
+  <testcase name="entropyCallbackReentrancyPoisonsTheOwningOperation[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.344"/>
+  <testcase name="invalidScalarAndInputBoundsAreRejectedBeforeUse[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.002"/>
+  <testcase name="hostilePointEncodingsAreRejectedAndOwnedSecretsErased[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="1.595"/>
+  <testcase name="callerArraysAreDefensivelyCopiedAndMessagesHaveIndependentStorage[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.875"/>
+  <testcase name="boundedMalformedInputFuzzIsTerminal[wasmJs, node]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="5.024"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

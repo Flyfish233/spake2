@@ -14,9 +14,11 @@
     "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt": "ba7f4e577d78ca100980259b1532a9e56b3ae761d8a4e7a2d146669f34e9a51c",
     "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt": "83df5ca78322078493d89628db2cc6b1e45268bd22d0237c7bc3bbcd2b62a84a"
   },
-  "generatedJavaScriptReview": "pending corrected build; no emitted-code claim yet",
+  "generatedJavaScriptReview": "completed against actual corrected development-test artifacts; see js-runtime-emitted.json",
   "reviewBaselineLocalSnapshot": "2284fd077b0c67d1b2bdad42f5d691197ef1757e",
   "reviewBaselineRemoteCommit": "9ce242f80f61ab3bd9b822394ba101de5dbf3588",
   "reviewBaselineGitTree": "e6c87147db06971cd52763b79c8a22f39904d3ca",
-  "reviewBaselineRemoteUrl": "https://github.com/Flyfish233/spake2/commit/9ce242f80f61ab3bd9b822394ba101de5dbf3588"
+  "reviewBaselineRemoteUrl": "https://github.com/Flyfish233/spake2/commit/9ce242f80f61ab3bd9b822394ba101de5dbf3588",
+  "generatedJavaScriptEvidence": "js-runtime-emitted.json",
+  "correctedSourceRemoteCommit": "b837aba27bebc1050965fa124c2efa54b4e4544a"
 }

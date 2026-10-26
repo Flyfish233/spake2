@@ -29,7 +29,7 @@ implemented. The project has no Kadb-specific interfaces, identities or defaults
 
 Every cryptographic calculation lives in `commonMain`. No JCA/JCE, JNI, OpenSSL,
 BoringSSL, libsodium, CryptoKit or precompiled cryptographic library performs a
-production operation. Shared implementation symbols require `InternalSpake2Api`
+core cryptographic operation. Shared implementation symbols require `InternalSpake2Api`
 opt-in; they are not supported application APIs. The RFC artifact has no production
 dependency on the Legacy artifact.
 

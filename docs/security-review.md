@@ -10,6 +10,14 @@ evidence, **not an independent audit of those two implementations**. This
 document does not represent an external professional audit, formal proof, or
 runtime side-channel certification.
 
+The final implementation corrections are at
+[`b837aba27bebc1050965fa124c2efa54b4e4544a`](https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a).
+The [validation ledger](validation.md) records the completed cross-platform
+run and links its per-method evidence. The [final API review](final-api-review.md),
+[carry-bound review](math-int-carry-review.md) and
+[emitted-JS review](js-runtime-review.md) separate later source findings from
+the historical observations below.
+
 ## Scope and result
 
 The review inspected the actual common Kotlin implementations, public API
@@ -42,7 +50,7 @@ claims are deliberately distinguished.
 | SR-07 | Low / cleanup hardening | RFC `erase()` and `TranscriptSecrets.destroy()` allocated an `arrayOf` before wiping their buffers. Allocation failure during cleanup could prevent those stores and terminal-state publication. | **Fixed, source reviewed.** Both cleanup functions now use direct `fill(0)` calls with no temporary reference-array allocation. This removes the identified allocation site; no general allocation-failure or physical-erasure guarantee is asserted. |
 | SR-08 | Medium / provenance | The initial combined IETF notice attributed the section-4 BSD code-component license to RFC 9382. That RFC is in the IRTF stream, for which TLP section 8.g excludes section 4. | **Corrected against primary terms.** RFC 9382's original notice, the applicable alternate-stream rules, and the complete TLP reference are retained. RFC fixture/generator headers and `THIRD_PARTY.md` reflect those terms. The separate BSD notice is explicitly scoped to RFC 5869. |
 | SR-09 | Medium / conformance | The initial RFC rejection sampler excluded zero, choosing from `[1,q)` instead of the section-3.3 interval `[0,q)`. Documentation alone did not resolve that mismatch. | **Source corrected and separately reviewed.** Canonical zero is consumed once, while degenerate public/shared points still fail before key release. Four independent M/N message expectations, zero-password cases, cleanup and terminal reuse form the regression; final execution evidence is recorded in the validation ledger. |
-| SR-10 | Medium / runtime side channel | Kotlin/JS 2.2.21 boxed `Long` multiplication has value-dependent helper branches, reached by secret field limbs. Signed-byte widening before masking in SHA-512 can also take the helper's sign branch based on message data. | **Focused common-code hardening under verification.** Montgomery inner sums use wrapping 32-bit words with an exact carry bound; SHA-512 masks bytes before widening. The separate mathematical and JS runtime reviews distinguish source proof, emitted-code inspection and actual tests from a strict constant-time claim. |
+| SR-10 | Medium / runtime side channel | Kotlin/JS 2.2.21 boxed `Long` multiplication has value-dependent helper branches, reached by secret field limbs. Signed-byte widening before masking in SHA-512 can also take the helper's sign branch based on message data. | **Fixed and separately reviewed; cross-platform regressions passed.** Montgomery inner sums use wrapping 32-bit words with an exact carry bound; SHA-512 masks bytes before widening. The actual emitted Kotlin/JS paths were inspected and matched to the executed runtime packages. Independent arithmetic checks and the final CI run passed. These observations remove the identified helper paths; they do not establish strict constant-time execution. |
 
 ### SR-01/SR-04: concurrency reasoning
 

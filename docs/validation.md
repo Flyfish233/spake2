@@ -2,6 +2,70 @@
 
 All entries distinguish execution from configuration, compilation and intended work.
 
+## Final verified implementation
+
+The final code, tests, build configuration and dependency lock are at
+[`b837aba27bebc1050965fa124c2efa54b4e4544a`](https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a),
+Git tree `9144c7480ec823844a590bcb304d0d8f5b553128`. The final delivery commit adds
+reports, logs and documentation corrections only. Its implementation inputs are
+identical to that tested snapshot; it does not silently attribute old tests to
+new code.
+
+All three jobs in [GitHub Actions run 40294194097](https://github.com/Flyfish233/spake2/actions/runs/40294194097)
+completed successfully. All three artifacts were downloaded and checked against
+GitHub's recorded SHA-256 digests. The JUnit files were parsed to verify suite
+counts, individual method outcomes and zero failures, errors or skipped tests.
+
+| Target | Executed methods | Actual execution scope | Command / evidence |
+| --- | ---: | --- | --- |
+| JVM | **80 / 80** | Three modules on JDK 17, including JVM-only arithmetic and real-thread misuse tests | `jvmTest`; [Linux CI record](test-logs/github-actions/40294194097-linux-summary.json) |
+| Linux Native x86-64 | **71 / 71** | Three compiled native test executables | `linuxX64Test`; same Linux CI record |
+| JavaScript / Node | **71 / 71** | Actual Node execution of the JS target | `jsNodeTest`; same Linux CI record |
+| Wasm / Node | **71 / 71** | Actual KotlinWasmNode execution, including the full Legacy corpus | `wasmJsNodeTest`; same Linux CI record |
+| Android | **71 / 71**, plus **3 AARs** | Android host JVM unit tests and AAR compilation; no device, emulator or ART execution | `-PenableAndroid=true assembleDebug testDebugUnitTest`; [Android record](test-logs/github-actions/40294194097-android-summary.json) |
+| iOS Simulator Arm64 | **71 / 71** | Actual Apple Silicon simulator execution on macOS 26.6.2 | `iosSimulatorArm64Test`; [iOS record](test-logs/github-actions/40294194097-ios-summary.json) |
+| iOS device Arm64 | Compilation only | `compileKotlinIosArm64` completed in all three modules; no physical-device execution | Same iOS job and record |
+| iOS Simulator x86-64 | Configured only | The available macOS runner was Arm64; this simulator architecture was not executed | No passing-test claim |
+
+JVM has 23 RFC/integration, 31 Legacy and 26 primitive methods. Each executed
+common-test target has 22 RFC/integration, 30 Legacy and 19 primitive methods.
+Fixture loops include 512 historical Legacy exchanges and are not counted as
+512 extra test methods. Repeating the same common suite on several targets is
+cross-platform evidence, not hundreds of independent cryptographic test designs.
+JS and Wasm were executed in Node, not browser engines. The local run records
+Node 22.0.0; the CI log does not print the test-runtime Node version, so that
+CI-specific version remains unasserted.
+
+The Linux job ran
+`./gradlew --no-daemon jvmTest linuxX64Test jsNodeTest wasmJsNodeTest`, reporting
+**BUILD SUCCESSFUL in 10m 3s**, with 102 actionable tasks executed. The Android
+command reported **58s**, with 93 tasks executed. The iOS job ran
+`./gradlew --no-daemon compileKotlinIosArm64 iosSimulatorArm64Test`, reporting
+**5m 37s**. These are Gradle wall times, not isolated protocol benchmarks.
+
+The workflow checked out GitHub's temporary PR test merge
+`ca8fab7b03d54e60e10c90505a25ad7efd08e4fb`. Its tree equals the source commit's
+tree above; the [independent comparison](test-logs/github-actions/40294194097-source-comparison.json)
+contains no changed files. This test merge is not a merge of the development
+branch into `main`: PR #1 remains draft and unmerged, and `main` remains the
+initial commit. Raw job logs and per-case summaries are retained in the
+repository, independently of the 14-day Actions artifact retention.
+Raw console logs retain their original trailing spaces and final blank lines;
+the repository-wide whitespace checker reports these intentional evidence
+bytes. The staged prose, JSON and XML whitespace check passed. Logs were not
+normalized after recording their digests.
+
+The final report-only commit deliberately uses `[skip ci]` after verifying that
+no source, test, build, workflow or lock input changed. The green run is linked
+to the exact tested code commit above, rather than described as a new run on
+that documentation commit. The workflow remains available for future changes
+and manual dispatch.
+
+See [local platform execution](final-platform-validation.md),
+[Android validation](android-validation.md), [Native validation](native-validation.md),
+[independent vector provenance](reference-vectors.md) and
+[Chinese delivery report](DELIVERY.zh-CN.md) for the complete scope and limits.
+
 ## Initialization
 
 * Repository verified private and empty, with write permission on 2026-10-26.
@@ -59,9 +123,13 @@ The initial GitHub run is
 Its Android and iOS artifacts were downloaded, SHA-256 checked, and parsed as
 JUnit XML. Per-method records and raw job logs are retained under
 `test-logs/github-actions/40289938442-*`, so the recorded evidence does not rely
-only on GitHub's 14-day artifact retention. Linux/JS/Wasm status is recorded
-separately when the relevant run completes; the two successful jobs above do
-not imply success of that still-running job.
+only on GitHub's 14-day artifact retention. Its Linux job was cancelled by
+the workflow's concurrency rule when the corrected-source commit started a new
+run. Its partial artifact contains JVM 77 and Native 69 passing methods, plus
+21 root-module JS methods; it does not establish complete JS or Wasm success.
+The cancellation log and partial per-method summary are retained as
+`40289938442-linux-cancelled.txt` and `40289938442-linux-partial-summary.json`.
+The complete corrected-source run is reported separately below.
 
 ### Corrections after the initial platform checkpoint
 
@@ -123,6 +191,21 @@ tests. The failed log remains in `test-logs/final-platforms/attempt-1-*`.
 The exact internal cause of that one-off compiler-state failure has not been
 established; no duplicate source or protocol workaround was introduced.
 
-The combined run continues with JS/Wasm/Native. A passing JVM phase is not a
-claim that the entire multi-target command has already succeeded. Updated
-platform totals and the final GitHub run will be appended after actual completion.
+The complete combined command subsequently exited **0**, reporting
+**BUILD SUCCESSFUL in 33m 4s**: 122 actionable tasks, 106 executed and 16 up to
+date. All four target suites actually ran and passed:
+
+| Local target | RFC/integration | Primitives | Legacy | Methods | Failures / errors / skipped |
+| --- | ---: | ---: | ---: | ---: | --- |
+| JVM | 23 | 26 | 31 | 80 | 0 / 0 / 0 |
+| JS / Node 22.0.0 | 22 | 19 | 30 | 71 | 0 / 0 / 0 |
+| Wasm / Node 22.0.0 | 22 | 19 | 30 | 71 | 0 / 0 / 0 |
+| Linux Native x86-64 | 22 | 19 | 30 | 71 | 0 / 0 / 0 |
+
+All 58 frozen source/build files matched both the final worktree and the Git
+blobs of the tested code commit. Source and executable hashes, archived JUnit
+XML, actual Node/Wasm package identities, the complete log and exit metadata
+are described in [final-platform-validation.md](final-platform-validation.md).
+The local Native suite times sum to 732.997 seconds; this shared host's runtime
+differs from CI and is not an isolated performance benchmark. The source
+manifest and individual target records preserve that distinction.

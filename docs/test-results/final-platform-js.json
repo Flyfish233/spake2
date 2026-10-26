@@ -1,0 +1,80 @@
+{
+  "capturedUtc": "2026-10-26T08:46:51.450808+00:00",
+  "sourceManifestSha256": "f23aa680b7028768a15363f8f550e3e2d33e3b9ba8111ed834e0c7affe03c4f6",
+  "verifiedSourceRevision": {
+    "remoteCommit": "b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "remoteTree": "9144c7480ec823844a590bcb304d0d8f5b553128",
+    "remoteUrl": "https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "equivalentLocalCommit": "bf45e30f01b68669a56e719826991fe3fee6bdc6"
+  },
+  "sourceManifest": "../test-logs/final-platform-source.json",
+  "target": "jsNodeTest",
+  "status": "passed",
+  "frozenSourcesUnchanged": true,
+  "modules": [
+    {
+      "module": "rfc",
+      "tests": 22,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "testSeconds": 49.716
+    },
+    {
+      "module": "legacy",
+      "tests": 30,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "testSeconds": 239.234
+    },
+    {
+      "module": "primitives",
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "testSeconds": 10.88
+    }
+  ],
+  "totals": {
+    "tests": 71,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "reports": {
+    "docs/test-logs/final-platforms/js-junit/rfc-TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml": "2c08cb3d53e0aec5ab887f5b23f870046a0929c1cd1fde65db5bd0763fc57842",
+    "docs/test-logs/final-platforms/js-junit/rfc-TEST-io.github.flyfish233.spake2.RfcFailureTest.xml": "0811373a3a6da0b9a59fcc58b05bcaadd7dabeffbaea85afc84cf1c083acbfce",
+    "docs/test-logs/final-platforms/js-junit/rfc-TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml": "1d4435247861f917497e8c9bf1d6361e2a326842c9dbe013d8bc07d30d3c2f9d",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml": "399ed41cd51580d548528970f67a094bf6bbef1074481d14e4e3af276ec65065",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml": "d1910f917d331add98c2ca0a552692973c636f5ce64fb28578a735216f573588",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml": "d1a077f0738d74b8f49e2e98f80354999e9a1c603b21075107c0571977362400",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml": "d3afe9eab6afd1b8c500f3fc60d2d1cccd00ce4741f4f32cc4336b2ae44e13f9",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml": "a881117f6766aaefffe0057da0168696a2265393a1a1c1fb0f3e3f3d66b17b7f",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml": "e1b1ecb8a623c5ec1c6dbebee3ada9e541c9e440832098e913fb7f7f49781e6e",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml": "602f7900b5bbefa3e8725a53d9aef70e501fe84c820bb83e2e4df94ef0f9013e",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml": "aefb8ebd99c9e7601ad5439dfd54cdb0eb0e07757f645adad7410c59a7a18893",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml": "a0ce4dd6d94dcbfeea01d3985109ad496d91fb5dd1b3433766247fd8cc1d83bf",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml": "d282c46141c3cedfcb6594d82859bde1b1218ebabfcfe257a51a35f8e3965a9e",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml": "8ab0b569ce79b42a778d243767734bf52827b053a48a0ceccd66c2843ad00689",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml": "1b6a592fd592a57216637f94d57ac278aafc32f45c5783f75ce5f76fcdfa906b",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml": "ba495d615823430758568ae7db8e09827ab0ed57cfcb34f486b3e85cda95e15e",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml": "a63003d71eed7297c49cbd0f64b7b90df8bcdf2a128ed93534dbd11af7eb3448",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml": "8378c6a9ab2c6ab0757cfa4ddba4f1f70ffcd8138f6e2a4bb17ade5ce439312a",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml": "b61d9aae1511c0e11d645356e9e4d5099dafe52322d7a277adef4be57b77e3c8",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml": "3615300b8bfe63aebaba32b3815d6f4a9a36fc593d1a28fbd831c860317b1341",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml": "7590531fd75665c219725763ae6f31dcca32fe612ca80e3614ea8226eaaae79d",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml": "c5573b0a855837834fbb8a594a4d451e41e329ca894e86b9b950c87c22b894e9",
+    "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml": "6cd01b2731c8fa6e50efc01760d9ccbb5b976252fbf26b3a1ccf42a0b0f419ce",
+    "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml": "817ff47ffd10c8e9550cf3b5631e9403a079e730bfe50a1d29fece131ccd41ac",
+    "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.HashTest.xml": "535b84860bd3f5c6b1141de8eab909cf30ccc40ac025d3a7c0f2f9d2557f7bb3",
+    "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.ScaffoldTest.xml": "2d11de4c50b66cfdeeea9956d62b29c0514db025df42a84abd131715b890917c",
+    "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml": "adf90351999edf996b6ef6d9ccb6455eb7f411f13bd940593b2238ea1a155e1c",
+    "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml": "6d1918111bf559f7fb375a387b0635fccb574e5acdeac29103e03315bbf30b3b",
+    "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml": "5bde24d390f0908cbec0e531b29cea818a35232bbf2a3cdeb2606b43372a652c",
+    "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml": "36f72477492f446f75db7fb7fb13426ad817c202c371cc47371a24128ae5e1c8"
+  },
+  "fullCombinedBuildStatus": "passed",
+  "fullCombinedBuildRecord": "../test-logs/final-platform-execution.json"
+}

@@ -3,6 +3,46 @@
 Validation date: **2026-10-26**. These are executed Linux x86-64 tests, not just
 successful compilation or target configuration.
 
+## Final corrected-source execution
+
+The final implementation at
+[`b837aba27bebc1050965fa124c2efa54b4e4544a`](https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a)
+passed **71 of 71 Linux x86-64 Native methods**, with zero failures, errors or
+skips, in [CI run 40294194097](https://github.com/Flyfish233/spake2/actions/runs/40294194097).
+The three native executables ran 22 RFC/integration, 30 Legacy and 19 primitive
+methods, including the corrected zero-ephemeral and raw-Montgomery carry
+regressions. This run includes both SR-09 and SR-10, rather than inheriting
+the initial snapshot's result.
+
+The exact CI invocation was:
+
+```sh
+./gradlew --no-daemon jvmTest linuxX64Test jsNodeTest wasmJsNodeTest
+```
+
+The Linux job completed in 10m 3s, with all 102 actionable tasks executed.
+That duration includes all four targets and is not a Native-only timing.
+The Native suite times sum to 173.289 seconds on the CI host. Full per-case
+results and the verified artifact identity are in
+[the final Linux CI summary](test-logs/github-actions/40294194097-linux-summary.json);
+the [raw job log](test-logs/github-actions/40294194097-linux.txt) records the
+actual Native task executions. The CI test-merge tree was checked to equal
+the code commit's tree.
+
+The separate clean local run also completed all **71 Native methods** with
+zero failures, errors or skips. Its Native suite times sum to **732.997
+seconds**; its complete four-target command reported **33m 4s**, exit 0.
+Its environment, executable hashes, unchanged source manifest and XML reports
+are recorded in [final-platform-validation.md](final-platform-validation.md).
+The full four-target wall time is not a Native-only timing, and the local
+durations must not be substituted for this CI host's timings.
+
+## Historical M5 checkpoint
+
+The remaining initial-execution records below describe the earlier source
+snapshot at `9ce242f80f61ab3bd9b822394ba101de5dbf3588`. They are retained to
+preserve the implementation history, not presented as the final code's results.
+
 ## Initial complete execution
 
 The initial implementation snapshot completed all three `linuxX64Test` tasks:

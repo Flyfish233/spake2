@@ -101,8 +101,8 @@ pinned, tested backends; it is not a proof about every possible Kotlin
 implementation or future compiler.
 
 Portable boundary vectors exercise the sign bit, maximum unsigned sum and
-extra word on every configured target. Emitted-JavaScript inspection and the
-Kotlin 2.2.21 target execution results are recorded separately in the
+extra word, and are shared through `commonTest` with every configured target.
+Actual target executions and emitted-JavaScript inspection are recorded in the
 [validation ledger](validation.md). Compiler upgrades require renewed boundary
 testing and review of the relevant lowering. Passing arithmetic tests or
 observing a fixed source schedule does not prove strict constant-time code

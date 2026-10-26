@@ -157,9 +157,12 @@ above. Both distinguish the actual identity `(0,1)` from `(0,-1)` and other
 torsion points. The production code was checked against those references.
 
 The source avoids secret-indexed tables and scalar-length-dependent loops in
-the reviewed multiplications. It still needs compiler-output review and timing
-analysis on JVM/ART, Native, JavaScript and Wasm before any stronger side-channel
-claim. Managed allocation, garbage collection, JIT transformations, cache
+the reviewed multiplications. The specific Kotlin 2.2.21 development-test JS
+paths were inspected as recorded in [js-runtime-review.md](js-runtime-review.md).
+Broader compiler-output review and timing analysis on JVM/ART, Native,
+JavaScript and Wasm are still needed before any stronger side-channel claim;
+new compiler versions or production optimization settings require renewed
+review. Managed allocation, garbage collection, JIT transformations, cache
 effects and optimizer treatment of array clearing are not certified here.
 
 Owned array clearing is best effort. Ordinary protocol error paths are tested

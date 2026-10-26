@@ -4,7 +4,7 @@
   "sourceManifest": "../test-logs/final-platform-source.json",
   "target": "jvmTest",
   "status": "passed",
-  "fullCombinedBuildStatus": "continuing",
+  "fullCombinedBuildStatus": "passed",
   "modules": [
     {
       "module": "rfc",
@@ -73,5 +73,12 @@
     "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml": "6eaab4fa7450e664d45e87d38bd7002d76c5b32be8d09b9e790e5e28267813d9",
     "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml": "fc1381491909d43f33bd6e5c243adbbb5144cf58b8bd8eb29dcdeb109a5be5f8",
     "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.WycheproofP256Test.xml": "f4d0bafa9e62cb1e4536ed916ef1602408e3132ad3078ff133603cc1776f808e"
-  }
+  },
+  "verifiedSourceRevision": {
+    "remoteCommit": "b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "remoteTree": "9144c7480ec823844a590bcb304d0d8f5b553128",
+    "remoteUrl": "https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "equivalentLocalCommit": "bf45e30f01b68669a56e719826991fe3fee6bdc6"
+  },
+  "fullCombinedBuildRecord": "../test-logs/final-platform-execution.json"
 }

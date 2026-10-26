@@ -70,13 +70,32 @@
     "--no-daemon",
     "--console=plain",
     "-Pkotlin.native.home=/workspace/scratch/a46e59dd0882/toolchains/konan/kotlin-native-prebuilt-linux-x86_64-2.2.21",
+    "clean",
     "jvmTest",
     "jsNodeTest",
     "wasmJsNodeTest",
     "linuxX64Test"
   ],
-  "startedUtc": "2026-10-26T08:34:13.778799+00:00",
-  "finishedUtc": "2026-10-26T08:35:39.804024+00:00",
-  "exitCode": 1,
-  "logPath": "/workspace/scratch/a46e59dd0882/gradle-final-platforms.log"
+  "retryStartedUtc": "2026-10-26T08:36:03.547127+00:00",
+  "retryReason": "The first attempt failed compilation with duplicate declarations for all primitives. Retry the exact same frozen source after cleaning generated build outputs. The exact internal cause of the transient compiler failure is not established.",
+  "startedUtc": "2026-10-26T08:36:11.279905+00:00",
+  "finishedUtc": "2026-10-26T09:09:16.621141+00:00",
+  "exitCode": 0,
+  "logPath": "/workspace/scratch/a46e59dd0882/gradle-final-platforms.log",
+  "verifiedSourceRevision": {
+    "remoteCommit": "b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "remoteTree": "9144c7480ec823844a590bcb304d0d8f5b553128",
+    "remoteUrl": "https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "equivalentLocalCommit": "bf45e30f01b68669a56e719826991fe3fee6bdc6"
+  },
+  "committedSourceComparison": {
+    "checkedUtc": "2026-10-26T09:08:22.768186+00:00",
+    "localCommit": "bf45e30f01b68669a56e719826991fe3fee6bdc6",
+    "gitTree": "9144c7480ec823844a590bcb304d0d8f5b553128",
+    "sourceFilesCompared": 58,
+    "allSha256Match": true
+  },
+  "frozenSourcesUnchanged": true,
+  "archivedLog": "docs/test-logs/final-platforms/complete-run.txt",
+  "archivedLogSha256": "f4e1219908ea304c73312ba82c05979626a1eb6447ea33259ed3fbd0c2033e24"
 }

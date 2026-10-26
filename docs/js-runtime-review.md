@@ -52,7 +52,8 @@ Its low 32-bit representation therefore preserves the entire sum. The low
 carry. This removes secret field multiplication through the boxed-Long helper
 without introducing a platform-specific cryptographic backend or changing
 the protocol arithmetic. Independent arithmetic and protocol regression
-validation is required for the changed implementation.
+validation accompanies the changed implementation; the corrected-source JVM
+run passed all 80 methods, including both new carry-boundary regression tests.
 
 ### 2. SHA-512 converted signed secret bytes before masking
 
@@ -84,12 +85,64 @@ would require reviewing the selected lowering again.
 
 ## Emitted-code verification
 
-Pending the corrected JavaScript build. Runtime-source inspection establishes
-the hazards above, but does not by itself establish exactly which helpers a
-particular generated artifact calls. The emitted JavaScript must be inspected
-to confirm Int multiplication lowering, the absence of secret field Long
-multiplication, and masking before SHA-512 byte conversion. Artifact hashes,
-tool versions and actual test results will be recorded with that verification.
+The corrected **Kotlin 2.2.21 JS IR development-test executable** was built and
+its actual JavaScript inspected. It uses the boxed-Long implementation. The
+execution environment is managed **Node 22.0.0** with **Yarn 1.22.17**. The
+frozen source/build-input manifest is
+`f23aa680b7028768a15363f8f550e3e2d33e3b9ba8111ed834e0c7affe03c4f6`;
+the corrected source is remote commit
+[`b837aba27bebc1050965fa124c2efa54b4e4544a`](https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a),
+Git tree `9144c7480ec823844a590bcb304d0d8f5b553128`. The per-file source hashes are in
+[`test-logs/final-platform-source.json`](test-logs/final-platform-source.json).
+
+| Generated artifact | SHA-256 |
+| --- | --- |
+| `spake2-primitives.js` | `a3f297ce813722813cbf758816c4337ca3f142b2cd16a256e63f7a2c84fc07e4` |
+| `kotlin-kotlin-stdlib.js` | `bcfb6d4e927490abea9fd45949d5136619312d8ae86837b874c2eea3159cc763` |
+
+Both files are generated under
+`build/compileSync/js/test/testDevelopmentExecutable/kotlin/`. Exact function
+ranges, function-body hashes, all sibling artifact hashes, the Node executable
+hash, and the dependency-lock hash are recorded in
+[`test-logs/js-runtime-emitted.json`](test-logs/js-runtime-emitted.json).
+The corresponding primitive/runtime files in all three module test executables
+were checked as well; the JSON record includes their separate artifact hashes.
+All six inspected primitive/runtime files were byte-identical to the copies
+in the package directories actually used by the Node test runners.
+Generated third-party runtime code is not copied into the source repository.
+
+The reviewed Montgomery multiplication uses a 33-element `Int32Array`,
+`Math.imul` for all three multiplication sites, `| 0` wrapping for sums, and
+`>>> 16` for carry extraction. Its branches control public loop counters; its
+body contains no boxed-Long conversion, multiplication, or allocation. The
+emitted `Math.imul` compatibility fallback is a fixed arithmetic expression;
+the decision to install it depends on engine feature availability. The actual
+Node runtime provides native `Math.imul`, so this fallback was inspected but
+was not the path executed by the tests.
+
+The SHA-512 byte load emits the unsigned `& 255` mask inside the argument to
+`fromInt`. The emitted conversion allocates a `Long` with a sign-extension
+choice, whose condition is always false for the now-unsigned input domain.
+It has no lookup cache or secret-indexed table. The emitted Long addition
+uses fixed chunk additions, and the inspected logical-shift and bitwise
+helpers match the source review above. Their lazy initialization condition
+depends on module initialization state, not on the secret word.
+
+Separate internal inspections by the math and hash engineers confirmed these
+observations against the recorded artifact hashes. These reviews found no
+additional issue in the inspected helper paths; they are internal project
+reviews, not an independent external security audit.
+
+This inspection concerns the exact development-test artifacts and compiler
+configuration above. A production/minified build, a different compiler
+version, or a different Long lowering requires fresh emitted-code review.
+Execution evidence is tracked separately from inspection evidence: the
+corrected JVM run is recorded in
+[`test-results/final-platform-jvm.json`](test-results/final-platform-jvm.json);
+all three JavaScript module suites passed **71/71** common methods with no
+failures, errors or skipped tests, recorded in
+[`test-results/final-platform-js.json`](test-results/final-platform-js.json).
+Wasm and Native verification are recorded separately from this JS inspection.
 
 ## Residual limits
 
@@ -98,6 +151,11 @@ JavaScript engine optimizations, deoptimization, representation choices,
 garbage collection, and the generated code on different runtimes still require
 separate analysis. No timing attack or timing-independence measurement has
 been performed in this review.
+
+The routines do not hide input lengths. In particular, the number of SHA-512
+blocks processed for a Legacy password depends on its byte length. The
+fixed-domain byte-conversion finding above concerns byte values; it does not
+establish that password length is concealed.
 
 SHA-512 uses Long values, whose JavaScript representation may involve immutable
 boxed objects and intermediate allocations. Clearing owned arrays does not

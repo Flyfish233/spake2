@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.HashBoundaryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:55:21.387Z" hostname="c9d49951d07d" time="0.042">
+  <properties/>
+  <testcase name="independentPaddingBoundaryVectors[wasmJs, node]" classname="io.github.flyfish233.spake2.HashBoundaryTest" time="0.042"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

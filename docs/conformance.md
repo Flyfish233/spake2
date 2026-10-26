@@ -60,7 +60,7 @@ visible when describing support:
 | Identity sizes | Each identity is limited to 65,535 bytes. | A local resource bound; not a new identity format or application default. |
 | Absent identities | Empty identities require `implicitIdentities=true`. | The caller must establish implicit identity semantics in its application protocol. |
 | AAD size | At most 8,176 bytes. | Inputs above the supported protocol limit fail before copying. |
-| Entropy retries | At most 128 candidate draws per ephemeral scalar. | A broken source eventually fails; successful draws remain uniform over the accepted range if source bytes are uniform. |
+| Entropy retries | At most 128 candidate draws per ephemeral scalar. | A source that keeps returning out-of-range candidates fails after 128 draws. Accepted draws are uniform only when the source bytes are uniform; predictable in-range bytes cannot be detected by this check. |
 | Wide scalar reduction | Accept 40 through 1,024 big-endian input bytes. | Mathematical reduction only. This is neither a password hash nor a memory-hard function. |
 | Object lifecycle | Generate once, process once, verify confirmation once. Any ordinary operation failure consumes the session. | Callers start a fresh object after failure; keys cannot be obtained from an unconfirmed session. |
 
