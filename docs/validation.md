@@ -25,3 +25,9 @@ Configuration of a target is not evidence of a passing test.
 - Initial Gradle attempt failed at dependency resolution before compilation. An environment-local proxy/system trust-store runner resolved this; the retry reached Kotlin 2.2.21 compilation and JVM test execution. Final results are recorded below when complete.
 
 The bootstrap compiler checks supplement, and do not replace, the pinned Kotlin 2.2.21 multiplatform tests.
+
+### First complete JVM integration execution
+
+`gradle --no-daemon --info wrapper --gradle-version 8.14.3 --distribution-type bin jvmTest` completed successfully with Kotlin 2.2.21: **68 test methods, zero failures/errors/skips**, across 28 suites. Aggregate test time 49.568 seconds; full first dependency/bootstrap build 4m52s. Machine-readable suite totals: `docs/test-results/m1-jvm-summary.json`. This was an integration worktree run before final module separation and the last concurrency regressions; subsequent runs supersede it.
+
+Covered all four official RFC P-256 vectors, twelve independently generated RFC Edwards vectors, eight pure torsion encodings and seven mixed-order encodings, all512 historical Legacy exchanges, seven deterministic exchanges, four historical peer cases, 24fresh exchanges and108fresh peer inputs. Fixture loops are counted separately from test-method counts.
