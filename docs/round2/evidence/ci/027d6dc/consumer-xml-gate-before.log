@@ -1,0 +1,30 @@
+test_actual_gradle_96_native_reports_pass (test_consumer_result_gate.ConsumerResultGateTest.test_actual_gradle_96_native_reports_pass)
+Real KGP 2.4.20 reports prefix classes with their owning task. ... FAIL
+test_complete_host_and_native_identities_pass (test_consumer_result_gate.ConsumerResultGateTest.test_complete_host_and_native_identities_pass) ... ok
+test_duplicate_normalized_method_fails (test_consumer_result_gate.ConsumerResultGateTest.test_duplicate_normalized_method_fails) ... ok
+test_missing_method_fails (test_consumer_result_gate.ConsumerResultGateTest.test_missing_method_fails) ... ok
+test_wrong_class_or_malformed_name_fails (test_consumer_result_gate.ConsumerResultGateTest.test_wrong_class_or_malformed_name_fails) ... ok
+
+======================================================================
+FAIL: test_actual_gradle_96_native_reports_pass (test_consumer_result_gate.ConsumerResultGateTest.test_actual_gradle_96_native_reports_pass)
+Real KGP 2.4.20 reports prefix classes with their owning task.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_consumer_result_gate.py", line 29, in test_actual_gradle_96_native_reports_pass
+    self.assertEqual(0, result.returncode, result.stdout + result.stderr)
+AssertionError: 0 != 1 : Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/check_consumer_test_results.py", line 73, in <module>
+    main()
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/check_consumer_test_results.py", line 54, in main
+    verify_case_identities(module, cases)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/check_consumer_test_results.py", line 34, in verify_case_identities
+    require(normalized == EXPECTED_CASES[module],
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/check_android_art_results.py", line 19, in require
+    raise ValueError(message)
+ValueError: Incomplete or unexpected rfc-client methods: [('macosArm64Test.consumer.PublishedRfcTest', 'incorrectConfirmationIsTerminalInPublishedLibrary'), ('macosArm64Test.consumer.PublishedRfcTest', 'independentEdwardsPublicMessagesConfirmationsAndKey'), ('macosArm64Test.consumer.PublishedRfcTest', 'officialP256PublicMessagesConfirmationsAndKey')]
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.174s
+
+FAILED (failures=1)

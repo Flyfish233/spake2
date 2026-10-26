@@ -9,7 +9,7 @@ come from `../consumer-fixtures`; no SPAKE2 implementation source is included.
 `rfc-client` declares only the RFC artifact, and `legacy-client` declares only the
 Legacy artifact. Their primitive dependency must resolve transitively. SPAKE2
 coordinates are restricted to the explicitly supplied local Maven repository.
-An absent version or remote repository URL fails configuration.
+Both the version and the repository location must be supplied explicitly.
 
 ## Run
 
@@ -25,8 +25,11 @@ gradle --no-daemon -p integration/kadb-consumer \
   linuxX64Test
 ```
 
-For Android, install SDK 37 and add `-PenableAndroid=true`. The new Android
-plugin's task names differ from the classic Android library plugin:
+For Android, install the stable `platforms;android-37.0` package with the
+command-line tools build `16111833`, then add `-PenableAndroid=true`. See the
+[SDK bootstrap diagnosis](../../docs/round2/sdk37-toolchain.md) for the pinned
+setup used by Kadb and CI. The new Android plugin's task names differ from the
+classic Android library plugin:
 
 ```sh
 gradle --no-daemon -p integration/kadb-consumer \

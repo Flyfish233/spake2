@@ -123,6 +123,10 @@ compare two instances of this library with each other.
 compilation/tests. It writes resolved coordinates, variants and artifact names
 to each consumer's `build/reports/published-dependencies.tsv`, rejects unexpected
 versions/protocol edges and forbids substitution of the producer's sources.
+It validates every resolved SPAKE2 dependency edge before selecting files with
+a strict Gradle artifact view. Android's tested component and Kotlin's SwiftPM
+metadata may legitimately refer to the fixture projects; those unrelated files
+are not SPAKE2 Maven artifacts. The checker does not use lenient resolution.
 
 The publication workflow stages one repository on Linux, transfers that exact
 artifact to independent consumer jobs, and records their results. The Android

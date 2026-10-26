@@ -63,6 +63,9 @@ jobs:
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
           sudo udevadm control --reload-rules
           sudo udevadm trigger --name-match=kvm
+          sudo udevadm settle --timeout=30
+          ls -l /dev/kvm
+          id
           test -r /dev/kvm
           test -w /dev/kvm
       - name: Execute complete common suite and standalone consumers on ART

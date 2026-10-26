@@ -23,9 +23,13 @@ EXPECTED_CASES = {
 }
 
 
-def verify_case_identities(module, cases):
+def verify_case_identities(module, cases, task):
     normalized = set()
     for classname, name in cases:
+        # Gradle 9.6 native reports include the owning test task in the class.
+        # Accept that exact prefix only; other task/class prefixes remain errors.
+        if classname.startswith(task + "."):
+            classname = classname[len(task) + 1:]
         match = re.fullmatch(r"([^\[\]]+)(?:\[[^\[\]]+\])?", name)
         require(match is not None, f"Unexpected test name: {classname}.{name}")
         key = (classname, match.group(1))
@@ -51,7 +55,7 @@ def main():
         modules = {}
         for module in EXPECTED_CASES:
             cases, reports = read_reports((root / module / "build/test-results" / task).glob("**/TEST-*.xml"), root)
-            verify_case_identities(module, cases)
+            verify_case_identities(module, cases, task)
             modules[module] = {"methods": len(cases), "reports": reports}
         results[task] = {"methods": sum(m["methods"] for m in modules.values()), "modules": modules}
     summary = {

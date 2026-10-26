@@ -65,6 +65,32 @@ jobs:
           --version "$SPAKE2_CONSUMER_VERSION"
           --revision "$SPAKE2_SOURCE_REVISION"
           --output "$RUNNER_TEMP/spake2-publication/publication-report.json"
+      - name: Run evidence regressions from the actual complete-source archive
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          import zipfile
+          version = os.environ["SPAKE2_CONSUMER_VERSION"]
+          archive = Path(os.environ["SPAKE2_MAVEN_REPO"]) / "io/github/flyfish233/spake2" / version / f"spake2-{version}-source-distribution.zip"
+          # The previous gate has checked archive paths, symlinks and bounds.
+          destination = Path(os.environ["RUNNER_TEMP"]) / "spake2-source-probe"
+          destination.mkdir()
+          with zipfile.ZipFile(archive) as source:
+              source.extractall(destination)
+          PY
+          set -euo pipefail
+          python3 -m unittest discover -s "$RUNNER_TEMP/spake2-source-probe/tools/tests" -v \
+            2>&1 | tee "$RUNNER_TEMP/spake2-publication/source-archive-tests.log"
+      - name: Prove the consumer guard rejects substituted, mixed and missing modules
+        run: >-
+          python3 tools/probe_consumer_resolution.py
+          --repository "$SPAKE2_MAVEN_REPO"
+          --version "$SPAKE2_CONSUMER_VERSION"
+          --work-directory "$RUNNER_TEMP/spake2-resolution-probe"
+          --output-directory "$RUNNER_TEMP/spake2-publication/resolution-gate-probes"
+          --gradle-command "$GITHUB_WORKSPACE/gradlew"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()
         with:
@@ -210,11 +236,17 @@ jobs:
         with:
           name: spake2-maven-candidate
           path: ${{ runner.temp }}/spake2-publication
-      - name: Install the Android SDK used by the Kadb toolchain profile
+      - name: Initialize the Android SDK tools used by Kadb
         if: runner.os == 'Linux'
-        run: >-
-          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
-          "platforms;android-37" "build-tools;36.0.0"
+        uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407 # pinned command-line-tools bootstrap
+        with:
+          cmdline-tools-version: '16111833'
+          packages: platform-tools
+      - name: Install the stable Android 37.0 platform used by Kadb
+        if: runner.os == 'Linux'
+        run: |
+          sdkmanager --version
+          sdkmanager "platforms;android-37.0" "build-tools;37.0.0" "build-tools;36.0.0"
       - name: Copy only the standalone consumer fixtures outside the producer checkout
         shell: bash
         run: |

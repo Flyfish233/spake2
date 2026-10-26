@@ -200,6 +200,21 @@ val unconfirmedKey = spake.deriveUnconfirmedKey(peerMessage)
 它们应在完成未来迁移补丁并传入候选仓库属性后执行。Android SDK、JDK25、
 Native BoringSSL 构建环境及已启动的 iOS simulator 按 Kadb 原 CI 准备。
 
+Android SDK 引导必须保留 Kadb 的实际安装方式：原 workflow 固定
+`android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407`，
+`cmdline-tools-version: '16111833'`（CLI 23.0），然后运行：
+
+```sh
+sdkmanager 'platforms;android-37.0' 'build-tools;37.0.0'
+```
+
+Google 当前稳定渠道的精确平台包名是 `platforms;android-37.0`，没有
+`platforms;android-37`；旧 `repository2-1.xml` 也没有这个新平台条目。
+构建里的 `compileSdk = 37` 保持不变，不应为解决包名错误降低 SDK。
+官方索引来源、实际条目和本轮错误命令的核对见
+[SDK 37 安装诊断](evidence/sdk37/package-catalog.json)。这份诊断本身是
+目录与配置核对，不冒充 SDK 安装或消费者 Gradle 测试已通过。
+
 ### Android 编译与 host 回归
 
 ```sh
