@@ -1,0 +1,674 @@
+{
+  "snapshot": "Initial Native implementation before SR-09 sampler correction. RFC changes require a separate affected-module rerun.",
+  "command": "python3 /workspace/scratch/a46e59dd0882/run_gradle.py --no-daemon --console=plain -Pkotlin.native.home=/workspace/scratch/a46e59dd0882/toolchains/konan/kotlin-native-prebuilt-linux-x86_64-2.2.21 linuxX64Test",
+  "exit_code": 0,
+  "gradle_result": "BUILD SUCCESSFUL in 12m 36s",
+  "source_hashes": "../test-logs/native/source-sha256.json",
+  "source_inputs_unchanged_during_run": true,
+  "modules": [
+    {
+      "module": "rfc",
+      "task": ":linuxX64Test",
+      "suite_count": 3,
+      "counts": {
+        "tests": 21,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "test_time_seconds": 88.533,
+      "suites": [
+        {
+          "name": "io.github.flyfish233.spake2.ProtocolIsolationTest",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 1.048,
+          "timestamp": "2026-10-26T08:11:25.789Z",
+          "testcases": [
+            {
+              "name": "legacyKeyCannotSatisfyRfcConfirmationAndNoFallbackOccurs[linuxX64]",
+              "time": 1.048
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.RfcFailureTest",
+          "tests": 13,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 53.139,
+          "timestamp": "2026-10-26T08:11:26.846Z",
+          "testcases": [
+            {
+              "name": "wrongPasswordIdentityAIdentityBAndAadAllPreventKeyRelease[linuxX64]",
+              "time": 7.995
+            },
+            {
+              "name": "cannotReleaseAKeyBeforeConfirmationOrBeforePeerMessage[linuxX64]",
+              "time": 0.303
+            },
+            {
+              "name": "malformedConfirmationLengthAndContentAreTerminal[linuxX64]",
+              "time": 12.649
+            },
+            {
+              "name": "sameRoleFailsConfirmation[linuxX64]",
+              "time": 2.236
+            },
+            {
+              "name": "repeatedOperationsAndDestroyAreTerminal[linuxX64]",
+              "time": 3.081
+            },
+            {
+              "name": "successfulKeyCanOnlyBeReleasedOnce[linuxX64]",
+              "time": 2.304
+            },
+            {
+              "name": "sourceFailureWrongLengthAndRepeatedZeroCandidatesTerminateAndWipe[linuxX64]",
+              "time": 0.005
+            },
+            {
+              "name": "rejectionSamplingRejectsZeroAndOrderAndConsumesFreshEntropy[linuxX64]",
+              "time": 0.455
+            },
+            {
+              "name": "entropyCallbackReentrancyPoisonsTheOwningOperation[linuxX64]",
+              "time": 0.288
+            },
+            {
+              "name": "invalidScalarAndInputBoundsAreRejectedBeforeUse[linuxX64]",
+              "time": 0.009
+            },
+            {
+              "name": "hostilePointEncodingsAreRejectedAndOwnedSecretsErased[linuxX64]",
+              "time": 2.559
+            },
+            {
+              "name": "callerArraysAreDefensivelyCopiedAndMessagesHaveIndependentStorage[linuxX64]",
+              "time": 2.003
+            },
+            {
+              "name": "boundedMalformedInputFuzzIsTerminal[linuxX64]",
+              "time": 19.163
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.RfcVectorsTest",
+          "tests": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 34.346,
+          "timestamp": "2026-10-26T08:12:19.994Z",
+          "testcases": [
+            {
+              "name": "p256EveryOfficialIntermediateField[linuxX64]",
+              "time": 7.015
+            },
+            {
+              "name": "edwardsEveryIndependentIntermediateField[linuxX64]",
+              "time": 9.056
+            },
+            {
+              "name": "publicP256ApiMatchesOfficialVectorsThroughConfirmation[linuxX64]",
+              "time": 6.328
+            },
+            {
+              "name": "publicEdwardsApiMatchesIndependentVectorsThroughConfirmation[linuxX64]",
+              "time": 9.128
+            },
+            {
+              "name": "edwardsRejectsEveryPureTorsionElement[linuxX64]",
+              "time": 0.54
+            },
+            {
+              "name": "edwardsRfcMaskConstantsArePrimeOrder[linuxX64]",
+              "time": 0.142
+            },
+            {
+              "name": "edwardsMixedOrderUsesCofactorAndBindsExactPeerEncoding[linuxX64]",
+              "time": 2.092
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": "primitives",
+      "task": ":primitives:linuxX64Test",
+      "suite_count": 6,
+      "counts": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "test_time_seconds": 17.284,
+      "suites": [
+        {
+          "name": "io.github.flyfish233.spake2.HashBoundaryTest",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 0.004,
+          "timestamp": "2026-10-26T08:21:50.276Z",
+          "testcases": [
+            {
+              "name": "independentPaddingBoundaryVectors[linuxX64]",
+              "time": 0.004
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.HashTest",
+          "tests": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 0.297,
+          "timestamp": "2026-10-26T08:21:50.283Z",
+          "testcases": [
+            {
+              "name": "sha256StandardVectors[linuxX64]",
+              "time": 0.173
+            },
+            {
+              "name": "sha512StandardVectors[linuxX64]",
+              "time": 0.108
+            },
+            {
+              "name": "hmacRfc4231[linuxX64]",
+              "time": 0.0
+            },
+            {
+              "name": "hkdfRfc5869[linuxX64]",
+              "time": 0.001
+            },
+            {
+              "name": "hkdfBoundsAndInputOwnership[linuxX64]",
+              "time": 0.013
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.ScaffoldTest",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T08:21:50.581Z",
+          "testcases": [
+            {
+              "name": "entropyContractIsAnApplicationBoundary[linuxX64]",
+              "time": 0.0
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.internal.math.Edwards25519MathTest",
+          "tests": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 0.773,
+          "timestamp": "2026-10-26T08:21:50.582Z",
+          "testcases": [
+            {
+              "name": "rfc8032BasePointAndPublicKey[linuxX64]",
+              "time": 0.152
+            },
+            {
+              "name": "fullWidthHighBitIsPreserved[linuxX64]",
+              "time": 0.069
+            },
+            {
+              "name": "strictAndHistoricalPointDecodersAreSeparated[linuxX64]",
+              "time": 0.08
+            },
+            {
+              "name": "torsionAndPrimeOrderChecks[linuxX64]",
+              "time": 0.461
+            },
+            {
+              "name": "scalarReductionBoundaries[linuxX64]",
+              "time": 0.005
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.internal.math.ModMathTest",
+          "tests": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 0.917,
+          "timestamp": "2026-10-26T08:21:51.364Z",
+          "testcases": [
+            {
+              "name": "independentPythonIntegerVectors[linuxX64]",
+              "time": 0.896
+            },
+            {
+              "name": "canonicalDecodingAndSelection[linuxX64]",
+              "time": 0.007
+            },
+            {
+              "name": "resultsDoNotAliasInputsOrConstants[linuxX64]",
+              "time": 0.0
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.internal.math.P256MathTest",
+          "tests": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 15.293,
+          "timestamp": "2026-10-26T08:21:52.288Z",
+          "testcases": [
+            {
+              "name": "independentPythonAndOpenSslScalarVectors[linuxX64]",
+              "time": 14.574
+            },
+            {
+              "name": "exceptionalAdditionAndInputOwnership[linuxX64]",
+              "time": 0.483
+            },
+            {
+              "name": "malformedAndNonCanonicalPointEncodings[linuxX64]",
+              "time": 0.217
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": "legacy",
+      "task": ":legacy:linuxX64Test",
+      "suite_count": 20,
+      "counts": {
+        "tests": 30,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "test_time_seconds": 508.586,
+      "suites": [
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest",
+          "tests": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 5.66,
+          "timestamp": "2026-10-26T08:13:07.783Z",
+          "testcases": [
+            {
+              "name": "replaySevenIndependentExchanges[linuxX64]",
+              "time": 4.364
+            },
+            {
+              "name": "replayHistoricalPeerInputCases[linuxX64]",
+              "time": 1.291
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest",
+          "tests": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 55.976,
+          "timestamp": "2026-10-26T08:13:13.449Z",
+          "testcases": [
+            {
+              "name": "replayTwentyFourFreshExchanges[linuxX64]",
+              "time": 18.609
+            },
+            {
+              "name": "replay108MalformedAndBoundaryPeerEncodings[linuxX64]",
+              "time": 37.361
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "tests": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 3.707,
+          "timestamp": "2026-10-26T08:14:09.470Z",
+          "testcases": [
+            {
+              "name": "repeatGenerationFailsAndErasesSession[linuxX64]",
+              "time": 0.199
+            },
+            {
+              "name": "processBeforeGenerateFailsPermanently[linuxX64]",
+              "time": 0.002
+            },
+            {
+              "name": "destroyIsIdempotentAndTerminal[linuxX64]",
+              "time": 0.169
+            },
+            {
+              "name": "entropyExceptionsAndIncorrectLengthsEraseState[linuxX64]",
+              "time": 0.01
+            },
+            {
+              "name": "returnedEntropyIsWipedAndPasswordInputRemainsOwnedByCaller[linuxX64]",
+              "time": 0.14
+            },
+            {
+              "name": "reentrantEntropyCallPoisonsOuterSessionEvenIfCallbackCatchesError[linuxX64]",
+              "time": 1.338
+            },
+            {
+              "name": "callerMutationCannotAliasIdentityOrGeneratedMessage[linuxX64]",
+              "time": 0.35
+            },
+            {
+              "name": "wrongPasswordsAndRolesDoNotCreateAuthentication[linuxX64]",
+              "time": 1.45
+            },
+            {
+              "name": "lengthsFailBeforeUnboundedAllocation[linuxX64]",
+              "time": 0.016
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 18.853,
+          "timestamp": "2026-10-26T08:14:13.183Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 18.853
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 23.949,
+          "timestamp": "2026-10-26T08:14:32.052Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 23.949
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 19.513,
+          "timestamp": "2026-10-26T08:14:56.009Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 19.513
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 19.717,
+          "timestamp": "2026-10-26T08:15:15.529Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 19.717
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 29.125,
+          "timestamp": "2026-10-26T08:15:35.260Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 29.125
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 29.292,
+          "timestamp": "2026-10-26T08:16:04.394Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 29.292
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 29.988,
+          "timestamp": "2026-10-26T08:16:33.692Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 29.988
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 23.193,
+          "timestamp": "2026-10-26T08:17:03.683Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 23.193
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 27.86,
+          "timestamp": "2026-10-26T08:17:26.916Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 27.86
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 33.35,
+          "timestamp": "2026-10-26T08:17:54.802Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 33.35
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 31.737,
+          "timestamp": "2026-10-26T08:18:28.219Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 31.737
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 41.092,
+          "timestamp": "2026-10-26T08:18:59.982Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 41.092
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 30.973,
+          "timestamp": "2026-10-26T08:19:41.088Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 30.973
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 22.318,
+          "timestamp": "2026-10-26T08:20:12.066Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 22.318
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 36.01,
+          "timestamp": "2026-10-26T08:20:34.387Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 36.01
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 25.246,
+          "timestamp": "2026-10-26T08:21:10.403Z",
+          "testcases": [
+            {
+              "name": "replay32IndependentOracleExchanges[linuxX64]",
+              "time": 25.246
+            }
+          ]
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "time": 1.027,
+          "timestamp": "2026-10-26T08:21:35.659Z",
+          "testcases": [
+            {
+              "name": "historicalZeroEphemeralScalarIsPreservedExplicitly[linuxX64]",
+              "time": 1.027
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "tests": 69,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "test_time_seconds": 614.403,
+  "executables": [
+    {
+      "module": "rfc",
+      "format": "Linux x86-64 ELF executable",
+      "sha256": "0467d3ed86d212df629c355f7c20f6a61aca2a3f442ffd88446e0ac83e6151ec",
+      "size_bytes": 7965496
+    },
+    {
+      "module": "primitives",
+      "format": "Linux x86-64 ELF executable",
+      "sha256": "05e551d0387cabedc95b4aa0970be72f1eea8b055f2094c28974911ceb6e2cbb",
+      "size_bytes": 7788160
+    },
+    {
+      "module": "legacy",
+      "format": "Linux x86-64 ELF executable",
+      "sha256": "d78abe1d8e159f3bce685c239bb527e70f2a03af3896483073da0e36215e2b0a",
+      "size_bytes": 8788984
+    }
+  ]
+}

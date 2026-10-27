@@ -1,0 +1,14 @@
+.gradle/
+.kotlin/
+build/
+**/build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+tools/.venv/
+tools/.cache/
+__pycache__/
+*.pyc
+.reference-venv/
+node_modules/

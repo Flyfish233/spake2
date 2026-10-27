@@ -1,0 +1,158 @@
+{
+  "revision": "027d6dc00f2c92502ca98b878d1940a358590be5",
+  "publication_run_id": 40384173898,
+  "modern_arm64_job_id": 121789389622,
+  "job_conclusion": "failure",
+  "artifact_id": 12680820690,
+  "artifact_size_bytes": 91122,
+  "artifact_sha256": "fdcd24757ed76514eea26834a15fc748053478a6819ab492f0a1858f8c31ad7b",
+  "download_digest_verified": true,
+  "logs": [
+    {
+      "path": "art-api-23/job.log",
+      "bytes": 78348,
+      "sha256": "5c34b9fd6e3bc8d402b4592507f962808b9599c48936f624533bf44ba53b8940"
+    },
+    {
+      "path": "baseline-consumer-linux/job.log",
+      "bytes": 60324,
+      "sha256": "484fbad2a531c8b6842497d522006f09bda6feac2e5cfe8feffcc59db6a345e4"
+    },
+    {
+      "path": "kadb-consumer-darwin-arm64/job.log",
+      "bytes": 47219,
+      "sha256": "42d31ccb42328662e0744d5c6a7a7f8cc19975c61fd04eeb0a770e3ce507cefb"
+    },
+    {
+      "path": "kadb-consumer-darwin-x64/job.log",
+      "bytes": 45446,
+      "sha256": "3483187d26f20bbdb09215b5cf6eee8f3ff00d30b0eb608ea3e95c6472f76ff0"
+    },
+    {
+      "path": "kadb-consumer-linux-sdk/job.log",
+      "bytes": 30654,
+      "sha256": "16fbfb548412d729a87c7d4068f557605b8fb980794e447413a85e725e8e36dc"
+    }
+  ],
+  "raw_junit_xml": [
+    {
+      "path": "legacy-client/build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.consumer.PublishedLegacyTest.xml",
+      "sha256": "b351a223681f85735316923a8261da20f14ace3545068899821ea752d78e60c5",
+      "attributes": {
+        "name": "iosSimulatorArm64Test.consumer.PublishedLegacyTest",
+        "tests": "2",
+        "skipped": "0",
+        "failures": "0",
+        "errors": "0",
+        "timestamp": "2026-10-26T19:15:29.499Z",
+        "hostname": "sat12-bq154-379456e3-f29d-431c-bb0d-417bf11fd09c-7AD795F8EE12.local",
+        "time": "0.765"
+      },
+      "methods": [
+        {
+          "name": "hardenedPinnedOracleIncludingHighBitAndNulNames[iosSimulatorArm64]",
+          "classname": "iosSimulatorArm64Test.consumer.PublishedLegacyTest",
+          "time": "0.762"
+        },
+        {
+          "name": "malformedInputAndDestroyConsumePublishedSession[iosSimulatorArm64]",
+          "classname": "iosSimulatorArm64Test.consumer.PublishedLegacyTest",
+          "time": "0.001"
+        }
+      ],
+      "retained_path": "kadb-consumer-darwin-arm64/junit/iosSimulatorArm64Test/legacy-client.xml"
+    },
+    {
+      "path": "legacy-client/build/test-results/macosArm64Test/TEST-macosArm64Test.consumer.PublishedLegacyTest.xml",
+      "sha256": "ddc115f6ec069d55e25574b3eb0c8fedc806ff6c0c6e9d98cc0e55bbb5acef6e",
+      "attributes": {
+        "name": "macosArm64Test.consumer.PublishedLegacyTest",
+        "tests": "2",
+        "skipped": "0",
+        "failures": "0",
+        "errors": "0",
+        "timestamp": "2026-10-26T19:14:54.930Z",
+        "hostname": "sat12-bq154-379456e3-f29d-431c-bb0d-417bf11fd09c-7AD795F8EE12.local",
+        "time": "0.873"
+      },
+      "methods": [
+        {
+          "name": "hardenedPinnedOracleIncludingHighBitAndNulNames[macosArm64]",
+          "classname": "macosArm64Test.consumer.PublishedLegacyTest",
+          "time": "0.851"
+        },
+        {
+          "name": "malformedInputAndDestroyConsumePublishedSession[macosArm64]",
+          "classname": "macosArm64Test.consumer.PublishedLegacyTest",
+          "time": "0.0"
+        }
+      ],
+      "retained_path": "kadb-consumer-darwin-arm64/junit/macosArm64Test/legacy-client.xml"
+    },
+    {
+      "path": "rfc-client/build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.consumer.PublishedRfcTest.xml",
+      "sha256": "391b3a2828852d99a67c2ac80ab77e1b40088c84738513751039857f8c9fc124",
+      "attributes": {
+        "name": "iosSimulatorArm64Test.consumer.PublishedRfcTest",
+        "tests": "3",
+        "skipped": "0",
+        "failures": "0",
+        "errors": "0",
+        "timestamp": "2026-10-26T19:15:36.954Z",
+        "hostname": "sat12-bq154-379456e3-f29d-431c-bb0d-417bf11fd09c-7AD795F8EE12.local",
+        "time": "8.326"
+      },
+      "methods": [
+        {
+          "name": "officialP256PublicMessagesConfirmationsAndKey[iosSimulatorArm64]",
+          "classname": "iosSimulatorArm64Test.consumer.PublishedRfcTest",
+          "time": "3.138"
+        },
+        {
+          "name": "independentEdwardsPublicMessagesConfirmationsAndKey[iosSimulatorArm64]",
+          "classname": "iosSimulatorArm64Test.consumer.PublishedRfcTest",
+          "time": "5.178"
+        },
+        {
+          "name": "incorrectConfirmationIsTerminalInPublishedLibrary[iosSimulatorArm64]",
+          "classname": "iosSimulatorArm64Test.consumer.PublishedRfcTest",
+          "time": "0.001"
+        }
+      ],
+      "retained_path": "kadb-consumer-darwin-arm64/junit/iosSimulatorArm64Test/rfc-client.xml"
+    },
+    {
+      "path": "rfc-client/build/test-results/macosArm64Test/TEST-macosArm64Test.consumer.PublishedRfcTest.xml",
+      "sha256": "63e4c5332679321451ad2a1f3f0fe699780221800f24c2d07145d75cf70cd5e2",
+      "attributes": {
+        "name": "macosArm64Test.consumer.PublishedRfcTest",
+        "tests": "3",
+        "skipped": "0",
+        "failures": "0",
+        "errors": "0",
+        "timestamp": "2026-10-26T19:15:02.175Z",
+        "hostname": "sat12-bq154-379456e3-f29d-431c-bb0d-417bf11fd09c-7AD795F8EE12.local",
+        "time": "8.816"
+      },
+      "methods": [
+        {
+          "name": "officialP256PublicMessagesConfirmationsAndKey[macosArm64]",
+          "classname": "macosArm64Test.consumer.PublishedRfcTest",
+          "time": "4.155"
+        },
+        {
+          "name": "independentEdwardsPublicMessagesConfirmationsAndKey[macosArm64]",
+          "classname": "macosArm64Test.consumer.PublishedRfcTest",
+          "time": "4.657"
+        },
+        {
+          "name": "incorrectConfirmationIsTerminalInPublishedLibrary[macosArm64]",
+          "classname": "macosArm64Test.consumer.PublishedRfcTest",
+          "time": "0.0"
+        }
+      ],
+      "retained_path": "kadb-consumer-darwin-arm64/junit/macosArm64Test/rfc-client.xml"
+    }
+  ],
+  "interpretation": "Test XML indicates five methods on each of macosArm64Test and iosSimulatorArm64Test, no failures/errors/skips. The overall job failed later in verifyPublishedDependencies. This is not a successful workflow acceptance."
+}

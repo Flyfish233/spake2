@@ -1,0 +1,63 @@
+{
+  "startedAtUtc": "2026-10-26T18:50:28.193756+00:00",
+  "sourceHeadAtStart": "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d",
+  "command": [
+    "python3",
+    "tools/run_jvm_performance.py",
+    "--gradle-cache",
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-home",
+    "--java",
+    "/workspace/scratch/a46e59dd0882/toolchains/jdk-17.0.21+9/bin/java",
+    "--output",
+    "docs/round2/evidence/performance",
+    "--warmups",
+    "3",
+    "--measurements",
+    "10"
+  ],
+  "toolSha256": "00b2503e0e137e1fb20d8557609e28aca51bd3990a99ec7f1082f747232f078a",
+  "toolState": "Working-tree cache-selection fix with recorded red/green tests; production commonMain and probe unchanged.",
+  "environmentNote": "Root publication work shares this environment. Scheduling, CPU, I/O and memory contention are uncontrolled; no speedup/regression conclusion is supported.",
+  "gradleDaemonPidsAtStart": [
+    98031
+  ],
+  "loadAverageAtStart": [
+    4.82470703125,
+    4.72412109375,
+    4.9375
+  ],
+  "cgroupMemoryLimitBytes": 8589934592,
+  "cgroupMemoryAtStartBytes": 5815336960,
+  "cgroupMemoryEventsBefore": {
+    "low": 0,
+    "high": 0,
+    "max": 153118,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "guard": "Stop only this probe process group if an OOM event increases, cgroup headroom drops below 256 MiB, or 300 seconds elapse.",
+  "completedAtUtc": "2026-10-26T18:52:25.067042+00:00",
+  "elapsedSeconds": 116.852,
+  "exitCode": 0,
+  "abortReason": null,
+  "maxObservedCgroupMemoryBytes": 6983376896,
+  "cgroupMemoryEventsAfter": {
+    "low": 0,
+    "high": 0,
+    "max": 153118,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "cgroupMemoryAtEndBytes": 6455234560,
+  "loadAverageAtEnd": [
+    8.70556640625,
+    6.20947265625,
+    5.4560546875
+  ],
+  "gradleDaemonPidsAtEnd": [
+    98031
+  ],
+  "sourceHeadAtEnd": "c539ae6bb6eddd026aa9a3c884bd78f328eebc0d"
+}

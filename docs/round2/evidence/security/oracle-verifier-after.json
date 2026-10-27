@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/tests",
+    "-p",
+    "test_legacy_oracle_protocol.py"
+  ],
+  "exitCode": 0,
+  "verifierSha256": "b8ce2a32d2ce9a60040d69cd4c1719ded7ee0dc6e010b53f5cc8cf19d68671fc",
+  "testSha256": "d2ebef92a24ba58e1121aba9a3ec5440ba4901a1d5a2eb92a64bb3ce5c7e4419"
+}

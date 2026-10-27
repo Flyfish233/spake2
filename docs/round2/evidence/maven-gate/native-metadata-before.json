@@ -1,0 +1,15 @@
+{
+  "phase": "before exact KGP Native metadata schema support",
+  "executedAtUtc": "2026-10-26T19:00:16.895569+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "tools/tests/test_maven_repository_gate.py",
+    "MavenRepositoryGateTest.test_complete_33_publications_and_actual_android_schema_are_accepted",
+    "MavenRepositoryGateTest.test_actual_native_metadata_variant_roundtrip_is_accepted"
+  ],
+  "exitCode": 1,
+  "resultSummary": "FAILED (errors=1)",
+  "gateSha256": "f00d7acc8740065f43ccea4f8fd722d466cec28620a7c9b24960ebc483d0c4c6",
+  "testSha256": "b3654d26e4c5fd2543be8a8ef87c100d68312e6e4847c9e933696f36bdd418ce",
+  "log": "native-metadata-before.txt"
+}

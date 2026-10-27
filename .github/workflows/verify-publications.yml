@@ -1,0 +1,287 @@
+name: Verify Maven publications and independent consumers
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: spake2-publications-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish-candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    outputs:
+      revision: ${{ steps.coordinates.outputs.revision }}
+      version: ${{ steps.coordinates.outputs.version }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+      - name: Select immutable candidate coordinates and an isolated Maven directory
+        id: coordinates
+        shell: bash
+        run: |
+          candidate_revision="$(git rev-parse HEAD)"
+          candidate_version="0.1.0-dev.${candidate_revision:0:12}"
+          {
+            printf 'revision=%s\n' "$candidate_revision"
+            printf 'version=%s\n' "$candidate_version"
+          } >> "$GITHUB_OUTPUT"
+          {
+            printf 'SPAKE2_SOURCE_REVISION=%s\n' "$candidate_revision"
+            printf 'SPAKE2_CONSUMER_VERSION=%s\n' "$candidate_version"
+            printf 'SPAKE2_MAVEN_REPO=%s/spake2-publication/maven\n' "$RUNNER_TEMP"
+          } >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/spake2-publication"
+      - name: Verify evidence gate failure behavior
+        run: |
+          python3 -m unittest discover -s tools/tests -p 'test_*.py'
+          python3 -O -m unittest discover -s tools/tests -p 'test_*.py'
+      - name: Publish all three modules and all ten target variants to isolated Maven Local
+        shell: bash
+        run: |
+          set -euo pipefail
+          ./gradlew --no-daemon --console=plain \
+            -PenableAndroid=true -Pkotlin.native.enableKlibsCrossCompilation=true \
+            -Pspake2Version="$SPAKE2_CONSUMER_VERSION" \
+            -Pspake2Revision="$SPAKE2_SOURCE_REVISION" \
+            -Dmaven.repo.local="$SPAKE2_MAVEN_REPO" \
+            publishToMavenLocal 2>&1 | tee "$RUNNER_TEMP/spake2-publication/producer.log"
+      - name: Validate the complete published bytes, metadata and license material
+        run: >-
+          python3 tools/check_maven_repository.py
+          --repository "$SPAKE2_MAVEN_REPO"
+          --version "$SPAKE2_CONSUMER_VERSION"
+          --revision "$SPAKE2_SOURCE_REVISION"
+          --output "$RUNNER_TEMP/spake2-publication/publication-report.json"
+      - name: Run evidence regressions from the actual complete-source archive
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          import zipfile
+          version = os.environ["SPAKE2_CONSUMER_VERSION"]
+          archive = Path(os.environ["SPAKE2_MAVEN_REPO"]) / "io/github/flyfish233/spake2" / version / f"spake2-{version}-source-distribution.zip"
+          # The previous gate has checked archive paths, symlinks and bounds.
+          destination = Path(os.environ["RUNNER_TEMP"]) / "spake2-source-probe"
+          destination.mkdir()
+          with zipfile.ZipFile(archive) as source:
+              source.extractall(destination)
+          PY
+          set -euo pipefail
+          python3 -m unittest discover -s "$RUNNER_TEMP/spake2-source-probe/tools/tests" -v \
+            2>&1 | tee "$RUNNER_TEMP/spake2-publication/source-archive-tests.log"
+      - name: Prove the consumer guard rejects substituted, mixed and missing modules
+        run: >-
+          python3 tools/probe_consumer_resolution.py
+          --repository "$SPAKE2_MAVEN_REPO"
+          --version "$SPAKE2_CONSUMER_VERSION"
+          --work-directory "$RUNNER_TEMP/spake2-resolution-probe"
+          --output-directory "$RUNNER_TEMP/spake2-publication/resolution-gate-probes"
+          --gradle-command "$GITHUB_WORKSPACE/gradlew"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: spake2-maven-candidate
+          path: ${{ runner.temp }}/spake2-publication/
+          if-no-files-found: error
+          retention-days: 14
+
+  baseline-consumer:
+    needs: publish-candidate
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            label: linux-android-js-wasm
+            android: true
+            tasks: jvmTest linuxX64Test jsNodeTest wasmJsNodeTest assembleDebug testDebugUnitTest
+            reports: jvmTest linuxX64Test jsNodeTest wasmJsNodeTest testDebugUnitTest
+          - os: macos-26
+            label: darwin-arm64
+            android: false
+            tasks: macosArm64Test iosSimulatorArm64Test linkDebugTestIosArm64
+            reports: macosArm64Test iosSimulatorArm64Test
+          - os: macos-15-intel
+            label: darwin-x64
+            android: false
+            tasks: macosX64Test iosX64Test linkDebugTestIosArm64
+            reports: macosX64Test iosX64Test
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 50
+    env:
+      SPAKE2_SOURCE_REVISION: ${{ needs.publish-candidate.outputs.revision }}
+      SPAKE2_CONSUMER_VERSION: ${{ needs.publish-candidate.outputs.version }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ needs.publish-candidate.outputs.revision }}
+          persist-credentials: false
+      - name: Select isolated consumer and evidence paths
+        shell: bash
+        run: |
+          {
+            printf 'SPAKE2_MAVEN_REPO=%s/spake2-publication/maven\n' "$RUNNER_TEMP"
+            printf 'SPAKE2_CONSUMER_ROOT=%s/isolated-spake2-integration/consumer\n' "$RUNNER_TEMP"
+            printf 'SPAKE2_EVIDENCE=%s/consumer-evidence\n' "$RUNNER_TEMP"
+          } >> "$GITHUB_ENV"
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: spake2-maven-candidate
+          path: ${{ runner.temp }}/spake2-publication
+      - name: Copy only the standalone consumer fixtures outside the producer checkout
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/isolated-spake2-integration" "$SPAKE2_EVIDENCE"
+          cp -R integration/. "$RUNNER_TEMP/isolated-spake2-integration/"
+          python3 tools/check_maven_repository.py \
+            --repository "$SPAKE2_MAVEN_REPO" --version "$SPAKE2_CONSUMER_VERSION" \
+            --revision "$SPAKE2_SOURCE_REVISION" --output "$SPAKE2_EVIDENCE/downloaded-publication.json"
+          java -version 2> "$SPAKE2_EVIDENCE/java-version.txt"
+          uname -a > "$SPAKE2_EVIDENCE/host.txt"
+      - name: Record available Apple runtimes
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          xcodebuild -version > "$SPAKE2_EVIDENCE/xcode-version.txt"
+          xcrun simctl list devices available > "$SPAKE2_EVIDENCE/simulator-devices.txt"
+      - name: Resolve, compile, link and run the baseline consumers
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$GITHUB_WORKSPACE/gradlew" --no-daemon --console=plain -p "$SPAKE2_CONSUMER_ROOT" \
+            -PenableAndroid=${{ matrix.android }} \
+            -Pspake2Version="$SPAKE2_CONSUMER_VERSION" -Pspake2Repository="$SPAKE2_MAVEN_REPO" \
+            ${{ matrix.tasks }} verifyPublishedDependencies 2>&1 | tee "$SPAKE2_EVIDENCE/build.log"
+          python3 tools/check_consumer_test_results.py --root "$SPAKE2_CONSUMER_ROOT" \
+            --tasks ${{ matrix.reports }} --version "$SPAKE2_CONSUMER_VERSION" \
+            --revision "$SPAKE2_SOURCE_REVISION" --output "$SPAKE2_EVIDENCE/test-summary.json"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: baseline-consumer-${{ matrix.label }}
+          path: |
+            ${{ runner.temp }}/consumer-evidence/**
+            ${{ runner.temp }}/isolated-spake2-integration/consumer/**/build/test-results/**
+            ${{ runner.temp }}/isolated-spake2-integration/consumer/**/build/reports/**
+            ${{ runner.temp }}/isolated-spake2-integration/consumer/**/build/outputs/aar/**
+          retention-days: 14
+
+  kadb-toolchain-consumer:
+    needs: publish-candidate
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            label: linux-android
+            android: true
+            tasks: linuxX64Test testAndroidHostTest assembleAndroidMain assembleAndroidDeviceTest
+            reports: linuxX64Test testAndroidHostTest
+          - os: macos-26
+            label: darwin-arm64
+            android: false
+            tasks: macosArm64Test iosSimulatorArm64Test linkDebugTestIosArm64
+            reports: macosArm64Test iosSimulatorArm64Test
+          - os: macos-15-intel
+            label: darwin-x64
+            android: false
+            tasks: macosX64Test linkDebugTestIosArm64
+            reports: macosX64Test
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 50
+    env:
+      SPAKE2_SOURCE_REVISION: ${{ needs.publish-candidate.outputs.revision }}
+      SPAKE2_CONSUMER_VERSION: ${{ needs.publish-candidate.outputs.version }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ needs.publish-candidate.outputs.revision }}
+          persist-credentials: false
+      - name: Select isolated consumer and evidence paths
+        shell: bash
+        run: |
+          {
+            printf 'SPAKE2_MAVEN_REPO=%s/spake2-publication/maven\n' "$RUNNER_TEMP"
+            printf 'SPAKE2_CONSUMER_ROOT=%s/isolated-spake2-integration/kadb-consumer\n' "$RUNNER_TEMP"
+            printf 'SPAKE2_EVIDENCE=%s/consumer-evidence\n' "$RUNNER_TEMP"
+          } >> "$GITHUB_ENV"
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@748248ddd2a24f49513d8f472f81c3a07d4d50e1 # v4.4.4, peeled commit
+        with:
+          gradle-version: '9.6.0'
+          cache-read-only: true
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: spake2-maven-candidate
+          path: ${{ runner.temp }}/spake2-publication
+      - name: Initialize the Android SDK tools used by Kadb
+        if: runner.os == 'Linux'
+        uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407 # pinned command-line-tools bootstrap
+        with:
+          cmdline-tools-version: '16111833'
+          packages: platform-tools
+      - name: Install the stable Android 37.0 platform used by Kadb
+        if: runner.os == 'Linux'
+        run: |
+          sdkmanager --version
+          sdkmanager "platforms;android-37.0" "build-tools;37.0.0" "build-tools;36.0.0"
+      - name: Copy only the standalone consumer fixtures outside the producer checkout
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/isolated-spake2-integration" "$SPAKE2_EVIDENCE"
+          cp -R integration/. "$RUNNER_TEMP/isolated-spake2-integration/"
+          python3 tools/check_maven_repository.py \
+            --repository "$SPAKE2_MAVEN_REPO" --version "$SPAKE2_CONSUMER_VERSION" \
+            --revision "$SPAKE2_SOURCE_REVISION" --output "$SPAKE2_EVIDENCE/downloaded-publication.json"
+          java -version 2> "$SPAKE2_EVIDENCE/java-version.txt"
+          gradle --version > "$SPAKE2_EVIDENCE/gradle-version.txt"
+          uname -a > "$SPAKE2_EVIDENCE/host.txt"
+      - name: Record available Apple runtimes
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          xcodebuild -version > "$SPAKE2_EVIDENCE/xcode-version.txt"
+          xcrun simctl list devices available > "$SPAKE2_EVIDENCE/simulator-devices.txt"
+      - name: Resolve, compile, link and run the Kadb toolchain consumers
+        shell: bash
+        run: |
+          set -euo pipefail
+          gradle --no-daemon --console=plain -p "$SPAKE2_CONSUMER_ROOT" \
+            -PenableAndroid=${{ matrix.android }} \
+            -Pspake2Version="$SPAKE2_CONSUMER_VERSION" -Pspake2Repository="$SPAKE2_MAVEN_REPO" \
+            ${{ matrix.tasks }} verifyPublishedDependencies 2>&1 | tee "$SPAKE2_EVIDENCE/build.log"
+          python3 tools/check_consumer_test_results.py --root "$SPAKE2_CONSUMER_ROOT" \
+            --tasks ${{ matrix.reports }} --version "$SPAKE2_CONSUMER_VERSION" \
+            --revision "$SPAKE2_SOURCE_REVISION" --output "$SPAKE2_EVIDENCE/test-summary.json"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: kadb-toolchain-consumer-${{ matrix.label }}
+          path: |
+            ${{ runner.temp }}/consumer-evidence/**
+            ${{ runner.temp }}/isolated-spake2-integration/kadb-consumer/**/build/test-results/**
+            ${{ runner.temp }}/isolated-spake2-integration/kadb-consumer/**/build/reports/**
+            ${{ runner.temp }}/isolated-spake2-integration/kadb-consumer/**/build/outputs/**
+          retention-days: 14

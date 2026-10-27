@@ -1,0 +1,678 @@
+﻿2026-10-26T19:12:08.8212142Z Current runner version: '2.338.0'
+2026-10-26T19:12:08.8235274Z ##[group]Runner Image Provisioner
+2026-10-26T19:12:08.8236195Z Hosted Compute Agent
+2026-10-26T19:12:08.8236956Z Version: 20261021.618
+2026-10-26T19:12:08.8237585Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-26T19:12:08.8238319Z Build Date: 2026-10-21T00:45:21Z
+2026-10-26T19:12:08.8238964Z Worker ID: {ec03b4ef-9852-4c73-aa5b-84744e281a78}
+2026-10-26T19:12:08.8239664Z Region: centralus
+2026-10-26T19:12:08.8240237Z Cloud: Azure
+2026-10-26T19:12:08.8240750Z ##[endgroup]
+2026-10-26T19:12:08.8242049Z ##[group]Operating System
+2026-10-26T19:12:08.8242685Z Ubuntu
+2026-10-26T19:12:08.8243237Z 24.04.5
+2026-10-26T19:12:08.8243720Z LTS
+2026-10-26T19:12:08.8244198Z ##[endgroup]
+2026-10-26T19:12:08.8244839Z ##[group]Runner Image
+2026-10-26T19:12:08.8245404Z Image: ubuntu-24.04
+2026-10-26T19:12:08.8245968Z Version: 20261012.334.1
+2026-10-26T19:12:08.8247329Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-26T19:12:08.8248899Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-26T19:12:08.8249828Z ##[endgroup]
+2026-10-26T19:12:08.8250921Z ##[group]GITHUB_TOKEN Permissions
+2026-10-26T19:12:08.8252817Z Contents: read
+2026-10-26T19:12:08.8253459Z Metadata: read
+2026-10-26T19:12:08.8253983Z ##[endgroup]
+2026-10-26T19:12:08.8255844Z Secret source: Actions
+2026-10-26T19:12:08.8256927Z Cache mode: write
+2026-10-26T19:12:08.8257611Z Prepare workflow directory
+2026-10-26T19:12:08.8730697Z Prepare all required actions
+2026-10-26T19:12:08.8778067Z Getting action download info
+2026-10-26T19:12:09.1402132Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-26T19:12:09.2368926Z Download action repository 'actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-10-26T19:12:09.8956801Z Download action repository 'actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+2026-10-26T19:12:10.3937506Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-26T19:12:10.6879966Z Complete job name: baseline-consumer (ubuntu-24.04, linux-android-js-wasm, true, jvmTest linuxX64Test jsNodeTest was...
+2026-10-26T19:12:10.7783162Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-26T19:12:10.7784918Z with:
+2026-10-26T19:12:10.7786043Z   ref: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:12:10.7787626Z   persist-credentials: false
+2026-10-26T19:12:10.7788898Z   repository: Flyfish233/spake2
+2026-10-26T19:12:10.7798694Z   token: ***
+2026-10-26T19:12:10.7799734Z   ssh-strict: true
+2026-10-26T19:12:10.7800811Z   ssh-user: git
+2026-10-26T19:12:10.7801830Z   clean: true
+2026-10-26T19:12:10.7802901Z   sparse-checkout-cone-mode: true
+2026-10-26T19:12:10.7804245Z   fetch-depth: 1
+2026-10-26T19:12:10.7805293Z   fetch-tags: false
+2026-10-26T19:12:10.7806511Z   show-progress: true
+2026-10-26T19:12:10.7807606Z   lfs: false
+2026-10-26T19:12:10.7808651Z   submodules: false
+2026-10-26T19:12:10.7809752Z   set-safe-directory: true
+2026-10-26T19:12:10.7810973Z   allow-unsafe-pr-checkout: false
+2026-10-26T19:12:10.7812614Z env:
+2026-10-26T19:12:10.7814022Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:12:10.7815733Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:12:10.7817195Z ##[endgroup]
+2026-10-26T19:12:10.8964234Z Syncing repository: Flyfish233/spake2
+2026-10-26T19:12:10.8969309Z ##[group]Getting Git version info
+2026-10-26T19:12:10.8971502Z Working directory is '/home/runner/work/spake2/spake2'
+2026-10-26T19:12:10.8974758Z [command]/usr/bin/git version
+2026-10-26T19:12:10.9004163Z git version 2.55.0
+2026-10-26T19:12:10.9034494Z ##[endgroup]
+2026-10-26T19:12:10.9085950Z Temporarily overriding HOME='/home/runner/work/_temp/4d69dfb0-39a3-442f-b1ca-8c8037cb9c65' before making global git config changes
+2026-10-26T19:12:10.9090726Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T19:12:10.9094234Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/spake2/spake2
+2026-10-26T19:12:10.9161481Z Deleting the contents of '/home/runner/work/spake2/spake2'
+2026-10-26T19:12:10.9165534Z ##[group]Initializing the repository
+2026-10-26T19:12:10.9169898Z [command]/usr/bin/git init /home/runner/work/spake2/spake2
+2026-10-26T19:12:10.9261188Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-26T19:12:10.9266833Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-26T19:12:10.9270595Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-26T19:12:10.9274072Z hint: call:
+2026-10-26T19:12:10.9276075Z hint:
+2026-10-26T19:12:10.9279011Z hint: 	git config --global init.defaultBranch <name>
+2026-10-26T19:12:10.9281150Z hint:
+2026-10-26T19:12:10.9283174Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-26T19:12:10.9286968Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-26T19:12:10.9289492Z hint:
+2026-10-26T19:12:10.9290928Z hint: 	git branch -m <name>
+2026-10-26T19:12:10.9292691Z hint:
+2026-10-26T19:12:10.9294844Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-26T19:12:10.9298474Z Initialized empty Git repository in /home/runner/work/spake2/spake2/.git/
+2026-10-26T19:12:10.9311600Z [command]/usr/bin/git remote add origin https://github.com/Flyfish233/spake2
+2026-10-26T19:12:10.9355063Z ##[endgroup]
+2026-10-26T19:12:10.9358267Z ##[group]Disabling automatic garbage collection
+2026-10-26T19:12:10.9360964Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-26T19:12:10.9392108Z ##[endgroup]
+2026-10-26T19:12:10.9395212Z ##[group]Setting up auth
+2026-10-26T19:12:10.9399263Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T19:12:10.9431364Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T19:12:10.9823318Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T19:12:10.9857311Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T19:12:11.0042321Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T19:12:11.0076082Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T19:12:11.0264719Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-26T19:12:11.0311265Z ##[endgroup]
+2026-10-26T19:12:11.0314148Z ##[group]Fetching the repository
+2026-10-26T19:12:11.0322569Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:12:11.8736827Z From https://github.com/Flyfish233/spake2
+2026-10-26T19:12:11.8738284Z  * branch            027d6dc00f2c92502ca98b878d1940a358590be5 -> FETCH_HEAD
+2026-10-26T19:12:11.8741758Z ##[endgroup]
+2026-10-26T19:12:11.8742761Z ##[group]Determining the checkout info
+2026-10-26T19:12:11.8748191Z ##[endgroup]
+2026-10-26T19:12:11.8752710Z [command]/usr/bin/git sparse-checkout disable
+2026-10-26T19:12:11.8814898Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-26T19:12:11.8843658Z ##[group]Checking out the ref
+2026-10-26T19:12:11.8847743Z [command]/usr/bin/git checkout --progress --force 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:12:11.9131835Z Note: switching to '027d6dc00f2c92502ca98b878d1940a358590be5'.
+2026-10-26T19:12:11.9132531Z 
+2026-10-26T19:12:11.9133106Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-26T19:12:11.9133998Z changes and commit them, and you can discard any commits you make in this
+2026-10-26T19:12:11.9134901Z state without impacting any branches by switching back to a branch.
+2026-10-26T19:12:11.9135606Z 
+2026-10-26T19:12:11.9135934Z If you want to create a new branch to retain commits you create, you may
+2026-10-26T19:12:11.9136754Z do so (now or later) by using -c with the switch command. Example:
+2026-10-26T19:12:11.9137136Z 
+2026-10-26T19:12:11.9137347Z   git switch -c <new-branch-name>
+2026-10-26T19:12:11.9137623Z 
+2026-10-26T19:12:11.9137879Z Or undo this operation with:
+2026-10-26T19:12:11.9138187Z 
+2026-10-26T19:12:11.9138482Z   git switch -
+2026-10-26T19:12:11.9138818Z 
+2026-10-26T19:12:11.9139270Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-26T19:12:11.9139923Z 
+2026-10-26T19:12:11.9140496Z HEAD is now at 027d6dc fix: validate native metadata companions against the Kotlin publication schema
+2026-10-26T19:12:11.9143565Z ##[endgroup]
+2026-10-26T19:12:11.9183224Z [command]/usr/bin/git log -1 --format=%H
+2026-10-26T19:12:11.9204627Z 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:12:11.9212557Z ##[group]Removing auth
+2026-10-26T19:12:11.9216858Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T19:12:11.9242627Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T19:12:11.9425609Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T19:12:11.9449056Z http.https://github.com/.extraheader
+2026-10-26T19:12:11.9455878Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-26T19:12:11.9485583Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T19:12:11.9660686Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T19:12:11.9690498Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T19:12:11.9862221Z ##[endgroup]
+2026-10-26T19:12:12.0109472Z ##[group]Run {
+2026-10-26T19:12:12.0110038Z [36;1m{[0m
+2026-10-26T19:12:12.0110594Z [36;1m  printf 'SPAKE2_MAVEN_REPO=%s/spake2-publication/maven\n' "$RUNNER_TEMP"[0m
+2026-10-26T19:12:12.0111312Z [36;1m  printf 'SPAKE2_CONSUMER_ROOT=%s/isolated-spake2-integration/consumer\n' "$RUNNER_TEMP"[0m
+2026-10-26T19:12:12.0112027Z [36;1m  printf 'SPAKE2_EVIDENCE=%s/consumer-evidence\n' "$RUNNER_TEMP"[0m
+2026-10-26T19:12:12.0112565Z [36;1m} >> "$GITHUB_ENV"[0m
+2026-10-26T19:12:12.0288242Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-26T19:12:12.0288744Z env:
+2026-10-26T19:12:12.0289417Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:12:12.0289967Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:12:12.0290418Z ##[endgroup]
+2026-10-26T19:12:12.0521784Z ##[group]Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3
+2026-10-26T19:12:12.0522348Z with:
+2026-10-26T19:12:12.0522687Z   distribution: temurin
+2026-10-26T19:12:12.0523094Z   java-version: 17
+2026-10-26T19:12:12.0523482Z   cache: gradle
+2026-10-26T19:12:12.0523851Z   java-package: jdk
+2026-10-26T19:12:12.0524224Z   check-latest: false
+2026-10-26T19:12:12.0524563Z   server-id: github
+2026-10-26T19:12:12.0524953Z   server-username: GITHUB_ACTOR
+2026-10-26T19:12:12.0525357Z   server-password: GITHUB_TOKEN
+2026-10-26T19:12:12.0525753Z   overwrite-settings: true
+2026-10-26T19:12:12.0526301Z   job-status: success
+2026-10-26T19:12:12.0529235Z   token: ***
+2026-10-26T19:12:12.0529630Z env:
+2026-10-26T19:12:12.0530062Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:12:12.0530584Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:12:12.0531152Z   SPAKE2_MAVEN_REPO: /home/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:12:12.0531923Z   SPAKE2_CONSUMER_ROOT: /home/runner/work/_temp/isolated-spake2-integration/consumer
+2026-10-26T19:12:12.0532545Z   SPAKE2_EVIDENCE: /home/runner/work/_temp/consumer-evidence
+2026-10-26T19:12:12.0533027Z ##[endgroup]
+2026-10-26T19:12:12.2114520Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-10-26T19:12:12.2122137Z ##[group]Installed distributions
+2026-10-26T19:12:12.2157131Z Resolved Java 17.0.20+1 from tool-cache
+2026-10-26T19:12:12.2157833Z Setting Java 17.0.20+1 as the default
+2026-10-26T19:12:12.2166779Z (node:2364) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T19:12:12.2168177Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T19:12:12.2170413Z Creating toolchains.xml for JDK version 17 from temurin
+2026-10-26T19:12:12.2238952Z Writing to /home/runner/.m2/toolchains.xml
+2026-10-26T19:12:12.2239501Z 
+2026-10-26T19:12:12.2239892Z Java configuration:
+2026-10-26T19:12:12.2240567Z   Distribution: temurin
+2026-10-26T19:12:12.2241174Z   Version: 17.0.20+1
+2026-10-26T19:12:12.2241925Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T19:12:12.2242569Z 
+2026-10-26T19:12:12.2259204Z ##[endgroup]
+2026-10-26T19:12:12.2276331Z Creating settings.xml with server-id: github
+2026-10-26T19:12:12.2290511Z Writing to /home/runner/.m2/settings.xml
+2026-10-26T19:12:12.5197087Z Cache hit for: setup-java-Linux-x64-gradle-b09d5597b9bb9e7d3df33364189b736b6f785d53c1b458878d8f6fc391289035
+2026-10-26T19:12:12.5297419Z (node:2364) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-26T19:12:13.6678544Z Received 109051904 of 528798457 (20.6%), 104.0 MBs/sec
+2026-10-26T19:12:14.6692808Z Received 327155712 of 528798457 (61.9%), 155.9 MBs/sec
+2026-10-26T19:12:15.6230287Z Received 528798457 of 528798457 (100.0%), 170.7 MBs/sec
+2026-10-26T19:12:15.6234397Z Cache Size: ~504 MB (528798457 B)
+2026-10-26T19:12:15.6316242Z [command]/usr/bin/tar -xf /home/runner/work/_temp/459e1ebc-f61a-448f-ab48-e8af6b9720a5/cache.tzst -P -C /home/runner/work/spake2/spake2 --use-compress-program unzstd
+2026-10-26T19:12:16.8002785Z Cache restored successfully
+2026-10-26T19:12:16.8924144Z Cache restored from key: setup-java-Linux-x64-gradle-b09d5597b9bb9e7d3df33364189b736b6f785d53c1b458878d8f6fc391289035
+2026-10-26T19:12:16.9217382Z ##[group]Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+2026-10-26T19:12:16.9218189Z with:
+2026-10-26T19:12:16.9218690Z   name: spake2-maven-candidate
+2026-10-26T19:12:16.9219223Z   path: /home/runner/work/_temp/spake2-publication
+2026-10-26T19:12:16.9219875Z   merge-multiple: false
+2026-10-26T19:12:16.9220343Z   repository: Flyfish233/spake2
+2026-10-26T19:12:16.9220840Z   run-id: 40384173898
+2026-10-26T19:12:16.9221233Z env:
+2026-10-26T19:12:16.9221769Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:12:16.9222509Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:12:16.9223245Z   SPAKE2_MAVEN_REPO: /home/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:12:16.9224125Z   SPAKE2_CONSUMER_ROOT: /home/runner/work/_temp/isolated-spake2-integration/consumer
+2026-10-26T19:12:16.9224956Z   SPAKE2_EVIDENCE: /home/runner/work/_temp/consumer-evidence
+2026-10-26T19:12:16.9225884Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T19:12:16.9227077Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T19:12:16.9227829Z ##[endgroup]
+2026-10-26T19:12:17.0757703Z Downloading single artifact
+2026-10-26T19:12:17.0902198Z (node:2383) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T19:12:17.2766749Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T19:12:17.2783966Z Preparing to download the following artifacts:
+2026-10-26T19:12:17.2785453Z - spake2-maven-candidate (ID: 12679454200, Size: 9918377, Expected Digest: sha256:880ff266c9cdcf51ef5ac2ac4594bfca06bcc650c4905390aa7fff8b2ffaa951)
+2026-10-26T19:12:17.5057723Z Redirecting to blob download url: https://productionresultssa11.blob.core.windows.net/actions-results/6eb1a443-5239-8b79-a8ea-21db85a79d98/workflow-job-run-77ab38b2-1bdb-5e43-8778-945a7e088f11/artifacts/65858158a4eff5fb32f6742e0b4b29a8eea2227e93987aa3e2c3c5cec99707c6.zip
+2026-10-26T19:12:17.5060408Z Starting download of artifact to: /home/runner/work/_temp/spake2-publication
+2026-10-26T19:12:17.7108184Z (node:2383) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-10-26T19:12:18.3324574Z SHA256 digest of downloaded artifact is 880ff266c9cdcf51ef5ac2ac4594bfca06bcc650c4905390aa7fff8b2ffaa951
+2026-10-26T19:12:18.3326052Z Artifact download completed successfully.
+2026-10-26T19:12:18.3327041Z Total of 1 artifact(s) downloaded
+2026-10-26T19:12:18.3331732Z Download artifact has finished successfully
+2026-10-26T19:12:18.3454966Z ##[group]Run mkdir -p "$RUNNER_TEMP/isolated-spake2-integration" "$SPAKE2_EVIDENCE"
+2026-10-26T19:12:18.3455683Z [36;1mmkdir -p "$RUNNER_TEMP/isolated-spake2-integration" "$SPAKE2_EVIDENCE"[0m
+2026-10-26T19:12:18.3456264Z [36;1mcp -R integration/. "$RUNNER_TEMP/isolated-spake2-integration/"[0m
+2026-10-26T19:12:18.3457077Z [36;1mpython3 tools/check_maven_repository.py \[0m
+2026-10-26T19:12:18.3457621Z [36;1m  --repository "$SPAKE2_MAVEN_REPO" --version "$SPAKE2_CONSUMER_VERSION" \[0m
+2026-10-26T19:12:18.3458308Z [36;1m  --revision "$SPAKE2_SOURCE_REVISION" --output "$SPAKE2_EVIDENCE/downloaded-publication.json"[0m
+2026-10-26T19:12:18.3458941Z [36;1mjava -version 2> "$SPAKE2_EVIDENCE/java-version.txt"[0m
+2026-10-26T19:12:18.3459393Z [36;1muname -a > "$SPAKE2_EVIDENCE/host.txt"[0m
+2026-10-26T19:12:18.3499878Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-26T19:12:18.3500355Z env:
+2026-10-26T19:12:18.3500874Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:12:18.3501381Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:12:18.3502115Z   SPAKE2_MAVEN_REPO: /home/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:12:18.3502734Z   SPAKE2_CONSUMER_ROOT: /home/runner/work/_temp/isolated-spake2-integration/consumer
+2026-10-26T19:12:18.3503285Z   SPAKE2_EVIDENCE: /home/runner/work/_temp/consumer-evidence
+2026-10-26T19:12:18.3503850Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T19:12:18.3504409Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T19:12:18.3504902Z ##[endgroup]
+2026-10-26T19:12:18.6882434Z Validated 33 publications; report: /home/runner/work/_temp/consumer-evidence/downloaded-publication.json
+2026-10-26T19:12:19.0107019Z ##[group]Run set -euo pipefail
+2026-10-26T19:12:19.0107497Z [36;1mset -euo pipefail[0m
+2026-10-26T19:12:19.0108058Z [36;1m"$GITHUB_WORKSPACE/gradlew" --no-daemon --console=plain -p "$SPAKE2_CONSUMER_ROOT" \[0m
+2026-10-26T19:12:19.0108581Z [36;1m  -PenableAndroid=true \[0m
+2026-10-26T19:12:19.0109106Z [36;1m  -Pspake2Version="$SPAKE2_CONSUMER_VERSION" -Pspake2Repository="$SPAKE2_MAVEN_REPO" \[0m
+2026-10-26T19:12:19.0110025Z [36;1m  jvmTest linuxX64Test jsNodeTest wasmJsNodeTest assembleDebug testDebugUnitTest verifyPublishedDependencies 2>&1 | tee "$SPAKE2_EVIDENCE/build.log"[0m
+2026-10-26T19:12:19.0111007Z [36;1mpython3 tools/check_consumer_test_results.py --root "$SPAKE2_CONSUMER_ROOT" \[0m
+2026-10-26T19:12:19.0111778Z [36;1m  --tasks jvmTest linuxX64Test jsNodeTest wasmJsNodeTest testDebugUnitTest --version "$SPAKE2_CONSUMER_VERSION" \[0m
+2026-10-26T19:12:19.0112536Z [36;1m  --revision "$SPAKE2_SOURCE_REVISION" --output "$SPAKE2_EVIDENCE/test-summary.json"[0m
+2026-10-26T19:12:19.0153199Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-26T19:12:19.0153743Z env:
+2026-10-26T19:12:19.0154229Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:12:19.0154731Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:12:19.0155221Z   SPAKE2_MAVEN_REPO: /home/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:12:19.0155851Z   SPAKE2_CONSUMER_ROOT: /home/runner/work/_temp/isolated-spake2-integration/consumer
+2026-10-26T19:12:19.0156539Z   SPAKE2_EVIDENCE: /home/runner/work/_temp/consumer-evidence
+2026-10-26T19:12:19.0157092Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T19:12:19.0157677Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T19:12:19.0158180Z ##[endgroup]
+2026-10-26T19:12:19.6983495Z 
+2026-10-26T19:12:19.6990077Z Welcome to Gradle 8.14.3!
+2026-10-26T19:12:19.6990552Z 
+2026-10-26T19:12:19.6991069Z Here are the highlights of this release:
+2026-10-26T19:12:19.6991524Z  - Java 24 support
+2026-10-26T19:12:19.6991995Z  - GraalVM Native Image toolchain selection
+2026-10-26T19:12:19.6992769Z  - Enhancements to test reporting
+2026-10-26T19:12:19.6993287Z  - Build Authoring improvements
+2026-10-26T19:12:19.6993640Z 
+2026-10-26T19:12:19.6994128Z For more details see https://docs.gradle.org/8.14.3/release-notes.html
+2026-10-26T19:12:19.6994465Z 
+2026-10-26T19:12:19.7967889Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-10-26T19:12:20.7951085Z Daemon will be stopped at the end of the build 
+2026-10-26T19:12:37.2979324Z Configuration 'jsNpmAggregated' was resolved during configuration time.
+2026-10-26T19:12:37.2998474Z This is a build performance and scalability issue.
+2026-10-26T19:12:37.3007829Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T19:12:37.3008719Z Run with --info for a stacktrace.
+2026-10-26T19:12:37.9944977Z Configuration 'jsTestNpmAggregated' was resolved during configuration time.
+2026-10-26T19:12:37.9946084Z This is a build performance and scalability issue.
+2026-10-26T19:12:37.9947211Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T19:12:37.9947707Z Run with --info for a stacktrace.
+2026-10-26T19:12:38.3948919Z Configuration 'jsNpmAggregated' was resolved during configuration time.
+2026-10-26T19:12:38.3978147Z This is a build performance and scalability issue.
+2026-10-26T19:12:38.3979340Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T19:12:38.3983893Z Run with --info for a stacktrace.
+2026-10-26T19:12:38.3985027Z Configuration 'jsTestNpmAggregated' was resolved during configuration time.
+2026-10-26T19:12:38.3986160Z This is a build performance and scalability issue.
+2026-10-26T19:12:38.3987172Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T19:12:38.3988330Z Run with --info for a stacktrace.
+2026-10-26T19:12:39.7950386Z Configuration 'wasmJsNpmAggregated' was resolved during configuration time.
+2026-10-26T19:12:39.7951748Z This is a build performance and scalability issue.
+2026-10-26T19:12:39.7952711Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T19:12:39.7953606Z Run with --info for a stacktrace.
+2026-10-26T19:12:39.9945231Z Configuration 'wasmJsTestNpmAggregated' was resolved during configuration time.
+2026-10-26T19:12:39.9946262Z This is a build performance and scalability issue.
+2026-10-26T19:12:39.9947313Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T19:12:39.9948313Z Run with --info for a stacktrace.
+2026-10-26T19:12:40.3952013Z Configuration 'wasmJsNpmAggregated' was resolved during configuration time.
+2026-10-26T19:12:40.3953352Z This is a build performance and scalability issue.
+2026-10-26T19:12:40.3954429Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T19:12:40.3955287Z Run with --info for a stacktrace.
+2026-10-26T19:12:40.3956639Z Configuration 'wasmJsTestNpmAggregated' was resolved during configuration time.
+2026-10-26T19:12:40.3957906Z This is a build performance and scalability issue.
+2026-10-26T19:12:40.3958921Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T19:12:40.3959772Z Run with --info for a stacktrace.
+2026-10-26T19:12:41.2963809Z > Task :legacy-client:kmpPartiallyResolvedDependenciesChecker
+2026-10-26T19:12:41.2965547Z > Task :legacy-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T19:12:41.8008422Z > Task :legacy-client:jvmProcessResources NO-SOURCE
+2026-10-26T19:12:41.8028785Z > Task :legacy-client:processJvmMainResources SKIPPED
+2026-10-26T19:12:41.8075577Z > Task :legacy-client:jvmTestProcessResources NO-SOURCE
+2026-10-26T19:12:41.8107478Z > Task :legacy-client:processJvmTestResources SKIPPED
+2026-10-26T19:12:41.8946143Z > Task :rfc-client:kmpPartiallyResolvedDependenciesChecker
+2026-10-26T19:12:41.8961374Z > Task :rfc-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T19:12:45.8944149Z > Task :rfc-client:compileKotlinJvm
+2026-10-26T19:12:45.8948432Z > Task :legacy-client:compileKotlinJvm
+2026-10-26T19:12:45.8949565Z > Task :legacy-client:compileJvmMainJava NO-SOURCE
+2026-10-26T19:12:45.8950445Z > Task :legacy-client:jvmMainClasses
+2026-10-26T19:12:45.9943764Z > Task :legacy-client:jvmJar
+2026-10-26T19:12:46.0958109Z > Task :rfc-client:compileJvmMainJava NO-SOURCE
+2026-10-26T19:12:46.0990209Z > Task :rfc-client:jvmProcessResources NO-SOURCE
+2026-10-26T19:12:46.1019011Z > Task :rfc-client:processJvmMainResources SKIPPED
+2026-10-26T19:12:46.1067669Z > Task :rfc-client:jvmMainClasses
+2026-10-26T19:12:46.1107211Z > Task :rfc-client:jvmJar
+2026-10-26T19:12:47.9944211Z > Task :legacy-client:compileTestKotlinJvm
+2026-10-26T19:12:47.9945429Z > Task :legacy-client:compileJvmTestJava NO-SOURCE
+2026-10-26T19:12:47.9946490Z > Task :legacy-client:jvmTestClasses
+2026-10-26T19:12:47.9947331Z > Task :rfc-client:compileTestKotlinJvm
+2026-10-26T19:12:48.7943564Z 
+2026-10-26T19:12:48.7968766Z > Task :legacy-client:jvmTest
+2026-10-26T19:12:48.7994396Z 
+2026-10-26T19:12:48.7995970Z PublishedLegacyTest[jvm] > malformedInputAndDestroyConsumePublishedSession[jvm] PASSED
+2026-10-26T19:12:48.7997369Z 
+2026-10-26T19:12:48.7998257Z PublishedLegacyTest[jvm] > hardenedPinnedOracleIncludingHighBitAndNulNames[jvm] PASSED
+2026-10-26T19:12:48.7999172Z 
+2026-10-26T19:12:48.7999657Z > Task :rfc-client:compileJvmTestJava NO-SOURCE
+2026-10-26T19:12:48.8000922Z > Task :rfc-client:jvmTestProcessResources NO-SOURCE
+2026-10-26T19:12:48.8001953Z > Task :rfc-client:processJvmTestResources SKIPPED
+2026-10-26T19:12:48.8003031Z > Task :rfc-client:jvmTestClasses
+2026-10-26T19:12:49.8944553Z 
+2026-10-26T19:12:49.8945581Z > Task :rfc-client:jvmTest
+2026-10-26T19:12:49.8946233Z 
+2026-10-26T19:12:49.8947053Z PublishedRfcTest[jvm] > officialP256PublicMessagesConfirmationsAndKey[jvm] PASSED
+2026-10-26T19:12:49.8947608Z 
+2026-10-26T19:12:49.8948073Z PublishedRfcTest[jvm] > incorrectConfirmationIsTerminalInPublishedLibrary[jvm] PASSED
+2026-10-26T19:12:49.8949405Z 
+2026-10-26T19:12:49.8949841Z PublishedRfcTest[jvm] > independentEdwardsPublicMessagesConfirmationsAndKey[jvm] PASSED
+2026-10-26T19:13:01.4944805Z 
+2026-10-26T19:13:01.4950974Z > Task :legacy-client:downloadKotlinNativeDistribution
+2026-10-26T19:13:01.4952597Z Kotlin/Native bundle directory /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.2.21 is not empty. Native bundle files will be overwritten.
+2026-10-26T19:13:03.4943986Z Downloading native dependencies (LLVM, sysroot etc). This is a one-time action performed only on the first run of the compiler.
+2026-10-26T19:13:03.4945692Z Downloading dependency https://download.jetbrains.com/kotlin/native/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz to /home/runner/.konan/dependencies/cache/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz
+2026-10-26T19:13:04.0948581Z Done.
+2026-10-26T19:13:04.0950161Z Extracting dependency: /home/runner/.konan/dependencies/cache/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz into /home/runner/.konan/dependencies
+2026-10-26T19:13:06.2949999Z Downloading dependency https://download.jetbrains.com/kotlin/native/lldb-4-linux.tar.gz to /home/runner/.konan/dependencies/cache/lldb-4-linux.tar.gz
+2026-10-26T19:13:06.4942696Z Done.
+2026-10-26T19:13:06.4943563Z Extracting dependency: /home/runner/.konan/dependencies/cache/lldb-4-linux.tar.gz into /home/runner/.konan/dependencies
+2026-10-26T19:13:07.1943559Z Downloading dependency https://download.jetbrains.com/kotlin/native/resources/llvm/19-x86_64-linux/llvm-19-x86_64-linux-essentials-103.tar.gz to /home/runner/.konan/dependencies/cache/llvm-19-x86_64-linux-essentials-103.tar.gz
+2026-10-26T19:13:07.9942878Z Done.
+2026-10-26T19:13:07.9945451Z Extracting dependency: /home/runner/.konan/dependencies/cache/llvm-19-x86_64-linux-essentials-103.tar.gz into /home/runner/.konan/dependencies
+2026-10-26T19:13:11.0945863Z Downloading dependency https://download.jetbrains.com/kotlin/native/libffi-3.2.1-2-linux-x86-64.tar.gz to /home/runner/.konan/dependencies/cache/libffi-3.2.1-2-linux-x86-64.tar.gz
+2026-10-26T19:13:11.0948300Z Done.
+2026-10-26T19:13:11.0949540Z Extracting dependency: /home/runner/.konan/dependencies/cache/libffi-3.2.1-2-linux-x86-64.tar.gz into /home/runner/.konan/dependencies
+2026-10-26T19:13:14.4950093Z 
+2026-10-26T19:13:14.4988059Z > Task :legacy-client:compileKotlinLinuxX64
+2026-10-26T19:13:14.4989145Z > Task :legacy-client:linuxX64ProcessResources NO-SOURCE
+2026-10-26T19:13:14.5017629Z > Task :legacy-client:linuxX64MainKlibrary
+2026-10-26T19:13:15.3944402Z > Task :legacy-client:compileTestKotlinLinuxX64
+2026-10-26T19:13:28.2943835Z > Task :legacy-client:linkDebugTestLinuxX64
+2026-10-26T19:13:29.5971100Z > Task :legacy-client:linuxX64Test
+2026-10-26T19:13:29.5997790Z > Task :rfc-client:downloadKotlinNativeDistribution
+2026-10-26T19:13:29.8983117Z > Task :rfc-client:compileKotlinLinuxX64
+2026-10-26T19:13:29.8984794Z > Task :rfc-client:linuxX64ProcessResources NO-SOURCE
+2026-10-26T19:13:29.8985776Z > Task :rfc-client:linuxX64MainKlibrary
+2026-10-26T19:13:30.5998079Z > Task :rfc-client:compileTestKotlinLinuxX64
+2026-10-26T19:13:38.1943531Z > Task :rfc-client:linkDebugTestLinuxX64
+2026-10-26T19:13:44.1943484Z > Task :rfc-client:linuxX64Test
+2026-10-26T19:13:44.1944319Z > Task :kotlinKotlinNpmCachesSetup
+2026-10-26T19:13:45.9943560Z > Task :kotlinNodeJsSetup
+2026-10-26T19:13:45.9944596Z > Task :kotlinRestoreYarnLock SKIPPED
+2026-10-26T19:13:45.9945444Z > Task :kotlinYarnSetup
+2026-10-26T19:13:46.1957960Z > Task :legacy-client:jsPackageJson
+2026-10-26T19:13:46.1973957Z > Task :legacy-client:jsTestPackageJson
+2026-10-26T19:13:46.2009438Z > Task :rfc-client:jsPackageJson
+2026-10-26T19:13:46.2010328Z > Task :rfc-client:jsTestPackageJson
+2026-10-26T19:13:46.2010996Z > Task :legacy-client:jsPublicPackageJson
+2026-10-26T19:13:46.2011790Z > Task :legacy-client:jsTestPublicPackageJson
+2026-10-26T19:13:46.2012463Z > Task :rfc-client:jsPublicPackageJson
+2026-10-26T19:13:46.2945327Z > Task :rfc-client:jsTestPublicPackageJson
+2026-10-26T19:13:46.2946763Z > Task :kotlinPackageJsonUmbrella
+2026-10-26T19:13:46.2947678Z > Task :rootPackageJson
+2026-10-26T19:13:48.2942190Z 
+2026-10-26T19:13:48.2942982Z > Task :kotlinNpmInstall
+2026-10-26T19:13:48.2944127Z (node:2717) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T19:13:48.2945125Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T19:13:48.2947356Z warning workspace-aggregator-f965d2ef-66cc-4485-948e-a8eccc03cb85 > spake2-independent-consumer-legacy-client-test > mocha > glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+2026-10-26T19:13:52.8944640Z warning Ignored scripts due to flag.
+2026-10-26T19:13:52.8945497Z 
+2026-10-26T19:13:52.8945977Z > Task :kotlinStoreYarnLock
+2026-10-26T19:13:52.9944398Z > Task :legacy-client:jsProcessResources NO-SOURCE
+2026-10-26T19:13:53.0968183Z > Task :legacy-client:jsTestProcessResources NO-SOURCE
+2026-10-26T19:13:53.1943540Z > Task :legacy-client:kotlinNodeJsSetup
+2026-10-26T19:13:53.7957844Z > Task :rfc-client:compileKotlinJs
+2026-10-26T19:13:53.7992650Z > Task :rfc-client:jsProcessResources NO-SOURCE
+2026-10-26T19:13:53.8037441Z > Task :legacy-client:compileKotlinJs
+2026-10-26T19:13:53.8067389Z > Task :legacy-client:jsMainClasses
+2026-10-26T19:13:53.8952034Z > Task :rfc-client:jsMainClasses
+2026-10-26T19:13:54.7948578Z > Task :legacy-client:compileTestKotlinJs
+2026-10-26T19:13:54.7968329Z > Task :legacy-client:jsTestClasses
+2026-10-26T19:13:54.7997747Z > Task :rfc-client:compileTestKotlinJs
+2026-10-26T19:13:54.8027502Z > Task :rfc-client:jsTestProcessResources NO-SOURCE
+2026-10-26T19:13:54.8028604Z > Task :rfc-client:jsTestClasses
+2026-10-26T19:14:01.9943672Z > Task :rfc-client:compileTestDevelopmentExecutableKotlinJs
+2026-10-26T19:14:01.9968014Z > Task :legacy-client:compileTestDevelopmentExecutableKotlinJs
+2026-10-26T19:14:02.0943888Z > Task :rfc-client:jsTestTestDevelopmentExecutableCompileSync
+2026-10-26T19:14:02.0967846Z > Task :legacy-client:jsTestTestDevelopmentExecutableCompileSync
+2026-10-26T19:14:02.8944165Z > Task :legacy-client:jsNodeTest
+2026-10-26T19:14:02.9943062Z > Task :rfc-client:kotlinNodeJsSetup
+2026-10-26T19:14:04.9957885Z > Task :rfc-client:jsNodeTest
+2026-10-26T19:14:04.9958679Z > Task :kotlinWasmKotlinNpmCachesSetup
+2026-10-26T19:14:04.9959549Z > Task :kotlinWasmNodeJsSetup
+2026-10-26T19:14:04.9960153Z > Task :kotlinWasmRestoreYarnLock SKIPPED
+2026-10-26T19:14:04.9961143Z > Task :kotlinWasmYarnSetup
+2026-10-26T19:14:05.0952465Z > Task :legacy-client:wasmJsPackageJson
+2026-10-26T19:14:05.0954835Z > Task :legacy-client:wasmJsTestPackageJson
+2026-10-26T19:14:05.1943279Z > Task :rfc-client:wasmJsPackageJson
+2026-10-26T19:14:05.1944218Z > Task :rfc-client:wasmJsTestPackageJson
+2026-10-26T19:14:05.1945522Z > Task :legacy-client:wasmJsPublicPackageJson
+2026-10-26T19:14:05.1946652Z > Task :legacy-client:wasmJsTestPublicPackageJson
+2026-10-26T19:14:05.1947574Z > Task :rfc-client:wasmJsPublicPackageJson
+2026-10-26T19:14:05.1948509Z > Task :rfc-client:wasmJsTestPublicPackageJson
+2026-10-26T19:14:05.1949338Z > Task :kotlinWasmPackageJsonUmbrella
+2026-10-26T19:14:05.1950157Z > Task :wasmRootPackageJson
+2026-10-26T19:14:05.3943308Z 
+2026-10-26T19:14:05.3944202Z > Task :kotlinWasmNpmInstall
+2026-10-26T19:14:05.3945054Z warning Ignored scripts due to flag.
+2026-10-26T19:14:05.3945390Z 
+2026-10-26T19:14:05.3945659Z > Task :kotlinWasmStoreYarnLock
+2026-10-26T19:14:07.3943662Z 
+2026-10-26T19:14:07.3944487Z > Task :kotlinWasmToolingSetup
+2026-10-26T19:14:07.3945473Z (node:2802) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T19:14:07.3946758Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T19:14:33.1944013Z warning Ignored scripts due to flag.
+2026-10-26T19:14:34.1947088Z 
+2026-10-26T19:14:34.1968379Z > Task :legacy-client:wasmJsProcessResources NO-SOURCE
+2026-10-26T19:14:34.1986285Z > Task :legacy-client:wasmJsTestProcessResources NO-SOURCE
+2026-10-26T19:14:34.3988238Z > Task :legacy-client:kotlinWasmNodeJsSetup
+2026-10-26T19:14:34.6971613Z > Task :legacy-client:compileKotlinWasmJs
+2026-10-26T19:14:34.7128963Z > Task :legacy-client:wasmJsMainClasses
+2026-10-26T19:14:34.7188856Z > Task :rfc-client:compileKotlinWasmJs
+2026-10-26T19:14:34.7202059Z > Task :rfc-client:wasmJsProcessResources NO-SOURCE
+2026-10-26T19:14:34.7237251Z > Task :rfc-client:wasmJsMainClasses
+2026-10-26T19:14:35.2948290Z > Task :legacy-client:compileTestKotlinWasmJs
+2026-10-26T19:14:35.2981608Z > Task :legacy-client:wasmJsTestClasses
+2026-10-26T19:14:35.3943840Z > Task :rfc-client:compileTestKotlinWasmJs
+2026-10-26T19:14:35.3967830Z > Task :rfc-client:wasmJsTestProcessResources NO-SOURCE
+2026-10-26T19:14:35.3997635Z > Task :rfc-client:wasmJsTestClasses
+2026-10-26T19:14:39.2943952Z > Task :legacy-client:compileTestDevelopmentExecutableKotlinWasmJs
+2026-10-26T19:14:39.2968707Z > Task :rfc-client:compileTestDevelopmentExecutableKotlinWasmJs
+2026-10-26T19:14:39.2996135Z > Task :legacy-client:wasmJsTestTestDevelopmentExecutableCompileSync
+2026-10-26T19:14:40.2943987Z > Task :legacy-client:wasmJsNodeTest
+2026-10-26T19:14:40.2946894Z > Task :rfc-client:kotlinWasmNodeJsSetup
+2026-10-26T19:14:40.2947986Z > Task :rfc-client:wasmJsTestTestDevelopmentExecutableCompileSync
+2026-10-26T19:14:43.5950476Z > Task :rfc-client:wasmJsNodeTest
+2026-10-26T19:14:43.5951652Z > Task :legacy-client:preBuild UP-TO-DATE
+2026-10-26T19:14:43.5954432Z > Task :legacy-client:preDebugBuild UP-TO-DATE
+2026-10-26T19:14:43.5965082Z > Task :legacy-client:mergeDebugJniLibFolders
+2026-10-26T19:14:43.5966119Z > Task :legacy-client:mergeDebugNativeLibs NO-SOURCE
+2026-10-26T19:14:43.6943541Z > Task :legacy-client:stripDebugDebugSymbols NO-SOURCE
+2026-10-26T19:14:43.6944215Z > Task :legacy-client:generateDebugResValues
+2026-10-26T19:14:43.6944833Z > Task :legacy-client:copyDebugJniLibsProjectAndLocalJars
+2026-10-26T19:14:43.6945359Z > Task :legacy-client:generateDebugResources
+2026-10-26T19:14:43.6945842Z > Task :legacy-client:packageDebugResources
+2026-10-26T19:14:44.7998474Z > Task :legacy-client:extractDeepLinksForAarDebug
+2026-10-26T19:14:44.8028115Z > Task :legacy-client:mergeDebugShaders
+2026-10-26T19:14:44.8049146Z > Task :legacy-client:compileDebugShaders NO-SOURCE
+2026-10-26T19:14:44.8051057Z > Task :legacy-client:debugAssetsCopyForAGP NO-SOURCE
+2026-10-26T19:14:44.8060873Z > Task :legacy-client:generateDebugAssets UP-TO-DATE
+2026-10-26T19:14:44.8085976Z > Task :legacy-client:mergeDebugAssets
+2026-10-26T19:14:44.8117377Z > Task :legacy-client:javaPreCompileDebug
+2026-10-26T19:14:44.8131197Z > Task :legacy-client:prepareDebugArtProfile
+2026-10-26T19:14:44.8132283Z > Task :legacy-client:prepareLintJarForPublish
+2026-10-26T19:14:44.8942927Z > Task :legacy-client:parseDebugLocalResources
+2026-10-26T19:14:44.8948411Z > Task :legacy-client:generateDebugRFile
+2026-10-26T19:14:44.8949562Z > Task :legacy-client:processDebugManifest
+2026-10-26T19:14:44.9965955Z > Task :legacy-client:writeDebugAarMetadata
+2026-10-26T19:14:44.9999833Z > Task :rfc-client:preBuild UP-TO-DATE
+2026-10-26T19:14:45.0002691Z > Task :rfc-client:preDebugBuild UP-TO-DATE
+2026-10-26T19:14:45.0031790Z > Task :rfc-client:mergeDebugJniLibFolders
+2026-10-26T19:14:45.0047702Z > Task :rfc-client:mergeDebugNativeLibs NO-SOURCE
+2026-10-26T19:14:45.0048721Z > Task :rfc-client:stripDebugDebugSymbols NO-SOURCE
+2026-10-26T19:14:45.0968544Z > Task :rfc-client:copyDebugJniLibsProjectAndLocalJars
+2026-10-26T19:14:45.1010172Z > Task :rfc-client:generateDebugResValues
+2026-10-26T19:14:45.1047386Z > Task :rfc-client:generateDebugResources
+2026-10-26T19:14:45.1054997Z > Task :rfc-client:packageDebugResources
+2026-10-26T19:14:45.1107405Z > Task :rfc-client:parseDebugLocalResources
+2026-10-26T19:14:45.1988432Z > Task :rfc-client:generateDebugRFile
+2026-10-26T19:14:45.4998532Z > Task :legacy-client:compileDebugKotlinAndroid
+2026-10-26T19:14:45.6957728Z > Task :rfc-client:compileDebugKotlinAndroid
+2026-10-26T19:14:46.2949011Z > Task :legacy-client:extractDebugAnnotations
+2026-10-26T19:14:46.2967741Z > Task :legacy-client:compileDebugJavaWithJavac NO-SOURCE
+2026-10-26T19:14:46.2994776Z > Task :legacy-client:mergeDebugGeneratedProguardFiles
+2026-10-26T19:14:46.2995806Z > Task :legacy-client:mergeDebugConsumerProguardFiles
+2026-10-26T19:14:46.2996982Z > Task :legacy-client:processDebugJavaRes
+2026-10-26T19:14:46.2998081Z > Task :rfc-client:extractDebugAnnotations
+2026-10-26T19:14:46.2999144Z > Task :rfc-client:extractDeepLinksForAarDebug
+2026-10-26T19:14:46.3000033Z > Task :rfc-client:mergeDebugShaders
+2026-10-26T19:14:46.3000969Z > Task :rfc-client:compileDebugShaders NO-SOURCE
+2026-10-26T19:14:46.3001749Z > Task :rfc-client:debugAssetsCopyForAGP NO-SOURCE
+2026-10-26T19:14:46.3002473Z > Task :rfc-client:generateDebugAssets UP-TO-DATE
+2026-10-26T19:14:46.3003152Z > Task :rfc-client:mergeDebugAssets
+2026-10-26T19:14:46.3003831Z > Task :rfc-client:javaPreCompileDebug
+2026-10-26T19:14:46.3976179Z > Task :rfc-client:compileDebugJavaWithJavac NO-SOURCE
+2026-10-26T19:14:46.3995310Z > Task :rfc-client:mergeDebugGeneratedProguardFiles
+2026-10-26T19:14:46.3996687Z > Task :rfc-client:mergeDebugConsumerProguardFiles
+2026-10-26T19:14:46.4049268Z > Task :rfc-client:prepareDebugArtProfile
+2026-10-26T19:14:46.4097400Z > Task :rfc-client:prepareLintJarForPublish
+2026-10-26T19:14:46.4112668Z > Task :rfc-client:processDebugManifest
+2026-10-26T19:14:46.4149829Z > Task :rfc-client:processDebugJavaRes
+2026-10-26T19:14:46.4170730Z > Task :legacy-client:mergeDebugJavaResource
+2026-10-26T19:14:46.4206669Z > Task :rfc-client:mergeDebugJavaResource
+2026-10-26T19:14:46.4945530Z > Task :legacy-client:syncDebugLibJars
+2026-10-26T19:14:46.4965715Z > Task :legacy-client:bundleDebugAar
+2026-10-26T19:14:46.4975989Z > Task :legacy-client:assembleDebug
+2026-10-26T19:14:46.4977234Z > Task :rfc-client:syncDebugLibJars
+2026-10-26T19:14:46.4991032Z > Task :rfc-client:writeDebugAarMetadata
+2026-10-26T19:14:46.5014775Z > Task :legacy-client:bundleLibRuntimeToJarDebug
+2026-10-26T19:14:46.5018189Z > Task :rfc-client:bundleDebugAar
+2026-10-26T19:14:46.5022266Z > Task :rfc-client:assembleDebug
+2026-10-26T19:14:46.5023081Z > Task :legacy-client:preDebugUnitTestBuild UP-TO-DATE
+2026-10-26T19:14:46.5026008Z > Task :legacy-client:bundleLibCompileToJarDebug
+2026-10-26T19:14:46.5955237Z > Task :legacy-client:javaPreCompileDebugUnitTest
+2026-10-26T19:14:46.6007907Z > Task :rfc-client:bundleLibRuntimeToJarDebug
+2026-10-26T19:14:46.6017468Z > Task :legacy-client:generateDebugUnitTestStubRFile
+2026-10-26T19:14:46.6023679Z > Task :rfc-client:bundleLibCompileToJarDebug
+2026-10-26T19:14:46.6024687Z > Task :rfc-client:preDebugUnitTestBuild UP-TO-DATE
+2026-10-26T19:14:46.6968242Z > Task :rfc-client:generateDebugUnitTestStubRFile
+2026-10-26T19:14:47.7942997Z > Task :rfc-client:compileDebugUnitTestKotlinAndroid
+2026-10-26T19:14:47.7968779Z > Task :rfc-client:javaPreCompileDebugUnitTest
+2026-10-26T19:14:47.7970114Z > Task :rfc-client:compileDebugUnitTestJavaWithJavac NO-SOURCE
+2026-10-26T19:14:47.7971037Z > Task :legacy-client:compileDebugUnitTestKotlinAndroid
+2026-10-26T19:14:47.7971966Z > Task :rfc-client:processDebugUnitTestJavaRes
+2026-10-26T19:14:47.7972817Z > Task :legacy-client:compileDebugUnitTestJavaWithJavac NO-SOURCE
+2026-10-26T19:14:47.7973747Z > Task :legacy-client:processDebugUnitTestJavaRes
+2026-10-26T19:14:48.6955293Z 
+2026-10-26T19:14:48.6955981Z > Task :legacy-client:testDebugUnitTest
+2026-10-26T19:14:48.6956774Z 
+2026-10-26T19:14:48.6957332Z PublishedLegacyTest > malformedInputAndDestroyConsumePublishedSession PASSED
+2026-10-26T19:14:48.6957941Z 
+2026-10-26T19:14:48.6958420Z PublishedLegacyTest > hardenedPinnedOracleIncludingHighBitAndNulNames PASSED
+2026-10-26T19:14:49.7942610Z 
+2026-10-26T19:14:49.7943297Z > Task :rfc-client:testDebugUnitTest
+2026-10-26T19:14:49.7943642Z 
+2026-10-26T19:14:49.7944139Z PublishedRfcTest > officialP256PublicMessagesConfirmationsAndKey PASSED
+2026-10-26T19:14:49.7944663Z 
+2026-10-26T19:14:49.7944973Z PublishedRfcTest > incorrectConfirmationIsTerminalInPublishedLibrary PASSED
+2026-10-26T19:14:49.7945399Z 
+2026-10-26T19:14:49.7945672Z PublishedRfcTest > independentEdwardsPublicMessagesConfirmationsAndKey PASSED
+2026-10-26T19:14:49.8941891Z 
+2026-10-26T19:14:49.8943283Z > Task :legacy-client:verifyPublishedDependencies FAILED
+2026-10-26T19:14:49.9997253Z 
+2026-10-26T19:14:49.9998957Z [Incubating] Problems report is available at: file:///home/runner/work/_temp/isolated-spake2-integration/consumer/build/reports/problems/problems-report.html
+2026-10-26T19:14:50.0027070Z 
+2026-10-26T19:14:50.0060988Z FAILURE: Build failed with an exception.
+2026-10-26T19:14:50.0066969Z 
+2026-10-26T19:14:50.0087766Z * What went wrong:
+2026-10-26T19:14:50.0089023Z Execution failed for task ':legacy-client:verifyPublishedDependencies'.
+2026-10-26T19:14:50.0090659Z > Could not resolve all artifacts for configuration ':legacy-client:debugUnitTestCompileClasspath'.
+2026-10-26T19:14:50.0094489Z    > The consumer was configured to find a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm'. However we cannot choose between the following variants of project :legacy-client:
+2026-10-26T19:14:50.0099443Z        - Configuration ':legacy-client:debugApiElements' variant android-classes-jar declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+2026-10-26T19:14:50.0102203Z            - Unmatched attributes:
+2026-10-26T19:14:50.0103325Z                - Provides attribute 'artifactType' with value 'android-classes-jar' but the consumer didn't ask for it
+2026-10-26T19:14:50.0105116Z                - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+2026-10-26T19:14:50.0106892Z                - Provides its elements packaged as a jar but the consumer didn't ask for it
+2026-10-26T19:14:50.0109495Z        - Configuration ':legacy-client:debugApiElements' variant android-lint declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+2026-10-26T19:14:50.0112033Z            - Unmatched attributes:
+2026-10-26T19:14:50.0112987Z                - Provides attribute 'artifactType' with value 'android-lint' but the consumer didn't ask for it
+2026-10-26T19:14:50.0114737Z                - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+2026-10-26T19:14:50.0116024Z                - Provides its elements packaged as a jar but the consumer didn't ask for it
+2026-10-26T19:14:50.0119044Z        - Configuration ':legacy-client:debugApiElements' variant android-lint-local-aar declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+2026-10-26T19:14:50.0121696Z            - Unmatched attributes:
+2026-10-26T19:14:50.0122749Z                - Provides attribute 'artifactType' with value 'android-lint-local-aar' but the consumer didn't ask for it
+2026-10-26T19:14:50.0124925Z                - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+2026-10-26T19:14:50.0128175Z        - Configuration ':legacy-client:debugApiElements' variant android-manifest declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+2026-10-26T19:14:50.0135569Z            - Unmatched attributes:
+2026-10-26T19:14:50.0137601Z                - Provides attribute 'artifactType' with value 'android-manifest' but the consumer didn't ask for it
+2026-10-26T19:14:50.0139407Z                - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+2026-10-26T19:14:50.0143071Z        - Configuration ':legacy-client:debugApiElements' variant android-renderscript declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+2026-10-26T19:14:50.0146742Z            - Unmatched attributes:
+2026-10-26T19:14:50.0149069Z                - Provides attribute 'artifactType' with value 'android-renderscript' but the consumer didn't ask for it
+2026-10-26T19:14:50.0150823Z                - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+2026-10-26T19:14:50.0154338Z        - Configuration ':legacy-client:debugApiElements' variant android-symbol-with-package-name declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+2026-10-26T19:14:50.0157391Z            - Unmatched attributes:
+2026-10-26T19:14:50.0158380Z                - Provides attribute 'artifactType' with value 'android-symbol-with-package-name' but the consumer didn't ask for it
+2026-10-26T19:14:50.0160015Z                - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+2026-10-26T19:14:50.0163103Z        - Configuration ':legacy-client:debugApiElements' variant jar declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+2026-10-26T19:14:50.0165792Z            - Unmatched attributes:
+2026-10-26T19:14:50.0167296Z                - Provides attribute 'artifactType' with value 'jar' but the consumer didn't ask for it
+2026-10-26T19:14:50.0172078Z                - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+2026-10-26T19:14:50.0183091Z                - Provides its elements packaged as a jar but the consumer didn't ask for it
+2026-10-26T19:14:50.0186673Z        - Configuration ':legacy-client:debugApiElements' variant r-class-jar declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+2026-10-26T19:14:50.0189060Z            - Unmatched attributes:
+2026-10-26T19:14:50.0190265Z                - Provides attribute 'artifactType' with value 'r-class-jar' but the consumer didn't ask for it
+2026-10-26T19:14:50.0191798Z                - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+2026-10-26T19:14:50.0193300Z                - Provides its elements packaged as a jar but the consumer didn't ask for it
+2026-10-26T19:14:50.0193969Z 
+2026-10-26T19:14:50.0194325Z * Try:
+2026-10-26T19:14:50.0195364Z > Ambiguity errors are explained in more detail at https://docs.gradle.org/8.14.3/userguide/variant_model.html#sub:variant-ambiguity.
+2026-10-26T19:14:50.0197256Z > Review the variant matching algorithm at https://docs.gradle.org/8.14.3/userguide/variant_attributes.html#sec:abm_algorithm.
+2026-10-26T19:14:50.0198483Z > Run with --stacktrace option to get the stack trace.
+2026-10-26T19:14:50.0199368Z > Run with --info or --debug option to get more log output.
+2026-10-26T19:14:50.0200115Z > Run with --scan to get full insights.
+2026-10-26T19:14:50.0200937Z > Get more help at https://help.gradle.org.
+2026-10-26T19:14:50.0201374Z 
+2026-10-26T19:14:50.0201972Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+2026-10-26T19:14:50.0202713Z 
+2026-10-26T19:14:50.0203539Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-10-26T19:14:50.0204407Z 
+2026-10-26T19:14:50.0205328Z For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+2026-10-26T19:14:50.0206361Z 
+2026-10-26T19:14:50.0207127Z BUILD FAILED in 2m 30s
+2026-10-26T19:14:50.0207743Z 134 actionable tasks: 134 executed
+2026-10-26T19:14:50.4563745Z ##[error]Process completed with exit code 1.
+2026-10-26T19:14:50.4629931Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-26T19:14:50.4630527Z with:
+2026-10-26T19:14:50.4630883Z   name: baseline-consumer-linux-android-js-wasm
+2026-10-26T19:14:50.4632113Z   path: /home/runner/work/_temp/consumer-evidence/**
+/home/runner/work/_temp/isolated-spake2-integration/consumer/**/build/test-results/**
+/home/runner/work/_temp/isolated-spake2-integration/consumer/**/build/reports/**
+/home/runner/work/_temp/isolated-spake2-integration/consumer/**/build/outputs/aar/**
+
+2026-10-26T19:14:50.4633220Z   retention-days: 14
+2026-10-26T19:14:50.4633615Z   if-no-files-found: warn
+2026-10-26T19:14:50.4633938Z   compression-level: 6
+2026-10-26T19:14:50.4634228Z   overwrite: false
+2026-10-26T19:14:50.4634615Z   include-hidden-files: false
+2026-10-26T19:14:50.4634941Z env:
+2026-10-26T19:14:50.4635338Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:14:50.4636010Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:14:50.4636775Z   SPAKE2_MAVEN_REPO: /home/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:14:50.4637380Z   SPAKE2_CONSUMER_ROOT: /home/runner/work/_temp/isolated-spake2-integration/consumer
+2026-10-26T19:14:50.4637961Z   SPAKE2_EVIDENCE: /home/runner/work/_temp/consumer-evidence
+2026-10-26T19:14:50.4638496Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T19:14:50.4639046Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T19:14:50.4639535Z ##[endgroup]
+2026-10-26T19:14:50.6228687Z (node:2998) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T19:14:50.6229566Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T19:14:51.0174981Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-26T19:14:51.0177286Z The least common ancestor is /home/runner/work/_temp. This will be the root directory of the artifact
+2026-10-26T19:14:51.0178370Z With the provided path, there will be 109 files uploaded
+2026-10-26T19:14:51.0182957Z Artifact name is valid!
+2026-10-26T19:14:51.0183725Z Root directory input is valid!
+2026-10-26T19:14:51.2814809Z Beginning upload of artifact content to blob storage
+2026-10-26T19:14:51.3805600Z (node:2998) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-26T19:14:51.6442487Z Uploaded bytes 144181
+2026-10-26T19:14:51.6917853Z Finished uploading artifact content to blob storage!
+2026-10-26T19:14:51.6919017Z SHA256 digest of uploaded artifact zip is 331f86b7ded05f16d2f4d0349e275de808717553bd932013ce65667f0a8ed012
+2026-10-26T19:14:51.6920472Z Finalizing artifact upload
+2026-10-26T19:14:52.1187880Z Artifact baseline-consumer-linux-android-js-wasm.zip successfully finalized. Artifact ID 12679329693
+2026-10-26T19:14:52.1190296Z Artifact baseline-consumer-linux-android-js-wasm has been successfully uploaded! Final size is 144181 bytes. Artifact ID is 12679329693
+2026-10-26T19:14:52.1196077Z Artifact download URL: https://github.com/Flyfish233/spake2/actions/runs/40384173898/artifacts/12679329693
+2026-10-26T19:14:52.1380581Z Post job cleanup.
+2026-10-26T19:14:52.2642457Z (node:3012) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T19:14:52.2643263Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T19:14:52.2788121Z Post job cleanup.
+2026-10-26T19:14:52.3755424Z [command]/usr/bin/git version
+2026-10-26T19:14:52.3791193Z git version 2.55.0
+2026-10-26T19:14:52.3828417Z Temporarily overriding HOME='/home/runner/work/_temp/a6fbded5-506d-41f3-aa5b-1ac1c6629d49' before making global git config changes
+2026-10-26T19:14:52.3829844Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T19:14:52.3832865Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/spake2/spake2
+2026-10-26T19:14:52.3871206Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T19:14:52.3905044Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T19:14:52.4107392Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T19:14:52.4135974Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T19:14:52.4365593Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T19:14:52.4409426Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T19:14:52.4845017Z Cleaning up orphan processes
+2026-10-26T19:14:52.5123823Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093, actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

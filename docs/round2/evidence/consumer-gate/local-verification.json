@@ -1,0 +1,33 @@
+{
+  "producer_version": "0.1.0-dev.round2-local-final",
+  "source_revision": "WORKTREE",
+  "published_repository": "/workspace/scratch/a46e59dd0882/round2-maven-local-final",
+  "independent_consumer_root": "/workspace/scratch/a46e59dd0882/round2-independent-consumer/integration/consumer",
+  "first_run": {
+    "log": "local-before-resolution-fix.log",
+    "status": "failure",
+    "reason": "Verifier attempted unrelated own Android secondary variants after all five target test suites completed",
+    "test_method_executions": 25
+  },
+  "after_run": {
+    "log": "local-after-resolution-fix.log",
+    "status": "success",
+    "elapsed": "2m 17s",
+    "executed_tasks": 7,
+    "up_to_date_tasks": 129,
+    "notes": "The first run actually executed all25 test methods; unchanged fixture/test outputs were mostly up-to-date in the verifier-only correction run. This is local diagnostic evidence, not a full-Git-SHA-bound release artifact."
+  },
+  "verified_artifact_selections": {
+    "legacy-client": 52,
+    "rfc-client": 52
+  },
+  "tasks": [
+    "jvmTest",
+    "linuxX64Test",
+    "jsNodeTest",
+    "wasmJsNodeTest",
+    "assembleDebug",
+    "testDebugUnitTest",
+    "verifyPublishedDependencies"
+  ]
+}

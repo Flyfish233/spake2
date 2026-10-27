@@ -1,0 +1,55 @@
+{
+  "compiler_version": "2.2.21",
+  "java_version": "17.0.21+9",
+  "compiler_jars": {
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.2.21/b13aed5cf8412f9ee9d1e4db21bdcfebcc24f606/kotlin-compiler-embeddable-2.2.21.jar": "9588fa696ac5507af764fd5660df6894185e12704ec1bc3f5cb772af4987f295",
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/fa374a986e128314c3db00a20aae55f72a258511/kotlin-stdlib-2.2.21.jar": "6558a3d233da56a20934b32159f9db5f86ed5816ef098f78a2c223dc6abb79dd",
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.2.21/e9b021c4e335e4ed7a7e3b32285249ae6bb3a6c8/kotlin-script-runtime-2.2.21.jar": "2b1519b427b514d1536c1b425674b03fe914af637924028e9959c6625442df51",
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar": "3277ac102ae17aad10a55abec75ff5696c8d109790396434b496e75087854203",
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.2.21/78fde5db1c92786448170b351d8f8868acabd2ce/kotlin-daemon-embeddable-2.2.21.jar": "91c0673c22e44b054ae0314d323860ebe1f3aff3f0ebc74fff82c4733dde09be",
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar": "9860906a1937490bf5f3b06d2f0e10ef451e65b95b269f22daf68a3d1f5065c5",
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar": "7b0f19724082cbfcbc66e5abea2b9bc92cf08a1ea11e191933ed43801eb3cd05"
+  },
+  "source_sha256": {
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/InternalSpake2Api.kt": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt": "225be142a455d3db4c888f3c0f0d409febc484b7bad49bee1f1d7549f52100a1",
+    "tools/jvm_math_probe.kt": "edfc1689a8507305fa4447ca90601d2d15b674697690a3a1da160c043294af40",
+    "primitives/src/commonTest/kotlin/io/github/flyfish233/spake2/internal/math/P256MathTest.kt": "24f9a9caae74495fe6d430efb2c8da14c6353fbeba1ef927403d199b8b26fd6b"
+  },
+  "harness_adjustment": "Temporary harness copy changes only the P256MathTest.kt fixture path to its post-module-split primitives location.",
+  "compile_command": [
+    "/workspace/scratch/a46e59dd0882/toolchains/jdk-17.0.21+9/bin/java",
+    "-cp",
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.2.21/b13aed5cf8412f9ee9d1e4db21bdcfebcc24f606/kotlin-compiler-embeddable-2.2.21.jar:/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/fa374a986e128314c3db00a20aae55f72a258511/kotlin-stdlib-2.2.21.jar:/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.2.21/e9b021c4e335e4ed7a7e3b32285249ae6bb3a6c8/kotlin-script-runtime-2.2.21.jar:/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.2.21/78fde5db1c92786448170b351d8f8868acabd2ce/kotlin-daemon-embeddable-2.2.21.jar:/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar:/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar",
+    "org.jetbrains.kotlin.cli.jvm.K2JVMCompiler",
+    "-no-stdlib",
+    "-no-reflect",
+    "-opt-in=io.github.flyfish233.spake2.InternalSpake2Api",
+    "-classpath",
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/fa374a986e128314c3db00a20aae55f72a258511/kotlin-stdlib-2.2.21.jar",
+    "-d",
+    "/tmp/spake2-int-math-probe/math-probe.jar",
+    "/tmp/spake2-int-math-probe/InternalSpake2Api.kt",
+    "/tmp/spake2-int-math-probe/ModMath.kt",
+    "/tmp/spake2-int-math-probe/P256.kt",
+    "/tmp/spake2-int-math-probe/MathProbe.kt"
+  ],
+  "run_command": [
+    "/workspace/scratch/a46e59dd0882/toolchains/jdk-17.0.21+9/bin/java",
+    "-cp",
+    "/tmp/spake2-int-math-probe/math-probe.jar:/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/fa374a986e128314c3db00a20aae55f72a258511/kotlin-stdlib-2.2.21.jar",
+    "io.github.flyfish233.spake2.internal.math.MathProbeKt"
+  ],
+  "exit_code": 0,
+  "result": "info: kotlinc-jvm 2.2.21 (JRE 17.0.21+9)\nwarning: unable to find kotlin-stdlib.jar in the Kotlin home directory. Pass either '-no-stdlib' to prevent adding it to the classpath, or the correct '-kotlin-home'\nwarning: unable to find kotlin-script-runtime.jar in the Kotlin home directory. Pass either '-no-stdlib' to prevent adding it to the classpath, or the correct '-kotlin-home'\nwarning: unable to find kotlin-reflect.jar in the Kotlin home directory. Pass either '-no-reflect' or '-no-stdlib' to prevent adding it to the classpath, or the correct '-kotlin-home'\nPASS: 4000 field cases against JVM BigInteger (4 primes; add/subtract/multiply/square/reduction, sampled inversion)\nPASS: 60 P-256 products against independently generated Python/OpenSSL fixtures\n",
+  "compiled_snapshot_sha256": {
+    "/tmp/spake2-int-math-probe/MathProbe.kt": "b4da973a62375e3a5ca90ebc2d97fa2bd846525e6597105a3ef168980400f18b",
+    "/tmp/spake2-int-math-probe/P256.kt": "225be142a455d3db4c888f3c0f0d409febc484b7bad49bee1f1d7549f52100a1",
+    "/tmp/spake2-int-math-probe/InternalSpake2Api.kt": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6",
+    "/tmp/spake2-int-math-probe/ModMath.kt": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd"
+  },
+  "source_unchanged_at_completion": true,
+  "cache_use": "Read-only use of already-installed pinned compiler dependencies; no Gradle task or Gradle build output was created by this probe.",
+  "output_isolation": "Compiler classes and copied source live under /tmp/spake2-int-math-probe; results copied into repository evidence directory only after successful completion."
+}

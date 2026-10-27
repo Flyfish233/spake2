@@ -1,0 +1,105 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Mocha test framework for Wasm target is not supported. For KotlinWasmNode used
+Mocha test framework for Wasm target is not supported. For KotlinWasmNode used
+Mocha test framework for Wasm target is not supported. For KotlinWasmNode used
+> Task :kmpPartiallyResolvedDependenciesChecker
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :primitives:kmpPartiallyResolvedDependenciesChecker
+> Task :primitives:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :primitives:jvmProcessResources NO-SOURCE
+> Task :primitives:processJvmMainResources SKIPPED
+> Task :jvmProcessResources NO-SOURCE
+> Task :processJvmMainResources SKIPPED
+> Task :legacy:kmpPartiallyResolvedDependenciesChecker
+> Task :legacy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :legacy:jvmProcessResources NO-SOURCE
+> Task :legacy:processJvmMainResources SKIPPED
+> Task :jvmTestProcessResources NO-SOURCE
+> Task :processJvmTestResources SKIPPED
+> Task :legacy:jvmTestProcessResources NO-SOURCE
+> Task :legacy:processJvmTestResources SKIPPED
+> Task :primitives:jvmTestProcessResources NO-SOURCE
+> Task :primitives:processJvmTestResources SKIPPED
+
+> Task :primitives:compileKotlinJvm
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/EntropySource.kt:10:22 Redeclaration:
+fun interface EntropySource : Any
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/EntropySource.kt:15:19 Redeclaration:
+enum class Role : Enum<Role>
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/EntropySource.kt:21:14 Redeclaration:
+class Spake2Exception : IllegalStateException
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/InternalSpake2Api.kt:11:25 Redeclaration:
+annotation class InternalSpake2Api : Annotation
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HkdfSha256.kt:8:15 Redeclaration:
+object HkdfSha256 : Any
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HmacSha256.kt:8:15 Redeclaration:
+object HmacSha256 : Any
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha256.kt:8:15 Redeclaration:
+object Sha256 : Any
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt:8:15 Redeclaration:
+object Sha512 : Any
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt:17:15 Redeclaration:
+object Edwards25519 : Any
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt:18:33 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt:19:30 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt:23:37 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt:25:48 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt:26:32 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt:27:57 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt:19:14 Redeclaration:
+class ModMath : Any
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt:260:8 Conflicting overloads:
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt:21:15 Redeclaration:
+object P256 : Any
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt:22:33 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt:23:30 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt:24:37 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt:36:36 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt:42:33 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+e: file:///workspace/scratch/a46e59dd0882/spake2/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt:46:33 Overload resolution ambiguity between candidates:
+fun mathHex(value: String): ByteArray
+fun mathHex(value: String): ByteArray
+
+> Task :primitives:compileKotlinJvm FAILED
+> Task :primitives:compileKotlinJs
+w: Detected multiple Kotlin daemon sessions at 
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':primitives:compileKotlinJvm'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 24s
+5 actionable tasks: 5 executed

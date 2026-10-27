@@ -1,0 +1,9 @@
+{
+  "executedAtUtc": "2026-10-26T18:34:06.918110+00:00",
+  "status": "expected-rejection",
+  "error": "Unsafe or incorrect production dependency in /workspace/scratch/a46e59dd0882/spake2-stabilization/docs/round2/evidence/maven-gate/initial-android-pom.xml: io.github.flyfish233:primitives-android",
+  "source": "/workspace/scratch/a46e59dd0882/round2-maven-local/io/github/flyfish233/spake2-android/0.1.0-dev.round2-local/spake2-android-0.1.0-dev.round2-local.pom",
+  "pomSha256": "50af19800c583c85da0a647ef8bf665d82a55176211abe3e370396b2fd2664d7",
+  "checkerSha256": "b54896a958b4e5a17f71f2adc84fdcb949dd9237b04eb53ad71ced9d3162ecf1",
+  "scope": "Actual initial published Android POM; wrong primitives-android coordinate. Direct POM validation only, not complete repository verification."
+}

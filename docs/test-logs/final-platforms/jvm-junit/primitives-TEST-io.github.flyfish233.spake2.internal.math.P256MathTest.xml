@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.internal.math.P256MathTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:39:09.465Z" hostname="c9d49951d07d" time="1.204">
+  <properties/>
+  <testcase name="independentPythonAndOpenSslScalarVectors[jvm]" classname="io.github.flyfish233.spake2.internal.math.P256MathTest" time="1.163"/>
+  <testcase name="malformedAndNonCanonicalPointEncodings[jvm]" classname="io.github.flyfish233.spake2.internal.math.P256MathTest" time="0.012"/>
+  <testcase name="exceptionalAdditionAndInputOwnership[jvm]" classname="io.github.flyfish233.spake2.internal.math.P256MathTest" time="0.028"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

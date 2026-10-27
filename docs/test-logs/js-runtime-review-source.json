@@ -1,0 +1,24 @@
+{
+  "kotlinVersion": "2.2.21",
+  "officialSourceArtifact": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-js/2.2.21/kotlin-stdlib-js-2.2.21-sources.jar",
+  "artifactSha256": "bd50a7194b6059c69d8d8cb14a0ea2b1b0ebea52ccf3c52119e65500cad11200",
+  "sourceEntries": {
+    "jsMain/runtime/boxedLong.kt": {
+      "sha256": "398b3600b40a49c8ff39c19af6e624599f7d02fae8a3a56346559ff1701b65e9"
+    },
+    "jsMain/runtime/longAsBigInt.kt": {
+      "sha256": "9eb23b04d5d90fbd7c4e56f0d1e88c80dce35abb4c08185cd8392d868aa4873a"
+    }
+  },
+  "baselineSources": {
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt": "ba7f4e577d78ca100980259b1532a9e56b3ae761d8a4e7a2d146669f34e9a51c",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt": "83df5ca78322078493d89628db2cc6b1e45268bd22d0237c7bc3bbcd2b62a84a"
+  },
+  "generatedJavaScriptReview": "completed against actual corrected development-test artifacts; see js-runtime-emitted.json",
+  "reviewBaselineLocalSnapshot": "2284fd077b0c67d1b2bdad42f5d691197ef1757e",
+  "reviewBaselineRemoteCommit": "9ce242f80f61ab3bd9b822394ba101de5dbf3588",
+  "reviewBaselineGitTree": "e6c87147db06971cd52763b79c8a22f39904d3ca",
+  "reviewBaselineRemoteUrl": "https://github.com/Flyfish233/spake2/commit/9ce242f80f61ab3bd9b822394ba101de5dbf3588",
+  "generatedJavaScriptEvidence": "js-runtime-emitted.json",
+  "correctedSourceRemoteCommit": "b837aba27bebc1050965fa124c2efa54b4e4544a"
+}

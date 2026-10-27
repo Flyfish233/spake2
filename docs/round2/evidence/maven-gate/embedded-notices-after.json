@@ -1,0 +1,30 @@
+{
+  "phase": "after mandatory embedded-notice validation",
+  "gateSha256": "f00d7acc8740065f43ccea4f8fd722d466cec28620a7c9b24960ebc483d0c4c6",
+  "testSha256": "6ac8e843dd2a1ecbcc30b1dc8f16d8646ef3e9b9082d7a08a1027d8185df5d5c",
+  "results": [
+    {
+      "executedAtUtc": "2026-10-26T18:52:42.740338+00:00",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "tools/tests/test_maven_repository_gate.py"
+      ],
+      "optimized": false,
+      "exitCode": 0,
+      "resultSummary": "OK",
+      "log": "embedded-notices-after.txt"
+    },
+    {
+      "executedAtUtc": "2026-10-26T18:53:05.770654+00:00",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "tools/tests/test_maven_repository_gate.py"
+      ],
+      "optimized": true,
+      "exitCode": 0,
+      "resultSummary": "OK",
+      "log": "embedded-notices-after-optimized.txt"
+    }
+  ]
+}

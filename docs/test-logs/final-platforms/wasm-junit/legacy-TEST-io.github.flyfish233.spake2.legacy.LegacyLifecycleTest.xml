@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:50:10.275Z" hostname="c9d49951d07d" time="1.178">
+  <properties/>
+  <testcase name="repeatGenerationFailsAndErasesSession[wasmJs, node]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.083"/>
+  <testcase name="processBeforeGenerateFailsPermanently[wasmJs, node]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.0"/>
+  <testcase name="destroyIsIdempotentAndTerminal[wasmJs, node]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.081"/>
+  <testcase name="entropyExceptionsAndIncorrectLengthsEraseState[wasmJs, node]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.005"/>
+  <testcase name="returnedEntropyIsWipedAndPasswordInputRemainsOwnedByCaller[wasmJs, node]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.069"/>
+  <testcase name="reentrantEntropyCallPoisonsOuterSessionEvenIfCallbackCatchesError[wasmJs, node]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.057"/>
+  <testcase name="callerMutationCannotAliasIdentityOrGeneratedMessage[wasmJs, node]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.146"/>
+  <testcase name="wrongPasswordsAndRolesDoNotCreateAuthentication[wasmJs, node]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.723"/>
+  <testcase name="lengthsFailBeforeUnboundedAllocation[wasmJs, node]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

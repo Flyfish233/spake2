@@ -1,0 +1,104 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../spake2-primitives/0.1.0-dev.round2-local-final/spake2-primitives-0.1.0-dev.round2-local-final.module",
+    "group": "io.github.flyfish233",
+    "module": "spake2-primitives",
+    "version": "0.1.0-dev.round2-local-final",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "primitives-macosArm64Main-0.1.0-dev.round2-local-final.klib",
+          "url": "spake2-primitives-macosarm64-0.1.0-dev.round2-local-final.klib",
+          "size": 77627,
+          "sha512": "85b5d154cc16cc5d03ea6b81aefa2f00356fa719ba8df7ad2f693cbc0a60d6152a6252701de5cf47762d0bf31fa286ce56ae37ab0fc8a21312ee0f19e40c38e6",
+          "sha256": "8999ac77a7eceb86ca55e7787beb05caa9739bb218b16ad467a687d159bf1e1a",
+          "sha1": "23e2274ba9ef4b32708d84df81130f5f8114cb10",
+          "md5": "7d66396d9dacc73506fba09afa50163c"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "primitives-macosarm64-0.1.0-dev.round2-local-final-sources.jar",
+          "url": "spake2-primitives-macosarm64-0.1.0-dev.round2-local-final-sources.jar",
+          "size": 74314,
+          "sha512": "dfee52503d9f91d1c2e60850bc31cb3ac677bf32bfbe844f22a0af84d96b7342ef40be6cafa4803ce1f8b3658bf478b6ec58abb4a37bc51eb2eecbe8562e5837",
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "sha1": "918b563ee7de294ae4d94fa93f02dd30dd45d5b3",
+          "md5": "6aaca6814184ffc2c4712927cbce9220"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "primitives-macosarm64-0.1.0-dev.round2-local-final-metadata.jar",
+          "url": "spake2-primitives-macosarm64-0.1.0-dev.round2-local-final-metadata.jar",
+          "size": 261,
+          "sha512": "1487e5a20c9e4d74f298e07c42e96a61be11b7a768c3fbc199ee138cd68e1fc2267d1cfe3f11f288acc05df755315344d052cc5f6f751f126ab4fe1caa5125ea",
+          "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+          "sha1": "2ad14aed781c4a73ed4dbb421966d408a0a06686",
+          "md5": "f43436d6bec321290f6af228ad602604"
+        }
+      ]
+    }
+  ]
+}

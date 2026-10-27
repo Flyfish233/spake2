@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="consumer.PublishedLegacyTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-26T19:09:30.162Z" hostname="c9d49951d07d" time="1.654">
+  <properties/>
+  <testcase name="malformedInputAndDestroyConsumePublishedSession[jvm]" classname="consumer.PublishedLegacyTest" time="0.686"/>
+  <testcase name="hardenedPinnedOracleIncludingHighBitAndNulNames[jvm]" classname="consumer.PublishedLegacyTest" time="0.953"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,19 @@
+{
+  "executedAtUtc": "2026-10-26T08:31:58.638933+00:00",
+  "command": [
+    "python3",
+    "tools/hash_differential.py",
+    "--gradle-home",
+    "/workspace/scratch/a46e59dd0882/toolchains/gradle-8.14.3",
+    "--java",
+    "/workspace/scratch/a46e59dd0882/toolchains/jdk-17.0.21+9/bin/java"
+  ],
+  "exitCode": 0,
+  "elapsedSeconds": 53.895863566000116,
+  "sourceUnchangedDuringExecution": true,
+  "compiler": "Kotlin 2.0.21 bootstrap compiler bundled with Gradle 8.14.3",
+  "java": "OpenJDK 17.0.21+9",
+  "comparisonsExpected": 671,
+  "passed": true,
+  "scope": "isolated bootstrap JVM hash check; not the pinned Gradle cross-platform execution"
+}

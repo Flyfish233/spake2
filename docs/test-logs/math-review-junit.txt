@@ -1,0 +1,7 @@
+warning: opt-in requirement marker io.github.flyfish233.spake2.InternalSpake2Api is unresolved. Please make sure it's present in the module dependencies
+JUnit version 4.13.2
+......
+Time: 3.999
+
+OK (6 tests)
+

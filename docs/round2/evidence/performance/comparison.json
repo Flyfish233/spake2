@@ -1,0 +1,89 @@
+{
+  "currentReportSha256": "9fcb33e052da496c7a6d9f85b834a2d8a27b134c4da5e491226c7248bd6d4e8b",
+  "historicalReport": "docs/test-logs/jvm-performance-final/report.json",
+  "historicalReportSha256": "02ad7702e8ab6f94ce928e60fc9ef66c83e492b5141e88642623e2f1e3116b46",
+  "verifiedExchanges": 39,
+  "warmupsPerMode": 3,
+  "measurementsPerMode": 10,
+  "rows": [
+    {
+      "mode": "RFC9382-P256-confirmed-pair",
+      "measuredSamples": 10,
+      "medianMs": 111.937215,
+      "rangeMs": [
+        70.407006,
+        349.896789
+      ],
+      "medianAllocatedBytes": 29610176.0,
+      "rangeAllocatedBytes": [
+        29610176,
+        29610176
+      ],
+      "medianAllocatedMiB": 28.23846435546875,
+      "historicalMedianMs": 182.7627265,
+      "historicalMedianAllocatedBytes": 29610176.0,
+      "historicalRangeAllocatedBytes": [
+        29610176,
+        29610176
+      ],
+      "medianAllocationDeltaBytes": 0.0,
+      "medianAllocationDeltaPercent": 0.0,
+      "currentMedianWithinHistoricalAllocationRange": true,
+      "gcCollections": 4,
+      "gcTimeMs": 30
+    },
+    {
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "measuredSamples": 10,
+      "medianMs": 55.0207445,
+      "rangeMs": [
+        48.682801,
+        107.820117
+      ],
+      "medianAllocatedBytes": 13606976.0,
+      "rangeAllocatedBytes": [
+        13606976,
+        13606976
+      ],
+      "medianAllocatedMiB": 12.97662353515625,
+      "historicalMedianMs": 84.074415,
+      "historicalMedianAllocatedBytes": 13606976.0,
+      "historicalRangeAllocatedBytes": [
+        13606976,
+        13606976
+      ],
+      "medianAllocationDeltaBytes": 0.0,
+      "medianAllocationDeltaPercent": 0.0,
+      "currentMedianWithinHistoricalAllocationRange": true,
+      "gcCollections": 2,
+      "gcTimeMs": 19
+    },
+    {
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "measuredSamples": 10,
+      "medianMs": 50.140679,
+      "rangeMs": [
+        26.428944,
+        133.169389
+      ],
+      "medianAllocatedBytes": 13432416.0,
+      "rangeAllocatedBytes": [
+        13432176,
+        13432432
+      ],
+      "medianAllocatedMiB": 12.810150146484375,
+      "historicalMedianMs": 78.48166,
+      "historicalMedianAllocatedBytes": 13432176.0,
+      "historicalRangeAllocatedBytes": [
+        13432176,
+        13432432
+      ],
+      "medianAllocationDeltaBytes": 240.0,
+      "medianAllocationDeltaPercent": 0.0017867544320443686,
+      "currentMedianWithinHistoricalAllocationRange": true,
+      "gcCollections": 2,
+      "gcTimeMs": 25
+    }
+  ],
+  "interpretation": "Both RFC median allocations exactly match the previous source-identical probe. Legacy median is 240 bytes higher, within the previous observed allocation range. Uncontrolled concurrent publication work prevents attributing timing changes to source or claiming speedup/regression. The fixed-input probe does not assess side channels, retained secrets or cross-platform performance."
+}

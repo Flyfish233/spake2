@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-26T09:03:29.469Z" hostname="c9d49951d07d" time="34.889">
+  <properties/>
+  <testcase name="replay32IndependentOracleExchanges[linuxX64]" classname="io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test" time="34.889"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

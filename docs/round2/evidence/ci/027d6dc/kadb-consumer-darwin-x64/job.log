@@ -1,0 +1,517 @@
+﻿2026-10-26T19:16:24.8816010Z Current runner version: '2.338.0'
+2026-10-26T19:16:24.8874040Z ##[group]Runner Image Provisioner
+2026-10-26T19:16:24.8877390Z Hosted Compute Agent
+2026-10-26T19:16:24.8879190Z Version: 20260819.586
+2026-10-26T19:16:24.8881140Z Commit: 3cc4a88dfa507ef76119ad1bb3eccc6378bb2b76
+2026-10-26T19:16:24.8883550Z Build Date: 2026-08-18T23:20:18Z
+2026-10-26T19:16:24.8885430Z Worker ID: {56543d6d-9615-4b41-8aa4-6c0a24ddc878}
+2026-10-26T19:16:24.8888160Z Azure Region: westus
+2026-10-26T19:16:24.8889830Z ##[endgroup]
+2026-10-26T19:16:24.8894290Z ##[group]Operating System
+2026-10-26T19:16:24.8896050Z macOS
+2026-10-26T19:16:24.8898270Z 15.7.9
+2026-10-26T19:16:24.8899830Z 24G830
+2026-10-26T19:16:24.8901350Z ##[endgroup]
+2026-10-26T19:16:24.8902900Z ##[group]Runner Image
+2026-10-26T19:16:24.8904700Z Image: macos-15
+2026-10-26T19:16:24.8906940Z Version: 20260824.0482.1
+2026-10-26T19:16:24.8911380Z Included Software: https://github.com/actions/runner-images/blob/macos-15/20260824.0482/images/macos/macos-15-Readme.md
+2026-10-26T19:16:24.8918620Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-15%2F20260824.0482
+2026-10-26T19:16:24.8921540Z ##[endgroup]
+2026-10-26T19:16:24.8926070Z ##[group]GITHUB_TOKEN Permissions
+2026-10-26T19:16:24.8933470Z Contents: read
+2026-10-26T19:16:24.8935780Z Metadata: read
+2026-10-26T19:16:24.8937290Z ##[endgroup]
+2026-10-26T19:16:24.8944200Z Secret source: Actions
+2026-10-26T19:16:24.8947620Z Cache mode: write
+2026-10-26T19:16:24.8950350Z Prepare workflow directory
+2026-10-26T19:16:25.0356630Z Prepare all required actions
+2026-10-26T19:16:25.0487210Z Getting action download info
+2026-10-26T19:16:25.6313680Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-26T19:16:26.0956620Z Download action repository 'actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-10-26T19:16:26.9452520Z Download action repository 'gradle/actions@748248ddd2a24f49513d8f472f81c3a07d4d50e1' (SHA:748248ddd2a24f49513d8f472f81c3a07d4d50e1)
+2026-10-26T19:16:28.5483780Z Download action repository 'actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+2026-10-26T19:16:29.2189380Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-26T19:16:30.0963040Z Complete job name: kadb-toolchain-consumer (macos-15-intel, darwin-x64, false, macosX64Test linkDebugTestIosArm64, m...
+2026-10-26T19:16:30.3678200Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-26T19:16:30.3684340Z with:
+2026-10-26T19:16:30.3687640Z   ref: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:30.3691680Z   persist-credentials: false
+2026-10-26T19:16:30.3695050Z   repository: Flyfish233/spake2
+2026-10-26T19:16:30.3730870Z   token: ***
+2026-10-26T19:16:30.3733960Z   ssh-strict: true
+2026-10-26T19:16:30.3736630Z   ssh-user: git
+2026-10-26T19:16:30.3739190Z   clean: true
+2026-10-26T19:16:30.3742040Z   sparse-checkout-cone-mode: true
+2026-10-26T19:16:30.3749070Z   fetch-depth: 1
+2026-10-26T19:16:30.3751770Z   fetch-tags: false
+2026-10-26T19:16:30.3754610Z   show-progress: true
+2026-10-26T19:16:30.3757330Z   lfs: false
+2026-10-26T19:16:30.3759930Z   submodules: false
+2026-10-26T19:16:30.3764820Z   set-safe-directory: true
+2026-10-26T19:16:30.3769600Z   allow-unsafe-pr-checkout: false
+2026-10-26T19:16:30.3774360Z env:
+2026-10-26T19:16:30.3777920Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:30.3782560Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:16:30.3785970Z ##[endgroup]
+2026-10-26T19:16:31.1353370Z Syncing repository: Flyfish233/spake2
+2026-10-26T19:16:31.1357250Z ##[group]Getting Git version info
+2026-10-26T19:16:31.1403760Z Working directory is '/Users/runner/work/spake2/spake2'
+2026-10-26T19:16:31.1408460Z [command]/usr/local/bin/git version
+2026-10-26T19:16:31.1411130Z git version 2.55.0
+2026-10-26T19:16:31.1415550Z ##[endgroup]
+2026-10-26T19:16:31.1424800Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/e7de6fe7-71e4-4406-81fb-6d7640747dcf/.gitconfig'
+2026-10-26T19:16:31.1530780Z Temporarily overriding HOME='/Users/runner/work/_temp/e7de6fe7-71e4-4406-81fb-6d7640747dcf' before making global git config changes
+2026-10-26T19:16:31.1587060Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T19:16:31.1643390Z [command]/usr/local/bin/git config --global --add safe.directory /Users/runner/work/spake2/spake2
+2026-10-26T19:16:31.1947810Z Deleting the contents of '/Users/runner/work/spake2/spake2'
+2026-10-26T19:16:31.2002650Z ##[group]Initializing the repository
+2026-10-26T19:16:31.2037030Z [command]/usr/local/bin/git init /Users/runner/work/spake2/spake2
+2026-10-26T19:16:31.2650610Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-26T19:16:31.2711180Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-26T19:16:31.2743270Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-26T19:16:31.2806110Z hint: call:
+2026-10-26T19:16:31.2883270Z hint:
+2026-10-26T19:16:31.2884680Z hint: 	git config --global init.defaultBranch <name>
+2026-10-26T19:16:31.2940740Z hint:
+2026-10-26T19:16:31.2982950Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-26T19:16:31.3070110Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-26T19:16:31.3124960Z hint:
+2026-10-26T19:16:31.3157250Z hint: 	git branch -m <name>
+2026-10-26T19:16:31.3218850Z hint:
+2026-10-26T19:16:31.3257840Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-26T19:16:31.3294610Z Initialized empty Git repository in /Users/runner/work/spake2/spake2/.git/
+2026-10-26T19:16:31.5516190Z [command]/usr/local/bin/git remote add origin https://github.com/Flyfish233/spake2
+2026-10-26T19:16:31.5733480Z ##[endgroup]
+2026-10-26T19:16:31.5786640Z ##[group]Disabling automatic garbage collection
+2026-10-26T19:16:31.5818210Z [command]/usr/local/bin/git config --local gc.auto 0
+2026-10-26T19:16:31.6422040Z ##[endgroup]
+2026-10-26T19:16:31.6491910Z ##[group]Setting up auth
+2026-10-26T19:16:31.6562920Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T19:16:31.6749570Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T19:16:31.6831220Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T19:16:31.7040850Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T19:16:31.9510890Z [command]/usr/local/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T19:16:32.0203330Z [command]/usr/local/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T19:16:32.4288280Z [command]/usr/local/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-26T19:16:32.4436360Z ##[endgroup]
+2026-10-26T19:16:32.4493410Z ##[group]Fetching the repository
+2026-10-26T19:16:32.4517040Z [command]/usr/local/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:33.2722020Z From https://github.com/Flyfish233/spake2
+2026-10-26T19:16:33.2790620Z  * branch            027d6dc00f2c92502ca98b878d1940a358590be5 -> FETCH_HEAD
+2026-10-26T19:16:33.2948160Z ##[endgroup]
+2026-10-26T19:16:33.3002370Z ##[group]Determining the checkout info
+2026-10-26T19:16:33.3048590Z ##[endgroup]
+2026-10-26T19:16:33.3104290Z [command]/usr/local/bin/git sparse-checkout disable
+2026-10-26T19:16:33.3302230Z [command]/usr/local/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-26T19:16:33.3397400Z ##[group]Checking out the ref
+2026-10-26T19:16:33.4227960Z [command]/usr/local/bin/git checkout --progress --force 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:33.5541410Z HEAD is now at 027d6dc fix: validate native metadata companions against the Kotlin publication schema
+2026-10-26T19:16:33.5764760Z ##[endgroup]
+2026-10-26T19:16:33.5933570Z [command]/usr/local/bin/git log -1 --format=%H
+2026-10-26T19:16:33.5975890Z 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:33.6079400Z ##[group]Removing auth
+2026-10-26T19:16:33.6101220Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T19:16:33.6197510Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T19:16:33.9138130Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T19:16:33.9264810Z http.https://github.com/.extraheader
+2026-10-26T19:16:33.9363760Z [command]/usr/local/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-26T19:16:33.9551550Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T19:16:34.2668350Z [command]/usr/local/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T19:16:34.2821010Z [command]/usr/local/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T19:16:34.5852680Z ##[endgroup]
+2026-10-26T19:16:34.6496060Z ##[group]Run {
+2026-10-26T19:16:34.6497220Z [36;1m{[0m
+2026-10-26T19:16:34.6498430Z [36;1m  printf 'SPAKE2_MAVEN_REPO=%s/spake2-publication/maven\n' "$RUNNER_TEMP"[0m
+2026-10-26T19:16:34.6500600Z [36;1m  printf 'SPAKE2_CONSUMER_ROOT=%s/isolated-spake2-integration/kadb-consumer\n' "$RUNNER_TEMP"[0m
+2026-10-26T19:16:34.6502850Z [36;1m  printf 'SPAKE2_EVIDENCE=%s/consumer-evidence\n' "$RUNNER_TEMP"[0m
+2026-10-26T19:16:34.6504800Z [36;1m} >> "$GITHUB_ENV"[0m
+2026-10-26T19:16:34.6657990Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-26T19:16:34.6659140Z env:
+2026-10-26T19:16:34.6660010Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:34.6661300Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:16:34.6662280Z ##[endgroup]
+2026-10-26T19:16:34.7508750Z ##[group]Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3
+2026-10-26T19:16:34.7510220Z with:
+2026-10-26T19:16:34.7510970Z   distribution: temurin
+2026-10-26T19:16:34.7511780Z   java-version: 25
+2026-10-26T19:16:34.7512650Z   java-package: jdk
+2026-10-26T19:16:34.7513450Z   check-latest: false
+2026-10-26T19:16:34.7514260Z   server-id: github
+2026-10-26T19:16:34.7515130Z   server-username: GITHUB_ACTOR
+2026-10-26T19:16:34.7516170Z   server-password: GITHUB_TOKEN
+2026-10-26T19:16:34.7517110Z   overwrite-settings: true
+2026-10-26T19:16:34.7517980Z   job-status: success
+2026-10-26T19:16:34.7527680Z   token: ***
+2026-10-26T19:16:34.7528370Z env:
+2026-10-26T19:16:34.7529250Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:34.7530500Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:16:34.7531920Z   SPAKE2_MAVEN_REPO: /Users/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:16:34.7534010Z   SPAKE2_CONSUMER_ROOT: /Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer
+2026-10-26T19:16:34.7535950Z   SPAKE2_EVIDENCE: /Users/runner/work/_temp/consumer-evidence
+2026-10-26T19:16:34.7538080Z ##[endgroup]
+2026-10-26T19:16:35.2929550Z (node:2627) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T19:16:35.2981480Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-10-26T19:16:35.3954040Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T19:16:35.3956180Z ##[group]Installed distributions
+2026-10-26T19:16:35.4549240Z Resolved Java 25.0.4+101.0 from tool-cache
+2026-10-26T19:16:35.4575780Z Setting Java 25.0.4+101.0 as the default
+2026-10-26T19:16:35.4603300Z Creating toolchains.xml for JDK version 25 from temurin
+2026-10-26T19:16:35.4618800Z Writing to /Users/runner/.m2/toolchains.xml
+2026-10-26T19:16:35.4631690Z 
+2026-10-26T19:16:35.4665920Z Java configuration:
+2026-10-26T19:16:35.4695650Z   Distribution: temurin
+2026-10-26T19:16:35.4708130Z   Version: 25.0.4+101.0
+2026-10-26T19:16:35.4726730Z   Path: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:16:35.4831310Z 
+2026-10-26T19:16:35.5592690Z ##[endgroup]
+2026-10-26T19:16:35.5633010Z Creating settings.xml with server-id: github
+2026-10-26T19:16:35.5634600Z Writing to /Users/runner/.m2/settings.xml
+2026-10-26T19:16:35.6346910Z ##[group]Run gradle/actions/setup-gradle@748248ddd2a24f49513d8f472f81c3a07d4d50e1
+2026-10-26T19:16:35.6348670Z with:
+2026-10-26T19:16:35.6349450Z   gradle-version: 9.6.0
+2026-10-26T19:16:35.6350310Z   cache-read-only: true
+2026-10-26T19:16:35.6351220Z   cache-disabled: false
+2026-10-26T19:16:35.6352170Z   cache-write-only: false
+2026-10-26T19:16:35.6353150Z   cache-overwrite-existing: false
+2026-10-26T19:16:35.6354210Z   cache-cleanup: on-success
+2026-10-26T19:16:35.6355390Z   gradle-home-cache-includes: caches
+notifications
+
+2026-10-26T19:16:35.6356810Z   add-job-summary: always
+2026-10-26T19:16:35.6357890Z   add-job-summary-as-pr-comment: never
+2026-10-26T19:16:35.6358900Z   dependency-graph: disabled
+2026-10-26T19:16:35.6360050Z   dependency-graph-report-dir: dependency-graph-reports
+2026-10-26T19:16:35.6361590Z   dependency-graph-continue-on-failure: true
+2026-10-26T19:16:35.6362820Z   build-scan-publish: false
+2026-10-26T19:16:35.6363810Z   validate-wrappers: true
+2026-10-26T19:16:35.6364870Z   allow-snapshot-wrappers: false
+2026-10-26T19:16:35.6365910Z   gradle-home-cache-strict-match: false
+2026-10-26T19:16:35.6369370Z   workflow-job-context: {
+  "os": "macos-15-intel",
+  "label": "darwin-x64",
+  "android": false,
+  "tasks": "macosX64Test linkDebugTestIosArm64",
+  "reports": "macosX64Test"
+}
+2026-10-26T19:16:35.6381980Z   github-token: ***
+2026-10-26T19:16:35.6382750Z env:
+2026-10-26T19:16:35.6383690Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:35.6385060Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:16:35.6566270Z   SPAKE2_MAVEN_REPO: /Users/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:16:35.6568690Z   SPAKE2_CONSUMER_ROOT: /Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer
+2026-10-26T19:16:35.6570680Z   SPAKE2_EVIDENCE: /Users/runner/work/_temp/consumer-evidence
+2026-10-26T19:16:35.6572680Z   JAVA_HOME: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:16:35.6575370Z   JAVA_HOME_25_X64: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:16:35.6577170Z ##[endgroup]
+2026-10-26T19:16:37.6200650Z Gradle User Home already exists at /Users/runner/.gradle
+2026-10-26T19:16:37.6309020Z Merged default JDK locations into /Users/runner/.m2/toolchains.xml
+2026-10-26T19:16:37.6315520Z ##[group]Restore Gradle state from cache
+2026-10-26T19:16:37.8453810Z Gradle User Home cache not found. Will initialize empty.
+2026-10-26T19:16:37.8502820Z ##[endgroup]
+2026-10-26T19:16:37.8735220Z ##[group]All Gradle Wrapper jars are valid
+2026-10-26T19:16:37.8740550Z ✓ Found known Gradle Wrapper JAR files:
+2026-10-26T19:16:37.8745970Z   7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172 gradle/wrapper/gradle-wrapper.jar
+2026-10-26T19:16:37.8751480Z ##[endgroup]
+2026-10-26T19:16:38.0983820Z ##[group]Provision Gradle 9.6.0
+2026-10-26T19:16:42.3697230Z Gradle distribution 9.6.0 not found in cache. Will download.
+2026-10-26T19:16:44.8289760Z Downloaded https://services.gradle.org/distributions/gradle-9.6.0-bin.zip to /Users/runner/work/_temp/.gradle-actions/gradle-installations/downloads/gradle-9.6.0-bin.zip (size 140681093)
+2026-10-26T19:16:44.8304900Z [command]/usr/bin/unzip -o -q /Users/runner/work/_temp/.gradle-actions/gradle-installations/downloads/gradle-9.6.0-bin.zip
+2026-10-26T19:16:46.8945010Z Extracted Gradle 9.6.0 to /Users/runner/work/_temp/.gradle-actions/gradle-installations/installs/gradle-9.6.0
+2026-10-26T19:16:46.8966660Z Provisioned Gradle executable /Users/runner/work/_temp/.gradle-actions/gradle-installations/installs/gradle-9.6.0/bin/gradle
+2026-10-26T19:16:46.9017530Z ##[endgroup]
+2026-10-26T19:16:46.9400380Z ##[group]Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+2026-10-26T19:16:46.9401790Z with:
+2026-10-26T19:16:46.9402380Z   name: spake2-maven-candidate
+2026-10-26T19:16:46.9403170Z   path: /Users/runner/work/_temp/spake2-publication
+2026-10-26T19:16:46.9403990Z   merge-multiple: false
+2026-10-26T19:16:46.9405280Z   repository: Flyfish233/spake2
+2026-10-26T19:16:46.9405970Z   run-id: 40384173898
+2026-10-26T19:16:46.9406600Z env:
+2026-10-26T19:16:46.9407400Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:46.9408570Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:16:46.9409820Z   SPAKE2_MAVEN_REPO: /Users/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:16:46.9411530Z   SPAKE2_CONSUMER_ROOT: /Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer
+2026-10-26T19:16:46.9413130Z   SPAKE2_EVIDENCE: /Users/runner/work/_temp/consumer-evidence
+2026-10-26T19:16:46.9414930Z   JAVA_HOME: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:16:46.9417080Z   JAVA_HOME_25_X64: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:16:46.9418770Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-10-26T19:16:46.9419770Z   GRADLE_USER_HOME: /Users/runner/.gradle
+2026-10-26T19:16:46.9420620Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-10-26T19:16:46.9421590Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-10-26T19:16:46.9423040Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-10-26T19:16:46.9424580Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-10-26T19:16:46.9425570Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-10-26T19:16:46.9426410Z ##[endgroup]
+2026-10-26T19:16:47.4694940Z (node:2850) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T19:16:47.4697190Z Downloading single artifact
+2026-10-26T19:16:47.5444410Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T19:16:47.7782940Z Preparing to download the following artifacts:
+2026-10-26T19:16:47.7814600Z - spake2-maven-candidate (ID: 12679454200, Size: 9918377, Expected Digest: sha256:880ff266c9cdcf51ef5ac2ac4594bfca06bcc650c4905390aa7fff8b2ffaa951)
+2026-10-26T19:16:47.8538590Z Redirecting to blob download url: https://productionresultssa11.blob.core.windows.net/actions-results/6eb1a443-5239-8b79-a8ea-21db85a79d98/workflow-job-run-77ab38b2-1bdb-5e43-8778-945a7e088f11/artifacts/65858158a4eff5fb32f6742e0b4b29a8eea2227e93987aa3e2c3c5cec99707c6.zip
+2026-10-26T19:16:47.8561860Z Starting download of artifact to: /Users/runner/work/_temp/spake2-publication
+2026-10-26T19:16:48.0868710Z (node:2850) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-10-26T19:16:49.2691860Z SHA256 digest of downloaded artifact is 880ff266c9cdcf51ef5ac2ac4594bfca06bcc650c4905390aa7fff8b2ffaa951
+2026-10-26T19:16:49.2914120Z Artifact download completed successfully.
+2026-10-26T19:16:49.2928900Z Total of 1 artifact(s) downloaded
+2026-10-26T19:16:49.2948040Z Download artifact has finished successfully
+2026-10-26T19:16:49.3106840Z ##[group]Run mkdir -p "$RUNNER_TEMP/isolated-spake2-integration" "$SPAKE2_EVIDENCE"
+2026-10-26T19:16:49.3108980Z [36;1mmkdir -p "$RUNNER_TEMP/isolated-spake2-integration" "$SPAKE2_EVIDENCE"[0m
+2026-10-26T19:16:49.3110590Z [36;1mcp -R integration/. "$RUNNER_TEMP/isolated-spake2-integration/"[0m
+2026-10-26T19:16:49.3112080Z [36;1mpython3 tools/check_maven_repository.py \[0m
+2026-10-26T19:16:49.3113490Z [36;1m  --repository "$SPAKE2_MAVEN_REPO" --version "$SPAKE2_CONSUMER_VERSION" \[0m
+2026-10-26T19:16:49.3115470Z [36;1m  --revision "$SPAKE2_SOURCE_REVISION" --output "$SPAKE2_EVIDENCE/downloaded-publication.json"[0m
+2026-10-26T19:16:49.3117130Z [36;1mjava -version 2> "$SPAKE2_EVIDENCE/java-version.txt"[0m
+2026-10-26T19:16:49.3118690Z [36;1mgradle --version > "$SPAKE2_EVIDENCE/gradle-version.txt"[0m
+2026-10-26T19:16:49.3119990Z [36;1muname -a > "$SPAKE2_EVIDENCE/host.txt"[0m
+2026-10-26T19:16:49.3246320Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-26T19:16:49.3247650Z env:
+2026-10-26T19:16:49.3248580Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:49.3249950Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:16:49.3251350Z   SPAKE2_MAVEN_REPO: /Users/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:16:49.3253360Z   SPAKE2_CONSUMER_ROOT: /Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer
+2026-10-26T19:16:49.3255290Z   SPAKE2_EVIDENCE: /Users/runner/work/_temp/consumer-evidence
+2026-10-26T19:16:49.3257200Z   JAVA_HOME: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:16:49.3259730Z   JAVA_HOME_25_X64: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:16:49.3261680Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-10-26T19:16:49.3262900Z   GRADLE_USER_HOME: /Users/runner/.gradle
+2026-10-26T19:16:49.3287110Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-10-26T19:16:49.3288470Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-10-26T19:16:49.3290140Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-10-26T19:16:49.3291940Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-10-26T19:16:49.3293140Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-10-26T19:16:49.3294170Z ##[endgroup]
+2026-10-26T19:16:50.5260050Z Validated 33 publications; report: /Users/runner/work/_temp/consumer-evidence/downloaded-publication.json
+2026-10-26T19:16:52.5148280Z ##[group]Run xcodebuild -version > "$SPAKE2_EVIDENCE/xcode-version.txt"
+2026-10-26T19:16:52.5150650Z [36;1mxcodebuild -version > "$SPAKE2_EVIDENCE/xcode-version.txt"[0m
+2026-10-26T19:16:52.5153000Z [36;1mxcrun simctl list devices available > "$SPAKE2_EVIDENCE/simulator-devices.txt"[0m
+2026-10-26T19:16:52.5284210Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-26T19:16:52.5285480Z env:
+2026-10-26T19:16:52.5286510Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:16:52.5287870Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:16:52.5289270Z   SPAKE2_MAVEN_REPO: /Users/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:16:52.5291170Z   SPAKE2_CONSUMER_ROOT: /Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer
+2026-10-26T19:16:52.5293530Z   SPAKE2_EVIDENCE: /Users/runner/work/_temp/consumer-evidence
+2026-10-26T19:16:52.5295340Z   JAVA_HOME: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:16:52.5297540Z   JAVA_HOME_25_X64: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:16:52.5299260Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-10-26T19:16:52.5300250Z   GRADLE_USER_HOME: /Users/runner/.gradle
+2026-10-26T19:16:52.5301340Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-10-26T19:16:52.5303400Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-10-26T19:16:52.5304740Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-10-26T19:16:52.5306540Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-10-26T19:16:52.5307700Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-10-26T19:16:52.5308700Z ##[endgroup]
+2026-10-26T19:17:04.3596460Z ##[group]Run set -euo pipefail
+2026-10-26T19:17:04.3597790Z [36;1mset -euo pipefail[0m
+2026-10-26T19:17:04.3599040Z [36;1mgradle --no-daemon --console=plain -p "$SPAKE2_CONSUMER_ROOT" \[0m
+2026-10-26T19:17:04.3600420Z [36;1m  -PenableAndroid=false \[0m
+2026-10-26T19:17:04.3601980Z [36;1m  -Pspake2Version="$SPAKE2_CONSUMER_VERSION" -Pspake2Repository="$SPAKE2_MAVEN_REPO" \[0m
+2026-10-26T19:17:04.3604530Z [36;1m  macosX64Test linkDebugTestIosArm64 verifyPublishedDependencies 2>&1 | tee "$SPAKE2_EVIDENCE/build.log"[0m
+2026-10-26T19:17:04.3607030Z [36;1mpython3 tools/check_consumer_test_results.py --root "$SPAKE2_CONSUMER_ROOT" \[0m
+2026-10-26T19:17:04.3609400Z [36;1m  --tasks macosX64Test --version "$SPAKE2_CONSUMER_VERSION" \[0m
+2026-10-26T19:17:04.3611240Z [36;1m  --revision "$SPAKE2_SOURCE_REVISION" --output "$SPAKE2_EVIDENCE/test-summary.json"[0m
+2026-10-26T19:17:04.3827230Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-26T19:17:04.3828330Z env:
+2026-10-26T19:17:04.3830350Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:17:04.3831970Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:17:04.3833410Z   SPAKE2_MAVEN_REPO: /Users/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:17:04.3835260Z   SPAKE2_CONSUMER_ROOT: /Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer
+2026-10-26T19:17:04.3837180Z   SPAKE2_EVIDENCE: /Users/runner/work/_temp/consumer-evidence
+2026-10-26T19:17:04.3839070Z   JAVA_HOME: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:17:04.3841520Z   JAVA_HOME_25_X64: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:17:04.3843420Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-10-26T19:17:04.3844650Z   GRADLE_USER_HOME: /Users/runner/.gradle
+2026-10-26T19:17:04.3845720Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-10-26T19:17:04.3846890Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-10-26T19:17:04.3848630Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-10-26T19:17:04.3850410Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-10-26T19:17:04.3851750Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-10-26T19:17:04.3852820Z ##[endgroup]
+2026-10-26T19:17:06.6772830Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-10-26T19:17:10.1476070Z Daemon will be stopped at the end of the build 
+2026-10-26T19:19:15.8212420Z 
+2026-10-26T19:19:15.8384970Z > Configure project :
+2026-10-26T19:19:15.8401970Z w: file:///Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer/build.gradle.kts:26:9: 'fun macosX64(): KotlinNativeTargetWithHostTests' is deprecated. Target will be removed in a future release. See: https://kotl.in/native-targets-tiers.
+2026-10-26T19:19:26.1685160Z 
+2026-10-26T19:19:26.2689170Z > Configure project :legacy-client
+2026-10-26T19:19:26.3693410Z w: ⚠️ Deprecated Kotlin/Native Host
+2026-10-26T19:19:26.4242830Z The current host platform 'macos_x64' is deprecated and will be removed in a future Kotlin release. The Kotlin/Native compiler will no longer be distributed for this host.
+2026-10-26T19:19:26.4370100Z Solution: Migrate your build to a non-deprecated supported host platform for Kotlin/Native.
+2026-10-26T19:19:26.5375400Z Learn more about Kotlin/Native target support and migration: https://kotl.in/native-targets-tiers
+2026-10-26T19:19:26.5768930Z 
+2026-10-26T19:19:28.8024940Z 
+2026-10-26T19:19:28.8046370Z > Task :legacy-client:kmpPartiallyResolvedDependenciesChecker
+2026-10-26T19:19:28.8048690Z > Task :legacy-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T19:19:33.2137580Z 
+2026-10-26T19:19:33.2139590Z > Task :legacy-client:downloadKotlinNativeDistribution
+2026-10-26T19:19:33.2142970Z Kotlin/Native bundle directory /Users/runner/.konan/kotlin-native-prebuilt-macos-x86_64-2.4.20 is not empty. Native bundle files will be overwritten.
+2026-10-26T19:20:08.4463540Z Downloading native dependencies (LLVM, sysroot etc). This is a one-time action performed only on the first run of the compiler.
+2026-10-26T19:20:08.4468170Z Downloading dependency https://download.jetbrains.com/kotlin/native/resources/llvm/21-x86_64-macos/llvm-21-x86_64-macos-essentials-83.tar.gz to /Users/runner/.konan/dependencies/cache/llvm-21-x86_64-macos-essentials-83.tar.gz
+2026-10-26T19:20:12.4970550Z Done.
+2026-10-26T19:20:12.4974020Z Extracting dependency: /Users/runner/.konan/dependencies/cache/llvm-21-x86_64-macos-essentials-83.tar.gz into /Users/runner/.konan/dependencies
+2026-10-26T19:20:21.7450450Z Downloading dependency https://download.jetbrains.com/kotlin/native/libffi-3.2.1-3-darwin-macos.tar.gz to /Users/runner/.konan/dependencies/cache/libffi-3.2.1-3-darwin-macos.tar.gz
+2026-10-26T19:20:22.1998340Z Done.
+2026-10-26T19:20:22.2001900Z Extracting dependency: /Users/runner/.konan/dependencies/cache/libffi-3.2.1-3-darwin-macos.tar.gz into /Users/runner/.konan/dependencies
+2026-10-26T19:20:22.2007150Z Downloading native dependencies (LLVM, sysroot etc). This is a one-time action performed only on the first run of the compiler.
+2026-10-26T19:20:22.2013180Z Downloading dependency https://download.jetbrains.com/kotlin/native/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz to /Users/runner/.konan/dependencies/cache/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz
+2026-10-26T19:20:23.6471800Z Done.
+2026-10-26T19:20:23.6476190Z Extracting dependency: /Users/runner/.konan/dependencies/cache/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz into /Users/runner/.konan/dependencies
+2026-10-26T19:20:33.3249620Z Downloading native dependencies (LLVM, sysroot etc). This is a one-time action performed only on the first run of the compiler.
+2026-10-26T19:20:33.3254060Z Downloading dependency https://download.jetbrains.com/kotlin/native/lldb-4-macos.tar.gz to /Users/runner/.konan/dependencies/cache/lldb-4-macos.tar.gz
+2026-10-26T19:20:34.7995190Z Done.
+2026-10-26T19:20:34.8071080Z Extracting dependency: /Users/runner/.konan/dependencies/cache/lldb-4-macos.tar.gz into /Users/runner/.konan/dependencies
+2026-10-26T19:20:57.8681720Z 
+2026-10-26T19:20:57.8683730Z > Task :legacy-client:compileKotlinMacosX64
+2026-10-26T19:20:57.9558870Z > Task :legacy-client:macosX64ProcessResources NO-SOURCE
+2026-10-26T19:20:57.9560340Z > Task :legacy-client:macosX64MainKlibrary
+2026-10-26T19:21:01.6317190Z > Task :legacy-client:compileTestKotlinMacosX64
+2026-10-26T19:21:01.6337250Z > Task :legacy-client:validateLocalSwiftPMDependencies
+2026-10-26T19:21:01.6385490Z > Task :legacy-client:computeLocalPackageDependencyInputFiles
+2026-10-26T19:21:01.7066510Z > Task :legacy-client:fingerprintSyntheticPackage
+2026-10-26T19:21:01.7272140Z > Task :legacy-client:generateSyntheticLinkageSwiftPMImportProjectForCinteropsAndLdDump SKIPPED
+2026-10-26T19:21:01.7287580Z > Task :legacy-client:serializeSwiftPMDependenciesMetadataForLockFiles
+2026-10-26T19:21:01.9390120Z > Task :rfc-client:serializeSwiftPMDependenciesMetadataForLockFiles
+2026-10-26T19:21:01.9393980Z > Task :legacy-client:generateUmbrellaPackageIdentifierBasedResolutionForDefault SKIPPED
+2026-10-26T19:21:01.9396530Z > Task :legacy-client:fetchUmbrellaPackageIdentifierForDefault SKIPPED
+2026-10-26T19:21:01.9398790Z > Task :legacy-client:syncPersistedPackageResolvedToSynthetic SKIPPED
+2026-10-26T19:21:01.9400660Z > Task :legacy-client:fetchSyntheticImportProjectPackages SKIPPED
+2026-10-26T19:21:01.9404360Z > Task :legacy-client:fingerprintXcodebuildMacosx
+2026-10-26T19:21:01.9415330Z > Task :legacy-client:dumpXcodebuildArgsMacosx SKIPPED
+2026-10-26T19:21:01.9417070Z > Task :legacy-client:convertSyntheticImportProjectIntoDefFileMacosx
+2026-10-26T19:21:29.5914750Z 
+2026-10-26T19:21:29.6033400Z > Task :legacy-client:linkDebugTestMacosX64
+2026-10-26T19:21:29.6043350Z w: target macos_x64 is deprecated and will be removed soon. See: https://kotl.in/native-targets-tiers
+2026-10-26T19:21:34.6984700Z 
+2026-10-26T19:21:34.7033370Z > Task :legacy-client:macosX64Test
+2026-10-26T19:21:34.7039290Z > Task :rfc-client:kmpPartiallyResolvedDependenciesChecker
+2026-10-26T19:21:34.7042050Z > Task :rfc-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T19:21:34.9202300Z > Task :rfc-client:downloadKotlinNativeDistribution
+2026-10-26T19:21:36.7758570Z > Task :rfc-client:compileKotlinMacosX64
+2026-10-26T19:21:36.7760030Z > Task :rfc-client:macosX64ProcessResources NO-SOURCE
+2026-10-26T19:21:36.7769030Z > Task :rfc-client:macosX64MainKlibrary
+2026-10-26T19:21:39.0705520Z > Task :rfc-client:compileTestKotlinMacosX64
+2026-10-26T19:21:39.3556780Z > Task :rfc-client:validateLocalSwiftPMDependencies
+2026-10-26T19:21:39.5198300Z > Task :rfc-client:computeLocalPackageDependencyInputFiles
+2026-10-26T19:21:39.7639770Z > Task :rfc-client:fingerprintSyntheticPackage
+2026-10-26T19:21:39.8403440Z > Task :rfc-client:generateSyntheticLinkageSwiftPMImportProjectForCinteropsAndLdDump SKIPPED
+2026-10-26T19:21:39.8636850Z > Task :rfc-client:syncPersistedPackageResolvedToSynthetic SKIPPED
+2026-10-26T19:21:39.9542480Z > Task :rfc-client:fetchSyntheticImportProjectPackages SKIPPED
+2026-10-26T19:21:39.9551050Z > Task :rfc-client:fingerprintXcodebuildMacosx
+2026-10-26T19:21:39.9555250Z > Task :rfc-client:dumpXcodebuildArgsMacosx SKIPPED
+2026-10-26T19:21:39.9579690Z > Task :rfc-client:convertSyntheticImportProjectIntoDefFileMacosx
+2026-10-26T19:21:51.5719110Z 
+2026-10-26T19:21:51.5743500Z > Task :rfc-client:linkDebugTestMacosX64
+2026-10-26T19:21:51.5770840Z w: target macos_x64 is deprecated and will be removed soon. See: https://kotl.in/native-targets-tiers
+2026-10-26T19:22:04.8271950Z 
+2026-10-26T19:22:04.8275700Z > Task :rfc-client:macosX64Test
+2026-10-26T19:22:08.2715110Z > Task :legacy-client:compileKotlinIosArm64
+2026-10-26T19:22:08.4062320Z > Task :legacy-client:iosArm64ProcessResources NO-SOURCE
+2026-10-26T19:22:08.4952510Z > Task :legacy-client:iosArm64MainKlibrary
+2026-10-26T19:22:11.8897240Z > Task :legacy-client:compileTestKotlinIosArm64
+2026-10-26T19:22:12.0880700Z > Task :legacy-client:fingerprintXcodebuildIphoneos
+2026-10-26T19:22:12.1100330Z > Task :legacy-client:dumpXcodebuildArgsIphoneos SKIPPED
+2026-10-26T19:22:12.2670270Z > Task :legacy-client:convertSyntheticImportProjectIntoDefFileIphoneos
+2026-10-26T19:22:25.5074730Z > Task :legacy-client:linkDebugTestIosArm64
+2026-10-26T19:22:25.8478980Z > Task :rfc-client:compileKotlinIosArm64
+2026-10-26T19:22:25.9080320Z > Task :rfc-client:iosArm64ProcessResources NO-SOURCE
+2026-10-26T19:22:25.9091300Z > Task :rfc-client:iosArm64MainKlibrary
+2026-10-26T19:22:27.5676540Z > Task :rfc-client:compileTestKotlinIosArm64
+2026-10-26T19:22:27.6458390Z > Task :rfc-client:fingerprintXcodebuildIphoneos
+2026-10-26T19:22:27.6466260Z > Task :rfc-client:dumpXcodebuildArgsIphoneos SKIPPED
+2026-10-26T19:22:27.6474780Z > Task :rfc-client:convertSyntheticImportProjectIntoDefFileIphoneos
+2026-10-26T19:22:30.3173540Z > Task :rfc-client:linkDebugTestIosArm64
+2026-10-26T19:22:30.4975930Z > Task :legacy-client:verifyPublishedDependencies FAILED
+2026-10-26T19:22:30.4983010Z gradle/actions: Writing build results to /Users/runner/work/_temp/.gradle-actions/build-results/__run_5-1793042242037.json
+2026-10-26T19:22:30.5881420Z 
+2026-10-26T19:22:30.5885300Z [Incubating] Problems report is available at: file:///Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer/build/reports/problems/problems-report.html
+2026-10-26T19:22:30.5888330Z 
+2026-10-26T19:22:30.5889310Z FAILURE: Build failed with an exception.
+2026-10-26T19:22:30.5903330Z 
+2026-10-26T19:22:30.5903850Z * What went wrong:
+2026-10-26T19:22:30.5910830Z Execution failed for task ':legacy-client:verifyPublishedDependencies' (registered in script '../consumer-fixtures/verify-resolution.gradle.kts').
+2026-10-26T19:22:30.5913160Z > Project dependency substitution is forbidden in this Maven consumer: project ':rfc-client'
+2026-10-26T19:22:30.5915940Z 
+2026-10-26T19:22:30.5916400Z * Try:
+2026-10-26T19:22:30.5922640Z > Run with --stacktrace option to get the stack trace.
+2026-10-26T19:22:30.5927780Z > Run with --info or --debug option to get more log output.
+2026-10-26T19:22:30.6271060Z > Run with --scan to get full insights from a Build Scan (powered by Develocity).
+2026-10-26T19:22:30.6272900Z > Get more help at https://help.gradle.org.
+2026-10-26T19:22:30.6273740Z 
+2026-10-26T19:22:30.6274480Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+2026-10-26T19:22:30.6275580Z 
+2026-10-26T19:22:30.6277570Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-10-26T19:22:30.6278850Z 
+2026-10-26T19:22:30.6280050Z For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+2026-10-26T19:22:30.6281800Z 
+2026-10-26T19:22:30.6282040Z BUILD FAILED in 5m 25s
+2026-10-26T19:22:30.6287480Z 35 actionable tasks: 35 executed
+2026-10-26T19:22:31.3184780Z ##[error]Process completed with exit code 1.
+2026-10-26T19:22:31.3691080Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-26T19:22:31.3692500Z with:
+2026-10-26T19:22:31.3693320Z   name: kadb-toolchain-consumer-darwin-x64
+2026-10-26T19:22:31.3696810Z   path: /Users/runner/work/_temp/consumer-evidence/**
+/Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer/**/build/test-results/**
+/Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer/**/build/reports/**
+/Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer/**/build/outputs/**
+
+2026-10-26T19:22:31.3699930Z   retention-days: 14
+2026-10-26T19:22:31.3706160Z   if-no-files-found: warn
+2026-10-26T19:22:31.3707090Z   compression-level: 6
+2026-10-26T19:22:31.3707850Z   overwrite: false
+2026-10-26T19:22:31.3713820Z   include-hidden-files: false
+2026-10-26T19:22:31.3715500Z env:
+2026-10-26T19:22:31.3716570Z   SPAKE2_SOURCE_REVISION: 027d6dc00f2c92502ca98b878d1940a358590be5
+2026-10-26T19:22:31.3718370Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.027d6dc00f2c
+2026-10-26T19:22:31.3719810Z   SPAKE2_MAVEN_REPO: /Users/runner/work/_temp/spake2-publication/maven
+2026-10-26T19:22:31.3721530Z   SPAKE2_CONSUMER_ROOT: /Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer
+2026-10-26T19:22:31.3728580Z   SPAKE2_EVIDENCE: /Users/runner/work/_temp/consumer-evidence
+2026-10-26T19:22:31.3730310Z   JAVA_HOME: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:22:31.3738230Z   JAVA_HOME_25_X64: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.4-101.0/x64/Contents/Home
+2026-10-26T19:22:31.3739850Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-10-26T19:22:31.3741070Z   GRADLE_USER_HOME: /Users/runner/.gradle
+2026-10-26T19:22:31.3741940Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-10-26T19:22:31.3742870Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-10-26T19:22:31.3744320Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-10-26T19:22:31.3745770Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-10-26T19:22:31.3746830Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-10-26T19:22:31.3747790Z ##[endgroup]
+2026-10-26T19:22:31.8699860Z (node:9965) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T19:22:31.8701930Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T19:22:32.0773950Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-26T19:22:32.0779310Z The least common ancestor is /Users/runner/work/_temp. This will be the root directory of the artifact
+2026-10-26T19:22:32.0782400Z With the provided path, there will be 26 files uploaded
+2026-10-26T19:22:32.0785020Z Artifact name is valid!
+2026-10-26T19:22:32.0785850Z Root directory input is valid!
+2026-10-26T19:22:32.4068220Z Beginning upload of artifact content to blob storage
+2026-10-26T19:22:32.5176670Z (node:9965) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-26T19:22:32.7411960Z Uploaded bytes 75037
+2026-10-26T19:22:32.7897970Z Finished uploading artifact content to blob storage!
+2026-10-26T19:22:32.7899960Z SHA256 digest of uploaded artifact zip is 00b07799d6896e147bb48a02632f81094325cd0b7ee6adc283a2dc95e260b8a2
+2026-10-26T19:22:32.7902000Z Finalizing artifact upload
+2026-10-26T19:22:33.2563740Z Artifact kadb-toolchain-consumer-darwin-x64.zip successfully finalized. Artifact ID 12681201379
+2026-10-26T19:22:33.2566630Z Artifact kadb-toolchain-consumer-darwin-x64 has been successfully uploaded! Final size is 75037 bytes. Artifact ID is 12681201379
+2026-10-26T19:22:33.2576030Z Artifact download URL: https://github.com/Flyfish233/spake2/actions/runs/40384173898/artifacts/12681201379
+2026-10-26T19:22:33.3018480Z Post job cleanup.
+2026-10-26T19:22:33.7187360Z In post-action step
+2026-10-26T19:22:33.7204160Z Cache is read-only: will not save state for use in subsequent builds.
+2026-10-26T19:22:33.7215450Z Generating Job Summary
+2026-10-26T19:22:33.7273780Z Completed post-action step
+2026-10-26T19:22:33.7672540Z Post job cleanup.
+2026-10-26T19:22:34.0586480Z (node:9974) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T19:22:34.0612430Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T19:22:34.0948330Z Post job cleanup.
+2026-10-26T19:22:34.3264900Z [command]/usr/local/bin/git version
+2026-10-26T19:22:34.3694700Z git version 2.55.0
+2026-10-26T19:22:34.3749330Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/e0fe3f8f-dd27-4c36-9921-6beba86bf4c4/.gitconfig'
+2026-10-26T19:22:34.3770240Z Temporarily overriding HOME='/Users/runner/work/_temp/e0fe3f8f-dd27-4c36-9921-6beba86bf4c4' before making global git config changes
+2026-10-26T19:22:34.3773100Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T19:22:34.3782180Z [command]/usr/local/bin/git config --global --add safe.directory /Users/runner/work/spake2/spake2
+2026-10-26T19:22:34.3977350Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T19:22:34.4236100Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T19:22:34.6401750Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T19:22:34.6539570Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T19:22:34.8215080Z [command]/usr/local/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T19:22:34.8346230Z [command]/usr/local/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T19:22:35.0288010Z Cleaning up orphan processes
+2026-10-26T19:22:35.4040540Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093, actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02, gradle/actions/setup-gradle@748248ddd2a24f49513d8f472f81c3a07d4d50e1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

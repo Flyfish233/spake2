@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="consumer.PublishedRfcTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-26T19:15:40.750Z" hostname="c9d49951d07d" time="6.503">
+  <properties/>
+  <testcase name="officialP256PublicMessagesConfirmationsAndKey" classname="consumer.PublishedRfcTest" time="4.541"/>
+  <testcase name="incorrectConfirmationIsTerminalInPublishedLibrary" classname="consumer.PublishedRfcTest" time="0.917"/>
+  <testcase name="independentEdwardsPublicMessagesConfirmationsAndKey" classname="consumer.PublishedRfcTest" time="1.033"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
