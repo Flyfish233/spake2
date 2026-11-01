@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.internal.math.ArithmeticDifferentialTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-01T02:45:15.448Z" hostname="d51c75b8936e" time="0.551">
+  <properties/>
+  <testcase name="allFourModuliAgainstBigInteger[jvm]" classname="io.github.flyfish233.spake2.internal.math.ArithmeticDifferentialTest" time="0.091"/>
+  <testcase name="edwardsHighestBitAndMixedOrderScalarsAgainstAffineOracle[jvm]" classname="io.github.flyfish233.spake2.internal.math.ArithmeticDifferentialTest" time="0.234"/>
+  <testcase name="edwardsCanonicalAndOffCurveEncodingsAgainstIntegerOracle[jvm]" classname="io.github.flyfish233.spake2.internal.math.ArithmeticDifferentialTest" time="0.118"/>
+  <testcase name="p256FullWidthScalarAndExceptionalCasesAgainstAffineOracle[jvm]" classname="io.github.flyfish233.spake2.internal.math.ArithmeticDifferentialTest" time="0.106"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

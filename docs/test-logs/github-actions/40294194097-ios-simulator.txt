@@ -1,0 +1,290 @@
+2026-10-26T08:43:21.9058250Z Current runner version: '2.338.0'
+2026-10-26T08:43:21.9074500Z ##[group]Runner Image Provisioner
+2026-10-26T08:43:21.9075370Z Hosted Compute Agent
+2026-10-26T08:43:21.9075830Z Version: 20261021.618
+2026-10-26T08:43:21.9076250Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-26T08:43:21.9076820Z Build Date: 2026-10-21T00:45:21Z
+2026-10-26T08:43:21.9077400Z Worker ID: {4a05995b-0288-400e-a36e-deed914f0469}
+2026-10-26T08:43:21.9077960Z Region: westus
+2026-10-26T08:43:21.9078390Z Cloud: MacCloud
+2026-10-26T08:43:21.9078780Z ##[endgroup]
+2026-10-26T08:43:21.9079870Z ##[group]Operating System
+2026-10-26T08:43:21.9080330Z macOS
+2026-10-26T08:43:21.9080790Z 26.6.2
+2026-10-26T08:43:21.9081140Z 25G83
+2026-10-26T08:43:21.9081470Z ##[endgroup]
+2026-10-26T08:43:21.9081900Z ##[group]Runner Image
+2026-10-26T08:43:21.9082310Z Image: macos-26-arm64
+2026-10-26T08:43:21.9082780Z Version: 20261021.0445.8
+2026-10-26T08:43:21.9083670Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20261021.0445/images/macos/macos-26-arm64-Readme.md
+2026-10-26T08:43:21.9084710Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20261021.0445
+2026-10-26T08:43:21.9085380Z ##[endgroup]
+2026-10-26T08:43:21.9086130Z ##[group]GITHUB_TOKEN Permissions
+2026-10-26T08:43:21.9087470Z Contents: read
+2026-10-26T08:43:21.9087830Z Metadata: read
+2026-10-26T08:43:21.9088210Z ##[endgroup]
+2026-10-26T08:43:21.9089780Z Secret source: Actions
+2026-10-26T08:43:21.9090490Z Cache mode: write
+2026-10-26T08:43:21.9091010Z Prepare workflow directory
+2026-10-26T08:43:21.9339640Z Prepare all required actions
+2026-10-26T08:43:21.9385660Z Getting action download info
+2026-10-26T08:43:22.3176460Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-26T08:43:22.4780460Z Download action repository 'actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-10-26T08:43:23.0543090Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-26T08:43:23.2944650Z Complete job name: ios-simulator
+2026-10-26T08:43:23.3648410Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-26T08:43:23.3651730Z with:
+2026-10-26T08:43:23.3653460Z   repository: Flyfish233/spake2
+2026-10-26T08:43:23.3658170Z   token: ***
+2026-10-26T08:43:23.3658540Z   ssh-strict: true
+2026-10-26T08:43:23.3658950Z   ssh-user: git
+2026-10-26T08:43:23.3659320Z   persist-credentials: true
+2026-10-26T08:43:23.3659760Z   clean: true
+2026-10-26T08:43:23.3660130Z   sparse-checkout-cone-mode: true
+2026-10-26T08:43:23.3660600Z   fetch-depth: 1
+2026-10-26T08:43:23.3660930Z   fetch-tags: false
+2026-10-26T08:43:23.3661350Z   show-progress: true
+2026-10-26T08:43:23.3661750Z   lfs: false
+2026-10-26T08:43:23.3662090Z   submodules: false
+2026-10-26T08:43:23.3662530Z   set-safe-directory: true
+2026-10-26T08:43:23.3663640Z   allow-unsafe-pr-checkout: false
+2026-10-26T08:43:23.3666120Z ##[endgroup]
+2026-10-26T08:43:23.8196060Z Syncing repository: Flyfish233/spake2
+2026-10-26T08:43:23.8200280Z ##[group]Getting Git version info
+2026-10-26T08:43:23.8202210Z Working directory is '/Users/runner/work/spake2/spake2'
+2026-10-26T08:43:23.8204800Z [command]/opt/homebrew/bin/git version
+2026-10-26T08:43:23.8531110Z git version 2.56.0
+2026-10-26T08:43:23.8555000Z ##[endgroup]
+2026-10-26T08:43:23.8567840Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/952dd7e5-2a7d-4ded-a86d-cfeac32a0f88/.gitconfig'
+2026-10-26T08:43:23.8573220Z Temporarily overriding HOME='/Users/runner/work/_temp/952dd7e5-2a7d-4ded-a86d-cfeac32a0f88' before making global git config changes
+2026-10-26T08:43:23.8574460Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T08:43:23.8583060Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/spake2/spake2
+2026-10-26T08:43:23.8715130Z Deleting the contents of '/Users/runner/work/spake2/spake2'
+2026-10-26T08:43:23.8720790Z ##[group]Initializing the repository
+2026-10-26T08:43:23.8731060Z [command]/opt/homebrew/bin/git init /Users/runner/work/spake2/spake2
+2026-10-26T08:43:23.8974520Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-26T08:43:23.8976230Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-26T08:43:23.8977280Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-26T08:43:23.8978040Z hint: call:
+2026-10-26T08:43:23.8978480Z hint:
+2026-10-26T08:43:23.8979050Z hint: 	git config --global init.defaultBranch <name>
+2026-10-26T08:43:23.8979940Z hint:
+2026-10-26T08:43:23.8980470Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-26T08:43:23.8981310Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-26T08:43:23.8981960Z hint:
+2026-10-26T08:43:23.8982430Z hint: 	git branch -m <name>
+2026-10-26T08:43:23.8982890Z hint:
+2026-10-26T08:43:23.8983520Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-26T08:43:23.8989920Z Initialized empty Git repository in /Users/runner/work/spake2/spake2/.git/
+2026-10-26T08:43:23.8998950Z [command]/opt/homebrew/bin/git remote add origin https://github.com/Flyfish233/spake2
+2026-10-26T08:43:23.9102500Z ##[endgroup]
+2026-10-26T08:43:23.9104550Z ##[group]Disabling automatic garbage collection
+2026-10-26T08:43:23.9106360Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2026-10-26T08:43:23.9186900Z ##[endgroup]
+2026-10-26T08:43:23.9188800Z ##[group]Setting up auth
+2026-10-26T08:43:23.9192670Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T08:43:23.9284920Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T08:43:24.0621080Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T08:43:24.0717070Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T08:43:24.1735240Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T08:43:24.1822960Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T08:43:24.3227700Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-26T08:43:24.3314560Z ##[endgroup]
+2026-10-26T08:43:24.3316450Z ##[group]Fetching the repository
+2026-10-26T08:43:24.3324880Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ca8fab7b03d54e60e10c90505a25ad7efd08e4fb:refs/remotes/pull/1/merge
+2026-10-26T08:43:24.9448020Z From https://github.com/Flyfish233/spake2
+2026-10-26T08:43:24.9450720Z  * [new ref]         ca8fab7b03d54e60e10c90505a25ad7efd08e4fb -> pull/1/merge
+2026-10-26T08:43:24.9454590Z ##[endgroup]
+2026-10-26T08:43:24.9455840Z ##[group]Determining the checkout info
+2026-10-26T08:43:24.9457820Z ##[endgroup]
+2026-10-26T08:43:24.9458930Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2026-10-26T08:43:24.9543380Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-26T08:43:24.9612540Z ##[group]Checking out the ref
+2026-10-26T08:43:24.9615310Z [command]/opt/homebrew/bin/git checkout --progress --force refs/remotes/pull/1/merge
+2026-10-26T08:43:25.0087230Z HEAD is now at ca8fab7 Merge b837aba27bebc1050965fa124c2efa54b4e4544a into 783299c166ed9613bb4e37d39fd7924205cf7c25
+2026-10-26T08:43:25.0110920Z ##[endgroup]
+2026-10-26T08:43:25.0214830Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2026-10-26T08:43:25.0283420Z ca8fab7b03d54e60e10c90505a25ad7efd08e4fb
+2026-10-26T08:43:25.0811010Z ##[group]Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3
+2026-10-26T08:43:25.0812310Z with:
+2026-10-26T08:43:25.0812900Z   distribution: temurin
+2026-10-26T08:43:25.0813570Z   java-version: 17
+2026-10-26T08:43:25.0814190Z   cache: gradle
+2026-10-26T08:43:25.0814790Z   java-package: jdk
+2026-10-26T08:43:25.0815430Z   check-latest: false
+2026-10-26T08:43:25.0816080Z   server-id: github
+2026-10-26T08:43:25.0816740Z   server-username: GITHUB_ACTOR
+2026-10-26T08:43:25.0817510Z   server-password: GITHUB_TOKEN
+2026-10-26T08:43:25.0818380Z   overwrite-settings: true
+2026-10-26T08:43:25.0819080Z   job-status: success
+2026-10-26T08:43:25.0826020Z   token: ***
+2026-10-26T08:43:25.0826620Z ##[endgroup]
+2026-10-26T08:43:25.2788700Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-10-26T08:43:25.2800710Z ##[group]Installed distributions
+2026-10-26T08:43:25.2886370Z Resolved Java 17.0.20+101 from tool-cache
+2026-10-26T08:43:25.2890250Z Setting Java 17.0.20+101 as the default
+2026-10-26T08:43:25.2922960Z (node:1233) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T08:43:25.2927640Z Creating toolchains.xml for JDK version 17 from temurin
+2026-10-26T08:43:25.2933940Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T08:43:25.3047360Z Writing to /Users/runner/.m2/toolchains.xml
+2026-10-26T08:43:25.3048930Z 
+2026-10-26T08:43:25.3052130Z Java configuration:
+2026-10-26T08:43:25.3058640Z   Distribution: temurin
+2026-10-26T08:43:25.3069960Z   Version: 17.0.20+101
+2026-10-26T08:43:25.3073750Z   Path: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-101/arm64/Contents/Home
+2026-10-26T08:43:25.3074990Z 
+2026-10-26T08:43:25.3076620Z ##[endgroup]
+2026-10-26T08:43:25.3110360Z Creating settings.xml with server-id: github
+2026-10-26T08:43:25.3112680Z Writing to /Users/runner/.m2/settings.xml
+2026-10-26T08:43:25.6797260Z Cache hit for: setup-java-macOS-arm64-gradle-9bd6d9b7ecb501152c19d9150342f13e7ef0d5a379fcf3dd6ab61ec6f42e62b2
+2026-10-26T08:43:25.6853270Z (node:1233) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-26T08:43:26.9856620Z Received 0 of 906628352 (0.0%), 0.0 MBs/sec
+2026-10-26T08:43:27.9884560Z Received 58720256 of 906628352 (6.5%), 27.9 MBs/sec
+2026-10-26T08:43:28.9963440Z Received 121634816 of 906628352 (13.4%), 38.6 MBs/sec
+2026-10-26T08:43:29.9929830Z Received 130023424 of 906628352 (14.3%), 30.9 MBs/sec
+2026-10-26T08:43:30.9962730Z Received 155189248 of 906628352 (17.1%), 29.5 MBs/sec
+2026-10-26T08:43:32.0106090Z Received 213909504 of 906628352 (23.6%), 33.9 MBs/sec
+2026-10-26T08:43:33.1694230Z Received 268435456 of 906628352 (29.6%), 35.7 MBs/sec
+2026-10-26T08:43:34.1625470Z Received 306184192 of 906628352 (33.8%), 35.7 MBs/sec
+2026-10-26T08:43:35.1668600Z Received 360710144 of 906628352 (39.8%), 37.5 MBs/sec
+2026-10-26T08:43:36.1682680Z Received 398458880 of 906628352 (43.9%), 37.3 MBs/sec
+2026-10-26T08:43:37.1756940Z Received 402653184 of 906628352 (44.4%), 34.3 MBs/sec
+2026-10-26T08:43:38.1777300Z Received 432013312 of 906628352 (47.7%), 33.8 MBs/sec
+2026-10-26T08:43:39.1785730Z Received 478150656 of 906628352 (52.7%), 34.6 MBs/sec
+2026-10-26T08:43:40.1808360Z Received 511705088 of 906628352 (56.4%), 34.4 MBs/sec
+2026-10-26T08:43:41.1819370Z Received 536870912 of 906628352 (59.2%), 33.7 MBs/sec
+2026-10-26T08:43:42.1857390Z Received 574619648 of 906628352 (63.4%), 33.8 MBs/sec
+2026-10-26T08:43:43.1897250Z Received 624951296 of 906628352 (68.9%), 34.6 MBs/sec
+2026-10-26T08:43:44.1912020Z Received 658505728 of 906628352 (72.6%), 34.5 MBs/sec
+2026-10-26T08:43:45.1916150Z Received 675282944 of 906628352 (74.5%), 33.5 MBs/sec
+2026-10-26T08:43:46.1922230Z Received 713031680 of 906628352 (78.6%), 33.6 MBs/sec
+2026-10-26T08:43:47.1927940Z Received 754974720 of 906628352 (83.3%), 33.9 MBs/sec
+2026-10-26T08:43:48.1946560Z Received 796917760 of 906628352 (87.9%), 34.2 MBs/sec
+2026-10-26T08:43:49.1960160Z Received 809500672 of 906628352 (89.3%), 33.3 MBs/sec
+2026-10-26T08:43:50.1967110Z Received 847249408 of 906628352 (93.5%), 33.4 MBs/sec
+2026-10-26T08:43:51.1972460Z Received 889851136 of 906628352 (98.1%), 33.7 MBs/sec
+2026-10-26T08:43:51.7448940Z Received 906628352 of 906628352 (100.0%), 33.6 MBs/sec
+2026-10-26T08:43:51.7461800Z Cache Size: ~865 MB (906628352 B)
+2026-10-26T08:43:51.7553490Z [command]/opt/homebrew/bin/gtar -xf /Users/runner/work/_temp/df4573e9-6d1e-4b0e-a2a1-3e22ab90ab93/cache.tzst -P -C /Users/runner/work/spake2/spake2 --delay-directory-restore --use-compress-program unzstd
+2026-10-26T08:44:09.0584970Z Cache restored successfully
+2026-10-26T08:44:09.0898560Z Cache restored from key: setup-java-macOS-arm64-gradle-9bd6d9b7ecb501152c19d9150342f13e7ef0d5a379fcf3dd6ab61ec6f42e62b2
+2026-10-26T08:44:09.1569640Z ##[group]Run if [ "$(uname -m)" = "arm64" ]; then
+2026-10-26T08:44:09.1570580Z [36;1mif [ "$(uname -m)" = "arm64" ]; then[0m
+2026-10-26T08:44:09.1571040Z [36;1m  ./gradlew --no-daemon compileKotlinIosArm64 iosSimulatorArm64Test[0m
+2026-10-26T08:44:09.1572060Z [36;1melse[0m
+2026-10-26T08:44:09.1573230Z [36;1m  ./gradlew --no-daemon compileKotlinIosArm64 iosX64Test[0m
+2026-10-26T08:44:09.1574350Z [36;1mfi[0m
+2026-10-26T08:44:09.1970180Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-26T08:44:09.1970540Z env:
+2026-10-26T08:44:09.1971150Z   JAVA_HOME: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-101/arm64/Contents/Home
+2026-10-26T08:44:09.1971860Z   JAVA_HOME_17_ARM64: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-101/arm64/Contents/Home
+2026-10-26T08:44:09.1974370Z ##[endgroup]
+2026-10-26T08:44:10.6468490Z 
+2026-10-26T08:44:10.6482130Z Welcome to Gradle 8.14.3!
+2026-10-26T08:44:10.6483200Z 
+2026-10-26T08:44:10.6515560Z Here are the highlights of this release:
+2026-10-26T08:44:10.6516480Z  - Java 24 support
+2026-10-26T08:44:10.6516910Z  - GraalVM Native Image toolchain selection
+2026-10-26T08:44:10.6517410Z  - Enhancements to test reporting
+2026-10-26T08:44:10.6517770Z  - Build Authoring improvements
+2026-10-26T08:44:10.6518000Z 
+2026-10-26T08:44:10.6518330Z For more details see https://docs.gradle.org/8.14.3/release-notes.html
+2026-10-26T08:44:10.6518730Z 
+2026-10-26T08:44:10.7302880Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-10-26T08:44:12.0756140Z Daemon will be stopped at the end of the build 
+2026-10-26T08:44:21.0583190Z > Task :kmpPartiallyResolvedDependenciesChecker
+2026-10-26T08:44:21.0590260Z > Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T08:44:38.0937170Z 
+2026-10-26T08:44:38.0939560Z > Task :downloadKotlinNativeDistribution
+2026-10-26T08:44:38.0940470Z Kotlin/Native bundle directory /Users/runner/.konan/kotlin-native-prebuilt-macos-aarch64-2.2.21 is not empty. Native bundle files will be overwritten.
+2026-10-26T08:45:01.9054040Z Downloading native dependencies (LLVM, sysroot etc). This is a one-time action performed only on the first run of the compiler.
+2026-10-26T08:45:01.9074230Z Downloading dependency https://download.jetbrains.com/kotlin/native/resources/llvm/19-aarch64-macos/llvm-19-aarch64-macos-essentials-79.tar.gz to /Users/runner/.konan/dependencies/cache/llvm-19-aarch64-macos-essentials-79.tar.gz
+2026-10-26T08:45:06.4482080Z Done.
+2026-10-26T08:45:06.4488720Z Extracting dependency: /Users/runner/.konan/dependencies/cache/llvm-19-aarch64-macos-essentials-79.tar.gz into /Users/runner/.konan/dependencies
+2026-10-26T08:45:09.9445050Z Downloading dependency https://download.jetbrains.com/kotlin/native/libffi-3.3-1-macos-arm64.tar.gz to /Users/runner/.konan/dependencies/cache/libffi-3.3-1-macos-arm64.tar.gz
+2026-10-26T08:45:10.0833030Z Done.
+2026-10-26T08:45:10.0934860Z Extracting dependency: /Users/runner/.konan/dependencies/cache/libffi-3.3-1-macos-arm64.tar.gz into /Users/runner/.konan/dependencies
+2026-10-26T08:45:10.1046930Z Downloading native dependencies (LLVM, sysroot etc). This is a one-time action performed only on the first run of the compiler.
+2026-10-26T08:45:10.1150990Z Downloading dependency https://download.jetbrains.com/kotlin/native/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz to /Users/runner/.konan/dependencies/cache/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz
+2026-10-26T08:45:13.1025770Z Done.
+2026-10-26T08:45:13.1026910Z Extracting dependency: /Users/runner/.konan/dependencies/cache/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz into /Users/runner/.konan/dependencies
+2026-10-26T08:45:16.0999100Z 
+2026-10-26T08:45:16.1003960Z > Task :primitives:kmpPartiallyResolvedDependenciesChecker
+2026-10-26T08:45:16.1005840Z > Task :primitives:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T08:45:16.1015330Z > Task :primitives:downloadKotlinNativeDistribution
+2026-10-26T08:45:23.3095310Z > Task :primitives:compileKotlinIosArm64
+2026-10-26T08:45:24.0898820Z > Task :compileKotlinIosArm64
+2026-10-26T08:45:24.0904320Z > Task :legacy:kmpPartiallyResolvedDependenciesChecker
+2026-10-26T08:45:24.0905050Z > Task :legacy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T08:45:24.0905630Z > Task :legacy:downloadKotlinNativeDistribution
+2026-10-26T08:45:24.7559580Z > Task :legacy:compileKotlinIosArm64
+2026-10-26T08:45:26.6024270Z > Task :primitives:compileKotlinIosSimulatorArm64
+2026-10-26T08:45:27.1053720Z > Task :compileKotlinIosSimulatorArm64
+2026-10-26T08:45:27.1089270Z > Task :iosSimulatorArm64ProcessResources NO-SOURCE
+2026-10-26T08:45:27.1106770Z > Task :iosSimulatorArm64MainKlibrary
+2026-10-26T08:45:27.7103740Z > Task :legacy:compileKotlinIosSimulatorArm64
+2026-10-26T08:45:28.4864550Z > Task :compileTestKotlinIosSimulatorArm64
+2026-10-26T08:45:46.9885060Z > Task :linkDebugTestIosSimulatorArm64
+2026-10-26T08:46:16.9746170Z > Task :iosSimulatorArm64Test
+2026-10-26T08:46:22.8606860Z > Task :legacy:iosSimulatorArm64ProcessResources NO-SOURCE
+2026-10-26T08:46:22.8726570Z > Task :legacy:iosSimulatorArm64MainKlibrary
+2026-10-26T08:46:24.5266470Z > Task :legacy:compileTestKotlinIosSimulatorArm64
+2026-10-26T08:46:36.5488160Z > Task :legacy:linkDebugTestIosSimulatorArm64
+2026-10-26T08:47:06.5913270Z > Task :legacy:iosSimulatorArm64Test
+2026-10-26T08:49:26.1724480Z > Task :primitives:iosSimulatorArm64ProcessResources NO-SOURCE
+2026-10-26T08:49:26.1726560Z > Task :primitives:iosSimulatorArm64MainKlibrary
+2026-10-26T08:49:28.2068140Z > Task :primitives:compileTestKotlinIosSimulatorArm64
+2026-10-26T08:49:40.2076430Z > Task :primitives:linkDebugTestIosSimulatorArm64
+2026-10-26T08:49:47.3709730Z > Task :primitives:iosSimulatorArm64Test
+2026-10-26T08:49:47.3711300Z 
+2026-10-26T08:49:47.3712150Z BUILD SUCCESSFUL in 5m 37s
+2026-10-26T08:49:47.3712690Z 21 actionable tasks: 21 executed
+2026-10-26T08:49:47.7370970Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-26T08:49:47.7371800Z with:
+2026-10-26T08:49:47.7372040Z   name: ios-simulator-test-results
+2026-10-26T08:49:47.7372630Z   path: **/build/test-results/**
+2026-10-26T08:49:47.7372950Z   retention-days: 14
+2026-10-26T08:49:47.7373520Z   if-no-files-found: warn
+2026-10-26T08:49:47.7373960Z   compression-level: 6
+2026-10-26T08:49:47.7374280Z   overwrite: false
+2026-10-26T08:49:47.7374750Z   include-hidden-files: false
+2026-10-26T08:49:47.7375150Z env:
+2026-10-26T08:49:47.7375610Z   JAVA_HOME: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-101/arm64/Contents/Home
+2026-10-26T08:49:47.7376440Z   JAVA_HOME_17_ARM64: /Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-101/arm64/Contents/Home
+2026-10-26T08:49:47.7376900Z ##[endgroup]
+2026-10-26T08:49:48.4135330Z (node:10420) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T08:49:48.4136220Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T08:49:48.5233640Z With the provided path, there will be 42 files uploaded
+2026-10-26T08:49:48.5235090Z Artifact name is valid!
+2026-10-26T08:49:48.5235810Z Root directory input is valid!
+2026-10-26T08:49:48.9108760Z Beginning upload of artifact content to blob storage
+2026-10-26T08:49:48.9619300Z (node:10420) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-26T08:49:49.3407150Z Uploaded bytes 26822
+2026-10-26T08:49:49.4422310Z Finished uploading artifact content to blob storage!
+2026-10-26T08:49:49.4423760Z SHA256 digest of uploaded artifact zip is 891f4f5e20ac1fa8efc1cab0d3f5202e3fdc497721a86751a44409b93415c50c
+2026-10-26T08:49:49.4425240Z Finalizing artifact upload
+2026-10-26T08:49:49.9297870Z Artifact ios-simulator-test-results.zip successfully finalized. Artifact ID 12637174178
+2026-10-26T08:49:49.9298740Z Artifact ios-simulator-test-results has been successfully uploaded! Final size is 26822 bytes. Artifact ID is 12637174178
+2026-10-26T08:49:49.9327360Z Artifact download URL: https://github.com/Flyfish233/spake2/actions/runs/40294194097/artifacts/12637174178
+2026-10-26T08:49:49.9535440Z Post job cleanup.
+2026-10-26T08:49:50.1438920Z (node:10432) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T08:49:50.1439710Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T08:49:50.1442980Z Cache hit occurred on the primary key setup-java-macOS-arm64-gradle-9bd6d9b7ecb501152c19d9150342f13e7ef0d5a379fcf3dd6ab61ec6f42e62b2, not saving cache.
+2026-10-26T08:49:50.1588260Z Post job cleanup.
+2026-10-26T08:49:50.3019160Z [command]/opt/homebrew/bin/git version
+2026-10-26T08:49:50.3406650Z git version 2.56.0
+2026-10-26T08:49:50.3470280Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/3c9381d8-70de-4532-af7b-4b49a838a1f2/.gitconfig'
+2026-10-26T08:49:50.3473620Z Temporarily overriding HOME='/Users/runner/work/_temp/3c9381d8-70de-4532-af7b-4b49a838a1f2' before making global git config changes
+2026-10-26T08:49:50.3475990Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T08:49:50.3477030Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/spake2/spake2
+2026-10-26T08:49:50.3655690Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T08:49:50.3741320Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T08:49:50.5145360Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T08:49:50.5222150Z http.https://github.com/.extraheader
+2026-10-26T08:49:50.5237820Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-26T08:49:50.5339870Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T08:49:50.6645590Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T08:49:50.6731100Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T08:49:50.8204160Z Cleaning up orphan processes
+2026-10-26T08:49:53.4854650Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

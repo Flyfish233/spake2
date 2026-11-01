@@ -1,0 +1,5 @@
+{
+  "url": "https://api.adoptium.net/v3/assets/latest/17/hotspot?architecture=x64&image_type=jdk&os=linux",
+  "result": "HTTP 403",
+  "nextAction": "Use the official adoptium GitHub release API, a different source route"
+}

@@ -1,0 +1,796 @@
+﻿2026-10-26T18:56:27.1352061Z Current runner version: '2.338.0'
+2026-10-26T18:56:27.1376692Z ##[group]Runner Image Provisioner
+2026-10-26T18:56:27.1377673Z Hosted Compute Agent
+2026-10-26T18:56:27.1378255Z Version: 20261021.618
+2026-10-26T18:56:27.1378858Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-26T18:56:27.1379611Z Build Date: 2026-10-21T00:45:21Z
+2026-10-26T18:56:27.1380299Z Worker ID: {a0acb1a9-1868-4458-9c63-79eba1daf053}
+2026-10-26T18:56:27.1381004Z Region: centralus
+2026-10-26T18:56:27.1381553Z Cloud: Azure
+2026-10-26T18:56:27.1382077Z ##[endgroup]
+2026-10-26T18:56:27.1383408Z ##[group]Operating System
+2026-10-26T18:56:27.1384063Z Ubuntu
+2026-10-26T18:56:27.1384587Z 24.04.5
+2026-10-26T18:56:27.1385110Z LTS
+2026-10-26T18:56:27.1385997Z ##[endgroup]
+2026-10-26T18:56:27.1386606Z ##[group]Runner Image
+2026-10-26T18:56:27.1387242Z Image: ubuntu-24.04
+2026-10-26T18:56:27.1387783Z Version: 20261012.334.1
+2026-10-26T18:56:27.1389061Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-26T18:56:27.1390542Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-26T18:56:27.1391492Z ##[endgroup]
+2026-10-26T18:56:27.1392633Z ##[group]GITHUB_TOKEN Permissions
+2026-10-26T18:56:27.1394770Z Contents: read
+2026-10-26T18:56:27.1395322Z Metadata: read
+2026-10-26T18:56:27.1396185Z ##[endgroup]
+2026-10-26T18:56:27.1398265Z Secret source: Actions
+2026-10-26T18:56:27.1399174Z Cache mode: write
+2026-10-26T18:56:27.1399829Z Prepare workflow directory
+2026-10-26T18:56:27.1724060Z Prepare all required actions
+2026-10-26T18:56:27.1773245Z Getting action download info
+2026-10-26T18:56:27.5156165Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-26T18:56:27.6206329Z Download action repository 'actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-10-26T18:56:28.3802748Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-26T18:56:28.6412041Z Complete job name: publish-candidate
+2026-10-26T18:56:28.7336257Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-26T18:56:28.7337746Z with:
+2026-10-26T18:56:28.7338390Z   ref: a650535f27461b3bfd4c3195f210d6b8971ff340
+2026-10-26T18:56:28.7339298Z   persist-credentials: false
+2026-10-26T18:56:28.7340083Z   repository: Flyfish233/spake2
+2026-10-26T18:56:28.7348788Z   token: ***
+2026-10-26T18:56:28.7349406Z   ssh-strict: true
+2026-10-26T18:56:28.7350005Z   ssh-user: git
+2026-10-26T18:56:28.7350573Z   clean: true
+2026-10-26T18:56:28.7351234Z   sparse-checkout-cone-mode: true
+2026-10-26T18:56:28.7351994Z   fetch-depth: 1
+2026-10-26T18:56:28.7352616Z   fetch-tags: false
+2026-10-26T18:56:28.7353242Z   show-progress: true
+2026-10-26T18:56:28.7353861Z   lfs: false
+2026-10-26T18:56:28.7354455Z   submodules: false
+2026-10-26T18:56:28.7355111Z   set-safe-directory: true
+2026-10-26T18:56:28.7356019Z   allow-unsafe-pr-checkout: false
+2026-10-26T18:56:28.7357033Z ##[endgroup]
+2026-10-26T18:56:28.8378535Z Syncing repository: Flyfish233/spake2
+2026-10-26T18:56:28.8382006Z ##[group]Getting Git version info
+2026-10-26T18:56:28.8383605Z Working directory is '/home/runner/work/spake2/spake2'
+2026-10-26T18:56:28.8386203Z [command]/usr/bin/git version
+2026-10-26T18:56:28.8480737Z git version 2.55.0
+2026-10-26T18:56:28.8512405Z ##[endgroup]
+2026-10-26T18:56:28.8521438Z Temporarily overriding HOME='/home/runner/work/_temp/24250606-1318-4091-8ab3-4ab970ea22b8' before making global git config changes
+2026-10-26T18:56:28.8527307Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T18:56:28.8529122Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/spake2/spake2
+2026-10-26T18:56:28.8588598Z Deleting the contents of '/home/runner/work/spake2/spake2'
+2026-10-26T18:56:28.8593690Z ##[group]Initializing the repository
+2026-10-26T18:56:28.8599089Z [command]/usr/bin/git init /home/runner/work/spake2/spake2
+2026-10-26T18:56:28.8729214Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-26T18:56:28.8732291Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-26T18:56:28.8734974Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-26T18:56:28.8737770Z hint: call:
+2026-10-26T18:56:28.8738793Z hint:
+2026-10-26T18:56:28.8739986Z hint: 	git config --global init.defaultBranch <name>
+2026-10-26T18:56:28.8741566Z hint:
+2026-10-26T18:56:28.8742979Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-26T18:56:28.8745899Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-26T18:56:28.8748177Z hint:
+2026-10-26T18:56:28.8749107Z hint: 	git branch -m <name>
+2026-10-26T18:56:28.8750336Z hint:
+2026-10-26T18:56:28.8751839Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-26T18:56:28.8756572Z Initialized empty Git repository in /home/runner/work/spake2/spake2/.git/
+2026-10-26T18:56:28.8761487Z [command]/usr/bin/git remote add origin https://github.com/Flyfish233/spake2
+2026-10-26T18:56:28.8796829Z ##[endgroup]
+2026-10-26T18:56:28.8798541Z ##[group]Disabling automatic garbage collection
+2026-10-26T18:56:28.8800147Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-26T18:56:28.8834498Z ##[endgroup]
+2026-10-26T18:56:28.8836294Z ##[group]Setting up auth
+2026-10-26T18:56:28.8842933Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T18:56:28.8884362Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T18:56:28.9254008Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T18:56:28.9286526Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T18:56:28.9479217Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T18:56:28.9511344Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T18:56:28.9703810Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-26T18:56:28.9746060Z ##[endgroup]
+2026-10-26T18:56:28.9747655Z ##[group]Fetching the repository
+2026-10-26T18:56:28.9756099Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin a650535f27461b3bfd4c3195f210d6b8971ff340
+2026-10-26T18:56:29.6555988Z From https://github.com/Flyfish233/spake2
+2026-10-26T18:56:29.6557678Z  * branch            a650535f27461b3bfd4c3195f210d6b8971ff340 -> FETCH_HEAD
+2026-10-26T18:56:29.6561258Z ##[endgroup]
+2026-10-26T18:56:29.6562558Z ##[group]Determining the checkout info
+2026-10-26T18:56:29.6564061Z ##[endgroup]
+2026-10-26T18:56:29.6570720Z [command]/usr/bin/git sparse-checkout disable
+2026-10-26T18:56:29.6634102Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-26T18:56:29.6666222Z ##[group]Checking out the ref
+2026-10-26T18:56:29.6668967Z [command]/usr/bin/git checkout --progress --force a650535f27461b3bfd4c3195f210d6b8971ff340
+2026-10-26T18:56:29.6958261Z Note: switching to 'a650535f27461b3bfd4c3195f210d6b8971ff340'.
+2026-10-26T18:56:29.6959504Z 
+2026-10-26T18:56:29.6960042Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-26T18:56:29.6961473Z changes and commit them, and you can discard any commits you make in this
+2026-10-26T18:56:29.6962891Z state without impacting any branches by switching back to a branch.
+2026-10-26T18:56:29.6963950Z 
+2026-10-26T18:56:29.6964447Z If you want to create a new branch to retain commits you create, you may
+2026-10-26T18:56:29.6965894Z do so (now or later) by using -c with the switch command. Example:
+2026-10-26T18:56:29.6966775Z 
+2026-10-26T18:56:29.6967108Z   git switch -c <new-branch-name>
+2026-10-26T18:56:29.6967753Z 
+2026-10-26T18:56:29.6968064Z Or undo this operation with:
+2026-10-26T18:56:29.6968639Z 
+2026-10-26T18:56:29.6968895Z   git switch -
+2026-10-26T18:56:29.6969351Z 
+2026-10-26T18:56:29.6970040Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-26T18:56:29.6970912Z 
+2026-10-26T18:56:29.6971848Z HEAD is now at a650535 fix: enforce complete publication resources and deterministic verifier inputs
+2026-10-26T18:56:29.6974790Z ##[endgroup]
+2026-10-26T18:56:29.7011319Z [command]/usr/bin/git log -1 --format=%H
+2026-10-26T18:56:29.7033708Z a650535f27461b3bfd4c3195f210d6b8971ff340
+2026-10-26T18:56:29.7043110Z ##[group]Removing auth
+2026-10-26T18:56:29.7052186Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T18:56:29.7081000Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T18:56:29.7285119Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T18:56:29.7309980Z http.https://github.com/.extraheader
+2026-10-26T18:56:29.7316829Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-26T18:56:29.7351954Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T18:56:29.7551985Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T18:56:29.7580044Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T18:56:29.7764144Z ##[endgroup]
+2026-10-26T18:56:29.8158010Z ##[group]Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3
+2026-10-26T18:56:29.8160077Z with:
+2026-10-26T18:56:29.8160937Z   distribution: temurin
+2026-10-26T18:56:29.8161884Z   java-version: 17
+2026-10-26T18:56:29.8162765Z   cache: gradle
+2026-10-26T18:56:29.8163638Z   java-package: jdk
+2026-10-26T18:56:29.8164536Z   check-latest: false
+2026-10-26T18:56:29.8165439Z   server-id: github
+2026-10-26T18:56:29.8166481Z   server-username: GITHUB_ACTOR
+2026-10-26T18:56:29.8167566Z   server-password: GITHUB_TOKEN
+2026-10-26T18:56:29.8168599Z   overwrite-settings: true
+2026-10-26T18:56:29.8169575Z   job-status: success
+2026-10-26T18:56:29.8178333Z   token: ***
+2026-10-26T18:56:29.8179211Z ##[endgroup]
+2026-10-26T18:56:30.0027906Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-10-26T18:56:30.0037489Z ##[group]Installed distributions
+2026-10-26T18:56:30.0136943Z Resolved Java 17.0.20+1 from tool-cache
+2026-10-26T18:56:30.0138753Z Setting Java 17.0.20+1 as the default
+2026-10-26T18:56:30.0147346Z (node:2294) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T18:56:30.0150842Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T18:56:30.0153179Z Creating toolchains.xml for JDK version 17 from temurin
+2026-10-26T18:56:30.0218991Z Writing to /home/runner/.m2/toolchains.xml
+2026-10-26T18:56:30.0220304Z 
+2026-10-26T18:56:30.0220843Z Java configuration:
+2026-10-26T18:56:30.0222125Z   Distribution: temurin
+2026-10-26T18:56:30.0223325Z   Version: 17.0.20+1
+2026-10-26T18:56:30.0224949Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:56:30.0226657Z 
+2026-10-26T18:56:30.0228104Z ##[endgroup]
+2026-10-26T18:56:30.0251080Z Creating settings.xml with server-id: github
+2026-10-26T18:56:30.0271950Z Writing to /home/runner/.m2/settings.xml
+2026-10-26T18:56:30.2783708Z gradle cache is not found
+2026-10-26T18:56:30.2975246Z ##[group]Run candidate_revision="$(git rev-parse HEAD)"
+2026-10-26T18:56:30.2977093Z [36;1mcandidate_revision="$(git rev-parse HEAD)"[0m
+2026-10-26T18:56:30.2978634Z [36;1mcandidate_version="0.1.0-dev.${candidate_revision:0:12}"[0m
+2026-10-26T18:56:30.2980120Z [36;1m{[0m
+2026-10-26T18:56:30.2981344Z [36;1m  printf 'revision=%s\n' "$candidate_revision"[0m
+2026-10-26T18:56:30.2982825Z [36;1m  printf 'version=%s\n' "$candidate_version"[0m
+2026-10-26T18:56:30.2984158Z [36;1m} >> "$GITHUB_OUTPUT"[0m
+2026-10-26T18:56:30.2985274Z [36;1m{[0m
+2026-10-26T18:56:30.2986694Z [36;1m  printf 'SPAKE2_SOURCE_REVISION=%s\n' "$candidate_revision"[0m
+2026-10-26T18:56:30.2988407Z [36;1m  printf 'SPAKE2_CONSUMER_VERSION=%s\n' "$candidate_version"[0m
+2026-10-26T18:56:30.2990212Z [36;1m  printf 'SPAKE2_MAVEN_REPO=%s/spake2-publication/maven\n' "$RUNNER_TEMP"[0m
+2026-10-26T18:56:30.2991773Z [36;1m} >> "$GITHUB_ENV"[0m
+2026-10-26T18:56:30.2992963Z [36;1mmkdir -p "$RUNNER_TEMP/spake2-publication"[0m
+2026-10-26T18:56:30.3209828Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-26T18:56:30.3211200Z env:
+2026-10-26T18:56:30.3212387Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:56:30.3214237Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:56:30.3215893Z ##[endgroup]
+2026-10-26T18:56:30.3457542Z ##[group]Run python3 -m unittest discover -s tools/tests -p 'test_*.py'
+2026-10-26T18:56:30.3459812Z [36;1mpython3 -m unittest discover -s tools/tests -p 'test_*.py'[0m
+2026-10-26T18:56:30.3461577Z [36;1mpython3 -O -m unittest discover -s tools/tests -p 'test_*.py'[0m
+2026-10-26T18:56:30.3511292Z shell: /usr/bin/bash -e {0}
+2026-10-26T18:56:30.3512305Z env:
+2026-10-26T18:56:30.3513480Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:56:30.3515328Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:56:30.3517562Z   SPAKE2_SOURCE_REVISION: a650535f27461b3bfd4c3195f210d6b8971ff340
+2026-10-26T18:56:30.3519025Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.a650535f2746
+2026-10-26T18:56:30.3520504Z   SPAKE2_MAVEN_REPO: /home/runner/work/_temp/spake2-publication/maven
+2026-10-26T18:56:30.3521881Z ##[endgroup]
+2026-10-26T18:56:34.5630149Z .....................................
+2026-10-26T18:56:34.5630818Z ----------------------------------------------------------------------
+2026-10-26T18:56:34.5631253Z Ran 37 tests in 3.988s
+2026-10-26T18:56:34.5631432Z 
+2026-10-26T18:56:34.5631555Z OK
+2026-10-26T18:56:38.5980079Z .....................................
+2026-10-26T18:56:38.5980881Z ----------------------------------------------------------------------
+2026-10-26T18:56:38.5981790Z Ran 37 tests in 3.300s
+2026-10-26T18:56:38.5981973Z 
+2026-10-26T18:56:38.5982087Z OK
+2026-10-26T18:56:38.6290563Z ##[group]Run set -euo pipefail
+2026-10-26T18:56:38.6290937Z [36;1mset -euo pipefail[0m
+2026-10-26T18:56:38.6291246Z [36;1m./gradlew --no-daemon --console=plain \[0m
+2026-10-26T18:56:38.6291723Z [36;1m  -PenableAndroid=true -Pkotlin.native.enableKlibsCrossCompilation=true \[0m
+2026-10-26T18:56:38.6292240Z [36;1m  -Pspake2Version="$SPAKE2_CONSUMER_VERSION" \[0m
+2026-10-26T18:56:38.6292640Z [36;1m  -Pspake2Revision="$SPAKE2_SOURCE_REVISION" \[0m
+2026-10-26T18:56:38.6292997Z [36;1m  -Dmaven.repo.local="$SPAKE2_MAVEN_REPO" \[0m
+2026-10-26T18:56:38.6293444Z [36;1m  publishToMavenLocal 2>&1 | tee "$RUNNER_TEMP/spake2-publication/producer.log"[0m
+2026-10-26T18:56:38.6334812Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-26T18:56:38.6335175Z env:
+2026-10-26T18:56:38.6335630Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:56:38.6336237Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:56:38.6336928Z   SPAKE2_SOURCE_REVISION: a650535f27461b3bfd4c3195f210d6b8971ff340
+2026-10-26T18:56:38.6337339Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.a650535f2746
+2026-10-26T18:56:38.6337717Z   SPAKE2_MAVEN_REPO: /home/runner/work/_temp/spake2-publication/maven
+2026-10-26T18:56:38.6338069Z ##[endgroup]
+2026-10-26T18:56:40.4402628Z Downloading https://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+2026-10-26T18:56:43.0352765Z .............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%..............100%
+2026-10-26T18:56:44.6865478Z 
+2026-10-26T18:56:44.6866730Z Welcome to Gradle 8.14.3!
+2026-10-26T18:56:44.6867543Z 
+2026-10-26T18:56:44.6876981Z Here are the highlights of this release:
+2026-10-26T18:56:44.6877375Z  - Java 24 support
+2026-10-26T18:56:44.6877671Z  - GraalVM Native Image toolchain selection
+2026-10-26T18:56:44.6878058Z  - Enhancements to test reporting
+2026-10-26T18:56:44.6878388Z  - Build Authoring improvements
+2026-10-26T18:56:44.6878576Z 
+2026-10-26T18:56:44.6878833Z For more details see https://docs.gradle.org/8.14.3/release-notes.html
+2026-10-26T18:56:44.6879113Z 
+2026-10-26T18:56:44.7871465Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-10-26T18:56:46.0878296Z Daemon will be stopped at the end of the build 
+2026-10-26T18:57:51.6859272Z Configuration 'jsNpmAggregated' was resolved during configuration time.
+2026-10-26T18:57:51.6869798Z This is a build performance and scalability issue.
+2026-10-26T18:57:51.6870260Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T18:57:51.6870607Z Run with --info for a stacktrace.
+2026-10-26T18:57:52.1871381Z Configuration 'jsNpmAggregated' was resolved during configuration time.
+2026-10-26T18:57:52.1874966Z This is a build performance and scalability issue.
+2026-10-26T18:57:52.1876021Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T18:57:52.1876724Z Run with --info for a stacktrace.
+2026-10-26T18:57:52.2858789Z Configuration 'wasmJsNpmAggregated' was resolved during configuration time.
+2026-10-26T18:57:52.2859442Z This is a build performance and scalability issue.
+2026-10-26T18:57:52.2860007Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T18:57:52.2860459Z Run with --info for a stacktrace.
+2026-10-26T18:57:52.5859993Z Configuration 'wasmJsNpmAggregated' was resolved during configuration time.
+2026-10-26T18:57:52.5861003Z This is a build performance and scalability issue.
+2026-10-26T18:57:52.5882611Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T18:57:52.5883426Z Run with --info for a stacktrace.
+2026-10-26T18:57:52.6870629Z Configuration 'jsNpmAggregated' was resolved during configuration time.
+2026-10-26T18:57:52.6896844Z This is a build performance and scalability issue.
+2026-10-26T18:57:52.6899585Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T18:57:52.6900499Z Run with --info for a stacktrace.
+2026-10-26T18:57:52.7862836Z Configuration 'wasmJsNpmAggregated' was resolved during configuration time.
+2026-10-26T18:57:52.7926647Z This is a build performance and scalability issue.
+2026-10-26T18:57:52.7956394Z See https://github.com/gradle/gradle/issues/2298
+2026-10-26T18:57:52.7966352Z Run with --info for a stacktrace.
+2026-10-26T18:57:52.9875349Z > Task :androidReleaseSourcesJar
+2026-10-26T18:57:53.0859532Z > Task :preBuild UP-TO-DATE
+2026-10-26T18:57:53.0864867Z > Task :preReleaseBuild UP-TO-DATE
+2026-10-26T18:57:53.0865865Z > Task :mergeReleaseJniLibFolders
+2026-10-26T18:57:53.0866437Z > Task :mergeReleaseNativeLibs NO-SOURCE
+2026-10-26T18:57:53.1861961Z > Task :stripReleaseDebugSymbols NO-SOURCE
+2026-10-26T18:57:53.1877255Z > Task :generateReleaseResValues
+2026-10-26T18:57:53.1878004Z > Task :copyReleaseJniLibsProjectAndLocalJars
+2026-10-26T18:57:53.1878777Z > Task :extractDeepLinksForAarRelease
+2026-10-26T18:57:53.1879922Z > Task :kmpPartiallyResolvedDependenciesChecker
+2026-10-26T18:57:53.1880992Z > Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T18:57:53.1881459Z > Task :generateReleaseResources
+2026-10-26T18:57:53.1881798Z > Task :packageReleaseResources
+2026-10-26T18:57:55.0870794Z > Task :primitives:kmpPartiallyResolvedDependenciesChecker
+2026-10-26T18:57:55.0906677Z > Task :primitives:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T18:57:55.0926385Z > Task :primitives:preBuild UP-TO-DATE
+2026-10-26T18:57:55.0946409Z > Task :primitives:preReleaseBuild UP-TO-DATE
+2026-10-26T18:57:55.0986344Z > Task :primitives:generateReleaseResValues
+2026-10-26T18:57:55.1011521Z > Task :primitives:generateReleaseResources
+2026-10-26T18:57:55.1012489Z > Task :primitives:packageReleaseResources
+2026-10-26T18:57:55.1862176Z > Task :parseReleaseLocalResources
+2026-10-26T18:57:55.1867625Z > Task :primitives:parseReleaseLocalResources
+2026-10-26T18:57:55.1868471Z > Task :generateReleaseRFile
+2026-10-26T18:57:55.1869079Z > Task :primitives:generateReleaseRFile
+2026-10-26T18:57:55.1869632Z > Task :primitives:javaPreCompileRelease
+2026-10-26T18:58:01.1879904Z > Task :mergeReleaseShaders
+2026-10-26T18:58:01.1906876Z > Task :compileReleaseShaders NO-SOURCE
+2026-10-26T18:58:01.1936352Z > Task :generateReleaseAssets UP-TO-DATE
+2026-10-26T18:58:01.1966295Z > Task :releaseAssetsCopyForAGP NO-SOURCE
+2026-10-26T18:58:01.1967097Z > Task :mergeReleaseAssets
+2026-10-26T18:58:01.1996387Z > Task :javaPreCompileRelease
+2026-10-26T18:58:01.2026345Z > Task :prepareLintJarForPublish
+2026-10-26T18:58:01.2027069Z > Task :prepareReleaseArtProfile
+2026-10-26T18:58:01.2878515Z > Task :processReleaseManifest
+2026-10-26T18:58:01.3866836Z > Task :publicationNotices
+2026-10-26T18:58:01.3886437Z > Task :writeReleaseAarMetadata
+2026-10-26T18:58:01.3896613Z > Task :documentationJar
+2026-10-26T18:58:01.4877112Z > Task :primitives:exportTargetPublicationCoordinatesForReleaseApiElements
+2026-10-26T18:58:01.4916903Z > Task :primitives:exportTargetPublicationCoordinatesForReleaseRuntimeElements
+2026-10-26T18:58:01.9877068Z > Task :generatePomFileForAndroidReleasePublication
+2026-10-26T18:58:12.0857866Z > Task :primitives:compileReleaseKotlinAndroid
+2026-10-26T18:58:17.1870884Z 
+2026-10-26T18:58:17.1871868Z > Task :downloadKotlinNativeDistribution
+2026-10-26T18:58:17.1873147Z Kotlin/Native bundle directory /home/runner/.konan/kotlin-native-prebuilt-linux-x86_64-2.2.21 is not empty. Native bundle files will be overwritten.
+2026-10-26T18:58:19.3859413Z Downloading native dependencies (LLVM, sysroot etc). This is a one-time action performed only on the first run of the compiler.
+2026-10-26T18:58:19.3863069Z Downloading dependency https://download.jetbrains.com/kotlin/native/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz to /home/runner/.konan/dependencies/cache/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz
+2026-10-26T18:58:20.2858642Z Done.
+2026-10-26T18:58:20.2860642Z Extracting dependency: /home/runner/.konan/dependencies/cache/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz into /home/runner/.konan/dependencies
+2026-10-26T18:58:22.0858537Z Downloading dependency https://download.jetbrains.com/kotlin/native/lldb-4-linux.tar.gz to /home/runner/.konan/dependencies/cache/lldb-4-linux.tar.gz
+2026-10-26T18:58:22.2858131Z Done.
+2026-10-26T18:58:22.2858777Z Extracting dependency: /home/runner/.konan/dependencies/cache/lldb-4-linux.tar.gz into /home/runner/.konan/dependencies
+2026-10-26T18:58:23.1858721Z Downloading dependency https://download.jetbrains.com/kotlin/native/resources/llvm/19-x86_64-linux/llvm-19-x86_64-linux-essentials-103.tar.gz to /home/runner/.konan/dependencies/cache/llvm-19-x86_64-linux-essentials-103.tar.gz
+2026-10-26T18:58:23.6857167Z Done.
+2026-10-26T18:58:23.6858007Z Extracting dependency: /home/runner/.konan/dependencies/cache/llvm-19-x86_64-linux-essentials-103.tar.gz into /home/runner/.konan/dependencies
+2026-10-26T18:58:26.8858533Z Downloading dependency https://download.jetbrains.com/kotlin/native/libffi-3.2.1-2-linux-x86-64.tar.gz to /home/runner/.konan/dependencies/cache/libffi-3.2.1-2-linux-x86-64.tar.gz
+2026-10-26T18:58:26.9861007Z Done.
+2026-10-26T18:58:26.9862136Z Extracting dependency: /home/runner/.konan/dependencies/cache/libffi-3.2.1-2-linux-x86-64.tar.gz into /home/runner/.konan/dependencies
+2026-10-26T18:58:27.0876487Z 
+2026-10-26T18:58:27.0877640Z > Task :primitives:compileReleaseJavaWithJavac NO-SOURCE
+2026-10-26T18:58:27.0878473Z > Task :primitives:downloadKotlinNativeDistribution
+2026-10-26T18:58:27.0879275Z > Task :primitives:bundleLibCompileToJarRelease
+2026-10-26T18:58:34.0886631Z > Task :primitives:compileKotlinIosArm64
+2026-10-26T18:58:36.7859269Z > Task :compileKotlinIosArm64
+2026-10-26T18:58:36.7866783Z > Task :iosArm64Klib
+2026-10-26T18:58:36.8858448Z > Task :compileReleaseKotlinAndroid
+2026-10-26T18:59:06.7859397Z > Task :commonizeNativeDistribution
+2026-10-26T18:59:24.8861050Z > Task :extractReleaseAnnotations
+2026-10-26T18:59:24.8891844Z > Task :compileReleaseJavaWithJavac NO-SOURCE
+2026-10-26T18:59:24.8946671Z > Task :mergeReleaseGeneratedProguardFiles
+2026-10-26T18:59:24.8966518Z > Task :mergeReleaseConsumerProguardFiles
+2026-10-26T18:59:24.8967368Z > Task :processReleaseJavaRes
+2026-10-26T18:59:25.0887149Z > Task :mergeReleaseJavaResource
+2026-10-26T18:59:25.2867925Z > Task :primitives:transformCommonMainDependenciesMetadata
+2026-10-26T18:59:25.2877199Z > Task :syncReleaseLibJars
+2026-10-26T18:59:25.2877684Z > Task :bundleReleaseAar
+2026-10-26T18:59:25.3858294Z > Task :generateMetadataFileForAndroidReleasePublication
+2026-10-26T18:59:25.3860235Z > Task :publishAndroidReleasePublicationToMavenLocal
+2026-10-26T18:59:25.4876766Z > Task :primitives:commonizeNativeDistribution
+2026-10-26T18:59:25.4904421Z > Task :primitives:publicationNotices
+2026-10-26T18:59:25.4905151Z > Task :primitives:metadataCommonMainProcessResources
+2026-10-26T18:59:25.4906181Z > Task :primitives:transformNativeMainDependenciesMetadata
+2026-10-26T18:59:25.5906731Z > Task :primitives:transformWebMainDependenciesMetadata
+2026-10-26T18:59:25.7889061Z > Task :primitives:generateProjectStructureMetadata
+2026-10-26T18:59:25.7906929Z > Task :primitives:metadataNativeMainProcessResources
+2026-10-26T18:59:25.7998839Z > Task :primitives:metadataWebMainProcessResources
+2026-10-26T18:59:25.8076941Z > Task :primitives:transformAppleMainDependenciesMetadata
+2026-10-26T18:59:25.8916758Z > Task :primitives:metadataAppleMainProcessResources
+2026-10-26T18:59:25.8976679Z > Task :primitives:transformIosMainDependenciesMetadata
+2026-10-26T18:59:25.8992146Z > Task :primitives:transformMacosMainDependenciesMetadata
+2026-10-26T18:59:25.9066347Z > Task :primitives:metadataIosMainProcessResources
+2026-10-26T18:59:25.9069511Z > Task :primitives:metadataMacosMainProcessResources
+2026-10-26T18:59:25.9886992Z > Task :metadataCommonMainProcessResources
+2026-10-26T18:59:25.9907438Z > Task :metadataNativeMainProcessResources
+2026-10-26T18:59:25.9937057Z > Task :metadataAppleMainProcessResources
+2026-10-26T18:59:25.9967418Z > Task :metadataIosMainProcessResources
+2026-10-26T18:59:25.9976240Z > Task :metadataMacosMainProcessResources
+2026-10-26T18:59:26.0876869Z > Task :iosArm64SourcesJar
+2026-10-26T18:59:26.0877748Z > Task :primitives:exportTargetPublicationCoordinatesForIosArm64ApiElements
+2026-10-26T18:59:26.2858108Z > Task :generatePomFileForIosArm64Publication
+2026-10-26T18:59:28.3862338Z > Task :primitives:compileCommonMainKotlinMetadata
+2026-10-26T18:59:28.8858048Z > Task :primitives:compileKotlinIosSimulatorArm64
+2026-10-26T18:59:28.8868338Z > Task :primitives:metadataCommonMainClasses
+2026-10-26T18:59:28.8869132Z > Task :primitives:compileNativeMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:28.8869832Z > Task :primitives:compileWebMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:28.8872920Z > Task :primitives:metadataNativeMainClasses
+2026-10-26T18:59:28.8873857Z > Task :primitives:metadataWebMainClasses
+2026-10-26T18:59:28.8874438Z > Task :primitives:allMetadataJar
+2026-10-26T18:59:28.8875077Z > Task :primitives:compileAppleMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:28.8876318Z > Task :primitives:metadataAppleMainClasses
+2026-10-26T18:59:28.8876995Z > Task :primitives:compileIosMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:28.8877717Z > Task :primitives:compileMacosMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:28.8878356Z > Task :primitives:metadataIosMainClasses
+2026-10-26T18:59:28.8878934Z > Task :primitives:metadataMacosMainClasses
+2026-10-26T18:59:28.9857851Z > Task :primitives:exportCommonSourceSetsMetadataLocationsForMetadataApiElements
+2026-10-26T18:59:28.9859355Z > Task :primitives:iosArm64MetadataElements
+2026-10-26T18:59:28.9860740Z > Task :primitives:iosSimulatorArm64MetadataElements
+2026-10-26T18:59:28.9861593Z > Task :primitives:iosX64MetadataElements
+2026-10-26T18:59:28.9862008Z > Task :primitives:linuxX64MetadataElements
+2026-10-26T18:59:28.9862404Z > Task :primitives:macosArm64MetadataElements
+2026-10-26T18:59:28.9862720Z > Task :primitives:macosX64MetadataElements
+2026-10-26T18:59:29.0879125Z > Task :transformCommonMainDependenciesMetadata
+2026-10-26T18:59:29.0908774Z > Task :transformNativeMainDependenciesMetadata
+2026-10-26T18:59:29.0912300Z > Task :transformAppleMainDependenciesMetadata
+2026-10-26T18:59:29.1887148Z > Task :transformIosMainDependenciesMetadata
+2026-10-26T18:59:29.1916935Z > Task :transformMacosMainDependenciesMetadata
+2026-10-26T18:59:30.0858212Z > Task :compileCommonMainKotlinMetadata
+2026-10-26T18:59:30.3859071Z > Task :compileKotlinIosSimulatorArm64
+2026-10-26T18:59:30.3874244Z > Task :metadataCommonMainClasses
+2026-10-26T18:59:30.3875717Z > Task :compileNativeMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:30.3876651Z > Task :metadataNativeMainClasses
+2026-10-26T18:59:30.3877264Z > Task :compileAppleMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:30.3877953Z > Task :metadataAppleMainClasses
+2026-10-26T18:59:30.3878547Z > Task :compileIosMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:30.3879196Z > Task :compileMacosMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:30.3879789Z > Task :metadataIosMainClasses
+2026-10-26T18:59:30.3880328Z > Task :metadataMacosMainClasses
+2026-10-26T18:59:30.3880858Z > Task :iosArm64MetadataElements
+2026-10-26T18:59:30.4859654Z > Task :generateMetadataFileForIosArm64Publication
+2026-10-26T18:59:30.4876395Z > Task :publishIosArm64PublicationToMavenLocal
+2026-10-26T18:59:30.4906259Z > Task :iosSimulatorArm64Klib
+2026-10-26T18:59:30.4946411Z > Task :iosSimulatorArm64MetadataElements
+2026-10-26T18:59:30.4976193Z > Task :iosSimulatorArm64SourcesJar
+2026-10-26T18:59:30.5006283Z > Task :generateMetadataFileForIosSimulatorArm64Publication
+2026-10-26T18:59:30.5036405Z > Task :primitives:exportTargetPublicationCoordinatesForIosSimulatorArm64ApiElements
+2026-10-26T18:59:30.6879197Z > Task :generatePomFileForIosSimulatorArm64Publication
+2026-10-26T18:59:30.6903080Z > Task :publishIosSimulatorArm64PublicationToMavenLocal
+2026-10-26T18:59:32.1887047Z > Task :primitives:compileKotlinIosX64
+2026-10-26T18:59:32.7859249Z > Task :compileKotlinIosX64
+2026-10-26T18:59:32.7877226Z > Task :iosX64Klib
+2026-10-26T18:59:32.8858128Z > Task :iosX64MetadataElements
+2026-10-26T18:59:32.8864522Z > Task :iosX64SourcesJar
+2026-10-26T18:59:32.8865320Z > Task :generateMetadataFileForIosX64Publication
+2026-10-26T18:59:32.8866385Z > Task :primitives:exportTargetPublicationCoordinatesForIosX64ApiElements
+2026-10-26T18:59:33.0889786Z > Task :generatePomFileForIosX64Publication
+2026-10-26T18:59:33.0917195Z > Task :publishIosX64PublicationToMavenLocal
+2026-10-26T18:59:33.1886599Z > Task :jsProcessResources
+2026-10-26T18:59:33.2876679Z > Task :kotlinKotlinNpmCachesSetup
+2026-10-26T18:59:33.3866639Z > Task :primitives:jsPackageJson
+2026-10-26T18:59:33.3896589Z > Task :jsPackageJson
+2026-10-26T18:59:33.3926289Z > Task :jsPublicPackageJson
+2026-10-26T18:59:33.3966421Z > Task :jsSourcesJar
+2026-10-26T18:59:33.3993124Z > Task :primitives:exportTargetPublicationCoordinatesForJsApiElements
+2026-10-26T18:59:33.4013533Z > Task :primitives:exportTargetPublicationCoordinatesForJsRuntimeElements
+2026-10-26T18:59:33.8896898Z > Task :generatePomFileForJsPublication
+2026-10-26T18:59:36.2857710Z > Task :primitives:compileKotlinJs
+2026-10-26T18:59:37.0858647Z > Task :primitives:compileKotlinJvm
+2026-10-26T18:59:37.0859241Z > Task :primitives:compileJvmMainJava NO-SOURCE
+2026-10-26T18:59:37.0886786Z > Task :primitives:jvmProcessResources
+2026-10-26T18:59:37.0887440Z > Task :primitives:processJvmMainResources SKIPPED
+2026-10-26T18:59:37.0914217Z > Task :primitives:jvmMainClasses
+2026-10-26T18:59:37.0915062Z > Task :primitives:jvmJar
+2026-10-26T18:59:37.1870120Z > Task :compileKotlinJs
+2026-10-26T18:59:37.1896463Z > Task :jsMainClasses
+2026-10-26T18:59:37.1896905Z > Task :jsJar
+2026-10-26T18:59:37.1926552Z > Task :generateMetadataFileForJsPublication
+2026-10-26T18:59:37.1947735Z > Task :publishJsPublicationToMavenLocal
+2026-10-26T18:59:37.2869799Z > Task :jvmProcessResources
+2026-10-26T18:59:37.2896698Z > Task :processJvmMainResources SKIPPED
+2026-10-26T18:59:37.2908666Z > Task :jvmSourcesJar
+2026-10-26T18:59:37.2934182Z > Task :primitives:exportTargetPublicationCoordinatesForJvmApiElements
+2026-10-26T18:59:37.2956819Z > Task :primitives:exportTargetPublicationCoordinatesForJvmRuntimeElements
+2026-10-26T18:59:37.7878761Z > Task :generatePomFileForJvmPublication
+2026-10-26T18:59:37.7906684Z > Task :transformWebMainDependenciesMetadata
+2026-10-26T18:59:37.7936294Z > Task :compileWebMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:37.7937216Z > Task :primitives:exportRootPublicationCoordinatesForMetadataApiElements
+2026-10-26T18:59:37.9886864Z > Task :generateProjectStructureMetadata
+2026-10-26T18:59:37.9916618Z > Task :metadataWebMainProcessResources
+2026-10-26T18:59:37.9971279Z > Task :metadataWebMainClasses
+2026-10-26T18:59:38.0026238Z > Task :allMetadataJar
+2026-10-26T18:59:38.0106298Z > Task :buildKotlinToolingMetadata
+2026-10-26T18:59:38.0881249Z > Task :sourcesJar
+2026-10-26T18:59:38.0897018Z > Task :generateMetadataFileForKotlinMultiplatformPublication
+2026-10-26T18:59:38.0897948Z > Task :generatePomFileForKotlinMultiplatformPublication
+2026-10-26T18:59:38.2857679Z > Task :compileKotlinJvm
+2026-10-26T18:59:38.3896585Z > Task :sourceDistribution
+2026-10-26T18:59:38.3926625Z > Task :compileJvmMainJava NO-SOURCE
+2026-10-26T18:59:38.3985358Z > Task :jvmMainClasses
+2026-10-26T18:59:38.4866679Z > Task :jvmJar
+2026-10-26T18:59:38.4882627Z > Task :generateMetadataFileForJvmPublication
+2026-10-26T18:59:38.4883145Z > Task :publishJvmPublicationToMavenLocal
+2026-10-26T18:59:38.4883689Z > Task :publishKotlinMultiplatformPublicationToMavenLocal
+2026-10-26T18:59:39.4887384Z > Task :primitives:compileKotlinLinuxX64
+2026-10-26T18:59:39.8858630Z > Task :compileKotlinLinuxX64
+2026-10-26T18:59:39.8859277Z > Task :linuxX64Klib
+2026-10-26T18:59:39.8859881Z > Task :linuxX64SourcesJar
+2026-10-26T18:59:39.8860461Z > Task :generateMetadataFileForLinuxX64Publication
+2026-10-26T18:59:39.8861320Z > Task :primitives:exportTargetPublicationCoordinatesForLinuxX64ApiElements
+2026-10-26T18:59:39.9880782Z > Task :generatePomFileForLinuxX64Publication
+2026-10-26T18:59:39.9881921Z > Task :publishLinuxX64PublicationToMavenLocal
+2026-10-26T18:59:41.1858032Z > Task :primitives:compileKotlinMacosArm64
+2026-10-26T18:59:41.7857865Z > Task :compileKotlinMacosArm64
+2026-10-26T18:59:41.7860203Z > Task :macosArm64Klib
+2026-10-26T18:59:41.7860875Z > Task :macosArm64MetadataElements
+2026-10-26T18:59:41.7861444Z > Task :macosArm64SourcesJar
+2026-10-26T18:59:41.7862069Z > Task :generateMetadataFileForMacosArm64Publication
+2026-10-26T18:59:41.7862967Z > Task :primitives:exportTargetPublicationCoordinatesForMacosArm64ApiElements
+2026-10-26T18:59:41.8857572Z > Task :generatePomFileForMacosArm64Publication
+2026-10-26T18:59:41.8859164Z > Task :publishMacosArm64PublicationToMavenLocal
+2026-10-26T18:59:43.0916846Z > Task :primitives:compileKotlinMacosX64
+2026-10-26T18:59:43.6861506Z > Task :compileKotlinMacosX64
+2026-10-26T18:59:43.6861949Z > Task :macosX64Klib
+2026-10-26T18:59:43.6862231Z > Task :macosX64MetadataElements
+2026-10-26T18:59:43.6862539Z > Task :macosX64SourcesJar
+2026-10-26T18:59:43.6862946Z > Task :generateMetadataFileForMacosX64Publication
+2026-10-26T18:59:43.6863896Z > Task :primitives:exportTargetPublicationCoordinatesForMacosX64ApiElements
+2026-10-26T18:59:43.7857533Z > Task :generatePomFileForMacosX64Publication
+2026-10-26T18:59:43.7857971Z > Task :publishMacosX64PublicationToMavenLocal
+2026-10-26T18:59:43.8891180Z > Task :wasmJsProcessResources
+2026-10-26T18:59:43.8892116Z > Task :kotlinWasmKotlinNpmCachesSetup
+2026-10-26T18:59:43.9869658Z > Task :primitives:wasmJsPackageJson
+2026-10-26T18:59:43.9892966Z > Task :wasmJsPackageJson
+2026-10-26T18:59:44.0861313Z > Task :wasmJsPublicPackageJson
+2026-10-26T18:59:44.0886694Z > Task :wasmJsSourcesJar
+2026-10-26T18:59:44.0916846Z > Task :primitives:exportTargetPublicationCoordinatesForWasmJsApiElements
+2026-10-26T18:59:44.0918086Z > Task :primitives:exportTargetPublicationCoordinatesForWasmJsRuntimeElements
+2026-10-26T18:59:44.5897306Z > Task :generatePomFileForWasmJsPublication
+2026-10-26T18:59:44.6865848Z > Task :legacy:androidReleaseSourcesJar
+2026-10-26T18:59:44.6956679Z > Task :legacy:preBuild UP-TO-DATE
+2026-10-26T18:59:44.6995014Z > Task :legacy:preReleaseBuild UP-TO-DATE
+2026-10-26T18:59:44.7026395Z > Task :legacy:mergeReleaseJniLibFolders
+2026-10-26T18:59:44.7056425Z > Task :legacy:mergeReleaseNativeLibs NO-SOURCE
+2026-10-26T18:59:44.7086413Z > Task :legacy:stripReleaseDebugSymbols NO-SOURCE
+2026-10-26T18:59:44.7106360Z > Task :legacy:copyReleaseJniLibsProjectAndLocalJars
+2026-10-26T18:59:44.7158928Z > Task :legacy:generateReleaseResValues
+2026-10-26T18:59:44.7168506Z > Task :legacy:extractDeepLinksForAarRelease
+2026-10-26T18:59:44.7227335Z > Task :legacy:kmpPartiallyResolvedDependenciesChecker
+2026-10-26T18:59:44.7286466Z > Task :legacy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T18:59:44.7287157Z > Task :legacy:generateReleaseResources
+2026-10-26T18:59:44.7864114Z > Task :legacy:packageReleaseResources
+2026-10-26T18:59:44.7916557Z > Task :legacy:parseReleaseLocalResources
+2026-10-26T18:59:44.7917478Z > Task :legacy:generateReleaseRFile
+2026-10-26T18:59:45.4857389Z > Task :primitives:compileKotlinWasmJs
+2026-10-26T18:59:46.0857675Z > Task :legacy:compileReleaseKotlinAndroid
+2026-10-26T18:59:46.1857405Z > Task :legacy:extractReleaseAnnotations
+2026-10-26T18:59:46.1899213Z > Task :legacy:mergeReleaseShaders
+2026-10-26T18:59:46.1926766Z > Task :legacy:compileReleaseShaders NO-SOURCE
+2026-10-26T18:59:46.1956293Z > Task :legacy:generateReleaseAssets UP-TO-DATE
+2026-10-26T18:59:46.1957576Z > Task :legacy:releaseAssetsCopyForAGP NO-SOURCE
+2026-10-26T18:59:46.1986384Z > Task :legacy:mergeReleaseAssets
+2026-10-26T18:59:46.2016285Z > Task :legacy:javaPreCompileRelease
+2026-10-26T18:59:46.2046248Z > Task :legacy:compileReleaseJavaWithJavac NO-SOURCE
+2026-10-26T18:59:46.2047000Z > Task :compileKotlinWasmJs
+2026-10-26T18:59:46.2076316Z > Task :legacy:mergeReleaseGeneratedProguardFiles
+2026-10-26T18:59:46.2106280Z > Task :wasmJsMainClasses
+2026-10-26T18:59:46.2126268Z > Task :wasmJsJar
+2026-10-26T18:59:46.2136622Z > Task :generateMetadataFileForWasmJsPublication
+2026-10-26T18:59:46.2166276Z > Task :publishWasmJsPublicationToMavenLocal
+2026-10-26T18:59:46.2176144Z > Task :publishToMavenLocal
+2026-10-26T18:59:46.2196318Z > Task :legacy:mergeReleaseConsumerProguardFiles
+2026-10-26T18:59:46.2220441Z > Task :legacy:prepareLintJarForPublish
+2026-10-26T18:59:46.2263778Z > Task :legacy:prepareReleaseArtProfile
+2026-10-26T18:59:46.2286130Z > Task :legacy:processReleaseManifest
+2026-10-26T18:59:46.2296182Z > Task :legacy:publicationNotices
+2026-10-26T18:59:46.2326140Z > Task :legacy:processReleaseJavaRes
+2026-10-26T18:59:46.2866933Z > Task :legacy:writeReleaseAarMetadata
+2026-10-26T18:59:46.2867506Z > Task :legacy:documentationJar
+2026-10-26T18:59:46.2896317Z > Task :legacy:mergeReleaseJavaResource
+2026-10-26T18:59:46.5857327Z > Task :legacy:generatePomFileForAndroidReleasePublication
+2026-10-26T18:59:46.5885829Z > Task :legacy:syncReleaseLibJars
+2026-10-26T18:59:46.5916374Z > Task :legacy:bundleReleaseAar
+2026-10-26T18:59:46.5946481Z > Task :legacy:generateMetadataFileForAndroidReleasePublication
+2026-10-26T18:59:46.5976339Z > Task :legacy:publishAndroidReleasePublicationToMavenLocal
+2026-10-26T18:59:46.6857557Z > Task :legacy:downloadKotlinNativeDistribution
+2026-10-26T18:59:47.0858817Z > Task :legacy:compileKotlinIosArm64
+2026-10-26T18:59:47.0881721Z > Task :legacy:iosArm64Klib
+2026-10-26T18:59:47.0896750Z > Task :legacy:commonizeNativeDistribution
+2026-10-26T18:59:47.2863569Z > Task :legacy:transformCommonMainDependenciesMetadata
+2026-10-26T18:59:47.2876537Z > Task :legacy:metadataCommonMainProcessResources
+2026-10-26T18:59:47.2906726Z > Task :legacy:transformNativeMainDependenciesMetadata
+2026-10-26T18:59:47.2949543Z > Task :legacy:metadataNativeMainProcessResources
+2026-10-26T18:59:47.3016331Z > Task :legacy:transformAppleMainDependenciesMetadata
+2026-10-26T18:59:47.3072508Z > Task :legacy:metadataAppleMainProcessResources
+2026-10-26T18:59:47.3106444Z > Task :legacy:transformIosMainDependenciesMetadata
+2026-10-26T18:59:47.3126338Z > Task :legacy:transformMacosMainDependenciesMetadata
+2026-10-26T18:59:47.3166166Z > Task :legacy:metadataIosMainProcessResources
+2026-10-26T18:59:47.3886773Z > Task :legacy:metadataMacosMainProcessResources
+2026-10-26T18:59:47.3908821Z > Task :legacy:iosArm64SourcesJar
+2026-10-26T18:59:47.5866876Z > Task :legacy:generatePomFileForIosArm64Publication
+2026-10-26T18:59:47.7857801Z > Task :legacy:compileCommonMainKotlinMetadata
+2026-10-26T18:59:48.3886834Z > Task :legacy:compileKotlinIosSimulatorArm64
+2026-10-26T18:59:48.3916417Z > Task :legacy:metadataCommonMainClasses
+2026-10-26T18:59:48.3946333Z > Task :legacy:compileNativeMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:48.3976357Z > Task :legacy:metadataNativeMainClasses
+2026-10-26T18:59:48.3995922Z > Task :legacy:compileAppleMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:48.4006294Z > Task :legacy:metadataAppleMainClasses
+2026-10-26T18:59:48.4027881Z > Task :legacy:compileIosMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:48.4066257Z > Task :legacy:compileMacosMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:48.4096118Z > Task :legacy:metadataIosMainClasses
+2026-10-26T18:59:48.4126158Z > Task :legacy:metadataMacosMainClasses
+2026-10-26T18:59:48.4156217Z > Task :legacy:iosArm64MetadataElements
+2026-10-26T18:59:48.4867272Z > Task :legacy:generateMetadataFileForIosArm64Publication
+2026-10-26T18:59:48.4868425Z > Task :legacy:publishIosArm64PublicationToMavenLocal
+2026-10-26T18:59:48.4869032Z > Task :legacy:iosSimulatorArm64Klib
+2026-10-26T18:59:48.4869546Z > Task :legacy:iosSimulatorArm64MetadataElements
+2026-10-26T18:59:48.4870214Z > Task :legacy:iosSimulatorArm64SourcesJar
+2026-10-26T18:59:48.4870873Z > Task :legacy:generateMetadataFileForIosSimulatorArm64Publication
+2026-10-26T18:59:48.5857979Z > Task :legacy:generatePomFileForIosSimulatorArm64Publication
+2026-10-26T18:59:48.5859927Z > Task :legacy:publishIosSimulatorArm64PublicationToMavenLocal
+2026-10-26T18:59:48.8862062Z > Task :legacy:compileKotlinIosX64
+2026-10-26T18:59:48.8862978Z > Task :legacy:iosX64Klib
+2026-10-26T18:59:48.8863926Z > Task :legacy:iosX64MetadataElements
+2026-10-26T18:59:48.8864496Z > Task :legacy:iosX64SourcesJar
+2026-10-26T18:59:48.8865240Z > Task :legacy:generateMetadataFileForIosX64Publication
+2026-10-26T18:59:48.9863867Z > Task :legacy:generatePomFileForIosX64Publication
+2026-10-26T18:59:48.9886777Z > Task :legacy:publishIosX64PublicationToMavenLocal
+2026-10-26T18:59:48.9912841Z > Task :legacy:jsProcessResources
+2026-10-26T18:59:48.9936411Z > Task :legacy:jsPackageJson
+2026-10-26T18:59:48.9966420Z > Task :legacy:jsPublicPackageJson
+2026-10-26T18:59:48.9996241Z > Task :legacy:jsSourcesJar
+2026-10-26T18:59:49.4877365Z > Task :legacy:generatePomFileForJsPublication
+2026-10-26T18:59:49.6905056Z > Task :legacy:compileKotlinJs
+2026-10-26T18:59:49.6906094Z > Task :legacy:jsMainClasses
+2026-10-26T18:59:49.6936468Z > Task :legacy:jsJar
+2026-10-26T18:59:49.6966347Z > Task :legacy:generateMetadataFileForJsPublication
+2026-10-26T18:59:49.6977282Z > Task :legacy:publishJsPublicationToMavenLocal
+2026-10-26T18:59:49.6995806Z > Task :legacy:jvmProcessResources
+2026-10-26T18:59:49.6997400Z > Task :legacy:processJvmMainResources SKIPPED
+2026-10-26T18:59:49.7871437Z > Task :legacy:jvmSourcesJar
+2026-10-26T18:59:50.1896830Z > Task :legacy:generatePomFileForJvmPublication
+2026-10-26T18:59:50.1926759Z > Task :legacy:transformWebMainDependenciesMetadata
+2026-10-26T18:59:50.1966556Z > Task :legacy:compileWebMainKotlinMetadata NO-SOURCE
+2026-10-26T18:59:50.2857488Z > Task :legacy:compileKotlinJvm
+2026-10-26T18:59:50.3870553Z > Task :legacy:generateProjectStructureMetadata
+2026-10-26T18:59:50.3872781Z > Task :legacy:compileJvmMainJava NO-SOURCE
+2026-10-26T18:59:50.3926619Z > Task :legacy:jvmMainClasses
+2026-10-26T18:59:50.3927496Z > Task :legacy:jvmJar
+2026-10-26T18:59:50.3930891Z > Task :legacy:generateMetadataFileForJvmPublication
+2026-10-26T18:59:50.3931664Z > Task :legacy:publishJvmPublicationToMavenLocal
+2026-10-26T18:59:50.3932354Z > Task :legacy:metadataWebMainProcessResources
+2026-10-26T18:59:50.3933032Z > Task :legacy:metadataWebMainClasses
+2026-10-26T18:59:50.3933626Z > Task :legacy:allMetadataJar
+2026-10-26T18:59:50.3934186Z > Task :legacy:buildKotlinToolingMetadata
+2026-10-26T18:59:50.3934783Z > Task :legacy:sourcesJar
+2026-10-26T18:59:50.3935447Z > Task :legacy:generateMetadataFileForKotlinMultiplatformPublication
+2026-10-26T18:59:50.3936494Z > Task :legacy:generatePomFileForKotlinMultiplatformPublication
+2026-10-26T18:59:50.3937338Z > Task :legacy:publishKotlinMultiplatformPublicationToMavenLocal
+2026-10-26T18:59:50.7858382Z > Task :legacy:compileKotlinLinuxX64
+2026-10-26T18:59:50.7859498Z > Task :legacy:linuxX64Klib
+2026-10-26T18:59:50.7860154Z > Task :legacy:linuxX64SourcesJar
+2026-10-26T18:59:50.7869946Z > Task :legacy:generateMetadataFileForLinuxX64Publication
+2026-10-26T18:59:50.8857552Z > Task :legacy:generatePomFileForLinuxX64Publication
+2026-10-26T18:59:50.8859016Z > Task :legacy:publishLinuxX64PublicationToMavenLocal
+2026-10-26T18:59:51.3858429Z > Task :legacy:compileKotlinMacosArm64
+2026-10-26T18:59:51.3866785Z > Task :legacy:macosArm64Klib
+2026-10-26T18:59:51.3867481Z > Task :legacy:macosArm64MetadataElements
+2026-10-26T18:59:51.3868283Z > Task :legacy:macosArm64SourcesJar
+2026-10-26T18:59:51.3869097Z > Task :legacy:generateMetadataFileForMacosArm64Publication
+2026-10-26T18:59:51.4857724Z > Task :legacy:generatePomFileForMacosArm64Publication
+2026-10-26T18:59:51.4886702Z > Task :legacy:publishMacosArm64PublicationToMavenLocal
+2026-10-26T18:59:51.7877483Z > Task :legacy:compileKotlinMacosX64
+2026-10-26T18:59:51.7878588Z > Task :legacy:macosX64Klib
+2026-10-26T18:59:51.7879234Z > Task :legacy:macosX64MetadataElements
+2026-10-26T18:59:51.7879796Z > Task :legacy:macosX64SourcesJar
+2026-10-26T18:59:51.7880440Z > Task :legacy:generateMetadataFileForMacosX64Publication
+2026-10-26T18:59:51.8927536Z > Task :legacy:generatePomFileForMacosX64Publication
+2026-10-26T18:59:51.8928634Z > Task :legacy:publishMacosX64PublicationToMavenLocal
+2026-10-26T18:59:51.8929410Z > Task :legacy:wasmJsProcessResources
+2026-10-26T18:59:51.8930626Z > Task :legacy:wasmJsPackageJson
+2026-10-26T18:59:51.8931348Z > Task :legacy:wasmJsPublicPackageJson
+2026-10-26T18:59:51.8931949Z > Task :legacy:wasmJsSourcesJar
+2026-10-26T18:59:52.3862020Z > Task :legacy:compileKotlinWasmJs
+2026-10-26T18:59:52.3907467Z > Task :legacy:generatePomFileForWasmJsPublication
+2026-10-26T18:59:52.3908014Z > Task :legacy:wasmJsMainClasses
+2026-10-26T18:59:52.3928056Z > Task :legacy:wasmJsJar
+2026-10-26T18:59:52.3956345Z > Task :legacy:generateMetadataFileForWasmJsPublication
+2026-10-26T18:59:52.3976325Z > Task :legacy:publishWasmJsPublicationToMavenLocal
+2026-10-26T18:59:52.4002916Z > Task :legacy:publishToMavenLocal
+2026-10-26T18:59:52.4007284Z > Task :primitives:androidReleaseSourcesJar
+2026-10-26T18:59:52.4024144Z > Task :primitives:mergeReleaseJniLibFolders
+2026-10-26T18:59:52.4024854Z > Task :primitives:mergeReleaseNativeLibs NO-SOURCE
+2026-10-26T18:59:52.4025831Z > Task :primitives:stripReleaseDebugSymbols NO-SOURCE
+2026-10-26T18:59:52.4926774Z > Task :primitives:copyReleaseJniLibsProjectAndLocalJars
+2026-10-26T18:59:52.4956550Z > Task :primitives:extractDeepLinksForAarRelease
+2026-10-26T18:59:52.5006528Z > Task :primitives:extractReleaseAnnotations
+2026-10-26T18:59:52.5036220Z > Task :primitives:mergeReleaseShaders
+2026-10-26T18:59:52.5101959Z > Task :primitives:compileReleaseShaders NO-SOURCE
+2026-10-26T18:59:52.5139999Z > Task :primitives:generateReleaseAssets UP-TO-DATE
+2026-10-26T18:59:52.5182098Z > Task :primitives:releaseAssetsCopyForAGP NO-SOURCE
+2026-10-26T18:59:52.5196156Z > Task :primitives:mergeReleaseAssets
+2026-10-26T18:59:52.5196846Z > Task :primitives:mergeReleaseGeneratedProguardFiles
+2026-10-26T18:59:52.5197324Z > Task :primitives:mergeReleaseConsumerProguardFiles
+2026-10-26T18:59:52.5197783Z > Task :primitives:prepareLintJarForPublish
+2026-10-26T18:59:52.5198272Z > Task :primitives:prepareReleaseArtProfile
+2026-10-26T18:59:52.5198744Z > Task :primitives:processReleaseManifest
+2026-10-26T18:59:52.5199202Z > Task :primitives:processReleaseJavaRes
+2026-10-26T18:59:52.5199705Z > Task :primitives:writeReleaseAarMetadata
+2026-10-26T18:59:52.5876514Z > Task :primitives:mergeReleaseJavaResource
+2026-10-26T18:59:52.5936399Z > Task :primitives:documentationJar
+2026-10-26T18:59:52.5966257Z > Task :primitives:syncReleaseLibJars
+2026-10-26T18:59:52.5976789Z > Task :primitives:bundleReleaseAar
+2026-10-26T18:59:52.5977538Z > Task :primitives:generateMetadataFileForAndroidReleasePublication
+2026-10-26T18:59:52.8858242Z > Task :primitives:generatePomFileForAndroidReleasePublication
+2026-10-26T18:59:52.8859300Z > Task :primitives:publishAndroidReleasePublicationToMavenLocal
+2026-10-26T18:59:52.8860130Z > Task :primitives:iosArm64Klib
+2026-10-26T18:59:52.8860752Z > Task :primitives:iosArm64SourcesJar
+2026-10-26T18:59:52.8861913Z > Task :primitives:generateMetadataFileForIosArm64Publication
+2026-10-26T18:59:52.9857730Z > Task :primitives:generatePomFileForIosArm64Publication
+2026-10-26T18:59:52.9858406Z > Task :primitives:publishIosArm64PublicationToMavenLocal
+2026-10-26T18:59:52.9858978Z > Task :primitives:iosSimulatorArm64Klib
+2026-10-26T18:59:52.9859464Z > Task :primitives:iosSimulatorArm64SourcesJar
+2026-10-26T18:59:52.9860677Z > Task :primitives:generateMetadataFileForIosSimulatorArm64Publication
+2026-10-26T18:59:53.0858157Z > Task :primitives:generatePomFileForIosSimulatorArm64Publication
+2026-10-26T18:59:53.0859364Z > Task :primitives:publishIosSimulatorArm64PublicationToMavenLocal
+2026-10-26T18:59:53.0860714Z > Task :primitives:iosX64Klib
+2026-10-26T18:59:53.0861459Z > Task :primitives:iosX64SourcesJar
+2026-10-26T18:59:53.0862236Z > Task :primitives:generateMetadataFileForIosX64Publication
+2026-10-26T18:59:53.1857450Z > Task :primitives:generatePomFileForIosX64Publication
+2026-10-26T18:59:53.1858115Z > Task :primitives:publishIosX64PublicationToMavenLocal
+2026-10-26T18:59:53.1858788Z > Task :primitives:jsProcessResources
+2026-10-26T18:59:53.1859178Z > Task :primitives:jsMainClasses
+2026-10-26T18:59:53.1859561Z > Task :primitives:jsPublicPackageJson
+2026-10-26T18:59:53.1860247Z > Task :primitives:jsJar
+2026-10-26T18:59:53.1860586Z > Task :primitives:jsSourcesJar
+2026-10-26T18:59:53.1861028Z > Task :primitives:generateMetadataFileForJsPublication
+2026-10-26T18:59:53.3857615Z > Task :primitives:generatePomFileForJsPublication
+2026-10-26T18:59:53.3858182Z > Task :primitives:publishJsPublicationToMavenLocal
+2026-10-26T18:59:53.4857562Z > Task :primitives:jvmSourcesJar
+2026-10-26T18:59:53.4858576Z > Task :primitives:generateMetadataFileForJvmPublication
+2026-10-26T18:59:53.6857524Z > Task :primitives:generatePomFileForJvmPublication
+2026-10-26T18:59:53.6858549Z > Task :primitives:publishJvmPublicationToMavenLocal
+2026-10-26T18:59:53.6859172Z > Task :primitives:buildKotlinToolingMetadata
+2026-10-26T18:59:53.6859737Z > Task :primitives:sourcesJar
+2026-10-26T18:59:53.6860239Z > Task :primitives:generateMetadataFileForKotlinMultiplatformPublication
+2026-10-26T18:59:53.6860848Z > Task :primitives:generatePomFileForKotlinMultiplatformPublication
+2026-10-26T18:59:53.6861509Z > Task :primitives:publishKotlinMultiplatformPublicationToMavenLocal
+2026-10-26T18:59:53.6862190Z > Task :primitives:linuxX64Klib
+2026-10-26T18:59:53.6862575Z > Task :primitives:linuxX64SourcesJar
+2026-10-26T18:59:53.6863044Z > Task :primitives:generateMetadataFileForLinuxX64Publication
+2026-10-26T18:59:53.7857377Z > Task :primitives:generatePomFileForLinuxX64Publication
+2026-10-26T18:59:53.7858410Z > Task :primitives:publishLinuxX64PublicationToMavenLocal
+2026-10-26T18:59:53.7864274Z > Task :primitives:macosArm64Klib
+2026-10-26T18:59:53.7865198Z > Task :primitives:macosArm64SourcesJar
+2026-10-26T18:59:53.7866123Z > Task :primitives:generateMetadataFileForMacosArm64Publication
+2026-10-26T18:59:53.8857715Z > Task :primitives:generatePomFileForMacosArm64Publication
+2026-10-26T18:59:53.8858614Z > Task :primitives:publishMacosArm64PublicationToMavenLocal
+2026-10-26T18:59:53.8859216Z > Task :primitives:macosX64Klib
+2026-10-26T18:59:53.8859618Z > Task :primitives:macosX64SourcesJar
+2026-10-26T18:59:53.8860089Z > Task :primitives:generateMetadataFileForMacosX64Publication
+2026-10-26T18:59:53.9857701Z > Task :primitives:generatePomFileForMacosX64Publication
+2026-10-26T18:59:53.9859900Z > Task :primitives:publishMacosX64PublicationToMavenLocal
+2026-10-26T18:59:53.9861817Z > Task :primitives:wasmJsProcessResources
+2026-10-26T18:59:53.9862684Z > Task :primitives:wasmJsMainClasses
+2026-10-26T18:59:53.9864161Z > Task :primitives:wasmJsPublicPackageJson
+2026-10-26T18:59:53.9864833Z > Task :primitives:wasmJsJar
+2026-10-26T18:59:53.9866025Z > Task :primitives:wasmJsSourcesJar
+2026-10-26T18:59:54.0857723Z > Task :primitives:generateMetadataFileForWasmJsPublication
+2026-10-26T18:59:54.2859194Z > Task :primitives:generatePomFileForWasmJsPublication
+2026-10-26T18:59:54.2859739Z > Task :primitives:publishWasmJsPublicationToMavenLocal
+2026-10-26T18:59:54.2860421Z > Task :primitives:publishToMavenLocal
+2026-10-26T18:59:54.4857840Z 
+2026-10-26T18:59:54.4858721Z BUILD SUCCESSFUL in 3m 14s
+2026-10-26T18:59:54.4859662Z 375 actionable tasks: 375 executed
+2026-10-26T18:59:54.8721437Z ##[group]Run python3 tools/check_maven_repository.py --repository "$SPAKE2_MAVEN_REPO" --version "$SPAKE2_CONSUMER_VERSION" --revision "$SPAKE2_SOURCE_REVISION" --output "$RUNNER_TEMP/spake2-publication/publication-report.json"
+2026-10-26T18:59:54.8722930Z [36;1mpython3 tools/check_maven_repository.py --repository "$SPAKE2_MAVEN_REPO" --version "$SPAKE2_CONSUMER_VERSION" --revision "$SPAKE2_SOURCE_REVISION" --output "$RUNNER_TEMP/spake2-publication/publication-report.json"[0m
+2026-10-26T18:59:54.8766496Z shell: /usr/bin/bash -e {0}
+2026-10-26T18:59:54.8766955Z env:
+2026-10-26T18:59:54.8767389Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:59:54.8767946Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:59:54.8768554Z   SPAKE2_SOURCE_REVISION: a650535f27461b3bfd4c3195f210d6b8971ff340
+2026-10-26T18:59:54.8769004Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.a650535f2746
+2026-10-26T18:59:54.8769602Z   SPAKE2_MAVEN_REPO: /home/runner/work/_temp/spake2-publication/maven
+2026-10-26T18:59:54.8770044Z ##[endgroup]
+2026-10-26T18:59:54.9868102Z Maven publication validation failed: Wrong artifact location/name: spake2-macosarm64-0.1.0-dev.a650535f2746.module:macosArm64MetadataElements-published
+2026-10-26T18:59:54.9966773Z ##[error]Process completed with exit code 1.
+2026-10-26T18:59:55.0063471Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-26T18:59:55.0063948Z with:
+2026-10-26T18:59:55.0064240Z   name: spake2-maven-candidate
+2026-10-26T18:59:55.0064648Z   path: /home/runner/work/_temp/spake2-publication/
+2026-10-26T18:59:55.0065065Z   if-no-files-found: error
+2026-10-26T18:59:55.0065385Z   retention-days: 14
+2026-10-26T18:59:55.0065937Z   compression-level: 6
+2026-10-26T18:59:55.0066246Z   overwrite: false
+2026-10-26T18:59:55.0066589Z   include-hidden-files: false
+2026-10-26T18:59:55.0066928Z env:
+2026-10-26T18:59:55.0067321Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:59:55.0068010Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T18:59:55.0068529Z   SPAKE2_SOURCE_REVISION: a650535f27461b3bfd4c3195f210d6b8971ff340
+2026-10-26T18:59:55.0068988Z   SPAKE2_CONSUMER_VERSION: 0.1.0-dev.a650535f2746
+2026-10-26T18:59:55.0069564Z   SPAKE2_MAVEN_REPO: /home/runner/work/_temp/spake2-publication/maven
+2026-10-26T18:59:55.0069993Z ##[endgroup]
+2026-10-26T18:59:55.1704659Z (node:2709) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T18:59:55.1705618Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T18:59:55.2198082Z With the provided path, there will be 221 files uploaded
+2026-10-26T18:59:55.2206556Z Artifact name is valid!
+2026-10-26T18:59:55.2207516Z Root directory input is valid!
+2026-10-26T18:59:55.5331742Z Beginning upload of artifact content to blob storage
+2026-10-26T18:59:55.9734032Z (node:2709) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-26T18:59:56.5496523Z Uploaded bytes 8388608
+2026-10-26T18:59:56.7077767Z Uploaded bytes 9801662
+2026-10-26T18:59:56.7578413Z Finished uploading artifact content to blob storage!
+2026-10-26T18:59:56.7579707Z SHA256 digest of uploaded artifact zip is e2085d139780a14f8c1433e402410827bb5e5fe3a6d62ef1aabc9c8d9689a694
+2026-10-26T18:59:56.7580851Z Finalizing artifact upload
+2026-10-26T18:59:57.2167791Z Artifact spake2-maven-candidate.zip successfully finalized. Artifact ID 12679332070
+2026-10-26T18:59:57.2168943Z Artifact spake2-maven-candidate has been successfully uploaded! Final size is 9801662 bytes. Artifact ID is 12679332070
+2026-10-26T18:59:57.2175095Z Artifact download URL: https://github.com/Flyfish233/spake2/actions/runs/40382198641/artifacts/12679332070
+2026-10-26T18:59:57.2374260Z Post job cleanup.
+2026-10-26T18:59:57.3723622Z (node:2722) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T18:59:57.3724503Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T18:59:57.3916389Z Post job cleanup.
+2026-10-26T18:59:57.4786198Z [command]/usr/bin/git version
+2026-10-26T18:59:57.4824377Z git version 2.55.0
+2026-10-26T18:59:57.4859850Z Temporarily overriding HOME='/home/runner/work/_temp/59d18777-8db5-40bb-8cb6-70a43d1d8836' before making global git config changes
+2026-10-26T18:59:57.4861120Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T18:59:57.4865276Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/spake2/spake2
+2026-10-26T18:59:57.4905377Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T18:59:57.4940675Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T18:59:57.5162313Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T18:59:57.5195646Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T18:59:57.5455109Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T18:59:57.5500176Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T18:59:57.5963527Z Evaluate and set job outputs
+2026-10-26T18:59:57.5970155Z Set output 'revision'
+2026-10-26T18:59:57.5972347Z Set output 'version'
+2026-10-26T18:59:57.5973524Z Cleaning up orphan processes
+2026-10-26T18:59:57.6273791Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

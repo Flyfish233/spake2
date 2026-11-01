@@ -1,0 +1,58 @@
+RFC 9382: SPAKE2, a Password-Authenticated Key Exchange
+Author: W. Ladd. Published September 2023. Stream: IRTF.
+Source: https://www.rfc-editor.org/rfc/rfc9382
+Material retained here: numeric group parameters and official Appendix B
+conformance-test inputs/outputs. Their values and original attribution are
+retained. The surrounding original implementation and test harness have their
+own AGPL-3.0-only notices; the RFC material is not relabeled as original code.
+
+ORIGINAL RFC COPYRIGHT NOTICE
+
+Copyright (c) 2023 IETF Trust and the persons identified as the document
+authors. All rights reserved.
+
+This document is subject to BCP 78 and the IETF Trust's Legal Provisions
+Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on
+the date of publication of this document. Please review these documents
+carefully, as they describe your rights and restrictions with respect to
+this document.
+
+APPLICABILITY
+
+RFC 9382 uses the IRTF alternate document stream. The applicable Trust Legal
+Provisions are the policy effective March 25, 2015. Section 8.c addresses the
+alternate-stream treatment of the section-3 licenses. Section 8.g explicitly
+excludes the section-4 code-component BSD grant for IRTF documents. No BSD
+grant is asserted for this RFC's material.
+
+The complete official policy body, with HTML formatting and navigation
+removed, is retained in TLP-2015-REFERENCE.txt. That reference also includes
+rules for other streams; those rules do not become grants for this material.
+Authoritative source:
+https://trustee.ietf.org/documents/trust-legal-provisions/tlp-5/
+
+RELEVANT VERBATIM POLICY EXCERPTS (SECTION 8)
+
+c. Alternate Stream License.
+
+i. Unless otherwise specified below, for each Alternate Stream for which the IETF Trust acts as licensing administrator, from the date on which these Legal Provisions are effective with respect to such Alternate Stream (as specified below) the IETF Trust shall accept licenses of copyrights in documents granted to the IETF Trust by contributors to Alternate Stream as though granted pursuant to RFC 5378, and shall grant licenses to others on the terms of these Legal Provisions.
+
+ii. Each occurrence of the term “IETF Contribution” and “IETF Document” in these Legal Provisions shall be read to mean a Contribution or document in such Alternate Stream, as the case may be. The disclaimer in Section 7.a of these Legal Provisions shall apply to the manager of such Alternate Stream as defined in RFC 4844 as though such manager were expressly listed in Section 7.a.
+
+iii. The license grant in Section 3.a of these Legal Provisions with respect to Alternate Stream documents shall not be limited to the IETF Standards Process, and all references to the IETF Standards Process in Section 3.a shall be omitted with respect to licenses of Alternate Stream documents, and correspondingly Section 3.c hereof shall not apply with respect to Alternate Stream documents.
+
+iv. Alternate Stream contributions made, and Alternate Stream documents published, prior to the application of these Legal Provisions to such Alternate Stream remain subject to the licensing provisions in effect for such Alternate Stream at the time of their contribution or publication, as applicable.
+
+g. IRTF Document Stream. Pursuant to RFC 5743 published on December 24, 2009, the manager of the IRTF Document Stream has requested that the IETF Trust act as licensing administrator for the IRTF Document Stream and that these Legal Provisions be applied to documents submitted and published in the IRTF Document Stream following December 28, 2009. Section 4 of these Legal Provisions shall not apply to documents in the IRTF Document Stream, and all references to Section 4 hereof shall be disregarded with respect to documents in the IRTF Document Stream.
+
+These excerpts identify the stream-specific rules. They do not replace or
+modify the complete applicable policy, including its restrictions and
+warranty/IP disclaimers. The authoritative policy controls.
+
+RETRIEVAL RECORD
+
+Official HTML retrieved 2026-10-26.
+HTML SHA-256:
+a73d24aa0bc8cfd893c1c0751379c1cc8e7f86077684203489e2ad6e018501fa
+TLP-2015-REFERENCE.txt SHA-256:
+49cefaa7cfd6ac02395970448ce1cb366ab011c3dd7f6560aafffcb2bad7d807

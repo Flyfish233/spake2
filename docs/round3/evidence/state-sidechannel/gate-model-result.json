@@ -1,0 +1,88 @@
+{
+  "kind": "bounded abstract model, not Kotlin execution or a formal refinement proof",
+  "source_commit": "88e0233193ce4cf08d974fcd12ed0255624c6536",
+  "source_sha256": {
+    "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Session.kt": "27c7a57098185b5a1fa3e36eefd268204e5dd714c833ea7eb8ef844f4090142d",
+    "legacy/src/commonMain/kotlin/io/github/flyfish233/spake2/legacy/LegacySpake25519.kt": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "assumptions": [
+    "sequentially consistent atomic load/CAS/store",
+    "finite contenders already failed initial acquisition",
+    "owner ordinary completion or exception; no process crash/OOM or malicious buffer alias",
+    "owned output does not alias session storage",
+    "erasure and operation body abstracted as single steps"
+  ],
+  "current_model": [
+    {
+      "contenders": 1,
+      "owner_ordinary_failure": false,
+      "old_single_cas_control": false,
+      "reachable_states": 16,
+      "edges": 18,
+      "terminal_states": 2,
+      "violations": []
+    },
+    {
+      "contenders": 1,
+      "owner_ordinary_failure": true,
+      "old_single_cas_control": false,
+      "reachable_states": 13,
+      "edges": 17,
+      "terminal_states": 2,
+      "violations": []
+    },
+    {
+      "contenders": 2,
+      "owner_ordinary_failure": false,
+      "old_single_cas_control": false,
+      "reachable_states": 70,
+      "edges": 125,
+      "terminal_states": 2,
+      "violations": []
+    },
+    {
+      "contenders": 2,
+      "owner_ordinary_failure": true,
+      "old_single_cas_control": false,
+      "reachable_states": 41,
+      "edges": 79,
+      "terminal_states": 2,
+      "violations": []
+    }
+  ],
+  "historical_race_negative_control": {
+    "contenders": 1,
+    "owner_ordinary_failure": false,
+    "old_single_cas_control": true,
+    "reachable_states": 13,
+    "edges": 15,
+    "terminal_states": 2,
+    "violations": [
+      {
+        "reason": "failed acquisition left session usable",
+        "trace": [
+          "owner: finish operation",
+          "owner: CAS 1->0; publish owned output",
+          "contender 0: load gate=0",
+          "contender 0: CAS 1->2"
+        ],
+        "state": {
+          "gate": 0,
+          "owner": "done",
+          "contenders": [
+            "done"
+          ],
+          "erased": false,
+          "published": true,
+          "poisoned": false,
+          "output_erased": false
+        }
+      }
+    ]
+  },
+  "pass": true
+}

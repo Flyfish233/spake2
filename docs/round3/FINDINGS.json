@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-01",
+  "timezone": "Asia/Singapore",
+  "productionSourceRevision": "59105290820bcbfd4e0336a2e7713006a461527f",
+  "initialHead": "e1b0e7f6e865eca6d229ad8f36de63883f808e8c",
+  "testCommit": "32190a93e37fe92dd436effa91eab8664b5c8d1e",
+  "kadbReadOnlyRevision": "49a88b14e9b731e4c086c920eb74664450c79d9f",
+  "newConfirmedDefaultProductionVulnerabilities": 0,
+  "productionPatches": [],
+  "gates": {
+    "A": "CONDITIONAL PASS",
+    "B": "CONDITIONAL PASS",
+    "C": "NOT VERIFIED"
+  },
+  "findings": [
+    {
+      "id": "R3-L01",
+      "severity": "MEDIUM",
+      "classification": "CONFIRMED_KNOWN_OPT_IN_MODE_RISK",
+      "title": "显式 PRE_HARDENING_UNSAFE 公共消息允许口令候选过滤",
+      "location": "legacy/src/commonMain/kotlin/io/github/flyfish233/spake2/legacy/LegacySpake25519.kt:14-19,71-99; generateMessage",
+      "attacker": "能取得启用历史不安全模式的公开消息；无需知道临时标量",
+      "trigger": "调用方显式选择 PRE_HARDENING_UNSAFE",
+      "impact": "Alice 透露 reduced SHA512(password) mod 2，Bob 透露 mod 8；可筛除不匹配口令候选。不能把两者相加为4位，也未证明完整认证绕过。",
+      "evidence": [
+        "reviews/legacy.md",
+        "evidence/legacy/independent_legacy_probe.py",
+        "evidence/legacy/independent-legacy-probe.json",
+        "evidence/legacy/independent-legacy-probe.log"
+      ],
+      "disposition": "ISOLATED_BY_EXISTING_DEFAULT; 默认及Kadb均为HARDENED，无自动降级；从Gate B允许的集成范围排除历史不安全模式。文档已更正精确泄露范围。",
+      "remainingRisk": "显式旧模式API仍保留；调用方错误启用仍有实际泄露。",
+      "fixCommit": null,
+      "runtimeScope": "本轮独立Python affine模型；同一实现的Kotlin固定向量由JVM81方法回归覆盖。没有本轮C oracle重跑。"
+    },
+    {
+      "id": "R3-K01",
+      "severity": "MEDIUM",
+      "classification": "CONFIRMED_INHERITED_PROTOCOL_RISK_WITH_CONDITIONAL_EXPOSURE",
+      "title": "Kadb/AOSP配对内层GCM双向同key与nonce0",
+      "location": "Kadb@49a88b14:kadb/src/commonMain/kotlin/com/flyfishxu/kadb/pair/PairingAuthCtx.kt:31-33,73-74,126-138",
+      "attacker": "能取得同一诚实配对TLS会话中的两条内层GCM密文；普通被动网络观察不自动具有该能力",
+      "trigger": "同一配对密钥被两个从0开始的方向计数器使用",
+      "impact": "本轮实测8192-byte密文主体XOR等于明文XOR，内层GCM不能独立提供nonce唯一性保证。没有复现当前N0/N1认证绕过。",
+      "evidence": [
+        "reviews/kadb-and-supply-chain.md",
+        "evidence/kadb/KadbBindingProbe.java",
+        "evidence/kadb/binding-result.json",
+        "evidence/kadb/binding-jvm.log",
+        "evidence/legacy/aosp-cross-review-sources.json"
+      ],
+      "disposition": "DOCUMENTED_CONDITIONAL_RISK; Kadb只读未修改。保留TLS exporter、HARDENED、完整PeerInfo检查、单次配对用途；不得把该AEAD封装用作通用双向通道。兼容协议不能单边改nonce。",
+      "remainingRisk": "若同一会话内双向密文暴露，内层AEAD保证受损；生产部署需要协议级风险处置。",
+      "fixCommit": null,
+      "runtimeScope": "真实Maven SPAKE2 JVM字节码加SunJCE协议模型；合成exporter；没有执行Kadb、真实TLS或平台provider。"
+    },
+    {
+      "id": "R3-A01",
+      "severity": "NOT_RATED",
+      "classification": "ASSURANCE_GAP_NOT_CONFIRMED_EXPLOIT",
+      "title": "RFC9382第7节跨平台严格时序和物理清零未证明",
+      "location": "P256, Edwards25519, ModMath, SHA256/SHA512, HMAC/HKDF, session cleanup; JVM/ART/Native/JS/Wasm",
+      "evidence": [
+        "reviews/state-sidechannel.md",
+        "evidence/state-sidechannel/jvm-bytecode-manifest.json",
+        "evidence/state-sidechannel/bytecode.tar.gz",
+        "evidence/state-sidechannel/gate-model-result.json"
+      ],
+      "disposition": "NOT_VERIFIED; Gate A有条件、Gate C未通过生产保证验收，禁止宣称恒定时间或可靠物理零化。",
+      "remainingRisk": "JIT/优化机器码、GC和运行时副本、OOM/物理取证、缓存/分支/功耗及全平台统计实验未覆盖。",
+      "fixCommit": null
+    },
+    {
+      "id": "R3-S01",
+      "severity": "NOT_RATED",
+      "classification": "SUPPLY_CHAIN_ASSURANCE_GAP",
+      "title": "有限可信来源核对不等于全平台签名及可复现供应链",
+      "location": "Gradle inputs, CI runner/toolchains, Maven candidate distribution",
+      "evidence": [
+        "evidence/ci/candidate-download.json",
+        "evidence/ci/source-archive-vs-git.json",
+        "evidence/ci/jvm-class-rebuild-comparison.json",
+        "evidence/ci/gradle-wrapper-origin.json",
+        "reviews/kadb-and-supply-chain.md"
+      ],
+      "disposition": "CONDITIONAL; GitHub来源、实物摘要、482个源码文件及26个JVM class复建已核对；不以自报hash排除恶意生产者。",
+      "remainingRisk": "没有全平台二进制可复现构建、正式签名/attestation或所有构建传递依赖的可信checksum lock；CI产物2026-11-09到期。",
+      "fixCommit": null
+    },
+    {
+      "id": "R3-E01",
+      "severity": "LOW",
+      "classification": "EVIDENCE_STATUS_DEFECT",
+      "title": "第二轮交付文档遗漏已完成CI结论",
+      "location": "docs/round2/DELIVERY.zh-CN.md",
+      "evidence": [
+        "evidence/baseline/run-40388080241.json",
+        "evidence/baseline/run-40388080295.json",
+        "evidence/baseline/run-40388080222.json",
+        "evidence/ci/recount.json"
+      ],
+      "disposition": "FIXED_IN_DELIVERY_DOCUMENTATION; 只以重新获取的run/job/artifact/XML证据更正状态，不作为本轮新执行。",
+      "remainingRisk": "原PR正文仍包含历史进行中表述；以更新的交付报告及不可变run证据为准。",
+      "fixCommit": "Final delivery documentation commit containing this record; see file permalink"
+    }
+  ],
+  "rejectedOrUnconfirmedClaims": [
+    {"claim": "Legacy接受低阶或非规范点即可无口令认证成功", "result": "NOT_REPRODUCED; 解除mask、完整TT及应用认证边界阻止该直接推论"},
+    {"claim": "mask加torsion可获得RFC确认值或已认证key", "result": "REJECTED_IN_16_EXECUTED_CASES; 新commonTest通过"},
+    {"claim": "destroy返回后出现先前调用输出必为状态机漏洞", "result": "NOT_A_VIOLATION_AFTER_SUCCESSFUL_PUBLICATION_CAS; 明确线性化和串行API契约"},
+    {"claim": "所有旧模式单端消息均精确泄露3位", "result": "DISPROVED_FOR_ALICE; 固定M投影阶为2，N投影阶为8"},
+    {"claim": "接受未预信任TLS证书本身证明当前配对MITM", "result": "NOT_SUFFICIENT; 必须一并分析PAKE口令和当前连接exporter；完整双TLS实验未执行"}
+  ]
+}

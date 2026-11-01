@@ -1,0 +1,39 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :legacy-client:resolveProbeGraphs
+PROBE_GRAPH compileClasspath RESOLVED 7
+PROBE_EDGE compileClasspath io.github.flyfish233:spake2-primitives-jvm:0.1.0-dev.round2-local-final -> io.github.flyfish233:spake2-primitives-jvm:0.1.0-dev.round2-local-final
+PROBE_EDGE compileClasspath org.jetbrains.kotlin:kotlin-stdlib:2.2.21 -> org.jetbrains.kotlin:kotlin-stdlib:2.2.21
+PROBE_EDGE compileClasspath org.jetbrains:annotations:13.0 -> org.jetbrains:annotations:13.0
+PROBE_EDGE compileClasspath io.github.flyfish233:spake2-jvm:0.1.0-dev.round2-local-final -> io.github.flyfish233:spake2-jvm:0.1.0-dev.round2-local-final
+PROBE_EDGE compileClasspath io.github.flyfish233:spake2-primitives:0.1.0-dev.round2-local-final -> io.github.flyfish233:spake2-primitives:0.1.0-dev.round2-local-final
+PROBE_EDGE compileClasspath io.github.flyfish233:spake2-primitives-jvm:0.1.0-dev.round2-local-final -> io.github.flyfish233:spake2-primitives-jvm:0.1.0-dev.round2-local-final
+PROBE_EDGE compileClasspath org.jetbrains.kotlin:kotlin-stdlib:2.2.21 -> org.jetbrains.kotlin:kotlin-stdlib:2.2.21
+PROBE_GRAPH pluginMetadataProbe RESOLVED 1
+PROBE_EDGE pluginMetadataProbe project :plugin-metadata -> project :plugin-metadata
+
+> Task :legacy-client:verifyPublishedDependencies FAILED
+
+[Incubating] Problems report is available at: file:///workspace/scratch/a46e59dd0882/round2-resolution-probe-work/consumer-resolution-1ts_ybuh/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':legacy-client:verifyPublishedDependencies'.
+> Unexpected published dependency or protocol edge in compileClasspath: io.github.flyfish233:spake2-jvm:0.1.0-dev.round2-local-final
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 32s
+2 actionable tasks: 2 executed

@@ -1,0 +1,110 @@
+{
+  "startedAtUtc": "2026-10-26T19:27:22.163680+00:00",
+  "repository": "/workspace/scratch/a46e59dd0882/round2-maven-local-final",
+  "version": "0.1.0-dev.round2-local-final",
+  "fixtureDirectory": "/workspace/scratch/a46e59dd0882/round2-resolution-probe-work/consumer-resolution-g0eat6ic",
+  "gateScript": "/workspace/scratch/a46e59dd0882/spake2-stabilization/integration/consumer-fixtures/verify-resolution.gradle.kts",
+  "gateSha256Before": "eb233a1ac1371c43a9527c8f4ddcf291cc6c5f74bebcb1ec96aebcb99e903c00",
+  "gradleCommand": [
+    "python3",
+    "/workspace/scratch/a46e59dd0882/run_gradle_round2.py"
+  ],
+  "publicationInputSha256": {
+    "io/github/flyfish233/spake2-jvm/0.1.0-dev.round2-local-final/spake2-jvm-0.1.0-dev.round2-local-final.pom": "648656e562cacc31b9bc88546a9be7f85a46cf28b90f7765fd5b4a26a6494a84",
+    "io/github/flyfish233/spake2-jvm/0.1.0-dev.round2-local-final/spake2-jvm-0.1.0-dev.round2-local-final.module": "82831c09bf51426462337e46076d2c531e3c06f53b9ae483bcd08eac321b87c6",
+    "io/github/flyfish233/spake2-jvm/0.1.0-dev.round2-local-final/spake2-jvm-0.1.0-dev.round2-local-final.jar": "92826accbde67832b4b1616875ea67ac7e00e359d7e4d593a426c6ec7e1504d4",
+    "io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.round2-local-final/spake2-primitives-jvm-0.1.0-dev.round2-local-final.pom": "f1c56a647d995f1342e2bf0820ca858abe62220cd0a1936464042c75d2c7bc43",
+    "io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.round2-local-final/spake2-primitives-jvm-0.1.0-dev.round2-local-final.module": "0c9b78cd9fa8c4153e8af1f86543c7e7442db380401b386358d92f0288e6b643",
+    "io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.round2-local-final/spake2-primitives-jvm-0.1.0-dev.round2-local-final.jar": "abdb0f81c8319a0a3bbb1ad730a9133588b7afcec5a6b5e8373d4de837cf2c5d",
+    "io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.round2-local-final/spake2-legacy-jvm-0.1.0-dev.round2-local-final.pom": "62847b7c65cd124288f9c1daa4f7c526adeb36937339e01edde4d1cc5e94a02a",
+    "io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.round2-local-final/spake2-legacy-jvm-0.1.0-dev.round2-local-final.module": "d20978afae3e0b741c3ffb0122f397517f1bdbaea49423f90e9b5aa3075a351a",
+    "io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.round2-local-final/spake2-legacy-jvm-0.1.0-dev.round2-local-final.jar": "2ed2e90596a08173911cbc6be25d0c889bf74ecfe09adadc764d8b7958d6880c"
+  },
+  "cases": [
+    {
+      "name": "valid-maven-with-plugin-project",
+      "command": [
+        "python3",
+        "/workspace/scratch/a46e59dd0882/run_gradle_round2.py",
+        "-p",
+        "/workspace/scratch/a46e59dd0882/round2-resolution-probe-work/consumer-resolution-g0eat6ic",
+        "--no-daemon",
+        "--no-configuration-cache",
+        "--console=plain",
+        "-Pspake2Version=0.1.0-dev.round2-local-final",
+        "-PprobeCase=valid-maven-with-plugin-project",
+        ":legacy-client:verifyPublishedDependencies"
+      ],
+      "exitCode": 1,
+      "elapsedSeconds": 6.77,
+      "log": "valid-maven-with-plugin-project.log",
+      "expectedDiagnostic": null,
+      "passed": false
+    },
+    {
+      "name": "project-substitution",
+      "command": [
+        "python3",
+        "/workspace/scratch/a46e59dd0882/run_gradle_round2.py",
+        "-p",
+        "/workspace/scratch/a46e59dd0882/round2-resolution-probe-work/consumer-resolution-g0eat6ic",
+        "--no-daemon",
+        "--no-configuration-cache",
+        "--console=plain",
+        "-Pspake2Version=0.1.0-dev.round2-local-final",
+        "-PprobeCase=project-substitution",
+        ":legacy-client:verifyPublishedDependencies"
+      ],
+      "exitCode": 1,
+      "elapsedSeconds": 7.787,
+      "log": "project-substitution.log",
+      "expectedDiagnostic": "Published SPAKE2 dependency was substituted with a project",
+      "passed": false
+    },
+    {
+      "name": "wrong-protocol-edge",
+      "command": [
+        "python3",
+        "/workspace/scratch/a46e59dd0882/run_gradle_round2.py",
+        "-p",
+        "/workspace/scratch/a46e59dd0882/round2-resolution-probe-work/consumer-resolution-g0eat6ic",
+        "--no-daemon",
+        "--no-configuration-cache",
+        "--console=plain",
+        "-Pspake2Version=0.1.0-dev.round2-local-final",
+        "-PprobeCase=wrong-protocol-edge",
+        ":legacy-client:verifyPublishedDependencies"
+      ],
+      "exitCode": 1,
+      "elapsedSeconds": 6.456,
+      "log": "wrong-protocol-edge.log",
+      "expectedDiagnostic": "Unexpected published dependency or protocol edge",
+      "passed": false
+    },
+    {
+      "name": "missing-published-module",
+      "command": [
+        "python3",
+        "/workspace/scratch/a46e59dd0882/run_gradle_round2.py",
+        "-p",
+        "/workspace/scratch/a46e59dd0882/round2-resolution-probe-work/consumer-resolution-g0eat6ic",
+        "--no-daemon",
+        "--no-configuration-cache",
+        "--console=plain",
+        "-Pspake2Version=0.1.0-dev.round2-local-final",
+        "-PprobeCase=missing-published-module",
+        ":legacy-client:verifyPublishedDependencies"
+      ],
+      "exitCode": 1,
+      "elapsedSeconds": 4.474,
+      "log": "missing-published-module.log",
+      "expectedDiagnostic": "Published SPAKE2 dependency is unresolved",
+      "passed": false
+    }
+  ],
+  "scope": "Four actual Gradle graph/artifact-resolution runs using the exact production checker. No KMP plugins, producer includeBuild, crypto source copy or cryptographic test execution.",
+  "gateSha256After": "eb233a1ac1371c43a9527c8f4ddcf291cc6c5f74bebcb1ec96aebcb99e903c00",
+  "gateUnchangedDuringProbe": true,
+  "completedAtUtc": "2026-10-26T19:27:47.660735+00:00",
+  "status": "failed"
+}

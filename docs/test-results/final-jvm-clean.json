@@ -1,0 +1,288 @@
+{
+  "command": "./gradlew --no-daemon clean jvmTest",
+  "toolchain": "Kotlin2.2.21/Gradle8.14.3/JDK17.0.21+9",
+  "modules": [
+    {
+      "module": "RFC",
+      "suites": [
+        {
+          "name": "io.github.flyfish233.spake2.ConcurrentMisuseTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.626"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.ProtocolIsolationTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.171"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.RfcFailureTest",
+          "tests": "13",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "3.761"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.RfcVectorsTest",
+          "tests": "7",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "2.355"
+        }
+      ]
+    },
+    {
+      "module": "primitives/",
+      "suites": [
+        {
+          "name": "io.github.flyfish233.spake2.HashBoundaryTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.084"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.HashTest",
+          "tests": "5",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.184"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.ScaffoldTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.002"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.internal.math.ArithmeticDifferentialTest",
+          "tests": "4",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.261"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.internal.math.Edwards25519MathTest",
+          "tests": "5",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.071"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.internal.math.ModMathTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.092"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.internal.math.P256MathTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.616"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.internal.math.WycheproofP256Test",
+          "tests": "2",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "2.719"
+        }
+      ]
+    },
+    {
+      "module": "legacy/",
+      "suites": [
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyConcurrencyTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.277"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest",
+          "tests": "2",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.953"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest",
+          "tests": "2",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "3.248"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyLifecycleTest",
+          "tests": "9",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.184"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.034"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.976"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.078"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.987"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.998"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.299"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "2.772"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "3.862"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.694"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.672"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.517"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.458"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.015"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.256"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.602"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.455"
+        },
+        {
+          "name": "io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest",
+          "tests": "1",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.084"
+        }
+      ]
+    }
+  ],
+  "tests": 77,
+  "failures": 0,
+  "skipped": 0
+}

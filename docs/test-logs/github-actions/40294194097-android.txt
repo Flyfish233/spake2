@@ -1,0 +1,513 @@
+2026-10-26T08:43:21.2251127Z Current runner version: '2.338.0'
+2026-10-26T08:43:21.2280036Z ##[group]Runner Image Provisioner
+2026-10-26T08:43:21.2281071Z Hosted Compute Agent
+2026-10-26T08:43:21.2281934Z Version: 20261021.618
+2026-10-26T08:43:21.2282700Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-26T08:43:21.2283615Z Build Date: 2026-10-21T00:45:21Z
+2026-10-26T08:43:21.2284771Z Worker ID: {6187d6a1-eb8f-4cba-9f94-6216d801e6bf}
+2026-10-26T08:43:21.2285652Z Region: centralus
+2026-10-26T08:43:21.2286348Z Cloud: Azure
+2026-10-26T08:43:21.2286971Z ##[endgroup]
+2026-10-26T08:43:21.2289289Z ##[group]Operating System
+2026-10-26T08:43:21.2290119Z Ubuntu
+2026-10-26T08:43:21.2290749Z 24.04.5
+2026-10-26T08:43:21.2291400Z LTS
+2026-10-26T08:43:21.2292024Z ##[endgroup]
+2026-10-26T08:43:21.2292666Z ##[group]Runner Image
+2026-10-26T08:43:21.2293466Z Image: ubuntu-24.04
+2026-10-26T08:43:21.2294143Z Version: 20261012.334.1
+2026-10-26T08:43:21.2296020Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-26T08:43:21.2297886Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-26T08:43:21.2299090Z ##[endgroup]
+2026-10-26T08:43:21.2300400Z ##[group]GITHUB_TOKEN Permissions
+2026-10-26T08:43:21.2303257Z Contents: read
+2026-10-26T08:43:21.2303972Z Metadata: read
+2026-10-26T08:43:21.2305022Z ##[endgroup]
+2026-10-26T08:43:21.2307592Z Secret source: Actions
+2026-10-26T08:43:21.2308741Z Cache mode: write
+2026-10-26T08:43:21.2309963Z Prepare workflow directory
+2026-10-26T08:43:21.2751397Z Prepare all required actions
+2026-10-26T08:43:21.2818239Z Getting action download info
+2026-10-26T08:43:21.6360102Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-26T08:43:21.7396768Z Download action repository 'actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-10-26T08:43:22.5197440Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-26T08:43:22.8895645Z Complete job name: android
+2026-10-26T08:43:22.9719164Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-26T08:43:22.9720843Z with:
+2026-10-26T08:43:22.9721828Z   repository: Flyfish233/spake2
+2026-10-26T08:43:22.9730186Z   token: ***
+2026-10-26T08:43:22.9731134Z   ssh-strict: true
+2026-10-26T08:43:22.9732133Z   ssh-user: git
+2026-10-26T08:43:22.9733099Z   persist-credentials: true
+2026-10-26T08:43:22.9734124Z   clean: true
+2026-10-26T08:43:22.9735243Z   sparse-checkout-cone-mode: true
+2026-10-26T08:43:22.9736348Z   fetch-depth: 1
+2026-10-26T08:43:22.9737307Z   fetch-tags: false
+2026-10-26T08:43:22.9738265Z   show-progress: true
+2026-10-26T08:43:22.9739219Z   lfs: false
+2026-10-26T08:43:22.9740222Z   submodules: false
+2026-10-26T08:43:22.9741193Z   set-safe-directory: true
+2026-10-26T08:43:22.9742284Z   allow-unsafe-pr-checkout: false
+2026-10-26T08:43:22.9743662Z ##[endgroup]
+2026-10-26T08:43:23.0917533Z Syncing repository: Flyfish233/spake2
+2026-10-26T08:43:23.0920976Z ##[group]Getting Git version info
+2026-10-26T08:43:23.0923015Z Working directory is '/home/runner/work/spake2/spake2'
+2026-10-26T08:43:23.0958919Z [command]/usr/bin/git version
+2026-10-26T08:43:23.0960958Z git version 2.55.0
+2026-10-26T08:43:23.0966401Z ##[endgroup]
+2026-10-26T08:43:23.0979855Z Temporarily overriding HOME='/home/runner/work/_temp/7f0bd3bc-4a8b-401c-90b8-f0ee6faccf1d' before making global git config changes
+2026-10-26T08:43:23.0983784Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T08:43:23.0987192Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/spake2/spake2
+2026-10-26T08:43:23.1157377Z Deleting the contents of '/home/runner/work/spake2/spake2'
+2026-10-26T08:43:23.1160912Z ##[group]Initializing the repository
+2026-10-26T08:43:23.1164585Z [command]/usr/bin/git init /home/runner/work/spake2/spake2
+2026-10-26T08:43:23.1206939Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-26T08:43:23.1235192Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-26T08:43:23.1239325Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-26T08:43:23.1241973Z hint: call:
+2026-10-26T08:43:23.1244061Z hint:
+2026-10-26T08:43:23.1246617Z hint: 	git config --global init.defaultBranch <name>
+2026-10-26T08:43:23.1249002Z hint:
+2026-10-26T08:43:23.1251128Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-26T08:43:23.1258313Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-26T08:43:23.1262078Z hint:
+2026-10-26T08:43:23.1264025Z hint: 	git branch -m <name>
+2026-10-26T08:43:23.1266244Z hint:
+2026-10-26T08:43:23.1268807Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-26T08:43:23.1271776Z Initialized empty Git repository in /home/runner/work/spake2/spake2/.git/
+2026-10-26T08:43:23.1278508Z [command]/usr/bin/git remote add origin https://github.com/Flyfish233/spake2
+2026-10-26T08:43:23.1311367Z ##[endgroup]
+2026-10-26T08:43:23.1313480Z ##[group]Disabling automatic garbage collection
+2026-10-26T08:43:23.1315533Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-26T08:43:23.1427428Z ##[endgroup]
+2026-10-26T08:43:23.1464668Z ##[group]Setting up auth
+2026-10-26T08:43:23.1466866Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T08:43:23.1471947Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T08:43:23.2057478Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T08:43:23.2065809Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T08:43:23.2117861Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T08:43:23.2147090Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T08:43:23.2323687Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-26T08:43:23.4299884Z ##[endgroup]
+2026-10-26T08:43:23.4305418Z ##[group]Fetching the repository
+2026-10-26T08:43:23.4314879Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ca8fab7b03d54e60e10c90505a25ad7efd08e4fb:refs/remotes/pull/1/merge
+2026-10-26T08:43:24.1075732Z From https://github.com/Flyfish233/spake2
+2026-10-26T08:43:24.1086360Z  * [new ref]         ca8fab7b03d54e60e10c90505a25ad7efd08e4fb -> pull/1/merge
+2026-10-26T08:43:24.1089310Z ##[endgroup]
+2026-10-26T08:43:24.1089979Z ##[group]Determining the checkout info
+2026-10-26T08:43:24.1090599Z ##[endgroup]
+2026-10-26T08:43:24.1091079Z [command]/usr/bin/git sparse-checkout disable
+2026-10-26T08:43:24.1139050Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-26T08:43:24.1171998Z ##[group]Checking out the ref
+2026-10-26T08:43:24.1175319Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/1/merge
+2026-10-26T08:43:24.1369754Z Note: switching to 'refs/remotes/pull/1/merge'.
+2026-10-26T08:43:24.1370662Z 
+2026-10-26T08:43:24.1376054Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-26T08:43:24.1383703Z changes and commit them, and you can discard any commits you make in this
+2026-10-26T08:43:24.1384940Z state without impacting any branches by switching back to a branch.
+2026-10-26T08:43:24.1385651Z 
+2026-10-26T08:43:24.1386158Z If you want to create a new branch to retain commits you create, you may
+2026-10-26T08:43:24.1387350Z do so (now or later) by using -c with the switch command. Example:
+2026-10-26T08:43:24.1387897Z 
+2026-10-26T08:43:24.1388250Z   git switch -c <new-branch-name>
+2026-10-26T08:43:24.1388937Z 
+2026-10-26T08:43:24.1389371Z Or undo this operation with:
+2026-10-26T08:43:24.1389775Z 
+2026-10-26T08:43:24.1390052Z   git switch -
+2026-10-26T08:43:24.1390477Z 
+2026-10-26T08:43:24.1390965Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-26T08:43:24.1391508Z 
+2026-10-26T08:43:24.1392191Z HEAD is now at ca8fab7 Merge b837aba27bebc1050965fa124c2efa54b4e4544a into 783299c166ed9613bb4e37d39fd7924205cf7c25
+2026-10-26T08:43:24.1394701Z ##[endgroup]
+2026-10-26T08:43:24.1426469Z [command]/usr/bin/git log -1 --format=%H
+2026-10-26T08:43:24.1442775Z ca8fab7b03d54e60e10c90505a25ad7efd08e4fb
+2026-10-26T08:43:24.1717692Z ##[group]Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3
+2026-10-26T08:43:24.1718114Z with:
+2026-10-26T08:43:24.1718395Z   distribution: temurin
+2026-10-26T08:43:24.1718674Z   java-version: 17
+2026-10-26T08:43:24.1718928Z   cache: gradle
+2026-10-26T08:43:24.1719187Z   java-package: jdk
+2026-10-26T08:43:24.1719458Z   check-latest: false
+2026-10-26T08:43:24.1719721Z   server-id: github
+2026-10-26T08:43:24.1719989Z   server-username: GITHUB_ACTOR
+2026-10-26T08:43:24.1720303Z   server-password: GITHUB_TOKEN
+2026-10-26T08:43:24.1720602Z   overwrite-settings: true
+2026-10-26T08:43:24.1720880Z   job-status: success
+2026-10-26T08:43:24.1723111Z   token: ***
+2026-10-26T08:43:24.1723364Z ##[endgroup]
+2026-10-26T08:43:24.3437950Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-10-26T08:43:24.3447175Z ##[group]Installed distributions
+2026-10-26T08:43:24.3591626Z Resolved Java 17.0.20+1 from tool-cache
+2026-10-26T08:43:24.3592520Z Setting Java 17.0.20+1 as the default
+2026-10-26T08:43:24.3600706Z (node:1938) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T08:43:24.3601924Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T08:43:24.3603366Z Creating toolchains.xml for JDK version 17 from temurin
+2026-10-26T08:43:24.3674580Z Writing to /home/runner/.m2/toolchains.xml
+2026-10-26T08:43:24.3700131Z 
+2026-10-26T08:43:24.3700490Z Java configuration:
+2026-10-26T08:43:24.3700945Z   Distribution: temurin
+2026-10-26T08:43:24.3701335Z   Version: 17.0.20+1
+2026-10-26T08:43:24.3701736Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T08:43:24.3702022Z 
+2026-10-26T08:43:24.3702433Z ##[endgroup]
+2026-10-26T08:43:24.3739776Z Creating settings.xml with server-id: github
+2026-10-26T08:43:24.3740462Z Writing to /home/runner/.m2/settings.xml
+2026-10-26T08:43:24.5980961Z Cache hit for: setup-java-Linux-x64-gradle-9bd6d9b7ecb501152c19d9150342f13e7ef0d5a379fcf3dd6ab61ec6f42e62b2
+2026-10-26T08:43:24.6076059Z (node:1938) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-26T08:43:25.7693506Z Received 83886080 of 528791060 (15.9%), 80.0 MBs/sec
+2026-10-26T08:43:26.7554669Z Received 268435456 of 528791060 (50.8%), 127.9 MBs/sec
+2026-10-26T08:43:27.7747367Z Received 469762048 of 528791060 (88.8%), 149.2 MBs/sec
+2026-10-26T08:43:28.0764867Z Received 528791060 of 528791060 (100.0%), 151.8 MBs/sec
+2026-10-26T08:43:28.0767394Z Cache Size: ~504 MB (528791060 B)
+2026-10-26T08:43:28.0978938Z [command]/usr/bin/tar -xf /home/runner/work/_temp/50ed19c7-88cb-43a4-9681-cb06f880448b/cache.tzst -P -C /home/runner/work/spake2/spake2 --use-compress-program unzstd
+2026-10-26T08:43:35.0144640Z Cache restored successfully
+2026-10-26T08:43:35.0349342Z Cache restored from key: setup-java-Linux-x64-gradle-9bd6d9b7ecb501152c19d9150342f13e7ef0d5a379fcf3dd6ab61ec6f42e62b2
+2026-10-26T08:43:35.0689481Z ##[group]Run ./gradlew --no-daemon -PenableAndroid=true assembleDebug testDebugUnitTest
+2026-10-26T08:43:35.0690294Z [36;1m./gradlew --no-daemon -PenableAndroid=true assembleDebug testDebugUnitTest[0m
+2026-10-26T08:43:35.1200417Z shell: /usr/bin/bash -e {0}
+2026-10-26T08:43:35.1200720Z env:
+2026-10-26T08:43:35.1201008Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T08:43:35.1201425Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T08:43:35.1201814Z ##[endgroup]
+2026-10-26T08:43:37.5154994Z 
+2026-10-26T08:43:37.5175643Z Welcome to Gradle 8.14.3!
+2026-10-26T08:43:37.5184905Z 
+2026-10-26T08:43:37.5207151Z Here are the highlights of this release:
+2026-10-26T08:43:37.5214782Z  - Java 24 support
+2026-10-26T08:43:37.5215528Z  - GraalVM Native Image toolchain selection
+2026-10-26T08:43:37.5216103Z  - Enhancements to test reporting
+2026-10-26T08:43:37.5216564Z  - Build Authoring improvements
+2026-10-26T08:43:37.5216961Z 
+2026-10-26T08:43:37.5217334Z For more details see https://docs.gradle.org/8.14.3/release-notes.html
+2026-10-26T08:43:37.5217843Z 
+2026-10-26T08:43:37.8172892Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-10-26T08:43:39.6135646Z Daemon will be stopped at the end of the build 
+2026-10-26T08:43:53.0168459Z > Task :preBuild UP-TO-DATE
+2026-10-26T08:43:53.0195386Z > Task :preDebugBuild UP-TO-DATE
+2026-10-26T08:43:53.3137338Z > Task :mergeDebugJniLibFolders
+2026-10-26T08:43:53.3155677Z > Task :mergeDebugNativeLibs NO-SOURCE
+2026-10-26T08:43:53.3200115Z > Task :stripDebugDebugSymbols NO-SOURCE
+2026-10-26T08:43:53.4135256Z > Task :copyDebugJniLibsProjectAndLocalJars
+2026-10-26T08:43:53.4165102Z > Task :kmpPartiallyResolvedDependenciesChecker
+2026-10-26T08:43:53.4175362Z > Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T08:43:53.4223190Z > Task :generateDebugResValues
+2026-10-26T08:43:53.5119270Z > Task :generateDebugResources
+2026-10-26T08:43:53.5129130Z > Task :packageDebugResources
+2026-10-26T08:43:54.5152092Z > Task :primitives:kmpPartiallyResolvedDependenciesChecker
+2026-10-26T08:43:54.5185658Z > Task :primitives:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T08:43:54.5223667Z > Task :primitives:preBuild UP-TO-DATE
+2026-10-26T08:43:54.5230313Z > Task :primitives:preDebugBuild UP-TO-DATE
+2026-10-26T08:43:54.5267797Z > Task :primitives:generateDebugResValues
+2026-10-26T08:43:54.5315565Z > Task :primitives:generateDebugResources
+2026-10-26T08:43:54.6120504Z > Task :primitives:packageDebugResources
+2026-10-26T08:43:54.6130506Z > Task :parseDebugLocalResources
+2026-10-26T08:43:54.6164957Z > Task :primitives:parseDebugLocalResources
+2026-10-26T08:43:54.6184993Z > Task :primitives:generateDebugRFile
+2026-10-26T08:43:54.6224797Z > Task :generateDebugRFile
+2026-10-26T08:43:55.1120235Z > Task :primitives:javaPreCompileDebug
+2026-10-26T08:43:55.1162698Z > Task :extractDeepLinksForAarDebug
+2026-10-26T08:43:55.2162841Z > Task :mergeDebugShaders
+2026-10-26T08:43:55.2205309Z > Task :compileDebugShaders NO-SOURCE
+2026-10-26T08:43:55.2221070Z > Task :debugAssetsCopyForAGP NO-SOURCE
+2026-10-26T08:43:55.2242347Z > Task :generateDebugAssets UP-TO-DATE
+2026-10-26T08:43:55.2264846Z > Task :mergeDebugAssets
+2026-10-26T08:43:55.2265496Z > Task :javaPreCompileDebug
+2026-10-26T08:43:55.2285146Z > Task :prepareDebugArtProfile
+2026-10-26T08:43:55.2304956Z > Task :prepareLintJarForPublish
+2026-10-26T08:43:55.4165445Z > Task :processDebugManifest
+2026-10-26T08:43:55.5145233Z > Task :writeDebugAarMetadata
+2026-10-26T08:43:55.5165328Z > Task :legacy:preBuild UP-TO-DATE
+2026-10-26T08:43:55.5225149Z > Task :legacy:preDebugBuild UP-TO-DATE
+2026-10-26T08:43:55.5244932Z > Task :legacy:mergeDebugJniLibFolders
+2026-10-26T08:43:55.5245422Z > Task :legacy:mergeDebugNativeLibs NO-SOURCE
+2026-10-26T08:43:55.5246242Z > Task :legacy:stripDebugDebugSymbols NO-SOURCE
+2026-10-26T08:43:55.6135149Z > Task :legacy:copyDebugJniLibsProjectAndLocalJars
+2026-10-26T08:43:55.6215131Z > Task :legacy:kmpPartiallyResolvedDependenciesChecker
+2026-10-26T08:43:55.6267543Z > Task :legacy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-26T08:43:55.6335117Z > Task :legacy:generateDebugResValues
+2026-10-26T08:43:55.7139508Z > Task :legacy:generateDebugResources
+2026-10-26T08:43:55.7200304Z > Task :legacy:packageDebugResources
+2026-10-26T08:43:55.7235130Z > Task :legacy:parseDebugLocalResources
+2026-10-26T08:43:55.8119392Z > Task :legacy:generateDebugRFile
+2026-10-26T08:43:55.8145028Z > Task :legacy:extractDeepLinksForAarDebug
+2026-10-26T08:43:55.8185087Z > Task :legacy:mergeDebugShaders
+2026-10-26T08:43:55.8195254Z > Task :legacy:compileDebugShaders NO-SOURCE
+2026-10-26T08:43:55.8204925Z > Task :legacy:debugAssetsCopyForAGP NO-SOURCE
+2026-10-26T08:43:55.8234960Z > Task :legacy:generateDebugAssets UP-TO-DATE
+2026-10-26T08:43:55.8265020Z > Task :legacy:mergeDebugAssets
+2026-10-26T08:43:55.8278210Z > Task :legacy:javaPreCompileDebug
+2026-10-26T08:43:55.8299924Z > Task :legacy:prepareDebugArtProfile
+2026-10-26T08:43:55.8316746Z > Task :legacy:prepareLintJarForPublish
+2026-10-26T08:43:55.9124014Z > Task :legacy:processDebugManifest
+2026-10-26T08:43:55.9165144Z > Task :legacy:writeDebugAarMetadata
+2026-10-26T08:43:55.9171060Z > Task :primitives:mergeDebugJniLibFolders
+2026-10-26T08:43:55.9218584Z > Task :primitives:mergeDebugNativeLibs NO-SOURCE
+2026-10-26T08:43:55.9251282Z > Task :primitives:stripDebugDebugSymbols NO-SOURCE
+2026-10-26T08:43:55.9279558Z > Task :primitives:copyDebugJniLibsProjectAndLocalJars
+2026-10-26T08:43:55.9317744Z > Task :primitives:extractDeepLinksForAarDebug
+2026-10-26T08:43:55.9351163Z > Task :primitives:mergeDebugShaders
+2026-10-26T08:43:55.9375187Z > Task :primitives:compileDebugShaders NO-SOURCE
+2026-10-26T08:43:55.9385046Z > Task :primitives:debugAssetsCopyForAGP NO-SOURCE
+2026-10-26T08:43:55.9390548Z > Task :primitives:generateDebugAssets UP-TO-DATE
+2026-10-26T08:43:55.9414933Z > Task :primitives:mergeDebugAssets
+2026-10-26T08:43:55.9435134Z > Task :primitives:prepareDebugArtProfile
+2026-10-26T08:43:56.0147144Z > Task :primitives:prepareLintJarForPublish
+2026-10-26T08:43:56.0183437Z > Task :primitives:processDebugManifest
+2026-10-26T08:43:56.0217654Z > Task :primitives:writeDebugAarMetadata
+2026-10-26T08:43:56.0245156Z > Task :preDebugUnitTestBuild UP-TO-DATE
+2026-10-26T08:43:56.1146889Z > Task :generateDebugUnitTestStubRFile
+2026-10-26T08:43:56.1167505Z > Task :javaPreCompileDebugUnitTest
+2026-10-26T08:43:56.1185103Z > Task :legacy:preDebugUnitTestBuild UP-TO-DATE
+2026-10-26T08:43:56.1200284Z > Task :legacy:generateDebugUnitTestStubRFile
+2026-10-26T08:43:56.1215091Z > Task :legacy:javaPreCompileDebugUnitTest
+2026-10-26T08:43:56.1244949Z > Task :primitives:preDebugUnitTestBuild UP-TO-DATE
+2026-10-26T08:43:56.2135487Z > Task :primitives:generateDebugUnitTestStubRFile
+2026-10-26T08:43:56.2177910Z > Task :primitives:javaPreCompileDebugUnitTest
+2026-10-26T08:44:07.4155803Z > Task :primitives:compileDebugKotlinAndroid
+2026-10-26T08:44:07.4165500Z > Task :primitives:compileDebugJavaWithJavac NO-SOURCE
+2026-10-26T08:44:07.5145267Z > Task :primitives:bundleLibCompileToJarDebug
+2026-10-26T08:44:08.4139153Z > Task :primitives:extractDebugAnnotations
+2026-10-26T08:44:11.3636616Z > Task :legacy:compileDebugKotlinAndroid
+2026-10-26T08:44:11.3675094Z > Task :legacy:extractDebugAnnotations
+2026-10-26T08:44:11.4455701Z > Task :legacy:compileDebugJavaWithJavac NO-SOURCE
+2026-10-26T08:44:11.4484060Z > Task :legacy:mergeDebugGeneratedProguardFiles
+2026-10-26T08:44:11.5055658Z > Task :legacy:mergeDebugConsumerProguardFiles
+2026-10-26T08:44:11.5086244Z > Task :legacy:processDebugJavaRes
+2026-10-26T08:44:11.7515820Z > Task :legacy:mergeDebugJavaResource
+2026-10-26T08:44:11.7976422Z > Task :legacy:syncDebugLibJars
+2026-10-26T08:44:11.8520522Z > Task :legacy:bundleDebugAar
+2026-10-26T08:44:11.8521106Z > Task :legacy:assembleDebug
+2026-10-26T08:44:11.8521849Z > Task :primitives:mergeDebugGeneratedProguardFiles
+2026-10-26T08:44:11.8522544Z > Task :primitives:mergeDebugConsumerProguardFiles
+2026-10-26T08:44:11.9397109Z > Task :primitives:processDebugJavaRes
+2026-10-26T08:44:11.9399257Z > Task :primitives:mergeDebugJavaResource
+2026-10-26T08:44:11.9710064Z > Task :primitives:syncDebugLibJars
+2026-10-26T08:44:11.9714775Z > Task :primitives:bundleDebugAar
+2026-10-26T08:44:11.9900597Z > Task :primitives:assembleDebug
+2026-10-26T08:44:12.0355453Z > Task :legacy:bundleLibCompileToJarDebug
+2026-10-26T08:44:12.0374901Z > Task :legacy:bundleLibRuntimeToJarDebug
+2026-10-26T08:44:12.0575480Z > Task :primitives:bundleLibRuntimeToJarDebug
+2026-10-26T08:44:12.0576253Z > Task :compileDebugKotlinAndroid
+2026-10-26T08:44:12.3410179Z > Task :extractDebugAnnotations
+2026-10-26T08:44:12.3411213Z > Task :compileDebugJavaWithJavac NO-SOURCE
+2026-10-26T08:44:12.3846336Z > Task :mergeDebugGeneratedProguardFiles
+2026-10-26T08:44:12.4085439Z > Task :mergeDebugConsumerProguardFiles
+2026-10-26T08:44:12.4482628Z > Task :processDebugJavaRes
+2026-10-26T08:44:12.4505095Z > Task :mergeDebugJavaResource
+2026-10-26T08:44:12.5085279Z > Task :syncDebugLibJars
+2026-10-26T08:44:12.5104960Z > Task :bundleDebugAar
+2026-10-26T08:44:12.5525359Z > Task :assembleDebug
+2026-10-26T08:44:12.5551937Z > Task :bundleLibRuntimeToJarDebug
+2026-10-26T08:44:12.5912771Z > Task :bundleLibCompileToJarDebug
+2026-10-26T08:44:15.5155779Z > Task :legacy:compileDebugUnitTestKotlinAndroid
+2026-10-26T08:44:15.5208304Z > Task :legacy:compileDebugUnitTestJavaWithJavac NO-SOURCE
+2026-10-26T08:44:15.5245163Z > Task :legacy:processDebugUnitTestJavaRes
+2026-10-26T08:44:16.0119896Z > Task :compileDebugUnitTestKotlinAndroid
+2026-10-26T08:44:17.5118531Z 
+2026-10-26T08:44:17.5195376Z > Task :legacy:testDebugUnitTest
+2026-10-26T08:44:17.5214689Z 
+2026-10-26T08:44:17.5235232Z LegacyDeterministicOracleTest > replaySevenIndependentExchanges PASSED
+2026-10-26T08:44:17.5262973Z 
+2026-10-26T08:44:17.5285149Z LegacyDeterministicOracleTest > replayHistoricalPeerInputCases PASSED
+2026-10-26T08:44:17.7119441Z 
+2026-10-26T08:44:17.7125257Z LegacyFreshOracleTest > replayTwentyFourFreshExchanges PASSED
+2026-10-26T08:44:18.4139649Z 
+2026-10-26T08:44:18.4155530Z LegacyFreshOracleTest > replay108MalformedAndBoundaryPeerEncodings PASSED
+2026-10-26T08:44:18.5145417Z 
+2026-10-26T08:44:18.5156051Z LegacyLifecycleTest > callerMutationCannotAliasIdentityOrGeneratedMessage PASSED
+2026-10-26T08:44:18.5194621Z 
+2026-10-26T08:44:18.5235239Z LegacyLifecycleTest > destroyIsIdempotentAndTerminal PASSED
+2026-10-26T08:44:18.5235916Z 
+2026-10-26T08:44:18.5265066Z LegacyLifecycleTest > entropyExceptionsAndIncorrectLengthsEraseState PASSED
+2026-10-26T08:44:18.5284748Z 
+2026-10-26T08:44:18.5306448Z LegacyLifecycleTest > wrongPasswordsAndRolesDoNotCreateAuthentication PASSED
+2026-10-26T08:44:18.5324938Z 
+2026-10-26T08:44:18.5345206Z LegacyLifecycleTest > repeatGenerationFailsAndErasesSession PASSED
+2026-10-26T08:44:18.5345811Z 
+2026-10-26T08:44:18.5365027Z LegacyLifecycleTest > lengthsFailBeforeUnboundedAllocation PASSED
+2026-10-26T08:44:18.5384534Z 
+2026-10-26T08:44:18.5407413Z LegacyLifecycleTest > returnedEntropyIsWipedAndPasswordInputRemainsOwnedByCaller PASSED
+2026-10-26T08:44:18.5407895Z 
+2026-10-26T08:44:18.5418244Z LegacyLifecycleTest > reentrantEntropyCallPoisonsOuterSessionEvenIfCallbackCatchesError PASSED
+2026-10-26T08:44:18.5418928Z 
+2026-10-26T08:44:18.5421380Z LegacyLifecycleTest > processBeforeGenerateFailsPermanently PASSED
+2026-10-26T08:44:19.0124943Z 
+2026-10-26T08:44:19.0155422Z LegacyOracleBatch00Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:19.5117653Z 
+2026-10-26T08:44:19.5125534Z LegacyOracleBatch01Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:20.0117624Z 
+2026-10-26T08:44:20.0119482Z LegacyOracleBatch02Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:20.5118579Z 
+2026-10-26T08:44:20.5119391Z LegacyOracleBatch03Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:20.9125019Z 
+2026-10-26T08:44:20.9126420Z LegacyOracleBatch04Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:21.4117629Z 
+2026-10-26T08:44:21.4119413Z LegacyOracleBatch05Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:21.9117499Z 
+2026-10-26T08:44:21.9119203Z LegacyOracleBatch06Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:22.4117766Z 
+2026-10-26T08:44:22.4122002Z LegacyOracleBatch07Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:22.8133734Z 
+2026-10-26T08:44:22.8145593Z LegacyOracleBatch08Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:23.3118891Z 
+2026-10-26T08:44:23.3120000Z LegacyOracleBatch09Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:23.8156966Z 
+2026-10-26T08:44:23.8157669Z LegacyOracleBatch10Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:24.3125599Z 
+2026-10-26T08:44:24.3126221Z LegacyOracleBatch11Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:24.7130824Z 
+2026-10-26T08:44:24.7133300Z LegacyOracleBatch12Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:25.2121711Z 
+2026-10-26T08:44:25.2122721Z LegacyOracleBatch13Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:25.7122089Z 
+2026-10-26T08:44:25.7122937Z LegacyOracleBatch14Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:26.2319126Z 
+2026-10-26T08:44:26.2335911Z LegacyOracleBatch15Test > replay32IndependentOracleExchanges PASSED
+2026-10-26T08:44:26.2543023Z 
+2026-10-26T08:44:26.2565558Z LegacyZeroEntropyTest > historicalZeroEphemeralScalarIsPreservedExplicitly PASSED
+2026-10-26T08:44:26.5299714Z 
+2026-10-26T08:44:26.5325249Z > Task :compileDebugUnitTestJavaWithJavac NO-SOURCE
+2026-10-26T08:44:26.5769546Z > Task :processDebugUnitTestJavaRes
+2026-10-26T08:44:28.5119267Z 
+2026-10-26T08:44:28.5135855Z > Task :testDebugUnitTest
+2026-10-26T08:44:28.5154805Z 
+2026-10-26T08:44:28.5173619Z ProtocolIsolationTest > legacyKeyCannotSatisfyRfcConfirmationAndNoFallbackOccurs PASSED
+2026-10-26T08:44:28.5174764Z 
+2026-10-26T08:44:28.5196250Z RfcFailureTest > wrongPasswordIdentityAIdentityBAndAadAllPreventKeyRelease PASSED
+2026-10-26T08:44:28.5214640Z 
+2026-10-26T08:44:28.5234992Z RfcFailureTest > sameRoleFailsConfirmation PASSED
+2026-10-26T08:44:28.5235706Z 
+2026-10-26T08:44:28.5255049Z RfcFailureTest > boundedMalformedInputFuzzIsTerminal PASSED
+2026-10-26T08:44:28.7118047Z 
+2026-10-26T08:44:28.7155582Z RfcFailureTest > hostilePointEncodingsAreRejectedAndOwnedSecretsErased PASSED
+2026-10-26T08:44:29.2124660Z 
+2026-10-26T08:44:29.2145314Z RfcFailureTest > malformedConfirmationLengthAndContentAreTerminal PASSED
+2026-10-26T08:44:29.2161737Z 
+2026-10-26T08:44:29.2162534Z RfcFailureTest > cannotReleaseAKeyBeforeConfirmationOrBeforePeerMessage PASSED
+2026-10-26T08:44:29.2163205Z 
+2026-10-26T08:44:29.2163777Z RfcFailureTest > rejectionSamplingRejectsOrderAndLargerValuesAndConsumesFreshEntropy PASSED
+2026-10-26T08:44:29.2164673Z 
+2026-10-26T08:44:29.2165150Z RfcFailureTest > invalidScalarAndInputBoundsAreRejectedBeforeUse PASSED
+2026-10-26T08:44:29.3117773Z 
+2026-10-26T08:44:29.3119008Z RfcFailureTest > callerArraysAreDefensivelyCopiedAndMessagesHaveIndependentStorage PASSED
+2026-10-26T08:44:29.4122660Z 
+2026-10-26T08:44:29.4137873Z RfcFailureTest > zeroEphemeralMatchesPublishedMasksAndCannotReleaseAKey PASSED
+2026-10-26T08:44:29.4154728Z 
+2026-10-26T08:44:29.4167615Z RfcFailureTest > repeatedOperationsAndDestroyAreTerminal PASSED
+2026-10-26T08:44:29.5154789Z 
+2026-10-26T08:44:29.5175190Z RfcFailureTest > successfulKeyCanOnlyBeReleasedOnce PASSED
+2026-10-26T08:44:29.5194566Z 
+2026-10-26T08:44:29.5216940Z RfcFailureTest > sourceFailureWrongLengthAndOutOfRangeCandidatesTerminateAndWipe PASSED
+2026-10-26T08:44:29.5229838Z 
+2026-10-26T08:44:29.5230573Z RfcFailureTest > entropyCallbackReentrancyPoisonsTheOwningOperation PASSED
+2026-10-26T08:44:29.6117110Z 
+2026-10-26T08:44:29.6118522Z RfcVectorsTest > edwardsMixedOrderUsesCofactorAndBindsExactPeerEncoding PASSED
+2026-10-26T08:44:29.8124849Z 
+2026-10-26T08:44:29.8146001Z RfcVectorsTest > publicP256ApiMatchesOfficialVectorsThroughConfirmation PASSED
+2026-10-26T08:44:29.8146818Z 
+2026-10-26T08:44:29.8164964Z RfcVectorsTest > edwardsRfcMaskConstantsArePrimeOrder PASSED
+2026-10-26T08:44:29.8180267Z 
+2026-10-26T08:44:29.8195108Z RfcVectorsTest > edwardsRejectsEveryPureTorsionElement PASSED
+2026-10-26T08:44:30.0125047Z 
+2026-10-26T08:44:30.0128323Z RfcVectorsTest > publicEdwardsApiMatchesIndependentVectorsThroughConfirmation PASSED
+2026-10-26T08:44:30.2118105Z 
+2026-10-26T08:44:30.2127202Z RfcVectorsTest > edwardsEveryIndependentIntermediateField PASSED
+2026-10-26T08:44:30.4155084Z 
+2026-10-26T08:44:30.4156210Z RfcVectorsTest > p256EveryOfficialIntermediateField PASSED
+2026-10-26T08:44:32.6129491Z 
+2026-10-26T08:44:32.6132389Z > Task :primitives:compileDebugUnitTestKotlinAndroid
+2026-10-26T08:44:32.6195605Z > Task :primitives:compileDebugUnitTestJavaWithJavac NO-SOURCE
+2026-10-26T08:44:32.6199339Z > Task :primitives:processDebugUnitTestJavaRes
+2026-10-26T08:44:34.4118101Z 
+2026-10-26T08:44:34.4136663Z > Task :primitives:testDebugUnitTest
+2026-10-26T08:44:34.4137042Z 
+2026-10-26T08:44:34.4137317Z HashBoundaryTest > independentPaddingBoundaryVectors PASSED
+2026-10-26T08:44:34.4137658Z 
+2026-10-26T08:44:34.4137802Z HashTest > hkdfRfc5869 PASSED
+2026-10-26T08:44:34.4138026Z 
+2026-10-26T08:44:34.4138170Z HashTest > sha512StandardVectors PASSED
+2026-10-26T08:44:34.4138409Z 
+2026-10-26T08:44:34.4138636Z HashTest > sha256StandardVectors PASSED
+2026-10-26T08:44:34.4138807Z 
+2026-10-26T08:44:34.4138940Z HashTest > hkdfBoundsAndInputOwnership PASSED
+2026-10-26T08:44:34.4139129Z 
+2026-10-26T08:44:34.4139232Z HashTest > hmacRfc4231 PASSED
+2026-10-26T08:44:34.4139385Z 
+2026-10-26T08:44:34.4139552Z ScaffoldTest > entropyContractIsAnApplicationBoundary PASSED
+2026-10-26T08:44:34.4139798Z 
+2026-10-26T08:44:34.4140009Z Edwards25519MathTest > strictAndHistoricalPointDecodersAreSeparated PASSED
+2026-10-26T08:44:34.4140288Z 
+2026-10-26T08:44:34.4140440Z Edwards25519MathTest > scalarReductionBoundaries PASSED
+2026-10-26T08:44:34.4140665Z 
+2026-10-26T08:44:34.4140821Z Edwards25519MathTest > rfc8032BasePointAndPublicKey PASSED
+2026-10-26T08:44:34.4141040Z 
+2026-10-26T08:44:34.4141198Z Edwards25519MathTest > fullWidthHighBitIsPreserved PASSED
+2026-10-26T08:44:34.4141414Z 
+2026-10-26T08:44:34.4141563Z Edwards25519MathTest > torsionAndPrimeOrderChecks PASSED
+2026-10-26T08:44:34.4141767Z 
+2026-10-26T08:44:34.4141957Z ModMathIntCarryTest > maximumUnsignedInnerSumAndCarryChains PASSED
+2026-10-26T08:44:34.4142333Z 
+2026-10-26T08:44:34.4142485Z ModMathTest > resultsDoNotAliasInputsOrConstants PASSED
+2026-10-26T08:44:34.4142705Z 
+2026-10-26T08:44:34.4142844Z ModMathTest > canonicalDecodingAndSelection PASSED
+2026-10-26T08:44:34.4143040Z 
+2026-10-26T08:44:34.4143188Z ModMathTest > independentPythonIntegerVectors PASSED
+2026-10-26T08:44:34.4143397Z 
+2026-10-26T08:44:34.4143594Z P256MathTest > independentPythonAndOpenSslScalarVectors PASSED
+2026-10-26T08:44:34.4143939Z 
+2026-10-26T08:44:34.4144172Z P256MathTest > malformedAndNonCanonicalPointEncodings PASSED
+2026-10-26T08:44:34.4144731Z 
+2026-10-26T08:44:34.4144995Z P256MathTest > exceptionalAdditionAndInputOwnership PASSED
+2026-10-26T08:44:34.5892166Z 
+2026-10-26T08:44:34.5916244Z BUILD SUCCESSFUL in 58s
+2026-10-26T08:44:34.5921980Z 93 actionable tasks: 93 executed
+2026-10-26T08:44:34.9239005Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-26T08:44:34.9239385Z with:
+2026-10-26T08:44:34.9239615Z   name: android-build-and-unit-tests
+2026-10-26T08:44:34.9239936Z   path: **/build/outputs/aar/**
+**/build/test-results/**
+
+2026-10-26T08:44:34.9240259Z   retention-days: 14
+2026-10-26T08:44:34.9240487Z   if-no-files-found: warn
+2026-10-26T08:44:34.9240721Z   compression-level: 6
+2026-10-26T08:44:34.9241000Z   overwrite: false
+2026-10-26T08:44:34.9241228Z   include-hidden-files: false
+2026-10-26T08:44:34.9241460Z env:
+2026-10-26T08:44:34.9241752Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T08:44:34.9242201Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-26T08:44:34.9242686Z ##[endgroup]
+2026-10-26T08:44:35.0896104Z (node:2238) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T08:44:35.0897453Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T08:44:35.2885774Z With the provided path, there will be 42 files uploaded
+2026-10-26T08:44:35.2887036Z Artifact name is valid!
+2026-10-26T08:44:35.2887405Z Root directory input is valid!
+2026-10-26T08:44:35.5540515Z Beginning upload of artifact content to blob storage
+2026-10-26T08:44:35.6298894Z (node:2238) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-26T08:44:35.8260894Z Uploaded bytes 94510
+2026-10-26T08:44:35.8663781Z Finished uploading artifact content to blob storage!
+2026-10-26T08:44:35.8665068Z SHA256 digest of uploaded artifact zip is 2f63edbe0d4d186a92551c3e5e6349d4676e86610b371e0dd24fed54da347999
+2026-10-26T08:44:35.8668307Z Finalizing artifact upload
+2026-10-26T08:44:36.3598025Z Artifact android-build-and-unit-tests.zip successfully finalized. Artifact ID 12636953677
+2026-10-26T08:44:36.3599287Z Artifact android-build-and-unit-tests has been successfully uploaded! Final size is 94510 bytes. Artifact ID is 12636953677
+2026-10-26T08:44:36.3605436Z Artifact download URL: https://github.com/Flyfish233/spake2/actions/runs/40294194097/artifacts/12636953677
+2026-10-26T08:44:36.3725333Z Post job cleanup.
+2026-10-26T08:44:36.5010134Z (node:2251) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-26T08:44:36.5011434Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-26T08:44:36.5015575Z Cache hit occurred on the primary key setup-java-Linux-x64-gradle-9bd6d9b7ecb501152c19d9150342f13e7ef0d5a379fcf3dd6ab61ec6f42e62b2, not saving cache.
+2026-10-26T08:44:36.5241868Z Post job cleanup.
+2026-10-26T08:44:36.6835394Z [command]/usr/bin/git version
+2026-10-26T08:44:36.7033331Z git version 2.55.0
+2026-10-26T08:44:36.7042708Z Temporarily overriding HOME='/home/runner/work/_temp/52ec37f1-fd62-479a-951c-492941560abf' before making global git config changes
+2026-10-26T08:44:36.7044036Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-26T08:44:36.7045365Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/spake2/spake2
+2026-10-26T08:44:36.7048653Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-26T08:44:36.7051214Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-26T08:44:36.7367209Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-26T08:44:36.7407731Z http.https://github.com/.extraheader
+2026-10-26T08:44:36.7445871Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-26T08:44:36.7450132Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-26T08:44:36.7774679Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-26T08:44:36.8054082Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-26T08:44:36.8191364Z Cleaning up orphan processes
+2026-10-26T08:44:36.8442430Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

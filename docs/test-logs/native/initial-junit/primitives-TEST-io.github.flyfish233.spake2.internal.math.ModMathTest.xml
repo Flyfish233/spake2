@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.internal.math.ModMathTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:21:51.364Z" hostname="c9d49951d07d" time="0.917">
+  <properties/>
+  <testcase name="independentPythonIntegerVectors[linuxX64]" classname="io.github.flyfish233.spake2.internal.math.ModMathTest" time="0.896"/>
+  <testcase name="canonicalDecodingAndSelection[linuxX64]" classname="io.github.flyfish233.spake2.internal.math.ModMathTest" time="0.007"/>
+  <testcase name="resultsDoNotAliasInputsOrConstants[linuxX64]" classname="io.github.flyfish233.spake2.internal.math.ModMathTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

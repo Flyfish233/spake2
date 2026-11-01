@@ -1,0 +1,52 @@
+{
+  "revision": "49a88b14e9b731e4c086c920eb74664450c79d9f",
+  "branch": "experiment/kmp-native-core",
+  "gitStatusPorcelain": "",
+  "execution": "read-only source review; no Kadb build or execution",
+  "reviewedFiles": [
+    {
+      "path": "kadb/src/commonMain/kotlin/com/flyfishxu/kadb/pair/PairingConnectionCtx.kt",
+      "sha256": "05178fbf53b0896e39813d776003bec1aaa56bb4a16d072e4463fc33e4144778"
+    },
+    {
+      "path": "kadb/src/commonMain/kotlin/com/flyfishxu/kadb/pair/PairingAuthCtx.kt",
+      "sha256": "357427ff01f43c66826da9fcdc6d27ce3a48278f4af737679f43613c8594919a"
+    },
+    {
+      "path": "kadb/src/commonMain/kotlin/com/flyfishxu/kadb/pair/PairingCrypto.kt",
+      "sha256": "e23250f71f531af1f287ddc8d2f2cf38e71c4182128a661a6b4276aa559ba290"
+    },
+    {
+      "path": "kadb/src/androidMain/kotlin/com/flyfishxu/kadb/pair/PairingTlsConnection.jvmAndroid.kt",
+      "sha256": "e5428c3f74ec79d13154d0fad5c15bbe561d0d27577b091eb8fe55e1d5c87ec9"
+    },
+    {
+      "path": "kadb/src/androidMain/kotlin/com/flyfishxu/kadb/pair/PairingTlsConnection.android.kt",
+      "sha256": "5a3ae3592f291eee6353fe3d6bcc2fbf2dd69f1fb06713ddbd7e3ff299a0cff1"
+    },
+    {
+      "path": "kadb/src/androidMain/kotlin/com/flyfishxu/kadb/pair/PairingCrypto.jvmAndroid.kt",
+      "sha256": "214142c243814a10e57023acf69d113065306a39a085690796b494a2f80a46a9"
+    },
+    {
+      "path": "kadb/src/androidMain/kotlin/com/flyfishxu/kadb/pair/SslUtils.kt",
+      "sha256": "f539edd3a7086f2f903a4f22ad739c6857c7bc173ff3c581fcbdb322b03cfca3"
+    },
+    {
+      "path": "kadb/src/nativeMain/kotlin/com/flyfishxu/kadb/pair/PairingTlsConnection.native.kt",
+      "sha256": "fc1eba6b156264a178f1190b191acd231cd4a2c5b51e87b7ff33b2864dc6be5b"
+    },
+    {
+      "path": "kadb/src/nativeMain/kotlin/com/flyfishxu/kadb/pair/PairingCrypto.native.kt",
+      "sha256": "790f137f6100325a04d00b516b60d054fef153f324706c596e736140244fb03e"
+    },
+    {
+      "path": "kadb/src/nativeInterop/cpp/kadb_transport.c",
+      "sha256": "c7d6df28e09aef776ac26f73f37c9ae6479d5537b2c7afaefc7d96a026d3a7b0"
+    },
+    {
+      "path": "kadb/src/nativeInterop/cpp/kadb_crypto.c",
+      "sha256": "dab28d1a497927821c793a363f85b25967278b8b2d8488e33758745ac62b835e"
+    }
+  ]
+}

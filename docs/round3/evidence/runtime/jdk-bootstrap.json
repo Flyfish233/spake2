@@ -1,0 +1,11 @@
+{
+  "release": "jdk-17.0.21+9",
+  "source": "https://api.github.com/repos/adoptium/temurin17-binaries/releases/latest",
+  "packageUrl": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz",
+  "sha256": "8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711",
+  "publisherSha256": "8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711",
+  "jdkPaths": [
+    "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javac"
+  ],
+  "verifiedAtUtc": "2026-11-01T02:40:58.484261+00:00"
+}

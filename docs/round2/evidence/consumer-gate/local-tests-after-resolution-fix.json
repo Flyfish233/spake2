@@ -1,0 +1,396 @@
+{
+  "version": "0.1.0-dev.round2-local-final",
+  "source_revision": "WORKTREE",
+  "consumer_root": "/workspace/scratch/a46e59dd0882/round2-independent-consumer/integration/consumer",
+  "tasks": {
+    "jvmTest": {
+      "methods": 5,
+      "modules": {
+        "rfc-client": {
+          "methods": 3,
+          "reports": [
+            {
+              "path": "rfc-client/build/test-results/jvmTest/TEST-consumer.PublishedRfcTest.xml",
+              "sha256": "ae3dd0dac185455b89ac7e111ebb49eb06cfe505f899551e406c50d47c32d15f",
+              "suite": {
+                "name": "consumer.PublishedRfcTest",
+                "tests": "3",
+                "skipped": "0",
+                "failures": "0",
+                "errors": "0",
+                "timestamp": "2026-10-26T19:09:34.395Z",
+                "hostname": "c9d49951d07d",
+                "time": "3.799"
+              },
+              "cases": [
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "officialP256PublicMessagesConfirmationsAndKey[jvm]",
+                  "time": "1.307",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "incorrectConfirmationIsTerminalInPublishedLibrary[jvm]",
+                  "time": "1.399",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "independentEdwardsPublicMessagesConfirmationsAndKey[jvm]",
+                  "time": "1.09",
+                  "outcome": "passed"
+                }
+              ]
+            }
+          ]
+        },
+        "legacy-client": {
+          "methods": 2,
+          "reports": [
+            {
+              "path": "legacy-client/build/test-results/jvmTest/TEST-consumer.PublishedLegacyTest.xml",
+              "sha256": "6500d7b8930662c60ec78393b1dd0899c087f2b3d30c94c14dfd8766ecac7c44",
+              "suite": {
+                "name": "consumer.PublishedLegacyTest",
+                "tests": "2",
+                "skipped": "0",
+                "failures": "0",
+                "errors": "0",
+                "timestamp": "2026-10-26T19:09:30.162Z",
+                "hostname": "c9d49951d07d",
+                "time": "1.654"
+              },
+              "cases": [
+                {
+                  "classname": "consumer.PublishedLegacyTest",
+                  "name": "malformedInputAndDestroyConsumePublishedSession[jvm]",
+                  "time": "0.686",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedLegacyTest",
+                  "name": "hardenedPinnedOracleIncludingHighBitAndNulNames[jvm]",
+                  "time": "0.953",
+                  "outcome": "passed"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "linuxX64Test": {
+      "methods": 5,
+      "modules": {
+        "rfc-client": {
+          "methods": 3,
+          "reports": [
+            {
+              "path": "rfc-client/build/test-results/linuxX64Test/TEST-consumer.PublishedRfcTest.xml",
+              "sha256": "e70c705d5e762ff5abd028060bf510f68772b6e8561803cd25633880a16ef9b3",
+              "suite": {
+                "name": "consumer.PublishedRfcTest",
+                "tests": "3",
+                "skipped": "0",
+                "failures": "0",
+                "errors": "0",
+                "timestamp": "2026-10-26T19:11:31.717Z",
+                "hostname": "c9d49951d07d",
+                "time": "15.263"
+              },
+              "cases": [
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "officialP256PublicMessagesConfirmationsAndKey[linuxX64]",
+                  "time": "6.736",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "independentEdwardsPublicMessagesConfirmationsAndKey[linuxX64]",
+                  "time": "7.322",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "incorrectConfirmationIsTerminalInPublishedLibrary[linuxX64]",
+                  "time": "1.17",
+                  "outcome": "passed"
+                }
+              ]
+            }
+          ]
+        },
+        "legacy-client": {
+          "methods": 2,
+          "reports": [
+            {
+              "path": "legacy-client/build/test-results/linuxX64Test/TEST-consumer.PublishedLegacyTest.xml",
+              "sha256": "54d466f76ce87a8b7c9ed97b5c7be6c800f9f9d03e9cb9e704ca249dc6d37d65",
+              "suite": {
+                "name": "consumer.PublishedLegacyTest",
+                "tests": "2",
+                "skipped": "0",
+                "failures": "0",
+                "errors": "0",
+                "timestamp": "2026-10-26T19:11:08.720Z",
+                "hostname": "c9d49951d07d",
+                "time": "5.343"
+              },
+              "cases": [
+                {
+                  "classname": "consumer.PublishedLegacyTest",
+                  "name": "hardenedPinnedOracleIncludingHighBitAndNulNames[linuxX64]",
+                  "time": "5.05",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedLegacyTest",
+                  "name": "malformedInputAndDestroyConsumePublishedSession[linuxX64]",
+                  "time": "0.284",
+                  "outcome": "passed"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "jsNodeTest": {
+      "methods": 5,
+      "modules": {
+        "rfc-client": {
+          "methods": 3,
+          "reports": [
+            {
+              "path": "rfc-client/build/test-results/jsNodeTest/TEST-consumer.PublishedRfcTest.xml",
+              "sha256": "137c02f78db231f26d85114e24ab737dfc3da010f28930c8e301d4cdb23d8c6d",
+              "suite": {
+                "name": "consumer.PublishedRfcTest",
+                "tests": "3",
+                "skipped": "0",
+                "failures": "0",
+                "errors": "0",
+                "timestamp": "2026-10-26T19:13:43.368Z",
+                "hostname": "c9d49951d07d",
+                "time": "12.915"
+              },
+              "cases": [
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "officialP256PublicMessagesConfirmationsAndKey[js, node]",
+                  "time": "7.825",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "independentEdwardsPublicMessagesConfirmationsAndKey[js, node]",
+                  "time": "4.794",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "incorrectConfirmationIsTerminalInPublishedLibrary[js, node]",
+                  "time": "0.287",
+                  "outcome": "passed"
+                }
+              ]
+            }
+          ]
+        },
+        "legacy-client": {
+          "methods": 2,
+          "reports": [
+            {
+              "path": "legacy-client/build/test-results/jsNodeTest/TEST-consumer.PublishedLegacyTest.xml",
+              "sha256": "bd7bbb79937a1f0dd17a8e18af1dc6298f2cdbf28f6e86ea549fae2ff3613bf7",
+              "suite": {
+                "name": "consumer.PublishedLegacyTest",
+                "tests": "2",
+                "skipped": "0",
+                "failures": "0",
+                "errors": "0",
+                "timestamp": "2026-10-26T19:13:30.380Z",
+                "hostname": "c9d49951d07d",
+                "time": "7.657"
+              },
+              "cases": [
+                {
+                  "classname": "consumer.PublishedLegacyTest",
+                  "name": "hardenedPinnedOracleIncludingHighBitAndNulNames[js, node]",
+                  "time": "7.35",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedLegacyTest",
+                  "name": "malformedInputAndDestroyConsumePublishedSession[js, node]",
+                  "time": "0.289",
+                  "outcome": "passed"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "wasmJsNodeTest": {
+      "methods": 5,
+      "modules": {
+        "rfc-client": {
+          "methods": 3,
+          "reports": [
+            {
+              "path": "rfc-client/build/test-results/wasmJsNodeTest/TEST-consumer.PublishedRfcTest.xml",
+              "sha256": "88ee9eb2bf12a1faf2ae81f0cc1faaa1d283ed1282d1727bc8c81a6bec0065bc",
+              "suite": {
+                "name": "consumer.PublishedRfcTest",
+                "tests": "3",
+                "skipped": "0",
+                "failures": "0",
+                "errors": "0",
+                "timestamp": "2026-10-26T19:14:52.658Z",
+                "hostname": "c9d49951d07d",
+                "time": "7.809"
+              },
+              "cases": [
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "officialP256PublicMessagesConfirmationsAndKey[wasmJs, node]",
+                  "time": "2.965",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "independentEdwardsPublicMessagesConfirmationsAndKey[wasmJs, node]",
+                  "time": "4.245",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "incorrectConfirmationIsTerminalInPublishedLibrary[wasmJs, node]",
+                  "time": "0.589",
+                  "outcome": "passed"
+                }
+              ]
+            }
+          ]
+        },
+        "legacy-client": {
+          "methods": 2,
+          "reports": [
+            {
+              "path": "legacy-client/build/test-results/wasmJsNodeTest/TEST-consumer.PublishedLegacyTest.xml",
+              "sha256": "63e7ac97ab6a63a23748c073c6631edde73335643821c913d707b8a243149ee9",
+              "suite": {
+                "name": "consumer.PublishedLegacyTest",
+                "tests": "2",
+                "skipped": "0",
+                "failures": "0",
+                "errors": "0",
+                "timestamp": "2026-10-26T19:14:47.476Z",
+                "hostname": "c9d49951d07d",
+                "time": "2.755"
+              },
+              "cases": [
+                {
+                  "classname": "consumer.PublishedLegacyTest",
+                  "name": "hardenedPinnedOracleIncludingHighBitAndNulNames[wasmJs, node]",
+                  "time": "2.583",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedLegacyTest",
+                  "name": "malformedInputAndDestroyConsumePublishedSession[wasmJs, node]",
+                  "time": "0.111",
+                  "outcome": "passed"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "testDebugUnitTest": {
+      "methods": 5,
+      "modules": {
+        "rfc-client": {
+          "methods": 3,
+          "reports": [
+            {
+              "path": "rfc-client/build/test-results/testDebugUnitTest/TEST-consumer.PublishedRfcTest.xml",
+              "sha256": "63d6eeacdfaf0b1172b384f543686990815f7de9899ce3eca78794024ba980b9",
+              "suite": {
+                "name": "consumer.PublishedRfcTest",
+                "tests": "3",
+                "skipped": "0",
+                "failures": "0",
+                "errors": "0",
+                "timestamp": "2026-10-26T19:15:40.750Z",
+                "hostname": "c9d49951d07d",
+                "time": "6.503"
+              },
+              "cases": [
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "officialP256PublicMessagesConfirmationsAndKey",
+                  "time": "4.541",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "incorrectConfirmationIsTerminalInPublishedLibrary",
+                  "time": "0.917",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedRfcTest",
+                  "name": "independentEdwardsPublicMessagesConfirmationsAndKey",
+                  "time": "1.033",
+                  "outcome": "passed"
+                }
+              ]
+            }
+          ]
+        },
+        "legacy-client": {
+          "methods": 2,
+          "reports": [
+            {
+              "path": "legacy-client/build/test-results/testDebugUnitTest/TEST-consumer.PublishedLegacyTest.xml",
+              "sha256": "2991ce9de51def91c6c18ac129e824f5438e3683fd0669c168a37a7ed1b61fa1",
+              "suite": {
+                "name": "consumer.PublishedLegacyTest",
+                "tests": "2",
+                "skipped": "0",
+                "failures": "0",
+                "errors": "0",
+                "timestamp": "2026-10-26T19:15:32.014Z",
+                "hostname": "c9d49951d07d",
+                "time": "2.173"
+              },
+              "cases": [
+                {
+                  "classname": "consumer.PublishedLegacyTest",
+                  "name": "malformedInputAndDestroyConsumePublishedSession",
+                  "time": "0.528",
+                  "outcome": "passed"
+                },
+                {
+                  "classname": "consumer.PublishedLegacyTest",
+                  "name": "hardenedPinnedOracleIncludingHighBitAndNulNames",
+                  "time": "1.644",
+                  "outcome": "passed"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "total_method_executions": 25,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0
+}

@@ -1,0 +1,121 @@
+{
+  "artifact": {
+    "id": 12680820690,
+    "name": "kadb-toolchain-consumer-darwin-arm64",
+    "size_in_bytes": 91122,
+    "url": "https://api.github.com/repos/Flyfish233/spake2/actions/artifacts/12680820690",
+    "archive_download_url": "https://api.github.com/repos/Flyfish233/spake2/actions/artifacts/12680820690/zip",
+    "expired": false,
+    "created_at": "2026-10-26T19:16:08Z",
+    "expires_at": "2026-11-09T19:16:07Z",
+    "updated_at": "2026-10-26T19:16:08Z",
+    "digest": "sha256:fdcd24757ed76514eea26834a15fc748053478a6819ab492f0a1858f8c31ad7b",
+    "workflow_run": {
+      "id": 40384173898,
+      "repository_id": 1434031581,
+      "head_repository_id": 1434031581,
+      "head_branch": "work/spake2-implementation",
+      "head_sha": "027d6dc00f2c92502ca98b878d1940a358590be5"
+    }
+  },
+  "job": {
+    "id": 121789389622,
+    "name": "kadb-toolchain-consumer (macos-26, darwin-arm64, false, macosArm64Test iosSimulatorArm64Test link...",
+    "status": "completed",
+    "conclusion": "failure",
+    "run_id": 40384173898,
+    "logs_url": null,
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1
+      },
+      {
+        "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2
+      },
+      {
+        "name": "Select isolated consumer and evidence paths",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3
+      },
+      {
+        "name": "Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4
+      },
+      {
+        "name": "Run gradle/actions/setup-gradle@748248ddd2a24f49513d8f472f81c3a07d4d50e1",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5
+      },
+      {
+        "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6
+      },
+      {
+        "name": "Install the Android SDK used by the Kadb toolchain profile",
+        "status": "completed",
+        "conclusion": "skipped",
+        "number": 7
+      },
+      {
+        "name": "Copy only the standalone consumer fixtures outside the producer checkout",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8
+      },
+      {
+        "name": "Record available Apple runtimes",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9
+      },
+      {
+        "name": "Resolve, compile, link and run the Kadb toolchain consumers",
+        "status": "completed",
+        "conclusion": "failure",
+        "number": 10
+      },
+      {
+        "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 11
+      },
+      {
+        "name": "Post Run gradle/actions/setup-gradle@748248ddd2a24f49513d8f472f81c3a07d4d50e1",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 20
+      },
+      {
+        "name": "Post Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 21
+      },
+      {
+        "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 22
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 23
+      }
+    ]
+  }
+}

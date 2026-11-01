@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="consumer.PublishedRfcTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-26T19:14:52.658Z" hostname="c9d49951d07d" time="7.809">
+  <properties/>
+  <testcase name="officialP256PublicMessagesConfirmationsAndKey[wasmJs, node]" classname="consumer.PublishedRfcTest" time="2.965"/>
+  <testcase name="independentEdwardsPublicMessagesConfirmationsAndKey[wasmJs, node]" classname="consumer.PublishedRfcTest" time="4.245"/>
+  <testcase name="incorrectConfirmationIsTerminalInPublishedLibrary[wasmJs, node]" classname="consumer.PublishedRfcTest" time="0.589"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,189 @@
+F.FFFFFFFFFFFFFFFFFFF
+======================================================================
+FAIL: test_optimized_python_cannot_suppress_verification_assertions (test_legacy_oracle_protocol.OracleProtocolTest.test_optimized_python_cannot_suppress_verification_assertions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 96, in test_optimized_python_cannot_suppress_verification_assertions
+    self.assertNotEqual(0, result.returncode)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_rejects_every_truncated_record (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_every_truncated_record) (fields=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 35, in test_rejects_every_truncated_record
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_every_truncated_record (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_every_truncated_record) (fields=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 35, in test_rejects_every_truncated_record
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_every_truncated_record (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_every_truncated_record) (fields=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 35, in test_rejects_every_truncated_record
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_every_truncated_record (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_every_truncated_record) (fields=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 35, in test_rejects_every_truncated_record
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_every_truncated_record (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_every_truncated_record) (fields=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 35, in test_rejects_every_truncated_record
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_every_truncated_record (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_every_truncated_record) (fields=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 35, in test_rejects_every_truncated_record
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_extra_columns (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_extra_columns)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 39, in test_rejects_extra_columns
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_invalid_field_encodings_and_status (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_invalid_field_encodings_and_status) (field=0, length=62)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 57, in test_rejects_invalid_field_encodings_and_status
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_invalid_field_encodings_and_status (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_invalid_field_encodings_and_status) (field=1, length=66)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 57, in test_rejects_invalid_field_encodings_and_status
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_invalid_field_encodings_and_status (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_invalid_field_encodings_and_status) (field=2, length=64)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 57, in test_rejects_invalid_field_encodings_and_status
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_invalid_field_encodings_and_status (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_invalid_field_encodings_and_status) (field=3, length=126)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 57, in test_rejects_invalid_field_encodings_and_status
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_invalid_field_encodings_and_status (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_invalid_field_encodings_and_status) (field=0, length=64)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 57, in test_rejects_invalid_field_encodings_and_status
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_invalid_field_encodings_and_status (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_invalid_field_encodings_and_status) (field=4, length=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 57, in test_rejects_invalid_field_encodings_and_status
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_invalid_field_encodings_and_status (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_invalid_field_encodings_and_status) (field=4, length=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 57, in test_rejects_invalid_field_encodings_and_status
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_invalid_field_encodings_and_status (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_invalid_field_encodings_and_status) (field=5, length=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 57, in test_rejects_invalid_field_encodings_and_status
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_invalid_field_encodings_and_status (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_invalid_field_encodings_and_status) (field=5, length=126)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 57, in test_rejects_invalid_field_encodings_and_status
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_invalid_field_encodings_and_status (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_invalid_field_encodings_and_status)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 61, in test_rejects_invalid_field_encodings_and_status
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_missing_or_extra_records (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_missing_or_extra_records) (count=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 45, in test_rejects_missing_or_extra_records
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejects_missing_or_extra_records (test_legacy_oracle_protocol.OracleProtocolTest.test_rejects_missing_or_extra_records) (count=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 46, in test_rejects_missing_or_extra_records
+    self.parse(replies)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_legacy_oracle_protocol.py", line 28, in parse
+    return oracle.run(Path("test-oracle"), requests or [self.request])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/legacy_regenerate_oracle.py", line 25, in run
+    assert len(result) == len(rows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.673s
+
+FAILED (failures=20)

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="macosArm64Test.consumer.PublishedRfcTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-26T19:15:02.175Z" hostname="sat12-bq154-379456e3-f29d-431c-bb0d-417bf11fd09c-7AD795F8EE12.local" time="8.816">
+  <properties/>
+  <testcase name="officialP256PublicMessagesConfirmationsAndKey[macosArm64]" classname="macosArm64Test.consumer.PublishedRfcTest" time="4.155"/>
+  <testcase name="independentEdwardsPublicMessagesConfirmationsAndKey[macosArm64]" classname="macosArm64Test.consumer.PublishedRfcTest" time="4.657"/>
+  <testcase name="incorrectConfirmationIsTerminalInPublishedLibrary[macosArm64]" classname="macosArm64Test.consumer.PublishedRfcTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

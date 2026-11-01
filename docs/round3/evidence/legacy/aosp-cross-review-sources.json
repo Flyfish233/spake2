@@ -1,0 +1,26 @@
+[
+  {
+    "repository": "AOSP platform/packages/modules/adb",
+    "revision": "1cf2f017d312f73b3dc53bda85ef2610e35a80e9",
+    "path": "pairing_auth/aes_128_gcm.cpp",
+    "url": "https://android.googlesource.com/platform/packages/modules/adb/+/1cf2f017d312f73b3dc53bda85ef2610e35a80e9/pairing_auth/aes_128_gcm.cpp?format=TEXT",
+    "sha256": "94b2c14aac08580ca65a5953de2a39d666ee714e27756880ca453a2da0fc4a11",
+    "bytes": 3411
+  },
+  {
+    "repository": "AOSP platform/packages/modules/adb",
+    "revision": "1cf2f017d312f73b3dc53bda85ef2610e35a80e9",
+    "path": "pairing_auth/pairing_auth.cpp",
+    "url": "https://android.googlesource.com/platform/packages/modules/adb/+/1cf2f017d312f73b3dc53bda85ef2610e35a80e9/pairing_auth/pairing_auth.cpp?format=TEXT",
+    "sha256": "be264bbe73130af5bf6a0f2a3af628f565026169fac6c3883b492095ee8aff77",
+    "bytes": 9603
+  },
+  {
+    "repository": "AOSP platform/packages/modules/adb",
+    "revision": "1cf2f017d312f73b3dc53bda85ef2610e35a80e9",
+    "path": "pairing_auth/include/adb/pairing/aes_128_gcm.h",
+    "url": "https://android.googlesource.com/platform/packages/modules/adb/+/1cf2f017d312f73b3dc53bda85ef2610e35a80e9/pairing_auth/include/adb/pairing/aes_128_gcm.h?format=TEXT",
+    "sha256": "9e3be0771a74ee02e6ec100cca34df9808326212a588620284b1e9e1c1b049a2",
+    "bytes": 2515
+  }
+]

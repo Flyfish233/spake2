@@ -1,0 +1,86 @@
+{
+  "review_date": "2026-10-27",
+  "timezone": "Asia/Shanghai",
+  "kadb_repository": "https://github.com/Flyfish233/Kadb",
+  "kadb_branch": "experiment/kmp-native-core",
+  "kadb_commit": "49a88b14e9b731e4c086c920eb74664450c79d9f",
+  "spake2_pinned_commit": "b837aba27bebc1050965fa124c2efa54b4e4544a",
+  "read_only_checkout_clean": true,
+  "files": [
+    {
+      "kadb_path": "third-party/spake2/upstream/LICENSE",
+      "spake2_path": "LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "matches_manifest": true,
+      "matches_spake2_pinned_git_blob": true
+    },
+    {
+      "kadb_path": "third-party/spake2/upstream/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/EntropySource.kt",
+      "spake2_path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/EntropySource.kt",
+      "sha256": "dfc55282188a4c8a97752d01b153dfdf15f1f919df3c0359d74a5a09b19826bc",
+      "matches_manifest": true,
+      "matches_spake2_pinned_git_blob": true
+    },
+    {
+      "kadb_path": "third-party/spake2/upstream/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/InternalSpake2Api.kt",
+      "spake2_path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/InternalSpake2Api.kt",
+      "sha256": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6",
+      "matches_manifest": true,
+      "matches_spake2_pinned_git_blob": true
+    },
+    {
+      "kadb_path": "third-party/spake2/upstream/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt",
+      "spake2_path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt",
+      "sha256": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451",
+      "matches_manifest": true,
+      "matches_spake2_pinned_git_blob": true
+    },
+    {
+      "kadb_path": "third-party/spake2/upstream/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt",
+      "spake2_path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt",
+      "sha256": "006a71ead2a4c1038635435547a22ea231aace49920de1a43b18622c942c0eb8",
+      "matches_manifest": true,
+      "matches_spake2_pinned_git_blob": true
+    },
+    {
+      "kadb_path": "third-party/spake2/upstream/primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt",
+      "spake2_path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt",
+      "sha256": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd",
+      "matches_manifest": true,
+      "matches_spake2_pinned_git_blob": true
+    },
+    {
+      "kadb_path": "third-party/spake2/upstream/legacy/src/commonMain/kotlin/io/github/flyfish233/spake2/legacy/LegacySpake25519.kt",
+      "spake2_path": "legacy/src/commonMain/kotlin/io/github/flyfish233/spake2/legacy/LegacySpake25519.kt",
+      "sha256": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138",
+      "matches_manifest": true,
+      "matches_spake2_pinned_git_blob": true
+    }
+  ],
+  "kotlin_runtime_files": 6,
+  "compiler_profile": {
+    "gradle": "9.6.0",
+    "kotlin": "2.4.20",
+    "agp": "9.4.0",
+    "android_plugin": "com.android.kotlin.multiplatform.library",
+    "jdk_toolchain": 25,
+    "compile_sdk": 37,
+    "min_sdk": 23
+  },
+  "targets": [
+    "android",
+    "linuxX64",
+    "iosArm64",
+    "iosSimulatorArm64",
+    "macosArm64",
+    "macosX64"
+  ],
+  "consumer_imports": [
+    "io.github.flyfish233.spake2.EntropySource",
+    "io.github.flyfish233.spake2.Role",
+    "io.github.flyfish233.spake2.Spake2Exception",
+    "io.github.flyfish233.spake2.legacy.LegacyPasswordScalarMode",
+    "io.github.flyfish233.spake2.legacy.LegacySpake25519"
+  ],
+  "evidence_scope": "Read-only source/build/provenance inspection; no Kadb build or runtime test was executed in this review."
+}

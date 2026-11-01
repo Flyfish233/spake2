@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/tests",
+    "-p",
+    "test_legacy_oracle_protocol.py"
+  ],
+  "exitCode": 1,
+  "verifierSha256": "1dc6652e7998147d6bd710e7b9dd8f059104f913440700e000601bdb7946b17e",
+  "testSha256": "d2ebef92a24ba58e1121aba9a3ec5440ba4901a1d5a2eb92a64bb3ce5c7e4419",
+  "baselineCommit": "4f17f4f19d470758f8abc882ee8d67bcddcd59b6"
+}

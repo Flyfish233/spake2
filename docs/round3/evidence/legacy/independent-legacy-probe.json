@@ -1,0 +1,784 @@
+{
+  "executedAtUtc": "2026-11-01T02:41:02.522933+00:00",
+  "sourceCommit": "88e0233193ce4cf08d974fcd12ed0255624c6536",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "scope": "New Python affine/algebraic execution over retained C-oracle fixtures; not a new C or Kotlin execution",
+  "deterministicEndpointChecks": [
+    {
+      "id": "normal",
+      "role": "alice",
+      "result": "PASS"
+    },
+    {
+      "id": "normal",
+      "role": "bob",
+      "result": "PASS"
+    },
+    {
+      "id": "high-bit-carry-2^252",
+      "role": "alice",
+      "result": "PASS"
+    },
+    {
+      "id": "high-bit-carry-2^252",
+      "role": "bob",
+      "result": "PASS"
+    },
+    {
+      "id": "high-bit-carry-2^252-plus-5",
+      "role": "alice",
+      "result": "PASS"
+    },
+    {
+      "id": "high-bit-carry-2^252-plus-5",
+      "role": "bob",
+      "result": "PASS"
+    },
+    {
+      "id": "order-minus-one",
+      "role": "alice",
+      "result": "PASS"
+    },
+    {
+      "id": "order-minus-one",
+      "role": "bob",
+      "result": "PASS"
+    },
+    {
+      "id": "old-alice",
+      "role": "alice",
+      "result": "PASS"
+    },
+    {
+      "id": "old-alice",
+      "role": "bob",
+      "result": "PASS"
+    },
+    {
+      "id": "old-bob",
+      "role": "alice",
+      "result": "PASS"
+    },
+    {
+      "id": "old-bob",
+      "role": "bob",
+      "result": "PASS"
+    },
+    {
+      "id": "aosp-adb-names",
+      "role": "alice",
+      "result": "PASS"
+    },
+    {
+      "id": "aosp-adb-names",
+      "role": "bob",
+      "result": "PASS"
+    }
+  ],
+  "highBitEndpoints": [
+    {
+      "id": "high-bit-carry-2^252",
+      "role": "alice",
+      "privateScalarHex": "0000000000000000000000000000000000000000000000000000000000000080"
+    },
+    {
+      "id": "high-bit-carry-2^252-plus-5",
+      "role": "alice",
+      "privateScalarHex": "2800000000000000000000000000000000000000000000000000000000000080"
+    },
+    {
+      "id": "order-minus-one",
+      "role": "alice",
+      "privateScalarHex": "609faee7d21893c0b2e6bc17f5cef7a600000000000000000000000000000080"
+    }
+  ],
+  "peerChecks": [
+    {
+      "id": "invalid-length-31",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "invalid-encoding-all-ff",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "corrupted-valid-message-bit0",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "identity-after-unmasking",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-0",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-1",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-2",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-3",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-4",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-5",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-6",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-7",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-8",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-9",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-10",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-11",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-12",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-13",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-14",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-15",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-16",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-17",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-18",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-19",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-20",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-21",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-22",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-23",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-24",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-25",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-26",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-27",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-28",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-29",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-30",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-31",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-32",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-33",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-34",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-35",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-36",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-37",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-38",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-39",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-40",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-41",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-42",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-43",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-44",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-45",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-46",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-47",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-48",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-49",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-50",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-51",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-52",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-53",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-54",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-55",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-56",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-57",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-58",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-59",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-60",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-61",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-62",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-63",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-64",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-65",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-66",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-67",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-68",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-69",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-70",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-71",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-72",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-73",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-74",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-75",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-76",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-77",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-78",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-79",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-80",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-81",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-82",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-83",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-84",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-85",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-86",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-87",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-88",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-89",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-90",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-91",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-92",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-93",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-94",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-95",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-96",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-97",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-98",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-99",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-100",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-101",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-102",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-103",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-104",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-105",
+      "accepted": true,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-106",
+      "accepted": false,
+      "result": "PASS"
+    },
+    {
+      "id": "fresh-peer-107",
+      "accepted": false,
+      "result": "PASS"
+    }
+  ],
+  "unsafeModeProjectionWitnesses": [
+    {
+      "fixtureIndex": 152,
+      "role": "bob",
+      "messageHex": "1babf69caa54ee7313e94d275cf5f789d490b8526997592d0a8888272d101bef",
+      "projectionHex": "0100000000000000000000000000000000000000000000000000000000000000",
+      "recoveredReducedScalarMod8": 0
+    },
+    {
+      "fixtureIndex": 304,
+      "role": "bob",
+      "messageHex": "21fefae5630e68171dd3a0b6d2aa1b070e6414edb567a8f08de8591bfbeaac19",
+      "projectionHex": "c7176a703d4dd84fba3c0b760d10670f2a2053fa2c39ccc64ec7fd7792ac037a",
+      "recoveredReducedScalarMod8": 1
+    },
+    {
+      "fixtureIndex": 76,
+      "role": "bob",
+      "messageHex": "1a45ae604ff15d9b51432a401dd66b5e45ff2f219f6198449fafcddaf64103dd",
+      "projectionHex": "0000000000000000000000000000000000000000000000000000000000000080",
+      "recoveredReducedScalarMod8": 2
+    },
+    {
+      "fixtureIndex": 19,
+      "role": "bob",
+      "messageHex": "f620f790a84fa49c8dad94dce3a7a0853d466875b4fbfb87c8008f970bd1c94b",
+      "projectionHex": "26e8958fc2b227b045c3f489f2ef98f0d5dfac05d3c63339b13802886d53fc05",
+      "recoveredReducedScalarMod8": 3
+    },
+    {
+      "fixtureIndex": 38,
+      "role": "bob",
+      "messageHex": "6bf5c7725275b94d53190744171fc4c52b2d1080fabdd7f120439d1ad0818dc1",
+      "projectionHex": "ecffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+      "recoveredReducedScalarMod8": 4
+    },
+    {
+      "fixtureIndex": 0,
+      "role": "bob",
+      "messageHex": "6736ebaecbb78344f8967594acde8db69988469ef9845cbde7219350208be834",
+      "projectionHex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "recoveredReducedScalarMod8": 6
+    },
+    {
+      "fixtureIndex": 95,
+      "role": "bob",
+      "messageHex": "b6a3534c726a76d3c00bbe3199f0b31782d3c1337fb9eff9e51f5b3eee10a926",
+      "projectionHex": "c7176a703d4dd84fba3c0b760d10670f2a2053fa2c39ccc64ec7fd7792ac03fa",
+      "recoveredReducedScalarMod8": 7
+    }
+  ],
+  "unsafeAliceParityWitnesses": [
+    {
+      "fixtureIndex": 0,
+      "role": "alice",
+      "messageHex": "8f57c28af65af4b92711b92186eb85534fc24b6aaf2569072212b5ad07e1c545",
+      "projectionHex": "0100000000000000000000000000000000000000000000000000000000000000",
+      "recoveredReducedScalarMod2": 0
+    },
+    {
+      "fixtureIndex": 34,
+      "role": "alice",
+      "messageHex": "4660d6d909d796c0524805c80b61a89dc513c9e5fad658a49950b58cc5af4889",
+      "projectionHex": "ecffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+      "recoveredReducedScalarMod2": 1
+    }
+  ],
+  "maskProjectionOrders": {
+    "M": 2,
+    "N": 8
+  },
+  "hardenedProjectionControls": [
+    {
+      "fixtureIndex": 1,
+      "role": "alice",
+      "projectionHex": "0100000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "fixtureIndex": 1,
+      "role": "bob",
+      "projectionHex": "0100000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "fixtureIndex": 2,
+      "role": "alice",
+      "projectionHex": "0100000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "fixtureIndex": 2,
+      "role": "bob",
+      "projectionHex": "0100000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "fixtureIndex": 3,
+      "role": "alice",
+      "projectionHex": "0100000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "fixtureIndex": 3,
+      "role": "bob",
+      "projectionHex": "0100000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "fixtureIndex": 4,
+      "role": "alice",
+      "projectionHex": "0100000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "fixtureIndex": 4,
+      "role": "bob",
+      "projectionHex": "0100000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "negativeZeroTranscriptBinding": {
+    "sameDecodedPoint": true,
+    "differentKeys": true,
+    "positiveKey": "3fb0a64f82c1a2925748217cb30154a0c6fa1aba8fb3a5788f26ada3c88403a70fc1c03ea8aae38c28a30af979653f5e7df9ebd93afc2dc4b88f5cfe92536c5d",
+    "negativeKey": "94da8a8ecfd12aeb0f513483268f9b21f32f29381b3b579850801f6e70eb6c73a1de813a015f7f9d85a89e4f3fa1606005e406a1b04cbc97da25e3edfd94b256"
+  },
+  "fixtureSha256": {
+    "boringssl-spake2-vectors.json": "94ed5b9c564794eac6d2494966ff3ae479d872171f6a70286f504cbe4bfe8d94",
+    "fresh-boringssl-oracle.json": "37a7af4281ba9f4c41d6f840861c2ea6a4750c1787bc01c15bb984aa3b1b7a1f",
+    "boringssl-spake2-fuzz-vectors.jsonl": "310d4e3b9d701a8478eaab4459ca2a56ba1f22158afa8fa8fae34d56e087f183"
+  },
+  "probeSha256": "a87cb89d7817aeb44a460d3edc09e396f0d35a13ee367f38c59e28413c8d3bf9",
+  "result": "PASS"
+}

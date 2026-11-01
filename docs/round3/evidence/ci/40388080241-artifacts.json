@@ -1,0 +1,80 @@
+{
+  "artifacts": [
+    {
+      "id": 12684933319,
+      "name": "darwin-test-results-macos-15-intel",
+      "size_in_bytes": 50907,
+      "url": "https://api.github.com/repos/Flyfish233/spake2/actions/artifacts/12684933319",
+      "archive_download_url": "https://api.github.com/repos/Flyfish233/spake2/actions/artifacts/12684933319/zip",
+      "expired": false,
+      "created_at": "2026-10-26T20:11:46Z",
+      "expires_at": "2026-11-09T20:10:41Z",
+      "updated_at": "2026-10-26T20:11:46Z",
+      "digest": "sha256:87fdf204adbd89a52eba810b18c3781d113d8b56fbcc259bf6280b0211b6b947",
+      "workflow_run": {
+        "id": 40388080241,
+        "repository_id": 1434031581,
+        "head_repository_id": 1434031581,
+        "head_branch": "work/spake2-implementation",
+        "head_sha": "59105290820bcbfd4e0336a2e7713006a461527f"
+      }
+    },
+    {
+      "id": 12682635065,
+      "name": "linux-test-results",
+      "size_in_bytes": 313257,
+      "url": "https://api.github.com/repos/Flyfish233/spake2/actions/artifacts/12682635065",
+      "archive_download_url": "https://api.github.com/repos/Flyfish233/spake2/actions/artifacts/12682635065/zip",
+      "expired": false,
+      "created_at": "2026-10-26T19:45:19Z",
+      "expires_at": "2026-11-09T19:45:18Z",
+      "updated_at": "2026-10-26T19:45:19Z",
+      "digest": "sha256:d466609a8872db3212a9a5d1e782b3d0e6418ddbe4308dbd6dd198ea53a543fc",
+      "workflow_run": {
+        "id": 40388080241,
+        "repository_id": 1434031581,
+        "head_repository_id": 1434031581,
+        "head_branch": "work/spake2-implementation",
+        "head_sha": "59105290820bcbfd4e0336a2e7713006a461527f"
+      }
+    },
+    {
+      "id": 12681872923,
+      "name": "android-build-and-unit-tests",
+      "size_in_bytes": 259292,
+      "url": "https://api.github.com/repos/Flyfish233/spake2/actions/artifacts/12681872923",
+      "archive_download_url": "https://api.github.com/repos/Flyfish233/spake2/actions/artifacts/12681872923/zip",
+      "expired": false,
+      "created_at": "2026-10-26T19:37:21Z",
+      "expires_at": "2026-11-09T19:37:20Z",
+      "updated_at": "2026-10-26T19:37:21Z",
+      "digest": "sha256:570c26a86b8e740e8e627971ed2d7361c921072b241cf2dacd31f122b3bb8bc0",
+      "workflow_run": {
+        "id": 40388080241,
+        "repository_id": 1434031581,
+        "head_repository_id": 1434031581,
+        "head_branch": "work/spake2-implementation",
+        "head_sha": "59105290820bcbfd4e0336a2e7713006a461527f"
+      }
+    },
+    {
+      "id": 12680978944,
+      "name": "darwin-test-results-macos-26",
+      "size_in_bytes": 52133,
+      "url": "https://api.github.com/repos/Flyfish233/spake2/actions/artifacts/12680978944",
+      "archive_download_url": "https://api.github.com/repos/Flyfish233/spake2/actions/artifacts/12680978944/zip",
+      "expired": false,
+      "created_at": "2026-10-26T19:43:49Z",
+      "expires_at": "2026-11-09T19:43:48Z",
+      "updated_at": "2026-10-26T19:43:49Z",
+      "digest": "sha256:9835db771b5234dc216b33e32a42b64c06efb41ec86a93f04beb10435440ba9f",
+      "workflow_run": {
+        "id": 40388080241,
+        "repository_id": 1434031581,
+        "head_repository_id": 1434031581,
+        "head_branch": "work/spake2-implementation",
+        "head_sha": "59105290820bcbfd4e0336a2e7713006a461527f"
+      }
+    }
+  ]
+}

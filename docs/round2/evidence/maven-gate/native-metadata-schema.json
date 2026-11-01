@@ -1,0 +1,9 @@
+{
+  "compilerPluginVersion": "2.2.21",
+  "sourceArtifactSha256": "f79965870973bf7cc2b5ec9e762077b82dfb190b6452f43d4d91618a8311f263",
+  "sourceEntry": "org/jetbrains/kotlin/gradle/artifacts/KotlinNativeHostSpecificMetadataArtifact.kt",
+  "sourceEntrySha256": "7330778771248509de578142ad69ff97e4439cbf55d26def3f141d519e149def",
+  "actualGeneratedModuleSha256": "3bcdcb904ebca80e22c63a8b38228239acecadcfb2733e51774245a6030b1fb7",
+  "schema": "KotlinNativeTarget host-specific metadata inherits API attributes/dependencies, changes usage to kotlin-metadata, and publishes a Jar with classifier metadata.",
+  "inspection": "Official source lines 27-42 create the Native metadata configuration; lines 49-53 set the Jar classifier; lines 76-79 attach it to the target metadata configuration."
+}

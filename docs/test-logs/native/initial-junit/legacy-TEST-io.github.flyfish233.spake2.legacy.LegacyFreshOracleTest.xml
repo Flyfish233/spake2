@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:13:13.449Z" hostname="c9d49951d07d" time="55.976">
+  <properties/>
+  <testcase name="replayTwentyFourFreshExchanges[linuxX64]" classname="io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest" time="18.609"/>
+  <testcase name="replay108MalformedAndBoundaryPeerEncodings[linuxX64]" classname="io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest" time="37.361"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

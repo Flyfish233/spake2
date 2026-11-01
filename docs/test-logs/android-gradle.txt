@@ -1,0 +1,278 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :preBuild UP-TO-DATE
+> Task :preDebugBuild UP-TO-DATE
+> Task :mergeDebugJniLibFolders
+> Task :mergeDebugNativeLibs NO-SOURCE
+> Task :stripDebugDebugSymbols NO-SOURCE
+> Task :copyDebugJniLibsProjectAndLocalJars
+> Task :kmpPartiallyResolvedDependenciesChecker
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :generateDebugResValues
+> Task :generateDebugResources
+> Task :packageDebugResources
+> Task :primitives:kmpPartiallyResolvedDependenciesChecker
+> Task :primitives:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :primitives:preBuild UP-TO-DATE
+> Task :primitives:preDebugBuild UP-TO-DATE
+> Task :primitives:generateDebugResValues
+> Task :primitives:generateDebugResources
+> Task :primitives:packageDebugResources
+> Task :primitives:parseDebugLocalResources
+> Task :parseDebugLocalResources
+> Task :primitives:generateDebugRFile
+> Task :generateDebugRFile
+> Task :primitives:javaPreCompileDebug
+> Task :extractDeepLinksForAarDebug
+> Task :mergeDebugShaders
+> Task :compileDebugShaders NO-SOURCE
+> Task :debugAssetsCopyForAGP NO-SOURCE
+> Task :generateDebugAssets UP-TO-DATE
+> Task :mergeDebugAssets
+> Task :javaPreCompileDebug
+> Task :prepareDebugArtProfile
+> Task :prepareLintJarForPublish
+> Task :processDebugManifest
+> Task :writeDebugAarMetadata
+> Task :legacy:preBuild UP-TO-DATE
+> Task :legacy:preDebugBuild UP-TO-DATE
+> Task :legacy:mergeDebugJniLibFolders
+> Task :legacy:mergeDebugNativeLibs NO-SOURCE
+> Task :legacy:stripDebugDebugSymbols NO-SOURCE
+> Task :legacy:copyDebugJniLibsProjectAndLocalJars
+> Task :legacy:kmpPartiallyResolvedDependenciesChecker
+> Task :legacy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :legacy:generateDebugResValues
+> Task :legacy:generateDebugResources
+> Task :legacy:packageDebugResources
+> Task :legacy:parseDebugLocalResources
+> Task :legacy:generateDebugRFile
+> Task :legacy:extractDeepLinksForAarDebug
+> Task :legacy:mergeDebugShaders
+> Task :legacy:compileDebugShaders NO-SOURCE
+> Task :legacy:debugAssetsCopyForAGP NO-SOURCE
+> Task :legacy:generateDebugAssets UP-TO-DATE
+> Task :legacy:mergeDebugAssets
+> Task :legacy:javaPreCompileDebug
+> Task :legacy:prepareDebugArtProfile
+> Task :legacy:prepareLintJarForPublish
+> Task :legacy:processDebugManifest
+> Task :legacy:writeDebugAarMetadata
+> Task :primitives:mergeDebugJniLibFolders
+> Task :primitives:mergeDebugNativeLibs NO-SOURCE
+> Task :primitives:stripDebugDebugSymbols NO-SOURCE
+> Task :primitives:copyDebugJniLibsProjectAndLocalJars
+> Task :primitives:extractDeepLinksForAarDebug
+> Task :primitives:mergeDebugShaders
+> Task :primitives:compileDebugShaders NO-SOURCE
+> Task :primitives:debugAssetsCopyForAGP NO-SOURCE
+> Task :primitives:generateDebugAssets UP-TO-DATE
+> Task :primitives:mergeDebugAssets
+> Task :primitives:prepareDebugArtProfile
+> Task :primitives:prepareLintJarForPublish
+> Task :primitives:processDebugManifest
+> Task :primitives:writeDebugAarMetadata
+> Task :preDebugUnitTestBuild UP-TO-DATE
+> Task :generateDebugUnitTestStubRFile
+> Task :javaPreCompileDebugUnitTest
+> Task :legacy:preDebugUnitTestBuild UP-TO-DATE
+> Task :legacy:generateDebugUnitTestStubRFile
+> Task :legacy:javaPreCompileDebugUnitTest
+> Task :primitives:preDebugUnitTestBuild UP-TO-DATE
+> Task :primitives:generateDebugUnitTestStubRFile
+> Task :primitives:javaPreCompileDebugUnitTest
+> Task :primitives:compileDebugKotlinAndroid
+> Task :primitives:compileDebugJavaWithJavac NO-SOURCE
+> Task :primitives:bundleLibCompileToJarDebug
+> Task :primitives:extractDebugAnnotations
+> Task :compileDebugKotlinAndroid
+> Task :extractDebugAnnotations
+> Task :compileDebugJavaWithJavac NO-SOURCE
+> Task :mergeDebugGeneratedProguardFiles
+> Task :mergeDebugConsumerProguardFiles
+> Task :legacy:compileDebugKotlinAndroid
+> Task :processDebugJavaRes
+> Task :legacy:extractDebugAnnotations
+> Task :legacy:compileDebugJavaWithJavac NO-SOURCE
+> Task :legacy:mergeDebugGeneratedProguardFiles
+> Task :legacy:mergeDebugConsumerProguardFiles
+> Task :legacy:processDebugJavaRes
+> Task :legacy:mergeDebugJavaResource
+> Task :mergeDebugJavaResource
+> Task :legacy:syncDebugLibJars
+> Task :syncDebugLibJars
+> Task :bundleDebugAar
+> Task :assembleDebug
+> Task :legacy:bundleDebugAar
+> Task :legacy:assembleDebug
+> Task :primitives:mergeDebugGeneratedProguardFiles
+> Task :primitives:mergeDebugConsumerProguardFiles
+> Task :primitives:processDebugJavaRes
+> Task :primitives:mergeDebugJavaResource
+> Task :bundleLibRuntimeToJarDebug
+> Task :primitives:syncDebugLibJars
+> Task :primitives:bundleDebugAar
+> Task :primitives:assembleDebug
+> Task :bundleLibCompileToJarDebug
+> Task :legacy:bundleLibCompileToJarDebug
+> Task :legacy:bundleLibRuntimeToJarDebug
+> Task :primitives:bundleLibRuntimeToJarDebug
+> Task :legacy:compileDebugUnitTestKotlinAndroid
+> Task :legacy:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :legacy:processDebugUnitTestJavaRes
+> Task :compileDebugUnitTestKotlinAndroid
+
+> Task :legacy:testDebugUnitTest
+
+LegacyDeterministicOracleTest > replaySevenIndependentExchanges PASSED
+
+LegacyDeterministicOracleTest > replayHistoricalPeerInputCases PASSED
+
+LegacyFreshOracleTest > replayTwentyFourFreshExchanges PASSED
+
+LegacyFreshOracleTest > replay108MalformedAndBoundaryPeerEncodings PASSED
+
+LegacyLifecycleTest > callerMutationCannotAliasIdentityOrGeneratedMessage PASSED
+
+LegacyLifecycleTest > destroyIsIdempotentAndTerminal PASSED
+
+LegacyLifecycleTest > entropyExceptionsAndIncorrectLengthsEraseState PASSED
+
+LegacyLifecycleTest > wrongPasswordsAndRolesDoNotCreateAuthentication PASSED
+
+LegacyLifecycleTest > repeatGenerationFailsAndErasesSession PASSED
+
+LegacyLifecycleTest > lengthsFailBeforeUnboundedAllocation PASSED
+
+LegacyLifecycleTest > returnedEntropyIsWipedAndPasswordInputRemainsOwnedByCaller PASSED
+
+LegacyLifecycleTest > reentrantEntropyCallPoisonsOuterSessionEvenIfCallbackCatchesError PASSED
+
+LegacyLifecycleTest > processBeforeGenerateFailsPermanently PASSED
+
+LegacyOracleBatch00Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch01Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch02Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch03Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch04Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch05Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch06Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch07Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch08Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch09Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch10Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch11Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch12Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch13Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch14Test > replay32IndependentOracleExchanges PASSED
+
+LegacyOracleBatch15Test > replay32IndependentOracleExchanges PASSED
+
+LegacyZeroEntropyTest > historicalZeroEphemeralScalarIsPreservedExplicitly PASSED
+
+> Task :compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :processDebugUnitTestJavaRes
+
+> Task :testDebugUnitTest
+
+ProtocolIsolationTest > legacyKeyCannotSatisfyRfcConfirmationAndNoFallbackOccurs PASSED
+
+RfcFailureTest > wrongPasswordIdentityAIdentityBAndAadAllPreventKeyRelease PASSED
+
+RfcFailureTest > sameRoleFailsConfirmation PASSED
+
+RfcFailureTest > boundedMalformedInputFuzzIsTerminal PASSED
+
+RfcFailureTest > hostilePointEncodingsAreRejectedAndOwnedSecretsErased PASSED
+
+RfcFailureTest > malformedConfirmationLengthAndContentAreTerminal PASSED
+
+RfcFailureTest > rejectionSamplingRejectsZeroAndOrderAndConsumesFreshEntropy PASSED
+
+RfcFailureTest > cannotReleaseAKeyBeforeConfirmationOrBeforePeerMessage PASSED
+
+RfcFailureTest > invalidScalarAndInputBoundsAreRejectedBeforeUse PASSED
+
+RfcFailureTest > callerArraysAreDefensivelyCopiedAndMessagesHaveIndependentStorage PASSED
+
+RfcFailureTest > sourceFailureWrongLengthAndRepeatedZeroCandidatesTerminateAndWipe PASSED
+
+RfcFailureTest > repeatedOperationsAndDestroyAreTerminal PASSED
+
+RfcFailureTest > successfulKeyCanOnlyBeReleasedOnce PASSED
+
+RfcFailureTest > entropyCallbackReentrancyPoisonsTheOwningOperation PASSED
+
+RfcVectorsTest > edwardsMixedOrderUsesCofactorAndBindsExactPeerEncoding PASSED
+
+RfcVectorsTest > publicP256ApiMatchesOfficialVectorsThroughConfirmation PASSED
+
+RfcVectorsTest > edwardsRfcMaskConstantsArePrimeOrder PASSED
+
+RfcVectorsTest > edwardsRejectsEveryPureTorsionElement PASSED
+
+RfcVectorsTest > publicEdwardsApiMatchesIndependentVectorsThroughConfirmation PASSED
+
+RfcVectorsTest > edwardsEveryIndependentIntermediateField PASSED
+
+RfcVectorsTest > p256EveryOfficialIntermediateField PASSED
+
+> Task :primitives:compileDebugUnitTestKotlinAndroid
+> Task :primitives:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :primitives:processDebugUnitTestJavaRes
+
+> Task :primitives:testDebugUnitTest
+
+HashBoundaryTest > independentPaddingBoundaryVectors PASSED
+
+HashTest > hkdfRfc5869 PASSED
+
+HashTest > sha512StandardVectors PASSED
+
+HashTest > sha256StandardVectors PASSED
+
+HashTest > hkdfBoundsAndInputOwnership PASSED
+
+HashTest > hmacRfc4231 PASSED
+
+ScaffoldTest > entropyContractIsAnApplicationBoundary PASSED
+
+Edwards25519MathTest > strictAndHistoricalPointDecodersAreSeparated PASSED
+
+Edwards25519MathTest > scalarReductionBoundaries PASSED
+
+Edwards25519MathTest > rfc8032BasePointAndPublicKey PASSED
+
+Edwards25519MathTest > fullWidthHighBitIsPreserved PASSED
+
+Edwards25519MathTest > torsionAndPrimeOrderChecks PASSED
+
+ModMathTest > resultsDoNotAliasInputsOrConstants PASSED
+
+ModMathTest > canonicalDecodingAndSelection PASSED
+
+ModMathTest > independentPythonIntegerVectors PASSED
+
+P256MathTest > independentPythonAndOpenSslScalarVectors PASSED
+
+P256MathTest > malformedAndNonCanonicalPointEncodings PASSED
+
+P256MathTest > exceptionalAdditionAndInputOwnership PASSED
+w: Detected multiple Kotlin daemon sessions at 
+
+BUILD SUCCESSFUL in 3m 27s
+93 actionable tasks: 93 executed

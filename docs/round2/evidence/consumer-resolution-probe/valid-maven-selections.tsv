@@ -1,0 +1,3 @@
+configuration	coordinate	variant	artifact
+compileClasspath	io.github.flyfish233:spake2-legacy-jvm:0.1.0-dev.round2-local-final	io.github.flyfish233:spake2-legacy-jvm:0.1.0-dev.round2-local-final variant jvmApiElements-published	legacy-jvm-0.1.0-dev.round2-local-final.jar
+compileClasspath	io.github.flyfish233:spake2-primitives-jvm:0.1.0-dev.round2-local-final	io.github.flyfish233:spake2-primitives-jvm:0.1.0-dev.round2-local-final variant jvmApiElements-published	primitives-jvm-0.1.0-dev.round2-local-final.jar

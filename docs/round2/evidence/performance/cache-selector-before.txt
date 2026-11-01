@@ -1,0 +1,39 @@
+FF.FF
+======================================================================
+FAIL: test_ambiguous_canonical_jars_are_rejected (test_performance_cache.PerformanceCacheTest.test_ambiguous_canonical_jars_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_performance_cache.py", line 102, in test_ambiguous_canonical_jars_are_rejected
+    with self.assertRaisesRegex(SystemExit, "Ambiguous cached kotlin-stdlib:2.2.21"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: SystemExit not raised
+
+======================================================================
+FAIL: test_annotations_sources_are_never_selected (test_performance_cache.PerformanceCacheTest.test_annotations_sources_are_never_selected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_performance_cache.py", line 91, in test_annotations_sources_are_never_selected
+    self.assertIn(str(self.jars["annotations"]), command[2].split(os.pathsep))
+AssertionError: '/tmp/tmpuc2q6t3p/gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/binary/annotations-23.0.0.jar' not found in ['/tmp/tmpuc2q6t3p/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.2.21/binary/kotlin-compiler-embeddable-2.2.21.jar', '/tmp/tmpuc2q6t3p/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/binary/kotlin-stdlib-2.2.21.jar', '/tmp/tmpuc2q6t3p/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.2.21/binary/kotlin-script-runtime-2.2.21.jar', '/tmp/tmpuc2q6t3p/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.2.21/binary/kotlin-daemon-embeddable-2.2.21.jar', '/tmp/tmpuc2q6t3p/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/binary/kotlin-reflect-1.6.10.jar', '/tmp/tmpuc2q6t3p/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/binary/kotlinx-coroutines-core-jvm-1.8.0.jar', '/tmp/tmpuc2q6t3p/gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/zz-classifier/annotations-23.0.0-sources.jar']
+
+======================================================================
+FAIL: test_only_classifiers_do_not_satisfy_missing_jvm_jar (test_performance_cache.PerformanceCacheTest.test_only_classifiers_do_not_satisfy_missing_jvm_jar)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_performance_cache.py", line 97, in test_only_classifiers_do_not_satisfy_missing_jvm_jar
+    with self.assertRaisesRegex(SystemExit, "Missing cached kotlin-stdlib:2.2.21"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: SystemExit not raised
+
+======================================================================
+FAIL: test_stdlib_metadata_and_sources_are_never_selected (test_performance_cache.PerformanceCacheTest.test_stdlib_metadata_and_sources_are_never_selected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_performance_cache.py", line 83, in test_stdlib_metadata_and_sources_are_never_selected
+    self.assertIn(str(self.jars["kotlin-stdlib"]), command[2].split(os.pathsep))
+AssertionError: '/tmp/tmpmsmf27_j/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/binary/kotlin-stdlib-2.2.21.jar' not found in ['/tmp/tmpmsmf27_j/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.2.21/binary/kotlin-compiler-embeddable-2.2.21.jar', '/tmp/tmpmsmf27_j/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/all/kotlin-stdlib-2.2.21-all.jar', '/tmp/tmpmsmf27_j/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.2.21/binary/kotlin-script-runtime-2.2.21.jar', '/tmp/tmpmsmf27_j/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.2.21/binary/kotlin-daemon-embeddable-2.2.21.jar', '/tmp/tmpmsmf27_j/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/binary/kotlin-reflect-1.6.10.jar', '/tmp/tmpmsmf27_j/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/binary/kotlinx-coroutines-core-jvm-1.8.0.jar', '/tmp/tmpmsmf27_j/gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/binary/annotations-23.0.0.jar']
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.259s
+
+FAILED (failures=4)

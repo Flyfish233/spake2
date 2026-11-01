@@ -1,0 +1,248 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Configuration 'jsNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'jsTestNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'jsNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'jsTestNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'wasmJsNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'wasmJsTestNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'wasmJsNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'wasmJsTestNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+> Task :legacy-client:kmpPartiallyResolvedDependenciesChecker
+> Task :legacy-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :legacy-client:compileKotlinJvm UP-TO-DATE
+> Task :legacy-client:compileJvmMainJava NO-SOURCE
+> Task :legacy-client:jvmProcessResources NO-SOURCE
+> Task :legacy-client:processJvmMainResources SKIPPED
+> Task :legacy-client:jvmMainClasses UP-TO-DATE
+> Task :legacy-client:jvmJar UP-TO-DATE
+> Task :legacy-client:compileTestKotlinJvm UP-TO-DATE
+> Task :legacy-client:compileJvmTestJava NO-SOURCE
+> Task :legacy-client:jvmTestProcessResources NO-SOURCE
+> Task :legacy-client:processJvmTestResources SKIPPED
+> Task :legacy-client:jvmTestClasses UP-TO-DATE
+> Task :legacy-client:jvmTest UP-TO-DATE
+> Task :rfc-client:kmpPartiallyResolvedDependenciesChecker
+> Task :rfc-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :rfc-client:compileKotlinJvm UP-TO-DATE
+> Task :rfc-client:compileJvmMainJava NO-SOURCE
+> Task :rfc-client:jvmProcessResources NO-SOURCE
+> Task :rfc-client:processJvmMainResources SKIPPED
+> Task :rfc-client:jvmMainClasses UP-TO-DATE
+> Task :rfc-client:jvmJar UP-TO-DATE
+> Task :rfc-client:compileTestKotlinJvm UP-TO-DATE
+> Task :rfc-client:compileJvmTestJava NO-SOURCE
+> Task :rfc-client:jvmTestProcessResources NO-SOURCE
+> Task :rfc-client:processJvmTestResources SKIPPED
+> Task :rfc-client:jvmTestClasses UP-TO-DATE
+> Task :rfc-client:jvmTest UP-TO-DATE
+> Task :legacy-client:downloadKotlinNativeDistribution UP-TO-DATE
+> Task :legacy-client:compileKotlinLinuxX64 UP-TO-DATE
+> Task :legacy-client:linuxX64ProcessResources NO-SOURCE
+> Task :legacy-client:linuxX64MainKlibrary UP-TO-DATE
+> Task :legacy-client:compileTestKotlinLinuxX64 UP-TO-DATE
+> Task :legacy-client:linkDebugTestLinuxX64 UP-TO-DATE
+> Task :legacy-client:linuxX64Test UP-TO-DATE
+> Task :rfc-client:downloadKotlinNativeDistribution UP-TO-DATE
+> Task :rfc-client:compileKotlinLinuxX64 UP-TO-DATE
+> Task :rfc-client:linuxX64ProcessResources NO-SOURCE
+> Task :rfc-client:linuxX64MainKlibrary UP-TO-DATE
+> Task :rfc-client:compileTestKotlinLinuxX64 UP-TO-DATE
+> Task :rfc-client:linkDebugTestLinuxX64 UP-TO-DATE
+> Task :rfc-client:linuxX64Test UP-TO-DATE
+> Task :kotlinKotlinNpmCachesSetup
+> Task :kotlinNodeJsSetup UP-TO-DATE
+> Task :kotlinRestoreYarnLock
+> Task :kotlinYarnSetup UP-TO-DATE
+> Task :legacy-client:jsPackageJson UP-TO-DATE
+> Task :legacy-client:jsTestPackageJson UP-TO-DATE
+> Task :rfc-client:jsPackageJson UP-TO-DATE
+> Task :rfc-client:jsTestPackageJson UP-TO-DATE
+> Task :legacy-client:jsPublicPackageJson UP-TO-DATE
+> Task :legacy-client:jsTestPublicPackageJson UP-TO-DATE
+> Task :rfc-client:jsPublicPackageJson UP-TO-DATE
+> Task :rfc-client:jsTestPublicPackageJson UP-TO-DATE
+> Task :kotlinPackageJsonUmbrella UP-TO-DATE
+> Task :rootPackageJson UP-TO-DATE
+> Task :kotlinNpmInstall UP-TO-DATE
+> Task :kotlinStoreYarnLock UP-TO-DATE
+> Task :legacy-client:compileKotlinJs UP-TO-DATE
+> Task :legacy-client:jsProcessResources NO-SOURCE
+> Task :legacy-client:jsMainClasses UP-TO-DATE
+> Task :legacy-client:compileTestKotlinJs UP-TO-DATE
+> Task :legacy-client:jsTestProcessResources NO-SOURCE
+> Task :legacy-client:jsTestClasses UP-TO-DATE
+> Task :legacy-client:compileTestDevelopmentExecutableKotlinJs UP-TO-DATE
+> Task :legacy-client:jsTestTestDevelopmentExecutableCompileSync UP-TO-DATE
+> Task :legacy-client:kotlinNodeJsSetup UP-TO-DATE
+> Task :legacy-client:jsNodeTest UP-TO-DATE
+> Task :rfc-client:compileKotlinJs UP-TO-DATE
+> Task :rfc-client:jsProcessResources NO-SOURCE
+> Task :rfc-client:jsMainClasses UP-TO-DATE
+> Task :rfc-client:compileTestKotlinJs UP-TO-DATE
+> Task :rfc-client:jsTestProcessResources NO-SOURCE
+> Task :rfc-client:jsTestClasses UP-TO-DATE
+> Task :rfc-client:compileTestDevelopmentExecutableKotlinJs UP-TO-DATE
+> Task :rfc-client:jsTestTestDevelopmentExecutableCompileSync UP-TO-DATE
+> Task :rfc-client:kotlinNodeJsSetup UP-TO-DATE
+> Task :rfc-client:jsNodeTest UP-TO-DATE
+> Task :kotlinWasmKotlinNpmCachesSetup
+> Task :kotlinWasmNodeJsSetup UP-TO-DATE
+> Task :kotlinWasmRestoreYarnLock SKIPPED
+> Task :kotlinWasmYarnSetup UP-TO-DATE
+> Task :legacy-client:wasmJsPackageJson UP-TO-DATE
+> Task :legacy-client:wasmJsTestPackageJson UP-TO-DATE
+> Task :rfc-client:wasmJsPackageJson UP-TO-DATE
+> Task :rfc-client:wasmJsTestPackageJson UP-TO-DATE
+> Task :legacy-client:wasmJsPublicPackageJson UP-TO-DATE
+> Task :legacy-client:wasmJsTestPublicPackageJson UP-TO-DATE
+> Task :rfc-client:wasmJsPublicPackageJson UP-TO-DATE
+> Task :rfc-client:wasmJsTestPublicPackageJson UP-TO-DATE
+> Task :kotlinWasmPackageJsonUmbrella UP-TO-DATE
+> Task :wasmRootPackageJson UP-TO-DATE
+> Task :kotlinWasmNpmInstall UP-TO-DATE
+> Task :kotlinWasmStoreYarnLock UP-TO-DATE
+> Task :kotlinWasmToolingSetup UP-TO-DATE
+> Task :legacy-client:compileKotlinWasmJs UP-TO-DATE
+> Task :legacy-client:wasmJsProcessResources NO-SOURCE
+> Task :legacy-client:wasmJsMainClasses UP-TO-DATE
+> Task :legacy-client:compileTestKotlinWasmJs UP-TO-DATE
+> Task :legacy-client:wasmJsTestProcessResources NO-SOURCE
+> Task :legacy-client:wasmJsTestClasses UP-TO-DATE
+> Task :legacy-client:compileTestDevelopmentExecutableKotlinWasmJs UP-TO-DATE
+> Task :legacy-client:kotlinWasmNodeJsSetup UP-TO-DATE
+> Task :legacy-client:wasmJsTestTestDevelopmentExecutableCompileSync UP-TO-DATE
+> Task :legacy-client:wasmJsNodeTest UP-TO-DATE
+> Task :rfc-client:compileKotlinWasmJs UP-TO-DATE
+> Task :rfc-client:wasmJsProcessResources NO-SOURCE
+> Task :rfc-client:wasmJsMainClasses UP-TO-DATE
+> Task :rfc-client:compileTestKotlinWasmJs UP-TO-DATE
+> Task :rfc-client:wasmJsTestProcessResources NO-SOURCE
+> Task :rfc-client:wasmJsTestClasses UP-TO-DATE
+> Task :rfc-client:compileTestDevelopmentExecutableKotlinWasmJs UP-TO-DATE
+> Task :rfc-client:kotlinWasmNodeJsSetup UP-TO-DATE
+> Task :rfc-client:wasmJsTestTestDevelopmentExecutableCompileSync UP-TO-DATE
+> Task :rfc-client:wasmJsNodeTest UP-TO-DATE
+> Task :legacy-client:preBuild UP-TO-DATE
+> Task :legacy-client:preDebugBuild UP-TO-DATE
+> Task :legacy-client:mergeDebugJniLibFolders UP-TO-DATE
+> Task :legacy-client:mergeDebugNativeLibs NO-SOURCE
+> Task :legacy-client:stripDebugDebugSymbols NO-SOURCE
+> Task :legacy-client:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :legacy-client:generateDebugResValues UP-TO-DATE
+> Task :legacy-client:generateDebugResources UP-TO-DATE
+> Task :legacy-client:packageDebugResources UP-TO-DATE
+> Task :legacy-client:parseDebugLocalResources UP-TO-DATE
+> Task :legacy-client:generateDebugRFile UP-TO-DATE
+> Task :legacy-client:compileDebugKotlinAndroid UP-TO-DATE
+> Task :legacy-client:extractDebugAnnotations UP-TO-DATE
+> Task :legacy-client:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :legacy-client:mergeDebugShaders UP-TO-DATE
+> Task :legacy-client:compileDebugShaders NO-SOURCE
+> Task :legacy-client:debugAssetsCopyForAGP NO-SOURCE
+> Task :legacy-client:generateDebugAssets UP-TO-DATE
+> Task :legacy-client:mergeDebugAssets UP-TO-DATE
+> Task :legacy-client:javaPreCompileDebug UP-TO-DATE
+> Task :legacy-client:compileDebugJavaWithJavac NO-SOURCE
+> Task :legacy-client:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :legacy-client:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :legacy-client:prepareDebugArtProfile UP-TO-DATE
+> Task :legacy-client:prepareLintJarForPublish UP-TO-DATE
+> Task :legacy-client:processDebugManifest UP-TO-DATE
+> Task :legacy-client:processDebugJavaRes UP-TO-DATE
+> Task :legacy-client:mergeDebugJavaResource UP-TO-DATE
+> Task :legacy-client:syncDebugLibJars UP-TO-DATE
+> Task :legacy-client:writeDebugAarMetadata UP-TO-DATE
+> Task :legacy-client:bundleDebugAar UP-TO-DATE
+> Task :legacy-client:assembleDebug UP-TO-DATE
+> Task :rfc-client:preBuild UP-TO-DATE
+> Task :rfc-client:preDebugBuild UP-TO-DATE
+> Task :rfc-client:mergeDebugJniLibFolders UP-TO-DATE
+> Task :rfc-client:mergeDebugNativeLibs NO-SOURCE
+> Task :rfc-client:stripDebugDebugSymbols NO-SOURCE
+> Task :rfc-client:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :rfc-client:generateDebugResValues UP-TO-DATE
+> Task :rfc-client:generateDebugResources UP-TO-DATE
+> Task :rfc-client:packageDebugResources UP-TO-DATE
+> Task :rfc-client:parseDebugLocalResources UP-TO-DATE
+> Task :rfc-client:generateDebugRFile UP-TO-DATE
+> Task :rfc-client:compileDebugKotlinAndroid UP-TO-DATE
+> Task :rfc-client:extractDebugAnnotations UP-TO-DATE
+> Task :rfc-client:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :rfc-client:mergeDebugShaders UP-TO-DATE
+> Task :rfc-client:compileDebugShaders NO-SOURCE
+> Task :rfc-client:debugAssetsCopyForAGP NO-SOURCE
+> Task :rfc-client:generateDebugAssets UP-TO-DATE
+> Task :rfc-client:mergeDebugAssets UP-TO-DATE
+> Task :rfc-client:javaPreCompileDebug UP-TO-DATE
+> Task :rfc-client:compileDebugJavaWithJavac NO-SOURCE
+> Task :rfc-client:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :rfc-client:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :rfc-client:prepareDebugArtProfile UP-TO-DATE
+> Task :rfc-client:prepareLintJarForPublish UP-TO-DATE
+> Task :rfc-client:processDebugManifest UP-TO-DATE
+> Task :rfc-client:processDebugJavaRes UP-TO-DATE
+> Task :rfc-client:mergeDebugJavaResource UP-TO-DATE
+> Task :rfc-client:syncDebugLibJars UP-TO-DATE
+> Task :rfc-client:writeDebugAarMetadata UP-TO-DATE
+> Task :rfc-client:bundleDebugAar UP-TO-DATE
+> Task :rfc-client:assembleDebug UP-TO-DATE
+> Task :legacy-client:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :legacy-client:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :legacy-client:preDebugUnitTestBuild UP-TO-DATE
+> Task :legacy-client:generateDebugUnitTestStubRFile UP-TO-DATE
+> Task :legacy-client:compileDebugUnitTestKotlinAndroid UP-TO-DATE
+> Task :legacy-client:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :legacy-client:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :legacy-client:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :legacy-client:testDebugUnitTest UP-TO-DATE
+> Task :rfc-client:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :rfc-client:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :rfc-client:preDebugUnitTestBuild UP-TO-DATE
+> Task :rfc-client:generateDebugUnitTestStubRFile UP-TO-DATE
+> Task :rfc-client:compileDebugUnitTestKotlinAndroid UP-TO-DATE
+> Task :rfc-client:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :rfc-client:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :rfc-client:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :rfc-client:testDebugUnitTest UP-TO-DATE
+
+> Task :legacy-client:verifyPublishedDependencies
+Verified 52 Maven artifact selections for :legacy-client: /workspace/scratch/a46e59dd0882/round2-independent-consumer/integration/consumer/legacy-client/build/reports/published-dependencies.tsv
+
+> Task :rfc-client:verifyPublishedDependencies
+Verified 52 Maven artifact selections for :rfc-client: /workspace/scratch/a46e59dd0882/round2-independent-consumer/integration/consumer/rfc-client/build/reports/published-dependencies.tsv
+
+[Incubating] Problems report is available at: file:///workspace/scratch/a46e59dd0882/round2-independent-consumer/integration/consumer/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m 17s
+136 actionable tasks: 7 executed, 129 up-to-date

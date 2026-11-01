@@ -1,0 +1,7 @@
+{
+  "src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt": "65cd5cc4491a4c21a6d9819f00fedcba6f3d9bc991603993e837388c1e770edd",
+  "src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt": "1e6bd4a232bf57dffe0912db6137256130091a30d467cfa6fd9ec927c256f554",
+  "src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt": "065934529d1b5ec5c1ba9f9752c1e22f79c112d14e8706b6577d4189c02f0119",
+  "primitives/src/jvmTest/kotlin/io/github/flyfish233/spake2/internal/math/ArithmeticDifferentialTest.kt": "385499568d6cf4d2ceaa87d1f149637641deded70a72c77f4740379b9744fa6f",
+  "primitives/src/jvmTest/kotlin/io/github/flyfish233/spake2/internal/math/WycheproofP256Test.kt": "1f2eaa2e61bf17d17e0e1e3e5f03b2d8c800fb89576117b0d7af03814b0f236d"
+}

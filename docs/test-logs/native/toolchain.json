@@ -1,0 +1,43 @@
+{
+  "kotlin_native": "2.2.21",
+  "java": "17.0.21+9",
+  "clang": "19.1.4",
+  "gcc": "8.3.0",
+  "platform": "Linux",
+  "machine": "x86_64",
+  "archive_digest_status": "Locally observed archive digests; not represented as vendor-published checksum verification.",
+  "extracted_dependency_verification": "All regular-file bytes and symlink targets compared to downloaded archives before cache registration.",
+  "extracted_dependency_files": {
+    "llvm-19-x86_64-linux-essentials-103": 300,
+    "x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2": 3670,
+    "libffi-3.2.1-2-linux-x86-64": 6,
+    "lldb-4-linux": 97
+  },
+  "archives": [
+    {
+      "archive": "kotlin-native.tar.gz",
+      "sha256": "a135baa9ef92925c5c2aef20c1cf036734ca8fe2fae5db986173beb96a7a81f8",
+      "size_bytes": 210509851
+    },
+    {
+      "archive": "llvm-19-x86_64-linux-essentials-103.tar.gz",
+      "sha256": "c4567001682a937d4898c52991173cd705aba52113ed758a1901986c42b560b2",
+      "size_bytes": 174370260
+    },
+    {
+      "archive": "x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz",
+      "sha256": "a048397d50fb5a2bd6cc0f89d5a30e0b8ff0373ebff9c1d78ce1f1fb7f185a50",
+      "size_bytes": 101793914
+    },
+    {
+      "archive": "libffi-3.2.1-2-linux-x86-64.tar.gz",
+      "sha256": "9d817bbca098a2fa0f1d5a8b9e57674c30d100bb4c6aeceff18d8acc5b9f382c",
+      "size_bytes": 56412
+    },
+    {
+      "archive": "lldb-4-linux.tar.gz",
+      "sha256": "b1e145c859f44071f66231cfc98c8c16a480cbf47139fcd5dd2df4bf041fdfda",
+      "size_bytes": 52150087
+    }
+  ]
+}

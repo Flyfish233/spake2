@@ -1,0 +1,141 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+w: file:///Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer/build.gradle.kts:26:9: 'fun macosX64(): KotlinNativeTargetWithHostTests' is deprecated. Target will be removed in a future release. See: https://kotl.in/native-targets-tiers.
+
+> Task :legacy-client:kmpPartiallyResolvedDependenciesChecker
+> Task :legacy-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+
+> Task :legacy-client:downloadKotlinNativeDistribution
+Kotlin/Native bundle directory /Users/runner/.konan/kotlin-native-prebuilt-macos-aarch64-2.4.20 is not empty. Native bundle files will be overwritten.
+Downloading native dependencies (LLVM, sysroot etc). This is a one-time action performed only on the first run of the compiler.
+Downloading dependency https://download.jetbrains.com/kotlin/native/resources/llvm/21-aarch64-macos/llvm-21-aarch64-macos-essentials-97.tar.gz to /Users/runner/.konan/dependencies/cache/llvm-21-aarch64-macos-essentials-97.tar.gz
+Done.
+Extracting dependency: /Users/runner/.konan/dependencies/cache/llvm-21-aarch64-macos-essentials-97.tar.gz into /Users/runner/.konan/dependencies
+Downloading dependency https://download.jetbrains.com/kotlin/native/libffi-3.3-1-macos-arm64.tar.gz to /Users/runner/.konan/dependencies/cache/libffi-3.3-1-macos-arm64.tar.gz
+Done.
+Extracting dependency: /Users/runner/.konan/dependencies/cache/libffi-3.3-1-macos-arm64.tar.gz into /Users/runner/.konan/dependencies
+Downloading native dependencies (LLVM, sysroot etc). This is a one-time action performed only on the first run of the compiler.
+Downloading dependency https://download.jetbrains.com/kotlin/native/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz to /Users/runner/.konan/dependencies/cache/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz
+Done.
+Extracting dependency: /Users/runner/.konan/dependencies/cache/x86_64-unknown-linux-gnu-gcc-8.3.0-glibc-2.19-kernel-4.9-2.tar.gz into /Users/runner/.konan/dependencies
+Downloading native dependencies (LLVM, sysroot etc). This is a one-time action performed only on the first run of the compiler.
+Downloading dependency https://download.jetbrains.com/kotlin/native/lldb-4-macos.tar.gz to /Users/runner/.konan/dependencies/cache/lldb-4-macos.tar.gz
+Done.
+Extracting dependency: /Users/runner/.konan/dependencies/cache/lldb-4-macos.tar.gz into /Users/runner/.konan/dependencies
+
+> Task :legacy-client:compileKotlinMacosArm64
+> Task :legacy-client:macosArm64ProcessResources NO-SOURCE
+> Task :legacy-client:macosArm64MainKlibrary
+> Task :legacy-client:compileTestKotlinMacosArm64
+> Task :legacy-client:validateLocalSwiftPMDependencies
+> Task :legacy-client:computeLocalPackageDependencyInputFiles
+> Task :legacy-client:fingerprintSyntheticPackage
+> Task :legacy-client:generateSyntheticLinkageSwiftPMImportProjectForCinteropsAndLdDump SKIPPED
+> Task :legacy-client:serializeSwiftPMDependenciesMetadataForLockFiles
+> Task :rfc-client:serializeSwiftPMDependenciesMetadataForLockFiles
+> Task :legacy-client:generateUmbrellaPackageIdentifierBasedResolutionForDefault SKIPPED
+> Task :legacy-client:fetchUmbrellaPackageIdentifierForDefault SKIPPED
+> Task :legacy-client:syncPersistedPackageResolvedToSynthetic SKIPPED
+> Task :legacy-client:fetchSyntheticImportProjectPackages SKIPPED
+> Task :legacy-client:fingerprintXcodebuildMacosx
+> Task :legacy-client:dumpXcodebuildArgsMacosx SKIPPED
+> Task :legacy-client:convertSyntheticImportProjectIntoDefFileMacosx
+
+> Task :legacy-client:linkDebugTestMacosArm64
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :legacy-client:macosArm64Test
+> Task :rfc-client:kmpPartiallyResolvedDependenciesChecker
+> Task :rfc-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :rfc-client:downloadKotlinNativeDistribution
+> Task :rfc-client:compileKotlinMacosArm64
+> Task :rfc-client:macosArm64ProcessResources NO-SOURCE
+> Task :rfc-client:macosArm64MainKlibrary
+> Task :rfc-client:compileTestKotlinMacosArm64
+> Task :rfc-client:validateLocalSwiftPMDependencies
+> Task :rfc-client:computeLocalPackageDependencyInputFiles
+> Task :rfc-client:fingerprintSyntheticPackage
+> Task :rfc-client:generateSyntheticLinkageSwiftPMImportProjectForCinteropsAndLdDump SKIPPED
+> Task :rfc-client:syncPersistedPackageResolvedToSynthetic SKIPPED
+> Task :rfc-client:fetchSyntheticImportProjectPackages SKIPPED
+> Task :rfc-client:fingerprintXcodebuildMacosx
+> Task :rfc-client:dumpXcodebuildArgsMacosx SKIPPED
+> Task :rfc-client:convertSyntheticImportProjectIntoDefFileMacosx
+
+> Task :rfc-client:linkDebugTestMacosArm64
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :rfc-client:macosArm64Test
+> Task :legacy-client:compileKotlinIosSimulatorArm64
+> Task :legacy-client:iosSimulatorArm64ProcessResources NO-SOURCE
+> Task :legacy-client:iosSimulatorArm64MainKlibrary
+> Task :legacy-client:compileTestKotlinIosSimulatorArm64
+> Task :legacy-client:fingerprintXcodebuildIphonesimulator
+> Task :legacy-client:dumpXcodebuildArgsIphonesimulator SKIPPED
+> Task :legacy-client:convertSyntheticImportProjectIntoDefFileIphonesimulator
+
+> Task :legacy-client:linkDebugTestIosSimulatorArm64
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :legacy-client:iosSimulatorArm64Test
+> Task :rfc-client:compileKotlinIosSimulatorArm64
+> Task :rfc-client:iosSimulatorArm64ProcessResources NO-SOURCE
+> Task :rfc-client:iosSimulatorArm64MainKlibrary
+> Task :rfc-client:compileTestKotlinIosSimulatorArm64
+> Task :rfc-client:fingerprintXcodebuildIphonesimulator
+> Task :rfc-client:dumpXcodebuildArgsIphonesimulator SKIPPED
+> Task :rfc-client:convertSyntheticImportProjectIntoDefFileIphonesimulator
+
+> Task :rfc-client:linkDebugTestIosSimulatorArm64
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :rfc-client:iosSimulatorArm64Test
+> Task :legacy-client:compileKotlinIosArm64
+> Task :legacy-client:iosArm64ProcessResources NO-SOURCE
+> Task :legacy-client:iosArm64MainKlibrary
+> Task :legacy-client:compileTestKotlinIosArm64
+> Task :legacy-client:fingerprintXcodebuildIphoneos
+> Task :legacy-client:dumpXcodebuildArgsIphoneos SKIPPED
+> Task :legacy-client:convertSyntheticImportProjectIntoDefFileIphoneos
+
+> Task :legacy-client:linkDebugTestIosArm64
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :rfc-client:compileKotlinIosArm64
+> Task :rfc-client:iosArm64ProcessResources NO-SOURCE
+> Task :rfc-client:iosArm64MainKlibrary
+> Task :rfc-client:compileTestKotlinIosArm64
+> Task :rfc-client:fingerprintXcodebuildIphoneos
+> Task :rfc-client:dumpXcodebuildArgsIphoneos SKIPPED
+> Task :rfc-client:convertSyntheticImportProjectIntoDefFileIphoneos
+
+> Task :rfc-client:linkDebugTestIosArm64
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :legacy-client:verifyPublishedDependencies FAILED
+gradle/actions: Writing build results to /Users/runner/work/_temp/.gradle-actions/build-results/__run_5-1793041956310.json
+
+[Incubating] Problems report is available at: file:///Users/runner/work/_temp/isolated-spake2-integration/kadb-consumer/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':legacy-client:verifyPublishedDependencies' (registered in script '../consumer-fixtures/verify-resolution.gradle.kts').
+> Project dependency substitution is forbidden in this Maven consumer: project ':rfc-client'
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 3m 34s
+47 actionable tasks: 47 executed

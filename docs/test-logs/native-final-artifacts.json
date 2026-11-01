@@ -1,0 +1,56 @@
+{
+  "capturedUtc": "2026-10-26T09:10:14.796449+00:00",
+  "verifiedSourceRevision": {
+    "remoteCommit": "b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "remoteTree": "9144c7480ec823844a590bcb304d0d8f5b553128",
+    "remoteUrl": "https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "equivalentLocalCommit": "bf45e30f01b68669a56e719826991fe3fee6bdc6"
+  },
+  "sourceManifestSha256": "f23aa680b7028768a15363f8f550e3e2d33e3b9ba8111ed834e0c7affe03c4f6",
+  "target": "linuxX64",
+  "binaryMode": "debug test executable",
+  "compiler": "Kotlin/Native 2.2.21",
+  "toolchainRecord": "native/toolchain.json",
+  "artifacts": {
+    "build/bin/linuxX64/debugTest/test.kexe": {
+      "bytes": 7989992,
+      "sha256": "f4231051e0bed88b0126a41c921536ccd1b49e868568cf4a8354fe2d315589d3",
+      "dynamicDependencies": [
+        "linux-vdso.so.1",
+        "libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2",
+        "libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6",
+        "libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0",
+        "libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6",
+        "/lib64/ld-linux-x86-64.so.2"
+      ]
+    },
+    "legacy/build/bin/linuxX64/debugTest/test.kexe": {
+      "bytes": 8788536,
+      "sha256": "60b013229def183eb0163a90d03bfdb7f8ba36267725c1650cd0932c69ef9709",
+      "dynamicDependencies": [
+        "linux-vdso.so.1",
+        "libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2",
+        "libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6",
+        "libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0",
+        "libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6",
+        "/lib64/ld-linux-x86-64.so.2"
+      ]
+    },
+    "primitives/build/bin/linuxX64/debugTest/test.kexe": {
+      "bytes": 7806768,
+      "sha256": "4263d939927cb54b53d91d2cf9fd6dcb106e9aaade2118d6b4cc8085d829a4b4",
+      "dynamicDependencies": [
+        "linux-vdso.so.1",
+        "libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2",
+        "libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6",
+        "libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0",
+        "libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6",
+        "/lib64/ld-linux-x86-64.so.2"
+      ]
+    }
+  },
+  "executionSummary": "../test-results/final-platform-native.json"
+}

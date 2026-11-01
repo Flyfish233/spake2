@@ -1,0 +1,178 @@
+{
+  "finishedUtc": "2026-10-26T09:09:16.621141+00:00",
+  "verifiedSourceRevision": {
+    "remoteCommit": "b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "remoteTree": "9144c7480ec823844a590bcb304d0d8f5b553128",
+    "remoteUrl": "https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "equivalentLocalCommit": "bf45e30f01b68669a56e719826991fe3fee6bdc6"
+  },
+  "sourceManifestSha256": "f23aa680b7028768a15363f8f550e3e2d33e3b9ba8111ed834e0c7affe03c4f6",
+  "frozenSourcesUnchanged": true,
+  "command": [
+    "python3",
+    "/workspace/scratch/a46e59dd0882/run_gradle.py",
+    "--no-daemon",
+    "--console=plain",
+    "-Pkotlin.native.home=/workspace/scratch/a46e59dd0882/toolchains/konan/kotlin-native-prebuilt-linux-x86_64-2.2.21",
+    "clean",
+    "jvmTest",
+    "jsNodeTest",
+    "wasmJsNodeTest",
+    "linuxX64Test"
+  ],
+  "exitCode": 0,
+  "targets": {
+    "jvm": {
+      "target": "jvmTest",
+      "totals": {
+        "tests": 80,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "modules": [
+        {
+          "module": "rfc",
+          "tests": 23,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 6.275
+        },
+        {
+          "module": "legacy",
+          "tests": 31,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 34.954
+        },
+        {
+          "module": "primitives",
+          "tests": 26,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 7.294
+        }
+      ],
+      "record": "docs/test-results/final-platform-jvm.json"
+    },
+    "js": {
+      "target": "jsNodeTest",
+      "totals": {
+        "tests": 71,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "modules": [
+        {
+          "module": "rfc",
+          "tests": 22,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 49.716
+        },
+        {
+          "module": "legacy",
+          "tests": 30,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 239.234
+        },
+        {
+          "module": "primitives",
+          "tests": 19,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 10.88
+        }
+      ],
+      "record": "docs/test-results/final-platform-js.json"
+    },
+    "wasm": {
+      "target": "wasmJsNodeTest",
+      "totals": {
+        "tests": 71,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "modules": [
+        {
+          "module": "rfc",
+          "tests": 22,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 73.706
+        },
+        {
+          "module": "legacy",
+          "tests": 30,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 262.2
+        },
+        {
+          "module": "primitives",
+          "tests": 19,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 30.221
+        }
+      ],
+      "record": "docs/test-results/final-platform-wasm.json"
+    },
+    "native": {
+      "target": "linuxX64Test",
+      "totals": {
+        "tests": 71,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "modules": [
+        {
+          "module": "rfc",
+          "tests": 22,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 160.191
+        },
+        {
+          "module": "legacy",
+          "tests": 30,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 561.573
+        },
+        {
+          "module": "primitives",
+          "tests": 19,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "testSeconds": 11.233
+        }
+      ],
+      "record": "docs/test-results/final-platform-native.json"
+    }
+  },
+  "executedTestMethodInstances": 293,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "completeLog": "docs/test-logs/final-platforms/complete-run.txt",
+  "completeLogSha256": "f4e1219908ea304c73312ba82c05979626a1eb6447ea33259ed3fbd0c2033e24",
+  "gradleReportedDuration": "33m 4s",
+  "wallSeconds": 1985.341
+}

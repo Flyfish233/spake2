@@ -1,0 +1,28 @@
+{
+  "phase": "after exact KGP Native metadata schema and original task-name support",
+  "gateSha256": "ed2b0f4db55bddd144737c4676ffdc2e0e2e70e14e31c8ec9476741b89f9e18e",
+  "testSha256": "152214e7ccef2d590ee7b3cd934c7571e38f1ecaebb60dab2944ecffeee263b0",
+  "results": [
+    {
+      "executedAtUtc": "2026-10-26T19:03:32.574458+00:00",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "tools/tests/test_maven_repository_gate.py"
+      ],
+      "exitCode": 0,
+      "resultSummary": "OK",
+      "log": "native-metadata-after.txt"
+    },
+    {
+      "executedAtUtc": "2026-10-26T19:04:26.446903+00:00",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "tools/tests/test_maven_repository_gate.py"
+      ],
+      "exitCode": 0,
+      "resultSummary": "OK",
+      "log": "native-metadata-after-optimized.txt"
+    }
+  ]
+}

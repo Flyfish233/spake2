@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:37:38.513Z" hostname="c9d49951d07d" time="0.129">
+  <properties/>
+  <testcase name="callerMutationCannotAliasIdentityOrGeneratedMessage[jvm]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.016"/>
+  <testcase name="destroyIsIdempotentAndTerminal[jvm]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.005"/>
+  <testcase name="entropyExceptionsAndIncorrectLengthsEraseState[jvm]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.004"/>
+  <testcase name="wrongPasswordsAndRolesDoNotCreateAuthentication[jvm]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.083"/>
+  <testcase name="repeatGenerationFailsAndErasesSession[jvm]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.007"/>
+  <testcase name="lengthsFailBeforeUnboundedAllocation[jvm]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.001"/>
+  <testcase name="returnedEntropyIsWipedAndPasswordInputRemainsOwnedByCaller[jvm]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.006"/>
+  <testcase name="reentrantEntropyCallPoisonsOuterSessionEvenIfCallbackCatchesError[jvm]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.007"/>
+  <testcase name="processBeforeGenerateFailsPermanently[jvm]" classname="io.github.flyfish233.spake2.legacy.LegacyLifecycleTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

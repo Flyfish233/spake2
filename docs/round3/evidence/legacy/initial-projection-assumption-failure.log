@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/2dc285d90a69/spake2-round3/docs/round3/evidence/legacy/independent_legacy_probe.py", line 202, in <module>
+    main()
+  File "/workspace/scratch/2dc285d90a69/spake2-round3/docs/round3/evidence/legacy/independent_legacy_probe.py", line 166, in main
+    require(len(table)==8,"order-eight mask projection")
+  File "/workspace/scratch/2dc285d90a69/spake2-round3/docs/round3/evidence/legacy/independent_legacy_probe.py", line 70, in require
+    raise ValueError(reason)
+ValueError: order-eight mask projection

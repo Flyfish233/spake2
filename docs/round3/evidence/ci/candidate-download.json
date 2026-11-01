@@ -1,0 +1,12 @@
+{
+  "artifactId": 12682137388,
+  "runId": 40388080222,
+  "repository": "Flyfish233/spake2",
+  "sourceHead": "59105290820bcbfd4e0336a2e7713006a461527f",
+  "sha256": "29fe208f315ea08c9643d4388df8d832b984b04270fd39e55d00328ed4746ac3",
+  "githubApiDigestMatches": true,
+  "bytes": 10310865,
+  "files": 228,
+  "downloadedAtUtc": "2026-11-01T02:39:25.163509+00:00",
+  "binding": "GitHub authenticated connector download; digest independently obtained from GitHub artifact metadata, not only from candidate POM"
+}

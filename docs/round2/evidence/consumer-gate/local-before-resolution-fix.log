@@ -1,0 +1,331 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Configuration 'jsNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'jsTestNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'jsNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'jsTestNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'wasmJsNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'wasmJsTestNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'wasmJsNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'wasmJsTestNpmAggregated' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+> Task :legacy-client:kmpPartiallyResolvedDependenciesChecker
+> Task :legacy-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :legacy-client:jvmProcessResources NO-SOURCE
+> Task :legacy-client:processJvmMainResources SKIPPED
+> Task :legacy-client:jvmTestProcessResources NO-SOURCE
+> Task :legacy-client:processJvmTestResources SKIPPED
+> Task :rfc-client:kmpPartiallyResolvedDependenciesChecker
+> Task :rfc-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :legacy-client:compileKotlinJvm
+> Task :rfc-client:compileKotlinJvm
+> Task :legacy-client:compileJvmMainJava NO-SOURCE
+> Task :legacy-client:jvmMainClasses
+> Task :legacy-client:jvmJar
+> Task :rfc-client:compileJvmMainJava NO-SOURCE
+> Task :rfc-client:jvmProcessResources NO-SOURCE
+> Task :rfc-client:processJvmMainResources SKIPPED
+> Task :rfc-client:jvmMainClasses
+> Task :rfc-client:jvmJar
+> Task :legacy-client:compileTestKotlinJvm
+> Task :legacy-client:compileJvmTestJava NO-SOURCE
+> Task :legacy-client:jvmTestClasses
+> Task :rfc-client:compileTestKotlinJvm
+
+> Task :legacy-client:jvmTest
+
+PublishedLegacyTest[jvm] > malformedInputAndDestroyConsumePublishedSession[jvm] PASSED
+
+PublishedLegacyTest[jvm] > hardenedPinnedOracleIncludingHighBitAndNulNames[jvm] PASSED
+
+> Task :rfc-client:compileJvmTestJava NO-SOURCE
+> Task :rfc-client:jvmTestProcessResources NO-SOURCE
+> Task :rfc-client:processJvmTestResources SKIPPED
+> Task :rfc-client:jvmTestClasses
+
+> Task :rfc-client:jvmTest
+
+PublishedRfcTest[jvm] > officialP256PublicMessagesConfirmationsAndKey[jvm] PASSED
+
+PublishedRfcTest[jvm] > incorrectConfirmationIsTerminalInPublishedLibrary[jvm] PASSED
+
+PublishedRfcTest[jvm] > independentEdwardsPublicMessagesConfirmationsAndKey[jvm] PASSED
+
+> Task :legacy-client:downloadKotlinNativeDistribution
+> Task :legacy-client:compileKotlinLinuxX64
+> Task :legacy-client:linuxX64ProcessResources NO-SOURCE
+> Task :legacy-client:linuxX64MainKlibrary
+> Task :legacy-client:compileTestKotlinLinuxX64
+> Task :legacy-client:linkDebugTestLinuxX64
+> Task :legacy-client:linuxX64Test
+> Task :rfc-client:downloadKotlinNativeDistribution
+> Task :rfc-client:compileKotlinLinuxX64
+> Task :rfc-client:linuxX64ProcessResources NO-SOURCE
+> Task :rfc-client:linuxX64MainKlibrary
+> Task :rfc-client:compileTestKotlinLinuxX64
+> Task :rfc-client:linkDebugTestLinuxX64
+> Task :rfc-client:linuxX64Test
+> Task :kotlinKotlinNpmCachesSetup
+> Task :kotlinNodeJsSetup
+> Task :kotlinRestoreYarnLock SKIPPED
+> Task :kotlinYarnSetup
+> Task :legacy-client:jsPackageJson
+> Task :legacy-client:jsTestPackageJson
+> Task :rfc-client:jsPackageJson
+> Task :rfc-client:jsTestPackageJson
+> Task :legacy-client:jsPublicPackageJson
+> Task :legacy-client:jsTestPublicPackageJson
+> Task :rfc-client:jsPublicPackageJson
+> Task :rfc-client:jsTestPublicPackageJson
+> Task :kotlinPackageJsonUmbrella
+> Task :rootPackageJson
+
+> Task :kotlinNpmInstall
+(node:103470) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+warning workspace-aggregator-12632339-0428-4270-be70-4c37f2634d9c > spake2-independent-consumer-legacy-client-test > mocha > glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+warning Ignored scripts due to flag.
+
+> Task :kotlinStoreYarnLock
+> Task :legacy-client:jsProcessResources NO-SOURCE
+> Task :legacy-client:jsTestProcessResources NO-SOURCE
+> Task :legacy-client:kotlinNodeJsSetup
+> Task :rfc-client:compileKotlinJs
+> Task :rfc-client:jsProcessResources NO-SOURCE
+> Task :rfc-client:jsMainClasses
+> Task :legacy-client:compileKotlinJs
+> Task :legacy-client:jsMainClasses
+> Task :rfc-client:compileTestKotlinJs
+> Task :rfc-client:jsTestProcessResources NO-SOURCE
+> Task :rfc-client:jsTestClasses
+> Task :legacy-client:compileTestKotlinJs
+> Task :legacy-client:jsTestClasses
+> Task :rfc-client:compileTestDevelopmentExecutableKotlinJs
+> Task :legacy-client:compileTestDevelopmentExecutableKotlinJs
+> Task :rfc-client:jsTestTestDevelopmentExecutableCompileSync
+> Task :legacy-client:jsTestTestDevelopmentExecutableCompileSync
+> Task :legacy-client:jsNodeTest
+> Task :rfc-client:kotlinNodeJsSetup
+> Task :rfc-client:jsNodeTest
+> Task :kotlinWasmKotlinNpmCachesSetup
+> Task :kotlinWasmNodeJsSetup
+> Task :kotlinWasmRestoreYarnLock SKIPPED
+> Task :kotlinWasmYarnSetup
+> Task :legacy-client:wasmJsPackageJson
+> Task :legacy-client:wasmJsTestPackageJson
+> Task :rfc-client:wasmJsPackageJson
+> Task :rfc-client:wasmJsTestPackageJson
+> Task :legacy-client:wasmJsPublicPackageJson
+> Task :legacy-client:wasmJsTestPublicPackageJson
+> Task :rfc-client:wasmJsPublicPackageJson
+> Task :rfc-client:wasmJsTestPublicPackageJson
+> Task :kotlinWasmPackageJsonUmbrella
+> Task :wasmRootPackageJson
+
+> Task :kotlinWasmNpmInstall
+warning Ignored scripts due to flag.
+
+> Task :kotlinWasmStoreYarnLock
+> Task :kotlinWasmToolingSetup
+> Task :legacy-client:wasmJsProcessResources NO-SOURCE
+> Task :legacy-client:wasmJsTestProcessResources NO-SOURCE
+> Task :legacy-client:kotlinWasmNodeJsSetup
+> Task :rfc-client:compileKotlinWasmJs
+> Task :rfc-client:wasmJsProcessResources NO-SOURCE
+> Task :rfc-client:wasmJsMainClasses
+> Task :legacy-client:compileKotlinWasmJs
+> Task :legacy-client:wasmJsMainClasses
+> Task :legacy-client:compileTestKotlinWasmJs
+> Task :legacy-client:wasmJsTestClasses
+> Task :rfc-client:compileTestKotlinWasmJs
+> Task :rfc-client:wasmJsTestProcessResources NO-SOURCE
+> Task :rfc-client:wasmJsTestClasses
+> Task :legacy-client:compileTestDevelopmentExecutableKotlinWasmJs
+> Task :rfc-client:compileTestDevelopmentExecutableKotlinWasmJs
+> Task :legacy-client:wasmJsTestTestDevelopmentExecutableCompileSync
+> Task :legacy-client:wasmJsNodeTest
+> Task :rfc-client:kotlinWasmNodeJsSetup
+> Task :rfc-client:wasmJsTestTestDevelopmentExecutableCompileSync
+> Task :rfc-client:wasmJsNodeTest
+> Task :legacy-client:preBuild UP-TO-DATE
+> Task :legacy-client:preDebugBuild UP-TO-DATE
+> Task :legacy-client:mergeDebugJniLibFolders
+> Task :legacy-client:mergeDebugNativeLibs NO-SOURCE
+> Task :legacy-client:stripDebugDebugSymbols NO-SOURCE
+> Task :legacy-client:generateDebugResValues
+> Task :legacy-client:copyDebugJniLibsProjectAndLocalJars
+> Task :legacy-client:generateDebugResources
+> Task :legacy-client:packageDebugResources
+> Task :legacy-client:extractDeepLinksForAarDebug
+> Task :legacy-client:mergeDebugShaders
+> Task :legacy-client:compileDebugShaders NO-SOURCE
+> Task :legacy-client:debugAssetsCopyForAGP NO-SOURCE
+> Task :legacy-client:generateDebugAssets UP-TO-DATE
+> Task :legacy-client:mergeDebugAssets
+> Task :legacy-client:javaPreCompileDebug
+> Task :legacy-client:prepareDebugArtProfile
+> Task :legacy-client:prepareLintJarForPublish
+> Task :legacy-client:parseDebugLocalResources
+> Task :legacy-client:generateDebugRFile
+> Task :legacy-client:processDebugManifest
+> Task :legacy-client:writeDebugAarMetadata
+> Task :rfc-client:preBuild UP-TO-DATE
+> Task :rfc-client:preDebugBuild UP-TO-DATE
+> Task :rfc-client:mergeDebugJniLibFolders
+> Task :rfc-client:mergeDebugNativeLibs NO-SOURCE
+> Task :rfc-client:stripDebugDebugSymbols NO-SOURCE
+> Task :rfc-client:copyDebugJniLibsProjectAndLocalJars
+> Task :rfc-client:generateDebugResValues
+> Task :rfc-client:generateDebugResources
+> Task :rfc-client:packageDebugResources
+> Task :rfc-client:parseDebugLocalResources
+> Task :rfc-client:generateDebugRFile
+> Task :legacy-client:compileDebugKotlinAndroid
+> Task :rfc-client:compileDebugKotlinAndroid
+> Task :legacy-client:extractDebugAnnotations
+> Task :legacy-client:compileDebugJavaWithJavac NO-SOURCE
+> Task :legacy-client:mergeDebugGeneratedProguardFiles
+> Task :legacy-client:mergeDebugConsumerProguardFiles
+> Task :legacy-client:processDebugJavaRes
+> Task :rfc-client:extractDebugAnnotations
+> Task :rfc-client:extractDeepLinksForAarDebug
+> Task :rfc-client:mergeDebugShaders
+> Task :rfc-client:compileDebugShaders NO-SOURCE
+> Task :rfc-client:debugAssetsCopyForAGP NO-SOURCE
+> Task :rfc-client:generateDebugAssets UP-TO-DATE
+> Task :rfc-client:mergeDebugAssets
+> Task :rfc-client:javaPreCompileDebug
+> Task :rfc-client:compileDebugJavaWithJavac NO-SOURCE
+> Task :rfc-client:mergeDebugGeneratedProguardFiles
+> Task :rfc-client:mergeDebugConsumerProguardFiles
+> Task :rfc-client:prepareDebugArtProfile
+> Task :rfc-client:prepareLintJarForPublish
+> Task :rfc-client:processDebugManifest
+> Task :legacy-client:mergeDebugJavaResource
+> Task :rfc-client:processDebugJavaRes
+> Task :legacy-client:syncDebugLibJars
+> Task :legacy-client:bundleDebugAar
+> Task :legacy-client:assembleDebug
+> Task :rfc-client:mergeDebugJavaResource
+> Task :rfc-client:writeDebugAarMetadata
+> Task :rfc-client:syncDebugLibJars
+> Task :rfc-client:bundleDebugAar
+> Task :rfc-client:assembleDebug
+> Task :legacy-client:bundleLibRuntimeToJarDebug
+> Task :legacy-client:preDebugUnitTestBuild UP-TO-DATE
+> Task :legacy-client:bundleLibCompileToJarDebug
+> Task :legacy-client:javaPreCompileDebugUnitTest
+> Task :rfc-client:bundleLibRuntimeToJarDebug
+> Task :legacy-client:generateDebugUnitTestStubRFile
+> Task :rfc-client:bundleLibCompileToJarDebug
+> Task :rfc-client:preDebugUnitTestBuild UP-TO-DATE
+> Task :rfc-client:generateDebugUnitTestStubRFile
+> Task :legacy-client:compileDebugUnitTestKotlinAndroid
+> Task :legacy-client:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :legacy-client:processDebugUnitTestJavaRes
+> Task :rfc-client:compileDebugUnitTestKotlinAndroid
+
+> Task :legacy-client:testDebugUnitTest
+
+PublishedLegacyTest > malformedInputAndDestroyConsumePublishedSession PASSED
+
+PublishedLegacyTest > hardenedPinnedOracleIncludingHighBitAndNulNames PASSED
+
+> Task :rfc-client:javaPreCompileDebugUnitTest
+> Task :rfc-client:processDebugUnitTestJavaRes
+> Task :rfc-client:compileDebugUnitTestJavaWithJavac NO-SOURCE
+
+> Task :rfc-client:testDebugUnitTest
+
+PublishedRfcTest > officialP256PublicMessagesConfirmationsAndKey PASSED
+
+PublishedRfcTest > incorrectConfirmationIsTerminalInPublishedLibrary PASSED
+
+PublishedRfcTest > independentEdwardsPublicMessagesConfirmationsAndKey PASSED
+
+> Task :legacy-client:verifyPublishedDependencies FAILED
+
+[Incubating] Problems report is available at: file:///workspace/scratch/a46e59dd0882/round2-independent-consumer/integration/consumer/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':legacy-client:verifyPublishedDependencies'.
+> Could not resolve all artifacts for configuration ':legacy-client:debugUnitTestCompileClasspath'.
+   > The consumer was configured to find a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm'. However we cannot choose between the following variants of project :legacy-client:
+       - Configuration ':legacy-client:debugApiElements' variant android-classes-jar declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+           - Unmatched attributes:
+               - Provides attribute 'artifactType' with value 'android-classes-jar' but the consumer didn't ask for it
+               - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+               - Provides its elements packaged as a jar but the consumer didn't ask for it
+       - Configuration ':legacy-client:debugApiElements' variant android-lint declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+           - Unmatched attributes:
+               - Provides attribute 'artifactType' with value 'android-lint' but the consumer didn't ask for it
+               - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+               - Provides its elements packaged as a jar but the consumer didn't ask for it
+       - Configuration ':legacy-client:debugApiElements' variant android-lint-local-aar declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+           - Unmatched attributes:
+               - Provides attribute 'artifactType' with value 'android-lint-local-aar' but the consumer didn't ask for it
+               - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+       - Configuration ':legacy-client:debugApiElements' variant android-manifest declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+           - Unmatched attributes:
+               - Provides attribute 'artifactType' with value 'android-manifest' but the consumer didn't ask for it
+               - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+       - Configuration ':legacy-client:debugApiElements' variant android-renderscript declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+           - Unmatched attributes:
+               - Provides attribute 'artifactType' with value 'android-renderscript' but the consumer didn't ask for it
+               - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+       - Configuration ':legacy-client:debugApiElements' variant android-symbol-with-package-name declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+           - Unmatched attributes:
+               - Provides attribute 'artifactType' with value 'android-symbol-with-package-name' but the consumer didn't ask for it
+               - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+       - Configuration ':legacy-client:debugApiElements' variant jar declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+           - Unmatched attributes:
+               - Provides attribute 'artifactType' with value 'jar' but the consumer didn't ask for it
+               - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+               - Provides its elements packaged as a jar but the consumer didn't ask for it
+       - Configuration ':legacy-client:debugApiElements' variant r-class-jar declares a library for use during compile-time, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.AgpVersionAttr' with value '8.11.1', attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug', attribute 'org.jetbrains.kotlin.platform.type' with value 'androidJvm':
+           - Unmatched attributes:
+               - Provides attribute 'artifactType' with value 'r-class-jar' but the consumer didn't ask for it
+               - Provides attribute 'com.android.build.gradle.internal.attributes.VariantAttr' with value 'debug' but the consumer didn't ask for it
+               - Provides its elements packaged as a jar but the consumer didn't ask for it
+
+* Try:
+> Ambiguity errors are explained in more detail at https://docs.gradle.org/8.14.3/userguide/variant_model.html#sub:variant-ambiguity.
+> Review the variant matching algorithm at https://docs.gradle.org/8.14.3/userguide/variant_attributes.html#sec:abm_algorithm.
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 12m 5s
+134 actionable tasks: 134 executed

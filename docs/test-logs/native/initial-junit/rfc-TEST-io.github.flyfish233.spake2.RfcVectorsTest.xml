@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.RfcVectorsTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:12:19.994Z" hostname="c9d49951d07d" time="34.346">
+  <properties/>
+  <testcase name="p256EveryOfficialIntermediateField[linuxX64]" classname="io.github.flyfish233.spake2.RfcVectorsTest" time="7.015"/>
+  <testcase name="edwardsEveryIndependentIntermediateField[linuxX64]" classname="io.github.flyfish233.spake2.RfcVectorsTest" time="9.056"/>
+  <testcase name="publicP256ApiMatchesOfficialVectorsThroughConfirmation[linuxX64]" classname="io.github.flyfish233.spake2.RfcVectorsTest" time="6.328"/>
+  <testcase name="publicEdwardsApiMatchesIndependentVectorsThroughConfirmation[linuxX64]" classname="io.github.flyfish233.spake2.RfcVectorsTest" time="9.128"/>
+  <testcase name="edwardsRejectsEveryPureTorsionElement[linuxX64]" classname="io.github.flyfish233.spake2.RfcVectorsTest" time="0.54"/>
+  <testcase name="edwardsRfcMaskConstantsArePrimeOrder[linuxX64]" classname="io.github.flyfish233.spake2.RfcVectorsTest" time="0.142"/>
+  <testcase name="edwardsMixedOrderUsesCofactorAndBindsExactPeerEncoding[linuxX64]" classname="io.github.flyfish233.spake2.RfcVectorsTest" time="2.092"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

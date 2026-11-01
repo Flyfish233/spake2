@@ -1,0 +1,8 @@
+{
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HkdfSha256.kt": "5dc45de93eff52e5d60ad9687ce84bee2be698539b7be1ec5a38bb8ae767591a",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HmacSha256.kt": "c46ccc1ba589c0eb5d1539e7d9e6e7c5915ff17361993e93ffeab387d01f5330",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha256.kt": "bc60dd4bd927ad0bb06aa97215ee57c7ed013732d642200f4cbd1c5c6d65a0a6",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451",
+  "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/InternalSpake2Api.kt": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6",
+  "tools/hash_differential.py": "456848adcb7e207605a6f28f70ec9948a10ac33b34a591129abe074992ce709b"
+}

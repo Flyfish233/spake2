@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:42:14.271Z" hostname="c9d49951d07d" time="4.585">
+  <properties/>
+  <testcase name="replaySevenIndependentExchanges[js, node]" classname="io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest" time="3.066"/>
+  <testcase name="replayHistoricalPeerInputCases[js, node]" classname="io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest" time="1.512"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

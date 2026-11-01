@@ -1,0 +1,10 @@
+{
+  "executedAtUtc": "2026-10-26T19:02:03.445931+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "tools/tests/test_maven_repository_gate.py",
+    "MavenRepositoryGateTest.test_actual_native_metadata_task_names_survive_publication_renaming"
+  ],
+  "exitCode": 1,
+  "resultSummary": "FAILED (errors=1)"
+}

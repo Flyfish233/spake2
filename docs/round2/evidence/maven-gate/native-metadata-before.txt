@@ -1,0 +1,24 @@
+.E
+======================================================================
+ERROR: test_actual_native_metadata_variant_roundtrip_is_accepted (__main__.MavenRepositoryGateTest.test_actual_native_metadata_variant_roundtrip_is_accepted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 275, in test_actual_native_metadata_variant_roundtrip_is_accepted
+    report = self.verify()
+             ^^^^^^^^^^^^^
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 165, in verify
+    return gate.check_repository(self.repository, VERSION, REVISION, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/check_maven_repository.py", line 428, in check_repository
+    metadata = check_metadata(directory / f"{prefix}.module", repository, module, target, version, targets)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/check_maven_repository.py", line 289, in check_metadata
+    require(location.parent == path.parent and location.name == expected_file and isinstance(name, str) and name and
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/check_maven_repository.py", line 67, in require
+    raise VerificationError(message)
+check_maven_repository.VerificationError: Wrong artifact location/name: spake2-macosarm64-0.1.0-dev.gate-test.module:macosArm64MetadataElements-published
+
+----------------------------------------------------------------------
+Ran 2 tests in 1.267s
+
+FAILED (errors=1)

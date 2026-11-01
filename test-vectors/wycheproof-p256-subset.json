@@ -1,0 +1,975 @@
+{
+  "source": "https://raw.githubusercontent.com/C2SP/wycheproof/d17cc89fa5c8f4f4d378b5385ebf75da5d0926c9/testvectors_v1/ecdh_secp256r1_ecpoint_test.json",
+  "commit": "d17cc89fa5c8f4f4d378b5385ebf75da5d0926c9",
+  "inputSha256": "648f16d077caf2400d02331ca51f44744c72c799830c8d0595d0b18b6dd9f886",
+  "license": "Apache-2.0",
+  "generator": "tools/generate_wycheproof_subset.py",
+  "scope": "All invalid raw-point cases, compressed acceptable case rejected by RFC encoding policy, representative valid edge cases",
+  "tests": [
+    {
+      "tcId": 1,
+      "comment": "normal case",
+      "flags": [
+        "Normal"
+      ],
+      "public": "0462d5bd3372af75fe85a040715d0f502428e07046868b0bfdfa61d731afe44f26ac333a93a9e70a81cd5a95b5bf8d13990eb741c8c38872b4a07d275a014e30cf",
+      "private": "0612465c89a023ab17855b0a6bcebfd3febb53aef84138647b5352e02c10c346",
+      "shared": "53020d908b0219328b658b525f26780e3ae12bcd952bb25a93bc0895e1714285",
+      "result": "valid"
+    },
+    {
+      "tcId": 2,
+      "comment": "compressed public key",
+      "flags": [
+        "CompressedPublic",
+        "CompressedPoint"
+      ],
+      "public": "0362d5bd3372af75fe85a040715d0f502428e07046868b0bfdfa61d731afe44f26",
+      "private": "0612465c89a023ab17855b0a6bcebfd3febb53aef84138647b5352e02c10c346",
+      "shared": "53020d908b0219328b658b525f26780e3ae12bcd952bb25a93bc0895e1714285",
+      "result": "acceptable"
+    },
+    {
+      "tcId": 3,
+      "comment": "shared secret has x-coordinate that satisfies x**2 = 0",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "0458fd4168a87795603e2b04390285bdca6e57de6027fe211dd9d25e2212d29e62080d36bd224d7405509295eed02a17150e03b314f96da37445b0d1d29377d12c",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "0000000000000000000000000000000000000000000000000000000000000000",
+      "result": "valid"
+    },
+    {
+      "tcId": 6,
+      "comment": "shared secret has x-coordinate 2**32 + 0",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "0408d6148d0244d243b3d0d1777de6375fa7ebeab477f19915d05994db04df219727737d4f8ce0a7f390becce92b2bcd5c054f18ecb58e5dd59baf88b4ed6abea8",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "0000000000000000000000000000000000000000000000000000000100000000",
+      "result": "valid"
+    },
+    {
+      "tcId": 10,
+      "comment": "shared secret has x-coordinate that satisfies x**2 = 2",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "04d5c96efd1907fd48de2ad715acf82eae5c6690fe3efe16a78d61c68d3bfd10df03eac816b9e7b776192a3f5075887c0e225617505833ca997cda32fd0f673c5e",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "507442007322aa895340cba4abc2d730bfd0b16c2c79a46815f8780d2c55a2dd",
+      "result": "valid"
+    },
+    {
+      "tcId": 13,
+      "comment": "shared secret has x-coordinate that satisfies x**2 = 8",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "04f475f503a770df72c45aedfe42c008f59aa57e72b232f26600bdd0353957cb20bdb8f6405b4918050a3549f44c07a8eba820cdce4ece699888c638df66f54f7c",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "5f177bfe19baaaee597e68b6a87a519e805e9d28a70cb72fd40f0fe5a754ba45",
+      "result": "valid"
+    },
+    {
+      "tcId": 17,
+      "comment": "shared secret has x-coordinate with repeating bit-pattern of size 4",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "040b9d56422ed9c2082dd9d46d231fd0141f92e79f5a12da4c77c488c87363f944e6e3c2ec9779615f242bc30d1c28c1f984b8c252243f5f1eaa3d855e1cc2d8a6",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "3333333333333333333333333333333333333333333333333333333333333333",
+      "result": "valid"
+    },
+    {
+      "tcId": 20,
+      "comment": "shared secret has x-coordinate with repeating bit-pattern of size 8",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "04123b1921231bee315e1ea66cb95318d6392f85695bbec03c334740ce7add768efec9a108770ff0eb448eee9f06367416d74b22a2f38157bb00d8c0be44ebf152",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0",
+      "result": "valid"
+    },
+    {
+      "tcId": 24,
+      "comment": "shared secret has x-coordinate with repeating bit-pattern of size 30",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "04a8d93bebbaf25fa9a1f98c44b54dbf28634a5fd08402dba5d9e4873f8123da1db972d91a0eabadb630b271e6551b757d969301beddd11f82decdfbe4f9657f50",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "8000fffe0003fff8000fffe0003fff8000fffe0003fff8000fffe0003fff7ffe",
+      "result": "valid"
+    },
+    {
+      "tcId": 27,
+      "comment": "shared secret has x-coordinate with repeating bit-pattern of size 51",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "048721294f9eb3ba69a13ae7d933fa51c48393fe1b9b9b17a08cecff2ee6ad434d2c23cd11d26694c472dda8cea4133bbc68e1f234bc7e8bffcea9446091855491",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "8000003ffffff0000007fffffe000000ffffffc000001ffffff8000003fffffc",
+      "result": "valid"
+    },
+    {
+      "tcId": 31,
+      "comment": "shared secret has x-coordinate with repeating bit-pattern of size 60",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "048e7b50f7d8c44d5d3496c43141a502f4a43f153d03ad43eda8e39597f1d477b8647f3da67969b7f989ff4addc393515af40c82085ce1f2ee195412c6f583774f",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "ffff00000003fffffff00000003fffffff00000003fffffff00000003fffffff",
+      "result": "valid"
+    },
+    {
+      "tcId": 34,
+      "comment": "shared secret has x-coordinate with repeating bit-pattern of size 62",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "04739b5c2189729b577ba1a467a1a0851c556b860f6b2016bcd50beb22ee9c0d7961ea43cf1ea7aad1a2360b0f37a74ca532dc8d1af26cdf89a87d93dcaa0c9564",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "00fffffffe00000003fffffff80000000fffffffe00000003fffffff80000000",
+      "result": "valid"
+    },
+    {
+      "tcId": 38,
+      "comment": "shared secret has x-coordinate with repeating bit-pattern of size 112",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "04fc85bfee056478a1717582accd11ed49009891cbda5fe40b9f4c1742e127db2c97033f5f6405acfa57553f1e375a13e8d6e3a1151958c709be508e0bac7804d6",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "00000000ffffffffffffff00000000000000ffffffffffffff00000000000000",
+      "result": "valid"
+    },
+    {
+      "tcId": 41,
+      "comment": "shared secret has an x-coordinate of approx p//3",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "04e9c0af0bf6dadd8fbe04c5cf3fce80683a9c267b0dc9850cbc1bcdfeb744c3516efe878223dd9dd924e83e3ab22c9bf304129ab59c1f3d30fb58b8770bf9d9bf",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "5555555500000000555555555555555555555555aaaaaaaaaaaaaaaaaaaaaaab",
+      "result": "valid"
+    },
+    {
+      "tcId": 45,
+      "comment": "y-coordinate of the public key is small",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "043cbc1b31b43f17dc200dd70c2944c04c6cb1b082820c234a300b05b7763844c74fde0a4ef93887469793270eb2ff148287da9265b0334f9e2609aac16e8ad503",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "7fffffffffffffffffffffffeecf2230ffffffffffffffffffffffffffffffff",
+      "result": "valid"
+    },
+    {
+      "tcId": 48,
+      "comment": "y-coordinate of the public key is small",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "047fffffffffffffffffffffffeecf2230ffffffffffffffffffffffffffffffff00000001c7c30643abed0af0a49fe352cb483ff9b97dccdf427c658e8793240d",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "6fd26661851a8de3c6d06f834ef3acb8f2a5f9c136a985ffe10d5eeb51edcfa3",
+      "result": "valid"
+    },
+    {
+      "tcId": 51,
+      "comment": "y-coordinate of the public key is large",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "043cbc1b31b43f17dc200dd70c2944c04c6cb1b082820c234a300b05b7763844c7b021f5b006c778ba686cd8f14d00eb7d78256d9b4fccb061d9f6553e91752afc",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "7fffffffffffffffffffffffeecf2230ffffffffffffffffffffffffffffffff",
+      "result": "valid"
+    },
+    {
+      "tcId": 55,
+      "comment": "y-coordinate of the public key is large",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "04000000000000000000000000111124f400000000000000000000000000000000fffffff1ed2c7e5089f4e3af4175307a6c7afad480ac3219831ec8a621cedc5f",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "f1f0e43b374feb7e7f96d4ffe7519fa8bb6c3cfd25f6f87dab2623d2a2d33851",
+      "result": "valid"
+    },
+    {
+      "tcId": 58,
+      "comment": "y-coordinate of the public key has many trailing 1's",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "048e5d22d5e53ec797c55ecd68a08a7c3361cd99ca7fad1a68ea802a6a4cb58a918ea7a07023ef67677024bd3841e187c64b30a30a3750eb2ee873fbe58fa1357b",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "0000000000000000000000001f6bd1e500000000000000000000000000000000",
+      "result": "valid"
+    },
+    {
+      "tcId": 65,
+      "comment": "y-coordinate of the public key has many trailing 0's",
+      "flags": [
+        "EdgeCaseSharedSecret"
+      ],
+      "public": "04293aa349b934ab2c839cf54b8a737df2304ef9b20fa494e31ad62b315dd6a53cee7e7d46a10b99156571780699e082fe867b3ea257dfbc0ac92e1195926a4af6",
+      "private": "0a0d622a47e48f6bc1038ace438c6f528aa00ad2bd1da5f13ee46bf5f633d71a",
+      "shared": "000000000000000000000002099f55d5ffffffffffffffffffffffffffffffff",
+      "result": "valid"
+    },
+    {
+      "tcId": 66,
+      "comment": "y-coordinate of the public key has many trailing 0's",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "047fffffffffffffffffffffffca089011ffffffffffffffffffffffffffffffffd984020659eeb722327fd7c8cd22b3ef6a1b44c0469a7bf7df723eeb80000000",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "44236c8b9505a19d48774a3903c0292759b0f826e6ac092ff898d87e53d353fc",
+      "result": "valid"
+    },
+    {
+      "tcId": 71,
+      "comment": "ephemeral key has x-coordinate 2**16 + 0",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "04000000000000000000000000000000000000000000000000000000000001000073ca30641acabe581170b4d5253f7a342b039a87ab2447badad08ece2cf19f52",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "4cfd639fd80c84b935c33cfaacceeb256b2f7e273c3ae5f0ff92b74957376f22",
+      "result": "valid"
+    },
+    {
+      "tcId": 76,
+      "comment": "ephemeral key has x-coordinate that satisfies x**2 = 2",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "04507442007322aa895340cba4abc2d730bfd0b16c2c79a46815f8780d2c55a2dd4619d69f9940f51663aa12381bc7cf678bd1a72a49fbc11b0b69cb22d1af9f2d",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "4e173a80907f361fe5a5d335ba7685d5eba93e9dfc8d8fcdb1dcd2d2bde27507",
+      "result": "valid"
+    },
+    {
+      "tcId": 81,
+      "comment": "ephemeral key has x-coordinate with repeating bit-pattern of size 2",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "0455555555555555555555555555555555555555555555555555555555555555540a46712790e63f981f0103b2a609fa691c5291a17974eb0c3b518faac21535d6",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "be033e3db6216d3b3f9d66c96ca3b24475813ba8eb7820d7d6ff29c72fd39c64",
+      "result": "valid"
+    },
+    {
+      "tcId": 85,
+      "comment": "ephemeral key has x-coordinate with repeating bit-pattern of size 8",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "040f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f03425ba0d8a018b42861e816c79a17d3b47df8f5f7107c181168e9edc62cb3cf",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "ff6e930d08290769ef982bc568b0b45f88b7d5219b00667820793b3e824c1615",
+      "result": "valid"
+    },
+    {
+      "tcId": 90,
+      "comment": "ephemeral key has x-coordinate with repeating bit-pattern of size 30",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "048000fffe0003fff8000fffe0003fff8000fffe0003fff8000fffe0003fff7ffe1d3b684a87958143f250bf5a2f7859fd036620b4dc18dacd1d0c8c42eeb2e54a",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "50af11f10d130df5f9adcdd0103ff3d42808582487330932c2546022bf7c6a18",
+      "result": "valid"
+    },
+    {
+      "tcId": 95,
+      "comment": "ephemeral key has x-coordinate with repeating bit-pattern of size 52",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "04000003ffffff0000003ffffff0000003ffffff0000003ffffff0000003ffffff1582fa32e2d4a89dfcfb3d0b149f667dba3329490f4d64ee2ad586c0c9e8c508",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "06fa1059935e47a9fd667e13f469614eb257cc9a7e3fc599bfb92780d59b146d",
+      "result": "valid"
+    },
+    {
+      "tcId": 100,
+      "comment": "ephemeral key has x-coordinate with repeating bit-pattern of size 62",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "0400fffffffe00000003fffffff80000000fffffffe00000003fffffff8000000007bc25fb4d2b4cd12a16515725d64cdbd5bc86b7f84ef005c9e51d0700a3a4b8",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "68e8765c71a63f3458e8edb2e52f499a1de13ae1ff1c95f18c4adad9d898667a",
+      "result": "valid"
+    },
+    {
+      "tcId": 105,
+      "comment": "ephemeral key has x-coordinate with repeating bit-pattern of size 128",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "040000000000000000ffffffffffffffff0000000000000000fffffffffffffffd137bd006820a8be23475ea25d8fa05c8ed47fca1236cd5d1f07667db6fcd2979",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "6c7b3006dccdb0b021f00307200793374419358b1367800ace76d988b10ff699",
+      "result": "valid"
+    },
+    {
+      "tcId": 110,
+      "comment": "ephemeral key has an x-coordinate of approx p//9",
+      "flags": [
+        "EdgeCaseEphemeralKey"
+      ],
+      "public": "041c71c71c5555555571c71c71c71c71c71c71c71c8e38e38e38e38e38e38e38e46ef488581fbbd6b4ef78d03cdd161272243fdcc10979fd8e8fd199b98a63d378",
+      "private": "55d55f11bb8da1ea318bca7266f0376662441ea87270aa2077f1b770c4854a48",
+      "shared": "7b5020080ce9bd76083ff132dc28ea996314be1a4ac21f987fbbe859f902fab1",
+      "result": "valid"
+    },
+    {
+      "tcId": 111,
+      "comment": "edge case for computation of x with projective coordinates",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "04851eb1b8699d1cc01c6b6048139797dab3981c924f9ef81bd1f464c3182c870901285b2ae7cbcabfd5bccb9441eb3376b491595f60a1ec21dbe9f972bc32abbe",
+      "private": "00e461c5b5e63d75b4c8c123bf8b9cd45e712af08f7e2e494a8f255ac9d80e058b",
+      "shared": "6d03fef6b354840f4642fba1c8fce9f7d1cda8ae27b6ca01510fb44573fdaffb",
+      "result": "valid"
+    },
+    {
+      "tcId": 124,
+      "comment": "edge case for computation of x with projective coordinates in left to right addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "0409e5c414b7f5073858553b8b8b4295488e3f3ab966581f240a6124251512270f8fc12563fb9bd6f97b445417cfb14cf9944bac1a26c176b532b698ea8c1bed6f",
+      "private": "00e461c5b5e63d75b4c8c123bf8b9cd45e712af08f7e2e494a8f255ac9d80e058b",
+      "shared": "c06f7373e67ee8c64dd86127fff8b2d23d284420d30e571a79fbb9b54aa70dfe",
+      "result": "valid"
+    },
+    {
+      "tcId": 138,
+      "comment": "edge case for computation of x with projective coordinates in left to right addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "041350cac374bb076ee89eb8af43d076afc7312021006431fd909d22df064f6637244f236a65e7c1c778f6cac2d9b4ec3bd999ac185797a227cf00552d6aa5163a",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "1de1656d961de1f584a2f7179bd3be3b4a282cbd3248f29e74b73a812cad8d90",
+      "result": "valid"
+    },
+    {
+      "tcId": 151,
+      "comment": "edge case for computation of x with projective coordinates in precomputation or right to left addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "0429c1e774c9d3a8930df8a663fadc8b9a6092d8054ff37adf598edd78d0a3ffc57173a3594be68b7ad191e0ff27d79eb4e7bb22f1090873cf307cd073b27368fc",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "4df3a98474884b1c3c78b6c81e4f90d53d8bb4daba4227c411a5747e6aac8cb8",
+      "result": "valid"
+    },
+    {
+      "tcId": 165,
+      "comment": "edge case for computation of x with projective coordinates in right to left addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "04e754cdf8e56944d5bd36d025b1c0f5fb2754a2eee0fb5200bd169cdfc83f07c38f2b7881de647c2c66294e1adf767e515adda742d3a863f0cdd6665b964e60a3",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "8451f3414247058c32b53be128cffd2f2887434ab902b67b05fbbe7aeed8cbd1",
+      "result": "valid"
+    },
+    {
+      "tcId": 178,
+      "comment": "edge case for computation of y with projective coordinates in left to right addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "04d3a07a4b6f9b660d92b3fe937e2ebf91dda8005a7ffd0292dad91d0592f1a89ed7209513bde00287b8234e280c00b3c59dc5e333c8c56864bb6cfb364e3f2d85",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "da223bd733d403e2f2f9f59ff712230b0ab7feafc87dc7021644569e3d513795",
+      "result": "valid"
+    },
+    {
+      "tcId": 192,
+      "comment": "edge case for computation of y with projective coordinates in precomputation or right to left addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "044c381ef0302e1b428f4887f7b4fde4960245920f40c4005669a091644c27482bef739bc3a3d22c6e707557f2469f504aea9e8a07591776b3324beb5c498e6f55",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "9dda17a91ad44d472304c805b350f9ee55de2d94d7327160dbc50e2eaa85e4e8",
+      "result": "valid"
+    },
+    {
+      "tcId": 205,
+      "comment": "point with coordinate x = 0 in left to right addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "046e8966a6013dde2bb3b2a28c6eb013c481ddb7249ef19d73b92da35cad1d6f14604bf43d798ae27621df2eddc8f5d90ee0289c54bbac82b3c5264c478761d153",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "5460bbc867f4f61b79ed491e41779e2ac8dea27ec1320b558f3cff5b6a94c224",
+      "result": "valid"
+    },
+    {
+      "tcId": 219,
+      "comment": "point with coordinate x = 0 in precomputation or right to left addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "04776aef1acb82b628e132cc29440988f0a15d4cc2b4f328aecb063c9b86e5018e6e44dfc60444faa9c4e36bc217451f7ac2956cb3b2e9bbd655eba297163d1f34",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "28a88b6b258f233020ba6fa9c00d1d72831f4515b86966a9782f521315e18aa7",
+      "result": "valid"
+    },
+    {
+      "tcId": 232,
+      "comment": "point with coordinate y = 1",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "045fdb7f0cffb8b5b1142d24698a4bda76bf9827d63b1a6bd85a4e2f9b59c510cfbcb35ba9c987108b6d4337ad5393f9f910ec92410c230869d66528ed88c1b98a",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "7f97db83b4d86f04fe286041ee21e80ec3d59f3ce82cdeeaf362016fc87a3e02",
+      "result": "valid"
+    },
+    {
+      "tcId": 246,
+      "comment": "point with coordinate y = 1 in left to right addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "04f1052699d87e5677c75e26b2abe719310648d820a96e5b381fff58b392401581b1bb16ae8b68cbb76a3256870bad1ee5a30ff9fd662fd4f8d1fe5b5f1f98ff46",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "1f3a9615b0745046a972bad5d59794a0b60b032b4ac94fe85f77dfb380d1f32b",
+      "result": "valid"
+    },
+    {
+      "tcId": 259,
+      "comment": "point with coordinate y = 1 in left to right addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "040e3aa971bacdace350dc0957fa5bde0946324eb139939d7fc1997c701effd04a4e6c3625d9564168d3a752961221a1de8cf5f3d603752a8c2e6277ac3a918c25",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "c8b5e8e7488857a2dde62c5fc21e4525ebaba0e06b5be83ec6e7dd771e15a01a",
+      "result": "valid"
+    },
+    {
+      "tcId": 273,
+      "comment": "point with coordinate y = 1 in left to right addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "0433d9582b567aadbe59606fa6ffc11848e4947b5179597317776317b2b4ff65d0b4d8568dc843319cc04f4bf110496dee7c9229fc68cb0958f3cbd37ecca6990f",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "000197fbc260a84dbcbf88136aeaa79b03bb8949aefd2416bef63929ef789bf3",
+      "result": "valid"
+    },
+    {
+      "tcId": 286,
+      "comment": "point with coordinate y = 1 in precomputation or right to left addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "04fed6ce127290c1291ca5ce64acb4e0f2f8905654d1d25ba57c1f74ab52f21f42963d31671c06b802169929525c4a1fdeff5b1eafab919dc2df6c52be84dfaef3",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "0e3dfdab606ebdc6428282acd443f189c99b3b483aa101fd8d6bed38aec59e02",
+      "result": "valid"
+    },
+    {
+      "tcId": 300,
+      "comment": "point with coordinate y = 1 in right to left addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "04341592390ccce485de8880f3d727f664c381914a1becec383b35586751fc81c2add71852b87016e1019cae7a9080e75ce0b0b8aac175d692d5e7b4dad088f5cc",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "4ce2701b2be63a0083a4c53f7a0bf04cf871654f5edb6f625e3ea5e7d0bdcc90",
+      "result": "valid"
+    },
+    {
+      "tcId": 314,
+      "comment": "point with coordinate y = 1 in right to left addition chain",
+      "flags": [
+        "EdgeCaseDoubling"
+      ],
+      "public": "04d2f211cfab84e01c8e5544036234debe35ae103bb878d7abcea6825f753e03a385f7f1870e64f1262af67a25ef9880419f45608e7f9da6dee83f5f46ceb53dcb",
+      "private": "00809c461d8b39163537ff8f5ef5b977e4cdb980e70e38a7ee0b37cc876729e9ff",
+      "shared": "f419febb32c254611adf569c2d583b17542b1538caa0001967f0a4bc34b8b789",
+      "result": "valid"
+    },
+    {
+      "tcId": 315,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "03",
+      "shared": "85a0b58519b28e70a694ec5198f72c4bfdabaa30a70f7143b5b1cd7536f716ca",
+      "result": "valid"
+    },
+    {
+      "tcId": 316,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "shared": "a329a7d80424ea2d6c904393808e510dfbb28155092f1bac284dceda1f13afe5",
+      "result": "valid"
+    },
+    {
+      "tcId": 317,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "0100000000000000000000000000000000000000000000000000000000000000",
+      "shared": "bd26d0293e8851c51ebe0d426345683ae94026aca545282a4759faa85fde6687",
+      "result": "valid"
+    },
+    {
+      "tcId": 318,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "shared": "ea9350b2490a2010c7abf43fb1a38be729a2de375ea7a6ac34ff58cc87e51b6c",
+      "result": "valid"
+    },
+    {
+      "tcId": 319,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "008000000000000000000000000000000000000000000000000000000000000000",
+      "shared": "34eed3f6673d340b6f716913f6dfa36b5ac85fa667791e2d6a217b0c0b7ba807",
+      "result": "valid"
+    },
+    {
+      "tcId": 320,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffff00000000ffffffffffffffffbce6faada7179e83f3b9cac2fc632551",
+      "shared": "1354ce6692c9df7b6fc3119d47c56338afbedccb62faa546c0fe6ed4959e41c3",
+      "result": "valid"
+    },
+    {
+      "tcId": 321,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffff00000000ffffffffffffffffbce6faada7179e84f3a9cac2fc632551",
+      "shared": "fe7496c30d534995f0bf428b5471c21585aaafc81733916f0165597a55d12cb4",
+      "result": "valid"
+    },
+    {
+      "tcId": 322,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffff00000000ffffffffffffffffbce6faada7179e84f3b1cac2fc632551",
+      "shared": "348bf8042e4edf1d03c8b36ab815156e77c201b764ed4562cfe2ee90638ffef5",
+      "result": "valid"
+    },
+    {
+      "tcId": 323,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac1fc632551",
+      "shared": "6e4ec5479a7c20a537501700484f6f433a8a8fe53c288f7a25c8e8c92d39e8dc",
+      "result": "valid"
+    },
+    {
+      "tcId": 324,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc6324f3",
+      "shared": "f7407d61fdf581be4f564621d590ca9b7ba37f31396150f9922f1501da8c83ef",
+      "result": "valid"
+    },
+    {
+      "tcId": 325,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632533",
+      "shared": "82236fd272208693e0574555ca465c6cc512163486084fa57f5e1bd2e2ccc0b3",
+      "result": "valid"
+    },
+    {
+      "tcId": 326,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632543",
+      "shared": "06537149664dba1a9924654cb7f787ed224851b0df25ef53fcf54f8f26cd5f3f",
+      "result": "valid"
+    },
+    {
+      "tcId": 327,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc63254b",
+      "shared": "f2b38539bce995d443c7bfeeefadc9e42cc2c89c60bf4e86eac95d51987bd112",
+      "result": "valid"
+    },
+    {
+      "tcId": 328,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc63254e",
+      "shared": "85a0b58519b28e70a694ec5198f72c4bfdabaa30a70f7143b5b1cd7536f716ca",
+      "result": "valid"
+    },
+    {
+      "tcId": 329,
+      "comment": "edge case private key",
+      "flags": [
+        "AdditionChain"
+      ],
+      "public": "0431028f3377fc8f2b1967edaab90213acad0da9f50897f08f57537f78f116744743a1930189363bbde2ac4cbd1649cdc6f451add71dd2f16a8a867f2b17caa16b",
+      "private": "00ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc63254f",
+      "shared": "027b013a6f166db655d69d643c127ef8ace175311e667dff2520f5b5c75b7659",
+      "result": "valid"
+    },
+    {
+      "tcId": 330,
+      "comment": "CVE-2017-8932",
+      "flags": [
+        "CVE-2017-8932"
+      ],
+      "public": "04023819813ac969847059028ea88a1f30dfbcde03fc791d3a252c6b41211882eaf93e4ae433cc12cf2a43fc0ef26400c0e125508224cdb649380f25479148a4ad",
+      "private": "2a265f8bcbdcaf94d58519141e578124cb40d64a501fba9c11847b28965bc737",
+      "shared": "4d4de80f1534850d261075997e3049321a0864082d24a917863366c0724f5ae3",
+      "result": "valid"
+    },
+    {
+      "tcId": 331,
+      "comment": "CVE-2017-8932",
+      "flags": [
+        "CVE-2017-8932"
+      ],
+      "public": "04cc11887b2d66cbae8f4d306627192522932146b42f01d3c6f92bd5c8ba739b06a2f08a029cd06b46183085bae9248b0ed15b70280c7ef13a457f5af382426031",
+      "private": "313f72ff9fe811bf573176231b286a3bdb6f1b14e05c40146590727a71c3bccd",
+      "shared": "831c3f6b5f762d2f461901577af41354ac5f228c2591f84f8a6e51e2e3f17991",
+      "result": "valid"
+    },
+    {
+      "tcId": 332,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "0400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 333,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "0400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 334,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "040000000000000000000000000000000000000000000000000000000000000000ffffffff00000001000000000000000000000000fffffffffffffffffffffffe",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 335,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "040000000000000000000000000000000000000000000000000000000000000000ffffffff00000001000000000000000000000000ffffffffffffffffffffffff",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 336,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "0400000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 337,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "0400000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 338,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "040000000000000000000000000000000000000000000000000000000000000001ffffffff00000001000000000000000000000000fffffffffffffffffffffffe",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 339,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "040000000000000000000000000000000000000000000000000000000000000001ffffffff00000001000000000000000000000000ffffffffffffffffffffffff",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 340,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "04ffffffff00000001000000000000000000000000fffffffffffffffffffffffe0000000000000000000000000000000000000000000000000000000000000000",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 341,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "04ffffffff00000001000000000000000000000000fffffffffffffffffffffffe0000000000000000000000000000000000000000000000000000000000000001",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 342,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "04ffffffff00000001000000000000000000000000fffffffffffffffffffffffeffffffff00000001000000000000000000000000fffffffffffffffffffffffe",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 343,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "04ffffffff00000001000000000000000000000000fffffffffffffffffffffffeffffffff00000001000000000000000000000000ffffffffffffffffffffffff",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 344,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "04ffffffff00000001000000000000000000000000ffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 345,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "04ffffffff00000001000000000000000000000000ffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000001",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 346,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "04ffffffff00000001000000000000000000000000ffffffffffffffffffffffffffffffff00000001000000000000000000000000fffffffffffffffffffffffe",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 347,
+      "comment": "point is not on curve",
+      "flags": [
+        "InvalidCurveAttack"
+      ],
+      "public": "04ffffffff00000001000000000000000000000000ffffffffffffffffffffffffffffffff00000001000000000000000000000000ffffffffffffffffffffffff",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 348,
+      "comment": "",
+      "flags": [
+        "InvalidEncoding"
+      ],
+      "public": "",
+      "private": "7e4aa54f714bf01df85c50269bea3a86721f84afe74f7b41ea58abcf3474e88d",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 349,
+      "comment": "invalid public key",
+      "flags": [
+        "InvalidCompressedPublic",
+        "CompressedPoint"
+      ],
+      "public": "02fd4bf61763b46581fd9174d623516cf3c81edd40e29ffa2777fb6cb0ae3ce535",
+      "private": "6f953faff3599e6c762d7f4cabfeed092de2add1df1bc5748c6cbb725cf35458",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 350,
+      "comment": "public key is a low order point on twist",
+      "flags": [
+        "WrongCurve",
+        "CompressedPoint"
+      ],
+      "public": "03efdde3b32872a9effcf3b94cbf73aa7b39f9683ece9121b9852167f4e3da609b",
+      "private": "00d27edf0ff5b6b6b465753e7158370332c153b468a1be087ad0f490bdb99e5f02",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 351,
+      "comment": "public key is a low order point on twist",
+      "flags": [
+        "WrongCurve",
+        "CompressedPoint"
+      ],
+      "public": "02efdde3b32872a9effcf3b94cbf73aa7b39f9683ece9121b9852167f4e3da609b",
+      "private": "00d27edf0ff5b6b6b465753e7158370332c153b468a1be087ad0f490bdb99e5f03",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 352,
+      "comment": "public key is a low order point on twist",
+      "flags": [
+        "WrongCurve",
+        "CompressedPoint"
+      ],
+      "public": "02c49524b2adfd8f5f972ef554652836e2efb2d306c6d3b0689234cec93ae73db5",
+      "private": "0095ead84540c2d027aa3130ff1b47888cc1ed67e8dda46156e71ce0991791e835",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 353,
+      "comment": "public key is a low order point on twist",
+      "flags": [
+        "WrongCurve",
+        "CompressedPoint"
+      ],
+      "public": "0318f9bae7747cd844e98525b7ccd0daf6e1d20a818b2175a9a91e4eae5343bc98",
+      "private": "00a8681ef67fb1f189647d95e8db00c52ceef6d41a85ba0a5bd74c44e8e62c8aa4",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 354,
+      "comment": "public key is a low order point on twist",
+      "flags": [
+        "WrongCurve",
+        "CompressedPoint"
+      ],
+      "public": "0218f9bae7747cd844e98525b7ccd0daf6e1d20a818b2175a9a91e4eae5343bc98",
+      "private": "00a8681ef67fb1f189647d95e8db00c52ceef6d41a85ba0a5bd74c44e8e62c8aa5",
+      "shared": "",
+      "result": "invalid"
+    },
+    {
+      "tcId": 355,
+      "comment": "public key is a low order point on twist",
+      "flags": [
+        "WrongCurve",
+        "CompressedPoint"
+      ],
+      "public": "03c49524b2adfd8f5f972ef554652836e2efb2d306c6d3b0689234cec93ae73db5",
+      "private": "0095ead84540c2d027aa3130ff1b47888cc1ed67e8dda46156e71ce0991791e834",
+      "shared": "",
+      "result": "invalid"
+    }
+  ]
+}

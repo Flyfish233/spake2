@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.RfcFailureTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:11:26.846Z" hostname="c9d49951d07d" time="53.139">
+  <properties/>
+  <testcase name="wrongPasswordIdentityAIdentityBAndAadAllPreventKeyRelease[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="7.995"/>
+  <testcase name="cannotReleaseAKeyBeforeConfirmationOrBeforePeerMessage[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.303"/>
+  <testcase name="malformedConfirmationLengthAndContentAreTerminal[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="12.649"/>
+  <testcase name="sameRoleFailsConfirmation[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="2.236"/>
+  <testcase name="repeatedOperationsAndDestroyAreTerminal[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="3.081"/>
+  <testcase name="successfulKeyCanOnlyBeReleasedOnce[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="2.304"/>
+  <testcase name="sourceFailureWrongLengthAndRepeatedZeroCandidatesTerminateAndWipe[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.005"/>
+  <testcase name="rejectionSamplingRejectsZeroAndOrderAndConsumesFreshEntropy[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.455"/>
+  <testcase name="entropyCallbackReentrancyPoisonsTheOwningOperation[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.288"/>
+  <testcase name="invalidScalarAndInputBoundsAreRejectedBeforeUse[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.009"/>
+  <testcase name="hostilePointEncodingsAreRejectedAndOwnedSecretsErased[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="2.559"/>
+  <testcase name="callerArraysAreDefensivelyCopiedAndMessagesHaveIndependentStorage[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="2.003"/>
+  <testcase name="boundedMalformedInputFuzzIsTerminal[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="19.163"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

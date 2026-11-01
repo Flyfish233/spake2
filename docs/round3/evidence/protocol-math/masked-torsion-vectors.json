@@ -1,0 +1,106 @@
+{
+  "kind": "independent affine integer reference; not a Kotlin execution",
+  "passwordScalar": 42,
+  "victimEphemeral": 7,
+  "source": "RFC 9382 sections 3.2, 3.3, 6 and RFC 8032 section 5.1",
+  "torsionGenerator": "c7176a703d4dd84fba3c0b760d10670f2a2053fa2c39ccc64ec7fd7792ac037a",
+  "vectors": [
+    {
+      "victimRole": "ALICE",
+      "torsionIndex": 0,
+      "peerMessage": "9d712506f6f7c9a66ae884add400f243d7383ef4056c95efc7b887c4b93d0aff",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "ALICE",
+      "torsionIndex": 1,
+      "peerMessage": "b2527570fd57942c04240962844e7c93c11bd4a8638413823c2044ea797faab8",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "ALICE",
+      "torsionIndex": 2,
+      "peerMessage": "f8bef1d893508cf60726be9c7295fd5f1f168ecf08a6484be6afb1ec65d43c46",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "ALICE",
+      "torsionIndex": 3,
+      "peerMessage": "2a90eb334551db73f0f9942f7d67c8f491b7744bc25b05c5b28dabcfd3024b42",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "ALICE",
+      "torsionIndex": 4,
+      "peerMessage": "508edaf90908365995177b522bff0dbc28c7c10bfa936a103847783b46c2f500",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "ALICE",
+      "torsionIndex": 5,
+      "peerMessage": "3bad8a8f02a86bd3fbdbf69d7bb1836c3ee42b579c7bec7dc3dfbb1586805547",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "ALICE",
+      "torsionIndex": 6,
+      "peerMessage": "f5400e276caf7309f8d941638d6a02a0e0e97130f759b7b419504e139a2bc3b9",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "ALICE",
+      "torsionIndex": 7,
+      "peerMessage": "c36f14ccbaae248c0f066bd08298370b6e488bb43da4fa3a4d7254302cfdb4bd",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "BOB",
+      "torsionIndex": 0,
+      "peerMessage": "516ac986e2ce837963086259e1a79778ffae11abd37fced976714b0207a9c26d",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "BOB",
+      "torsionIndex": 1,
+      "peerMessage": "af55e461af2c2d4519b4d5afe7589f9b00222e841dfe779b6b6ec444b463215c",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "BOB",
+      "torsionIndex": 2,
+      "peerMessage": "360fe1cb1f547f4d1aaaa095bdb10e120885208e25ff2cdc8c04bdcf8af4b7d3",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "BOB",
+      "torsionIndex": 3,
+      "peerMessage": "45408b62020ec16ba5a86f25c8771a57dabdc6244c0d86bd206228c36a0bcf47",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "BOB",
+      "torsionIndex": 4,
+      "peerMessage": "9c9536791d317c869cf79da61e5868870051ee542c803126898eb4fdf8563d92",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "BOB",
+      "torsionIndex": 5,
+      "peerMessage": "3eaa1b9e50d3d2bae64b2a5018a76064ffddd17be201886494913bbb4b9cdea3",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "BOB",
+      "torsionIndex": 6,
+      "peerMessage": "b7f01e34e0ab80b2e5555f6a424ef1edf77adf71da00d32373fb4230750b482c",
+      "expected": "terminal failure; no confirmation/key"
+    },
+    {
+      "victimRole": "BOB",
+      "torsionIndex": 7,
+      "peerMessage": "a8bf749dfdf13e945a5790da3788e5a8254239dbb3f27942df9dd73c95f430b8",
+      "expected": "terminal failure; no confirmation/key"
+    }
+  ],
+  "scriptSha256": "4e161c8e53cce6352396798ae9511952e67a428f4369f89865af74f8419f9f90"
+}

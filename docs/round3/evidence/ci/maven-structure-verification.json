@@ -1,0 +1,3050 @@
+{
+  "status": "passed",
+  "executedAtUtc": "2026-11-01T02:39:47.544960+00:00",
+  "repository": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven",
+  "version": "0.1.0-dev.59105290820b",
+  "revision": "59105290820bcbfd4e0336a2e7713006a461527f",
+  "revisionIsFullGitCommit": true,
+  "androidIncluded": true,
+  "publicationCount": 33,
+  "publications": [
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "common",
+      "pom": {
+        "sha256": "10d68e5e61c3b7059e9407a48606fefe7a30cdd147d4d99fe5eb5d07ac8a5902",
+        "packaging": "jar",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "672eb4775052c68e18b7646bf08103da4c143f2b8a94b218c406a15925adf983",
+        "variants": [
+          "iosArm64ApiElements-published",
+          "iosArm64MetadataElements-published",
+          "iosArm64SourcesElements-published",
+          "iosSimulatorArm64ApiElements-published",
+          "iosSimulatorArm64MetadataElements-published",
+          "iosSimulatorArm64SourcesElements-published",
+          "iosX64ApiElements-published",
+          "iosX64MetadataElements-published",
+          "iosX64SourcesElements-published",
+          "jsApiElements-published",
+          "jsRuntimeElements-published",
+          "jsSourcesElements-published",
+          "jvmApiElements-published",
+          "jvmRuntimeElements-published",
+          "jvmSourcesElements-published",
+          "linuxX64ApiElements-published",
+          "linuxX64SourcesElements-published",
+          "macosArm64ApiElements-published",
+          "macosArm64MetadataElements-published",
+          "macosArm64SourcesElements-published",
+          "macosX64ApiElements-published",
+          "macosX64MetadataElements-published",
+          "macosX64SourcesElements-published",
+          "metadataApiElements",
+          "metadataSourcesElements",
+          "releaseApiElements-published",
+          "releaseRuntimeElements-published",
+          "releaseSourcesElements-published",
+          "wasmJsApiElements-published",
+          "wasmJsRuntimeElements-published",
+          "wasmJsSourcesElements-published"
+        ],
+        "availableTargets": [
+          "android",
+          "iosarm64",
+          "iossimulatorarm64",
+          "iosx64",
+          "js",
+          "jvm",
+          "linuxx64",
+          "macosarm64",
+          "macosx64",
+          "wasmjs"
+        ],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-0.1.0-dev.59105290820b.jar": {
+            "size": 4581,
+            "sha256": "8cd84687827cbf860d30a2f357d752a891d8accad0a1bcbe3fbfd3f625b9e8f6",
+            "sidecarsChecked": []
+          },
+          "spake2-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-0.1.0-dev.59105290820b.jar": {
+          "sha256": "8cd84687827cbf860d30a2f357d752a891d8accad0a1bcbe3fbfd3f625b9e8f6",
+          "entries": 7,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        },
+        "spake2-0.1.0-dev.59105290820b-source-distribution.zip": {
+          "sha256": "4a2f3ff76d52b58aae758d83b0600499b5c02d9be8300d9f9fff3c1920519a0c",
+          "size": 1426991,
+          "entries": 482,
+          "requiredBuildFilesWrapperLockAndNotices": true,
+          "sidecarsChecked": []
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-jvm",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "jvm",
+      "pom": {
+        "sha256": "c863417f092201bdb488fd197682a7ea691eadce8f9753b61843a589c1deac91",
+        "packaging": "jar",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-jvm",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "f3a6c28f273e48f53a583f50602aa2b8507555a1440fb82710c0a0450d723551",
+        "variants": [
+          "jvmApiElements-published",
+          "jvmRuntimeElements-published",
+          "jvmSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-jvm-0.1.0-dev.59105290820b.jar": {
+            "size": 76301,
+            "sha256": "d0cd63e7f17c666d0459301ce220883b150e68ccab6a5b8a0a5c902267142733",
+            "sidecarsChecked": []
+          },
+          "spake2-jvm-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-jvm-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-jvm-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-jvm-0.1.0-dev.59105290820b.jar": {
+          "sha256": "d0cd63e7f17c666d0459301ce220883b150e68ccab6a5b8a0a5c902267142733",
+          "entries": 21,
+          "embeddedLicenseFiles": [
+            "META-INF/spake2/spake2/LICENSE",
+            "META-INF/spake2/spake2/THIRD_PARTY.md",
+            "META-INF/spake2/spake2/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2/third-party/spake2-java/LICENSE"
+          ],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": "META-INF/spake2/spake2/",
+          "licenseCompanion": "spake2-jvm-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-js",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "js",
+      "pom": {
+        "sha256": "fd2e4cd41ca771aadebec4e4197f0e3c1412f4432e4693a53605c129acde1cbd",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-js",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib-js",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "829fc86fdd9358faf8d45ee530c2e41d7ec0581be3bd87d096df13c7905bc0d8",
+        "variants": [
+          "jsApiElements-published",
+          "jsRuntimeElements-published",
+          "jsSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-js-0.1.0-dev.59105290820b.klib": {
+            "size": 88939,
+            "sha256": "87a2f7383e0c96e67d6b7c200031c52698edc75d660c8686f13f2fc8e4bccf8a",
+            "sidecarsChecked": []
+          },
+          "spake2-js-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-js-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-js-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-js-0.1.0-dev.59105290820b.klib": {
+          "sha256": "87a2f7383e0c96e67d6b7c200031c52698edc75d660c8686f13f2fc8e4bccf8a",
+          "entries": 27,
+          "embeddedLicenseFiles": [
+            "META-INF/spake2/spake2/LICENSE",
+            "META-INF/spake2/spake2/THIRD_PARTY.md",
+            "META-INF/spake2/spake2/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2/third-party/spake2-java/LICENSE"
+          ],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-js-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-wasmjs",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "wasmjs",
+      "pom": {
+        "sha256": "eb60b6365d16cd9b29833c7b00491c2a74d381bb5507284370cb239bf980b401",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-wasmjs",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib-wasm-js",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "a4f8c15f5773a70933bfafe642b1c07671f7e83824a68f97bb8318fbced6e5e0",
+        "variants": [
+          "wasmJsApiElements-published",
+          "wasmJsRuntimeElements-published",
+          "wasmJsSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-wasmjs-0.1.0-dev.59105290820b.klib": {
+            "size": 88957,
+            "sha256": "9ab8163bd34856c5283e7c980b3bd295fdf959088c33913e99ba9e1ab2080ab2",
+            "sidecarsChecked": []
+          },
+          "spake2-wasmjs-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-wasmjs-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-wasmjs-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-wasmjs-0.1.0-dev.59105290820b.klib": {
+          "sha256": "9ab8163bd34856c5283e7c980b3bd295fdf959088c33913e99ba9e1ab2080ab2",
+          "entries": 27,
+          "embeddedLicenseFiles": [
+            "META-INF/spake2/spake2/LICENSE",
+            "META-INF/spake2/spake2/THIRD_PARTY.md",
+            "META-INF/spake2/spake2/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2/third-party/spake2-java/LICENSE"
+          ],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-wasmjs-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-linuxx64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "linuxx64",
+      "pom": {
+        "sha256": "3316ee0bf853b5b09a280a98cc15487f4d1b70f265ca2cc3d91dfab32063b1e6",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-linuxx64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "f32c3a13c8b4b733f1045f907d0e3402582131a9740a49cda75248e687adb71c",
+        "variants": [
+          "linuxX64ApiElements-published",
+          "linuxX64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-linuxx64-0.1.0-dev.59105290820b.klib": {
+            "size": 32991,
+            "sha256": "55b23f192b9946d3872a86c8d375f26e229e794421481fe6a0530b434b549276",
+            "sidecarsChecked": []
+          },
+          "spake2-linuxx64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-linuxx64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-linuxx64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-linuxx64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "55b23f192b9946d3872a86c8d375f26e229e794421481fe6a0530b434b549276",
+          "entries": 14,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-linuxx64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-macosarm64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "macosarm64",
+      "pom": {
+        "sha256": "6801423d81a764745e0fc5f47a8486cbab61915b973fae5db598d5eee661eda9",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-macosarm64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "900112b283832af88922ac062e02cd67980b2c0bf16ed3adb17e47353bc71eab",
+        "variants": [
+          "macosArm64ApiElements-published",
+          "macosArm64MetadataElements-published",
+          "macosArm64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-macosarm64-0.1.0-dev.59105290820b.klib": {
+            "size": 33003,
+            "sha256": "6debf3fd8d05806513849863c9d59fd3d1357b70f03ad1e36c25f72be46f7dec",
+            "sidecarsChecked": []
+          },
+          "spake2-macosarm64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+            "sidecarsChecked": []
+          },
+          "spake2-macosarm64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-macosarm64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-macosarm64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-macosarm64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "6debf3fd8d05806513849863c9d59fd3d1357b70f03ad1e36c25f72be46f7dec",
+          "entries": 14,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-macosarm64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-macosx64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "macosx64",
+      "pom": {
+        "sha256": "4474c6c72c5cd1b845a2e09c0603d807d8db03706bbe9802cf08a5f1bca45c0b",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-macosx64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "52d75669ffb8376e693553a9bea380dfde71c7087895e3f1bd6943fae81c883d",
+        "variants": [
+          "macosX64ApiElements-published",
+          "macosX64MetadataElements-published",
+          "macosX64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-macosx64-0.1.0-dev.59105290820b.klib": {
+            "size": 32990,
+            "sha256": "596f812262784813d6a93b84f79db035ea6279c317af0cce788dfba6029ce44c",
+            "sidecarsChecked": []
+          },
+          "spake2-macosx64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+            "sidecarsChecked": []
+          },
+          "spake2-macosx64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-macosx64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-macosx64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-macosx64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "596f812262784813d6a93b84f79db035ea6279c317af0cce788dfba6029ce44c",
+          "entries": 14,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-macosx64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-iosarm64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "iosarm64",
+      "pom": {
+        "sha256": "3d18e6cacf9a34098aa65e3b778cb735f3195d57ba959fa25e0b3eb4fbd1e732",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-iosarm64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "35e9beb59c5a70d5c8583934bfe420d70e16e8a64f00a6d4a000e0db3b798c68",
+        "variants": [
+          "iosArm64ApiElements-published",
+          "iosArm64MetadataElements-published",
+          "iosArm64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-iosarm64-0.1.0-dev.59105290820b.klib": {
+            "size": 32990,
+            "sha256": "4090c202db1915e2c20837dd543e1be9de145c73c06dc1f89a76395f3c9d538e",
+            "sidecarsChecked": []
+          },
+          "spake2-iosarm64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+            "sidecarsChecked": []
+          },
+          "spake2-iosarm64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-iosarm64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-iosarm64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-iosarm64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "4090c202db1915e2c20837dd543e1be9de145c73c06dc1f89a76395f3c9d538e",
+          "entries": 14,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-iosarm64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-iossimulatorarm64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "iossimulatorarm64",
+      "pom": {
+        "sha256": "b916c44c9b2212aca7c2e773700488c445c67bfd64ca847745b41cfdcecb465a",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-iossimulatorarm64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "26551e4325b927a3ad820b89e9f1345793f0e48d043e6c12af030d842a198fc6",
+        "variants": [
+          "iosSimulatorArm64ApiElements-published",
+          "iosSimulatorArm64MetadataElements-published",
+          "iosSimulatorArm64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-iossimulatorarm64-0.1.0-dev.59105290820b.klib": {
+            "size": 33054,
+            "sha256": "95aca7bfef8312d36a3c4248a3a3b9f9ce4eff93895fab5adc1f58ddcdbe921d",
+            "sidecarsChecked": []
+          },
+          "spake2-iossimulatorarm64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+            "sidecarsChecked": []
+          },
+          "spake2-iossimulatorarm64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-iossimulatorarm64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-iossimulatorarm64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-iossimulatorarm64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "95aca7bfef8312d36a3c4248a3a3b9f9ce4eff93895fab5adc1f58ddcdbe921d",
+          "entries": 14,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-iossimulatorarm64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-iosx64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "iosx64",
+      "pom": {
+        "sha256": "9739835b497720d65e2760845992a9a245e922b25924ab352fc943064c6e42e8",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-iosx64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "421e401698de59da211777389ebe46df0118df75e0594c817b09d9fd9ada2d7f",
+        "variants": [
+          "iosX64ApiElements-published",
+          "iosX64MetadataElements-published",
+          "iosX64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-iosx64-0.1.0-dev.59105290820b.klib": {
+            "size": 32977,
+            "sha256": "d24e469c6bc73ffbb7a1bcac2307c6a15cd38472cc60a82e02509faa5e4714e3",
+            "sidecarsChecked": []
+          },
+          "spake2-iosx64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+            "sidecarsChecked": []
+          },
+          "spake2-iosx64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-iosx64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-iosx64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-iosx64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "d24e469c6bc73ffbb7a1bcac2307c6a15cd38472cc60a82e02509faa5e4714e3",
+          "entries": 14,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-iosx64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-android",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "android",
+      "pom": {
+        "sha256": "69e6fd7cd6c05930e4895c1842ca8757c32a7ba8c4ac23a2ccb1e21c8d859137",
+        "packaging": "aar",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-android",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "39806a5bd7446f54b1ab8d13be483bb7ac886d78462fd420432da872994b2f62",
+        "variants": [
+          "releaseApiElements-published",
+          "releaseRuntimeElements-published",
+          "releaseSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-android-0.1.0-dev.59105290820b.aar": {
+            "size": 73293,
+            "sha256": "6f2dc6ee42499e2d0ad8ab1035ba36f522c0fe713e18607ee6f451e1e5d35507",
+            "sidecarsChecked": []
+          },
+          "spake2-android-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 63585,
+            "sha256": "9b8ced7f7d777288361d700868b25589d3e730c4d60cc4abfea275cfe7cd9413",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-android-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "9b8ced7f7d777288361d700868b25589d3e730c4d60cc4abfea275cfe7cd9413",
+          "size": 63585,
+          "entries": 16,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-android-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-android-0.1.0-dev.59105290820b.aar": {
+          "sha256": "6f2dc6ee42499e2d0ad8ab1035ba36f522c0fe713e18607ee6f451e1e5d35507",
+          "entries": 4,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [
+            "META-INF/spake2/spake2/LICENSE",
+            "META-INF/spake2/spake2/THIRD_PARTY.md",
+            "META-INF/spake2/spake2/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2/third-party/spake2-java/LICENSE"
+          ],
+          "requiredEmbeddedLicenseLocation": "classes.jar!META-INF/spake2/spake2/",
+          "licenseCompanion": "spake2-android-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "common",
+      "pom": {
+        "sha256": "09dc1d2f28f97da3e6c7922dbb022a2818e66c5056413d0a16fe3c61053bc463",
+        "packaging": "jar",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "20808d6718b11ef577472d17211be194124506d8af2d923b5c5f76d232effaec",
+        "variants": [
+          "iosArm64ApiElements-published",
+          "iosArm64MetadataElements-published",
+          "iosArm64SourcesElements-published",
+          "iosSimulatorArm64ApiElements-published",
+          "iosSimulatorArm64MetadataElements-published",
+          "iosSimulatorArm64SourcesElements-published",
+          "iosX64ApiElements-published",
+          "iosX64MetadataElements-published",
+          "iosX64SourcesElements-published",
+          "jsApiElements-published",
+          "jsRuntimeElements-published",
+          "jsSourcesElements-published",
+          "jvmApiElements-published",
+          "jvmRuntimeElements-published",
+          "jvmSourcesElements-published",
+          "linuxX64ApiElements-published",
+          "linuxX64SourcesElements-published",
+          "macosArm64ApiElements-published",
+          "macosArm64MetadataElements-published",
+          "macosArm64SourcesElements-published",
+          "macosX64ApiElements-published",
+          "macosX64MetadataElements-published",
+          "macosX64SourcesElements-published",
+          "metadataApiElements",
+          "metadataSourcesElements",
+          "releaseApiElements-published",
+          "releaseRuntimeElements-published",
+          "releaseSourcesElements-published",
+          "wasmJsApiElements-published",
+          "wasmJsRuntimeElements-published",
+          "wasmJsSourcesElements-published"
+        ],
+        "availableTargets": [
+          "android",
+          "iosarm64",
+          "iossimulatorarm64",
+          "iosx64",
+          "js",
+          "jvm",
+          "linuxx64",
+          "macosarm64",
+          "macosx64",
+          "wasmjs"
+        ],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-0.1.0-dev.59105290820b.jar": {
+            "size": 8719,
+            "sha256": "d58ecf3a26c0c54a170e0ae6192bc21f0ab74ab4efa839a4aa309932d05e5fc4",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-0.1.0-dev.59105290820b.jar": {
+          "sha256": "d58ecf3a26c0c54a170e0ae6192bc21f0ab74ab4efa839a4aa309932d05e5fc4",
+          "entries": 13,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-primitives-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        },
+        "spake2-primitives-0.1.0-dev.59105290820b-source-distribution.zip": {
+          "sha256": "4a2f3ff76d52b58aae758d83b0600499b5c02d9be8300d9f9fff3c1920519a0c",
+          "size": 1426991,
+          "entries": 482,
+          "requiredBuildFilesWrapperLockAndNotices": true,
+          "sidecarsChecked": []
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives-jvm",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "jvm",
+      "pom": {
+        "sha256": "d9dc87c8cd0b38dcbf9451803c47b16cccdb8035170783a67654204973a1a101",
+        "packaging": "jar",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "612569c65e626e3979fdf218e79c4203c80572c2173922a697c8a2d50f7379c0",
+        "variants": [
+          "jvmApiElements-published",
+          "jvmRuntimeElements-published",
+          "jvmSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-jvm-0.1.0-dev.59105290820b.jar": {
+            "size": 97521,
+            "sha256": "abdb0f81c8319a0a3bbb1ad730a9133588b7afcec5a6b5e8373d4de837cf2c5d",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-jvm-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-jvm-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-jvm-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-jvm-0.1.0-dev.59105290820b.jar": {
+          "sha256": "abdb0f81c8319a0a3bbb1ad730a9133588b7afcec5a6b5e8373d4de837cf2c5d",
+          "entries": 29,
+          "embeddedLicenseFiles": [
+            "META-INF/spake2/spake2-primitives/LICENSE",
+            "META-INF/spake2/spake2-primitives/THIRD_PARTY.md",
+            "META-INF/spake2/spake2-primitives/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2-primitives/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2-primitives/third-party/spake2-java/LICENSE"
+          ],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": "META-INF/spake2/spake2-primitives/",
+          "licenseCompanion": "spake2-primitives-jvm-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives-js",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "js",
+      "pom": {
+        "sha256": "2620ae69550b874ef31e9c6087d5e81135b9cd86f95a4a0c8ccb532eddf49010",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib-js",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "52f0314997f9e5cd790549e3c49f81d260279189aec2ccc4d7d5b45e9478d6eb",
+        "variants": [
+          "jsApiElements-published",
+          "jsRuntimeElements-published",
+          "jsSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-js-0.1.0-dev.59105290820b.klib": {
+            "size": 132395,
+            "sha256": "bd0369c3e1882e4e612b717e17d52298a9f6edd63f29ae94a934662684c499f5",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-js-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-js-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-js-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-js-0.1.0-dev.59105290820b.klib": {
+          "sha256": "bd0369c3e1882e4e612b717e17d52298a9f6edd63f29ae94a934662684c499f5",
+          "entries": 33,
+          "embeddedLicenseFiles": [
+            "META-INF/spake2/spake2-primitives/LICENSE",
+            "META-INF/spake2/spake2-primitives/THIRD_PARTY.md",
+            "META-INF/spake2/spake2-primitives/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2-primitives/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2-primitives/third-party/spake2-java/LICENSE"
+          ],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-primitives-js-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives-wasmjs",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "wasmjs",
+      "pom": {
+        "sha256": "9c6b92a7c4ee051703462dd1b88e89344e6172441d9a6dc60b5ee931e934f5a4",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib-wasm-js",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "338ecd647e1ce7b2275dd0953af6c6e22a2c14356b37335cfc1e98bd92535ef0",
+        "variants": [
+          "wasmJsApiElements-published",
+          "wasmJsRuntimeElements-published",
+          "wasmJsSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-wasmjs-0.1.0-dev.59105290820b.klib": {
+            "size": 132414,
+            "sha256": "48137a65e7e2d73562421d0285803418f457a5e8ae350f8bb784a2f552b1a614",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-wasmjs-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-wasmjs-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-wasmjs-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-wasmjs-0.1.0-dev.59105290820b.klib": {
+          "sha256": "48137a65e7e2d73562421d0285803418f457a5e8ae350f8bb784a2f552b1a614",
+          "entries": 33,
+          "embeddedLicenseFiles": [
+            "META-INF/spake2/spake2-primitives/LICENSE",
+            "META-INF/spake2/spake2-primitives/THIRD_PARTY.md",
+            "META-INF/spake2/spake2-primitives/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2-primitives/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2-primitives/third-party/spake2-java/LICENSE"
+          ],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-primitives-wasmjs-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives-linuxx64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "linuxx64",
+      "pom": {
+        "sha256": "00a54acd4b6fbf6cbcd5509cc8783901cd72b6f358d0b83191f53d1c6ba86d3b",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "c09a8ab5fb326dfc049a3a839f0a0db6a3e1830c018ffc72955a965022848286",
+        "variants": [
+          "linuxX64ApiElements-published",
+          "linuxX64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-linuxx64-0.1.0-dev.59105290820b.klib": {
+            "size": 77588,
+            "sha256": "3ff9f5d006209c78440a6bf7653cfa19dca73a20398fb87f5d05a098812e2a6f",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-linuxx64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-linuxx64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-linuxx64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-linuxx64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "3ff9f5d006209c78440a6bf7653cfa19dca73a20398fb87f5d05a098812e2a6f",
+          "entries": 20,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-primitives-linuxx64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives-macosarm64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "macosarm64",
+      "pom": {
+        "sha256": "0380ca2b2acdb25bc4939626a1c332b7a670af249d9d9acb1921f40ef1eb94a9",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "528c84e9f65eb44d458e727078848030a4179c8995a393640276f35e637e0bd6",
+        "variants": [
+          "macosArm64ApiElements-published",
+          "macosArm64MetadataElements-published",
+          "macosArm64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-macosarm64-0.1.0-dev.59105290820b.klib": {
+            "size": 77600,
+            "sha256": "94340b7e423d0a45bae2af53a54297bf8feeed26958d7b0adc1ebf2d9809d0e7",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-macosarm64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-macosarm64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-macosarm64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-macosarm64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-macosarm64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "94340b7e423d0a45bae2af53a54297bf8feeed26958d7b0adc1ebf2d9809d0e7",
+          "entries": 20,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-primitives-macosarm64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives-macosx64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "macosx64",
+      "pom": {
+        "sha256": "7b130a15e141daf1a69505f7c8746de2907d9c60493255f89101d3357d392292",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "e83e13307a2283072627d616150b78afc387e972d4e916ae1c7a2fecc2272024",
+        "variants": [
+          "macosX64ApiElements-published",
+          "macosX64MetadataElements-published",
+          "macosX64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-macosx64-0.1.0-dev.59105290820b.klib": {
+            "size": 77588,
+            "sha256": "06d47faab58c30193a49c90cf34b7816ca9aa864be23ec623275344ee919a295",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-macosx64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-macosx64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-macosx64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-macosx64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-macosx64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "06d47faab58c30193a49c90cf34b7816ca9aa864be23ec623275344ee919a295",
+          "entries": 20,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-primitives-macosx64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives-iosarm64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "iosarm64",
+      "pom": {
+        "sha256": "adff96b3b4d011c0b8d360c885c599cee670a73b1aa5dde66fca8b374020f8f3",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "d4d9ac00a293e6258f4dbe2aa07261c04e7acadf4fa850df7c01a95f39c0407a",
+        "variants": [
+          "iosArm64ApiElements-published",
+          "iosArm64MetadataElements-published",
+          "iosArm64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-iosarm64-0.1.0-dev.59105290820b.klib": {
+            "size": 77587,
+            "sha256": "c08f0bd0dce3cec452e04f456cdcfa381eb7e215dd235f9980fb748d9f51fc4a",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-iosarm64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-iosarm64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-iosarm64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-iosarm64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-iosarm64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "c08f0bd0dce3cec452e04f456cdcfa381eb7e215dd235f9980fb748d9f51fc4a",
+          "entries": 20,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-primitives-iosarm64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives-iossimulatorarm64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "iossimulatorarm64",
+      "pom": {
+        "sha256": "f825b68fa3d4ad865d4f745cbe5afdf9fdbf9cd60508f9bd1a6403b174af131e",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "4c7f54af8a4f9d6894303f24fc4d5013f55e4035164d18d52d6e12994a99df53",
+        "variants": [
+          "iosSimulatorArm64ApiElements-published",
+          "iosSimulatorArm64MetadataElements-published",
+          "iosSimulatorArm64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-iossimulatorarm64-0.1.0-dev.59105290820b.klib": {
+            "size": 77653,
+            "sha256": "420860188e0b521fefb1069396357724743ea76a87530df745444458ec4e4d01",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-iossimulatorarm64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-iossimulatorarm64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-iossimulatorarm64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-iossimulatorarm64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-iossimulatorarm64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "420860188e0b521fefb1069396357724743ea76a87530df745444458ec4e4d01",
+          "entries": 20,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-primitives-iossimulatorarm64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives-iosx64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "iosx64",
+      "pom": {
+        "sha256": "4e0d53303ef96d1342f8f9405294756d4223a326f095e8138951bb4860b413f9",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "da133bc9388c7726f1503311ebf629feba3cad24abff28fec9b9f7b93659fc1c",
+        "variants": [
+          "iosX64ApiElements-published",
+          "iosX64MetadataElements-published",
+          "iosX64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-iosx64-0.1.0-dev.59105290820b.klib": {
+            "size": 77575,
+            "sha256": "228123f30e1f58a968471021b0fc38e885300664777fbd0c2d2743a713164af7",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-iosx64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-iosx64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-iosx64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "30f895bf5444800b2eb06028dc33c93fee213349b419a8e8226a2c3cdfc0ef29",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-iosx64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-iosx64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "228123f30e1f58a968471021b0fc38e885300664777fbd0c2d2743a713164af7",
+          "entries": 20,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-primitives-iosx64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-primitives-android",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "android",
+      "pom": {
+        "sha256": "cdf0eb4dfabc0c9e1bbce27e7774e275e5ecdcd9146b8b1eb5a7d1a12d412e27",
+        "packaging": "aar",
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "a4f1454207339f8726c756b161d491adebf019036cc3c3f82b5eadb8ab6f7ae8",
+        "variants": [
+          "releaseApiElements-published",
+          "releaseRuntimeElements-published",
+          "releaseSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-primitives-android-0.1.0-dev.59105290820b.aar": {
+            "size": 92941,
+            "sha256": "7b1045e720844cef91c81dbd5f3bdf9c9d8b8f31c3b3ab1e1df6570228a60232",
+            "sidecarsChecked": []
+          },
+          "spake2-primitives-android-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 74314,
+            "sha256": "a9d0e57bbf2396cb160664d95f95e12b0372b8fc500a303f53c13e2600463067",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-primitives-android-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "a9d0e57bbf2396cb160664d95f95e12b0372b8fc500a303f53c13e2600463067",
+          "size": 74314,
+          "entries": 22,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-primitives-android-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-primitives-android-0.1.0-dev.59105290820b.aar": {
+          "sha256": "7b1045e720844cef91c81dbd5f3bdf9c9d8b8f31c3b3ab1e1df6570228a60232",
+          "entries": 4,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [
+            "META-INF/spake2/spake2-primitives/LICENSE",
+            "META-INF/spake2/spake2-primitives/THIRD_PARTY.md",
+            "META-INF/spake2/spake2-primitives/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2-primitives/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2-primitives/third-party/spake2-java/LICENSE"
+          ],
+          "requiredEmbeddedLicenseLocation": "classes.jar!META-INF/spake2/spake2-primitives/",
+          "licenseCompanion": "spake2-primitives-android-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "common",
+      "pom": {
+        "sha256": "4a290c32a497b16ecf2a5e5317c95fad2c4acac1a3832df60ef636fb3f84c7d9",
+        "packaging": "jar",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "9f0ac1ee6dce5eb8b2d93cea626daf4f253c92909766ba6c74bc534f3c3d6712",
+        "variants": [
+          "iosArm64ApiElements-published",
+          "iosArm64MetadataElements-published",
+          "iosArm64SourcesElements-published",
+          "iosSimulatorArm64ApiElements-published",
+          "iosSimulatorArm64MetadataElements-published",
+          "iosSimulatorArm64SourcesElements-published",
+          "iosX64ApiElements-published",
+          "iosX64MetadataElements-published",
+          "iosX64SourcesElements-published",
+          "jsApiElements-published",
+          "jsRuntimeElements-published",
+          "jsSourcesElements-published",
+          "jvmApiElements-published",
+          "jvmRuntimeElements-published",
+          "jvmSourcesElements-published",
+          "linuxX64ApiElements-published",
+          "linuxX64SourcesElements-published",
+          "macosArm64ApiElements-published",
+          "macosArm64MetadataElements-published",
+          "macosArm64SourcesElements-published",
+          "macosX64ApiElements-published",
+          "macosX64MetadataElements-published",
+          "macosX64SourcesElements-published",
+          "metadataApiElements",
+          "metadataSourcesElements",
+          "releaseApiElements-published",
+          "releaseRuntimeElements-published",
+          "releaseSourcesElements-published",
+          "wasmJsApiElements-published",
+          "wasmJsRuntimeElements-published",
+          "wasmJsSourcesElements-published"
+        ],
+        "availableTargets": [
+          "android",
+          "iosarm64",
+          "iossimulatorarm64",
+          "iosx64",
+          "js",
+          "jvm",
+          "linuxx64",
+          "macosarm64",
+          "macosx64",
+          "wasmjs"
+        ],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-0.1.0-dev.59105290820b.jar": {
+            "size": 3314,
+            "sha256": "4a6b9a815ed480f4495973bd2b8a18c2f6b4d943a49570bbec658cdd12781084",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-0.1.0-dev.59105290820b.jar": {
+          "sha256": "4a6b9a815ed480f4495973bd2b8a18c2f6b4d943a49570bbec658cdd12781084",
+          "entries": 5,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-legacy-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        },
+        "spake2-legacy-0.1.0-dev.59105290820b-source-distribution.zip": {
+          "sha256": "4a2f3ff76d52b58aae758d83b0600499b5c02d9be8300d9f9fff3c1920519a0c",
+          "size": 1426991,
+          "entries": 482,
+          "requiredBuildFilesWrapperLockAndNotices": true,
+          "sidecarsChecked": []
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy-jvm",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "jvm",
+      "pom": {
+        "sha256": "b22dbde5d0735930478be676c6283bfc29af592b4eb76a14fa821f6fa595c98e",
+        "packaging": "jar",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-jvm",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "b832a16955c7a83de16afc5ace63db20f41a9a9674e896dfdd58ae05b3e39276",
+        "variants": [
+          "jvmApiElements-published",
+          "jvmRuntimeElements-published",
+          "jvmSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-jvm-0.1.0-dev.59105290820b.jar": {
+            "size": 70024,
+            "sha256": "2ed2e90596a08173911cbc6be25d0c889bf74ecfe09adadc764d8b7958d6880c",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-jvm-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-jvm-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-jvm-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-jvm-0.1.0-dev.59105290820b.jar": {
+          "sha256": "2ed2e90596a08173911cbc6be25d0c889bf74ecfe09adadc764d8b7958d6880c",
+          "entries": 18,
+          "embeddedLicenseFiles": [
+            "META-INF/spake2/spake2-legacy/LICENSE",
+            "META-INF/spake2/spake2-legacy/THIRD_PARTY.md",
+            "META-INF/spake2/spake2-legacy/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2-legacy/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2-legacy/third-party/spake2-java/LICENSE"
+          ],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": "META-INF/spake2/spake2-legacy/",
+          "licenseCompanion": "spake2-legacy-jvm-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy-js",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "js",
+      "pom": {
+        "sha256": "d78d406355b92ff8dc8ebb816ee45df1d3884934dd9af631e361661f31aee6d6",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-js",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib-js",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "3a2a2a1eb89bf466ea8bc79692b11c557d7b992aa756f1caa023b18a8feffdf1",
+        "variants": [
+          "jsApiElements-published",
+          "jsRuntimeElements-published",
+          "jsSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-js-0.1.0-dev.59105290820b.klib": {
+            "size": 78968,
+            "sha256": "11c9ccf1622bfc20e8a7748b45ecd570025d5c49f5438b166c8de0a7e7529a94",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-js-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-js-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-js-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-js-0.1.0-dev.59105290820b.klib": {
+          "sha256": "11c9ccf1622bfc20e8a7748b45ecd570025d5c49f5438b166c8de0a7e7529a94",
+          "entries": 25,
+          "embeddedLicenseFiles": [
+            "META-INF/spake2/spake2-legacy/LICENSE",
+            "META-INF/spake2/spake2-legacy/THIRD_PARTY.md",
+            "META-INF/spake2/spake2-legacy/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2-legacy/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2-legacy/third-party/spake2-java/LICENSE"
+          ],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-legacy-js-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy-wasmjs",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "wasmjs",
+      "pom": {
+        "sha256": "fc43ea2f2a328523f973537c2bf448e0e765776b8a1a6e1cc8c0a0f92ce6256a",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-wasmjs",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib-wasm-js",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "ee71a3a673fb3c39547d06ba9adcf4d61337b4f436fe703b333a4639e4efc716",
+        "variants": [
+          "wasmJsApiElements-published",
+          "wasmJsRuntimeElements-published",
+          "wasmJsSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-wasmjs-0.1.0-dev.59105290820b.klib": {
+            "size": 78989,
+            "sha256": "dffdb1b4c1e63678811681a30492c97a9e0b1e95be2f9cf2aee04e92c391b73b",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-wasmjs-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-wasmjs-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-wasmjs-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-wasmjs-0.1.0-dev.59105290820b.klib": {
+          "sha256": "dffdb1b4c1e63678811681a30492c97a9e0b1e95be2f9cf2aee04e92c391b73b",
+          "entries": 25,
+          "embeddedLicenseFiles": [
+            "META-INF/spake2/spake2-legacy/LICENSE",
+            "META-INF/spake2/spake2-legacy/THIRD_PARTY.md",
+            "META-INF/spake2/spake2-legacy/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2-legacy/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2-legacy/third-party/spake2-java/LICENSE"
+          ],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-legacy-wasmjs-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy-linuxx64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "linuxx64",
+      "pom": {
+        "sha256": "bbdd6b29aedf9df7a6e3f5c144babfbe09d1e4646123857f34461375748ad67f",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-linuxx64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "f1133033c1ff0fa7f4c0ed191d556961b10e8bcddc6b8a695fc86b7f296e3661",
+        "variants": [
+          "linuxX64ApiElements-published",
+          "linuxX64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-linuxx64-0.1.0-dev.59105290820b.klib": {
+            "size": 22721,
+            "sha256": "02671b1ac036bf6088973672c66d3a195b1355a12e046392c6046b54aa94f942",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-linuxx64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-linuxx64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-linuxx64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-linuxx64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "02671b1ac036bf6088973672c66d3a195b1355a12e046392c6046b54aa94f942",
+          "entries": 12,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-legacy-linuxx64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy-macosarm64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "macosarm64",
+      "pom": {
+        "sha256": "c958b1f4e3a33fe0a8af7938411eba003d9af55459f0b852bc0d1a18c83f32f6",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-macosarm64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "c2eb035e872f266ba27e824c0f5de46a55e74f432c9b0ef92ab89dad4dc216a1",
+        "variants": [
+          "macosArm64ApiElements-published",
+          "macosArm64MetadataElements-published",
+          "macosArm64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-macosarm64-0.1.0-dev.59105290820b.klib": {
+            "size": 22733,
+            "sha256": "d3e83221e45e169c6bc829381913f8c2b764031ee6ef125f6c1a4f0ca49988a8",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-macosarm64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-macosarm64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-macosarm64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-macosarm64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-macosarm64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "d3e83221e45e169c6bc829381913f8c2b764031ee6ef125f6c1a4f0ca49988a8",
+          "entries": 12,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-legacy-macosarm64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy-macosx64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "macosx64",
+      "pom": {
+        "sha256": "749aef1904439abb3bdc88167e5906d6cd962ac8b4f1bdf0729259a991f79dc0",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-macosx64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "099642fdabd18e25970c2e055ac9bc9e4620ca541a6fc71d05c9dc25df72474b",
+        "variants": [
+          "macosX64ApiElements-published",
+          "macosX64MetadataElements-published",
+          "macosX64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-macosx64-0.1.0-dev.59105290820b.klib": {
+            "size": 22721,
+            "sha256": "7123cee41c6f8966f8c8efba4ebccea48250fbd359602f36a1ff368b2f9683cb",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-macosx64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-macosx64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-macosx64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-macosx64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-macosx64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "7123cee41c6f8966f8c8efba4ebccea48250fbd359602f36a1ff368b2f9683cb",
+          "entries": 12,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-legacy-macosx64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy-iosarm64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "iosarm64",
+      "pom": {
+        "sha256": "0431cd466c707ab45e551ee44ed0dc42e33584ec5b0be7eada05e68d790eb6f1",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-iosarm64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "2a38ab58d5e03fd1fd571a90695031cfe53f4f42d8dab8a1bbbe082fb568269e",
+        "variants": [
+          "iosArm64ApiElements-published",
+          "iosArm64MetadataElements-published",
+          "iosArm64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-iosarm64-0.1.0-dev.59105290820b.klib": {
+            "size": 22720,
+            "sha256": "a237e33254e198d39a666b608bcc5e37743da9725755b6b1bd002b01854e9c5a",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-iosarm64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-iosarm64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-iosarm64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-iosarm64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-iosarm64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "a237e33254e198d39a666b608bcc5e37743da9725755b6b1bd002b01854e9c5a",
+          "entries": 12,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-legacy-iosarm64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy-iossimulatorarm64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "iossimulatorarm64",
+      "pom": {
+        "sha256": "c200e53add661bd93ee6db38b016709db988363263085aa6d00971f94e60365d",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-iossimulatorarm64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "98d19340b1e143e6cd97faea475e072854e205cf6bad18ea5f7e276d6a054550",
+        "variants": [
+          "iosSimulatorArm64ApiElements-published",
+          "iosSimulatorArm64MetadataElements-published",
+          "iosSimulatorArm64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-iossimulatorarm64-0.1.0-dev.59105290820b.klib": {
+            "size": 22783,
+            "sha256": "f08cb164f08177001d2d61768f75d38c12c63e1f5b1adde3bf2479d0fbc86898",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-iossimulatorarm64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-iossimulatorarm64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-iossimulatorarm64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-iossimulatorarm64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-iossimulatorarm64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "f08cb164f08177001d2d61768f75d38c12c63e1f5b1adde3bf2479d0fbc86898",
+          "entries": 12,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-legacy-iossimulatorarm64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy-iosx64",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "iosx64",
+      "pom": {
+        "sha256": "ac826f08fd7cb0152675fc2a3f224a6a8535175699cd7127cbd47a770742dc30",
+        "packaging": "klib",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-iosx64",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "80e75832907926ee74245d47848cb215a7d4a9d6fc314f779ac507c666c03dfd",
+        "variants": [
+          "iosX64ApiElements-published",
+          "iosX64MetadataElements-published",
+          "iosX64SourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-iosx64-0.1.0-dev.59105290820b.klib": {
+            "size": 22707,
+            "sha256": "23923c9d5ac4bc973fa68cea4c57c62ad41f02bea0cfd74f5a6180df7fc14517",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-iosx64-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-iosx64-0.1.0-dev.59105290820b-metadata.jar": {
+            "size": 261,
+            "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-iosx64-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "11d632d8b515aba83ede1f73bc2fc38a44e29934f563bfe3001381900b629b41",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-iosx64-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-iosx64-0.1.0-dev.59105290820b.klib": {
+          "sha256": "23923c9d5ac4bc973fa68cea4c57c62ad41f02bea0cfd74f5a6180df7fc14517",
+          "entries": 12,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [],
+          "requiredEmbeddedLicenseLocation": null,
+          "licenseCompanion": "spake2-legacy-iosx64-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    },
+    {
+      "group": "io.github.flyfish233",
+      "artifact": "spake2-legacy-android",
+      "version": "0.1.0-dev.59105290820b",
+      "target": "android",
+      "pom": {
+        "sha256": "42117e8915574fd340779d099412736b07b17f667357c818449265c4fe574917",
+        "packaging": "aar",
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives-android",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ]
+      },
+      "metadata": {
+        "sha256": "550315bebb167dccb0c93796bf4a0dc1a738fcad88b86185774f849dad477da1",
+        "variants": [
+          "releaseApiElements-published",
+          "releaseRuntimeElements-published",
+          "releaseSourcesElements-published"
+        ],
+        "availableTargets": [],
+        "dependencies": [
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          },
+          {
+            "group": "io.github.flyfish233",
+            "module": "spake2-primitives",
+            "version": "0.1.0-dev.59105290820b"
+          },
+          {
+            "group": "org.jetbrains.kotlin",
+            "module": "kotlin-stdlib",
+            "version": "2.2.21"
+          }
+        ],
+        "files": {
+          "spake2-legacy-android-0.1.0-dev.59105290820b.aar": {
+            "size": 67077,
+            "sha256": "7071d708aa04c5adffddd274f0f1bb76a3fc71a0fd5c48eb68ff6b27b7156036",
+            "sidecarsChecked": []
+          },
+          "spake2-legacy-android-0.1.0-dev.59105290820b-sources.jar": {
+            "size": 61357,
+            "sha256": "a8bc0a078f329f7c1d7bb837f26acd2cf77c26b95cbd0b2ec3aea9da7944de62",
+            "sidecarsChecked": []
+          }
+        }
+      },
+      "archives": {
+        "spake2-legacy-android-0.1.0-dev.59105290820b-sources.jar": {
+          "sha256": "a8bc0a078f329f7c1d7bb837f26acd2cf77c26b95cbd0b2ec3aea9da7944de62",
+          "size": 61357,
+          "entries": 14,
+          "sidecarsChecked": [],
+          "embeddedLicense": true
+        },
+        "spake2-legacy-android-0.1.0-dev.59105290820b-javadoc.jar": {
+          "sha256": "46db03a191cf867408957032b347250abfbe28067b3465981acaba41aea44f8b",
+          "size": 71595,
+          "entries": 18,
+          "sidecarsChecked": [],
+          "embeddedLicense": false
+        },
+        "spake2-legacy-android-0.1.0-dev.59105290820b.aar": {
+          "sha256": "7071d708aa04c5adffddd274f0f1bb76a3fc71a0fd5c48eb68ff6b27b7156036",
+          "entries": 4,
+          "embeddedLicenseFiles": [],
+          "aarClassesJarLicenseFiles": [
+            "META-INF/spake2/spake2-legacy/LICENSE",
+            "META-INF/spake2/spake2-legacy/THIRD_PARTY.md",
+            "META-INF/spake2/spake2-legacy/third-party/boringssl/LICENSE",
+            "META-INF/spake2/spake2-legacy/third-party/gradle/LICENSE",
+            "META-INF/spake2/spake2-legacy/third-party/spake2-java/LICENSE"
+          ],
+          "requiredEmbeddedLicenseLocation": "classes.jar!META-INF/spake2/spake2-legacy/",
+          "licenseCompanion": "spake2-legacy-android-0.1.0-dev.59105290820b-javadoc.jar",
+          "note": "Sources, JVM runtime JARs and Android classes.jar require full embedded notices. Other binary targets report actual embedding and require complete license companions."
+        }
+      }
+    }
+  ],
+  "scope": "Actual local POM/GMM dependency graph, artifact digests, archives, sources, full embedded source/JVM/Android license notices and required license companions. THIRD_PARTY.md is compared with the candidate source checkout. This does not execute consumers or certify cryptography. Maven Local checksum sidecars are checked when present; GMM SHA-256 is mandatory for every referenced file."
+}

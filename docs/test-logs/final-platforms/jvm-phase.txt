@@ -1,0 +1,245 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Mocha test framework for Wasm target is not supported. For KotlinWasmNode used
+Mocha test framework for Wasm target is not supported. For KotlinWasmNode used
+Mocha test framework for Wasm target is not supported. For KotlinWasmNode used
+> Task :cleanIosSimulatorArm64Test UP-TO-DATE
+> Task :cleanIosX64Test UP-TO-DATE
+> Task :cleanJsNodeTest UP-TO-DATE
+> Task :cleanJvmTest
+> Task :cleanLinuxX64Test
+> Task :cleanWasmJsNodeTest UP-TO-DATE
+> Task :cleanAllTests
+> Task :clean
+> Task :legacy:cleanIosSimulatorArm64Test UP-TO-DATE
+> Task :legacy:cleanIosX64Test UP-TO-DATE
+> Task :legacy:cleanJsNodeTest UP-TO-DATE
+> Task :legacy:cleanJvmTest
+> Task :legacy:cleanLinuxX64Test
+> Task :legacy:cleanWasmJsNodeTest UP-TO-DATE
+> Task :legacy:cleanAllTests
+> Task :legacy:clean
+> Task :primitives:cleanIosSimulatorArm64Test UP-TO-DATE
+> Task :primitives:cleanIosX64Test UP-TO-DATE
+> Task :primitives:cleanJsNodeTest UP-TO-DATE
+> Task :primitives:cleanJvmTest
+> Task :primitives:cleanLinuxX64Test
+> Task :primitives:cleanWasmJsNodeTest UP-TO-DATE
+> Task :primitives:cleanAllTests
+> Task :primitives:clean
+> Task :kmpPartiallyResolvedDependenciesChecker
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :primitives:kmpPartiallyResolvedDependenciesChecker
+> Task :primitives:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :primitives:jvmProcessResources NO-SOURCE
+> Task :primitives:processJvmMainResources SKIPPED
+> Task :jvmProcessResources NO-SOURCE
+> Task :processJvmMainResources SKIPPED
+> Task :legacy:kmpPartiallyResolvedDependenciesChecker
+> Task :legacy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :legacy:jvmProcessResources NO-SOURCE
+> Task :legacy:processJvmMainResources SKIPPED
+> Task :jvmTestProcessResources NO-SOURCE
+> Task :processJvmTestResources SKIPPED
+> Task :legacy:jvmTestProcessResources NO-SOURCE
+> Task :legacy:processJvmTestResources SKIPPED
+> Task :primitives:jvmTestProcessResources NO-SOURCE
+> Task :primitives:processJvmTestResources SKIPPED
+> Task :primitives:compileKotlinJs
+> Task :primitives:compileKotlinJvm
+> Task :compileKotlinJs
+> Task :jsProcessResources NO-SOURCE
+> Task :jsMainClasses
+> Task :legacy:compileKotlinJs
+> Task :primitives:compileJvmMainJava NO-SOURCE
+> Task :primitives:jvmMainClasses
+> Task :primitives:jvmJar
+> Task :compileTestKotlinJs
+> Task :legacy:compileKotlinJvm
+> Task :legacy:compileJvmMainJava NO-SOURCE
+> Task :legacy:jvmMainClasses
+> Task :legacy:jvmJar UP-TO-DATE
+> Task :legacy:compileTestKotlinJvm
+> Task :legacy:compileJvmTestJava NO-SOURCE
+> Task :legacy:jvmTestClasses
+> Task :compileKotlinJvm
+
+> Task :legacy:jvmTest
+
+LegacyConcurrencyTest[jvm] > overlappingOperationsInvalidateTheInFlightOutput[jvm] PASSED
+
+LegacyDeterministicOracleTest[jvm] > replaySevenIndependentExchanges[jvm] PASSED
+
+LegacyDeterministicOracleTest[jvm] > replayHistoricalPeerInputCases[jvm] PASSED
+
+LegacyFreshOracleTest[jvm] > replayTwentyFourFreshExchanges[jvm] PASSED
+
+LegacyFreshOracleTest[jvm] > replay108MalformedAndBoundaryPeerEncodings[jvm] PASSED
+
+LegacyLifecycleTest[jvm] > callerMutationCannotAliasIdentityOrGeneratedMessage[jvm] PASSED
+
+LegacyLifecycleTest[jvm] > destroyIsIdempotentAndTerminal[jvm] PASSED
+
+LegacyLifecycleTest[jvm] > entropyExceptionsAndIncorrectLengthsEraseState[jvm] PASSED
+
+LegacyLifecycleTest[jvm] > wrongPasswordsAndRolesDoNotCreateAuthentication[jvm] PASSED
+
+LegacyLifecycleTest[jvm] > repeatGenerationFailsAndErasesSession[jvm] PASSED
+
+LegacyLifecycleTest[jvm] > lengthsFailBeforeUnboundedAllocation[jvm] PASSED
+
+LegacyLifecycleTest[jvm] > returnedEntropyIsWipedAndPasswordInputRemainsOwnedByCaller[jvm] PASSED
+
+LegacyLifecycleTest[jvm] > reentrantEntropyCallPoisonsOuterSessionEvenIfCallbackCatchesError[jvm] PASSED
+
+LegacyLifecycleTest[jvm] > processBeforeGenerateFailsPermanently[jvm] PASSED
+
+LegacyOracleBatch00Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch01Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch02Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch03Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch04Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch05Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch06Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch07Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch08Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch09Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch10Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch11Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch12Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch13Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch14Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyOracleBatch15Test[jvm] > replay32IndependentOracleExchanges[jvm] PASSED
+
+LegacyZeroEntropyTest[jvm] > historicalZeroEphemeralScalarIsPreservedExplicitly[jvm] PASSED
+
+> Task :compileJvmMainJava NO-SOURCE
+> Task :jvmMainClasses
+> Task :jvmJar
+> Task :compileTestKotlinJvm
+> Task :primitives:compileTestKotlinJvm
+> Task :compileJvmTestJava NO-SOURCE
+> Task :jvmTestClasses
+
+> Task :jvmTest
+
+ConcurrentMisuseTest[jvm] > concurrentCallPoisonsOwnerWithoutConcurrentSecretMutation[jvm] PASSED
+
+ProtocolIsolationTest[jvm] > legacyKeyCannotSatisfyRfcConfirmationAndNoFallbackOccurs[jvm] PASSED
+
+RfcFailureTest[jvm] > wrongPasswordIdentityAIdentityBAndAadAllPreventKeyRelease[jvm] PASSED
+
+RfcFailureTest[jvm] > sameRoleFailsConfirmation[jvm] PASSED
+
+RfcFailureTest[jvm] > boundedMalformedInputFuzzIsTerminal[jvm] PASSED
+
+RfcFailureTest[jvm] > hostilePointEncodingsAreRejectedAndOwnedSecretsErased[jvm] PASSED
+
+RfcFailureTest[jvm] > malformedConfirmationLengthAndContentAreTerminal[jvm] PASSED
+
+RfcFailureTest[jvm] > cannotReleaseAKeyBeforeConfirmationOrBeforePeerMessage[jvm] PASSED
+
+RfcFailureTest[jvm] > rejectionSamplingRejectsOrderAndLargerValuesAndConsumesFreshEntropy[jvm] PASSED
+
+RfcFailureTest[jvm] > invalidScalarAndInputBoundsAreRejectedBeforeUse[jvm] PASSED
+
+RfcFailureTest[jvm] > callerArraysAreDefensivelyCopiedAndMessagesHaveIndependentStorage[jvm] PASSED
+
+RfcFailureTest[jvm] > zeroEphemeralMatchesPublishedMasksAndCannotReleaseAKey[jvm] PASSED
+
+RfcFailureTest[jvm] > repeatedOperationsAndDestroyAreTerminal[jvm] PASSED
+
+RfcFailureTest[jvm] > successfulKeyCanOnlyBeReleasedOnce[jvm] PASSED
+
+RfcFailureTest[jvm] > sourceFailureWrongLengthAndOutOfRangeCandidatesTerminateAndWipe[jvm] PASSED
+
+RfcFailureTest[jvm] > entropyCallbackReentrancyPoisonsTheOwningOperation[jvm] PASSED
+
+RfcVectorsTest[jvm] > edwardsMixedOrderUsesCofactorAndBindsExactPeerEncoding[jvm] PASSED
+
+RfcVectorsTest[jvm] > publicP256ApiMatchesOfficialVectorsThroughConfirmation[jvm] PASSED
+
+RfcVectorsTest[jvm] > edwardsRfcMaskConstantsArePrimeOrder[jvm] PASSED
+
+RfcVectorsTest[jvm] > edwardsRejectsEveryPureTorsionElement[jvm] PASSED
+
+RfcVectorsTest[jvm] > publicEdwardsApiMatchesIndependentVectorsThroughConfirmation[jvm] PASSED
+
+RfcVectorsTest[jvm] > edwardsEveryIndependentIntermediateField[jvm] PASSED
+
+RfcVectorsTest[jvm] > p256EveryOfficialIntermediateField[jvm] PASSED
+
+> Task :primitives:compileJvmTestJava NO-SOURCE
+> Task :primitives:jvmTestClasses
+
+> Task :primitives:jvmTest
+
+HashBoundaryTest[jvm] > independentPaddingBoundaryVectors[jvm] PASSED
+
+HashTest[jvm] > hkdfRfc5869[jvm] PASSED
+
+HashTest[jvm] > sha512StandardVectors[jvm] PASSED
+
+HashTest[jvm] > sha256StandardVectors[jvm] PASSED
+
+HashTest[jvm] > hkdfBoundsAndInputOwnership[jvm] PASSED
+
+HashTest[jvm] > hmacRfc4231[jvm] PASSED
+
+ScaffoldTest[jvm] > entropyContractIsAnApplicationBoundary[jvm] PASSED
+
+ArithmeticDifferentialTest[jvm] > allFourModuliAgainstBigInteger[jvm] PASSED
+
+ArithmeticDifferentialTest[jvm] > edwardsHighestBitAndMixedOrderScalarsAgainstAffineOracle[jvm] PASSED
+
+ArithmeticDifferentialTest[jvm] > edwardsCanonicalAndOffCurveEncodingsAgainstIntegerOracle[jvm] PASSED
+
+ArithmeticDifferentialTest[jvm] > p256FullWidthScalarAndExceptionalCasesAgainstAffineOracle[jvm] PASSED
+
+Edwards25519MathTest[jvm] > strictAndHistoricalPointDecodersAreSeparated[jvm] PASSED
+
+Edwards25519MathTest[jvm] > scalarReductionBoundaries[jvm] PASSED
+
+Edwards25519MathTest[jvm] > rfc8032BasePointAndPublicKey[jvm] PASSED
+
+Edwards25519MathTest[jvm] > fullWidthHighBitIsPreserved[jvm] PASSED
+
+Edwards25519MathTest[jvm] > torsionAndPrimeOrderChecks[jvm] PASSED
+
+ModMathCarryBoundaryTest[jvm] > unsignedAccumulatorsAndExtraWordAgainstBigInteger[jvm] PASSED
+
+ModMathIntCarryTest[jvm] > maximumUnsignedInnerSumAndCarryChains[jvm] PASSED
+
+ModMathTest[jvm] > resultsDoNotAliasInputsOrConstants[jvm] PASSED
+
+ModMathTest[jvm] > canonicalDecodingAndSelection[jvm] PASSED
+
+ModMathTest[jvm] > independentPythonIntegerVectors[jvm] PASSED
+
+P256MathTest[jvm] > independentPythonAndOpenSslScalarVectors[jvm] PASSED
+
+P256MathTest[jvm] > malformedAndNonCanonicalPointEncodings[jvm] PASSED
+
+P256MathTest[jvm] > exceptionalAdditionAndInputOwnership[jvm] PASSED
+
+WycheproofP256Test[jvm] > allInvalidRawPointsAndUncompressedEncodingPolicy[jvm] PASSED
+
+WycheproofP256Test[jvm] > independentValidRawPointEdgeCases[jvm] PASSED
+
+> Task :jsTestProcessResources NO-SOURCE
+> Task :jsTestClasses

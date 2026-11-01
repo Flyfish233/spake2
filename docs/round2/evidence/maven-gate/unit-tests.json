@@ -1,0 +1,19 @@
+{
+  "executedAtUtc": "2026-10-26T18:33:23.537516+00:00",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/tests",
+    "-p",
+    "test_maven_repository_gate.py"
+  ],
+  "exitCode": 0,
+  "scope": "Synthetic complete Maven repository plus fault injection; includes actual Android schema features and an optimized-Python CLI rejection. No Gradle or network execution.",
+  "sha256": {
+    "tools/check_maven_repository.py": "b54896a958b4e5a17f71f2adc84fdcb949dd9237b04eb53ad71ced9d3162ecf1",
+    "tools/tests/test_maven_repository_gate.py": "d4c7e79712516f15153258db53e15a1dd0be328b9576253b986a4aefcd721e71"
+  }
+}

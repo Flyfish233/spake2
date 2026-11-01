@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.RfcFailureTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:56:23.064Z" hostname="c9d49951d07d" time="79.041">
+  <properties/>
+  <testcase name="wrongPasswordIdentityAIdentityBAndAadAllPreventKeyRelease[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="10.6"/>
+  <testcase name="cannotReleaseAKeyBeforeConfirmationOrBeforePeerMessage[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="1.232"/>
+  <testcase name="malformedConfirmationLengthAndContentAreTerminal[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="19.371"/>
+  <testcase name="sameRoleFailsConfirmation[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="1.682"/>
+  <testcase name="repeatedOperationsAndDestroyAreTerminal[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="2.164"/>
+  <testcase name="successfulKeyCanOnlyBeReleasedOnce[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="1.771"/>
+  <testcase name="sourceFailureWrongLengthAndOutOfRangeCandidatesTerminateAndWipe[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.321"/>
+  <testcase name="rejectionSamplingRejectsOrderAndLargerValuesAndConsumesFreshEntropy[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.769"/>
+  <testcase name="zeroEphemeralMatchesPublishedMasksAndCannotReleaseAKey[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="4.339"/>
+  <testcase name="entropyCallbackReentrancyPoisonsTheOwningOperation[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.944"/>
+  <testcase name="invalidScalarAndInputBoundsAreRejectedBeforeUse[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="0.03"/>
+  <testcase name="hostilePointEncodingsAreRejectedAndOwnedSecretsErased[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="12.667"/>
+  <testcase name="callerArraysAreDefensivelyCopiedAndMessagesHaveIndependentStorage[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="3.338"/>
+  <testcase name="boundedMalformedInputFuzzIsTerminal[linuxX64]" classname="io.github.flyfish233.spake2.RfcFailureTest" time="19.439"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+test_actual_gradle_96_native_reports_pass (test_consumer_result_gate.ConsumerResultGateTest.test_actual_gradle_96_native_reports_pass)
+Real KGP 2.4.20 reports prefix classes with their owning task. ... ok
+test_complete_host_and_native_identities_pass (test_consumer_result_gate.ConsumerResultGateTest.test_complete_host_and_native_identities_pass) ... ok
+test_duplicate_normalized_method_fails (test_consumer_result_gate.ConsumerResultGateTest.test_duplicate_normalized_method_fails) ... ok
+test_exact_requested_task_prefix_passes (test_consumer_result_gate.ConsumerResultGateTest.test_exact_requested_task_prefix_passes) ... ok
+test_missing_method_fails (test_consumer_result_gate.ConsumerResultGateTest.test_missing_method_fails) ... ok
+test_prefixed_and_unprefixed_duplicate_fails (test_consumer_result_gate.ConsumerResultGateTest.test_prefixed_and_unprefixed_duplicate_fails) ... ok
+test_wrong_class_or_malformed_name_fails (test_consumer_result_gate.ConsumerResultGateTest.test_wrong_class_or_malformed_name_fails) ... ok
+test_wrong_or_repeated_task_prefix_fails (test_consumer_result_gate.ConsumerResultGateTest.test_wrong_or_repeated_task_prefix_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.931s
+
+OK

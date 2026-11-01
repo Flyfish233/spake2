@@ -1,0 +1,19 @@
+RFC 9382: SPAKE2, W. Ladd, September 2023; IRTF document stream.
+Copyright (c) 2023 IETF Trust and the persons identified as the document authors. All rights reserved.
+https://www.rfc-editor.org/rfc/rfc9382
+See RFC9382-IRTF-NOTICE for the original notice and alternate-stream terms.
+The TLP section-4 BSD code-component grant does not apply to this RFC.
+
+RFC 5869: HKDF, H. Krawczyk and P. Eronen, May 2010
+Copyright (c) 2010 IETF Trust and the persons identified as the document authors. All rights reserved.
+https://www.rfc-editor.org/rfc/rfc5869
+
+The documents are subject to BCP 78 and the IETF Trust Legal Provisions in effect at their respective publication dates.
+https://trustee.ietf.org/license-info
+
+The IETF Trust clarified on September 21, 2021 that the older name Simplified BSD was an error: the code-component license text was always the Revised BSD license. LICENSE-BSD retains those terms for RFC 5869 only. It does not grant a BSD license for RFC 9382. Official test-vector data retains its applicable source terms; generated test harness code is separately AGPL-3.0-only.
+
+TLP-2015-REFERENCE.txt preserves the complete body of the current official
+March 25, 2015 policy (with the 2021 terminology correction), including the
+IRTF-specific section 8.g. Its applicability rules control which terms apply;
+the reference copy does not relicense any RFC or the policy itself.

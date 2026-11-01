@@ -1,0 +1,61 @@
+[
+  {
+    "group": "org.jetbrains.kotlin",
+    "artifact": "kotlin-stdlib",
+    "version": "2.2.21",
+    "firstGlobMatch": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/60a0940e504374fe89029a3a8ab449eb0fecdb89/kotlin-stdlib-2.2.21-all.jar",
+    "matches": [
+      "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/60a0940e504374fe89029a3a8ab449eb0fecdb89/kotlin-stdlib-2.2.21-all.jar",
+      "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/fa374a986e128314c3db00a20aae55f72a258511/kotlin-stdlib-2.2.21.jar"
+    ],
+    "markerClassPresence": {
+      "kotlin-stdlib-2.2.21-all.jar": false,
+      "kotlin-stdlib-2.2.21.jar": true
+    }
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "artifact": "kotlin-compiler-embeddable",
+    "version": "2.2.21",
+    "firstGlobMatch": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.2.21/b13aed5cf8412f9ee9d1e4db21bdcfebcc24f606/kotlin-compiler-embeddable-2.2.21.jar",
+    "matches": [
+      "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.2.21/b13aed5cf8412f9ee9d1e4db21bdcfebcc24f606/kotlin-compiler-embeddable-2.2.21.jar"
+    ]
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "artifact": "kotlin-script-runtime",
+    "version": "2.2.21",
+    "firstGlobMatch": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.2.21/e9b021c4e335e4ed7a7e3b32285249ae6bb3a6c8/kotlin-script-runtime-2.2.21.jar",
+    "matches": [
+      "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.2.21/e9b021c4e335e4ed7a7e3b32285249ae6bb3a6c8/kotlin-script-runtime-2.2.21.jar"
+    ]
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "artifact": "kotlin-daemon-embeddable",
+    "version": "2.2.21",
+    "firstGlobMatch": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.2.21/78fde5db1c92786448170b351d8f8868acabd2ce/kotlin-daemon-embeddable-2.2.21.jar",
+    "matches": [
+      "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.2.21/78fde5db1c92786448170b351d8f8868acabd2ce/kotlin-daemon-embeddable-2.2.21.jar"
+    ]
+  },
+  {
+    "group": "org.jetbrains.kotlin",
+    "artifact": "kotlin-reflect",
+    "version": "1.6.10",
+    "firstGlobMatch": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar",
+    "matches": [
+      "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar"
+    ]
+  },
+  {
+    "group": "org.jetbrains.kotlinx",
+    "artifact": "kotlinx-coroutines-core-jvm",
+    "version": "1.8.0",
+    "firstGlobMatch": "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar",
+    "matches": [
+      "/workspace/scratch/a46e59dd0882/toolchains/gradle-home/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar"
+    ]
+  }
+]

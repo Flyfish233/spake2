@@ -1,0 +1,25 @@
+{
+  "phase": "before checker fix; new fault-injection regressions are expected to fail",
+  "executedAtUtc": "2026-10-26T18:51:47.613738+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "tools/tests/test_maven_repository_gate.py",
+    "MavenRepositoryGateTest.test_complete_33_publications_and_actual_android_schema_are_accepted",
+    "MavenRepositoryGateTest.test_sources_missing_embedded_notice_pair_is_rejected",
+    "MavenRepositoryGateTest.test_sources_truncated_embedded_notices_are_rejected",
+    "MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices",
+    "MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices"
+  ],
+  "exitCode": 1,
+  "methods": [
+    "test_complete_33_publications_and_actual_android_schema_are_accepted",
+    "test_sources_missing_embedded_notice_pair_is_rejected",
+    "test_sources_truncated_embedded_notices_are_rejected",
+    "test_jvm_runtime_requires_full_module_specific_notices",
+    "test_android_classes_jar_requires_full_module_specific_notices"
+  ],
+  "gateSha256": "b54896a958b4e5a17f71f2adc84fdcb949dd9237b04eb53ad71ced9d3162ecf1",
+  "testSha256": "6ac8e843dd2a1ecbcc30b1dc8f16d8646ef3e9b9082d7a08a1027d8185df5d5c",
+  "resultSummary": "FAILED (failures=28)",
+  "log": "embedded-notices-before.txt"
+}

@@ -1,0 +1,62 @@
+{
+  "executedAtUtc": "2026-10-26T08:04:52.716955+00:00",
+  "command": "./gradlew --no-daemon -PenableAndroid=true assembleDebug testDebugUnitTest --stacktrace",
+  "environmentInvocation": "python3 /workspace/scratch/a46e59dd0882/run_gradle.py --no-daemon -PenableAndroid=true assembleDebug testDebugUnitTest --stacktrace",
+  "result": "BUILD SUCCESSFUL in 3m 27s",
+  "exitCode": 0,
+  "actionableTasks": 93,
+  "executedTasks": 93,
+  "testRuntime": "OpenJDK host JVM; Android device/ART not executed",
+  "modules": [
+    {
+      "module": "spake2",
+      "xmlFiles": 3,
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "testSeconds": 6.249
+    },
+    {
+      "module": "legacy",
+      "xmlFiles": 20,
+      "tests": 30,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "testSeconds": 35.095
+    },
+    {
+      "module": "primitives",
+      "xmlFiles": 6,
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "testSeconds": 5.249
+    }
+  ],
+  "totalTests": 69,
+  "artifacts": [
+    {
+      "path": "build/outputs/aar/spake2-debug.aar",
+      "bytes": 19070,
+      "sha256": "fad3051a3a3a32ba78b21a1ea0eb7e50e1fee3bdbaf71f7bdd791af4caddfd44",
+      "nativeLibraryEntries": []
+    },
+    {
+      "path": "legacy/build/outputs/aar/legacy-debug.aar",
+      "bytes": 12669,
+      "sha256": "6e3527d589b9cfc00e32f3899fdb15fba1b958f2499a6984d0f2bbcf38327f92",
+      "nativeLibraryEntries": []
+    },
+    {
+      "path": "primitives/build/outputs/aar/primitives-debug.aar",
+      "bytes": 39138,
+      "sha256": "ead64a6f33f3363b66dc2915cd95dd805f42792ffab38d2bbf0afc699695ad8e",
+      "nativeLibraryEntries": []
+    }
+  ],
+  "gradleLogSha256": "f442e52333c5a22fe10000e817f198050d42147e36040b00d6d74f7851854262",
+  "deviceTestsRun": false
+}

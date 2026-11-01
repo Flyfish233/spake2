@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "deterministicEndpoints": 14,
+  "highBitEndpoints": 3,
+  "peerCases": 112,
+  "unsafeResiduesRecovered": 7,
+  "unsafeAliceParityRecovered": 2,
+  "hardenedControls": 8,
+  "samePointDifferentTranscriptKeys": true
+}

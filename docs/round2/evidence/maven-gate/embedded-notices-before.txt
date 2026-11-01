@@ -1,0 +1,313 @@
+.FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+======================================================================
+FAIL: test_sources_missing_embedded_notice_pair_is_rejected (__main__.MavenRepositoryGateTest.test_sources_missing_embedded_notice_pair_is_rejected) (artifact='spake2')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 236, in test_sources_missing_embedded_notice_pair_is_rejected
+    self.exercise_notice_corruption(artifact, "-sources.jar", "META-INF/spake2/", "missing_pair")
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_sources_missing_embedded_notice_pair_is_rejected (__main__.MavenRepositoryGateTest.test_sources_missing_embedded_notice_pair_is_rejected) (artifact='spake2-primitives-iossimulatorarm64')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 236, in test_sources_missing_embedded_notice_pair_is_rejected
+    self.exercise_notice_corruption(artifact, "-sources.jar", "META-INF/spake2/", "missing_pair")
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_sources_missing_embedded_notice_pair_is_rejected (__main__.MavenRepositoryGateTest.test_sources_missing_embedded_notice_pair_is_rejected) (artifact='spake2-legacy-wasmjs')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 236, in test_sources_missing_embedded_notice_pair_is_rejected
+    self.exercise_notice_corruption(artifact, "-sources.jar", "META-INF/spake2/", "missing_pair")
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_sources_truncated_embedded_notices_are_rejected (__main__.MavenRepositoryGateTest.test_sources_truncated_embedded_notices_are_rejected) (fault='truncated_provenance')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 241, in test_sources_truncated_embedded_notices_are_rejected
+    self.exercise_notice_corruption("spake2-js", "-sources.jar", "META-INF/spake2/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2', fault='missing_pair')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2', fault='truncated_license')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2', fault='truncated_provenance')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2', fault='wrong_module_path')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2-primitives', fault='missing_pair')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2-primitives', fault='truncated_license')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2-primitives', fault='truncated_provenance')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2-primitives', fault='wrong_module_path')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2-legacy', fault='missing_pair')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2-legacy', fault='truncated_license')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2-legacy', fault='truncated_provenance')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_jvm_runtime_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_jvm_runtime_requires_full_module_specific_notices) (module='spake2-legacy', fault='wrong_module_path')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 247, in test_jvm_runtime_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-jvm", ".jar", f"META-INF/spake2/{module}/", fault)
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2', fault='missing_pair')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2', fault='truncated_license')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2', fault='truncated_provenance')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2', fault='wrong_module_path')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2-primitives', fault='missing_pair')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2-primitives', fault='truncated_license')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2-primitives', fault='truncated_provenance')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2-primitives', fault='wrong_module_path')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2-legacy', fault='missing_pair')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2-legacy', fault='truncated_license')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2-legacy', fault='truncated_provenance')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+======================================================================
+FAIL: test_android_classes_jar_requires_full_module_specific_notices (__main__.MavenRepositoryGateTest.test_android_classes_jar_requires_full_module_specific_notices) (module='spake2-legacy', fault='wrong_module_path')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 253, in test_android_classes_jar_requires_full_module_specific_notices
+    self.exercise_notice_corruption(f"{module}-android", ".aar", f"META-INF/spake2/{module}/", fault,
+  File "/workspace/scratch/a46e59dd0882/spake2-stabilization/tools/tests/test_maven_repository_gate.py", line 208, in exercise_notice_corruption
+    with self.assertRaisesRegex(gate.VerificationError,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: VerificationError not raised
+
+----------------------------------------------------------------------
+Ran 5 tests in 15.858s
+
+FAILED (failures=28)

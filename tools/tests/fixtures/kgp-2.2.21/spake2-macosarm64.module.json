@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../spake2/0.1.0-dev.round2-local-final/spake2-0.1.0-dev.round2-local-final.module",
+    "group": "io.github.flyfish233",
+    "module": "spake2",
+    "version": "0.1.0-dev.round2-local-final",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.flyfish233",
+          "module": "spake2-primitives",
+          "version": {
+            "requires": "0.1.0-dev.round2-local-final"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spake2-macosArm64Main-0.1.0-dev.round2-local-final.klib",
+          "url": "spake2-macosarm64-0.1.0-dev.round2-local-final.klib",
+          "size": 33033,
+          "sha512": "5e9dddf54fc84c39053da740badd33878ab3ce52aa07dd35eabf366e17a47caab1c1d15c6c9816128ebda698c0616776dcfd3a26913be32dc9df79fbdf2d8f2c",
+          "sha256": "60d884310304add24f2424313c9646c4780bcd3b6ed729e55965a7124e552bcb",
+          "sha1": "68ea2ed0c909c5cd33da039063bfbc59e6666ff8",
+          "md5": "7bf55c833e8d3d856383991398babe3f"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "spake2-macosarm64-0.1.0-dev.round2-local-final-sources.jar",
+          "url": "spake2-macosarm64-0.1.0-dev.round2-local-final-sources.jar",
+          "size": 63585,
+          "sha512": "529c425b52578230d559e0962b819dc136bf4201c2eeaefabae1f303788c47606c1cdabcc3fa30b89e92dff91457bb72bf33c4290695543694e445eb4f5a6ec3",
+          "sha256": "9c7b5308adee58600fa135db74ca7ceee7b2c94165203551d23d500b432db02e",
+          "sha1": "8b984917daa10a4db40763e827ff2f07765d4e96",
+          "md5": "93cf8ec16462a72724328a1b59dd1494"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.flyfish233",
+          "module": "spake2-primitives",
+          "version": {
+            "requires": "0.1.0-dev.round2-local-final"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spake2-macosarm64-0.1.0-dev.round2-local-final-metadata.jar",
+          "url": "spake2-macosarm64-0.1.0-dev.round2-local-final-metadata.jar",
+          "size": 261,
+          "sha512": "1487e5a20c9e4d74f298e07c42e96a61be11b7a768c3fbc199ee138cd68e1fc2267d1cfe3f11f288acc05df755315344d052cc5f6f751f126ab4fe1caa5125ea",
+          "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+          "sha1": "2ad14aed781c4a73ed4dbb421966d408a0a06686",
+          "md5": "f43436d6bec321290f6af228ad602604"
+        }
+      ]
+    }
+  ]
+}

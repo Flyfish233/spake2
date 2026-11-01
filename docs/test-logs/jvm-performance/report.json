@@ -1,0 +1,291 @@
+{
+  "executedAtUtc": "2026-10-26T08:02:21.404237+00:00",
+  "compiler": "Kotlin 2.2.21",
+  "heapArguments": [
+    "-Xms128m",
+    "-Xmx512m",
+    "-XX:+UseG1GC"
+  ],
+  "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "warmups": 3,
+  "measurements": 10,
+  "fixtureOnly": true,
+  "records": [
+    {
+      "kind": "environment",
+      "javaRuntime": "17.0.21+9",
+      "javaVm": "OpenJDK 64-Bit Server VM",
+      "os": "Linux",
+      "arch": "amd64",
+      "processors": 8,
+      "maxHeapBytes": 536870912,
+      "threadAllocationSupported": true,
+      "collectors": "G1 Young Generation,G1 Old Generation"
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "index": 0,
+      "elapsedNs": 208527452,
+      "allocatedBytes": 38277568
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "index": 1,
+      "elapsedNs": 107698210,
+      "allocatedBytes": 38277568
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "index": 2,
+      "elapsedNs": 141046794,
+      "allocatedBytes": 38277568
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "index": 3,
+      "elapsedNs": 161726699,
+      "allocatedBytes": 38277568
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "index": 4,
+      "elapsedNs": 133071845,
+      "allocatedBytes": 38277568
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "index": 5,
+      "elapsedNs": 153186326,
+      "allocatedBytes": 38277568
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "index": 6,
+      "elapsedNs": 110118749,
+      "allocatedBytes": 38277568
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "index": 7,
+      "elapsedNs": 166951686,
+      "allocatedBytes": 38277568
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "index": 8,
+      "elapsedNs": 155774761,
+      "allocatedBytes": 38277568
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "index": 9,
+      "elapsedNs": 179746303,
+      "allocatedBytes": 38277568
+    },
+    {
+      "kind": "summary",
+      "mode": "RFC9382-P256-confirmed-pair",
+      "warmups": 3,
+      "measurements": 10,
+      "medianMs": 154.4805435,
+      "minMs": 107.69821,
+      "maxMs": 208.527452,
+      "medianAllocatedBytes": 38277568.0,
+      "minAllocatedBytes": 38277568,
+      "maxAllocatedBytes": 38277568,
+      "heapUsedBeforeBytes": 41289688,
+      "heapUsedAfterBytes": 31866352,
+      "gcCollections": 5,
+      "gcTimeMs": 32
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "index": 0,
+      "elapsedNs": 76483213,
+      "allocatedBytes": 17503552
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "index": 1,
+      "elapsedNs": 43027389,
+      "allocatedBytes": 17503552
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "index": 2,
+      "elapsedNs": 62887414,
+      "allocatedBytes": 17503552
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "index": 3,
+      "elapsedNs": 77687543,
+      "allocatedBytes": 17503552
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "index": 4,
+      "elapsedNs": 91361896,
+      "allocatedBytes": 17503552
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "index": 5,
+      "elapsedNs": 68983174,
+      "allocatedBytes": 17503552
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "index": 6,
+      "elapsedNs": 78255233,
+      "allocatedBytes": 17503552
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "index": 7,
+      "elapsedNs": 83904273,
+      "allocatedBytes": 17503552
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "index": 8,
+      "elapsedNs": 84912642,
+      "allocatedBytes": 17503552
+    },
+    {
+      "kind": "sample",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "index": 9,
+      "elapsedNs": 65832009,
+      "allocatedBytes": 17503552
+    },
+    {
+      "kind": "summary",
+      "mode": "RFC9382-Edwards25519-confirmed-pair",
+      "warmups": 3,
+      "measurements": 10,
+      "medianMs": 77.085378,
+      "minMs": 43.027389,
+      "maxMs": 91.361896,
+      "medianAllocatedBytes": 17503552.0,
+      "minAllocatedBytes": 17503552,
+      "maxAllocatedBytes": 17503552,
+      "heapUsedBeforeBytes": 7733104,
+      "heapUsedAfterBytes": 25582872,
+      "gcCollections": 2,
+      "gcTimeMs": 13
+    },
+    {
+      "kind": "sample",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "index": 0,
+      "elapsedNs": 74493183,
+      "allocatedBytes": 16781936
+    },
+    {
+      "kind": "sample",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "index": 1,
+      "elapsedNs": 63285469,
+      "allocatedBytes": 16781744
+    },
+    {
+      "kind": "sample",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "index": 2,
+      "elapsedNs": 38498636,
+      "allocatedBytes": 16781680
+    },
+    {
+      "kind": "sample",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "index": 3,
+      "elapsedNs": 39656539,
+      "allocatedBytes": 16781680
+    },
+    {
+      "kind": "sample",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "index": 4,
+      "elapsedNs": 42801740,
+      "allocatedBytes": 16781680
+    },
+    {
+      "kind": "sample",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "index": 5,
+      "elapsedNs": 34658687,
+      "allocatedBytes": 16781680
+    },
+    {
+      "kind": "sample",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "index": 6,
+      "elapsedNs": 68218374,
+      "allocatedBytes": 16781680
+    },
+    {
+      "kind": "sample",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "index": 7,
+      "elapsedNs": 45899310,
+      "allocatedBytes": 16781680
+    },
+    {
+      "kind": "sample",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "index": 8,
+      "elapsedNs": 42686771,
+      "allocatedBytes": 16781680
+    },
+    {
+      "kind": "sample",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "index": 9,
+      "elapsedNs": 35527319,
+      "allocatedBytes": 16781680
+    },
+    {
+      "kind": "summary",
+      "mode": "Legacy-SPAKE25519-hardened-unconfirmed-pair",
+      "warmups": 3,
+      "measurements": 10,
+      "medianMs": 42.7442555,
+      "minMs": 34.658687,
+      "maxMs": 74.493183,
+      "medianAllocatedBytes": 16781680.0,
+      "minAllocatedBytes": 16781680,
+      "maxAllocatedBytes": 16781936,
+      "heapUsedBeforeBytes": 76963096,
+      "heapUsedAfterBytes": 8772680,
+      "gcCollections": 3,
+      "gcTimeMs": 16
+    },
+    {
+      "kind": "completion",
+      "verifiedExchanges": 39,
+      "fixtureEntropyOnly": true
+    }
+  ]
+}

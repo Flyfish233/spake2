@@ -1,0 +1,123 @@
+{
+  "capturedUtc": "2026-10-26T08:56:40.309369+00:00",
+  "verifiedSourceRevision": {
+    "remoteCommit": "b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "remoteTree": "9144c7480ec823844a590bcb304d0d8f5b553128",
+    "remoteUrl": "https://github.com/Flyfish233/spake2/commit/b837aba27bebc1050965fa124c2efa54b4e4544a",
+    "equivalentLocalCommit": "bf45e30f01b68669a56e719826991fe3fee6bdc6"
+  },
+  "sourceManifestSha256": "f23aa680b7028768a15363f8f550e3e2d33e3b9ba8111ed834e0c7affe03c4f6",
+  "compiler": "Kotlin 2.2.21 Wasm/JS development test executable",
+  "framework": "KotlinWasmNode",
+  "nodeVersion": "v22.0.0",
+  "nodeSha256": "0570891fc6e07540b25f18b753445fc16d4428b8a894cca5cf9805c2feee230f",
+  "observedCommandShape": "node build/wasm/packages/<module>-test/static/runUnitTests.mjs",
+  "artifacts": {
+    "build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-test.mjs": {
+      "bytes": 216,
+      "sha256": "b3aa36123a5ed60a0eaf22aae99b120488ae9c1535b4bdad2187e3c9c522ceaf"
+    },
+    "build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-test.uninstantiated.mjs": {
+      "bytes": 14939,
+      "sha256": "69072a87b5135d2684e68b2c82f31501bcc3848a68fecfe6466cb813090af2df"
+    },
+    "build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-test.wasm": {
+      "bytes": 1012495,
+      "sha256": "eb01ec4064ac7e5fad09b532c3e5f5ec3399cfd36ed8030a69e9558e93edf6a9"
+    },
+    "legacy/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-legacy-test.mjs": {
+      "bytes": 223,
+      "sha256": "694ca630fc44bef4c22ba8f93df216a8ecaf772dc7546d2fd2b95eed72451e8b"
+    },
+    "legacy/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-legacy-test.uninstantiated.mjs": {
+      "bytes": 14953,
+      "sha256": "b079e2c5dd4189e0da21a31759eeeebec56651441cc9ebb48fc59f60bfbac061"
+    },
+    "legacy/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-legacy-test.wasm": {
+      "bytes": 1953089,
+      "sha256": "efbc09d9aa9c7b55e1079c05c4e367b322bbc1e64ecb8c78c80e73630ca6d175"
+    },
+    "primitives/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-primitives-test.mjs": {
+      "bytes": 227,
+      "sha256": "4b40315736e1ceac413b353175acc862c0e4c64e9b1860ceb302944e2c85b183"
+    },
+    "primitives/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-primitives-test.uninstantiated.mjs": {
+      "bytes": 14961,
+      "sha256": "5f67bbcdb0b127bad5ff8020b6ffbf0c1db47275ba352172230957383983dcfd"
+    },
+    "primitives/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-primitives-test.wasm": {
+      "bytes": 1039124,
+      "sha256": "f2df727abc6d44c219d9adda141a4a3d40024e85cb8829223001c467863ef6a1"
+    },
+    "build/wasm/packages/spake2-legacy-test/static/runUnitTests.mjs": {
+      "bytes": 93,
+      "sha256": "e1f6f4ddb3be6db76fda0a34d28ce535cba43cdf61dde0df6b5ca6372dac153a"
+    },
+    "build/wasm/packages/spake2-primitives-test/static/runUnitTests.mjs": {
+      "bytes": 97,
+      "sha256": "b6617a39178dbb8b7201418815a930be8c0c090da2b111dc9f982b1377238216"
+    },
+    "build/wasm/packages/spake2-test/static/runUnitTests.mjs": {
+      "bytes": 86,
+      "sha256": "ec9291630220f4b381d8639c7f9dfeffcb3a29a9a0996d9227c8036aa6209ee3"
+    }
+  },
+  "executionSummary": "../test-results/final-platform-wasm.json",
+  "scope": "Hashes identify the actual executed test modules and wrappers; no constant-time machine-code audit is claimed.",
+  "runtimePackageCopiesVerified": [
+    {
+      "compiled": "build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-test.mjs",
+      "runtimePackage": "build/wasm/packages/spake2-test/kotlin/spake2-test.mjs",
+      "sha256": "b3aa36123a5ed60a0eaf22aae99b120488ae9c1535b4bdad2187e3c9c522ceaf",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-test.uninstantiated.mjs",
+      "runtimePackage": "build/wasm/packages/spake2-test/kotlin/spake2-test.uninstantiated.mjs",
+      "sha256": "69072a87b5135d2684e68b2c82f31501bcc3848a68fecfe6466cb813090af2df",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-test.wasm",
+      "runtimePackage": "build/wasm/packages/spake2-test/kotlin/spake2-test.wasm",
+      "sha256": "eb01ec4064ac7e5fad09b532c3e5f5ec3399cfd36ed8030a69e9558e93edf6a9",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "legacy/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-legacy-test.mjs",
+      "runtimePackage": "build/wasm/packages/spake2-legacy-test/kotlin/spake2-legacy-test.mjs",
+      "sha256": "694ca630fc44bef4c22ba8f93df216a8ecaf772dc7546d2fd2b95eed72451e8b",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "legacy/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-legacy-test.uninstantiated.mjs",
+      "runtimePackage": "build/wasm/packages/spake2-legacy-test/kotlin/spake2-legacy-test.uninstantiated.mjs",
+      "sha256": "b079e2c5dd4189e0da21a31759eeeebec56651441cc9ebb48fc59f60bfbac061",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "legacy/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-legacy-test.wasm",
+      "runtimePackage": "build/wasm/packages/spake2-legacy-test/kotlin/spake2-legacy-test.wasm",
+      "sha256": "efbc09d9aa9c7b55e1079c05c4e367b322bbc1e64ecb8c78c80e73630ca6d175",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "primitives/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-primitives-test.mjs",
+      "runtimePackage": "build/wasm/packages/spake2-primitives-test/kotlin/spake2-primitives-test.mjs",
+      "sha256": "4b40315736e1ceac413b353175acc862c0e4c64e9b1860ceb302944e2c85b183",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "primitives/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-primitives-test.uninstantiated.mjs",
+      "runtimePackage": "build/wasm/packages/spake2-primitives-test/kotlin/spake2-primitives-test.uninstantiated.mjs",
+      "sha256": "5f67bbcdb0b127bad5ff8020b6ffbf0c1db47275ba352172230957383983dcfd",
+      "byteIdentical": true
+    },
+    {
+      "compiled": "primitives/build/compileSync/wasmJs/test/testDevelopmentExecutable/kotlin/spake2-primitives-test.wasm",
+      "runtimePackage": "build/wasm/packages/spake2-primitives-test/kotlin/spake2-primitives-test.wasm",
+      "sha256": "f2df727abc6d44c219d9adda141a4a3d40024e85cb8829223001c467863ef6a1",
+      "byteIdentical": true
+    }
+  ]
+}
