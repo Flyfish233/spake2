@@ -1,0 +1,26 @@
+{
+  "capturedAtUtc": "2026-11-01T02:42:59.116008+00:00",
+  "head": "88e0233193ce4cf08d974fcd12ed0255624c6536",
+  "productionFiles": [
+    {
+      "path": "legacy/src/commonMain/kotlin/io/github/flyfish233/spake2/legacy/LegacySpake25519.kt",
+      "sha256": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138",
+      "equals5910529": true
+    },
+    {
+      "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt",
+      "sha256": "006a71ead2a4c1038635435547a22ea231aace49920de1a43b18622c942c0eb8",
+      "equals5910529": true
+    },
+    {
+      "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt",
+      "sha256": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd",
+      "equals5910529": true
+    },
+    {
+      "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt",
+      "sha256": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451",
+      "equals5910529": true
+    }
+  ]
+}

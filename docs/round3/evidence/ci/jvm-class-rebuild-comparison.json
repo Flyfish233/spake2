@@ -1,0 +1,192 @@
+{
+  "checkedAtUtc": "2026-11-01T02:47:37.681668+00:00",
+  "artifactSourceRevision": "59105290820bcbfd4e0336a2e7713006a461527f",
+  "buildSourceManifest": "../runtime/jvm-round3-source.json",
+  "classCount": 26,
+  "matchingClasses": 26,
+  "records": [
+    {
+      "artifact": "spake2-jvm",
+      "class": "io/github/flyfish233/spake2/rfc/Rfc9382Core$WhenMappings.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "45c208e62f853179d2dc5161000779cf20e276451cff724acbdf8f18bfc24c92",
+      "localSha256": "45c208e62f853179d2dc5161000779cf20e276451cff724acbdf8f18bfc24c92"
+    },
+    {
+      "artifact": "spake2-jvm",
+      "class": "io/github/flyfish233/spake2/rfc/Rfc9382Core.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "35208266ec77aee4485e662169abf40539662652508235aec17d7a8cd0ff7221",
+      "localSha256": "35208266ec77aee4485e662169abf40539662652508235aec17d7a8cd0ff7221"
+    },
+    {
+      "artifact": "spake2-jvm",
+      "class": "io/github/flyfish233/spake2/rfc/Rfc9382Session$State.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "5dc4c9d7a75a5ec0fdfa31a7418c27ac1fe1641f62894d4194f667d945f26228",
+      "localSha256": "5dc4c9d7a75a5ec0fdfa31a7418c27ac1fe1641f62894d4194f667d945f26228"
+    },
+    {
+      "artifact": "spake2-jvm",
+      "class": "io/github/flyfish233/spake2/rfc/Rfc9382Session.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "4da8151aa9c2befbc7060799f0c814dd7379b74f8bf03dc79cadffbb1b68bc8e",
+      "localSha256": "4da8151aa9c2befbc7060799f0c814dd7379b74f8bf03dc79cadffbb1b68bc8e"
+    },
+    {
+      "artifact": "spake2-jvm",
+      "class": "io/github/flyfish233/spake2/rfc/Rfc9382Suite$WhenMappings.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "a54301d36e0367526c3393e04bc092e6cf12ac56ecfaf390835a88d69cfbec7c",
+      "localSha256": "a54301d36e0367526c3393e04bc092e6cf12ac56ecfaf390835a88d69cfbec7c"
+    },
+    {
+      "artifact": "spake2-jvm",
+      "class": "io/github/flyfish233/spake2/rfc/Rfc9382Suite.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "afd454bb68c749bd550a733f11126d447a6dd11d64b8018e159e73cee3c415b1",
+      "localSha256": "afd454bb68c749bd550a733f11126d447a6dd11d64b8018e159e73cee3c415b1"
+    },
+    {
+      "artifact": "spake2-jvm",
+      "class": "io/github/flyfish233/spake2/rfc/TranscriptSecrets.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "cfb9fa5aa295043bb598dd8d1b8ddc2b37906fb502353320bf89d27de0b7f313",
+      "localSha256": "cfb9fa5aa295043bb598dd8d1b8ddc2b37906fb502353320bf89d27de0b7f313"
+    },
+    {
+      "artifact": "spake2-legacy-jvm",
+      "class": "io/github/flyfish233/spake2/legacy/LegacyPasswordScalarMode.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "656dcf8322f212bd6b34a990d0db7fd3b1fd95a0eab6997f16da4400d99232d5",
+      "localSha256": "656dcf8322f212bd6b34a990d0db7fd3b1fd95a0eab6997f16da4400d99232d5"
+    },
+    {
+      "artifact": "spake2-legacy-jvm",
+      "class": "io/github/flyfish233/spake2/legacy/LegacySpake25519$Companion.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "dcd4b83e1a916b9401ca34b684cb5dea7ae9254acf6a5e1589d2af3ad9591f04",
+      "localSha256": "dcd4b83e1a916b9401ca34b684cb5dea7ae9254acf6a5e1589d2af3ad9591f04"
+    },
+    {
+      "artifact": "spake2-legacy-jvm",
+      "class": "io/github/flyfish233/spake2/legacy/LegacySpake25519$State.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "c3e96d33f5d8a974c460170efb5e2222e1b346180d8fd3cfa1bacc982434523e",
+      "localSha256": "c3e96d33f5d8a974c460170efb5e2222e1b346180d8fd3cfa1bacc982434523e"
+    },
+    {
+      "artifact": "spake2-legacy-jvm",
+      "class": "io/github/flyfish233/spake2/legacy/LegacySpake25519.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "e6138f68cf076daf8a8b0b27a149a7cd007299887dc7590145b552a1c75516fe",
+      "localSha256": "e6138f68cf076daf8a8b0b27a149a7cd007299887dc7590145b552a1c75516fe"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/EntropySource.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "00933a8e44a448f0c2e9aff8902c4d31d83825c067f400c5cb9a7e748daa6c00",
+      "localSha256": "00933a8e44a448f0c2e9aff8902c4d31d83825c067f400c5cb9a7e748daa6c00"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/InternalSpake2Api.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "edaf67ca587c7e8098aee417fa0f0f2d67466fd2486ee81559dea84c54b653e7",
+      "localSha256": "edaf67ca587c7e8098aee417fa0f0f2d67466fd2486ee81559dea84c54b653e7"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/Role.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "56531533702d7801b674530f25dd4de489bba49e123ba6abe5dc65ea7395158f",
+      "localSha256": "56531533702d7801b674530f25dd4de489bba49e123ba6abe5dc65ea7395158f"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/Spake2Exception.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "24ead7599a0a64a9907427f48bec5b48ac89db6d2d90df490bdd7bfe86f98947",
+      "localSha256": "24ead7599a0a64a9907427f48bec5b48ac89db6d2d90df490bdd7bfe86f98947"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/crypto/HkdfSha256.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "1e451300766308c1ca95606a3e7fb42b0489752203fde033fba07823d26f0c9c",
+      "localSha256": "1e451300766308c1ca95606a3e7fb42b0489752203fde033fba07823d26f0c9c"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/crypto/HmacSha256.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "12f997ddcf0369e5fc7e1d0ac8fc6aafd5cbae8f7a16e51e3897c01460dc3c9b",
+      "localSha256": "12f997ddcf0369e5fc7e1d0ac8fc6aafd5cbae8f7a16e51e3897c01460dc3c9b"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/crypto/Sha256.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "7d8aecb59ba96476ce9b00be1aaf7a0f7b241bccc6dcae7abc2007db8d4f6fcc",
+      "localSha256": "7d8aecb59ba96476ce9b00be1aaf7a0f7b241bccc6dcae7abc2007db8d4f6fcc"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/crypto/Sha512.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "1eb7aef44de1850a80450942ff873bda65b11462c08ba3f1a6adaf333c5b39df",
+      "localSha256": "1eb7aef44de1850a80450942ff873bda65b11462c08ba3f1a6adaf333c5b39df"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/math/Edwards25519$Point.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "6f773d8d50fbe576dd065da3217212c4128ff3b193af73a6482d7e9d9ea0ed66",
+      "localSha256": "6f773d8d50fbe576dd065da3217212c4128ff3b193af73a6482d7e9d9ea0ed66"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/math/Edwards25519.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "8e2635b28d4eb347c990c8f15e5a8bd4b3c6c51878c619743e7dc74dbe0b26c3",
+      "localSha256": "8e2635b28d4eb347c990c8f15e5a8bd4b3c6c51878c619743e7dc74dbe0b26c3"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/math/ModMath$Companion.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "89356a4026ff67c1851f790e6d77bf2dedf48eda76ea3b2c9e276e9117c71e45",
+      "localSha256": "89356a4026ff67c1851f790e6d77bf2dedf48eda76ea3b2c9e276e9117c71e45"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/math/ModMath.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "15b0076a3b7cc103edf0d2d8157fd8dcd09b73481f52960f08373316ccf7e71c",
+      "localSha256": "15b0076a3b7cc103edf0d2d8157fd8dcd09b73481f52960f08373316ccf7e71c"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/math/ModMathKt.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "b10f0ee9611bd91d0eca8ec1664961fc71965824f7bfea31d7a6bb3b765c6332",
+      "localSha256": "b10f0ee9611bd91d0eca8ec1664961fc71965824f7bfea31d7a6bb3b765c6332"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/math/P256$Point.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "fd72b981efa5a73414bfb2a2908e85bb026fdc930f51163571a2d7c7972a6e57",
+      "localSha256": "fd72b981efa5a73414bfb2a2908e85bb026fdc930f51163571a2d7c7972a6e57"
+    },
+    {
+      "artifact": "spake2-primitives-jvm",
+      "class": "io/github/flyfish233/spake2/internal/math/P256.class",
+      "matchesLocalRebuild": true,
+      "ciSha256": "bbbc22af0c57c6ed8e71ece67ab2cf1752b4e9b7f28cd32d89cc58bc4b9e92a3",
+      "localSha256": "bbbc22af0c57c6ed8e71ece67ab2cf1752b4e9b7f28cd32d89cc58bc4b9e92a3"
+    }
+  ],
+  "scope": "Actual production JVM class bytes in downloaded CI candidate compared with local JDK17/Kotlin2.2.21 build. Not whole JAR reproducibility or proof for AAR/KLIB/JS/Wasm or compromised toolchain."
+}

@@ -1,0 +1,13 @@
+SCOPE actual candidate Legacy/Primitives JVM JARs + JCE protocol model; synthetic exporters; no Kadb TLS/provider execution
+JAVA 17.0.21+9
+AES_PROVIDER SunJCE
+HMAC_PROVIDER SunJCE
+LEGACY_ORIGIN file:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar
+PRIMITIVES_ORIGIN file:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar
+STDLIB_ORIGIN file:/tmp/spake2-r3-kadb-binding-nyvxpwjf/kotlin-stdlib-2.2.21.jar
+PASS same_code_same_exporter 64-byte materials match; both GCM directions decrypt; device PeerInfo valid
+PASS different_exporter same code; different material/key; GCM rejects
+PASS different_code same exporter; different material/key; GCM rejects
+PASS identity_and_nul_binding explicit Alice/Bob ordering succeeds above; missing NUL and wrong server identity both fail GCM
+PASS same_key_nonce_reuse 8192-byte plaintext XOR revealed in inner ciphertexts; reflection type0 rejected; changed type breaks tag
+RESULT PASS groups=5

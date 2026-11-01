@@ -1,0 +1,18 @@
+{
+  "command": [
+    "./gradlew",
+    "--no-daemon",
+    "jvmTest",
+    "--console=plain",
+    "--stacktrace"
+  ],
+  "startedAtUtc": "2026-11-01T02:42:14.694037+00:00",
+  "elapsedSeconds": 14.002285161997861,
+  "exitCode": 1,
+  "startedHead": "88e0233193ce4cf08d974fcd12ed0255624c6536",
+  "sourceManifest": "jvm-round3-source.json",
+  "javaHome": "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9",
+  "gradleUserHome": "/workspace/scratch/2dc285d90a69/gradle-round3",
+  "uncommittedTest": "src/commonTest/kotlin/io/github/flyfish233/spake2/Round3MaskedTorsionTest.kt",
+  "productionChanged": false
+}

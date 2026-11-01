@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.flyfish233.spake2.HashTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-01T02:45:15.328Z" hostname="d51c75b8936e" time="0.113">
+  <properties/>
+  <testcase name="hkdfRfc5869[jvm]" classname="io.github.flyfish233.spake2.HashTest" time="0.005"/>
+  <testcase name="sha512StandardVectors[jvm]" classname="io.github.flyfish233.spake2.HashTest" time="0.031"/>
+  <testcase name="sha256StandardVectors[jvm]" classname="io.github.flyfish233.spake2.HashTest" time="0.031"/>
+  <testcase name="hkdfBoundsAndInputOwnership[jvm]" classname="io.github.flyfish233.spake2.HashTest" time="0.043"/>
+  <testcase name="hmacRfc4231[jvm]" classname="io.github.flyfish233.spake2.HashTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

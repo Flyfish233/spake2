@@ -1,0 +1,20 @@
+[
+  {
+    "path": "crypto/curve25519/spake25519.cc",
+    "url": "https://raw.githubusercontent.com/google/boringssl/9e04aed2d1652441d2c84e85ed21acc05e053260/crypto/curve25519/spake25519.cc",
+    "sha256": "4600515e96aa209e27174cc17595b7202ef1ede97685b87a289cac827b348a6a",
+    "bytes": 24158
+  },
+  {
+    "path": "crypto/curve25519/curve25519.cc",
+    "url": "https://raw.githubusercontent.com/google/boringssl/9e04aed2d1652441d2c84e85ed21acc05e053260/crypto/curve25519/curve25519.cc",
+    "sha256": "32783b745ff3d928786e85b63fd5ca0f8385c0ad4bcaba5f8b34083ef9b74203",
+    "bytes": 58002
+  },
+  {
+    "path": "include/openssl/curve25519.h",
+    "url": "https://raw.githubusercontent.com/google/boringssl/9e04aed2d1652441d2c84e85ed21acc05e053260/include/openssl/curve25519.h",
+    "sha256": "d280c1f5bd25618b5ff26c7a477381dabfdcb4f638343450db5becfafddbfa55",
+    "bytes": 8282
+  }
+]

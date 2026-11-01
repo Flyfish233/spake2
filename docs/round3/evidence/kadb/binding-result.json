@@ -1,0 +1,63 @@
+{
+  "startedAtUtc": "2026-11-01T02:46:18.183450+00:00",
+  "sourceCandidate": "59105290820bcbfd4e0336a2e7713006a461527f",
+  "version": "0.1.0-dev.59105290820b",
+  "scope": "Actual published Legacy/Primitives candidate JVM bytecode plus JCE protocol model; synthetic 64-byte TLS exporters; no Kadb/TLS/platform provider executed",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "candidateJars": [
+    {
+      "path": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+      "bytes": 70024,
+      "sha256": "2ed2e90596a08173911cbc6be25d0c889bf74ecfe09adadc764d8b7958d6880c"
+    },
+    {
+      "path": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar",
+      "bytes": 97521,
+      "sha256": "abdb0f81c8319a0a3bbb1ad730a9133588b7afcec5a6b5e8373d4de837cf2c5d"
+    }
+  ],
+  "source": {
+    "path": "/workspace/scratch/2dc285d90a69/spake2-round3/docs/round3/evidence/kadb/KadbBindingProbe.java",
+    "bytes": 11644,
+    "sha256": "d1e0f5e626a749d88b593971b4ee8eb4be5dd7934c0723bb1afde9819b053e95"
+  },
+  "runner": {
+    "path": "/workspace/scratch/2dc285d90a69/spake2-round3/docs/round3/evidence/kadb/run_binding_probe.py",
+    "bytes": 4163,
+    "sha256": "8d9f81bc43abfb5132de281ced8a9dd55144b00870001a5766abfe3753af4bef"
+  },
+  "stdlib": {
+    "path": "/tmp/spake2-r3-kadb-binding-nyvxpwjf/kotlin-stdlib-2.2.21.jar",
+    "bytes": 1761445,
+    "sha256": "6558a3d233da56a20934b32159f9db5f86ed5816ef098f78a2c223dc6abb79dd",
+    "version": "2.2.21",
+    "downloadUrl": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.2.21/kotlin-stdlib-2.2.21.jar"
+  },
+  "compileCommand": [
+    "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javac",
+    "--release",
+    "17",
+    "-cp",
+    "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/tmp/spake2-r3-kadb-binding-nyvxpwjf/kotlin-stdlib-2.2.21.jar",
+    "-d",
+    "/tmp/spake2-r3-kadb-binding-nyvxpwjf",
+    "/workspace/scratch/2dc285d90a69/spake2-round3/docs/round3/evidence/kadb/KadbBindingProbe.java"
+  ],
+  "compileExitCode": 0,
+  "runCommand": [
+    "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/java",
+    "-cp",
+    "/tmp/spake2-r3-kadb-binding-nyvxpwjf:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/tmp/spake2-r3-kadb-binding-nyvxpwjf/kotlin-stdlib-2.2.21.jar",
+    "KadbBindingProbe"
+  ],
+  "runExitCode": 0,
+  "groups": [
+    "PASS same_code_same_exporter 64-byte materials match; both GCM directions decrypt; device PeerInfo valid",
+    "PASS different_exporter same code; different material/key; GCM rejects",
+    "PASS different_code same exporter; different material/key; GCM rejects",
+    "PASS identity_and_nul_binding explicit Alice/Bob ordering succeeds above; missing NUL and wrong server identity both fail GCM",
+    "PASS same_key_nonce_reuse 8192-byte plaintext XOR revealed in inner ciphertexts; reflection type0 rejected; changed type breaks tag"
+  ],
+  "result": "PASS",
+  "finishedAtUtc": "2026-11-01T02:46:19.298147+00:00"
+}

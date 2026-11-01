@@ -1,0 +1,14 @@
+{
+  "command": [
+    "./gradlew",
+    "--no-daemon",
+    "jvmTest",
+    "--console=plain",
+    "--stacktrace"
+  ],
+  "startedAtUtc": "2026-11-01T02:38:18.315246+00:00",
+  "elapsedSeconds": 58.66881766199731,
+  "exitCode": 1,
+  "sourceHead": "88e0233193ce4cf08d974fcd12ed0255624c6536",
+  "gradleUserHome": "/workspace/scratch/2dc285d90a69/gradle-round3"
+}

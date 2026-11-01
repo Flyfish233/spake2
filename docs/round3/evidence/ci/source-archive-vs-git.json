@@ -1,0 +1,2442 @@
+{
+  "sourceRevision": "59105290820bcbfd4e0336a2e7713006a461527f",
+  "comparison": "Actual ZIP bytes compared to independently fetched immutable git objects",
+  "archives": [
+    {
+      "archive": "io/github/flyfish233/spake2/0.1.0-dev.59105290820b/spake2-0.1.0-dev.59105290820b-source-distribution.zip",
+      "sha256": "4a2f3ff76d52b58aae758d83b0600499b5c02d9be8300d9f9fff3c1920519a0c",
+      "comparedFiles": 482,
+      "mismatches": [],
+      "untrackedExtras": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "matchesGitBlobBytes": true,
+          "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+        },
+        {
+          "path": "README.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "ff61754b879bf80c1eda333243efbbbe3885754be5761c887fc7f660db9b031c"
+        },
+        {
+          "path": "SECURITY.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "25b03cc15528d8fa84009b996f461045fe1ad7c60a25ff59a94c1a36af9af7cd"
+        },
+        {
+          "path": "THIRD_PARTY.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "8a20a3c1b52c3d85b618e7fd3f1fcd49cf1d8f3e7177b04e42b5b519b9754219"
+        },
+        {
+          "path": "build.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "12eb265fef25fa06f949aa19d1bbaa04e81382e4ee2d4d0dba4fa2626bdde46e"
+        },
+        {
+          "path": "gradle.properties",
+          "matchesGitBlobBytes": true,
+          "sha256": "42a18ccd52bc41abcb8cdc866626122f8e02e571ab390cf86c41fb5e67f25e23"
+        },
+        {
+          "path": "gradlew",
+          "matchesGitBlobBytes": true,
+          "sha256": "b187b4c52e749f5760afdd6fadc31b2a98ad35fb249bf0dff03b72650f320409"
+        },
+        {
+          "path": "gradlew.bat",
+          "matchesGitBlobBytes": true,
+          "sha256": "1d297e00bd21de3ace22b4d7f2de1f9dfa858883d66bbf7c1ccbecccec8f4f3b"
+        },
+        {
+          "path": "settings.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "c2f1330b93d95635f3d8829eaa2dbd2b3748a80c3151de7178f98f81d2a35d29"
+        },
+        {
+          "path": ".github/workflows/verify-android-art.yml",
+          "matchesGitBlobBytes": true,
+          "sha256": "a86911cd6f1409f9fa305d458cffb31d8aec1a018f2f35d95fa00c4665575091"
+        },
+        {
+          "path": ".github/workflows/verify-publications.yml",
+          "matchesGitBlobBytes": true,
+          "sha256": "950f3e3258946bdb0e324da2aed2a56012d334b7a2021fbc5805bcdb4df0d54c"
+        },
+        {
+          "path": ".github/workflows/verify.yml",
+          "matchesGitBlobBytes": true,
+          "sha256": "b454889219db9c549b6016fce4a11442184d22b3f3c301b4f089c05980e90e5b"
+        },
+        {
+          "path": "docs/API.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "720a181f678276446842aa547728146a664eccec1d451ee4983a210cae4720cf"
+        },
+        {
+          "path": "docs/DELIVERY.zh-CN.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "a4a7eba44b230039d25ce4dbcbf3bb7a8c9694f872b87b72fbd12f7f6e361182"
+        },
+        {
+          "path": "docs/LEGACY_COMPATIBILITY.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "bf09b1bdec14fe2b7efc2012b6379b355b0b10420d139dcee9cf677db7ca8bb3"
+        },
+        {
+          "path": "docs/PUBLISHING.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "5d3d341650b27b5c61707d3e6aa5c2f02dec579d457eb2b112b5b04c9c6f7252"
+        },
+        {
+          "path": "docs/android-validation.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "886b27c348ae658df794d4cd0fa1fdba66fd822fcc83c4b61f2a948ab3e7a8f8"
+        },
+        {
+          "path": "docs/conformance.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "323456945f6a9e8950e89725ac05b2f1021b0925a73e21f30ec4fbee29c8e0a3"
+        },
+        {
+          "path": "docs/final-api-review.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "931420a308a8f42753ab2ff26493b21a5cb08fc881002b79887b6e44cf2e3978"
+        },
+        {
+          "path": "docs/final-platform-validation.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "f76e269e5e7b5a41176f30fc09f3be6ef8b4437aa39fc2c7a7f77ddd594bf765"
+        },
+        {
+          "path": "docs/js-runtime-review.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "fb338386ecebd53189eb1f4736e9a57f3d4f741b93b826b5b5361266939afb27"
+        },
+        {
+          "path": "docs/math-int-carry-review.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "3bf8ea08a7f4bd47a421f876f842cbc68741e700c923eb23509d1fa7889c113e"
+        },
+        {
+          "path": "docs/math-review.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "4288f58556229d31730508afefeeaaeefdd8670b3a1c8d70c3ff348f7831aa8a"
+        },
+        {
+          "path": "docs/native-validation.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "9050b08043c590d484ce19742e6f4b4178584511c0ed3a0a96656c4f041cb5a6"
+        },
+        {
+          "path": "docs/performance.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "387f3b83e02a639c6e0cb6697fffd3f09996d8acf9ca22e78f6ac2623bc6d778"
+        },
+        {
+          "path": "docs/reference-vectors.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "311bb4a730af5d1412cd86f646d26e4d648d3c3a30dd89f0d3b32394ecb7d3dd"
+        },
+        {
+          "path": "docs/security-review.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "bc7a290aae243aecfa97df3f6220848a37c859ea1b52d2e0e760f2de482b302f"
+        },
+        {
+          "path": "docs/validation.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "5b8c735f7be1e6eded377cc52390a84654caefadd7f3d556d3bde91607709e11"
+        },
+        {
+          "path": "docs/round2/DELIVERY.zh-CN.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "917c2c5f05631633bfb941646985452c4fd00342c9d33c5fff8f2a79d9247c7e"
+        },
+        {
+          "path": "docs/round2/kadb-baseline.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "75bdb4ac719c5570d5c89ec35bc1fffb093377aef4652c5213eefcb4bd47dd60"
+        },
+        {
+          "path": "docs/round2/kadb-migration.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "8fb14b223d5e460e30bdd41cb1e6b9456e8486a0edace6b76dd749369550679b"
+        },
+        {
+          "path": "docs/round2/licensing-and-kadb.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "bdc0993e30f4f89c628a20a8a896d3942a01c441090486c3200fd3d8ed0649fc"
+        },
+        {
+          "path": "docs/round2/performance-review.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "4ef7839cd29f9b98e43fb691c8f9b07eb0510bc066b6875eddac4037e72673ea"
+        },
+        {
+          "path": "docs/round2/sdk37-toolchain.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "c2bb711b61cda86e6230f309c0e9ba5bcd5aeebf151ccee45adbc0d5677e0728"
+        },
+        {
+          "path": "docs/round2/security-review.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "ca11b982dbcd0407721394257aea87cc581d39ef4515ab4fe0e2cb515dccc983"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/DIAGNOSIS.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "12086351860c41be76b79f7d9a72cb6d1b83fb20ab0ad2869edaeee32ff18fad"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/consumer-xml-gate-after-optimized.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "d92dac42cfeeb200f319b58460cf068020ec35d6e692129dbf687240ad21da26"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/consumer-xml-gate-after.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "980705ba431abb89d9b521782681c4d760448a28066474dde7257fccda9cda59"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/consumer-xml-gate-before.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "fe902d43726176ee4b90436b50780e4b9506b217407a70c8648b8223440408ac"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/github-jobs.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "ac869393cb297e19b135916d179e7c3b3df65f3cbffb6e1893716bd01433fb5b"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-linux-sdk-failure.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "1bd93946da4c76860740edd2e669864c11dbe43203cbfabdc57eab7f24b94501"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/verification.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "41a7bd48410573fa16e9c782f9e55b5ebe0be22986fbeffa6e18438ed30bf959"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/art-api-23/job.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "5c34b9fd6e3bc8d402b4592507f962808b9599c48936f624533bf44ba53b8940"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/baseline-consumer-linux/job.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "484fbad2a531c8b6842497d522006f09bda6feac2e5cfe8feffcc59db6a345e4"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/build.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "2e6595d068bff61b35958dba29ad58c079f72f639df114a0a47de1232c817f82"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/downloaded-publication.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "7266eab61afd597b6cecb9b5ac2dde613ad254f0b1623f4340836a23a357bf92"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/github-metadata.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "85fdc68d772e1f08ef7839ea5619410ec248de5c486b1129a07873290350edfb"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/gradle-version.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "af86aefd81da20b69edde46f849630512b031fb94893a6e0288c1622c3effbfa"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/host.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "90d3b8d45f6967b5ecdbdda062a1a105951868b15d3036c66b1702bec12c0bcc"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/java-version.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "26355c87ae9a607a1852964702be1846ff2c75a313f8bcbfb5f2e039a1a543c1"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/job.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "42d31ccb42328662e0744d5c6a7a7f8cc19975c61fd04eeb0a770e3ce507cefb"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/replayed-test-summary.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "325103532d7456f4d715669c22675926ae769ed93a4722420be3373c0e4c9970"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/simulator-devices.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "846e49a1f43e154abf5138c5adea9346700e247583f699e4a17a7fcdf580dea3"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/xcode-version.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "18730ed2ae28a2c9cf0c2d5db549033a4f07089331391a7133b7b32187454fa9"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/junit/iosSimulatorArm64Test/legacy-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "b351a223681f85735316923a8261da20f14ace3545068899821ea752d78e60c5"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/junit/iosSimulatorArm64Test/rfc-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "391b3a2828852d99a67c2ac80ab77e1b40088c84738513751039857f8c9fc124"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/junit/macosArm64Test/legacy-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "ddc115f6ec069d55e25574b3eb0c8fedc806ff6c0c6e9d98cc0e55bbb5acef6e"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-arm64/junit/macosArm64Test/rfc-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "63e4c5332679321451ad2a1f3f0fe699780221800f24c2d07145d75cf70cd5e2"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-darwin-x64/job.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "3483187d26f20bbdb09215b5cf6eee8f3ff00d30b0eb608ea3e95c6472f76ff0"
+        },
+        {
+          "path": "docs/round2/evidence/ci/027d6dc/kadb-consumer-linux-sdk/job.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "16fbfb548412d729a87c7d4068f557605b8fb980794e447413a85e725e8e36dc"
+        },
+        {
+          "path": "docs/round2/evidence/ci/a650535/publication-gate-failed.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "7685097e34d5cfdf880b702a21679f88aa7e5ae360f274973ad14375ce12bdd2"
+        },
+        {
+          "path": "docs/round2/evidence/ci/c539ae6/android-host.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "2cbcdfcf1c89a6f44848a44f134dcbfb3bc2c5cc5d55f9913593084f1095e277"
+        },
+        {
+          "path": "docs/round2/evidence/ci/c539ae6/art-api-23-failed.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "396434e65a8a1d2ba65b4b98144fb0171179aa50f3115630036e18b5ae79d74c"
+        },
+        {
+          "path": "docs/round2/evidence/ci/c539ae6/art-api-35-failed.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "b5ab3b1c39f8e92aa31bbf1ef2f2e42de1389e1ab55e246dc5e59952ed8b6265"
+        },
+        {
+          "path": "docs/round2/evidence/ci/c539ae6/publication-failed.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "6f2127bed24ac0cb39369af3f1637b9aac9d743482dc4f160f66e95c3bd976f8"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/legacy-client-resolved.tsv",
+          "matchesGitBlobBytes": true,
+          "sha256": "9512bd0858e772c7b275ff6cc1df3f8762f45774cd4750b17931ca6b24ee07bf"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/local-after-resolution-fix.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "34fc781c82d3eb01607f6958a2e817e596146c6b65b2256409bfc6ac09fa3c65"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/local-before-resolution-fix.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "936152fe69e3c9c2898cda36e79484531d0427174cb3debcfbad3e214330008d"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/local-tests-after-resolution-fix.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "d4f8e08efc449c45213ddd6e742025dddb13821b9e331e2e65fef04538af0838"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/local-tests-before-resolution-fix.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "d4f8e08efc449c45213ddd6e742025dddb13821b9e331e2e65fef04538af0838"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/local-verification.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "21b5eb03663b5e3257744d2a35cda2aa8350e8103577ea46561997211359c9fb"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/rfc-client-resolved.tsv",
+          "matchesGitBlobBytes": true,
+          "sha256": "1cdd21861a5f07f9e60751bd2229110ce593e840db3dba0dcdd4a0d0ed9e2206"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/junit/jsNodeTest/legacy-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "bd7bbb79937a1f0dd17a8e18af1dc6298f2cdbf28f6e86ea549fae2ff3613bf7"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/junit/jsNodeTest/rfc-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "137c02f78db231f26d85114e24ab737dfc3da010f28930c8e301d4cdb23d8c6d"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/junit/jvmTest/legacy-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "6500d7b8930662c60ec78393b1dd0899c087f2b3d30c94c14dfd8766ecac7c44"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/junit/jvmTest/rfc-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "ae3dd0dac185455b89ac7e111ebb49eb06cfe505f899551e406c50d47c32d15f"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/junit/linuxX64Test/legacy-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "54d466f76ce87a8b7c9ed97b5c7be6c800f9f9d03e9cb9e704ca249dc6d37d65"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/junit/linuxX64Test/rfc-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "e70c705d5e762ff5abd028060bf510f68772b6e8561803cd25633880a16ef9b3"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/junit/testDebugUnitTest/legacy-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "2991ce9de51def91c6c18ac129e824f5438e3683fd0669c168a37a7ed1b61fa1"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/junit/testDebugUnitTest/rfc-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "63d6eeacdfaf0b1172b384f543686990815f7de9899ce3eca78794024ba980b9"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/junit/wasmJsNodeTest/legacy-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "63e7ac97ab6a63a23748c073c6631edde73335643821c913d707b8a243149ee9"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-gate/junit/wasmJsNodeTest/rfc-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "88ee9eb2bf12a1faf2ae81f0cc1faaa1d283ed1282d1727bc8c81a6bec0065bc"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/missing-published-module.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "a214905d5414217efeca319869fafbafe3a6482fb4ffd8cd4a0a8f56801e984a"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/project-substitution.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "6d21741e3d8cbeafd24c67ceada1be3538f41d57efb482df0cf7aedf6bcf0740"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/report.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "2120961cf1a2210677ad4f1c21becdc9d4de51b702bddee475ba2b5a0fe505a3"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/valid-maven-selections.tsv",
+          "matchesGitBlobBytes": true,
+          "sha256": "e369877d9f647f5c2fd5b700a314673e1df45332157213b0b16c6645c89c3a8b"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/valid-maven-with-plugin-project.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "9254e23b0f5c1d0b75fd318b6a6d0a61ce06e1c1b6d49bda7f8e993e601fbb94"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/wrong-protocol-edge.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "d15c77dd52e1c7a8a00ee157586e64db3c103c34b6c5629601c4550e4291cc1d"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/initial-sandbox-attempt/missing-published-module.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "6a18f21a229a54dd5afb93707446ffb8e46ec4f139985f9f10abb01fe641db77"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/initial-sandbox-attempt/project-substitution.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "6a18f21a229a54dd5afb93707446ffb8e46ec4f139985f9f10abb01fe641db77"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/initial-sandbox-attempt/report.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "5cd679299c799d43e5b34b9b5bf3872a3984c33505e60304cb0434e98976e5ea"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/initial-sandbox-attempt/valid-maven-with-plugin-project.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "6a18f21a229a54dd5afb93707446ffb8e46ec4f139985f9f10abb01fe641db77"
+        },
+        {
+          "path": "docs/round2/evidence/consumer-resolution-probe/initial-sandbox-attempt/wrong-protocol-edge.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "6a18f21a229a54dd5afb93707446ffb8e46ec4f139985f9f10abb01fe641db77"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/dom-dependency-rejection.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "85afa3281aa84915bfb7f80a02a909b445179c933b88c230f5d824eb75c4d163"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/embedded-notices-after-optimized.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "611dad114e7cc4375bb3cc02fb3355c60e5f2c1203c9fe193903342a26d54cf3"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/embedded-notices-after.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "f637f1a205ff07e84368db2e539bf219c019581566131581aecdc6a0354affa4"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/embedded-notices-after.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "1d7890182c613396a1e18924d8ac2746bf1095a0d0f0dbd3ae1212d25f0750a3"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/embedded-notices-before.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "9a5e80edd328dd619fc961ae550f6fc2a93bff2fbebdfe3d7f995c5665501ee9"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/embedded-notices-before.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "de86d2f10f0f60f8ef862cf0cd0811edd19aeaa9c493eb75fa00c328a8126d41"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/initial-android-pom-rejection.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "02e8477fcfab0d94d6514f0a748210897e4cade720ce9e4378cd531fc6a4bd9b"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/initial-android-pom.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "50af19800c583c85da0a647ef8bf665d82a55176211abe3e370396b2fd2664d7"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/initial-js-pom.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "9b3b5b5cd256e8b705a9153127123f9c7a4b257041c8a568cd4a21bbccffb652"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-after-optimized.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "5337c2bf9821e04ee76890e1672a39cdb4f5cf1b02b5e3747fdd0ce1dd112ddb"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-after.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "3d87f7abf2050f0927b6b9c3933862a553a5b77332bb877282ed655ed753cc67"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-after.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "428790a8ee884ab23608fbd969d9ed186012182e6799348ac68d72a6c57b063f"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-before.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "93fc6699155abbeef68667a0566464f816563eba35fc2b5938874cc454dbb55e"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-before.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "07092de173c66eb1f5902b1e93201b3d5022747bc6fa2fa197c6b10844e0e519"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-generated.module.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "3bcdcb904ebca80e22c63a8b38228239acecadcfb2733e51774245a6030b1fb7"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-original-task-name-rejection.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "8b18532a0f3be80e88b13925ba948f84ae616f0ab372952f5c961bcf5fae1b45"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-real-repository-after.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "ec4f5cc4d4802602b5f0949235aeb3e70ffd7dd77e036a6ebb7006c0e6a7c345"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-rejection.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "e605fd3458ec342c539deead48fe328545b04b677270dfcf68fa3512cccecba3"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-schema.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "50cd4cb106361650b73d5ad16f5dc3093f10210742ae4382874c007122060af6"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-task-name-before.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "487236c46164f33c77f86e72c59707e3ba23a3a20ad5ab5a999e7446414323c7"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/native-metadata-task-name-before.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "298075700c128ffdde705aed852226dd9c6688906a7a5a1e497414e77fc525c3"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/unit-tests.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "b61995d8da0ba4393decc2ce9f64ab845f872b1c2ecb99d4f065d57490ed55a7"
+        },
+        {
+          "path": "docs/round2/evidence/maven-gate/unit-tests.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "2bd605d9bd744ad2bdc6d1f1eb1094f6beae76622d45722bfa77f64fbd5056f5"
+        },
+        {
+          "path": "docs/round2/evidence/performance/cache-diagnosis.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "9bb647037b4619407ae92ff3a00d8ae6a3eeb00203bdcfe9217722c3558a7042"
+        },
+        {
+          "path": "docs/round2/evidence/performance/cache-selector-after.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "4cae49f595854476e38b9bec4566bb4af01f97dae5b5ca003252e89c428d8319"
+        },
+        {
+          "path": "docs/round2/evidence/performance/cache-selector-after.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "fef025996081a52d24b1983beb9e752163e9547a6dedf836ca97e7616061d13f"
+        },
+        {
+          "path": "docs/round2/evidence/performance/cache-selector-before.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "526752aa56cd5574d2935f73530eb887a50c887b70041a603fe90a39949dcf08"
+        },
+        {
+          "path": "docs/round2/evidence/performance/cache-selector-before.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "f469f381dba2250da5075962af45ea12901dffc728d228b539415f1be22b67e2"
+        },
+        {
+          "path": "docs/round2/evidence/performance/comparison.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "a70c91d08ba5aa3f6a668a8c8bf80d559aaab82bd49f7207ae21f8f9d85b8145"
+        },
+        {
+          "path": "docs/round2/evidence/performance/compiler.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docs/round2/evidence/performance/execution-context.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "05756ad2e7794a2487c7ef86437d6f9ec48fcef9d4317f342c08e371237610fe"
+        },
+        {
+          "path": "docs/round2/evidence/performance/probe.jsonl",
+          "matchesGitBlobBytes": true,
+          "sha256": "30fe29f999bac4cd822e918d8441ab101c1c80ac0a556a87cdf2007dfb68e71e"
+        },
+        {
+          "path": "docs/round2/evidence/performance/report.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "9fcb33e052da496c7a6d9f85b834a2d8a27b134c4da5e491226c7248bd6d4e8b"
+        },
+        {
+          "path": "docs/round2/evidence/performance/run.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "a6e016ac75a003ef85eaa89e62bc68fb412286ed8ff3023cf492be84751928df"
+        },
+        {
+          "path": "docs/round2/evidence/performance/runtime-stderr.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docs/round2/evidence/performance/source-comparison.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "46e86831b15a09b2daacf73c81f3171edbd671ecdfdb317b4358181a46dc2f8a"
+        },
+        {
+          "path": "docs/round2/evidence/performance/source-sha256.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "f517b4a40bf136b03696147c568daa929fa57f5ed6d9dc2fecb0cf3f0c064be6"
+        },
+        {
+          "path": "docs/round2/evidence/performance/initial-attempt/cache-diagnosis.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "9bb647037b4619407ae92ff3a00d8ae6a3eeb00203bdcfe9217722c3558a7042"
+        },
+        {
+          "path": "docs/round2/evidence/performance/initial-attempt/compiler.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "755ea11b899b4e74e0deee3c59632dc9550cb42001ed3d5e2d36fe390dd99c65"
+        },
+        {
+          "path": "docs/round2/evidence/performance/initial-attempt/execution-context.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "c7684fb1225cc8ce9fcf1fcd2128dc8c98f49c70d9c31cd3350700db3bb98a24"
+        },
+        {
+          "path": "docs/round2/evidence/performance/initial-attempt/run.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "c09bbc772ef04ead4d29e7a7a6733a69f300a57062f54e0ccc198319bda8dcea"
+        },
+        {
+          "path": "docs/round2/evidence/performance/initial-attempt/source-sha256.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "f517b4a40bf136b03696147c568daa929fa57f5ed6d9dc2fecb0cf3f0c064be6"
+        },
+        {
+          "path": "docs/round2/evidence/sdk37/package-catalog.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "0e2dde269100c4e782b6353e6c3aeb406357983e3b4e4ced9ccafca2804038f1"
+        },
+        {
+          "path": "docs/round2/evidence/security/baseline-evidence-review.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "ed128ef5a232edd121182e151303baaa34d648a7729133e05bd22d80cdd92575"
+        },
+        {
+          "path": "docs/round2/evidence/security/oracle-replay.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "38e46765a31184c14698f4b303490e3be8dc02eef63d9edd001d320c878a7988"
+        },
+        {
+          "path": "docs/round2/evidence/security/oracle-replay.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "789a99b3a1f54f6d8d5cf8a6ea84d6c5a04819c30d1adb289fdc5adf7903e430"
+        },
+        {
+          "path": "docs/round2/evidence/security/oracle-verifier-after.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "2aa29389f5a3ea982a4183f0ed1cf8d7773e7285bd595b8b14df658ec84de821"
+        },
+        {
+          "path": "docs/round2/evidence/security/oracle-verifier-after.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "cded01b987973e054e02b7bef4acc8519a5f3aa9421f3a3300d412c1d060d404"
+        },
+        {
+          "path": "docs/round2/evidence/security/oracle-verifier-before.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "80ada528a1b2bf1668605a5d6f04e142284933981da9d7855319e4dcf4e5c459"
+        },
+        {
+          "path": "docs/round2/evidence/security/oracle-verifier-before.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "9197c9e109eff226fcf58d71d6ab1de32d651026a4e8d5c93450e524b1b82a8a"
+        },
+        {
+          "path": "docs/test-logs/android-gradle.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "f442e52333c5a22fe10000e817f198050d42147e36040b00d6d74f7851854262"
+        },
+        {
+          "path": "docs/test-logs/android-validation.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "c6fded60f00f211ae3314c7caee4fe4285b5ecb1d2b7a26de7752c9eedb8842c"
+        },
+        {
+          "path": "docs/test-logs/final-api-review-source-sha256.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "7e5946e701bda8ce4fedded31b49ad1e12845b0e338dcdaeec3b436f94930da1"
+        },
+        {
+          "path": "docs/test-logs/final-platform-execution.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "fbf520e719976e0d7ed73246a7fcb8f059bd451585eeb79a99f75fc08d365ec6"
+        },
+        {
+          "path": "docs/test-logs/final-platform-source.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "ca958492115fdda37fd21975adf89650d209b1e35b51e11fe435e472a04ba851"
+        },
+        {
+          "path": "docs/test-logs/js-runtime-emitted.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "7fda8cba2c9d96b124805d96ed0f1b620fbe3517fd8b9eb8d6b4fc81aefd795f"
+        },
+        {
+          "path": "docs/test-logs/js-runtime-review-source.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "91ccdaf687d2b37850c543caa9ecd2b2122e5c991f592490b3f6e411ed5518d3"
+        },
+        {
+          "path": "docs/test-logs/jvm-clean.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "6ad8c1f392db3b2cd1f61ecf9bf67263e44adb642b2b48f60a5daba250cc25fd"
+        },
+        {
+          "path": "docs/test-logs/jvm-modules.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "39eb3ba389a0d7e30806210ae2d13f6692ef56791f9a31b13a904116df4c8546"
+        },
+        {
+          "path": "docs/test-logs/math-review-junit.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "95d439bab7058dc083993d7de55dd8c72371ff8838376511c2c8474959c16fc3"
+        },
+        {
+          "path": "docs/test-logs/math-review-source-sha256.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "910f4ce858c75731f0f44f6f60dc6257c8c4b36fb0cf42b7eba1b4716ed2ea19"
+        },
+        {
+          "path": "docs/test-logs/native-final-artifacts.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "a767d1b5da6b49b944fc2400570bd9b62e198588dbd640521dc688066ca2dbe1"
+        },
+        {
+          "path": "docs/test-logs/wasm-artifacts.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "f5af28ebaf795a250981c516004cf6678975d8dd46b59f9b4c5ebe06b84424e1"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/attempt-1-duplicate-declarations.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "b3bb59ba907c075a3b0ffa899d4b406455822a26d410d7a07f53521947fb90c5"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/attempt-1-execution.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "76cdbe53bf74e40d8f6f2baa7e423141ec3852ccffbc390e6d0e2a262b6e7de5"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/complete-run.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "f4e1219908ea304c73312ba82c05979626a1eb6447ea33259ed3fbd0c2033e24"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-phase.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "fc9322a7072d7446139fdfa24695d1d83a61d76fd00ed296fdcead67ced3b323"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "399ed41cd51580d548528970f67a094bf6bbef1074481d14e4e3af276ec65065"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d1910f917d331add98c2ca0a552692973c636f5ce64fb28578a735216f573588"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d1a077f0738d74b8f49e2e98f80354999e9a1c603b21075107c0571977362400"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d3afe9eab6afd1b8c500f3fc60d2d1cccd00ce4741f4f32cc4336b2ae44e13f9"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "a881117f6766aaefffe0057da0168696a2265393a1a1c1fb0f3e3f3d66b17b7f"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "e1b1ecb8a623c5ec1c6dbebee3ada9e541c9e440832098e913fb7f7f49781e6e"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "602f7900b5bbefa3e8725a53d9aef70e501fe84c820bb83e2e4df94ef0f9013e"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "aefb8ebd99c9e7601ad5439dfd54cdb0eb0e07757f645adad7410c59a7a18893"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "a0ce4dd6d94dcbfeea01d3985109ad496d91fb5dd1b3433766247fd8cc1d83bf"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d282c46141c3cedfcb6594d82859bde1b1218ebabfcfe257a51a35f8e3965a9e"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "8ab0b569ce79b42a778d243767734bf52827b053a48a0ceccd66c2843ad00689"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "1b6a592fd592a57216637f94d57ac278aafc32f45c5783f75ce5f76fcdfa906b"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "ba495d615823430758568ae7db8e09827ab0ed57cfcb34f486b3e85cda95e15e"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "a63003d71eed7297c49cbd0f64b7b90df8bcdf2a128ed93534dbd11af7eb3448"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "8378c6a9ab2c6ab0757cfa4ddba4f1f70ffcd8138f6e2a4bb17ade5ce439312a"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "b61d9aae1511c0e11d645356e9e4d5099dafe52322d7a277adef4be57b77e3c8"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "3615300b8bfe63aebaba32b3815d6f4a9a36fc593d1a28fbd831c860317b1341"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "7590531fd75665c219725763ae6f31dcca32fe612ca80e3614ea8226eaaae79d"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "c5573b0a855837834fbb8a594a4d451e41e329ca894e86b9b950c87c22b894e9"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "6cd01b2731c8fa6e50efc01760d9ccbb5b976252fbf26b3a1ccf42a0b0f419ce"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "817ff47ffd10c8e9550cf3b5631e9403a079e730bfe50a1d29fece131ccd41ac"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "535b84860bd3f5c6b1141de8eab909cf30ccc40ac025d3a7c0f2f9d2557f7bb3"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "2d11de4c50b66cfdeeea9956d62b29c0514db025df42a84abd131715b890917c"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "adf90351999edf996b6ef6d9ccb6455eb7f411f13bd940593b2238ea1a155e1c"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "6d1918111bf559f7fb375a387b0635fccb574e5acdeac29103e03315bbf30b3b"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "5bde24d390f0908cbec0e531b29cea818a35232bbf2a3cdeb2606b43372a652c"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "36f72477492f446f75db7fb7fb13426ad817c202c371cc47371a24128ae5e1c8"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/rfc-TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "2c08cb3d53e0aec5ab887f5b23f870046a0929c1cd1fde65db5bd0763fc57842"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/rfc-TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "0811373a3a6da0b9a59fcc58b05bcaadd7dabeffbaea85afc84cf1c083acbfce"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/js-junit/rfc-TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "1d4435247861f917497e8c9bf1d6361e2a326842c9dbe013d8bc07d30d3c2f9d"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyConcurrencyTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "e336622c14d87551ceeabe89b75f3930056c34edcc36538fb7cf7d6fe18d0cd7"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "86def8a2830e62ca7eab60f010b079d0bcebca5eb2785a5898113b2566060121"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "6466760d6e575600624db2eb05d19e387eafec74005af28f3ace8045b8ef3b7e"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "cb36b027b166591d18a7d87fd864ee2bee129a6996795e5e95f4f610a138d42a"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d7adead116df388292bb56b1b6bf4c43a2dd9cb66ca28842c984ea3581db412c"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "3b5be3d63530365f3f8ffb872eabd3d70b81250a139a0cd79dbb1b72f942d3c7"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "8307e13f57c7b967a279facdf58e9a5fadc3c8c49b7db9341bb17b099c1c5696"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "c342025d865a164df338a8187d3d79b547258f1f7dc0fd4d07e12f34ff91c157"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "32dbd39779883ecae48eceb03bec4795d3b829aa8a857d5610ff37bd98b2d83e"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d1f1b2b521ef9705ff429bb994a99b84dde0eb37a4d1d91b36deed7db202f221"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "7f08c5d8a5954865991c448671e8cbf53174aaf2156117c4dd74093759d5b198"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "aed559872842a22ef08d17b4607f215d0cbe76fa40865c78d5ea95a2045a0ad7"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "0f64c86e92fb7d237cd25f55a478a091c143eb8e44a160087a57f61b5b00db35"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "39c273f0ccf0a8d48089a8180bc4f02b5219f0afba89401538d833735609c348"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d3619f914c8a0099e8bff289e0e198cb83b731c75044954dd511d5318f6d9deb"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "6ed6e72df42a8b85fcc7f6dd90221a659af6245b268692184f6b806d6448d819"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "ec5c8244ec875daf31d1f2987c63f429cf4656408e5c1c590b14b58eb96d25fa"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "bd9ccb5e8319f5f5bca9a7cef86574bd04d80b9e9d842aff6c946cf8cb36a364"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "f207d9c00a42d661bd1b34e024b0401b69ce4f74fe6457acf93189e6e67d9ae7"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "5ac9f28d76e165a77dc73171b917da6f723a5c8e62b02532164727fdcad48966"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "5c27a322459a4e1042044df866d2889a85c78d1fb4818e95cfd3efc2868fddb7"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "8bb9b0e4c525cd64ba20497b41dfab85211799982933eff9d175d6c31ef0d7dc"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "6931228d1f7c6e8be3f9401d211f063301174e5a7379b2690d6153478965a719"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "1be4b85ba5bb7ddc254d5970be7197af382e11673a13e7494f526d68d4dc187f"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ArithmeticDifferentialTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "2619b66762d24e867bd70ccef24dc7a85b0fadadd665121810c640dcbe3f809d"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "12eb4693e30849973bd922e677bccce6d64630b2dcd6ff9b9bc1709f026074e9"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathCarryBoundaryTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "77ff0c6e370f32ad121f27b70ded6d4481753cf5301228318e748b5c453b42e6"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "c14c497a4625eb47921e54d99b68bc3c3ab10a5afcbcd28f6af76e726aa12d73"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "6eaab4fa7450e664d45e87d38bd7002d76c5b32be8d09b9e790e5e28267813d9"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "fc1381491909d43f33bd6e5c243adbbb5144cf58b8bd8eb29dcdeb109a5be5f8"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.WycheproofP256Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "f4d0bafa9e62cb1e4536ed916ef1602408e3132ad3078ff133603cc1776f808e"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/rfc-TEST-io.github.flyfish233.spake2.ConcurrentMisuseTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "2360e87d92a832d57a45e88a20a84e3242590c55af80aec73523e9e723cfd5fa"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/rfc-TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "9a21f1fe6373559b3c4499448dc406bd1a410f25512f962455a2fee38df6561c"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/rfc-TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "5b7d7ed846e7521408ec22e55e8f29f52f1baac0613f1133cb9fe658664d7c83"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/jvm-junit/rfc-TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "68ba4eddde0f09f09c9f54bc292c9cef4bcb91f38984460dccb0d64540c725ed"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "6b87673cd5435d1295fac207b012aa409a7724cccf9855296a78c2de5f328ca0"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "1e811817a02bd48600207e698926641262bdb7c1bb120d2094635d750c33eaa8"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "fa4a91c959fb0be23e8496e5555da5ba9f8ebdc0cdd9cf20e47675bb3cc2d23d"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "87bc787d8f43486cb8f66fc5ed22c8ce524ce6bff3a97085c04b1500f91523e9"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "5e9f7b62ef2deb564ae0da7cecd1dcd5090afb445bc2356e557fc8195764ab4e"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "091889c4ee64cee5f9ac165b8eadaab3487e8e91f265e6012ceb1f5195ff4fae"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "85c6eb0ffca9f792883efa569a2a9a73f6aa3a04f1e8c414f4d3e456138b4f95"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "0c6cf7534b7c7a5ed4343529489b3ad60b00d93c4158c149438f21c5db10a39f"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "a6d9310b2dadc865678a08c0482d4a7469bc03c14eb3ee66e98109ad3f75622b"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "9592083dfe50c6c77ddf0f8d77b41c8913d45b353c97373e6a15dbaa7a70cfcd"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d1285ddeb9d503c5b17e50f66d03f1d63897084650eafa90d44e757d2247bc15"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "eb32a28121d793ac08b1ce49575e8998d6cb08a2f55b93706c137a9ecefde452"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "ee8bc19aa70ddf2ba3a389353f6a6142671ef1586587c66628f6e87dcf23d73b"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "060990905be41a5ddc56627bc08cd890f448fcbbf3e7a15c1c0e08083ee88e16"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "c543feff5f2517a816fbff3dc41bfb01916e0a4ce6cebe4cc4a82efda56c3794"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "94f9958e27efc453e4bc7260fc27d8c8dad8420d6e8a4e1c864cdfb482d66348"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "24130ef6130b0ce54bdf0754fcadd2d75d545cc86b27997325e2e299452890c2"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "cfc87497fad886c7b9345745ce881dc7251595b3863a5772237351d1cba80084"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "f850e79b850124a6d834132389c2858e07813356c068d895537731cef77f5b9d"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "aa76d7fdda2b552cac59ee1c9ab72fb6e02ce1d19c23c9b316ae9480288ba4b6"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/primitives-TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "c45bed3d08221e147d9285dcaeac197c583bbfabb299a52d01e8012e57d67282"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/primitives-TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "be14301d4d5de0fc9cbbfbea78473acf6a8c35a1c18b2c241c3b6406f7ef92c6"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/primitives-TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "ecded4402f84ea6cdb4d32def3d60ca63aa1b7ac3c42826ebad076e2ccca3a98"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "b090d553001d913c916f764f9c32e756485f84945a8a154d009dfaa4153797d1"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "46ee16d254bb6a93f14079dd39e0ed527db9c342bf179b7f24b81d0e92605fb1"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d8a3de52a562f5c818b92f6567d2960a3cb67115a21c7ad40c5ba89be1a9036c"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "fc669fca82c06c5ab25a12521c7bcffbd5ed25d5cd65bae81b8fe5c865bd6262"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/rfc-TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "622c419546602acf7005804a677bd25e2c15576d6695878229f0e317d64dcb0b"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/rfc-TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "528eee7d7841f4045225dd7549e1df4f995e6014d8625ddb2f08efaeca6e173e"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/native-junit/rfc-TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "845cfdbff109541c90348244d823a1d096ee2596f7551a77fd5f80576aba66c2"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "9891c85a1e4acc54a9ca024394604352ccec9bd502229e38e061b0b94b093a07"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "5fa94cc96fbfeb7bb627aa90229ebf13ba5ff1dbf0fec11cc27e6cac6511df0a"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "f3a66e9921824a3872f6b4ea4fc901628c768dd371b0c373d608f4f87f1ca5e3"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d09fec15c5c43cdff37ef426e5fb63b2c6ce68d1e3fb78bb542a54ac8ba758f0"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "08dd61757393c80cdb39988f4202f7964162f99313ae8225327bff3187441f95"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "ff9058ec976329cbad5adac1580365860e4d86a9da9629d7b2da18a0e1af54f7"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "73d410f7a5c2965bb5e1ff80f6b6db8f37781495ce1ba82eeb1b218047147e78"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "9c7df03ca95238a876527fdf3b50f473d6828aef2367b3035107770203e96a02"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "938cf1b8b43e507768d463929d9d451c3df8c6c5438cfdf795aadf46ddadafc1"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "670a485286752e06bd6b6969a879e059851ecc00dd5fbf09b0285e245544adaf"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "0e4a7d532e35b92509b701be8781f57c436acdeada4cce642d5ae24f1041b435"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "6949161ebb534ce7ec0cab86f7d3e443c777077cfec9744a66f939208e83606f"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "e6ad2cdba73e9e99c30d35e21fefe5bb6b6f6ac762322bf9d8bb9650e5ae9837"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "265f1867715d59ff45e3b801406b281df2ffa60d0a4c8b4eedc861c7438fb28c"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "f6948043a36d365f741ea693713757b9a3fa09b5403b2863ab004ba40213526d"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "266d10f15c6d7e364e251b3cfd9b9f609d33d25fbf93a51f2dbf59e89edf8ac5"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "f14a7fd14ac439e41cb94a90cc026034df4a2ec0a9354b2632f9842b57430ee8"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "0ba4a676d4d71f198b7f583f9fa336ecef8720c443a0be3f64cc5e31d293eec0"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "061eb3218d0bfb8afb54841b5627c44b761de706471afdd51ebe0d8291532eb6"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "f263102642eb6e27cc535540f2c69e0271a3904f833afdba751a230812eb4c0a"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/primitives-TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "e037436e9cc6398588546b66cf3552334210550859cb812fa95eea28f423c18a"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/primitives-TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "c83edaf5c14d7d2b6f37ddb2a5bf23a0f9d13b8eebe7ea21dec95ce535bbc508"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/primitives-TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "ff07bc9e90a03459c7dc315b4fe5670ba143a272185b134e5013356be69d1100"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "98b897ab527460e42405fc9024c91191cbb099714cbec42567d31c70c54d3aef"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "02ee2adcf3c876bc96d52f003828d4c7e5b60088d13c5ce60e7c9fa52796909f"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "68d0198eded674e2d8063a6c000f17f10f53d2de58d6e732d71e02cdd6c0898d"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "6fafe93c1e8cccce029f5b599def08dd947c180e496f6e60f876a841e68b0d2e"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/rfc-TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "091ca08394afde1f139d193bc06cbd8687c2b3559d68807d20a01ce1c3f5a793"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/rfc-TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "b17bb08876b2594dbd020d6ac9f40c7dfe52e7225143c4196927879358a8fdc0"
+        },
+        {
+          "path": "docs/test-logs/final-platforms/wasm-junit/rfc-TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "b8b3de7aae1daa7d92867023856a1826674d86fe111fd9653d685dbd8a9dabf4"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40289938442-android-summary.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "086ec85ad689e50955c6dd03111edb8f488219e4b5bb835a7b9378f3b7cf486f"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40289938442-android.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "195dbf4efd2a5ff49001ad61c7d03f8adc5e2f7f160903bcf2590adb0bbd66fa"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40289938442-ios-simulator.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "84789da1f95bf2bf97848e11f0cb4a8502d9a3f296b9c6dc09c9c00dbfcd6f2d"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40289938442-ios-summary.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "1fb7ecab9320f52f6c21df8f4e50cf137c3f0437d0d46e8247cc52c3d5e91c35"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40289938442-linux-cancelled.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "77a3169a559911e63b0f252c04bd58fbbbabc359602dab2ba3b7db4e318683f1"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40289938442-linux-partial-summary.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "c347238e8df5a86017cc7c64367a04c4d33d98e65b4dfa05eb551744ce7c4ce5"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40294194097-android-summary.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "caa129c6af35f4f653c64aefa3349145470ac2edfd199ac7c57ef930a9c6f74e"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40294194097-android.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "eaa859ea74294fc21bf12b3560bbdcdd849aeb51db538319102ed5f487c5357c"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40294194097-ios-simulator.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "15a75c5b0aec75958e0f17c75294e10f596d0599cc71d29614b326c28b4a689b"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40294194097-ios-summary.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "2c23d383a7411a957a2c8bc7631db42442355eea495b22dd37423b6f6e6002aa"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40294194097-linux-summary.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "910b733e7897eabe5addd6a3e2fb9431332cfbb2c65700ccc204e869d4c5c67b"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40294194097-linux.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "f016045aaa0c5db0bc090f3c88e96996b282c45fc262ae90cdcecef2a07a9066"
+        },
+        {
+          "path": "docs/test-logs/github-actions/40294194097-source-comparison.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "ded5f25e35d3c538ca483dfe477f91f0a79435267bfefd6a26b0f40672be9046"
+        },
+        {
+          "path": "docs/test-logs/hash-differential-final/report.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "e7b85703a12ea10f9fa9d1822bcd53167300d6cc17242a092030db05e0c41cae"
+        },
+        {
+          "path": "docs/test-logs/hash-differential-final/run.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "bebf457723e7e367438a8cf387b12a73b9b5f27d703201ec6069c6160cd79b93"
+        },
+        {
+          "path": "docs/test-logs/hash-differential-final/source-sha256.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "81a17a1c28dd10ea8268511ba4cb21dfb07fb7919433bccf4c6f9aa6f52a958e"
+        },
+        {
+          "path": "docs/test-logs/jvm-performance/compiler.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docs/test-logs/jvm-performance/probe.jsonl",
+          "matchesGitBlobBytes": true,
+          "sha256": "0b7c8950c108eb182b3ffa17cec37bde664bbecf3ea60e9983701d2ea4c9bb42"
+        },
+        {
+          "path": "docs/test-logs/jvm-performance/report.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "bc1293904253536087f5482f33e1e5f35fccdfc8aeb45ceeb88fda92366b862c"
+        },
+        {
+          "path": "docs/test-logs/jvm-performance/runtime-stderr.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docs/test-logs/jvm-performance/source-sha256.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "e70ad5b3d5f48cd848fe94e8d282f7e6e22417ee0145df7440bcbc77d2084a6b"
+        },
+        {
+          "path": "docs/test-logs/jvm-performance-final/compiler.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docs/test-logs/jvm-performance-final/probe.jsonl",
+          "matchesGitBlobBytes": true,
+          "sha256": "6c38c996a4c4a39af17928a58d5981de1c3f67d6d90b8433fe14ce49f9b847f4"
+        },
+        {
+          "path": "docs/test-logs/jvm-performance-final/report.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "02ad7702e8ab6f94ce928e60fc9ef66c83e492b5141e88642623e2f1e3116b46"
+        },
+        {
+          "path": "docs/test-logs/jvm-performance-final/runtime-stderr.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docs/test-logs/jvm-performance-final/source-sha256.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "f517b4a40bf136b03696147c568daa929fa57f5ed6d9dc2fecb0cf3f0c064be6"
+        },
+        {
+          "path": "docs/test-logs/math-int-final/run-metadata.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "dae5c9019f195b0970aea801164904d063ae61749495f3b5c675c45d6d071b70"
+        },
+        {
+          "path": "docs/test-logs/math-int-final/run.log",
+          "matchesGitBlobBytes": true,
+          "sha256": "447f6ba004a7ea596d3202adf181b3aaecff0bbc98806b04c96dd410e84d9af3"
+        },
+        {
+          "path": "docs/test-logs/native/initial-run.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "f21899459e37e040189ce2209e2d9188cb3500040031c2918df416de985710cf"
+        },
+        {
+          "path": "docs/test-logs/native/source-sha256.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "626cfeb45e379ad5a8b9d7b2b89b9d53cff18343a83217da35168d1e123dfad0"
+        },
+        {
+          "path": "docs/test-logs/native/toolchain.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "c7742d3a6a88003635cc0885e96ae77c0a5530d1df93ac2bad48d26179aed44a"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "82cb49800f20fb4667276e0d2837fc6597d4d01c2c641949a0b765cfdb644d63"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "e7c5e586d6a2a5d74105ddf9943b88e7a605d87dafaa994aee227ddd3d1f44d8"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "c85442028999814b80c5fc1f59df971788866df2ef25e512c816e6e41e2f5745"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "2d184954bc5b16895fdf192ad32390ccb12970cc09dd1a68ae12c24873a0b408"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "4f00a81b73322ec61d918d9b9b70ddabcef500671cc0153bbb363a47c4b9eb44"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d36184876d52e488e02f86ef3d42887046953978c853bfc6c47b6af32374823f"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "e3e155e7af4cedef1756c016f85a6e81cb188693d7a8f23dc5d81b313d19a965"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "cda6c91883b1d3b19cf7ee4541882cee48e5a63f3311b193dcd79467d88c2c1e"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "8fce8f79370a8a6e5c94876b808b1109b9c6973ced596def7f73a958c9bb44a4"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "4c1511fc624fec6c4960f7d7b1bf5c6f0c5e112a186d6262141f3ef1d6927e66"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "67f790033de7f814f2b61250c8f0bf30a971f2e32368611ab4c8e39379236f14"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "34a29d20f35b773c30a4109881da05c9119788e30aa9e78f000b809a9569101c"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "9bf062003798edbae150d19a282f7d272f8fdd34f87f9bd13ac58d0cd2e9e327"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "9416b7a7be2e97677343d1e3d62632d29621496a53b86494811d705de02a191c"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "796ae188793d0b144ff0cd7eaa04b9e280d0252fb30e12f57cb255602883b5d6"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "d3d6d7619a920f7f3211548e4502923da8279e3020defeb68068097beee1257f"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "27d8100020030ddbf0598d425bf1528e1f11c744ea1db666ee15b9319490f6dc"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "ade8b2ec8f7767c478f6536b5e1d67633649b9768346021329dfccaca09e2066"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "00a04eca42d8be3e69ce149d23c13aaa09492699bbc441835dfcdc9c004e05be"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/legacy-TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "9fef974e6708dc3f4c03ee188d57c3e15fbcfc12bfc1baecfb574b58624fd541"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/primitives-TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "f449c6d96ff53cd36ca3523a6bf8cac3429c1098177cbcfbcb84098965d17451"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/primitives-TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "4f23494ae162ec909e406d0c811b41bf24c13b7814cf66d3992a526212225823"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/primitives-TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "41a66320ea75053cd1af89c907488e3e62e4c036d10740edb021b7447aa825a5"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "017f025195247a036109ac3aa1d4b80e05212e31ada50244d10cec72c8f6b8ab"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "55da8837617d813bd7ee4409b1a25fcfd0411e3b8bc4c9015405d96a66d01a0b"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/primitives-TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "9d812511ec499f4dfb12e55caf1cc1f70b6f375a02e7fb17a35155e48bd09939"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/rfc-TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "4dcd43714356bbcf7ab00e97191a393647c8bc1ab7a643e91422aa3bbebe0302"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/rfc-TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "497170ecc4919145e35a8b459b0e5590230e5987d88409e15252e88c6fe38068"
+        },
+        {
+          "path": "docs/test-logs/native/initial-junit/rfc-TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "4adf103af88b96cae170146b34ac36e0f3fd8fc624251642a62319ef020fec9c"
+        },
+        {
+          "path": "docs/test-results/final-jvm-clean.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "c5dcf228d271a10722b0f404bf7dc0a101bc07caef34d14559f0958ac68feb48"
+        },
+        {
+          "path": "docs/test-results/final-platform-js.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "79a80c55ec037d1d2c61fbca4a14112c4724238ab755ab15c81db7d3bc282c44"
+        },
+        {
+          "path": "docs/test-results/final-platform-jvm.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "a4991ea2383297b826a3353803469cd0272565591c4779e6d7e655b69e89f2b9"
+        },
+        {
+          "path": "docs/test-results/final-platform-native.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "c417a05bd9ebf62a2cbc9cc76e2eca7cabf8b8106fc1756c35cfdc552b3cb410"
+        },
+        {
+          "path": "docs/test-results/final-platform-wasm.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "6a86df09f375e664d2af3a3035f2be12e77eebaf55f312ed1a3d14d853f41bdd"
+        },
+        {
+          "path": "docs/test-results/final-platforms.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "8b4598466ca29303be12cd4d5ff55c7ea7071d48315bbda994b0d7407133518a"
+        },
+        {
+          "path": "docs/test-results/m1-jvm-summary.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "b99020e1d439c96e6f336a4da7840f0cba0aaa89e3ef5bbf1934b4de47b3da43"
+        },
+        {
+          "path": "docs/test-results/m5-jvm-modules.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "6ede38f564586871acbc8859c0fe88dce6a30d2970282285be89a71d944709f7"
+        },
+        {
+          "path": "docs/test-results/m5-native-initial.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "b1266110f5bb9ecdc71e6faf6a6c473847f0ee19ee4bd775f3485030371af4c8"
+        },
+        {
+          "path": "docs/test-results/source-boundaries.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "e4b15fd0a49db94a48a2aef71cc6ef6bde33c48e606b48acd070b575552256c3"
+        },
+        {
+          "path": "gradle/wrapper/gradle-wrapper.jar",
+          "matchesGitBlobBytes": true,
+          "sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172"
+        },
+        {
+          "path": "gradle/wrapper/gradle-wrapper.properties",
+          "matchesGitBlobBytes": true,
+          "sha256": "7d09e69815e4c5a1c20cab8bc15cccd07922939f16bd6470a7436f709774eae4"
+        },
+        {
+          "path": "integration/consumer/build.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "330acd9d1d7d2526d645b46db5139e68fd2350ae03f76a2dc3d10cdde0887218"
+        },
+        {
+          "path": "integration/consumer/gradle.properties",
+          "matchesGitBlobBytes": true,
+          "sha256": "8a2cbb7e677d9a49fcf36ba6ff470466f87bb6ea3cbc10349ee2d439981bec32"
+        },
+        {
+          "path": "integration/consumer/settings.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "e6ea2529cf96861295809f57c72edd2ff1d886946519454fcffdae247e92ab5e"
+        },
+        {
+          "path": "integration/consumer/legacy-client/build.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "129e3ac7f5244da9570e731a368b6ff0e9831d006f76b3f0a87127517072b1fa"
+        },
+        {
+          "path": "integration/consumer/rfc-client/build.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "1d4b79d88e249061dfc20e89312d4adff6190f8b4730f2f55d19940e3b287d98"
+        },
+        {
+          "path": "integration/consumer-fixtures/verify-resolution.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "eb233a1ac1371c43a9527c8f4ddcf291cc6c5f74bebcb1ec96aebcb99e903c00"
+        },
+        {
+          "path": "integration/consumer-fixtures/legacy-client/src/commonMain/kotlin/consumer/LegacyConsumer.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "c03304bd2acf7c82a14cdc91f8fab78becbea85414e8b26b17483d1965916bc0"
+        },
+        {
+          "path": "integration/consumer-fixtures/legacy-client/src/commonTest/kotlin/consumer/PublishedLegacyTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "ee633492542e0424fa979b7ee0fef819698b87e5d170365ebacfea7b40f43a6c"
+        },
+        {
+          "path": "integration/consumer-fixtures/rfc-client/src/commonMain/kotlin/consumer/RfcConsumer.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "4aa6e22d7876544a240953f08982d3d35525f28e1b47d19f7fea5dbe091dd9bf"
+        },
+        {
+          "path": "integration/consumer-fixtures/rfc-client/src/commonTest/kotlin/consumer/PublishedRfcTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "d0f59e4e0ee4796d04a6e591207818283fac113a1fdc5d01dfe80296cd013029"
+        },
+        {
+          "path": "integration/kadb-consumer/README.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "7821fa7b3551e49c3427ce40bb34a6ba25af043564945cfb674cfd52aaca76f8"
+        },
+        {
+          "path": "integration/kadb-consumer/build.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "c3b508b7c8bf57c090eb61b9e9676365df44784e0cc9f3567b2175453e9c6d8b"
+        },
+        {
+          "path": "integration/kadb-consumer/gradle.properties",
+          "matchesGitBlobBytes": true,
+          "sha256": "61b1cf3815fb6c72f60a44d541d457224aec265ae878ff609d7083a2566a8e68"
+        },
+        {
+          "path": "integration/kadb-consumer/settings.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "8038a45823fc51f3ec4eb948f8173d8f44d6515e0be3a96915b879ea2cfcbffd"
+        },
+        {
+          "path": "integration/kadb-consumer/legacy-client/build.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "5330c16db85c9c2c347502139e4d4ad416dc7ed4029fb433215b1e1b98db7916"
+        },
+        {
+          "path": "integration/kadb-consumer/rfc-client/build.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "5330c16db85c9c2c347502139e4d4ad416dc7ed4029fb433215b1e1b98db7916"
+        },
+        {
+          "path": "kotlin-js-store/yarn.lock",
+          "matchesGitBlobBytes": true,
+          "sha256": "5bbf68d7803603d21abddde3a033b43de7af77619e431d790b1c0ce626c76940"
+        },
+        {
+          "path": "legacy/build.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "5ac93339e68bee20e4e2778a6ff5cc24ec141dc799228c336f1bc37a2b7d7363"
+        },
+        {
+          "path": "legacy/src/commonMain/kotlin/io/github/flyfish233/spake2/legacy/LegacySpake25519.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyDeterministicOracleTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "7a0c5a81fce491f6068980d1c8bb35ac1b0fe31d5cdb7568f986f88469f7812f"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyFreshOracleTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "3f838f9abd90cd55bf30359cd9d67581a2245430a4c5208b39e61cf7683602cb"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyLifecycleTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "5314eda4d5962ccd8a8a300985211368ae527ad0c7f7abc78c2081b096b842b3"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch00Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "3e681d9165c7f293edf8748ff40e5ae5ebc1ca866267463c33b7b5674044cd96"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch01Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "32f9064acc7faa3b9c96c4fc129efeaf5269811109b5653f748824d5cb4f39a7"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch02Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "6c8b7b50b7afb1d31c5b70ad92c94cd42fe7d59d7f5173c3540e2ed21a2360f1"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch03Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "0b644035c104edd614e48983b45c9cb9bebfb3b8848a2acff562f1305f74c09c"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch04Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "a6764e06f484386e8018a2bea45e8986655d6e9bef9cf7f04e927095ed009f95"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch05Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "8a8150b43c73e1f65e608c8cd53d335b3223591b00dcf48b7b8e0737b3278fa7"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch06Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "37830d3db482f5194df6b42f050dfaa5f97d43be0ce2f7abfdd873a1c89534b9"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch07Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "b8a2a411fa638d9eae5de43ab9fbe42d4e57a6eb32034f6024cfdbc4e6bf2e1a"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch08Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "b120f3bfd52f9ea4550e807695dfcc348dd085c2c496f5ebf876dd941d15eba1"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch09Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "2809f4112eaea40ff194c5b2ea7d356c507c4c2807dfc77ccba7223a9e665b1c"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch10Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "b8946357b9d2dc00586a1493563efb1b08fdbd3973eb2ae97be5e08bf648a557"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch11Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "7e7cd5e4dbefc6bf703dd2c7d888c53bdcc6cf847993ad756c8a4245c75cc3e7"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch12Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "7702d36dd1dded9f74da52dbe41d82d9aff6fcd0c2574a583d10d581f4701f88"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch13Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "3596d1222914426ec1f8d5dc14beea9c20bd4bafe955c2a21d800a185dc46a16"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch14Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "61034ab6485aeca0673d464997c9e18b5c7dec064df83b258d3291afc902ba7b"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleBatch15Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "1fd8f3c2dc7956cc9f2191fd1cfd0beb8d0d6723462d131200a216ab128c5343"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyOracleSupport.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "ad6a02c92bdeba3900df70467f5a97a06d863ac2e0781d16de268a535880f46b"
+        },
+        {
+          "path": "legacy/src/commonTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyZeroEntropyTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "1122df9e7fad777ca2410a511fdd6ff4ca6885b46de52ee9eb65b87371d14c16"
+        },
+        {
+          "path": "legacy/src/jvmTest/kotlin/io/github/flyfish233/spake2/legacy/LegacyConcurrencyTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "7c02a177be4f6eb1a8480d735adb0651e8908945c5e7a7791f35604219fe01ca"
+        },
+        {
+          "path": "primitives/build.gradle.kts",
+          "matchesGitBlobBytes": true,
+          "sha256": "35766f3c4022be0e7b5b1da842ad89293cc14fe4fe8fe317fb6c76503116c622"
+        },
+        {
+          "path": "primitives/src/androidInstrumentedTest/kotlin/io/github/flyfish233/spake2/AndroidArtRuntimeTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "7b7f804ea53603b64b3b874b01234ab1cd3f51674a43268ea769901056a2924f"
+        },
+        {
+          "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/EntropySource.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "dfc55282188a4c8a97752d01b153dfdf15f1f919df3c0359d74a5a09b19826bc"
+        },
+        {
+          "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/InternalSpake2Api.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6"
+        },
+        {
+          "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HkdfSha256.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "5dc45de93eff52e5d60ad9687ce84bee2be698539b7be1ec5a38bb8ae767591a"
+        },
+        {
+          "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HmacSha256.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "c46ccc1ba589c0eb5d1539e7d9e6e7c5915ff17361993e93ffeab387d01f5330"
+        },
+        {
+          "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha256.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "bc60dd4bd927ad0bb06aa97215ee57c7ed013732d642200f4cbd1c5c6d65a0a6"
+        },
+        {
+          "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451"
+        },
+        {
+          "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "006a71ead2a4c1038635435547a22ea231aace49920de1a43b18622c942c0eb8"
+        },
+        {
+          "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd"
+        },
+        {
+          "path": "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "225be142a455d3db4c888f3c0f0d409febc484b7bad49bee1f1d7549f52100a1"
+        },
+        {
+          "path": "primitives/src/commonTest/kotlin/io/github/flyfish233/spake2/HashBoundaryTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "5cd4c501efdf321cb4a2267b48e5999011e5a9257b5b9fc039972db3494cf0cc"
+        },
+        {
+          "path": "primitives/src/commonTest/kotlin/io/github/flyfish233/spake2/HashTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "8e7b5caa5157181b7e22c458846c6d86c5f34c0da4b2aa141864398961fd8da0"
+        },
+        {
+          "path": "primitives/src/commonTest/kotlin/io/github/flyfish233/spake2/ScaffoldTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "da08ea98c07e58dafdd84ebdc1e072aee606a18e654063974809b287a6bab6e7"
+        },
+        {
+          "path": "primitives/src/commonTest/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519MathTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "20d11b1a975b722015e1cf0a4609d64bc34ee60e5b2dd21d7b001f90ca788580"
+        },
+        {
+          "path": "primitives/src/commonTest/kotlin/io/github/flyfish233/spake2/internal/math/ModMathIntCarryTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "9c520cf2b53e57baef2e59bf9f1be9ccdf0cba2c6b242d7e17e4bbdc2365e853"
+        },
+        {
+          "path": "primitives/src/commonTest/kotlin/io/github/flyfish233/spake2/internal/math/ModMathTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "a1bd25fe12cfa8d01a361069cda1f5e3526f25253e43cc3e7db6040ead26633d"
+        },
+        {
+          "path": "primitives/src/commonTest/kotlin/io/github/flyfish233/spake2/internal/math/P256MathTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "24f9a9caae74495fe6d430efb2c8da14c6353fbeba1ef927403d199b8b26fd6b"
+        },
+        {
+          "path": "primitives/src/jvmTest/kotlin/io/github/flyfish233/spake2/internal/math/ArithmeticDifferentialTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "385499568d6cf4d2ceaa87d1f149637641deded70a72c77f4740379b9744fa6f"
+        },
+        {
+          "path": "primitives/src/jvmTest/kotlin/io/github/flyfish233/spake2/internal/math/ModMathCarryBoundaryTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "acad8887154207473eaca575f6149eb8296e1bbf7197f76cef16c8f2a02c1c4f"
+        },
+        {
+          "path": "primitives/src/jvmTest/kotlin/io/github/flyfish233/spake2/internal/math/WycheproofP256Test.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "1f2eaa2e61bf17d17e0e1e3e5f03b2d8c800fb89576117b0d7af03814b0f236d"
+        },
+        {
+          "path": "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Core.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "aa6d003c8e735952773dbae34f6f02233233bc481670f6be9e0839cbbb526f86"
+        },
+        {
+          "path": "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Session.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "27c7a57098185b5a1fa3e36eefd268204e5dd714c833ea7eb8ef844f4090142d"
+        },
+        {
+          "path": "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Suite.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "466f7edef6ed187216826047391f3c1df2f10888e448b96ad834b8ecfde8d01d"
+        },
+        {
+          "path": "src/commonTest/kotlin/io/github/flyfish233/spake2/EdwardsReferenceVectors.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "26870b4af558c125996229b247458e147245905556c875f49ceaba3ca3d2eae6"
+        },
+        {
+          "path": "src/commonTest/kotlin/io/github/flyfish233/spake2/EdwardsTorsionVectors.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "dc8a2a39d13f29c31c0f9367cd9775fe6b5bee487dd47fec698c55f2dc4c8ddd"
+        },
+        {
+          "path": "src/commonTest/kotlin/io/github/flyfish233/spake2/ProtocolIsolationTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "6a518e1853946d6ae9a7c8541ae3b5ebff9301d1d1789d6a64bac6d4a8d0397d"
+        },
+        {
+          "path": "src/commonTest/kotlin/io/github/flyfish233/spake2/RfcFailureTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "8bc3b9bc45d2b3afd61e4447c32f8920a232e6571e625d04447be576897254c2"
+        },
+        {
+          "path": "src/commonTest/kotlin/io/github/flyfish233/spake2/RfcOfficialVectors.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "c44a57ff512d83360efc1b6ba5dd782cd61168d26aa9757aa106d6239f2ab6d0"
+        },
+        {
+          "path": "src/commonTest/kotlin/io/github/flyfish233/spake2/RfcVectorsTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "a7717bdde8cfc98d4f4286d5ba71cfb6ae2523bd11c7964b7c3f2d547d31d869"
+        },
+        {
+          "path": "src/jvmTest/kotlin/io/github/flyfish233/spake2/ConcurrentMisuseTest.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "0762cb0ebc6639806f5321c41dd3c7b1cefd0b97347680d3d09ce6646dd0abfd"
+        },
+        {
+          "path": "test-vectors/rfc9382-edwards25519-torsion.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "ba20ec4769c21b7510c06d06833e04f44fd1ea59f132fdc8078a00c99139d3da"
+        },
+        {
+          "path": "test-vectors/rfc9382-edwards25519.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "4e5d1d7bd564c3a9858f92a95185f89ac06db2c50bda7352a7399ee6b3aa0504"
+        },
+        {
+          "path": "test-vectors/rfc9382-p256.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "a813b6ffec8e6909d350813898e7505fe5d726a3df46e315eb2cea8fe94a1926"
+        },
+        {
+          "path": "test-vectors/rfc9382-zero-ephemeral.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "94d28014a5d6f8e8fe5149d911a9a3129241b1ecbc339ab3cad7fc3c18f28732"
+        },
+        {
+          "path": "test-vectors/wycheproof-p256-subset.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "5b4b481da680bceb704db1f73764f5f0c77a7419538d6d82421a23e99a686db9"
+        },
+        {
+          "path": "test-vectors/legacy/boringssl-spake2-fuzz-vectors.jsonl",
+          "matchesGitBlobBytes": true,
+          "sha256": "310d4e3b9d701a8478eaab4459ca2a56ba1f22158afa8fa8fae34d56e087f183"
+        },
+        {
+          "path": "test-vectors/legacy/boringssl-spake2-vectors.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "94ed5b9c564794eac6d2494966ff3ae479d872171f6a70286f504cbe4bfe8d94"
+        },
+        {
+          "path": "test-vectors/legacy/fresh-boringssl-oracle.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "37a7af4281ba9f4c41d6f840861c2ea6a4750c1787bc01c15bb984aa3b1b7a1f"
+        },
+        {
+          "path": "test-vectors/legacy/oracle-regeneration-report.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "4e69cd65e60f644fdcd330004ac0742a81234c27d42964f73b104caff2e5dbdc"
+        },
+        {
+          "path": "test-vectors/legacy/zero-entropy-oracle.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "3cb7c6a3765346cfd6292a18bb29bf1ee37e4d472986df2544cc71cb77cc1cd5"
+        },
+        {
+          "path": "third-party/WYCHEPROOF-LICENSE.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        },
+        {
+          "path": "third-party/WYCHEPROOF-NOTICE.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "8df9681171b779b9245d872a32c9152cb253b61b00b7d425ed112d5ecb81d042"
+        },
+        {
+          "path": "third-party/boringssl/LICENSE",
+          "matchesGitBlobBytes": true,
+          "sha256": "827c8d8fc207c2392794eef9e00fe246f9f61fdcc132556c275be3dd8c3cd97f"
+        },
+        {
+          "path": "third-party/gradle/LICENSE",
+          "matchesGitBlobBytes": true,
+          "sha256": "9536d88ea948603d18e232a13f5958d67807cd80828036b082bff171d2cf0703"
+        },
+        {
+          "path": "third-party/ietf/LICENSE-BSD",
+          "matchesGitBlobBytes": true,
+          "sha256": "f9b13efbe56d7338e4c5d876dfac4ea7910af673a5442e3a2c60b85d1c1fc51d"
+        },
+        {
+          "path": "third-party/ietf/NOTICE",
+          "matchesGitBlobBytes": true,
+          "sha256": "9412397b1edce3bf84d836f360e27fcab9c018bb6497b921e52bdce4ce371db5"
+        },
+        {
+          "path": "third-party/ietf/RFC4231-NOTICE",
+          "matchesGitBlobBytes": true,
+          "sha256": "224338ff8620d8d98aea46673639ded73f30f4cba854a834737875b33da79a48"
+        },
+        {
+          "path": "third-party/ietf/RFC9382-IRTF-NOTICE",
+          "matchesGitBlobBytes": true,
+          "sha256": "c465a03859199997696aed8fb476bb9d2190b2c8a9d99fb3e2a406f435206bf6"
+        },
+        {
+          "path": "third-party/ietf/TLP-2015-REFERENCE.txt",
+          "matchesGitBlobBytes": true,
+          "sha256": "49cefaa7cfd6ac02395970448ce1cb366ab011c3dd7f6560aafffcb2bad7d807"
+        },
+        {
+          "path": "third-party/spake2-java/LICENSE",
+          "matchesGitBlobBytes": true,
+          "sha256": "8b1ba204bb69a0ade2bfcf65ef294a920f6bb361b317dba43c7ef29d96332b9b"
+        },
+        {
+          "path": "tools/JvmPerformanceProbe.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "f5932e33578c9e581ef4c8413f750bf6f99d4294f0797587346e485d0d9b6677"
+        },
+        {
+          "path": "tools/check_android_art_results.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "6020b0d9fd3e70fd100005687a55cd0220369b845f6bffe36325495f44f148fd"
+        },
+        {
+          "path": "tools/check_consumer_test_results.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "bdb5f9b833e61388e3ed22a22c04b49767ec5f9cbbd39c7578d56382061f7ff0"
+        },
+        {
+          "path": "tools/check_maven_repository.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "ed2b0f4db55bddd144737c4676ffdc2e0e2e70e14e31c8ec9476741b89f9e18e"
+        },
+        {
+          "path": "tools/generate_consumer_fixtures.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "36eb080d18b887bc03043c8826b5cb5b3096cf2d4c84a076348cba3ef224b5ba"
+        },
+        {
+          "path": "tools/generate_math_vectors.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "1eb557141710f958518ff14c4ddbf8fbc67631a752d37b839659e1bd9ea9cf82"
+        },
+        {
+          "path": "tools/generate_wycheproof_subset.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "c6cb9198e84a31d3633fd1f217f9809f672cee386c7ea46bab392b4ded1090fc"
+        },
+        {
+          "path": "tools/hash_differential.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "456848adcb7e207605a6f28f70ec9948a10ac33b34a591129abe074992ce709b"
+        },
+        {
+          "path": "tools/jvm_math_probe.kt",
+          "matchesGitBlobBytes": true,
+          "sha256": "edfc1689a8507305fa4447ca90601d2d15b674697690a3a1da160c043294af40"
+        },
+        {
+          "path": "tools/legacy_generate_tests.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "a50b227f2501ebc860d48c3737ddc94622d4d3485e9f2d1f790995c524037f53"
+        },
+        {
+          "path": "tools/legacy_oracle.cc",
+          "matchesGitBlobBytes": true,
+          "sha256": "380a2b0cd469b8b0d7b960f573e53e4f12e3ea579b0e49457208ffefa9844687"
+        },
+        {
+          "path": "tools/legacy_regenerate_oracle.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "b8ce2a32d2ce9a60040d69cd4c1719ded7ee0dc6e010b53f5cc8cf19d68671fc"
+        },
+        {
+          "path": "tools/probe_consumer_resolution.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "592b5fe3b8bb4c7573be16ef74ef6a34e52e7a68d1da858bf2735b0fb8541a16"
+        },
+        {
+          "path": "tools/rfc9382_torsion.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "a7fd475d4f0b398012f2a4221b95a6160eadb8fa772ae59c3cde049d663355fa"
+        },
+        {
+          "path": "tools/rfc9382_vectors.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "615f40f140c4d2bfd3c88197a344f5d4b83c0323e86afd20f15a000a4dd795db"
+        },
+        {
+          "path": "tools/rfc9382_zero_ephemeral.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "68638e8738570f11f7af0b134cbdad483769a66a65fe517187a589533c68f8f9"
+        },
+        {
+          "path": "tools/rfc_hash_boundaries.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "0fec001dc992a2fdb29d2830c17dc86ac74fd27644ed07c346beff023155c7cc"
+        },
+        {
+          "path": "tools/run_android_art.sh",
+          "matchesGitBlobBytes": true,
+          "sha256": "4ecb00cfb88a1411577296aa79b3ba0647576214c88a079d1bfb4c6e106bb159"
+        },
+        {
+          "path": "tools/run_jvm_performance.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "00b2503e0e137e1fb20d8557609e28aca51bd3990a99ec7f1082f747232f078a"
+        },
+        {
+          "path": "tools/tests/test_android_result_gate.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "29a56ac8a19354ce8efb1bd887839b0159a9421dbd9ac26f0088cca649f64361"
+        },
+        {
+          "path": "tools/tests/test_consumer_result_gate.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "2612086be1449931fd47704b3975cbec6e9239c0c9f88666cc80515b22326ab7"
+        },
+        {
+          "path": "tools/tests/test_legacy_oracle_protocol.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "d2ebef92a24ba58e1121aba9a3ec5440ba4901a1d5a2eb92a64bb3ce5c7e4419"
+        },
+        {
+          "path": "tools/tests/test_maven_repository_gate.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "152214e7ccef2d590ee7b3cd934c7571e38f1ecaebb60dab2944ecffeee263b0"
+        },
+        {
+          "path": "tools/tests/test_performance_cache.py",
+          "matchesGitBlobBytes": true,
+          "sha256": "2d554acde5c8cd879e5226dbce10c9b4a83f4bdf54e8db07cc25d96104b7982b"
+        },
+        {
+          "path": "tools/tests/fixtures/gradle-9.6-kotlin-2.4.20/README.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "439f3fc6e38bba101ac504c412cc41e5c389cc3bf814335fc11d177648f6c772"
+        },
+        {
+          "path": "tools/tests/fixtures/gradle-9.6-kotlin-2.4.20/iosSimulatorArm64Test/legacy-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "b351a223681f85735316923a8261da20f14ace3545068899821ea752d78e60c5"
+        },
+        {
+          "path": "tools/tests/fixtures/gradle-9.6-kotlin-2.4.20/iosSimulatorArm64Test/rfc-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "391b3a2828852d99a67c2ac80ab77e1b40088c84738513751039857f8c9fc124"
+        },
+        {
+          "path": "tools/tests/fixtures/gradle-9.6-kotlin-2.4.20/macosArm64Test/legacy-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "ddc115f6ec069d55e25574b3eb0c8fedc806ff6c0c6e9d98cc0e55bbb5acef6e"
+        },
+        {
+          "path": "tools/tests/fixtures/gradle-9.6-kotlin-2.4.20/macosArm64Test/rfc-client.xml",
+          "matchesGitBlobBytes": true,
+          "sha256": "63e4c5332679321451ad2a1f3f0fe699780221800f24c2d07145d75cf70cd5e2"
+        },
+        {
+          "path": "tools/tests/fixtures/kgp-2.2.21/README.md",
+          "matchesGitBlobBytes": true,
+          "sha256": "8f27818616c1d9e8c9b51107bada32597b5a06fd0e3c0da85d8d8e23405b33ac"
+        },
+        {
+          "path": "tools/tests/fixtures/kgp-2.2.21/spake2-legacy-macosarm64.module.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "936d574d23f2dc8970be97e2b43083ffc455e19ce34394f9693c4e33980ed196"
+        },
+        {
+          "path": "tools/tests/fixtures/kgp-2.2.21/spake2-macosarm64.module.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "3bcdcb904ebca80e22c63a8b38228239acecadcfb2733e51774245a6030b1fb7"
+        },
+        {
+          "path": "tools/tests/fixtures/kgp-2.2.21/spake2-primitives-macosarm64.module.json",
+          "matchesGitBlobBytes": true,
+          "sha256": "f279a19d1278edd0b03d7d467bb0d1cbfb2cc17053783910c3fc7dc95d34481f"
+        }
+      ]
+    },
+    {
+      "archive": "io/github/flyfish233/spake2-legacy/0.1.0-dev.59105290820b/spake2-legacy-0.1.0-dev.59105290820b-source-distribution.zip",
+      "sha256": "4a2f3ff76d52b58aae758d83b0600499b5c02d9be8300d9f9fff3c1920519a0c",
+      "comparedFiles": 482,
+      "mismatches": [],
+      "untrackedExtras": [],
+      "samePerFileComparisonAs": "io/github/flyfish233/spake2/0.1.0-dev.59105290820b/spake2-0.1.0-dev.59105290820b-source-distribution.zip"
+    },
+    {
+      "archive": "io/github/flyfish233/spake2-primitives/0.1.0-dev.59105290820b/spake2-primitives-0.1.0-dev.59105290820b-source-distribution.zip",
+      "sha256": "4a2f3ff76d52b58aae758d83b0600499b5c02d9be8300d9f9fff3c1920519a0c",
+      "comparedFiles": 482,
+      "mismatches": [],
+      "untrackedExtras": [],
+      "samePerFileComparisonAs": "io/github/flyfish233/spake2/0.1.0-dev.59105290820b/spake2-0.1.0-dev.59105290820b-source-distribution.zip"
+    }
+  ],
+  "limitations": "Does not prove binaries reproducibly built from these sources or authenticate a compromised GitHub runner/compiler"
+}

@@ -1,0 +1,218 @@
+{
+  "kind": "JVM bytecode inspection input; not JIT/ART/native machine code or timing measurement",
+  "source_commit": "88e0233193ce4cf08d974fcd12ed0255624c6536",
+  "artifact_source_commit": "59105290820bcbfd4e0336a2e7713006a461527f",
+  "artifact_provenance": "See ../ci/candidate-download.json and ../ci/source-archive-vs-git.json; hashes alone do not authenticate a producer.",
+  "jars": [
+    {
+      "path": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar",
+      "sha256": "d0cd63e7f17c666d0459301ce220883b150e68ccab6a5b8a0a5c902267142733"
+    },
+    {
+      "path": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar",
+      "sha256": "abdb0f81c8319a0a3bbb1ad730a9133588b7afcec5a6b5e8373d4de837cf2c5d"
+    },
+    {
+      "path": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+      "sha256": "2ed2e90596a08173911cbc6be25d0c889bf74ecfe09adadc764d8b7958d6880c"
+    }
+  ],
+  "java": "openjdk version \"17.0.21\" 2026-10-20\nOpenJDK Runtime Environment Temurin-17.0.21+9 (build 17.0.21+9)\nOpenJDK 64-Bit Server VM Temurin-17.0.21+9 (build 17.0.21+9, mixed mode, sharing)\n",
+  "javap": "17.0.21",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "source_sha256": {
+    "legacy/src/commonMain/kotlin/io/github/flyfish233/spake2/legacy/LegacySpake25519.kt": "2e742651a083c6d29ae6b6e03c3319ced1ca22deef33e25eea278b630fc8c138",
+    "integration/consumer-fixtures/legacy-client/src/commonMain/kotlin/consumer/LegacyConsumer.kt": "c03304bd2acf7c82a14cdc91f8fab78becbea85414e8b26b17483d1965916bc0",
+    "integration/consumer-fixtures/rfc-client/src/commonMain/kotlin/consumer/RfcConsumer.kt": "4aa6e22d7876544a240953f08982d3d35525f28e1b47d19f7fea5dbe091dd9bf",
+    "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Suite.kt": "466f7edef6ed187216826047391f3c1df2f10888e448b96ad834b8ecfde8d01d",
+    "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Core.kt": "aa6d003c8e735952773dbae34f6f02233233bc481670f6be9e0839cbbb526f86",
+    "src/commonMain/kotlin/io/github/flyfish233/spake2/rfc/Rfc9382Session.kt": "27c7a57098185b5a1fa3e36eefd268204e5dd714c833ea7eb8ef844f4090142d",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/EntropySource.kt": "dfc55282188a4c8a97752d01b153dfdf15f1f919df3c0359d74a5a09b19826bc",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/InternalSpake2Api.kt": "b1fe1cd7cb8c17f996124237cb2a90ba530263bd80f9a2df169a7f7ce73036e6",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/ModMath.kt": "a01fc9c6b6133c0ac96b0c45ec426db1bf3ff3feb33c9512e9ab7cd923ff79bd",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/P256.kt": "225be142a455d3db4c888f3c0f0d409febc484b7bad49bee1f1d7549f52100a1",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/math/Edwards25519.kt": "006a71ead2a4c1038635435547a22ea231aace49920de1a43b18622c942c0eb8",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha256.kt": "bc60dd4bd927ad0bb06aa97215ee57c7ed013732d642200f4cbd1c5c6d65a0a6",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HkdfSha256.kt": "5dc45de93eff52e5d60ad9687ce84bee2be698539b7be1ec5a38bb8ae767591a",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/HmacSha256.kt": "c46ccc1ba589c0eb5d1539e7d9e6e7c5915ff17361993e93ffeab387d01f5330",
+    "primitives/src/commonMain/kotlin/io/github/flyfish233/spake2/internal/crypto/Sha512.kt": "60fb00baad467d2cd01779d3791e357c00c0ac1a9e5719b4236384bc60c60451"
+  },
+  "classes": [
+    {
+      "class": "io.github.flyfish233.spake2.internal.math.ModMath",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/internal/math/ModMath.class",
+      "class_sha256": "15b0076a3b7cc103edf0d2d8157fd8dcd09b73481f52960f08373316ccf7e71c",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/ModMath.txt",
+      "javap_sha256": "f0a1fadc8029df4ab45c8b66902b5aff29d76afa32720462fa7cec9ba781fc20",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.internal.math.ModMath"
+      ],
+      "stderr": ""
+    },
+    {
+      "class": "io.github.flyfish233.spake2.internal.math.P256",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/internal/math/P256.class",
+      "class_sha256": "bbbc22af0c57c6ed8e71ece67ab2cf1752b4e9b7f28cd32d89cc58bc4b9e92a3",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/P256.txt",
+      "javap_sha256": "2df2d8e8af89847945d7f7179fd4d37276586118bc3300cb9ce45afa79807781",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.internal.math.P256"
+      ],
+      "stderr": ""
+    },
+    {
+      "class": "io.github.flyfish233.spake2.internal.math.Edwards25519",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/internal/math/Edwards25519.class",
+      "class_sha256": "8e2635b28d4eb347c990c8f15e5a8bd4b3c6c51878c619743e7dc74dbe0b26c3",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/Edwards25519.txt",
+      "javap_sha256": "b2d24a8a0751894341837cf6946bb313c531f57032af49fa5826c6f6840c3a0d",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.internal.math.Edwards25519"
+      ],
+      "stderr": ""
+    },
+    {
+      "class": "io.github.flyfish233.spake2.internal.crypto.Sha256",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/internal/crypto/Sha256.class",
+      "class_sha256": "7d8aecb59ba96476ce9b00be1aaf7a0f7b241bccc6dcae7abc2007db8d4f6fcc",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/Sha256.txt",
+      "javap_sha256": "eb5e688940f4c49053d294a9ee046211da19526b18ea56ba3a1fe89849ae9dd0",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.internal.crypto.Sha256"
+      ],
+      "stderr": ""
+    },
+    {
+      "class": "io.github.flyfish233.spake2.internal.crypto.Sha512",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/internal/crypto/Sha512.class",
+      "class_sha256": "1eb7aef44de1850a80450942ff873bda65b11462c08ba3f1a6adaf333c5b39df",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/Sha512.txt",
+      "javap_sha256": "c57da6aa1204749d5b0a5c1f052f0c3a242d9d65e7de1ad69e69d57f83a0775c",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.internal.crypto.Sha512"
+      ],
+      "stderr": ""
+    },
+    {
+      "class": "io.github.flyfish233.spake2.internal.crypto.HmacSha256",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/internal/crypto/HmacSha256.class",
+      "class_sha256": "12f997ddcf0369e5fc7e1d0ac8fc6aafd5cbae8f7a16e51e3897c01460dc3c9b",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/HmacSha256.txt",
+      "javap_sha256": "f45c68c9aaa89eb1af7c06b69028ca071d19927952b6aa6b853feb9a39804120",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.internal.crypto.HmacSha256"
+      ],
+      "stderr": ""
+    },
+    {
+      "class": "io.github.flyfish233.spake2.internal.crypto.HkdfSha256",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/internal/crypto/HkdfSha256.class",
+      "class_sha256": "1e451300766308c1ca95606a3e7fb42b0489752203fde033fba07823d26f0c9c",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/HkdfSha256.txt",
+      "javap_sha256": "c3ffb81daa4843d0a689df86ade05826ea52b627250a29e4779054f9f763b527",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.internal.crypto.HkdfSha256"
+      ],
+      "stderr": ""
+    },
+    {
+      "class": "io.github.flyfish233.spake2.rfc.Rfc9382Core",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/rfc/Rfc9382Core.class",
+      "class_sha256": "35208266ec77aee4485e662169abf40539662652508235aec17d7a8cd0ff7221",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/Rfc9382Core.txt",
+      "javap_sha256": "5178fea554bae964451cfb439382c2e1fd782df4e77514d2ae23c1e8a371a06b",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.rfc.Rfc9382Core"
+      ],
+      "stderr": ""
+    },
+    {
+      "class": "io.github.flyfish233.spake2.rfc.Rfc9382Session",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/rfc/Rfc9382Session.class",
+      "class_sha256": "4da8151aa9c2befbc7060799f0c814dd7379b74f8bf03dc79cadffbb1b68bc8e",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/Rfc9382Session.txt",
+      "javap_sha256": "96c1ce2d0b98977ea2c79bb7734c7c4383b0aa0f40ccd6a571e8dfa8ce5083ec",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.rfc.Rfc9382Session"
+      ],
+      "stderr": ""
+    },
+    {
+      "class": "io.github.flyfish233.spake2.legacy.LegacySpake25519",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/legacy/LegacySpake25519.class",
+      "class_sha256": "e6138f68cf076daf8a8b0b27a149a7cd007299887dc7590145b552a1c75516fe",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/LegacySpake25519.txt",
+      "javap_sha256": "5c69d654c739def489efea940417bef817796ccb85980aa25af18890a9591513",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.legacy.LegacySpake25519"
+      ],
+      "stderr": ""
+    },
+    {
+      "class": "io.github.flyfish233.spake2.legacy.LegacySpake25519$Companion",
+      "class_file": "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar!/io/github/flyfish233/spake2/legacy/LegacySpake25519$Companion.class",
+      "class_sha256": "dcd4b83e1a916b9401ca34b684cb5dea7ae9254acf6a5e1589d2af3ad9591f04",
+      "javap_file": "docs/round3/evidence/state-sidechannel/bytecode/LegacySpake25519_Companion.txt",
+      "javap_sha256": "223213b9b89979303424be6e3584e25595feb875337e6236ddf3c29a388717eb",
+      "command": [
+        "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9/bin/javap",
+        "-c",
+        "-p",
+        "-classpath",
+        "/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-jvm/0.1.0-dev.59105290820b/spake2-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-primitives-jvm/0.1.0-dev.59105290820b/spake2-primitives-jvm-0.1.0-dev.59105290820b.jar:/workspace/scratch/2dc285d90a69/ci-artifacts/candidate-5910529/maven/io/github/flyfish233/spake2-legacy-jvm/0.1.0-dev.59105290820b/spake2-legacy-jvm-0.1.0-dev.59105290820b.jar",
+        "io.github.flyfish233.spake2.legacy.LegacySpake25519$Companion"
+      ],
+      "stderr": ""
+    }
+  ]
+}

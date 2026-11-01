@@ -1,0 +1,2721 @@
+{
+  "sourceRevision": "59105290820bcbfd4e0336a2e7713006a461527f",
+  "scope": "Re-read of original completed CI XML; not new runtime executions",
+  "artifacts": [
+    {
+      "artifact": "android-art-api-23",
+      "groups": {
+        "device": {
+          "files": 5,
+          "testcases": 77,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "testDebugUnitTest": {
+          "files": 32,
+          "testcases": 76,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "build/outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 6.0-_-.xml",
+          "testcases": 22,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "testcases": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "testcases": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "integration/consumer/legacy-client/build/outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 6.0-_legacy-client-.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "integration/consumer/legacy-client/build/test-results/testDebugUnitTest/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "integration/consumer/rfc-client/build/outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 6.0-_rfc-client-.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "integration/consumer/rfc-client/build/test-results/testDebugUnitTest/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 6.0-_legacy-.xml",
+          "testcases": 30,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "testcases": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 6.0-_primitives-.xml",
+          "testcases": 20,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": [
+        "build/art-evidence/test-summary.json"
+      ]
+    },
+    {
+      "artifact": "android-art-api-35",
+      "groups": {
+        "device": {
+          "files": 5,
+          "testcases": 77,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "testDebugUnitTest": {
+          "files": 32,
+          "testcases": 76,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "build/outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 15-_-.xml",
+          "testcases": 22,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "testcases": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "testcases": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "integration/consumer/legacy-client/build/outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 15-_legacy-client-.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "integration/consumer/legacy-client/build/test-results/testDebugUnitTest/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "integration/consumer/rfc-client/build/outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 15-_rfc-client-.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "integration/consumer/rfc-client/build/test-results/testDebugUnitTest/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 15-_legacy-.xml",
+          "testcases": 30,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "testcases": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 15-_primitives-.xml",
+          "testcases": 20,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/testDebugUnitTest/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": [
+        "build/art-evidence/test-summary.json"
+      ]
+    },
+    {
+      "artifact": "baseline-consumer-darwin-arm64",
+      "groups": {
+        "iosSimulatorArm64Test": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "macosArm64Test": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "isolated-spake2-integration/consumer/legacy-client/build/test-results/iosSimulatorArm64Test/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/legacy-client/build/test-results/macosArm64Test/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/rfc-client/build/test-results/iosSimulatorArm64Test/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/rfc-client/build/test-results/macosArm64Test/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": [
+        "consumer-evidence/test-summary.json"
+      ]
+    },
+    {
+      "artifact": "baseline-consumer-darwin-x64",
+      "groups": {
+        "iosX64Test": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "macosX64Test": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "isolated-spake2-integration/consumer/legacy-client/build/test-results/iosX64Test/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/legacy-client/build/test-results/macosX64Test/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/rfc-client/build/test-results/iosX64Test/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/rfc-client/build/test-results/macosX64Test/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": [
+        "consumer-evidence/test-summary.json"
+      ]
+    },
+    {
+      "artifact": "baseline-consumer-linux-android-js-wasm",
+      "groups": {
+        "jsNodeTest": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "jvmTest": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "linuxX64Test": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "testDebugUnitTest": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "wasmJsNodeTest": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "isolated-spake2-integration/consumer/legacy-client/build/test-results/jsNodeTest/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/legacy-client/build/test-results/jvmTest/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/legacy-client/build/test-results/linuxX64Test/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/legacy-client/build/test-results/testDebugUnitTest/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/legacy-client/build/test-results/wasmJsNodeTest/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/rfc-client/build/test-results/jsNodeTest/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/rfc-client/build/test-results/jvmTest/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/rfc-client/build/test-results/linuxX64Test/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/rfc-client/build/test-results/testDebugUnitTest/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/consumer/rfc-client/build/test-results/wasmJsNodeTest/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": [
+        "consumer-evidence/test-summary.json"
+      ]
+    },
+    {
+      "artifact": "darwin-test-results-macos-15-intel",
+      "groups": {
+        "iosX64Test": {
+          "files": 30,
+          "testcases": 71,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "macosX64Test": {
+          "files": 30,
+          "testcases": 71,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "testcases": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "testcases": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "testcases": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "testcases": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "testcases": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "testcases": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosX64Test/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosX64Test/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": []
+    },
+    {
+      "artifact": "darwin-test-results-macos-26",
+      "groups": {
+        "iosSimulatorArm64Test": {
+          "files": 30,
+          "testcases": 71,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "macosArm64Test": {
+          "files": 30,
+          "testcases": 71,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "testcases": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "testcases": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "testcases": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "testcases": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "testcases": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "testcases": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/iosSimulatorArm64Test/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/macosArm64Test/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": []
+    },
+    {
+      "artifact": "kadb-toolchain-consumer-darwin-arm64",
+      "groups": {
+        "iosSimulatorArm64Test": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "macosArm64Test": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "isolated-spake2-integration/kadb-consumer/legacy-client/build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/kadb-consumer/legacy-client/build/test-results/macosArm64Test/TEST-macosArm64Test.consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/kadb-consumer/rfc-client/build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/kadb-consumer/rfc-client/build/test-results/macosArm64Test/TEST-macosArm64Test.consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": [
+        "consumer-evidence/test-summary.json"
+      ]
+    },
+    {
+      "artifact": "kadb-toolchain-consumer-darwin-x64",
+      "groups": {
+        "macosX64Test": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "isolated-spake2-integration/kadb-consumer/legacy-client/build/test-results/macosX64Test/TEST-macosX64Test.consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/kadb-consumer/rfc-client/build/test-results/macosX64Test/TEST-macosX64Test.consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": [
+        "consumer-evidence/test-summary.json"
+      ]
+    },
+    {
+      "artifact": "kadb-toolchain-consumer-linux-android",
+      "groups": {
+        "linuxX64Test": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "testAndroidHostTest": {
+          "files": 2,
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "isolated-spake2-integration/kadb-consumer/legacy-client/build/test-results/linuxX64Test/TEST-linuxX64Test.consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/kadb-consumer/legacy-client/build/test-results/testAndroidHostTest/TEST-consumer.PublishedLegacyTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/kadb-consumer/rfc-client/build/test-results/linuxX64Test/TEST-linuxX64Test.consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "isolated-spake2-integration/kadb-consumer/rfc-client/build/test-results/testAndroidHostTest/TEST-consumer.PublishedRfcTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": [
+        "consumer-evidence/test-summary.json"
+      ]
+    },
+    {
+      "artifact": "linux-test-results",
+      "groups": {
+        "jsNodeTest": {
+          "files": 30,
+          "testcases": 71,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "jvmTest": {
+          "files": 35,
+          "testcases": 80,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "linuxX64Test": {
+          "files": 30,
+          "testcases": 71,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "wasmJsNodeTest": {
+          "files": 30,
+          "testcases": 71,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "xml": [
+        {
+          "path": "build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "testcases": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "testcases": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.ConcurrentMisuseTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "testcases": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "testcases": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "testcases": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "testcases": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+          "testcases": 14,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+          "testcases": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "testcases": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyConcurrencyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "testcases": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "testcases": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+          "testcases": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "legacy/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jsNodeTest/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.internal.math.ArithmeticDifferentialTest.xml",
+          "testcases": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathCarryBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/jvmTest/TEST-io.github.flyfish233.spake2.internal.math.WycheproofP256Test.xml",
+          "testcases": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/linuxX64Test/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.HashTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+          "testcases": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+          "testcases": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "path": "primitives/build/test-results/wasmJsNodeTest/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+          "testcases": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "summaryFiles": []
+    }
+  ]
+}

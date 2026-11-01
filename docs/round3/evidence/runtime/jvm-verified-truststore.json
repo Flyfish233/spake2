@@ -1,0 +1,21 @@
+{
+  "command": [
+    "./gradlew",
+    "--no-daemon",
+    "jvmTest",
+    "--console=plain",
+    "--stacktrace",
+    "-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts"
+  ],
+  "startedAtUtc": "2026-11-01T02:44:36.674349+00:00",
+  "elapsedSeconds": 40.45607703600035,
+  "exitCode": 0,
+  "startedHead": "88e0233193ce4cf08d974fcd12ed0255624c6536",
+  "sourceManifest": "jvm-round3-source.json",
+  "javaHome": "/workspace/scratch/2dc285d90a69/toolchains/jdk-17.0.21+9",
+  "trustStore": "/etc/ssl/certs/java/cacerts",
+  "trustStoreSha256": "1ca589ea7dcfd6bfdc0af72449f1d6f016fe711d8905328c7cdf4c2055d685f4",
+  "tlsVerificationDisabled": false,
+  "reasonForRetry": "Downloaded JDK lacks environment CA trusted by system JRE; use existing system trust store without weakening validation",
+  "productionChanged": false
+}

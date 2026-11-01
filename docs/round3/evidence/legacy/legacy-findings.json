@@ -1,0 +1,32 @@
+{
+  "review": "legacy",
+  "newConfirmedDefaultProductionVulnerabilities": 0,
+  "findings": [
+    {
+      "id": "R3-L01",
+      "severity": "MEDIUM",
+      "classification": "CONFIRMED_KNOWN_OPT_IN_MODE_RISK",
+      "location": "LegacySpake25519.kt:14-19,80-89",
+      "condition": "Caller explicitly selects PRE_HARDENING_UNSAFE and attacker obtains public message",
+      "impact": "Alice reveals reduced SHA512(password) modulo2; Bob reveals modulo8. Enables offline dictionary filtering but not complete password authentication bypass by itself.",
+      "evidence": [
+        "independent-legacy-probe.json",
+        "independent_legacy_probe.py",
+        "source/spake25519.cc:381-425"
+      ],
+      "disposition": "Default HARDENED eliminates the observed torsion projection; no automatic downgrade. Exclude unsafe mode from Gate B integration.",
+      "remainingRisk": "Explicit legacy mode remains available for historical compatibility; inner PAKE output requires surrounding mutual authentication."
+    }
+  ],
+  "notFindings": [
+    {
+      "claim": "Legacy acceptance of identity/noncanonical/low-order encodings implies authentication bypass",
+      "assessment": "NOT_REPRODUCED; pinned compatibility behavior. Guess-dependent degeneracy is bounded by online password guessing in examined construction."
+    },
+    {
+      "claim": "Every unsafe public message leaks exactly three bits",
+      "assessment": "DISPROVED for Alice: M projection order2; Bob N projection order8."
+    }
+  ],
+  "executionScope": "New Python affine replay over retained C fixtures, fresh upstream source retrieval and static review; not a new C oracle execution."
+}

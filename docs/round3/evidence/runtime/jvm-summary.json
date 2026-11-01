@@ -1,0 +1,335 @@
+{
+  "recordedAtUtc": "2026-11-01T02:45:42.897991+00:00",
+  "command": "./gradlew --no-daemon jvmTest --console=plain --stacktrace -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts",
+  "totalTestMethods": 81,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "newMaskedTorsionCases": 16,
+  "xml": [
+    {
+      "module": "rfc",
+      "file": "docs/round3/evidence/runtime/jvm-results/rfc/TEST-io.github.flyfish233.spake2.ConcurrentMisuseTest.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "1d8f3a23f6594f0e9932b4ae7aa4ccd98c4869e7bea455d7f3aaf4f7290074a0"
+    },
+    {
+      "module": "rfc",
+      "file": "docs/round3/evidence/runtime/jvm-results/rfc/TEST-io.github.flyfish233.spake2.ProtocolIsolationTest.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "66eab6e649abe347630f4a7d5df258e5e73920c16d246d8f4f506fe2492615d3"
+    },
+    {
+      "module": "rfc",
+      "file": "docs/round3/evidence/runtime/jvm-results/rfc/TEST-io.github.flyfish233.spake2.RfcFailureTest.xml",
+      "testcases": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "64c48ab08c0fd0e8c1ba99cd9e39df1faf77eaa3f6b8c11c9aa2769538fb0a83"
+    },
+    {
+      "module": "rfc",
+      "file": "docs/round3/evidence/runtime/jvm-results/rfc/TEST-io.github.flyfish233.spake2.RfcVectorsTest.xml",
+      "testcases": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "afb6fd061bb8f49e7a635d8b0311a98f34a37fc3b5f9673d9bd70a6fe79261b3"
+    },
+    {
+      "module": "rfc",
+      "file": "docs/round3/evidence/runtime/jvm-results/rfc/TEST-io.github.flyfish233.spake2.Round3MaskedTorsionTest.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "75d472f9d83c95f5be45f4de1d5101216a885b1984275d26cbf01fcdefe97e12"
+    },
+    {
+      "module": "primitives",
+      "file": "docs/round3/evidence/runtime/jvm-results/primitives/TEST-io.github.flyfish233.spake2.HashBoundaryTest.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "b1c2c0d20728276fb9ad78bdaa8e00084590f1eb6f964db369285bb99150d899"
+    },
+    {
+      "module": "primitives",
+      "file": "docs/round3/evidence/runtime/jvm-results/primitives/TEST-io.github.flyfish233.spake2.HashTest.xml",
+      "testcases": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "8a84c66310f872e99a3d2ed1fae6fa4c06ff81d9188f3a512da1bdb7c45bca01"
+    },
+    {
+      "module": "primitives",
+      "file": "docs/round3/evidence/runtime/jvm-results/primitives/TEST-io.github.flyfish233.spake2.ScaffoldTest.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "0e8a90b9f41f3ce5ee4e01dc7a85bded51ab59f37509a59173e6d60b9c651f50"
+    },
+    {
+      "module": "primitives",
+      "file": "docs/round3/evidence/runtime/jvm-results/primitives/TEST-io.github.flyfish233.spake2.internal.math.ArithmeticDifferentialTest.xml",
+      "testcases": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "e072f5a4d4d8f7dc92d2a42b0a51285b605ca062da5c208ae5b5887e1568dd29"
+    },
+    {
+      "module": "primitives",
+      "file": "docs/round3/evidence/runtime/jvm-results/primitives/TEST-io.github.flyfish233.spake2.internal.math.Edwards25519MathTest.xml",
+      "testcases": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "ebc1a6b6bb27ffeaad9cc5e998a26b566a2bb161cd0ff387c3ad9e2ed6e2fc27"
+    },
+    {
+      "module": "primitives",
+      "file": "docs/round3/evidence/runtime/jvm-results/primitives/TEST-io.github.flyfish233.spake2.internal.math.ModMathCarryBoundaryTest.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "2a45931a539a9637d49014806b302c9f0ab654024de25ce70624e993f8695523"
+    },
+    {
+      "module": "primitives",
+      "file": "docs/round3/evidence/runtime/jvm-results/primitives/TEST-io.github.flyfish233.spake2.internal.math.ModMathIntCarryTest.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "f56512ccf4ebb7e991a9d6ebbd7fb5601457a08458d2682f09b3d74d0374225d"
+    },
+    {
+      "module": "primitives",
+      "file": "docs/round3/evidence/runtime/jvm-results/primitives/TEST-io.github.flyfish233.spake2.internal.math.ModMathTest.xml",
+      "testcases": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "5b9e7e16fd7583814748e03f9415fe19e8dd7c09405a0b915ba6effe132e3776"
+    },
+    {
+      "module": "primitives",
+      "file": "docs/round3/evidence/runtime/jvm-results/primitives/TEST-io.github.flyfish233.spake2.internal.math.P256MathTest.xml",
+      "testcases": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "bbc7453442bbddbadb3c50bf2de487abb892bc925ced8bf5c04eb1f1aef1f456"
+    },
+    {
+      "module": "primitives",
+      "file": "docs/round3/evidence/runtime/jvm-results/primitives/TEST-io.github.flyfish233.spake2.internal.math.WycheproofP256Test.xml",
+      "testcases": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "880be7f6f870fe6b3f8481cbff1eacec8b52ce4d2746738caf12f7c00e8f15ec"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyConcurrencyTest.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "6a329d42cf9644974408107384fbabcba345bb6852cf54e966f06f2496cd6cfc"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyDeterministicOracleTest.xml",
+      "testcases": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "ee4d03bb5309baf253d3e9c1e87064ecf8b1b5729ae389bf08806c92fe23622a"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyFreshOracleTest.xml",
+      "testcases": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "e192612531110e84a63a729ecc95fdf34d30443ad3bac480c189bbdc044285d8"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyLifecycleTest.xml",
+      "testcases": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "484e834de0689bbe1c2512ef68b0dbae6d62518301d3d4c9e93a7b4046a23fda"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch00Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "e069a27e64ae3f00a0033c00f1a73e89be6be863ac7d9e7662762fb5f3f79b85"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch01Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "699732bf0fd60b3268bb79ce5485bc2aec486ce8a68c0e11c19043cf3a501de3"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch02Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "1cb355e84817e8128a956e4b6b0fc90261f047aff9a065802250070e0e8a2218"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch03Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "cc8a1a5d77d5b102499fe3b98776cd282352bb3d605646c649a1683bd5d2f24b"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch04Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "fe1ad95f0694c3ddca145e4ad0795bce1189553572378cdaad72088a50ee64f3"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch05Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "7b8f980a8cf75f3efedc368780fd8c126fff95721c116513810feca0f82ca364"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch06Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "f83390bbeaf7fae268cd34114c22ef19123649959d790fba83c96598b9640f97"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch07Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "fb5f9cb3ec7bc421c6e08e6e57c9174d821755584ff6d3c3025c011707d1dfd7"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch08Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "53f46025c989f2d080d5400ef5dbf2546dd4e68efc7f4c5a8ee5c87fbf37a6a9"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch09Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "76bf7343f4ec42c40442c7bc23f6581b41ea3131c3e2f0851be45d597a5afd09"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch10Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "d4337469478940d51ff0f60ef03be58fe061e7dd91e9e450f8256252b504da98"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch11Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "fc538343cc9e329f93ccc622ac06890c0919e994d2fe78a8ae56a385e1194ca7"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch12Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "e6b1349f9507a34518bd31e2147d1490618f922165c34500472d8fefcb381678"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch13Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "a331509c4e6eb7c44aa4343dcfbd4cb736c71401204e6896d06e2eebc1400dc9"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch14Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "ba524b24dc900b489e4a540e57e3516099aebd9b8ac5e57315cc93ce6302b999"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyOracleBatch15Test.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "f6fa67bcba6c7c8c62057f5917beab364e8e72aff732ad75869443706122aa38"
+    },
+    {
+      "module": "legacy",
+      "file": "docs/round3/evidence/runtime/jvm-results/legacy/TEST-io.github.flyfish233.spake2.legacy.LegacyZeroEntropyTest.xml",
+      "testcases": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "f17f8d11d368cd8805529ebda15db215a3432ea9731e667f216122cf23ce2672"
+    }
+  ]
+}

@@ -20,9 +20,14 @@ Both implementations use the same internal Kotlin mathematics.
 | Transcript | Eight-byte little-endian length prefixes over Alice name, Bob name, Alice message, Bob message, encoded shared point, and the full SHA-512 password hash |
 | Key | SHA-512(transcript), 64 bytes, **unconfirmed** |
 
-The pre-hardening mode exposes three bits of the password hash and should only
-be used when an application deliberately requires old-peer wire compatibility.
-It is tested because the historical corpus mixes corrected and old endpoints.
+The pre-hardening mode leaks information about the SHA-512-derived scalar and
+should only be used when an application deliberately requires old-peer wire
+compatibility. For these fixed masks, the public Alice message reveals that
+scalar modulo 2, while the Bob message reveals it modulo 8; these observations
+are not additive four-bit leakage. The default HARDENED mode removes these
+torsion projections. The unsafe mode is tested because the historical corpus
+mixes corrected and old endpoints; it is excluded from the round-three safe
+integration conditions. See the [independent reproduction](round3/reviews/legacy.md).
 
 The legacy decoder deliberately mirrors the pinned historical implementation.
 It accepts some non-canonical point encodings, including all-`ff` bytes and
