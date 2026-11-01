@@ -146,11 +146,15 @@ wrapper JAR另与Gradle官方摘要相同。其余平台二进制可复现性、
 - [ART41266667756](https://github.com/Flyfish233/spake2/actions/runs/41266667756)
 - [Maven/消费者41266667812](https://github.com/Flyfish233/spake2/actions/runs/41266667812)
 
-报告冻结时这三项均为 **IN PROGRESS**，未记为PASS。精确观察时间见
-[状态快照](evidence/ci/new-test-commit-runs.json)。最终文档使用skip-ci避免因归档改变无限重跑；
+最终状态核对时，**Android ART 41266667756 已 completed/success**，API23/35两个job均成功，
+见[新ART job/step原始结果](evidence/ci/41266667756-jobs.json)。这是新增测试提交的实际CI执行；本轮只补取API/job级结果，
+没有重新下载这次的新XML，故不新增逐方法计数声明。**完整Maven发布/消费者41266667812也已completed/success**，
+其状态来自最终GitHub run API快照；新产物未再次下载、重数或替代本文审查的5910529实物候选。
+核心KMP41266667768在同一快照中仍为 **IN PROGRESS**，未记为PASS。
+精确观察时间见[状态快照](evidence/ci/new-test-commit-runs.json)。最终文档使用skip-ci避免因归档改变无限重跑；
 不等待这些长任务结束，也不将旧CI冒充新SHA的结果。
 
-本轮未执行：新的Android ART、Native、JS/Wasm运行；Kadb真实Maven迁移、真实TLS双连接攻击实验、Android/Native平台配对与设备验证；
+本轮本地未执行新的Android ART、Native、JS/Wasm运行；新增ART的远端CI结果如上。仍未执行Kadb真实Maven迁移、真实TLS双连接攻击实验、Android/Native平台配对与设备验证；
 新C oracle构建；生产时序/缓存/功耗/物理零化测试；外部专业审计。
 
 ## 6. Kadb迁移判断与后续优先级
